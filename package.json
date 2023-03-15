@@ -30,6 +30,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "serve": "vite preview",
+    "install": "yarn install",
     "preinstall": "yarn global add sloc @tauri-apps/cli",
     "sloc": "sloc src src-tauri/src",
     "update": "concurrently \"yarn upgrade \" \"cd src-tauri && cargo update && cargo clean\""
