@@ -24,9 +24,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      # for projects that use labels and PRs,
-      # try https://github.com/mikepenz/release-changelog-builder-action instead
       # TODO: use API to collect commit messages
       - name: Build Changelog
         id: build_changelog
