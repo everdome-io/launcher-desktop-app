@@ -1,6 +1,6 @@
 {
-  "name": "r2-t2",
-  "version": "0.2.3",
+  "name": "launcher-desktop-app",
+  "version": "0.0.11",
   "type": "module",
   "private": true,
   "dependencies": {
