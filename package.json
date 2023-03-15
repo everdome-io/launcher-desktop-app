@@ -30,7 +30,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "serve": "vite preview",
-    "install": "yarn install",
     "preinstall": "yarn global add sloc @tauri-apps/cli",
     "sloc": "sloc src src-tauri/src",
     "update": "concurrently \"yarn upgrade \" \"cd src-tauri && cargo update && cargo clean\""
@@ -56,12 +55,14 @@
   "devDependencies": {
     "@tauri-apps/cli": "^1.2.3",
     "@vitejs/plugin-react": "^2.1.0",
+    "rollup-plugin-visualizer": "^5.6.0",
     "cross-env": "^7.0.3",
     "concurrently": "^7.0.0",
     "dotenv-load": "^2.0.1",
     "@types/material-ui": "^0.21.8",
     "@types/react-beautiful-dnd": "^13.0.0",
     "vite": "^3.1.0",
+    "toml": "^3.0.0",
     "vite-plugin-top-level-await": "^1.2.1"
   },
   "resolutions": {}
