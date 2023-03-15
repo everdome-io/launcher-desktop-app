@@ -1,10 +1,11 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "yarn cross-env BROWSER=none yarn start",
-    "beforeDevCommand": "yarn build",
+  "beforeBuildCommand": "yarn build",
+    "beforeDevCommand": "yarn cross-env BROWSER=none yarn start",
     "devPath": "http://localhost:3000",
-    "distDir": "../build"
+    "distDir": "../build",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "launcher-desktop-app",
