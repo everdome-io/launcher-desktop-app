@@ -1,6 +1,6 @@
 {
   "package": {
-    "productName": "Product Name",
+    "productName": "Everdome launcher",
     "version": "../package.json"
   },
   "build": {
