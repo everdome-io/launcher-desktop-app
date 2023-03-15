@@ -24,7 +24,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "nvmrc": "node -v > .nvmrc",
+    "postinstall": "yarn nvmrc",
+    "predev": "yarn nvmrc",
+    "tauri": "tauri",
+    "preinstall": "yarn global add sloc @tauri-apps/cli",
+    "update": "concurrently \"yarn upgrade \" \"cd src-tauri && cargo update && cargo clean\""
+
   },
   "eslintConfig": {
     "extends": [
