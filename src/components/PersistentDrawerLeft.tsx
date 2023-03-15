@@ -174,7 +174,7 @@ export default function PersistentDrawerLeft(props: any) {
                     style={{ flexGrow: 1, cursor: "pointer" }}
                   >
                     {location === "/"
-                      ? "Todo list"
+                      ? "TODO list"
                       : location.toUpperCase().replace("/", "")}
                   </Typography>
                 ) : (
@@ -184,7 +184,7 @@ export default function PersistentDrawerLeft(props: any) {
                       noWrap
                       style={{ flexGrow: 1, cursor: "pointer" }}
                     >
-                      Todo list
+                      TODO list
                     </Typography>
                   </Link>
                 )}

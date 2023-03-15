@@ -4,9 +4,9 @@
     "version": "../package.json"
   },
   "build": {
-  "beforeBuildCommand": "yarn build",
-    "beforeDevCommand": "yarn cross-env BROWSER=none yarn start",
-    "devPath": "http://localhost:3000",
+    "beforeDevCommand": "yarn start",
+    "beforeBuildCommand": "yarn build",
+    "devPath": "http://localhost:1420",
     "distDir": "../build",
     "withGlobalTauri": false
   },

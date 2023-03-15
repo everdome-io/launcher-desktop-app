@@ -14,26 +14,26 @@
 <title>index.html title</title>
 
 <body>
-    <noscript>JavaScript is required to use this app because this app is made with ReactJS</noscript>
-    <div id="root"></div>
-    <!--
+  <noscript>JavaScript is required to use this app because this app is made with ReactJS</noscript>
+  <div id="root"></div>
+  <!--
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
     -->
-    <script type="module" src="/src/index.tsx"></script>
-    <!-- Handle additional app launches (url, etc.) -->
-    <script type="module">
-        import { listen } from '@tauri-apps/api/event';
-        import { appWindow } from '@tauri-apps/api/window';
-        if (window.__TAURI__ !== undefined) {
-            await listen('new-instance',
-                ({ payload, ...eventObj }) => {
-                    appWindow.unminimize().then(() => appWindow.setFocus(true));
-                    let args = payload?.args;
-                    let cwd = payload?.cwd;
-                    if (args?.length > 1) { }
-                }
-            );
+  <script type="module" src="/src/index.tsx"></script>
+  <!-- Handle additional app launches (url, etc.) -->
+  <script type="module">
+    import { listen } from '@tauri-apps/api/event';
+    import { appWindow } from '@tauri-apps/api/window';
+    if (window.__TAURI__ !== undefined) {
+      await listen('new-instance',
+        ({ payload, ...eventObj }) => {
+          appWindow.unminimize().then(() => appWindow.setFocus(true));
+          let args = payload?.args;
+          let cwd = payload?.cwd;
+          if (args?.length > 1) { }
         }
-    </script>
+      );
+    }
+  </script>
 </body>
