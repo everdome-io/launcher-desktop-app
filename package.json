@@ -206,7 +206,7 @@
     },
     "extraResources": [
       "./assets/**"
-    ],
+    ]
   },
   "devEngines": {
     "node": ">=14.x",
