@@ -22,7 +22,7 @@ release/app/dist
 release/build
 .erb/dll
 
-src/app/
+src/app
 
 .idea
 npm-debug.log.*
