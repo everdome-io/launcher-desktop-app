@@ -12,8 +12,9 @@ import path from 'path';
 import { app, BrowserWindow, shell, ipcMain } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
+import { Channels } from '../interfaces';
 import MenuBuilder from './menu';
-import { resolveHtmlPath } from './util';
+import { downloadFile, resolveHtmlPath } from './util';
 
 class AppUpdater {
   constructor() {
@@ -135,3 +136,7 @@ app
     });
   })
   .catch(console.log);
+
+ipcMain.on(Channels['download-process'], (e, webFile) => {
+  downloadFile(webFile);
+});
