@@ -3,7 +3,8 @@ import { URL } from 'url';
 import path from 'path';
 import request from 'request';
 import * as fs from 'fs';
-import { WebFile } from '../interfaces';
+import { IpcMainEvent } from 'electron';
+import { Channels, DownloadStatus, WebFile } from '../interfaces';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -15,7 +16,7 @@ export function resolveHtmlPath(htmlFileName: string) {
   return `file://${path.resolve(__dirname, '../renderer/', htmlFileName)}`;
 }
 
-export function downloadFile(webFile: WebFile) {
+export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
   // Save variable to know progress
   let receivedBytes = 0;
   let totalBytes = 0;
@@ -42,5 +43,6 @@ export function downloadFile(webFile: WebFile) {
 
   req.on('end', () => {
     console.log('File succesfully downloaded');
+    event.reply(Channels.downloadProcess, DownloadStatus.finished);
   });
 }

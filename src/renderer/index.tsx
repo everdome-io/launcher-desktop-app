@@ -1,13 +1,19 @@
 import { createRoot } from 'react-dom/client';
+import { AppConfig, Channels, DownloadStatus } from '../interfaces';
 import App from './App';
+
+const initialConfig: AppConfig = { isFileDownloaded: false };
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
-root.render(<App />);
+function renderAppComponent() {
+  root.render(<App config={initialConfig} />);
+}
+renderAppComponent();
 
-// calling IPC exposed from preload script
-window.electron.ipcRenderer.once('ipc-example', (arg) => {
-  // eslint-disable-next-line no-console
-  console.log(arg);
+window.electron.ipcRenderer.once(Channels.downloadProcess, (text) => {
+  if (text === DownloadStatus.finished) {
+    initialConfig.isFileDownloaded = true;
+    renderAppComponent();
+  }
 });
-window.electron.ipcRenderer.sendMessage('ipc-example', ['ping']);
