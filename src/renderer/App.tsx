@@ -3,7 +3,6 @@ import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppConfig, Channels } from '../interfaces';
 import './App.css';
 
-// eslint-disable-next-line react/function-component-definition
 const Hello: FC<{ config: AppConfig }> = ({ config: { isFileDownloaded } }) => {
   const handleDownload = () => {
     window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
@@ -23,7 +22,6 @@ const Hello: FC<{ config: AppConfig }> = ({ config: { isFileDownloaded } }) => {
   );
 };
 
-// eslint-disable-next-line react/function-component-definition
 const App: FC<{ config: AppConfig }> = ({ config }) => {
   return (
     <Router>
