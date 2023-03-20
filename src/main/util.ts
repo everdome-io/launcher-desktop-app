@@ -36,8 +36,13 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
     const contentLength = data?.headers['content-length']?.toString();
     if (contentLength) {
       eventsInstance.reply({
-        channel: Channels.changeConfig,
-        message: { isFileDownloaded: false, duringDownload: true, progress: 0 },
+        channel: Channels.changeState,
+        message: {
+          isFileDownloaded: false,
+          duringDownload: true,
+          progress: 0,
+          isExtracted: false,
+        },
       });
       totalBytes = parseInt(contentLength, 10);
     }
@@ -48,11 +53,12 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
     receivedBytes += chunk.length;
     console.log(`Bytes received ${receivedBytes} of ${totalBytes}`);
     eventsInstance.reply({
-      channel: Channels.changeConfig,
+      channel: Channels.changeState,
       message: {
         isFileDownloaded: false,
         duringDownload: true,
         progress: (receivedBytes * 100) / totalBytes,
+        isExtracted: false,
       },
     });
   });
@@ -60,8 +66,13 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
   req.on('end', () => {
     console.log('File succesfully downloaded');
     eventsInstance.reply({
-      channel: Channels.changeConfig,
-      message: { isFileDownloaded: true, duringDownload: false, progress: 100 },
+      channel: Channels.changeState,
+      message: {
+        isFileDownloaded: true,
+        duringDownload: false,
+        progress: 100,
+        isExtracted: false,
+      },
     });
   });
 }

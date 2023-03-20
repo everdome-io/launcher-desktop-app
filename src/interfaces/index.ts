@@ -1,10 +1,14 @@
 export enum Channels {
   ipcExample = 'ipc-example',
   downloadProcess = 'download-process',
-  changeConfig = 'change-config',
+  extractGame = 'extract-game',
+  changeState = 'change-state',
 }
 export type WebFile = {
   link: string;
+  filepath: string;
+};
+export type LocalFile = {
   filepath: string;
 };
 
@@ -12,6 +16,8 @@ export type ElectronHandlerArgs<T> = T extends Channels.ipcExample
   ? string
   : T extends Channels.downloadProcess
   ? WebFile
+  : T extends Channels.extractGame
+  ? LocalFile
   : never;
 
 export enum DownloadStatus {
@@ -19,15 +25,16 @@ export enum DownloadStatus {
   in_progress = 'in_progress',
 }
 
-export type AppConfig = {
+export type AppState = {
   isFileDownloaded: boolean;
   duringDownload: boolean;
+  isExtracted: boolean;
   progress: number;
 };
 export type ElectronOnceArgs<T> = T extends Channels.ipcExample
   ? string
   : T extends Channels.downloadProcess
   ? DownloadStatus
-  : T extends Channels.changeConfig
-  ? AppConfig
+  : T extends Channels.changeState
+  ? AppState
   : never;

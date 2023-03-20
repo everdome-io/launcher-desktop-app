@@ -15,6 +15,7 @@ import log from 'electron-log';
 import { Channels } from '../interfaces';
 import MenuBuilder from './menu';
 import { downloadFile, resolveHtmlPath } from './util';
+import { eventsClient } from './events';
 
 class AppUpdater {
   constructor() {
@@ -133,4 +134,33 @@ app
 
 ipcMain.on(Channels.downloadProcess, (event, webFile) => {
   downloadFile(event, webFile);
+});
+
+ipcMain.on(Channels.extractGame, (event, localFile) => {
+  const eventsInstance = eventsClient(event);
+
+  const DecompressZip = require('decompress-zip');
+  const unzipper = new DecompressZip(path.join(localFile.filepath, 'game.zip'));
+
+  unzipper.on('error', function (error: { toString: () => any }) {
+    console.log('Caught an error');
+    console.log(error.toString());
+  });
+
+  unzipper.on('extract', function () {
+    console.log('Finished extracting');
+    eventsInstance.reply({
+      channel: Channels.changeState,
+      message: {
+        isFileDownloaded: false,
+        duringDownload: false,
+        progress: 0,
+        isExtracted: true,
+      },
+    });
+  });
+
+  unzipper.extract({
+    path: localFile.filepath,
+  });
 });

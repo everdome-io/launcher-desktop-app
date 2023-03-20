@@ -1,18 +1,25 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import { AppConfig, Channels } from '../interfaces';
+import { AppState, Channels } from '../interfaces';
 import './App.css';
 import './bootstrap.css';
 
-const FileDownloader: FC<{ config: AppConfig }> = ({
-  config: { isFileDownloaded, duringDownload, progress },
+const filePath = '/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app';
+const FileDownloader: FC<{ state: AppState }> = ({
+  state: { isFileDownloaded, duringDownload, progress, isExtracted },
 }) => {
   const handleDownload = () => {
     window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
       link: 'https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip',
-      filepath: '/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app',
+      filepath: filePath,
     });
   };
+  useEffect(() => {
+    if (isFileDownloaded)
+      window.electron.ipcRenderer.sendMessage(Channels.extractGame, {
+        filepath: filePath,
+      });
+  }, [isFileDownloaded]);
   console.log(progress);
 
   return (
@@ -22,6 +29,7 @@ const FileDownloader: FC<{ config: AppConfig }> = ({
           Download
         </button>
         {isFileDownloaded && <div>Pobrano</div>}
+        {isExtracted && <div>Wypakowano</div>}
         {duringDownload && (
           <div className="container text-center">
             <h4 id="progress-title" className="my-2 text-white">
@@ -40,11 +48,11 @@ const FileDownloader: FC<{ config: AppConfig }> = ({
   );
 };
 
-const App: FC<{ config: AppConfig }> = ({ config }) => {
+const App: FC<{ state: AppState }> = ({ state }) => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<FileDownloader config={config} />} />
+        <Route path="/" element={<FileDownloader state={state} />} />
       </Routes>
     </Router>
   );

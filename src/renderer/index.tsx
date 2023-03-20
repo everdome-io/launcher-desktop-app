@@ -1,21 +1,22 @@
 import { createRoot } from 'react-dom/client';
-import { AppConfig, Channels } from '../interfaces';
+import { AppState, Channels } from '../interfaces';
 import App from './App';
 
-let config: AppConfig = {
+let state: AppState = {
   isFileDownloaded: false,
   duringDownload: false,
+  isExtracted: false,
   progress: 0,
 };
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 function renderAppComponent() {
-  root.render(<App config={config} />);
+  root.render(<App state={state} />);
 }
 renderAppComponent();
 
-window.electron.ipcRenderer.on(Channels.changeConfig, (updatedConfig) => {
-  config = updatedConfig;
+window.electron.ipcRenderer.on(Channels.changeState, (updatedState) => {
+  state = updatedState;
   renderAppComponent();
 });
