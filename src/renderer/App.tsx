@@ -4,8 +4,7 @@ import './App.css';
 
 function Hello() {
   const handleDownload = () => {
-    console.log('dupa1');
-    window.electron.ipcRenderer.sendMessage(Channels['download-process'], {
+    window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
       link: 'https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip',
       filepath: '/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app',
     });

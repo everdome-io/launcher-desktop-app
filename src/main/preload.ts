@@ -5,13 +5,16 @@ import { Channels, ElectronHandlerArgs } from '../interfaces';
 
 const electronHandler = {
   ipcRenderer: {
-    sendMessage(channel: Channels, args?: ElectronHandlerArgs) {
+    sendMessage<T extends Channels>(channel: T, args: ElectronHandlerArgs<T>) {
       ipcRenderer.send(channel, args);
     },
-    on(channel: Channels, func: (args?: ElectronHandlerArgs) => void) {
+    on<T extends Channels>(
+      channel: T,
+      func: (args: ElectronHandlerArgs<T>) => void
+    ) {
       const subscription = (
         _event: IpcRendererEvent,
-        args: ElectronHandlerArgs
+        args: ElectronHandlerArgs<T>
       ) => func(args);
       ipcRenderer.on(channel, subscription);
 
@@ -19,7 +22,10 @@ const electronHandler = {
         ipcRenderer.removeListener(channel, subscription);
       };
     },
-    once(channel: Channels, func: (args?: ElectronHandlerArgs) => void) {
+    once<T extends Channels>(
+      channel: T,
+      func: (args: ElectronHandlerArgs<T>) => void
+    ) {
       ipcRenderer.once(channel, (_event, args) => func(args));
     },
   },

@@ -42,6 +42,5 @@ export function downloadFile(webFile: WebFile) {
 
   req.on('end', () => {
     console.log('File succesfully downloaded');
-    
   });
 }

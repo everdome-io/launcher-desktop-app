@@ -137,6 +137,6 @@ app
   })
   .catch(console.log);
 
-ipcMain.on(Channels['download-process'], (e, webFile) => {
+ipcMain.on(Channels.downloadProcess, (e, webFile) => {
   downloadFile(webFile);
 });
