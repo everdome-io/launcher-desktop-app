@@ -4,7 +4,7 @@ import path from 'path';
 import request from 'request';
 import * as fs from 'fs';
 import { IpcMainEvent } from 'electron';
-import { Channels, DownloadStatus, WebFile } from '../interfaces';
+import { Channels, WebFile } from '../interfaces';
 import { eventsClient } from './events';
 
 export function resolveHtmlPath(htmlFileName: string) {
@@ -34,20 +34,34 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
   // Change the total bytes value to get progress later.
   req.on('response', (data) => {
     const contentLength = data?.headers['content-length']?.toString();
-    if (contentLength) totalBytes = parseInt(contentLength, 10);
+    if (contentLength) {
+      eventsInstance.reply({
+        channel: Channels.changeConfig,
+        message: { isFileDownloaded: false, duringDownload: true, progress: 0 },
+      });
+      totalBytes = parseInt(contentLength, 10);
+    }
   });
 
   // Update the received bytes
   req.on('data', (chunk) => {
     receivedBytes += chunk.length;
     console.log(`Bytes received ${receivedBytes} of ${totalBytes}`);
+    eventsInstance.reply({
+      channel: Channels.changeConfig,
+      message: {
+        isFileDownloaded: false,
+        duringDownload: true,
+        progress: (receivedBytes * 100) / totalBytes,
+      },
+    });
   });
 
   req.on('end', () => {
     console.log('File succesfully downloaded');
     eventsInstance.reply({
-      channel: Channels.downloadProcess,
-      message: DownloadStatus.finished,
+      channel: Channels.changeConfig,
+      message: { isFileDownloaded: true, duringDownload: false, progress: 100 },
     });
   });
 }

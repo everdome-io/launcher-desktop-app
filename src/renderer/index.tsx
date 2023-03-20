@@ -1,19 +1,21 @@
 import { createRoot } from 'react-dom/client';
-import { AppConfig, Channels, DownloadStatus } from '../interfaces';
+import { AppConfig, Channels } from '../interfaces';
 import App from './App';
 
-const initialConfig: AppConfig = { isFileDownloaded: false };
+let config: AppConfig = {
+  isFileDownloaded: false,
+  duringDownload: false,
+  progress: 0,
+};
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 function renderAppComponent() {
-  root.render(<App config={initialConfig} />);
+  root.render(<App config={config} />);
 }
 renderAppComponent();
 
-window.electron.ipcRenderer.once(Channels.downloadProcess, (text) => {
-  if (text === DownloadStatus.finished) {
-    initialConfig.isFileDownloaded = true;
-    renderAppComponent();
-  }
+window.electron.ipcRenderer.on(Channels.changeConfig, (updatedConfig) => {
+  config = updatedConfig;
+  renderAppComponent();
 });
