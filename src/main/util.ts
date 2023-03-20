@@ -5,6 +5,7 @@ import request from 'request';
 import * as fs from 'fs';
 import { IpcMainEvent } from 'electron';
 import { Channels, DownloadStatus, WebFile } from '../interfaces';
+import { eventsClient } from './events';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -17,6 +18,7 @@ export function resolveHtmlPath(htmlFileName: string) {
 }
 
 export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
+  const eventsInstance = eventsClient(event);
   // Save variable to know progress
   let receivedBytes = 0;
   let totalBytes = 0;
@@ -43,6 +45,9 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
 
   req.on('end', () => {
     console.log('File succesfully downloaded');
-    event.reply(Channels.downloadProcess, DownloadStatus.finished);
+    eventsInstance.reply({
+      channel: Channels.downloadProcess,
+      message: DownloadStatus.finished,
+    });
   });
 }
