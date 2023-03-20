@@ -12,6 +12,7 @@ import path from 'path';
 import { app, BrowserWindow, shell, ipcMain } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
+import child from 'child_process';
 import { Channels } from '../interfaces';
 import MenuBuilder from './menu';
 import { downloadFile, resolveHtmlPath } from './util';
@@ -163,4 +164,9 @@ ipcMain.on(Channels.extractGame, (event, localFile) => {
   unzipper.extract({
     path: localFile.filepath,
   });
+});
+
+ipcMain.on(Channels.openGame, function (event, localPath) {
+  console.log('opening game...');
+  child.execSync(localPath);
 });

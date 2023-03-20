@@ -4,32 +4,53 @@ import { AppState, Channels } from '../interfaces';
 import './App.css';
 import './bootstrap.css';
 
-const filePath = '/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app';
+const localPath = '/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app';
+
 const FileDownloader: FC<{ state: AppState }> = ({
   state: { isFileDownloaded, duringDownload, progress, isExtracted },
 }) => {
   const handleDownload = () => {
     window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
-      link: 'https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip',
-      filepath: filePath,
+      link: 'https://github.com/everdome-io/launcher-desktop-app/releases/download/untagged-728ff4e3b2d5df3c3dd3/Product.Name.app.tar.gz',
+      filepath: localPath,
     });
+  };
+  const handlePlay = () => {
+    window.electron.ipcRenderer.sendMessage(
+      Channels.openGame,
+      `${localPath}/steam.dmg`
+    );
   };
   useEffect(() => {
     if (isFileDownloaded)
       window.electron.ipcRenderer.sendMessage(Channels.extractGame, {
-        filepath: filePath,
+        filepath: localPath,
       });
   }, [isFileDownloaded]);
-  console.log(progress);
+  console.log(isFileDownloaded, duringDownload, progress, isExtracted);
 
   return (
     <div>
       <div className="FileDownloader">
-        <button type="button" onClick={handleDownload}>
-          Download
-        </button>
+        {!isFileDownloaded && (
+          <button
+            type="button"
+            className="my-5 btn btn-danger"
+            onClick={handleDownload}
+          >
+            Download
+          </button>
+        )}
         {isFileDownloaded && <div>Pobrano</div>}
-        {isExtracted && <div>Wypakowano</div>}
+        {isExtracted && (
+          <button
+            type="button"
+            className="my-5 btn btn-danger d-none"
+            onClick={handlePlay}
+          >
+            Play
+          </button>
+        )}
         {duringDownload && (
           <div className="container text-center">
             <h4 id="progress-title" className="my-2 text-white">

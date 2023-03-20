@@ -3,6 +3,7 @@ export enum Channels {
   downloadProcess = 'download-process',
   extractGame = 'extract-game',
   changeState = 'change-state',
+  openGame = 'open-game',
 }
 export type WebFile = {
   link: string;
@@ -18,6 +19,8 @@ export type ElectronHandlerArgs<T> = T extends Channels.ipcExample
   ? WebFile
   : T extends Channels.extractGame
   ? LocalFile
+  : T extends Channels.openGame
+  ? string
   : never;
 
 export enum DownloadStatus {
@@ -37,4 +40,6 @@ export type ElectronOnceArgs<T> = T extends Channels.ipcExample
   ? DownloadStatus
   : T extends Channels.changeState
   ? AppState
+  : T extends Channels.openGame
+  ? string
   : never;
