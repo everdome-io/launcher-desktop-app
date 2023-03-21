@@ -15,7 +15,7 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import { Channels } from '../interfaces';
 import MenuBuilder from './menu';
-import { downloadFile, resolveHtmlPath } from './util';
+import { downloadFile, resolveHtmlPath, chmodPlusX, installDMG } from './util';
 import { eventsClient } from './events';
 
 class AppUpdater {
@@ -169,12 +169,8 @@ ipcMain.on(Channels.extractGame, (event, localFile) => {
 
 ipcMain.on(Channels.openGame, async function (event, userPath) {
   console.log('opening game...');
-  await dialog.showOpenDialog({
-    defaultPath: userPath,
-    properties: ['openFile'],
-    message: 'To be changed',
-    buttonLabel: 'Play',
-  });
+  chmodPlusX(userPath);
+  installDMG(userPath);
 });
 
 ipcMain.on(Channels.openDialog, async function (event) {
