@@ -1,9 +1,9 @@
 import { IpcMainEvent } from 'electron';
-import { Channels, ElectronOnceArgs } from '../interfaces';
+import { Channels, ElectronEventArgs } from '../interfaces';
 
 type ReplyArgs<T extends Channels> = {
   channel: T;
-  message: ElectronOnceArgs<T>;
+  message: ElectronEventArgs<T>;
 };
 export const eventsClient = (event: IpcMainEvent) => {
   const reply = <T extends Channels>(args: ReplyArgs<T>) => {

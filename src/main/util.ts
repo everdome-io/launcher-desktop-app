@@ -42,6 +42,7 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
           duringDownload: true,
           progress: 0,
           isExtracted: false,
+          localUserPath: '',
         },
       });
       totalBytes = parseInt(contentLength, 10);
@@ -59,6 +60,7 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
         duringDownload: true,
         progress: (receivedBytes * 100) / totalBytes,
         isExtracted: false,
+        localUserPath: '',
       },
     });
   });
@@ -72,6 +74,7 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
         duringDownload: false,
         progress: 100,
         isExtracted: false,
+        localUserPath: '',
       },
     });
   });

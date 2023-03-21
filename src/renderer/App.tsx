@@ -4,35 +4,57 @@ import { AppState, Channels } from '../interfaces';
 import './App.css';
 import './bootstrap.css';
 
-const localPath = '/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app';
-
 const FileDownloader: FC<{ state: AppState }> = ({
-  state: { isFileDownloaded, duringDownload, progress, isExtracted },
+  state: {
+    isFileDownloaded,
+    duringDownload,
+    progress,
+    isExtracted,
+    localUserPath,
+  },
 }) => {
   const handleDownload = () => {
     window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
-      link: 'https://github.com/everdome-io/launcher-desktop-app/releases/download/untagged-728ff4e3b2d5df3c3dd3/Product.Name.app.tar.gz',
-      filepath: localPath,
+      link: 'https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip',
+      filepath: localUserPath,
     });
+  };
+  const handlePickPath = () => {
+    window.electron.ipcRenderer.sendMessage(Channels.openDialog, null);
   };
   const handlePlay = () => {
     window.electron.ipcRenderer.sendMessage(
       Channels.openGame,
-      `${localPath}/steam.dmg`
+      `/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app/steam.dmg`
     );
   };
   useEffect(() => {
     if (isFileDownloaded)
       window.electron.ipcRenderer.sendMessage(Channels.extractGame, {
-        filepath: localPath,
+        filepath: localUserPath,
       });
-  }, [isFileDownloaded]);
-  console.log(isFileDownloaded, duringDownload, progress, isExtracted);
+  }, [isFileDownloaded, localUserPath]);
+  console.log(
+    isFileDownloaded,
+    duringDownload,
+    progress,
+    isExtracted,
+    localUserPath
+  );
 
   return (
     <div>
       <div className="FileDownloader">
-        {!isFileDownloaded && (
+        {localUserPath === '' && (
+          <button
+            type="button"
+            className="my-5 btn btn-danger"
+            onClick={handlePickPath}
+          >
+            Pick destination folder
+          </button>
+        )}
+        {!isFileDownloaded && !isExtracted && localUserPath !== '' && (
           <button
             type="button"
             className="my-5 btn btn-danger"
@@ -45,7 +67,7 @@ const FileDownloader: FC<{ state: AppState }> = ({
         {isExtracted && (
           <button
             type="button"
-            className="my-5 btn btn-danger d-none"
+            className="my-5 btn btn-danger"
             onClick={handlePlay}
           >
             Play
