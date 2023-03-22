@@ -54,7 +54,6 @@ export const FileDownloader: FC<{ state: AppState }> = ({
         <button type="button" className={className} onClick={handleOnClick}>
           <div className="DownloadButtonText">{buttonText}</div>
         </button>
-        <div className="DownloadVerText">Version: ED-0.16.66</div>
       </div>
     </div>
   );
