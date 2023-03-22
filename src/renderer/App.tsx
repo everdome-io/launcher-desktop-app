@@ -60,7 +60,7 @@ const FileDownloader: FC<{ state: AppState }> = ({
             className="my-5 btn btn-danger"
             onClick={handleDownload}
           >
-            Download
+            Download 1.1.0
           </button>
         )}
         {isFileDownloaded && <div>Pobrano</div>}
