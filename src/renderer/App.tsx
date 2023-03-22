@@ -15,7 +15,7 @@ const FileDownloader: FC<{ state: AppState }> = ({
 }) => {
   const handleDownload = () => {
     window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
-      link: 'https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip',
+      link: 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Win64_Shipping_002234.rar',
       filepath: localUserPath,
     });
   };
