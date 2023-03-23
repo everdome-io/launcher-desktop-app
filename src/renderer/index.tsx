@@ -3,10 +3,12 @@ import { AppState, Channels } from '../interfaces';
 import App from './App';
 
 let state: AppState = {
-  isFileDownloaded: false,
+  isDownloaded: false,
   duringDownload: false,
   isExtracted: false,
-  progress: 0,
+  duringExtract: false,
+  downloadProgress: 0,
+  extractProgress: 0,
   localUserPath: '',
 };
 

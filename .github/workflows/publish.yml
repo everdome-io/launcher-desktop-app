@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - EV-43/updates
+      - master
 
 jobs:
   publish:

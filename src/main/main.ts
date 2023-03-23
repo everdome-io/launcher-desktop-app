@@ -15,7 +15,13 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import { Channels } from '../interfaces';
 import MenuBuilder from './menu';
-import { downloadFile, resolveHtmlPath, chmodPlusX, installDMG } from './util';
+import {
+  downloadFile,
+  resolveHtmlPath,
+  chmodPlusX,
+  installDMG,
+  extractWithProgress,
+} from './util';
 import { eventsClient } from './events';
 
 class AppUpdater {
@@ -137,36 +143,6 @@ ipcMain.on(Channels.downloadProcess, (event, webFile) => {
   downloadFile(event, webFile);
 });
 
-ipcMain.on(Channels.extractGame, (event, localFile) => {
-  const eventsInstance = eventsClient(event);
-
-  const DecompressZip = require('decompress-zip');
-  const unzipper = new DecompressZip(path.join(localFile.filepath, 'game.zip'));
-
-  unzipper.on('error', function (error: { toString: () => any }) {
-    console.log('Caught an error');
-    console.log(error.toString());
-  });
-
-  unzipper.on('extract', function () {
-    console.log('Finished extracting');
-    eventsInstance.reply({
-      channel: Channels.changeState,
-      message: {
-        isFileDownloaded: false,
-        duringDownload: false,
-        progress: 0,
-        isExtracted: true,
-        localUserPath: '',
-      },
-    });
-  });
-
-  unzipper.extract({
-    path: localFile.filepath,
-  });
-});
-
 ipcMain.on(Channels.openGame, async function (event, userPath) {
   console.log('opening game...');
   chmodPlusX(userPath);
@@ -183,11 +159,68 @@ ipcMain.on(Channels.openDialog, async function (event) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      isFileDownloaded: false,
-      duringDownload: false,
-      progress: 0,
-      isExtracted: false,
       localUserPath: localUserPath.filePaths[0],
+      isDownloaded: false,
+      duringDownload: false,
+      downloadProgress: 0,
+      isExtracted: false,
+      extractProgress: 0,
+      duringExtract: false,
     },
   });
+});
+
+ipcMain.on(Channels.extractGame, async (event, localFile) => {
+  const eventsInstance = eventsClient(event);
+
+  eventsInstance.reply({
+    channel: Channels.changeState,
+    message: {
+      localUserPath: '',
+      isDownloaded: true,
+      duringDownload: false,
+      downloadProgress: 100,
+      isExtracted: false,
+      extractProgress: 0,
+      duringExtract: true,
+    },
+  });
+
+  await extractWithProgress(
+    path.join(localFile.filepath, 'game.zip'),
+    localFile.filepath,
+    (progress) => {
+      console.log(`Extraction progress: ${progress.toFixed(2)}%`);
+      eventsInstance.reply({
+        channel: Channels.changeState,
+        message: {
+          localUserPath: '',
+          isDownloaded: false,
+          duringDownload: false,
+          downloadProgress: 100,
+          isExtracted: false,
+          extractProgress: progress,
+          duringExtract: true,
+        },
+      });
+    }
+  )
+    .then(() => {
+      console.log('Extraction completed');
+      eventsInstance.reply({
+        channel: Channels.changeState,
+        message: {
+          localUserPath: '',
+          isDownloaded: false,
+          duringDownload: false,
+          downloadProgress: 100,
+          isExtracted: true,
+          extractProgress: 100,
+          duringExtract: false,
+        },
+      });
+    })
+    .catch((error) => {
+      console.error('Error during extraction:', error);
+    });
 });
