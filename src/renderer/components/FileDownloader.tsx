@@ -1,66 +1,59 @@
+import { AppState, Channels } from '@interfaces';
 import { FC, useEffect } from 'react';
-import { AppState, Channels } from '../../interfaces';
-
-const localPath = '/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
-  state: { isFileDownloaded, duringDownload, progress, isExtracted },
+  state: {
+    isFileDownloaded,
+    duringDownload,
+    progress,
+    isExtracted,
+    localUserPath,
+  },
 }) => {
-  const handleDownload = () => {
+  let className = 'DownloadButton';
+  let buttonText = 'DOWNLOAD';
+  const couldDownload =
+    !isFileDownloaded &&
+    !duringDownload &&
+    !isExtracted &&
+    localUserPath !== '' &&
+    localUserPath !== undefined;
+  if (couldDownload) {
     window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
-      link: 'https://github.com/everdome-io/launcher-desktop-app/releases/download/untagged-728ff4e3b2d5df3c3dd3/Product.Name.app.tar.gz',
-      filepath: localPath,
+      link: 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Win64_Shipping_002234.rar',
+      filepath: localUserPath,
     });
-  };
-  const handlePlay = () => {
-    window.electron.ipcRenderer.sendMessage(
-      Channels.openGame,
-      `${localPath}/steam.dmg`
-    );
+  }
+  if (duringDownload) {
+    className = 'DuringDownloadButton';
+    buttonText = `${progress.toFixed(2)} %`;
+  } else if (isExtracted) {
+    className = 'DownloadButton';
+    buttonText = 'PLAY';
+  }
+  const handleOnClick = () => {
+    if (isExtracted) {
+      window.electron.ipcRenderer.sendMessage(
+        Channels.openGame,
+        `/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app/steam.dmg`
+      );
+    } else {
+      window.electron.ipcRenderer.sendMessage(Channels.openDialog, null);
+    }
   };
   useEffect(() => {
     if (isFileDownloaded)
       window.electron.ipcRenderer.sendMessage(Channels.extractGame, {
-        filepath: localPath,
+        filepath: localUserPath,
       });
-  }, [isFileDownloaded]);
-  console.log(isFileDownloaded, duringDownload, progress, isExtracted);
+  }, [isFileDownloaded, localUserPath]);
 
   return (
     <div>
       <div className="FileDownloader">
-        {!isFileDownloaded && (
-          <button
-            type="button"
-            className="my-5 btn btn-danger"
-            onClick={handleDownload}
-          >
-            Download 1.1.0
-          </button>
-        )}
-        {isFileDownloaded && <div>Pobrano</div>}
-        {isExtracted && (
-          <button
-            type="button"
-            className="my-5 btn btn-danger d-none"
-            onClick={handlePlay}
-          >
-            Play
-          </button>
-        )}
-        {duringDownload && (
-          <div className="container text-center">
-            <h4 id="progress-title" className="my-2 text-white">
-              Downloading...
-            </h4>
-            <p className="my-5 text-muted" id="dl-filename">
-              Everdome.zip
-            </p>
-            <div className="progress-bar bg-danger" role="progressbar">
-              {progress.toString().split('.')[0]}%
-            </div>
-          </div>
-        )}
+        <button type="button" className={className} onClick={handleOnClick}>
+          <div className="DownloadButtonText">{buttonText}</div>
+        </button>
       </div>
     </div>
   );
