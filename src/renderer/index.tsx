@@ -7,6 +7,7 @@ let state: AppState = {
   duringDownload: false,
   isExtracted: false,
   progress: 0,
+  localUserPath: '',
 };
 
 const container = document.getElementById('root')!;
@@ -16,7 +17,16 @@ function renderAppComponent() {
 }
 renderAppComponent();
 
-window.electron.ipcRenderer.on(Channels.changeState, (updatedState) => {
-  state = updatedState;
-  renderAppComponent();
-});
+window.electron.ipcRenderer.on(
+  Channels.changeState,
+  (updatedState: AppState) => {
+    state = {
+      ...updatedState,
+      localUserPath:
+        updatedState.localUserPath !== ''
+          ? updatedState.localUserPath
+          : state.localUserPath,
+    };
+    renderAppComponent();
+  }
+);

@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* eslint global-require: off, no-console: off, promise/always-return: off */
 
 /**
@@ -9,13 +10,12 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, dialog } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
-import child from 'child_process';
 import { Channels } from '../interfaces';
 import MenuBuilder from './menu';
-import { downloadFile, resolveHtmlPath } from './util';
+import { downloadFile, resolveHtmlPath, chmodPlusX, installDMG } from './util';
 import { eventsClient } from './events';
 
 class AppUpdater {
@@ -157,6 +157,7 @@ ipcMain.on(Channels.extractGame, (event, localFile) => {
         duringDownload: false,
         progress: 0,
         isExtracted: true,
+        localUserPath: '',
       },
     });
   });
@@ -166,7 +167,27 @@ ipcMain.on(Channels.extractGame, (event, localFile) => {
   });
 });
 
-ipcMain.on(Channels.openGame, function (event, localPath) {
+ipcMain.on(Channels.openGame, async function (event, userPath) {
   console.log('opening game...');
-  child.execSync(localPath);
+  chmodPlusX(userPath);
+  installDMG(userPath);
+});
+
+ipcMain.on(Channels.openDialog, async function (event) {
+  const eventsInstance = eventsClient(event);
+
+  const localUserPath = await dialog.showOpenDialog({
+    properties: ['openDirectory'],
+    message: 'Pick directory to store everdome file',
+  });
+  eventsInstance.reply({
+    channel: Channels.changeState,
+    message: {
+      isFileDownloaded: false,
+      duringDownload: false,
+      progress: 0,
+      isExtracted: false,
+      localUserPath: localUserPath.filePaths[0],
+    },
+  });
 });

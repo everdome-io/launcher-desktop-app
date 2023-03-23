@@ -4,6 +4,8 @@ import path from 'path';
 import request from 'request';
 import * as fs from 'fs';
 import { IpcMainEvent } from 'electron';
+import { exec } from 'child_process';
+import * as sudo from 'sudo-prompt';
 import { Channels, WebFile } from '../interfaces';
 import { eventsClient } from './events';
 
@@ -42,6 +44,7 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
           duringDownload: true,
           progress: 0,
           isExtracted: false,
+          localUserPath: '',
         },
       });
       totalBytes = parseInt(contentLength, 10);
@@ -59,6 +62,7 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
         duringDownload: true,
         progress: (receivedBytes * 100) / totalBytes,
         isExtracted: false,
+        localUserPath: '',
       },
     });
   });
@@ -72,7 +76,84 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
         duringDownload: false,
         progress: 100,
         isExtracted: false,
+        localUserPath: '',
       },
     });
+  });
+}
+
+export function chmodPlusX(filePath: string): void {
+  exec(`chmod +x ${filePath}`, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error executing chmod: ${error.message}`);
+      return;
+    }
+
+    if (stderr) {
+      console.error(`Standard error output: ${stderr}`);
+      return;
+    }
+
+    console.log(`Successfully executed chmod +x on ${filePath}`);
+  });
+}
+
+export async function execCommand(command: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    exec(command, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error executing command: ${error.message}`);
+        reject(error);
+        return;
+      }
+
+      if (stderr) {
+        console.error(`Standard error output: ${stderr}`);
+        reject(new Error(stderr));
+        return;
+      }
+
+      console.log(`Successfully executed command: ${command}`);
+      resolve();
+    });
+  });
+}
+
+function execSudoCommand(
+  command: string,
+  // eslint-disable-next-line no-unused-vars
+  callback: (error: Error | null) => void
+): void {
+  sudo.exec(
+    command,
+    { name: 'Your Application Name' },
+    (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error executing command: ${error.message}`);
+        callback(error);
+        return;
+      }
+
+      if (stderr) {
+        console.error(`Standard error output: ${stderr}`);
+        callback(new Error(stderr));
+        return;
+      }
+
+      console.log(`Successfully executed command: ${command}`);
+      callback(null);
+    }
+  );
+}
+
+export function installDMG(dmgPath: string): void {
+  const scriptPath = path.join(__dirname, 'install_dmg.sh');
+  execSudoCommand(`sh "${scriptPath}" "${dmgPath}"`, (error) => {
+    if (error) {
+      console.error('An error occurred:', error);
+      return;
+    }
+
+    console.log('Application has been successfully installed.');
   });
 }
