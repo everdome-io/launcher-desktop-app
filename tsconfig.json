@@ -15,7 +15,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "allowJs": true,
     "outDir": ".erb/dll"
   },

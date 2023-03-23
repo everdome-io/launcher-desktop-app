@@ -10,6 +10,9 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/no-import-module-exports': 'off',
     'import/prefer-default-export': 'off',
+    'no-unused-vars': 'off',
+    'new-cap': 'off',
+    'no-await-in-loop': 'off',
   },
   parserOptions: {
     ecmaVersion: 2020,

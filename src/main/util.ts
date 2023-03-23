@@ -6,8 +6,10 @@ import * as fs from 'fs';
 import { IpcMainEvent } from 'electron';
 import { exec } from 'child_process';
 import * as sudo from 'sudo-prompt';
-import { Channels, WebFile } from '../interfaces';
+import StreamZip from 'node-stream-zip';
 import { eventsClient } from './events';
+
+import { Channels, WebFile } from '../interfaces';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -40,9 +42,11 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
-          isFileDownloaded: false,
           duringDownload: true,
-          progress: 0,
+          isDownloaded: false,
+          extractProgress: 0,
+          downloadProgress: 0,
+          duringExtract: false,
           isExtracted: false,
           localUserPath: '',
         },
@@ -58,9 +62,11 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
-        isFileDownloaded: false,
         duringDownload: true,
-        progress: (receivedBytes * 100) / totalBytes,
+        isDownloaded: false,
+        downloadProgress: (receivedBytes * 100) / totalBytes,
+        extractProgress: 0,
+        duringExtract: false,
         isExtracted: false,
         localUserPath: '',
       },
@@ -72,9 +78,11 @@ export function downloadFile(event: IpcMainEvent, webFile: WebFile) {
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
-        isFileDownloaded: true,
+        isDownloaded: true,
         duringDownload: false,
-        progress: 100,
+        downloadProgress: 100,
+        extractProgress: 0,
+        duringExtract: false,
         isExtracted: false,
         localUserPath: '',
       },
@@ -121,7 +129,6 @@ export async function execCommand(command: string): Promise<void> {
 
 function execSudoCommand(
   command: string,
-  // eslint-disable-next-line no-unused-vars
   callback: (error: Error | null) => void
 ): void {
   sudo.exec(
@@ -136,7 +143,7 @@ function execSudoCommand(
 
       if (stderr) {
         console.error(`Standard error output: ${stderr}`);
-        callback(new Error(stderr));
+        callback(new Error(stderr.toString()));
         return;
       }
 
@@ -156,4 +163,55 @@ export function installDMG(dmgPath: string): void {
 
     console.log('Application has been successfully installed.');
   });
+}
+
+async function getEntries(filePath: string): Promise<StreamZip.ZipEntry[]> {
+  const zip = new StreamZip.async({ file: filePath });
+  const entries = await zip.entries();
+  const files: StreamZip.ZipEntry[] = [];
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (const entryName in entries) {
+    if (!entryName.startsWith('__MACOSX/')) {
+      files.push(entries[entryName]);
+    }
+  }
+
+  await zip.close();
+  return files;
+}
+
+async function extractEntry(
+  filePath: string,
+  entry: StreamZip.ZipEntry,
+  destination: string
+): Promise<void> {
+  const zip = new StreamZip.async({ file: filePath });
+  const outputPath = path.join(destination, entry.name);
+
+  await zip.extract(entry.name, outputPath);
+  await zip.close();
+}
+
+export async function extractWithProgress(
+  filePath: string,
+  destination: string,
+  progressCallback: (percent: number) => void
+): Promise<void> {
+  const entries = await getEntries(filePath);
+  const totalSize = entries.reduce((sum, entry) => sum + entry.size, 0);
+
+  let extractedSize = 0;
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (const entry of entries) {
+    try {
+      await extractEntry(filePath, entry, destination);
+      extractedSize += entry.size;
+      const percent = (extractedSize / totalSize) * 100;
+      progressCallback(percent);
+    } catch (error) {
+      console.error('Error during extraction:', error);
+    }
+  }
 }

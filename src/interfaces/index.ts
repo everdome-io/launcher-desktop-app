@@ -24,10 +24,15 @@ export type ElectronHandlerArgs<T> = T extends Channels.downloadProcess
   : never;
 
 export type AppState = {
-  isFileDownloaded: boolean;
+  // download
+  isDownloaded: boolean;
   duringDownload: boolean;
+  downloadProgress: number;
+  // extract
+  duringExtract: boolean;
   isExtracted: boolean;
-  progress: number;
+  extractProgress: number;
+
   localUserPath: string;
 };
 export type ElectronEventArgs<T> = T extends Channels.changeState
