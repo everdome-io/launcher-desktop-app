@@ -3,17 +3,20 @@ import { AppState, Channels } from '../../interfaces';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: {
-    isFileDownloaded,
+    isDownloaded,
     duringDownload,
-    progress,
+    downloadProgress,
+    extractProgress,
+    duringExtract,
     isExtracted,
     localUserPath,
   },
 }) => {
   let className = 'DownloadButton';
   let buttonText = 'DOWNLOAD';
+  let progressText = null;
   const couldDownload =
-    !isFileDownloaded &&
+    !isDownloaded &&
     !duringDownload &&
     !isExtracted &&
     localUserPath !== '' &&
@@ -26,33 +29,53 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   }
   if (duringDownload) {
     className = 'DuringDownloadButton';
-    buttonText = `${progress.toFixed(2)} %`;
+    buttonText = `${downloadProgress.toFixed(2)} %`;
+    progressText = 'Downloading...';
+  } else if (duringExtract) {
+    className = 'DuringDownloadButton';
+    buttonText = `${extractProgress.toFixed(2)} %`;
+    progressText = 'Extracting...';
   } else if (isExtracted) {
     className = 'DownloadButton';
     buttonText = 'PLAY';
+    progressText = null;
   }
   const handleOnClick = () => {
     if (isExtracted) {
       window.electron.ipcRenderer.sendMessage(
         Channels.openGame,
-        `/Users/pawelmizwa/PCRepos/launcher-desktop-app/src/app/steam.dmg`
+        `${localUserPath}/steam.dmg`
       );
     } else {
       window.electron.ipcRenderer.sendMessage(Channels.openDialog, null);
     }
   };
   useEffect(() => {
-    if (isFileDownloaded)
+    if (isDownloaded)
       window.electron.ipcRenderer.sendMessage(Channels.extractGame, {
         filepath: localUserPath,
       });
-  }, [isFileDownloaded, localUserPath]);
+  }, [isDownloaded, localUserPath]);
 
   return (
     <div>
       <div className="FileDownloader">
-        <button type="button" className={className} onClick={handleOnClick}>
+        <button
+          type="button"
+          className={className}
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-around',
+          }}
+          onClick={handleOnClick}
+        >
           <div className="DownloadButtonText">{buttonText}</div>
+          {progressText !== null && (
+            <div style={{ color: 'white', fontSize: '12px' }}>
+              {progressText}
+            </div>
+          )}
         </button>
       </div>
     </div>
