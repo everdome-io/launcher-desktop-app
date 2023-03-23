@@ -1,5 +1,5 @@
+import { AppState, Channels } from '@interfaces';
 import { FC, useEffect } from 'react';
-import { AppState, Channels } from '../../interfaces';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: {
