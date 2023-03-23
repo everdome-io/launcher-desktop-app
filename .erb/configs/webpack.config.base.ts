@@ -9,8 +9,9 @@ import webpackPaths from './webpack.paths';
 import { dependencies as externals } from '../../release/app/package.json';
 
 const aliases = {
-  '@interfaces': resolve(__dirname, './src/interfaces/'),
-  src: resolve(__dirname, './src/'),
+  '@interfaces': resolve(__dirname, '../src/interfaces'),
+  src: resolve(__dirname, '../src'),
+  assets: resolve(__dirname, '../assets'),
 };
 
 const configuration: webpack.Configuration = {
