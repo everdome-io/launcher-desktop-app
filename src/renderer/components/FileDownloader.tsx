@@ -15,31 +15,36 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   const couldExtract = process === Processes.download && progress === 100;
 
+  const couldPlay = process === Processes.extract && progress === 100;
+
+  console.log(couldPlay, couldExtract);
+
   if (couldDownload) {
     window.electron.ipcRenderer.sendMessage(
       Channels.downloadProcess,
       localUserPath
     );
   }
-  if (
+  if (couldPlay) {
+    className = 'ProcessButton';
+    buttonText = 'PLAY';
+    progressText = null;
+  } else if (
     (process === Processes.download || process === Processes.extract) &&
     progress !== null
   ) {
     className = 'DuringProcessButton';
     buttonText = `${progress.toFixed(2)} %`;
-    progressText = 'Downloading...';
-  } else {
-    className = 'ProcessButton';
-    buttonText = 'PLAY';
-    progressText = null;
+    progressText =
+      process === Processes.download ? 'Downloading...' : 'Extracting...';
   }
   const handleOnClick = () => {
-    if (process === Processes.extract && progress === 100) {
+    if (couldPlay) {
       window.electron.ipcRenderer.sendMessage(
         Channels.installationProcess,
         localUserPath
       );
-    } else {
+    } else if (process === Processes.openDialog) {
       window.electron.ipcRenderer.sendMessage(Channels.openDialog, null);
     }
   };
