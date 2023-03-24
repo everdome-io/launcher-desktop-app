@@ -13,16 +13,13 @@ import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, dialog } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
-import { Channels } from '../interfaces';
+import { Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
-import {
-  downloadFile,
-  resolveHtmlPath,
-  chmodPlusX,
-  installDMG,
-  extractWithProgress,
-} from './util';
 import { eventsClient } from './events';
+import { getDownloadLink, resolveHtmlPath } from './utils';
+import { downloadFileWithProgress } from './utils/download';
+import { installEverdome } from './utils/installation';
+import { extractWithProgress } from './utils/extract';
 
 class AppUpdater {
   constructor() {
@@ -139,14 +136,42 @@ app
   })
   .catch(console.log);
 
-ipcMain.on(Channels.downloadProcess, (event, webFile) => {
-  downloadFile(event, webFile);
+ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
+  const webLink = getDownloadLink();
+  const eventsInstance = eventsClient(event);
+  eventsInstance.reply({
+    channel: Channels.changeState,
+    message: {
+      process: Processes.download,
+      progress: 0,
+      localUserPath: '',
+    },
+  });
+  downloadFileWithProgress(localUserPath, webLink, (progress) => {
+    console.log(`Downloaded ${progress.toFixed(2)}%`);
+    eventsInstance.reply({
+      channel: Channels.changeState,
+      message: {
+        process: Processes.download,
+        progress,
+        localUserPath: '',
+      },
+    });
+  });
 });
 
-ipcMain.on(Channels.openGame, async function (event, userPath) {
-  console.log('opening game...');
-  chmodPlusX(userPath);
-  installDMG(userPath);
+ipcMain.on(Channels.installationProcess, async function (event, userPath) {
+  console.log('Installing game...');
+  const eventsInstance = eventsClient(event);
+  eventsInstance.reply({
+    channel: Channels.changeState,
+    message: {
+      process: Processes.installation,
+      progress: null,
+      localUserPath: '',
+    },
+  });
+  installEverdome(userPath);
 });
 
 ipcMain.on(Channels.openDialog, async function (event) {
@@ -159,30 +184,22 @@ ipcMain.on(Channels.openDialog, async function (event) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
+      process: Processes.openDialog,
+      progress: null,
       localUserPath: localUserPath.filePaths[0],
-      isDownloaded: false,
-      duringDownload: false,
-      downloadProgress: 0,
-      isExtracted: false,
-      extractProgress: 0,
-      duringExtract: false,
     },
   });
 });
 
-ipcMain.on(Channels.extractGame, async (event, localFile) => {
+ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   const eventsInstance = eventsClient(event);
 
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
+      process: Processes.extract,
+      progress: 0,
       localUserPath: '',
-      isDownloaded: true,
-      duringDownload: false,
-      downloadProgress: 100,
-      isExtracted: false,
-      extractProgress: 0,
-      duringExtract: true,
     },
   });
 
@@ -194,13 +211,9 @@ ipcMain.on(Channels.extractGame, async (event, localFile) => {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
+          process: Processes.extract,
+          progress,
           localUserPath: '',
-          isDownloaded: false,
-          duringDownload: false,
-          downloadProgress: 100,
-          isExtracted: false,
-          extractProgress: progress,
-          duringExtract: true,
         },
       });
     }
@@ -210,13 +223,9 @@ ipcMain.on(Channels.extractGame, async (event, localFile) => {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
+          process: Processes.extract,
+          progress: 100,
           localUserPath: '',
-          isDownloaded: false,
-          duringDownload: false,
-          downloadProgress: 100,
-          isExtracted: true,
-          extractProgress: 100,
-          duringExtract: false,
         },
       });
     })

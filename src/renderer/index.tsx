@@ -1,15 +1,11 @@
 import { createRoot } from 'react-dom/client';
-import { AppState, Channels } from '../interfaces';
+import { AppState, Channels, Processes } from '../interfaces';
 import App from './App';
 
 let state: AppState = {
-  isDownloaded: false,
-  duringDownload: false,
-  isExtracted: false,
-  duringExtract: false,
-  downloadProgress: 0,
-  extractProgress: 0,
+  progress: 0,
   localUserPath: '',
+  process: Processes.openDialog,
 };
 
 const container = document.getElementById('root')!;

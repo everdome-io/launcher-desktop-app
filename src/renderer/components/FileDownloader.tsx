@@ -1,61 +1,54 @@
-import { AppState, Channels } from '@interfaces';
+import { AppState, Channels, Processes } from '@interfaces';
 import { FC, useEffect } from 'react';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
-  state: {
-    isDownloaded,
-    duringDownload,
-    downloadProgress,
-    extractProgress,
-    duringExtract,
-    isExtracted,
-    localUserPath,
-  },
+  state: { process, progress, localUserPath },
 }) => {
-  let className = 'DownloadButton';
+  let className = 'ProcessButton';
   let buttonText = 'DOWNLOAD';
   let progressText = null;
+
   const couldDownload =
-    !isDownloaded &&
-    !duringDownload &&
-    !isExtracted &&
+    process === Processes.openDialog &&
     localUserPath !== '' &&
     localUserPath !== undefined;
+
+  const couldExtract = process === Processes.download && progress === 100;
+
   if (couldDownload) {
-    window.electron.ipcRenderer.sendMessage(Channels.downloadProcess, {
-      link: 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Win64_Shipping_002234.rar',
-      filepath: localUserPath,
-    });
+    window.electron.ipcRenderer.sendMessage(
+      Channels.downloadProcess,
+      localUserPath
+    );
   }
-  if (duringDownload) {
-    className = 'DuringDownloadButton';
-    buttonText = `${downloadProgress.toFixed(2)} %`;
+  if (
+    (process === Processes.download || process === Processes.extract) &&
+    progress !== null
+  ) {
+    className = 'DuringProcessButton';
+    buttonText = `${progress.toFixed(2)} %`;
     progressText = 'Downloading...';
-  } else if (duringExtract) {
-    className = 'DuringDownloadButton';
-    buttonText = `${extractProgress.toFixed(2)} %`;
-    progressText = 'Extracting...';
-  } else if (isExtracted) {
-    className = 'DownloadButton';
+  } else {
+    className = 'ProcessButton';
     buttonText = 'PLAY';
     progressText = null;
   }
   const handleOnClick = () => {
-    if (isExtracted) {
+    if (process === Processes.extract && progress === 100) {
       window.electron.ipcRenderer.sendMessage(
-        Channels.openGame,
-        `${localUserPath}/steam.dmg`
+        Channels.installationProcess,
+        localUserPath
       );
     } else {
       window.electron.ipcRenderer.sendMessage(Channels.openDialog, null);
     }
   };
   useEffect(() => {
-    if (isDownloaded)
-      window.electron.ipcRenderer.sendMessage(Channels.extractGame, {
+    if (couldExtract)
+      window.electron.ipcRenderer.sendMessage(Channels.extractProcess, {
         filepath: localUserPath,
       });
-  }, [isDownloaded, localUserPath]);
+  }, [couldExtract, localUserPath]);
 
   return (
     <div>
@@ -70,7 +63,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
           }}
           onClick={handleOnClick}
         >
-          <div className="DownloadButtonText">{buttonText}</div>
+          <div className="ProcessButtonText">{buttonText}</div>
           {progressText !== null && (
             <div style={{ color: 'white', fontSize: '12px' }}>
               {progressText}
