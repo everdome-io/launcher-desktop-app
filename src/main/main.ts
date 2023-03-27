@@ -140,7 +140,6 @@ const createProfileWindow = async () => {
 
   profileWindow.loadURL(resolveHtmlPath('profile.html'));
 
-  profileWindow.setAlwaysOnTop(true);
   profileWindow.setPosition(1300, 200);
 
   profileWindow.on('ready-to-show', () => {
@@ -187,13 +186,13 @@ app.on('window-all-closed', () => {
 app
   .whenReady()
   .then(() => {
-    createWindow();
     createProfileWindow();
+    createWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
-      if (mainWindow === null) createWindow();
       if (profileWindow === null) createProfileWindow();
+      if (mainWindow === null) createWindow();
     });
   })
   .catch(console.log);
