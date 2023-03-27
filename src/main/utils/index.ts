@@ -34,7 +34,7 @@ export function getDownloadLink(): string {
   const os = getOS();
   switch (os) {
     case OperatingSystem.Windows:
-      return 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Win64_Shipping_002499.zip';
+      return 'https://metahero-prod-game-builds.s3.amazonaws.com/TLauncher-2.876-Installer-1.0.7-global.zip';
     case OperatingSystem.MacOS:
       return 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Mac_Shipping_002234.zip';
     default:
