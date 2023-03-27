@@ -15,12 +15,12 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   const couldExtract = process === Processes.download && isFinished;
   const couldPlay = process === Processes.extract && isFinished;
 
-  // if (couldDownload) {
-  //   window.electron.ipcRenderer.sendMessage(
-  //     Channels.downloadProcess,
-  //     localUserPath
-  //   );
-  // }
+  if (couldDownload) {
+    window.electron.ipcRenderer.sendMessage(
+      Channels.downloadProcess,
+      localUserPath
+    );
+  }
   if (couldPlay) {
     className = 'ProcessButton';
     buttonText = 'PLAY';
@@ -45,11 +45,11 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     }
   };
   useEffect(() => {
-    if (couldDownload)
+    if (couldExtract)
       window.electron.ipcRenderer.sendMessage(Channels.extractProcess, {
         filepath: localUserPath,
       });
-  }, [couldDownload, localUserPath]);
+  }, [couldExtract, localUserPath]);
 
   return (
     <div>
