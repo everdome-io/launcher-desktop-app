@@ -145,9 +145,10 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
       process: Processes.download,
       progress: 0,
       localUserPath: '',
+      isFinished: false,
     },
   });
-  downloadFileWithProgress(localUserPath, webLink, (progress) => {
+  downloadFileWithProgress(localUserPath, webLink, event, (progress) => {
     console.log(`Downloaded ${progress.toFixed(2)}%`);
     eventsInstance.reply({
       channel: Channels.changeState,
@@ -155,6 +156,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
         process: Processes.download,
         progress,
         localUserPath: '',
+        isFinished: false,
       },
     });
   });
@@ -169,6 +171,7 @@ ipcMain.on(Channels.installationProcess, async function (event, userPath) {
       process: Processes.installation,
       progress: null,
       localUserPath: '',
+      isFinished: false,
     },
   });
   installEverdome(userPath);
@@ -187,6 +190,7 @@ ipcMain.on(Channels.openDialog, async function (event) {
       process: Processes.openDialog,
       progress: null,
       localUserPath: localUserPath.filePaths[0],
+      isFinished: false,
     },
   });
 });
@@ -200,6 +204,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
       process: Processes.extract,
       progress: 0,
       localUserPath: '',
+      isFinished: false,
     },
   });
 
@@ -214,6 +219,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
           process: Processes.extract,
           progress,
           localUserPath: '',
+          isFinished: false,
         },
       });
     }
@@ -226,6 +232,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
           process: Processes.extract,
           progress: 100,
           localUserPath: '',
+          isFinished: true,
         },
       });
     })

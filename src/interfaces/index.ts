@@ -30,6 +30,7 @@ export type ElectronHandlerArgs<T> = T extends Channels.downloadProcess
 
 export type AppState = {
   progress: null | number;
+  isFinished: boolean;
   process: Processes;
   localUserPath: string;
 };

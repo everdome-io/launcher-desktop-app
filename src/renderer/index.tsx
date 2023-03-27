@@ -6,6 +6,7 @@ let state: AppState = {
   progress: 0,
   localUserPath: '',
   process: Processes.openDialog,
+  isFinished: false,
 };
 
 const container = document.getElementById('root')!;

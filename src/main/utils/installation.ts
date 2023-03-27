@@ -97,7 +97,7 @@ export function installEverdome(filePath: string): void {
   const os = getOS();
   switch (os) {
     case OperatingSystem.MacOS:
-      installOnMacOS(path.join(filePath, 'game/Everdome.dmg'));
+      installOnMacOS(path.join(filePath, 'Mac/Mars-Mac-Shipping'));
       break;
     case OperatingSystem.Windows:
       installOnWindows(path.join(filePath, 'game/Everdome.exe'));

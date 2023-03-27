@@ -1,15 +1,20 @@
 import path from 'path';
 import request from 'request';
 import * as fs from 'fs';
+import { IpcMainEvent } from 'electron';
+import { eventsClient } from '../events';
+import { Channels, Processes } from '../../interfaces';
 
 export function downloadFileWithProgress(
   localUserPath: string,
   webLink: string,
+  event: IpcMainEvent,
   progressCallback: (percent: number) => void
 ) {
   // Save variable to know progress
   let receivedBytes = 0;
   let totalBytes = 0;
+  const eventsInstance = eventsClient(event);
 
   const req = request({
     method: 'GET',
@@ -31,5 +36,17 @@ export function downloadFileWithProgress(
     receivedBytes += chunk.length;
     const progress = (receivedBytes * 100) / totalBytes;
     progressCallback(progress);
+  });
+
+  req.on('end', () => {
+    eventsInstance.reply({
+      channel: Channels.changeState,
+      message: {
+        process: Processes.download,
+        progress: 100,
+        localUserPath: '',
+        isFinished: true,
+      },
+    });
   });
 }

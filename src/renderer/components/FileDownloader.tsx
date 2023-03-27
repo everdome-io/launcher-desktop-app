@@ -2,7 +2,7 @@ import { AppState, Channels, Processes } from '@interfaces';
 import { FC, useEffect } from 'react';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
-  state: { process, progress, localUserPath },
+  state: { process, progress, localUserPath, isFinished },
 }) => {
   let className = 'ProcessButton';
   let buttonText = 'DOWNLOAD';
@@ -12,12 +12,8 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     process === Processes.openDialog &&
     localUserPath !== '' &&
     localUserPath !== undefined;
-
-  const couldExtract = process === Processes.download && progress === 100;
-
-  const couldPlay = process === Processes.extract && progress === 100;
-
-  console.log(couldPlay, couldExtract);
+  const couldExtract = process === Processes.download && isFinished;
+  const couldPlay = process === Processes.extract && isFinished;
 
   if (couldDownload) {
     window.electron.ipcRenderer.sendMessage(
