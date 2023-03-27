@@ -14,24 +14,10 @@ body {
   background-repeat: no-repeat;
 }
 
-
 button {
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
   border: none;
   appearance: none;
-  font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-  opacity: 0.9;
-}
-
-button:hover {
-  transform: scale(1.05);
-  opacity: 1;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 li {
@@ -48,56 +34,6 @@ a {
 a:hover {
   opacity: 1;
   text-decoration: none;
-}
-
-.FileDownloader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px 0;
-}
-
-.ProcessButtonText{
-  padding-top: 3px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-.ProcessButton{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 48px;
-  gap: 10px;
-  height: 56px;
-  width: 220px;
-  left: 5.99%;
-  right: 27.84%;
-  top: calc(50% - 56px/2 - 184px);
-
-  background: #ffffff;
-  box-shadow: 0px 64px 67px rgba(0, 0, 0, 0.06), 0px 23.3611px 24.4561px rgba(0, 0, 0, 0.0413989), 0px 11.3414px 11.873px rgba(0, 0, 0, 0.0333774), 0px 5.55974px 5.82036px rgba(0, 0, 0, 0.0266226), 0px 2.19833px 2.30138px rgba(0, 0, 0, 0.0186011);
-  border-radius: 8px;
-}
-.DuringProcessButton{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 8px 8px 24px;
-  gap: 24px;
-  width: 220px;
-  height: 56px;
-  left: 20px;
-  top: calc(50% - 56px/2 - 280px);
-  background: linear-gradient(93.02deg, #FFFFFF 26.78%, #FFFFFF 46.86%, #000000 46.86%);
-  border: 2px solid #FFFFFF;
-  box-shadow: 0px 64px 67px rgba(0, 0, 0, 0.06), 0px 23.3611px 24.4561px rgba(0, 0, 0, 0.0413989), 0px 11.3414px 11.873px rgba(0, 0, 0, 0.0333774), 0px 5.55974px 5.82036px rgba(0, 0, 0, 0.0266226), 0px 2.19833px 2.30138px rgba(0, 0, 0, 0.0186011);
-  border-radius: 8px;
 }
 
 .MainMenu {

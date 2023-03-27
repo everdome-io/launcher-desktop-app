@@ -10,6 +10,7 @@
 .welcomeMessage {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .welcomeMessage h1 {
