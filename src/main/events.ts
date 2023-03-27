@@ -11,3 +11,5 @@ export const eventsClient = (event: IpcMainEvent) => {
   };
   return Object.freeze({ reply });
 };
+
+export type EventClient = typeof eventsClient;

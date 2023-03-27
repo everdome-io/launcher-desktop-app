@@ -1,42 +1,41 @@
+/* eslint-disable no-shadow */
 export enum Channels {
+  openDialog = 'open-dialog-process',
   downloadProcess = 'download-process',
-  extractGame = 'extract-game',
+  extractProcess = 'extract-process',
+  installationProcess = 'installation-process',
+
   changeState = 'change-state',
-  openGame = 'open-game',
-  openDialog = 'open-dialog',
 }
-export type WebFile = {
-  link: string;
-  filepath: string;
-};
+export enum Processes {
+  openDialog = 'open-dialog',
+  download = 'download',
+  extract = 'extract',
+  installation = 'installation',
+}
+
 export type LocalFile = {
   filepath: string;
 };
 
 export type ElectronHandlerArgs<T> = T extends Channels.downloadProcess
-  ? WebFile
-  : T extends Channels.extractGame
+  ? string
+  : T extends Channels.extractProcess
   ? LocalFile
   : T extends Channels.openDialog
   ? null
-  : T extends Channels.openGame
+  : T extends Channels.installationProcess
   ? string
   : never;
 
 export type AppState = {
-  // download
-  isDownloaded: boolean;
-  duringDownload: boolean;
-  downloadProgress: number;
-  // extract
-  duringExtract: boolean;
-  isExtracted: boolean;
-  extractProgress: number;
-
+  progress: null | number;
+  isFinished: boolean;
+  process: Processes;
   localUserPath: string;
 };
 export type ElectronEventArgs<T> = T extends Channels.changeState
   ? AppState
-  : T extends Channels.openGame
+  : T extends Channels.installationProcess
   ? string
   : never;
