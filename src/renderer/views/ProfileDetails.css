@@ -1,0 +1,87 @@
+.UserProfileHeader {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.UserInfo {
+  display: flex;
+}
+
+.UserDetails {
+  margin-left: 12px;
+}
+
+.UserDetails h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.UserDetails span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.WalletItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.WalletItem h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.WalletItemDetails {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.WalletItemDetails span+span {
+  margin-left: 8px;
+}
+
+.MainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+}
+
+.MainSection h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.MainSection p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.EmptyMessage {
+  width: 80%;
+  text-align: center;
+}
