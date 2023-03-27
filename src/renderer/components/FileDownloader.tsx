@@ -13,7 +13,9 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     localUserPath !== '' &&
     localUserPath !== undefined;
   const couldExtract = process === Processes.download && isFinished;
-  const couldPlay = process === Processes.extract && isFinished;
+  const couldPlay =
+    (process === Processes.extract && isFinished) ||
+    process === Processes.installation;
 
   if (couldDownload) {
     window.electron.ipcRenderer.sendMessage(
@@ -45,10 +47,11 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     }
   };
   useEffect(() => {
-    if (couldExtract)
+    if (couldExtract) {
       window.electron.ipcRenderer.sendMessage(Channels.extractProcess, {
         filepath: localUserPath,
       });
+    }
   }, [couldExtract, localUserPath]);
 
   return (
@@ -64,7 +67,12 @@ export const FileDownloader: FC<{ state: AppState }> = ({
           }}
           onClick={handleOnClick}
         >
-          <div className="ProcessButtonText">{buttonText}</div>
+          <div
+            className="ProcessButtonText"
+            style={{ paddingRight: progressText !== null ? '18px' : '0px' }}
+          >
+            {buttonText}
+          </div>
           {progressText !== null && (
             <div style={{ color: 'white', fontSize: '12px' }}>
               {progressText}

@@ -99,8 +99,18 @@ export function installEverdome(filePath: string): void {
     case OperatingSystem.MacOS:
       installOnMacOS(path.join(filePath, 'Mac/Mars-Mac-Shipping'));
       break;
+    // case OperatingSystem.Windows:
+    //   installOnWindows(
+    //     path.join(filePath, 'TLauncher-2.876-Installer-1.0.7-global.exe')
+    //   );
+    //   break;
     case OperatingSystem.Windows:
-      installOnWindows(path.join(filePath, 'game/Everdome.exe'));
+      installOnWindows(
+        path.join(
+          filePath,
+          'Everdome_Client_Win64_Shipping_002499/Everdome.exe'
+        )
+      );
       break;
     default:
   }

@@ -8,7 +8,7 @@ async function getEntries(filePath: string): Promise<StreamZip.ZipEntry[]> {
   const entries = await zip.entries();
   const files: StreamZip.ZipEntry[] = [];
 
-  // eslint-disable-next-line no-restricted-syntax
+  // eslint-disable-next-line no-restricted-syntax, guard-for-in
   for (const entryName in entries) {
     if (!entryName.startsWith('__MACOSX/')) {
       files.push(entries[entryName]);
@@ -25,7 +25,8 @@ async function extractEntry(
   filePath: string,
   entry: StreamZip.ZipEntry,
   destination: string
-): Promise<void> {
+): Promise<number> {
+  // Change the return type to Promise<number>
   const zip = new StreamZip.async({ file: filePath });
   const outputPath = path.join(destination, entry.name);
 
@@ -35,6 +36,8 @@ async function extractEntry(
 
   await zip.extract(entry.name, outputPath);
   await zip.close();
+
+  return entry.size; // Return the entry size
 }
 
 async function processEntriesInChunks(
@@ -52,12 +55,15 @@ async function processEntriesInChunks(
 
   // eslint-disable-next-line no-restricted-syntax
   for (const chunk of chunks) {
+    console.log('chunk');
     const extractPromises = chunk.map((entry) =>
       extractEntry(filePath, entry, destination)
     );
     const extractedSizes = await Promise.all(extractPromises);
+    console.log('extractedSizes');
 
     const chunkSize = extractedSizes.reduce((sum, size) => sum + size, 0);
+    console.log(chunkSize);
     progressCallback(chunkSize);
   }
 }
@@ -68,11 +74,12 @@ export async function extractWithProgress(
   progressCallback: (percent: number) => void
 ): Promise<void> {
   const entries = await getEntries(filePath);
+  console.log('entries');
   const totalSize = entries.reduce((sum, entry) => sum + entry.size, 0);
 
   let extractedSize = 0;
 
-  const concurrency = 300;
+  const concurrency = 100;
 
   await processEntriesInChunks(
     filePath,
