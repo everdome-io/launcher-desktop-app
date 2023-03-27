@@ -1,0 +1,32 @@
+.UserProfileHeader {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.UserInfo {
+  display: flex;
+}
+
+.UserDetails {
+  margin-left: 12px;
+}
+
+.UserDetails h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.UserDetails span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
