@@ -30,6 +30,7 @@ class AppUpdater {
 }
 
 let mainWindow: BrowserWindow | null = null;
+let profileWindow: BrowserWindow | null = null;
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -112,6 +113,65 @@ const createWindow = async () => {
   new AppUpdater();
 };
 
+const createProfileWindow = async () => {
+  if (isDebug) {
+    await installExtensions();
+  }
+
+  const RESOURCES_PATH = app.isPackaged
+    ? path.join(process.resourcesPath, 'assets')
+    : path.join(__dirname, '../../assets');
+
+  const getAssetPath = (...paths: string[]): string => {
+    return path.join(RESOURCES_PATH, ...paths);
+  };
+
+  profileWindow = new BrowserWindow({
+    show: false,
+    width: 342,
+    height: 688,
+    icon: getAssetPath('icon.png'),
+    webPreferences: {
+      preload: app.isPackaged
+        ? path.join(__dirname, 'preload.js')
+        : path.join(__dirname, '../../.erb/dll/preload.js'),
+    },
+  });
+
+  profileWindow.loadURL(resolveHtmlPath('profile.html'));
+
+  profileWindow.setAlwaysOnTop(true);
+  profileWindow.setPosition(1300, 200);
+
+  profileWindow.on('ready-to-show', () => {
+    if (!profileWindow) {
+      throw new Error('"profileWindow" is not defined');
+    }
+    if (process.env.START_MINIMIZED) {
+      profileWindow.minimize();
+    } else {
+      profileWindow.show();
+    }
+  });
+
+  profileWindow.on('closed', () => {
+    profileWindow = null;
+  });
+
+  const profileBuilder = new MenuBuilder(profileWindow);
+  profileBuilder.buildMenu();
+
+  // Open urls in the user's browser
+  profileWindow.webContents.setWindowOpenHandler((edata) => {
+    shell.openExternal(edata.url);
+    return { action: 'deny' };
+  });
+
+  // Remove this if your app does not use auto updates
+  // eslint-disable-next-line
+  new AppUpdater();
+};
+
 /**
  * Add event listeners...
  */
@@ -128,10 +188,12 @@ app
   .whenReady()
   .then(() => {
     createWindow();
+    createProfileWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
       if (mainWindow === null) createWindow();
+      if (profileWindow === null) createProfileWindow();
     });
   })
   .catch(console.log);
