@@ -1,5 +1,7 @@
 import { AppState, Channels, Processes } from '@interfaces';
 import { FC, useEffect } from 'react';
+import chevronRight from 'assets/images/chevron-right.png';
+import './FileDownloader.css';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: { process, progress, localUserPath, isFinished },
@@ -56,6 +58,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   return (
     <div>
+      <button className="BuyNFT">Buy Genesis NFT on Opensea</button>
       <div className="FileDownloader">
         <button
           type="button"
@@ -79,6 +82,13 @@ export const FileDownloader: FC<{ state: AppState }> = ({
             </div>
           )}
         </button>
+        <div className="AdditionalInfo">
+          <span className="AppVersion">Version: ED-0.16.66</span>
+          <a href="#">
+            What’s new{' '}
+            <img src={chevronRight} style={{ verticalAlign: 'middle' }} />
+          </a>
+        </div>
       </div>
     </div>
   );
