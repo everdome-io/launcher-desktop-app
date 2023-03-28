@@ -19,7 +19,6 @@ import {
   ipcRenderer,
 } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
-import log from 'electron-log';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
@@ -27,14 +26,6 @@ import { getDownloadLink, resolveHtmlPath } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
-
-class AppUpdater {
-  constructor() {
-    log.transports.file.level = 'info';
-    autoUpdater.logger = log;
-    autoUpdater.checkForUpdatesAndNotify();
-  }
-}
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
@@ -115,9 +106,9 @@ const createWindow = async () => {
     return { action: 'deny' };
   });
 
-  // Remove this if your app does not use auto updates
-  // eslint-disable-next-line
-  new AppUpdater();
+  const result = await autoUpdater.checkForUpdatesAndNotify();
+  console.log('checkForUpdatesAndNotify');
+  console.log(result);
 };
 
 const createProfileWindow = async () => {
@@ -172,10 +163,6 @@ const createProfileWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-
-  // Remove this if your app does not use auto updates
-  // eslint-disable-next-line
-  new AppUpdater();
 };
 
 /**
@@ -308,20 +295,29 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
       console.error('Error during extraction:', error);
     });
 });
+console.log(autoUpdater.getFeedURL());
 
 autoUpdater.on('checking-for-update', () => {
+  console.log('checking-for-update');
   ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.checking);
 });
 
 autoUpdater.on('update-available', (info) => {
+  console.log('update-available');
+  console.log(info);
+
   ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.available);
 });
 
 autoUpdater.on('update-not-available', (info) => {
+  console.log('update-not-available');
+  console.log(info);
   ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.notAvailable);
 });
 
 autoUpdater.on('error', (err) => {
+  console.log('autoUpdater error');
+  console.log(err);
   ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.error);
 });
 
@@ -337,8 +333,10 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
     detail:
       'A new version has been downloaded. Restart the application to apply the updates.',
   };
-  // eslint-disable-next-line promise/catch-or-return
-  dialog.showMessageBox(dialogOpts).then((returnValue) => {
-    if (returnValue.response === 0) autoUpdater.quitAndInstall();
-  });
+  dialog
+    .showMessageBox(dialogOpts)
+    .then((returnValue) => {
+      if (returnValue.response === 0) autoUpdater.quitAndInstall();
+    })
+    .catch((err) => console.log(err));
 });
