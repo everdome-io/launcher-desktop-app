@@ -9,6 +9,11 @@
     "url": "git+https://github.com/everdome-io/launcher-desktop-app.git"
   },
   "license": "MIT",
+  "author": {
+    "name": "Pragmatic Coders",
+    "email": "pc@pragmaticcoders.com",
+    "url": "https://github.com/everdome-io/launcher-desktop-app"
+  },
   "main": "./src/main/main.ts",
   "scripts": {
     "build": "concurrently \"npm run build:main\" \"npm run build:renderer\"",
@@ -152,9 +157,13 @@
   },
   "build": {
     "productName": "EverdomeLauncher",
-    "appId": "org.erb.EverdomeLauncher",
+    "appId": "com.pragmaticcoders.everdomeLauncher",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
+    "copyright": "Copyright © year Pragmatic Coders",
+    "publish": [
+      "github"
+    ],
     "files": [
       "dist",
       "node_modules",
@@ -169,6 +178,9 @@
           "x64"
         ]
       },
+      "publish": [
+        "github"
+      ],
       "type": "distribution",
       "hardenedRuntime": true,
       "entitlements": "assets/entitlements.mac.plist",
@@ -192,6 +204,9 @@
     "win": {
       "target": [
         "nsis"
+      ],
+      "publish": [
+        "github"
       ]
     },
     "linux": {

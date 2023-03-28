@@ -10,10 +10,17 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, dialog } from 'electron';
-import { autoUpdater } from 'electron-updater';
+import {
+  app,
+  BrowserWindow,
+  shell,
+  ipcMain,
+  dialog,
+  ipcRenderer,
+} from 'electron';
+import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import log from 'electron-log';
-import { Channels, Processes } from '../interfaces';
+import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
 import { getDownloadLink, resolveHtmlPath } from './utils';
@@ -300,4 +307,38 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
     .catch((error) => {
       console.error('Error during extraction:', error);
     });
+});
+
+autoUpdater.on('checking-for-update', () => {
+  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.checking);
+});
+
+autoUpdater.on('update-available', (info) => {
+  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.available);
+});
+
+autoUpdater.on('update-not-available', (info) => {
+  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.notAvailable);
+});
+
+autoUpdater.on('error', (err) => {
+  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.error);
+});
+
+autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
+  const dialogOpts = {
+    type: 'info',
+    buttons: ['Restart', 'Later'],
+    title: 'Application Update',
+    message:
+      process.platform === 'win32'
+        ? event.releaseNotes!.toString()
+        : event.releaseName!,
+    detail:
+      'A new version has been downloaded. Restart the application to apply the updates.',
+  };
+  // eslint-disable-next-line promise/catch-or-return
+  dialog.showMessageBox(dialogOpts).then((returnValue) => {
+    if (returnValue.response === 0) autoUpdater.quitAndInstall();
+  });
 });

@@ -6,6 +6,15 @@ export enum Channels {
   installationProcess = 'installation-process',
 
   changeState = 'change-state',
+  appUpdate = 'app-update',
+}
+/* eslint-disable no-shadow */
+export enum AppUpdateStatus {
+  nothing = 'nothing',
+  checking = 'checking',
+  available = 'available',
+  notAvailable = 'notAvailable',
+  error = 'error',
 }
 export enum Processes {
   openDialog = 'open-dialog',

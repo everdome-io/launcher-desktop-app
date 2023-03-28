@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { AppState, Channels, Processes } from '../interfaces';
+import { AppState, AppUpdateStatus, Channels, Processes } from '../interfaces';
 import App from './App';
 
 let state: AppState = {
@@ -9,10 +9,12 @@ let state: AppState = {
   isFinished: false,
 };
 
+let updateStatus = AppUpdateStatus.nothing;
+
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 function renderAppComponent() {
-  root.render(<App state={state} />);
+  root.render(<App state={state} updateStatus={updateStatus} />);
 }
 renderAppComponent();
 
@@ -26,6 +28,14 @@ window.electron.ipcRenderer.on(
           ? updatedState.localUserPath
           : state.localUserPath,
     };
+    renderAppComponent();
+  }
+);
+
+window.electron.ipcRenderer.on(
+  Channels.appUpdate,
+  (status: AppUpdateStatus) => {
+    updateStatus = status;
     renderAppComponent();
   }
 );
