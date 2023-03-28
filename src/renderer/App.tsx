@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppState, AppUpdateStatus } from '../interfaces';
-// import './bootstrap.css';
 import './App.css';
 import { Welcome } from './views/Welcome';
 

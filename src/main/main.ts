@@ -10,14 +10,7 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import {
-  app,
-  BrowserWindow,
-  shell,
-  ipcMain,
-  dialog,
-  ipcRenderer,
-} from 'electron';
+import { app, BrowserWindow, shell, ipcMain, dialog } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
@@ -106,7 +99,7 @@ const createWindow = async () => {
     return { action: 'deny' };
   });
 
-  const result = await autoUpdater.checkForUpdatesAndNotify();
+  const result = await autoUpdater.checkForUpdates();
   console.log('checkForUpdatesAndNotify');
   console.log(result);
 };
@@ -299,26 +292,37 @@ console.log(autoUpdater.getFeedURL());
 
 autoUpdater.on('checking-for-update', () => {
   console.log('checking-for-update');
-  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.checking);
+  if (mainWindow) {
+    mainWindow.webContents.send(Channels.appUpdate, AppUpdateStatus.checking);
+  }
 });
 
 autoUpdater.on('update-available', (info) => {
   console.log('update-available');
   console.log(info);
 
-  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.available);
+  if (mainWindow) {
+    mainWindow.webContents.send(Channels.appUpdate, AppUpdateStatus.available);
+  }
 });
 
 autoUpdater.on('update-not-available', (info) => {
   console.log('update-not-available');
   console.log(info);
-  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.notAvailable);
+  if (mainWindow) {
+    mainWindow.webContents.send(
+      Channels.appUpdate,
+      AppUpdateStatus.notAvailable
+    );
+  }
 });
 
 autoUpdater.on('error', (err) => {
   console.log('autoUpdater error');
   console.log(err);
-  ipcRenderer.send(Channels.appUpdate, AppUpdateStatus.error);
+  if (mainWindow) {
+    mainWindow.webContents.send(Channels.appUpdate, AppUpdateStatus.error);
+  }
 });
 
 autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
