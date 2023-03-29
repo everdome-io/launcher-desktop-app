@@ -45,8 +45,15 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
       </div>
       <div className="MainSection">
         <div className="EmptyMessage">
-          <img src={profileSteps} />
-          <h1>Connect wallet</h1>
+          <a
+            className="CTAButton CreateWallet"
+            href="https://www.okx.com/account/register"
+            target="_blank"
+          >
+            Create Wallet
+          </a>
+          <p>or</p>
+          <button className="CTAButton ConnectWallet">Connect Wallet</button>
           <p>To see your NFT collection and $DOME count</p>
         </div>
       </div>
