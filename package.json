@@ -4,15 +4,12 @@
   "bugs": {
     "url": "https://github.com/everdome-io/launcher-desktop-app/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/everdome-io/launcher-desktop-app.git"
-  },
+  "repository": "https://github.com/everdome-io/launcher-desktop-app",
   "license": "MIT",
   "author": {
     "name": "Pragmatic Coders",
     "email": "pc@pragmaticcoders.com",
-    "url": "https://github.com/everdome-io/launcher-desktop-app"
+    "url": "https://github.com/everdome-io/launcher-desktop-app#readme"
   },
   "main": "./src/main/main.ts",
   "scripts": {
