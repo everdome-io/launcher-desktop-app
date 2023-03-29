@@ -44,9 +44,7 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
       </div>
       <div className="MainSection">
         <div className="EmptyMessage">
-          <p style={{ fontWeight: 400, fontSize: 14 }}>
-            If you new to decentralized world
-          </p>
+          <p className="InfoText">If you new to decentralized world</p>
           <a
             className="CTAButton CreateWallet"
             href="https://www.okx.com/account/register"
@@ -54,9 +52,7 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
           >
             Create Wallet
           </a>
-          <p style={{ fontWeight: 400, fontSize: 14, marginTop: 10 }}>
-            or if you already have a wallet
-          </p>
+          <p className="InfoText">or if you already have a wallet</p>
           <button className="CTAButton CTAButtonInverse ConnectWallet">
             Connect Wallet
           </button>
