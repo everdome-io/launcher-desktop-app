@@ -98,8 +98,9 @@ const createWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-
-  const result = await autoUpdater.checkForUpdatesAndNotify();
+  const feedUrl = `https://user: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@github.com/everdome-io/launcher-desktop-app/releases.atom`;
+  autoUpdater.setFeedURL({ url: feedUrl, provider: 'generic' });
+  const result = await autoUpdater.checkForUpdates();
   console.log('checkForUpdatesAndNotify');
   console.log(result);
 };
@@ -288,12 +289,16 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
       console.error('Error during extraction:', error);
     });
 });
-console.log(autoUpdater.getFeedURL());
 
 autoUpdater.on('checking-for-update', () => {
   console.log('checking-for-update');
+  const message = autoUpdater.getFeedURL();
+
   if (mainWindow) {
-    mainWindow.webContents.send(Channels.appUpdate, AppUpdateStatus.checking);
+    mainWindow.webContents.send(Channels.appUpdate, {
+      status: AppUpdateStatus.checking,
+      message,
+    });
   }
 });
 
