@@ -158,9 +158,10 @@
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "copyright": "Copyright © year Pragmatic Coders",
-    "publish": [
-      "github"
-    ],
+    "publish": {
+       "provider": "generic",
+        "url": "https://pawelmizwa-pc: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@github.com/everdome-io/launcher-desktop-app/releases/download/v1.9.6"
+    },
     "files": [
       "dist",
       "node_modules",
@@ -175,9 +176,6 @@
           "x64"
         ]
       },
-      "publish": [
-        "github"
-      ],
       "type": "distribution",
       "hardenedRuntime": true,
       "entitlements": "assets/entitlements.mac.plist",
@@ -201,9 +199,6 @@
     "win": {
       "target": [
         "nsis"
-      ],
-      "publish": [
-        "github"
       ]
     },
     "linux": {
