@@ -1,5 +1,11 @@
 import { createRoot } from 'react-dom/client';
-import { AppState, AppUpdateStatus, Channels, Processes } from '../interfaces';
+import {
+  AppState,
+  AppUpdate,
+  AppUpdateStatus,
+  Channels,
+  Processes,
+} from '@interfaces';
 import App from './App';
 
 let state: AppState = {
@@ -8,13 +14,15 @@ let state: AppState = {
   process: Processes.openDialog,
   isFinished: false,
 };
-
-let updateStatus = AppUpdateStatus.nothing;
+let updateState: AppUpdate = {
+  status: AppUpdateStatus.nothing,
+  message: null,
+};
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 function renderAppComponent() {
-  root.render(<App state={state} updateStatus={updateStatus} />);
+  root.render(<App state={state} updateState={updateState} />);
 }
 renderAppComponent();
 
@@ -34,8 +42,8 @@ window.electron.ipcRenderer.on(
 
 window.electron.ipcRenderer.on(
   Channels.appUpdate,
-  (status: AppUpdateStatus) => {
-    updateStatus = status;
+  (newUpdateState: AppUpdate) => {
+    updateState = newUpdateState;
     renderAppComponent();
   }
 );

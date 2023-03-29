@@ -1,4 +1,4 @@
-import { AppState, AppUpdateStatus } from '@interfaces';
+import { AppState, AppUpdate } from '@interfaces';
 import { FC } from 'react';
 import {
   Hello,
@@ -12,8 +12,8 @@ import './Welcome.css';
 
 export const Welcome: FC<{
   state: AppState;
-  updateStatus: AppUpdateStatus;
-}> = ({ state, updateStatus }) => {
+  updateState: AppUpdate;
+}> = ({ state, updateState }) => {
   return (
     <div className="container">
       <Menu />
@@ -21,7 +21,7 @@ export const Welcome: FC<{
         <div className="welcomeMessage">
           <Hello />
           <FileDownloader state={state} />
-          <UpdateStatus updateStatus={updateStatus} />
+          <UpdateStatus updateState={updateState} />
         </div>
         <img src={headerImage} />
       </section>

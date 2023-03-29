@@ -1,19 +1,19 @@
 import { FC } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import { AppState, AppUpdateStatus } from '../interfaces';
+import { AppState, AppUpdate } from '../interfaces';
 import './App.css';
 import { Welcome } from './views/Welcome';
 
-const App: FC<{ state: AppState; updateStatus: AppUpdateStatus }> = ({
+const App: FC<{ state: AppState; updateState: AppUpdate }> = ({
   state,
-  updateStatus,
+  updateState,
 }) => {
   return (
     <Router>
       <Routes>
         <Route
           path="/"
-          element={<Welcome state={state} updateStatus={updateStatus} />}
+          element={<Welcome state={state} updateState={updateState} />}
         />
       </Routes>
     </Router>

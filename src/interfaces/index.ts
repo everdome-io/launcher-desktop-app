@@ -43,6 +43,12 @@ export type AppState = {
   process: Processes;
   localUserPath: string;
 };
+
+export type AppUpdate = {
+  status: AppUpdateStatus;
+  message: string | null;
+};
+
 export type ElectronEventArgs<T> = T extends Channels.changeState
   ? AppState
   : T extends Channels.installationProcess

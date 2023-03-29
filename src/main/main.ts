@@ -302,7 +302,10 @@ autoUpdater.on('update-available', (info) => {
   console.log(info);
 
   if (mainWindow) {
-    mainWindow.webContents.send(Channels.appUpdate, AppUpdateStatus.available);
+    mainWindow.webContents.send(Channels.appUpdate, {
+      status: AppUpdateStatus.available,
+      message: JSON.stringify(info),
+    });
   }
 });
 
@@ -310,10 +313,10 @@ autoUpdater.on('update-not-available', (info) => {
   console.log('update-not-available');
   console.log(info);
   if (mainWindow) {
-    mainWindow.webContents.send(
-      Channels.appUpdate,
-      AppUpdateStatus.notAvailable
-    );
+    mainWindow.webContents.send(Channels.appUpdate, {
+      status: AppUpdateStatus.notAvailable,
+      message: JSON.stringify(info),
+    });
   }
 });
 
@@ -321,7 +324,10 @@ autoUpdater.on('error', (err) => {
   console.log('autoUpdater error');
   console.log(err);
   if (mainWindow) {
-    mainWindow.webContents.send(Channels.appUpdate, AppUpdateStatus.error);
+    mainWindow.webContents.send(Channels.appUpdate, {
+      status: AppUpdateStatus.available,
+      message: JSON.stringify(err),
+    });
   }
 });
 

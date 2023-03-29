@@ -1,13 +1,14 @@
-import { AppUpdateStatus } from '@interfaces';
+import { AppUpdate } from '@interfaces';
 import { FC } from 'react';
 
 export const UpdateStatus: FC<{
-  updateStatus: AppUpdateStatus;
-}> = ({ updateStatus }) => {
+  updateState: AppUpdate;
+}> = ({ updateState }) => {
   return (
     <div>
       <h3>Update status v2</h3>
-      <p>{updateStatus}</p>
+      <p>{updateState.status}</p>
+      <p>{updateState.message}</p>
     </div>
   );
 };
