@@ -4,7 +4,6 @@ import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
 import settingsIcon from 'assets/images/settings-icon.png';
 import iconDOME from 'assets/images/icon_DOME.png';
-import profileSteps from 'assets/images/profile-steps.png';
 import './ProfileDetails.css';
 export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
   return (
@@ -45,6 +44,9 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
       </div>
       <div className="MainSection">
         <div className="EmptyMessage">
+          <p style={{ fontWeight: 400, fontSize: 14 }}>
+            If you new to decentralized world
+          </p>
           <a
             className="CTAButton CreateWallet"
             href="https://www.okx.com/account/register"
@@ -52,9 +54,12 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
           >
             Create Wallet
           </a>
-          <p>or</p>
-          <button className="CTAButton ConnectWallet">Connect Wallet</button>
-          <p>To see your NFT collection and $DOME count</p>
+          <p style={{ fontWeight: 400, fontSize: 14, marginTop: 10 }}>
+            or if you already have a wallet
+          </p>
+          <button className="CTAButton CTAButtonInverse ConnectWallet">
+            Connect Wallet
+          </button>
         </div>
       </div>
     </div>
