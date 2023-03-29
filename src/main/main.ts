@@ -99,7 +99,7 @@ const createWindow = async () => {
     return { action: 'deny' };
   });
 
-  const result = await autoUpdater.checkForUpdates();
+  const result = await autoUpdater.checkForUpdatesAndNotify();
   console.log('checkForUpdatesAndNotify');
   console.log(result);
 };
@@ -325,7 +325,7 @@ autoUpdater.on('error', (err) => {
   console.log(err);
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
-      status: AppUpdateStatus.available,
+      status: AppUpdateStatus.error,
       message: JSON.stringify(err),
     });
   }
