@@ -84,4 +84,36 @@
 .EmptyMessage {
   width: 80%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.CreateWallet {
+  text-decoration: none;
+}
+
+
+.ConnectWallet {
+  border: 0;
+  appearance: none;
+  font-family: inherit;
+}
+
+.CTAButton {
+  background-color: #FFFFFF;
+  color: #000;
+  border-radius: 8px;
+  padding: 16px 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 5px 0 10px;
+}
+
+.CTAButton:hover {
+  background-color: #1C1D1F;
+  color: #fff;
+  cursor: pointer;
 }
