@@ -98,13 +98,6 @@ const createWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-  autoUpdater.setFeedURL({
-    provider: 'github',
-    owner: 'pawelmizwa-pc',
-    repo: 'launcher-desktop-app',
-    token: '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',
-    private: true,
-  });
   const result = await autoUpdater.checkForUpdates();
   console.log('checkForUpdatesAndNotify');
   console.log(result);
