@@ -159,10 +159,8 @@
     "asarUnpack": "**\\*.{node,dll}",
     "copyright": "Copyright © year Pragmatic Coders",
     "publish": {
-      "provider": "github",
-      "owner": "pawelmizwa-pc",
-      "repo": "launcher-desktop-app",
-      "private": true
+       "provider": "generic",
+        "url": "https://${env.GITHUB_USERNAME}:${env.PAT}@github.com/everdome-io/launcher-desktop-app/releases/download/v${version}"
     },
     "files": [
       "dist",
@@ -178,6 +176,9 @@
           "x64"
         ]
       },
+      "publish": [
+        "github"
+      ],
       "type": "distribution",
       "hardenedRuntime": true,
       "entitlements": "assets/entitlements.mac.plist",
@@ -201,6 +202,9 @@
     "win": {
       "target": [
         "nsis"
+      ],
+      "publish": [
+        "github"
       ]
     },
     "linux": {
