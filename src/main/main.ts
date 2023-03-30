@@ -98,8 +98,13 @@ const createWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-  const feedUrl = `https://pawelmizwa-pc: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@github.com/everdome-io/launcher-desktop-app/releases/tag/v1.9.12`;
-  autoUpdater.setFeedURL({ url: feedUrl, provider: 'generic' });
+  autoUpdater.setFeedURL({
+    provider: 'github',
+    owner: 'pawelmizwa-pc',
+    repo: 'launcher-desktop-app',
+    token: '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',
+    private: true,
+  });
   const result = await autoUpdater.checkForUpdates();
   console.log('checkForUpdatesAndNotify');
   console.log(result);
