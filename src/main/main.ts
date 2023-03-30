@@ -332,11 +332,12 @@ autoUpdater.on('update-not-available', (info) => {
 
 autoUpdater.on('error', (err) => {
   console.log('autoUpdater error');
+  const feedURL = autoUpdater.getFeedURL();
   console.log(err);
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.error,
-      message: JSON.stringify(err),
+      message: JSON.stringify({ ...err, feedURL }),
     });
   }
 });
