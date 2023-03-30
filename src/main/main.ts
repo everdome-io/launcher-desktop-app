@@ -98,7 +98,7 @@ const createWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-  const feedUrl = `https://pawelmizwa-pc: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@github.com/everdome-io/launcher-desktop-app/releases/download/v1.9.10`;
+  const feedUrl = `https://pawelmizwa-pc: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@github.com/everdome-io/launcher-desktop-app/releases/download/v1.9.11`;
   autoUpdater.setFeedURL({ url: feedUrl, provider: 'generic' });
   const result = await autoUpdater.checkForUpdates();
   console.log('checkForUpdatesAndNotify');
