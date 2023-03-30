@@ -6,6 +6,7 @@ import './FileDownloader.css';
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: { process, progress, localUserPath, isFinished },
 }) => {
+  console.log('test updates vvvv');
   let className = 'ProcessButton';
   let buttonText = 'DOWNLOAD';
   let progressText = null;
