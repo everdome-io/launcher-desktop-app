@@ -29,14 +29,21 @@ renderAppComponent();
 window.electron.ipcRenderer.on(
   Channels.changeState,
   (updatedState: AppState) => {
-    state = {
-      ...updatedState,
-      localUserPath:
-        updatedState.localUserPath !== ''
-          ? updatedState.localUserPath
-          : state.localUserPath,
-    };
-    renderAppComponent();
+    const shouldRender =
+      updatedState.localUserPath !== '' ||
+      updatedState.progress === null ||
+      state.progress === null ||
+      updatedState.progress > state.progress + 0.05;
+    if (shouldRender) {
+      state = {
+        ...updatedState,
+        localUserPath:
+          updatedState.localUserPath !== ''
+            ? updatedState.localUserPath
+            : state.localUserPath,
+      };
+      renderAppComponent();
+    }
   }
 );
 

@@ -1,15 +1,14 @@
 import { AppState, Channels, Processes } from '@interfaces';
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import './FileDownloader.css';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: { process, progress, localUserPath, isFinished },
 }) => {
-  console.log('test updates vvvv');
   let className = 'ProcessButton';
   let buttonText = 'DOWNLOAD';
-  let progressText = null;
+  let additionalInfo = null;
 
   const couldDownload =
     process === Processes.openDialog &&
@@ -20,25 +19,32 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     (process === Processes.extract && isFinished) ||
     process === Processes.installation;
 
+  const duringDownloadOrExtract =
+    (process === Processes.download || process === Processes.extract) &&
+    progress !== null;
+
   if (couldDownload) {
     window.electron.ipcRenderer.sendMessage(
       Channels.downloadProcess,
       localUserPath
     );
   }
+  if (couldExtract) {
+    window.electron.ipcRenderer.sendMessage(Channels.extractProcess, {
+      filepath: localUserPath,
+    });
+  }
+
   if (couldPlay) {
     className = 'ProcessButton';
     buttonText = 'PLAY';
-    progressText = null;
-  } else if (
-    (process === Processes.download || process === Processes.extract) &&
-    progress !== null
-  ) {
+  } else if (duringDownloadOrExtract) {
     className = 'DuringProcessButton';
     buttonText = `${progress.toFixed(2)} %`;
-    progressText =
+    additionalInfo =
       process === Processes.download ? 'Downloading...' : 'Extracting...';
   }
+
   const handleOnClick = () => {
     if (couldPlay) {
       window.electron.ipcRenderer.sendMessage(
@@ -49,13 +55,6 @@ export const FileDownloader: FC<{ state: AppState }> = ({
       window.electron.ipcRenderer.sendMessage(Channels.openDialog, null);
     }
   };
-  useEffect(() => {
-    if (couldExtract) {
-      window.electron.ipcRenderer.sendMessage(Channels.extractProcess, {
-        filepath: localUserPath,
-      });
-    }
-  }, [couldExtract, localUserPath]);
 
   return (
     <div>
@@ -71,15 +70,16 @@ export const FileDownloader: FC<{ state: AppState }> = ({
           }}
           onClick={handleOnClick}
         >
-          <div
-            className="ProcessButtonText"
-            style={{ paddingRight: progressText !== null ? '18px' : '0px' }}
-          >
-            {buttonText}
-          </div>
-          {progressText !== null && (
+          {progress !== null &&
+          progress !== 100 &&
+          process === Processes.extract ? (
+            <div className="Spinner" />
+          ) : (
+            <div className="ProcessButtonText">{buttonText}</div>
+          )}
+          {additionalInfo !== null && (
             <div style={{ color: 'white', fontSize: '12px' }}>
-              {progressText}
+              {additionalInfo}
             </div>
           )}
         </button>
