@@ -4,9 +4,11 @@ export enum Channels {
   downloadProcess = 'download-process',
   extractProcess = 'extract-process',
   installationProcess = 'installation-process',
-  crossWindow = 'cross-window',
+  showProfileWindow = 'show-profile-window',
 
+  crossWindow = 'cross-window',
   changeState = 'change-state',
+
   appUpdate = 'app-update',
 }
 /* eslint-disable no-shadow */
