@@ -4,8 +4,11 @@ export enum Channels {
   downloadProcess = 'download-process',
   extractProcess = 'extract-process',
   installationProcess = 'installation-process',
+  showProfileWindow = 'show-profile-window',
 
+  crossWindow = 'cross-window',
   changeState = 'change-state',
+
   appUpdate = 'app-update',
 }
 /* eslint-disable no-shadow */
@@ -44,6 +47,10 @@ export type AppState = {
   localUserPath: string;
 };
 
+export type CrossWindowState = {
+  isAuthenticated: boolean;
+};
+
 export type AppUpdate = {
   status: AppUpdateStatus;
   message: string | null;
@@ -53,4 +60,6 @@ export type ElectronEventArgs<T> = T extends Channels.changeState
   ? AppState
   : T extends Channels.installationProcess
   ? string
+  : T extends Channels.crossWindow
+  ? CrossWindowState
   : never;
