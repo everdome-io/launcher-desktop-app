@@ -10,7 +10,14 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, dialog } from 'electron';
+import {
+  app,
+  BrowserWindow,
+  shell,
+  ipcMain,
+  dialog,
+  ipcRenderer,
+} from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
@@ -353,4 +360,10 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
       if (returnValue.response === 0) autoUpdater.quitAndInstall();
     })
     .catch((err) => console.log(err));
+});
+
+ipcMain.on(Channels.crossWindow, async function (event, state) {
+  if (mainWindow) {
+    mainWindow.webContents.send(Channels.crossWindow, state);
+  }
 });
