@@ -26,7 +26,6 @@ async function extractEntry(
   entry: StreamZip.ZipEntry,
   destination: string
 ): Promise<number> {
-  // Change the return type to Promise<number>
   const zip = new StreamZip.async({ file: filePath });
   const outputPath = path.join(destination, entry.name);
 
@@ -55,15 +54,12 @@ async function processEntriesInChunks(
 
   // eslint-disable-next-line no-restricted-syntax
   for (const chunk of chunks) {
-    console.log('chunk');
     const extractPromises = chunk.map((entry) =>
       extractEntry(filePath, entry, destination)
     );
     const extractedSizes = await Promise.all(extractPromises);
-    console.log('extractedSizes');
 
     const chunkSize = extractedSizes.reduce((sum, size) => sum + size, 0);
-    console.log(chunkSize);
     progressCallback(chunkSize);
   }
 }
@@ -74,7 +70,6 @@ export async function extractWithProgress(
   progressCallback: (percent: number) => void
 ): Promise<void> {
   const entries = await getEntries(filePath);
-  console.log('entries');
   const totalSize = entries.reduce((sum, entry) => sum + entry.size, 0);
 
   let extractedSize = 0;

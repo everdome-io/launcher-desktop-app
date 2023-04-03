@@ -99,8 +99,6 @@ const createWindow = async () => {
     return { action: 'deny' };
   });
   const result = await autoUpdater.checkForUpdates();
-  console.log('checkForUpdatesAndNotify');
-  console.log(result);
 };
 
 const createProfileWindow = async () => {
@@ -289,7 +287,6 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
 });
 
 autoUpdater.on('checking-for-update', () => {
-  console.log('checking-for-update');
   const message = autoUpdater.getFeedURL();
 
   if (mainWindow) {
@@ -301,9 +298,6 @@ autoUpdater.on('checking-for-update', () => {
 });
 
 autoUpdater.on('update-available', (info) => {
-  console.log('update-available');
-  console.log(info);
-
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.available,
@@ -313,20 +307,16 @@ autoUpdater.on('update-available', (info) => {
 });
 
 autoUpdater.on('update-not-available', (info) => {
-  console.log('update-not-available');
-  console.log(info);
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.notAvailable,
-      message: JSON.stringify(info),
+      message: '',
     });
   }
 });
 
 autoUpdater.on('error', (err) => {
-  console.log('autoUpdater error');
   const feedURL = autoUpdater.getFeedURL();
-  console.log(err);
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.error,

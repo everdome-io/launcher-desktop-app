@@ -1,4 +1,9 @@
-import { AppState, AppUpdate, CrossWindowState } from '@interfaces';
+import {
+  AppState,
+  AppUpdate,
+  AppUpdateStatus,
+  CrossWindowState,
+} from '@interfaces';
 import { FC } from 'react';
 import { Hello, FileDownloader, Menu } from 'src/renderer/components';
 import headerImage from 'assets/images/Genesis_NFT.png';
@@ -10,8 +15,9 @@ export const Welcome: FC<{
   updateState: AppUpdate;
   crossWindowState: CrossWindowState;
 }> = ({ state, updateState, crossWindowState }) => {
-  console.log(updateState.status);
-  console.log(updateState.message);
+  if (updateState.status === AppUpdateStatus.error) {
+    console.log(`update error ${updateState.message}`);
+  }
   console.log(`Is user authenticated?: ${crossWindowState.isAuthenticated}`);
   return (
     <div className="container">

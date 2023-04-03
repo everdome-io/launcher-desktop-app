@@ -11,7 +11,6 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
 
   const connectWallet = () => {
     setIsLogged(true);
-    console.log('I am here - connectWallet');
     window.electron.ipcRenderer.sendMessage(Channels.crossWindow, {
       isAuthenticated: true,
     });
