@@ -4,6 +4,7 @@ import {
   AppUpdate,
   AppUpdateStatus,
   Channels,
+  CrossWindowState,
   Processes,
 } from '@interfaces';
 import App from './App';
@@ -19,10 +20,20 @@ let updateState: AppUpdate = {
   message: null,
 };
 
+let crossWindowState: CrossWindowState = {
+  isAuthenticated: false,
+};
+
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 function renderAppComponent() {
-  root.render(<App state={state} updateState={updateState} />);
+  root.render(
+    <App
+      state={state}
+      updateState={updateState}
+      crossWindowState={crossWindowState}
+    />
+  );
 }
 renderAppComponent();
 
@@ -51,6 +62,14 @@ window.electron.ipcRenderer.on(
   Channels.appUpdate,
   (newUpdateState: AppUpdate) => {
     updateState = newUpdateState;
+    renderAppComponent();
+  }
+);
+
+window.electron.ipcRenderer.on(
+  Channels.crossWindow,
+  (newCrossWindowState: CrossWindowState) => {
+    crossWindowState = newCrossWindowState;
     renderAppComponent();
   }
 );

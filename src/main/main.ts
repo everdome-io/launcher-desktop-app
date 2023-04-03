@@ -344,3 +344,11 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
     })
     .catch((err) => console.log(err));
 });
+
+ipcMain.on(Channels.crossWindow, async function (_event, state) {
+  mainWindow?.webContents.send(Channels.crossWindow, state);
+});
+
+ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
+  if (state === true) profileWindow?.show();
+});
