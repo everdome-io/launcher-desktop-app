@@ -10,7 +10,7 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, dialog } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
@@ -46,6 +46,17 @@ const installExtensions = async () => {
       forceDownload
     )
     .catch(console.log);
+};
+
+const loadExtensions = () => {
+  session.defaultSession
+    .loadExtension(
+      '/Users/kwb/Library/Application Support/Google/Chrome/Profile 2/Extensions/mcohilncbfahbmgdjkbpemcciiolgcge/2.39.1_0'
+    )
+    .then((response) => {
+      console.log('response ext', response);
+      // TODO: We have global window.okxwallet object, we need it in the renderer process
+    });
 };
 
 const createWindow = async () => {
@@ -105,6 +116,8 @@ const createProfileWindow = async () => {
   if (isDebug) {
     await installExtensions();
   }
+  // TODO: this is working on dev mode but not on prod
+  loadExtensions();
 
   const RESOURCES_PATH = app.isPackaged
     ? path.join(process.resourcesPath, 'assets')
