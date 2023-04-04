@@ -1,0 +1,130 @@
+<!doctype html>
+<html xml:lang="en" class="pc-adapter">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>OKX Wallet</title>
+  <style>
+    .pc-adapter {
+      width: 360px;
+    }
+
+    @media screen and (min-width: 361px) {
+      .pc-adapter {
+        max-width: 360px;
+        background-color: #eee;
+        position: relative;
+      }
+
+      .pc-adapter .permissions-connect-choose-wallet__confirm,
+      .pc-adapter .chains-choose-network-modal__wrap,
+      .pc-adapter .ok-seed-check-bottom,
+      .pc-adapter .ok-nft-item--main-image,
+      .pc-adapter .ok-nft-item--send-button-area,
+      .pc-adapter .metax-send-nft-page__btn-next-page,
+      .pc-adapter .metax-send-nft-detail__btns,
+      .pc-adapter .ok-home--nft-loading-panel,
+      .pc-adapter .okui-dialog-float {
+        position: absolute;
+      }
+
+      .pc-adapter .okui-dialog-window.bottom-align {
+        top: auto;
+        bottom: 0;
+        border-radius: 8px 8px 0 0;
+        transform: none;
+      }
+
+      .pc-adapter .tx-detail-action__btns {
+        position: static;
+      }
+
+      .pc-adapter .ok-home-bottom-panel__fixed {
+        position: sticky !important;
+      }
+
+      .pc-adapter .ok-nft-filter--button-group {
+        position: sticky;
+        bottom: 0;
+      }
+
+      .pc-adapter .select-create-wallet-method-dialog {
+        min-width: 360px;
+        bottom: 0;
+        transform: initial;
+        top: initial;
+        left: 0;
+      }
+
+      .pc-adapter .okui-dialog-window {
+        min-width: 360px;
+      }
+
+      .pc-adapter #app-content {
+        background-color: #fff;
+      }
+
+      /* seed-check */
+      .pc-adapter .ok-seed-check-container {
+        padding-bottom: 0;
+      }
+
+      .pc-adapter .network-fee, .pc-adapter .network-fee__head {
+        left: 50%;
+        width: 360px;
+        margin-left: -180px;
+      }
+    }
+
+    #app-content {
+      display: flex;
+      flex-flow: column;
+    }
+
+    #loading__logo {
+      width: 133px;
+      height: 100px;
+      align-self: center;
+      margin: 180px 0 0 0;
+    }
+
+    #loading__spinner {
+      width: 30px;
+      height: 30px;
+      margin-top: 50px;
+      align-self: center;
+      border-color: #3d3d3d #dbdbdb #dbdbdb;
+      border-width: 2px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border-style: solid;
+      background-color: transparent;
+      animation: spinner-rotation 1s linear infinite;
+    }
+
+    @keyframes spinner-rotation {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(1turn)
+      }
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./scripts/ui/ui.css" title="ltr">
+</head>
+
+<body class="theme-light">
+  <div id="app-content">
+    <img id="loading__logo" src="./static/images/logo.svg" alt="" />
+    <div id="loading__spinner"></div>
+  </div>
+  <div id="popover-content"></div>
+  <script src="./scripts/lib/globalthis.js"></script>
+  <script src="./scripts/lib/sentry.js"></script>
+  <script src="./scripts/ui/ui.js" type="module" charset="utf-8"></script>
+</body>
+
+</html>
