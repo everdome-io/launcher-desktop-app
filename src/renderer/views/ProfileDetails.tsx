@@ -6,51 +6,27 @@ import settingsIcon from 'assets/images/settings-icon.png';
 import iconDOME from 'assets/images/icon_DOME.png';
 import './ProfileDetails.css';
 
-import { init, useConnectWallet } from '@web3-onboard/react';
-import injectedModule from '@web3-onboard/injected-wallets';
-import { ethers } from 'ethers';
-
-// Sign up to get your free API key at https://explorer.blocknative.com/?signup=true
-const dappId = '1730eff0-9d50-4382-a3fe-89f0d34a2070';
-
-const injected = injectedModule();
-
-const infuraKey = '<INFURA_KEY>';
-const rpcUrl = `https://mainnet.infura.io/v3/${infuraKey}`;
-
-// initialize Onboard
-init({
-  wallets: [injected],
-  chains: [
-    {
-      id: '0x1',
-      token: 'ETH',
-      label: 'Ethereum Mainnet',
-      rpcUrl,
-    },
-  ],
-});
-
 export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
   const [isLogged, setIsLogged] = useState(false);
 
   const connectWallet = () => {
-    setIsLogged(true);
-    window.electron.ipcRenderer.sendMessage(Channels.crossWindow, {
-      isAuthenticated: true,
-    });
+    window.electron.ipcRenderer.sendMessage(Channels.openOKXExtension);
+
+    window.okxwallet
+      .request({ method: 'eth_requestAccounts' })
+      .then((res: string) => {
+        setIsLogged(true);
+      })
+      .catch((err) => {
+        if (err.code === 4001) {
+          // EIP-1193 userRejectedRequest error
+          // If this happens, the user rejected the connection request.
+          console.log('Please connect to OKX Wallet.');
+        } else {
+          console.error(err);
+        }
+      });
   };
-
-  const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
-
-  // create an ethers provider
-  let ethersProvider;
-
-  if (wallet) {
-    // if using ethers v6 this is:
-    // ethersProvider = new ethers.BrowserProvider(wallet.provider, 'any')
-    ethersProvider = new ethers.providers.Web3Provider(wallet.provider, 'any');
-  }
 
   return (
     <div className="container">
@@ -104,11 +80,10 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
             </a>
             <p className="InfoText">or if you already have a wallet</p>
             <button
-              disabled={connecting}
               className="CTAButton CTAButtonInverse ConnectWallet"
-              onClick={() => (wallet ? disconnect(wallet) : connect())}
+              onClick={connectWallet}
             >
-              {connecting ? 'connecting' : wallet ? 'disconnect' : 'connect'}
+              Connect Wallet
             </button>
           </div>
         )}
