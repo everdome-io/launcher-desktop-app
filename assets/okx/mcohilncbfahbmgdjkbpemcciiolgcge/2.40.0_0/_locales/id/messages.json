@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Pay network fee with"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "To safely transfer this NFT, this address is unavailable for gas payment"
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "We recommend that you transfer the NFT to a Tarpoot address that starts with “bc1”. Transferring it to other addresses may pose a risk of asset loss."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Select wallet to pay network fee"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "Lanjutkan membuka"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "Anda akan membuka situs yang berpotensi mengecoh Anda untuk memberikan informasi pribadi atau keuangan. Demi menjaga keamanan aset, baca petunjuk di bawah sebelum melanjutkan."
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "Anda akan membuka situs yang berpotensi mengecoh Anda untuk memberikan informasi pribadi atau keuangan. Demi menjaga keamanan aset, baca petunjuk di bawah sebelum melanjutkan."
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· OKX Wallet mengintegrasikan beberapa basis data aman untuk memblokir situs berbahaya"
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· Hubungi service@okx.com untuk mendapatkan umpan balik jika ada situs mencurigakan atau kesalahan pemblokiran. Terima kasih atas kontribusi Anda pada keamanan blockchain kami."
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· Jika tidak ingin terlalu sering menerima peringatan ini, Anda dapat mengubah tingkat proteksi ke rendah di keamanan Dompet."
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· Perhatikan bahwa kami tidak menjamin keamanan suatu situs meskipun peringatan ini tidak muncul. Anda bertanggung jawab atas segala risiko akibat membuka situs yang tidak aman."
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· Sistem keamanan OKX Wallet mendeteksi situs ini sebagai situs mencurigakan. Anda bertanggung jawab atas segala risiko akibat membuka situs yang tidak aman."
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "Peringatan situs menipu"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "Peringatan situs mencurigakan"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "Masukkan alamat penerima"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0,000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "Setujui"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "Batalkan"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "Mengerti"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "OKX Wallet tidak akan memvalidasi jaringan kustom. Waspadai potensi risiko keamanannya"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "Tambahkan jaringan"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "URL penjelajah blok"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "ID Rantai"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "Simbol"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "Jaringan"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "URL Jaringan"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "Gagal menambahkan"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "Simpan"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "Catatan tidak ditemukan"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "Tolak"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "Interaksi kontrak"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "Nonce Kustom"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "Data transaksi"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "Dari"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "Batas gas"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "Harga gas ({gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "Interaksi dengan"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "Jaringan"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "Total biaya"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "Dompet"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "Berhasil diterapkan"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "Gagal menerapkan"
+   },
+   "developer_mode_header_title_history": {
+      "message": "History"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "Cancel transaction"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "Completed"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": ""
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "Speed up"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "Waktu"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "Interaksi kontrak"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "Kirim"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "Alamat kontrak"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "Date"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "Lihat di browser"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "Blok"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "Sebarkan kontak"
+   },
+   "developer_mode_history_title_from": {
+      "message": "Dari"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": ""
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "Interaksi dengan"
+   },
+   "developer_mode_history_title_network": {
+      "message": "Jaringan"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Nonce"
+   },
+   "developer_mode_history_title_status": {
+      "message": "Status"
+   },
+   "developer_mode_history_title_time": {
+      "message": "Waktu"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "Data transaksi"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "Hash transaksi"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "Jaringan kustom"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "Mode pengembang"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "Keluar"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "Terima"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "Kirim"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "Riwayat"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "Kelola kripto"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "Terhubung"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "Ditambahkan"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "Alamat {network} disalin"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": ""
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "ID rantai yang digunakan RPC adalah {chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "Too large. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "Tidak ada URL RPC yang cocok untuk simbol kripto ini. Periksa simbol yang dimasukkan."
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "Invalid number. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "URL harus memiliki awalan HTTP/HTTPS yang sesuai"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "URL harus memiliki awalan HTTP/HTTPS yang sesuai"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "Invalid URL. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "ID rantai ini sudah digunakan di jaringan {network}"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "Jaringan dengan ID rantai {number} biasanya menggunakan {symbol}. Periksa simbol yang Anda masukkan"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "URL RPC tidak valid"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "URL RPC yang Anda masukkan tidak diketahui. Periksa kembali"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "URL ini sudah digunakan oleh jaringan {network}"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "Detail kripto"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "Alamat kontrak"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "Jaringan"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "Koma desimal"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "Disalin"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "Detail kripto"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "Approve"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "Contract interaction"
+   },
+   "developer_mode_list_text_send": {
+      "message": "Kirim"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "To {addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "Alamat sudah ada"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "Alamat tidak valid"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "Segarkan"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "Terjadi kesalahan jaringan. Segarkan dan coba lagi."
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "Masukkan hingga 11 karakter"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "Kripto kustom"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "Kripto kustom"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "Kripto yang ditambahkan"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "Kripto yang tidak ditambahkan"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "Alamat kontrak"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "Koma desimal"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "Jaringan"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "Simbol"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "Ditambahkan"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "Batalkan"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "Hapus"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "Menghubungkan ke {network}"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "Entri tidak valid"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "Jaringan ini akan dihapus dari daftar"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "Hapus jaringan ini?"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "Tambahkan jaringan kustom"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "Batalkan"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "Kembali"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "Ubah jaringan"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "Edit"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "Coba lagi"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "Kolom ini wajib diisi"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "Penyedia layanan Internet yang tidak diketahui dapat membahayakan status blockchain dan melacak aktivitas jaringan Anda. Tambahkan jaringan yang Anda percayai saja"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "Tambahkan jaringan kustom"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "Penjelajah blok (opsional)"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "ID Rantai"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "Jaringan kustom"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "Jaringan kustom"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "Jaringan"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "Jaringan"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "URL RPC"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "Uji jaringan"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "Simbol"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "Anda tidak dapat menghapus jaringan terhubung"
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "Segarkan dan coba lagi, atau ubah ke jaringan lain"
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "Gagal menghubungkan"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "Dihapus"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "ID rantai yang digunakan untuk menandatangani transaksi harus sama dengan ID rantai dari jaringan. Anda dapat memasukkan angka desimal atau heksadesimal yang diawali dengan 0x. Angka desimal ditampilkan secara default."
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "Salin"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "Hanya kirim aset jaringan {chainname} ke alamat ini"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "Optional"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "Gagal mendapatkan batas gas. Masukkan"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "Jumlah yang diterima"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "Dari"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "Masukkan data (opsional)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "Masukkan data"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "Maks"
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "Biaya jaringan"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "Biaya jaringan"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Nonce"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Nonce"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "Jumlah"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "Alamat penerima"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "Ke"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "Saldo: {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= harga gas ({gasprice} {unit})× batas gas ({gaslimit})"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "Sesuaikan"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "Batas gas"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "Harga gas ({unit})"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "Select crypto"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data copied"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "Belum ada kripto di dompet"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "Info tambahan yang disertakan dalam transaksi, seperti data panggilan interaksi kontrak atau pesan yang dikirim ke penerima"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "Lebih dari rekomendasi: {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "Kurang dari rekomendasi: {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "Mengerti"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "Kunci dompet"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "Mode pengembang hanya tersedia di jaringan EVM. Ubah dompet dan coba lagi"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "Dokumentasi pengembang"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "Mode pengembang"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "Aktifkan mode ini untuk menggunakan fitur tingkat lanjut seperti menguji jaringan, dengan menambahkan RPC atau Nonce kustom"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "Preferensi"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "Tetapkan sebagai dompet default"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "Versi {version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "Keamanan dompet"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "Pengaturan"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "Mode pengembang tidak tersedia di jaringan ini"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "Completed"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "Failed"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "Pending"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "Waiting"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_top_text_done": {
+      "message": "Selesai"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "Kelola jaringan"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "Total aset"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "Kelola"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "Edit dompet"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "Mode pengguna"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "Selamat datang di"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "By proceeding, you'll allow {contract} access to your {asset}"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "Approve"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "Klaim"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "NFT yang tersedia"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "Klaim NFT"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "Go back to homepage"
+   },
+   "extension_bug_text_fixing": {
+      "message": "You can go back to homepage and try again later"
+   },
+   "extension_bug_title_error": {
+      "message": "Error"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "Page not found"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "Contract:"
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "Asset change (est.)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "Request from"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "Transaction amount"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "The network information entered belongs to the Sui network. Custom network only supports adding EVM networks"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "Unable to import a private key of the Sui network. Try a different one"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "extension_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "extension_history_index_pending": {
+      "message": "Pending"
+   },
+   "extension_history_title_farm": {
+      "message": "Farm"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "Klaim"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "{num} NFT dapat diklaim"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "Diklaim"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "To secure your transaction, we estimate an amount for your reference"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "extension_input_errortip_max20": {
+      "message": "Maximum 20 characters"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "By proceeding, you'll revoke {contract} access to your {asset}"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "Revoke approval"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "Pelajari selengkapnya di situs web OKX"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/10558617769613-OKX-Wallet-Passed-Security-Key-Audit-by-Slowmist"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "Pusat dukungan"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "Komunitas OKX"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/okx"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "OKX Wallet"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "Tentang OKX Wallet"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "OKX Email"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "Audit keamanan"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "Ketentuan Layanan"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "Manajemen dompet"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "Alamat email disalin"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "Requesting"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "Request success"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "{num} {crypto} requested"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "Too many requests sent to the faucet. Try again later"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "Confirm"
+   },
+   "extension_toast_btn_ok": {
+      "message": "OK"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "You need to spend more network fees in order to replace the transaction"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas price ({unit})"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "Current DApp network belongs to testnet. Switch to custom network mode in Settings and try again"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "Transaction canceled"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "Current fee"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "Required fee"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "Wallet address copied"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "Please switch wallet mode"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "Replace transaction"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "Masukkan alamat"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "Confirm"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "Mengerti"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "Jika tidak menemukan opsi OKX Wallet, Anda dapat menghubungkannya melalui Metamask atau Phantom"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "Anda akan mengatur OKX Wallet sebagai dompet pilihan Anda untuk dihubungkan"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "Tetapkan sebagai dompet default"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "Cara menghubungkan ke DApp"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "Wallet connected"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "Up to {amount} wallets can be added"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "Couldn't obtain addresses. Make sure you've unlocked your device and opened the required app on it"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "Check {transaction} in Ledger wallet"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "Device disconnected. If you need to continue, connect Ledger to your computer via USB and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "Keep the USB connection between your Ledger and computer, unlock Ledger wallet, and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "OK"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "Retry"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "transaction details"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "Transaction details sent. Check and confirm via your device"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "Added"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "Jelajahi berbagai jaringan baru dengan dompet lengkap kami"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "Lindungi transaksi Anda agar tetap aman dengan OKX Wallet"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "Gateway universal untuk semua DApp"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "Konfirmasi"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "Biaya dasar maks harus lebih dari 0"
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "Biaya dasar maks Anda kurang dari biaya dasar jaringan yang diperlukan sebesar {baseFee} Gwei sehingga transaksi memerlukan waktu yang lebih lama"
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "Biaya prioritas harus lebih dari 0"
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "Biaya dasar yang diperlukan: {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "Biaya dasar maks"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "mnt"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "Biaya prioritas"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "dtk"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "Atur ulang dompet"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "Lupa kata sandi?"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "OKX Wallet tidak menyimpan kata sandi dompet Anda"
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "Jika lupa, Anda dapat mengatur ulang kata sandi dengan mengatur ulang dompet"
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "Perlu diperhatikan bahwa pengaturan ulang dompet tanpa pencadangan dapat menyebabkan Anda kehilangan dompet dan semua aset di dalamnya. Pastikan semua dompet telah dicadangkan"
+   },
+   "metax_mid_colored_stake": {
+      "message": "Stake"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "Cadangkan sekarang"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "Atur ulang dompet"
+   },
+   "securityreset_header_text_reset": {
+      "message": "Atur ulang dompet"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "Batalkan"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "Perlu diperhatikan bahwa pengaturan ulang dompet tanpa pencadangan dapat menyebabkan Anda kehilangan dompet dan semua aset di dalamnya. Pastikan semua dompet telah dicadangkan"
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "Konfirmasi pengaturan ulang dompet dengan memasukkan: {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "Atur ulang dompet?"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "Peringatan risiko"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "Tingkat proteksi Dompet"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "Tingkat keketatan pemeriksaan. Tingkat keketatan yang tinggi dapat memblokir lebih banyak situs mencurigakan."
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "Tinggi"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "Rendah"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "Memblokir situs mencurigakan dan berbahaya"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "Memblokir situs berbahaya saja"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "Tingkat proteksi Dompet"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "Saldo tidak cukup untuk {token}"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "Tukar"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "Anda memiliki pesanan Tukar dengan biaya gas yang tertunda. Pesanan lain tidak dapat dimulai pada saat yang bersamaan. Coba lagi setelah pesanan ini selesai."
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "OK"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "Layanan Tukar dengan biaya gas sementara ditutup"
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "Anda telah membuat pesanan serupa. Sebaiknya Anda tidak membuat pesanan baru hingga saldo Anda diperbarui."
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "Lihat di penjelajah"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "Batas pesanan harian Tukar dengan biaya gas telah dicapai. Coba lagi besok."
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "Mesin deteksi risiko kami telah mendeteksi Anda melakukan beberapa operasi yang tidak biasa. Anda tidak lagi diizinkan untuk menggunakan layanan Tukar untuk biaya gas."
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "Lihat di Penjelajah"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "Gagal mengisi {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "Gagal mengisi {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "Menukar {payValue} {paySymbol} untuk {receiveValue} {receiveSymbol}"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "Transaksi terkirim"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "Isi ulang {nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value} general transactions"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "Pilih jumlah yang dibayarkan"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "Pilih token yang dibayarkan"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "Tukar dengan biaya gas"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "OK"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "Nilai ini adalah estimasi kurs di fitur Tukar dengan biaya gas. Nilai ini dihitung dengan memperhitungkan harga pasar dan kurs dari bursa terpusat. Tarif sebenarnya dapat bervariasi saat pesanan Anda dikonfirmasi. Menggunakan layanan Tukar dengan biaya gas juga memerlukan biaya jaringan, yang secara otomatis akan diperhitungkan dalam jumlah yang Anda bayarkan."
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "Trading on blockchains requires paying a network fee with native tokens such as ETH, BNB, OKT, MATIC, etc. When you don't have these tokens to make a transaction, you can quickly swap tokens you already hold for native tokens using the Swap for gas feature (it's only available for a few networks).\nGetting native tokens via Swap for gas also requires a network fee, which will be automatically factored into the amount you pay.\nYou'll see an estimated number of general transactions when placing an order on Swap for gas. It refers to the number of token transfers you can make with your selected amount. The actual number may vary."
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "Tukar dengan biaya gas"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "Tukar dengan biaya gas"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "Tukar dengan biaya gas"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "Referensi"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "Anda menerima"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "Muat Ulang"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "Terjadi kesalahan jaringan"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "Harap tidak membuat pesanan lain hingga pesanan ini selesai, karena pesanan mungkin gagal. Menutup halaman ini tidak akan mengganggu proses yang berlangsung. Detail transaksi dapat dilihat di bagian Riwayat."
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "Pilih token yang dibayarkan"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "Gagal memperoleh harga {paySymbol} dan {receiveSymbol}, tidak dapat mengonfirmasi jumlah yang diterima. Coba lagi nanti."
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "Gagal memperoleh harga {paySymbol}, tidak dapat mengonfirmasi jumlah yang dibayarkan. Coba lagi nanti."
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "Gagal memperoleh harga {receiveSymbol}, tidak dapat mengonfirmasi jumlah yang diterima. Coba lagi nanti."
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "Biaya jaringan saat ini terlalu mahal, bukan waktu yang cocok untuk melakukan transaksi. Coba lagi nanti."
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "Insufficient {token} for network fee "
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "Recommend"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "Receive {token} with QR code or wallet address"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "Top up {token} quicker than ever"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "Receive"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "Swap for gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "Cadangkan dompet untuk dapat melihat alamat"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "Klien buku besar"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "Unduh {downloadUrl}, lalu klik Hubungkan di bawah setelah membuka halaman Klien buku besar"
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "Hubungkan dompet perangkat keras"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "Tambahkan dompet"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "Gagal menghubungkan"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "Pastikan Anda sudah menyertakan dompet perangkat keras ke komputer dan menguncinya"
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "Pilih dompet perangkat keras"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "Pastikan dompet perangkat keras terhubung ke komputer Anda"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "Menghubungkan"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "Akun {newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "Akun baru dibuat"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "Hubungkan"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "Hubungkan Dompet Perangkat Keras"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "Buat dompet baru"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "Hardware wallet"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "Kunci pribadi"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "Frasa benih"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "Impor dompet yang ada"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "Anda harus menggunakan OKX Wallet di Google Chrome agar dapat menghubungkan dompet perangkat keras Anda"
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "Browser Anda tidak didukung"
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "Unduh Google Chrome"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "(versi lama)"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "Hubungkan dompet perangkat keras"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "Anda harus menggunakan akun lama sebelum menambahkan akun baru."
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "Menghubungkan..."
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "Hubungkan dompet perangkat keras Anda"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "Buat dompet frasa sandi"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "Jika alamat dompet Anda tidak tercantum di bawah, ubah jalur ke Versi Lama (MEW / MyCrypto)"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "Lupakan dompet perangkat keras ini"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "Pilih jalur"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "Pilih dompet"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "Impor frasa benih atau kunci pribadi"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "Anda dapat menambahkan hingga 50 dompet"
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "Dibuat"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "Cabut persetujuan"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "Otorisasi Dompet"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "Anda akan mencabut persetujuan {tokenSymbol}"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "Kunci pribadi"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "Penyalinan kunci pribadi akan berisiko karena clipboard mudah dipantau atau disalahgunakan oleh aplikasi pihak ketiga."
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "Verifikasi frasa benih Anda"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "Saya telah mencatatnya"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "Tetap Salin"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "Jangan Salin"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "Kunci Pribadi"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "Anda dapat mencatat kata-kata tersebut sesuai urutan dan menyimpannya dengan aman"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "Catat frasa benih"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "Pastikan tidak ada orang lain yang melihat layar Anda"
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "Lihat frasa benih"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "Dicadangkan"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "Disalin"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.okx.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "Network fee"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "Register zkSync Lite to continue the transaction"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "Jumlah"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "Jumlah yang disetujui"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "Setujui"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "Berinteraksi Dengan (Kepada)"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "Jaringan"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "Jaringan"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "URL Penjelajah Blok"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "ID rantai yang digunakan untuk menandatangani transaksi pada jaringan ini."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "ID rantai yang digunakan untuk menandatangani transaksi pada jaringan ini"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "Simbol kripto"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "Simbol yang ditampilkan untuk mata uang jaringan ini"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "URL yang digunakan sebagai penjelajah blok pada jaringan ini."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "URL penjelajah blockchain yang digunakan oleh jaringan ini"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "Nama yang berkaitan dengan jaringan ini"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "Nama yang berkaitan dengan jaringan ini"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "URL yang digunakan untuk mengakses jaringan ini"
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "Dengan memberikan izin, Anda mengizinkan {name} untuk mentransfer {tokenSymbol} Anda dan mengotomatiskan transaksi"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "Cadangkan frasa benih Anda terlebih dahulu sebelum mengakses DApp"
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "Abaikan"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "Berikan"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "Beralih"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "Menaikkan biaya dapat mengurangi waktu proses, tetapi ini tidak pasti."
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "Pesan ini tidak dapat didekripsi karena terjadi kesalahan: {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "Hanya hubungkan ke situs tepercaya."
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "Hubungkan akun"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "Pilih akun"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "Cadangkan dompet Anda"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "Anda telah menyetujui izin ini"
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "Izinkan DApp saat ini untuk terhubung ke OKX Wallet"
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "Anda belum menghubungkan OKX Wallet ke situs ini. Untuk menghubungkan, temukan dan klik tombol hubungkan."
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "{siteName} perlu membaca pesan ini untuk melanjutkan"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "URL Jaringan"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "Anda belum menyetujui izin ini"
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName} memerlukan kunci publik terenkripsi Anda. Dengan menyetujui, situs ini dapat mengirimkan pesan terenkripsi kepada Anda"
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "Minta enkripsi kunci publik"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "Tanda tangani"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "Permintaan tanda tangan"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "Akun Saat Ini"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "Jaringan saat ini"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "Hubungkan {curWalletName} ke {host}?"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "Situs terhubung"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "Dekripsikan"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "Salin pesan terenkripsi"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "Dekripsikan pesan"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "Dekripsikan permintaan"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "Ekstensi eksternal"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "Jaringan"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "Kontrak Baru"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "+ {length} lainnya"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "Kepada:"
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "Pilih akun"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "Pilih semua"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "Jenis"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "{curWalletName} telah terhubung ke situs ini"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "{curWalletName} telah terputus dari situs ini"
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "Putuskan sambungan"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "Tolak"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "Gas tidak cukup"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "Tambahkan token yang disarankan"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "Hubungkan ke semua {account} Anda"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "Hubungkan ke {origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "akun"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "Yakin ingin menyetujui? Dengan menyetujui, Anda mengizinkan DApp untuk melakukan penarikan {tokenSymbol} kapan saja."
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "Izinkan situs ini untuk:"
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "Tindakan ini akan mengizinkan jaringan untuk digunakan dalam OKX Wallet."
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "Izinkan ekstensi eksternal untuk:"
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "Tambahkan token"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "Tambahkan Token"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "Tidak terbatas"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "Saldo"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "ID Rantai"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "Data"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "Masukkan jumlah maksimum ({tokenSymbol})"
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "OKX Wallet tidak mendukung jaringan ini"
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "Back"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "Couldn't send this crypto because it's not available for paying network fees"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "Address not registered"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "You need to register this address before using it"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "Register"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "Frasa benih salah. Silakan coba lagi"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "Frasa benih"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "Pilih setiap kata secara berurutan"
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "Hapus"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "Nama dompet tidak boleh lebih dari 20 karakter"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "Nama dompet sudah ada"
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "Nama akun"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "Diubah"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "Peringatan Risiko"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "Menghapus dompet akan menghapus semua data dompet yang ada pada perangkat. Pastikan frasa benih atau kunci pribadi dompet sudah dicadangkan sebelum menghapus dompet. Jika tidak, dompet dan semua aset di dalamnya akan hilang permanen."
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "Nama dompet"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "Dihapus"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "Ketentuan Layanan"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "Buka edit"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "Batalkan"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "Konfirmasi"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "Alamat ini sudah ada"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "Maksimum 20 karakter"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "Alamat salah. Coba lagi"
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "Masukkan alamat"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "Masukkan nama dengan panjang kurang dari 20 karakter"
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "Hentikan penambahan alamat?"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "Alamat"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "Nama"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "Tambahkan alamat"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "Jaringan lain akan segera hadir!"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "Jaringan {network} tidak didukung"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "Batalkan"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "Lanjutkan"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "Peringatan keamanan"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "Anda mengirim kripto ke alamat kontrak, bukan alamat pribadi. Sebelum melanjutkan, pastikan bahwa alamat tersebut valid agar tidak menimbulkan kerugian."
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "Tambahkan alamat"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "Salin alamat"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "Hapus alamat"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "Edit alamat"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "Semua jaringan"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "Cari alamat atau nama"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "Tidak ada alamat"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "Daftar alamat"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "Pilih jaringan"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "Alamat ditambahkan"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "Alamat dihapus"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "Batas daftar alamat tercapai (200 entri)"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "Semua NFT dari koleksi ini"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "Setujui"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "Untuk"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number} jam"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number} jam"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number} jam"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number} menit"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number} menit"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "Jangan pernah"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "Kembali"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "Jelajahi Yield"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "Jelajahi lainnya"
+   },
+   "wallet_extension_btn_register": {
+      "message": "Daftar"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "Ubah jaringan"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "Salin kunci pribadi"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "Estimasi jumlah klaim"
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "Jumlah klaim akhir akan dikonfirmasi setelah transaksi berhasil dikirimkan di blockchain"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "Jumlah klaim akhir akan dikonfirmasi setelah transaksi berhasil dikirimkan di blockchain"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "Estimasi jumlah investasi"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "Transaksi saat ini telah tertunda selama lebih dari {pendingTips} jam. Percepat atau batalkan transaksi tersebut."
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "ID akun"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "From"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "Daftar ke ZKSpace untuk melanjutkan transaksi"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "Daftar ke ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "Dihapus"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "Setujui akses {approved_address} ke semua {approved_asset} Anda?"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "Cabut akses {approved_address} ke semua {approved_asset} Anda?"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "By confirming, you will allow {address} to transfer your assets or automate transactions on your behalf. Please take caution before moving on"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "Unknown NFT collection"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "You'll allow this DApp to transfer your main-chain crypto, please proceed with caution"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "The transaction may fail due to a low network fee. We recommend you adjust the network fee before proceeding"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "Gambaran umum"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "Anda dapat menggunakan DApp yang mendukung jaringan berikut"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "Kripto ini harus didaftarkan sebelum digunakan"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "Jaringan lain yang kompatibel dengan EVM telah disinkronkan secara otomatis"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "Anda dapat menggunakan DApp yang mendukung jaringan berikut"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "Anda dapat menggunakan DApp yang mendukung jaringan berikut. Jika ada masalah saat menggunakan DApp ini, klik tombol di bawah untuk beralih ke jaringan EVM"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "Anda dapat menggunakan dompet ini untuk mengelola aset kripto di jaringan Bitcoin"
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "Anda dapat menggunakan dompet ini untuk mengelola aset kripto di jaringan {network}"
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "Transfer"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "Batalkan"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "Hapus"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "Hapus alamat ini?"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "Pilih jaringan"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "Edit alamat"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "Disimpan"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "Kembali"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "Segarkan"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "Melebihi batas karakter. Masukkan ulang"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "Menandatangani pesan ini mungkin berisiko. Agar aset tetap terlindungi, tanda tangani hanya jika Anda sepenuhnya mempercayai situs tersebut"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "Cabang ETHW segera hadir"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "Gandakan aset Ethereum Anda secara gratis!"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "Versi terbaru"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "OKX Wallet kini mendukung aset ETHW. Lihat sekarang"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "Nomor versi"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "Anda dapat beralih ke jaringan EVM di bawah, lalu jaringan DApp akan diubah secara otomatis"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "Lihat di Penjelajah Blockchain"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "Lihat di dompet"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "Lupa kata sandi?"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "Konfirmasi pengaturan ulang dengan memasukkan \"ATUR ULANG\" di bawah ini"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "Konfirmasi pengaturan ulang"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "Atur ulang dompet"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "Hitung total NFT"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "Setujui"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "Cabut persetujuan"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "Untuk"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "Terima"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "Kirim"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "Riwayat"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "Klaim"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "Investasikan"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "Tukar"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "Type"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "Semua jaringan"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "Tanggal"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "Alamat"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "Setujui {symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "Klaim"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "Interaksi kontrak"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "Mint"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "Terima"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "Dari"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "Tukar"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "Cabut persetujuan {symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "Revoke approval of {approvedasset}"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "Kirim"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "Ke"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "Batalkan transaksi"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "Percepat"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "Percepat pembatalan"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "Tertunda"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "Menunggu"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "Berlangganan"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "Selengkapnya..."
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "Lakukan trading"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "Tertunda ({num})"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "Klik untuk menambahkan ke daftar alamat"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "Selesai"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "Gagal"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "Failed"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "Pending"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "Waiting"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "Selesai"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "Completed"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "Tertunda"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "Daftar ke ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "Protokol yang tidak diketahui"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "Token yang tidak diketahui"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "Revoke approval"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "Terhubung"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "Riwayat"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "Tukar"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "Klik untuk mengubah format alamat"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "Klik untuk membuka pengenalan SegWit"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "Hapus"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "Jumlah kata frasa benih saya"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "12 kata"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "15 kata"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "18 kata"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "21 kata"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "24 kata"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "Dompet ini sudah ada"
+   },
+   "wallet_extension_info_pay": {
+      "message": "Dibayar"
+   },
+   "wallet_extension_info_receive": {
+      "message": "Diterima"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "Jenis"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "Kelompok"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "Simpan"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "Brankas"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "Kata sandi tidak sesuai!"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "Kata sandi sesuai!"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "Sangat kuat"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "Bagus"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "Kurang kuat"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "Masukkan memo, maks 256 karakter"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "Cari jaringan"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "Cari jaringan"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "Brankas"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "Alamat terdaftar"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "Akses dibatasi"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "Produk atau layanan okx.com tidak tersedia di wilayah Anda ({area}) menurut hukum dan peraturan setempat."
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "Ada dompet yang belum dicadangkan. Akun dompet yang belum dicadangkan tidak dapat terhubung ke DApp pihak ketiga"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "Lihat di Penjelajah Blockchain"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "{num} akun yang dapat dihubungkan"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "Jumlah yang disetujui"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "Konfirmasi blok"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "Dari"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "Berinteraksi dengan"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "Jaringan"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "Status"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "Waktu"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "Ke"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "Hash transaksi"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "Tidak terbatas"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "{contractaddress} berbahaya. Demi keamanan aset, pastikan ini adalah alamat transfer yang sering Anda gunakan sebelum mengonfirmasi transaksi"
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "Terapkan"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "Kembali ke semua item"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "Hapus semua"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "Segarkan"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "Penawaran terbaik"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "Terakhir"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "Harga"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "Rantai"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "Status penjualan"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "Penawaran diterima"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "Dijual"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "Cari"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "Lihat Pasar NFT"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "Alamat kontrak"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "Harga batas bawah koleksi"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "Jaringan"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "Harga NFT"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "Standar token"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "Filter"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "Item yang dikirim ke alamat yang salah tidak dapat dipulihkan"
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "Kripto"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "NFT"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "Jelajahi NFT"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "Semua NFT terbaik ada di OKX"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "Koleksi"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "Gagal memuat"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "Maks"
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "Tidak ada koleksi"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "Tidak ada item untuk pencarian ini"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "Jumlah tidak boleh 0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "Jumlah yang dimasukkan tidak boleh lebih dari {max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "Masukkan jumlah yang ingin ditransfer"
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "Nilai NFT dihitung dengan harga batas bawah koleksi"
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "Dimiliki"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "{token} belum didaftarkan pada alamat penerima ini dan tidak dapat digunakan"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "OKX Wallet sepenuhnya terdesentralisasi dan tidak menyimpan kata sandi. Jika Anda lupa kata sandi, atur ulang dompet dan impor frasa benih atau kunci pribadi Anda untuk membuat kata sandi baru. Simpanlah dengan aman."
+   },
+   "wallet_extension_option_allchain": {
+      "message": "Semua jaringan"
+   },
+   "wallet_extension_option_desc": {
+      "message": "{domain} saat ini ada di jaringan {chain}"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "Beralih ke jaringan EVM"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "Koneksi multi-rantai"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "Total aset"
+   },
+   "wallet_extension_overview_more": {
+      "message": "Lainnya"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "Alamat penerima disalin"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "Aset berdasarkan jaringan"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/id-id/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "Dengan mengonfirmasi, Anda menyetujui {terms_service} OKX"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "Isi ulang {token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "Jumlah {token} tidak cukup untuk membayar biaya jaringan"
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "Sembunyikan frasa benih"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "Setujui"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "Batalkan"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "Cabut persetujuan"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "Batalkan"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "Kirim 0 transaksi {symbol} untuk menggantikan yang asli"
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "Karena masalah jaringan, pembatalan transaksi belum tentu berhasil"
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "Harga Gas ({gasPrice} Gwei) *Batas Gas ({gasLimit})"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "Kripto tidak terdaftar"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "Saldo tidak cukup"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "Kunci pribadi yang disalin ke papan klip memiliki potensi untuk dipantau dan disalahgunakan oleh aplikasi pihak ke tiga. Simpanlah kunci pribadi dengan aman"
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "Mulai menjelajah"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "Tidak cukup {token} untuk membayar biaya jaringan"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "Versi Lama"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/learn/what-is-segregated-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "Native SegWit"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "Nested SegWit"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "Pemesanan ulang"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "Lanjutkan pengiriman"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "Lihat dalam riwayat"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "Anda telah membuat pesanan serupa. Tetap lanjutkan proses ini?"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "Setelah"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "Sebelum"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "Batalkan"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "Percepat transaksi dengan meningkatkan biaya jaringan"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "=Harga Gas ({gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "Semua jaringan"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "Berinteraksi dengan"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "Proyek"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "Kontrak proyek"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "Tambahkan jaringan"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "Format alamat"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "Batalkan penjualan"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "Batalkan transaksi"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "Interaksi kontrak"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "Alamat disalin"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "Pilih jaringan"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "Percepat transaksi"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "Hash transaksi disalin"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "Anda yakin ingin menyalin?"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "{walletName} dibuat"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "{walletName} diimpor"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "Unduh log status"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "Jumlah yang boleh digunakan pihak ketiga untuk melakukan penarikan dan mengotomatiskan transaksi Anda"
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "Lanjutkan"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "Tolak"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "Peringatan risiko"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "Menurut laporan, alamat kontrak {accountAddress} mencurigakan dan berisiko menyebabkan pencurian aset. Pastikan alamat tersebut aman"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "Jumlah yang disetujui"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "Jumlah yang disetujui"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "{accountAddress} ditandai sebagai alamat mencurigakan dan berisiko membahayakan aset Anda. Pastikan alamat tersebut aman."
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "Confirm"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "Couldn't trade with fiat money since retrieving est. value of this crypto isn't available"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "Lihat sekarang"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "OKX Wallet kini mendukung aset ETHW"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. OKX Wallet kini mendukung aset ETHW"
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. Dunia ini begitu besar dan saya ingin melihatnya"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "Fitur Terbaru"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "Fitur Terbaru"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "Fitur Terbaru"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "V2.15.10"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "Fitur terbaru di versi 2.16.2"
+   },
+   "wallet_extension_rn_button": {
+      "message": "Mengerti"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. Kini Anda dapat bertransaksi dan berinteraksi dengan DApp di jaringan ETHF"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "Kini Anda dapat bertransaksi dan berinteraksi dengan DApp di jaringan Aptos"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. Situs yang mencurigakan kini dapat difilter dan Anda akan diberi peringatan tentang risikonya"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. NFTs on Aptos can now be displayed and claimed in the wallet"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. Kini Anda dapat langsung bertransaksi menggunakan DApp di jaringan EVM dan Solana"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. Kini Anda dapat bertransaksi dan berinteraksi dengan DApp di jaringan Tron"
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. You can now use ENS, Unstoppable Domains, and SPACE ID domains to make transfers"
+   },
+   "wallet_extension_rn_title": {
+      "message": "Fitur Terbaru"
+   },
+   "wallet_extension_rn_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "Lanjutkan"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "Tolak"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "Peringatan risiko"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "Menurut laporan, alamat {accountAddress} mencurigakan dan berisiko menyebabkan pencurian aset. Pastikan alamat tersebut aman"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "Lihat penipuan lainnya"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "Menurut laporan, alamat kontrak {accountAddress} mencurigakan dan berisiko menyebabkan pencurian aset. Pastikan alamat tersebut aman"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "{number}+ jaringan EVM sekarang didukung"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "Jaringan EVM"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "Alamat Anda adalah alamat jaringan EVM sehingga dapat digunakan untuk mengelola aset di jaringan lain yang kompatibel dengan EVM."
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "Jaringan yang kompatibel dengan EVM dan sudah didukung meliputi: {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "Pilih kripto untuk pembayaran"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "Tambahkan sekarang"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "Confirm"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "Berikutnya"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "Next"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "To"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "Daftar alamat"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "Alamat baru-baru ini"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "Masukkan alamat yang valid"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "Tidak ada di daftar alamat"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "Couldn't estimate"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "Masukkan alamat atau nama alamat"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "Search currency"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "All"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "Default"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "Balance"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "Pay with"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "Select crypto to pay for network fees"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "Canceled"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "Membatalkan"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "Canceling"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "Mempercepat"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "Speeding up"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "Jumlah"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "Saldo"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "Maks"
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "The maximum amount is {fiatamount} ({cryptoamount}) after deducting network fees"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "Receiving address"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "Select currency"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "{crypto} tidak ditemukan. Coba tambahkan kripto ini."
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "Transfer at least {amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "Preferensi"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "Kunci otomatis"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "Cadangkan dompet"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "Preferensi"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "Ubah kata sandi"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "Tetapkan sebagai dompet default"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "Daftar alamat"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "Kelola kontak"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "Versi {number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "Don't refresh this page as it could cause hardware wallet import failure. To protect your privacy, OKX Wallet doesn't store your wallet password. Please keep your password safe."
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "Setujui akses ke semua NFT dari koleksi ini?"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "Klaim"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "Estimasi klaim"
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "Anda sekarang dapat menjelajahi 25+ jaringan dengan OKX Wallet"
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "Dari"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "Ke"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "Investasikan dengan"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "Estimasi investasi dengan"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "Terima"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "Tukar dari"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "Daftar"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "Cabut akses ke semua NFT dari koleksi ini?"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "DeFi"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "Semua {collection} Anda"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "Aset yang disetujui"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "Kami telah menyinkronkan jaringan {networkname} lain secara otomatis untuk Anda"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "Batalkan penjualan"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "Aktif"
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "Gateway universal Anda menuju dunia DeFi"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "Memo"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "Hasil tidak ditemukan"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "Setujui"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "Setujui {collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "NFT yang tidak diketahui"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "Koleksi NFT yang tidak diketahui"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "Batalkan penjualan"
+   },
+   "wallet_extension_title_memo": {
+      "message": "Memo"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "Memo (opsional)"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "Koneksi multi-rantai yang dipilih secara default"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "Koneksi multi-rantai yang didukung"
+   },
+   "wallet_extension_title_register": {
+      "message": "Daftar"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "Daftarkan kripto"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "Cabut persetujuan"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "OKX Wallet mendukung jaringan berikut"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "Jaringan saat ini"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "Ubah jaringan"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "Alamat dompet"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "Alamat disalin"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "Format alamat diubah"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "Setujui {collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "Terjadi kesalahan jaringan. Periksa koneksi jaringan dan segarkan untuk mencoba lagi"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "Lain kali"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "Tetapkan sebagai dompet default"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "Berhasil dibuat"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "Gagal mendaftarkan"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "Dompet perangkat keras saat ini hanya mendukung aset EVM"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "Berhasil diimpor"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "Berhasil diimpor"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "Jumlah maksimum sebesar {max} Sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "Jumlah minimum sebesar {min} Sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "Terjadi kesalahan jaringan. Segarkan dan coba lagi."
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "Transaksi bisa gagal jika alamat penerima tidak diaktifkan"
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "Terdaftar"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "Hanya kirim aset jaringan {chain_name} ke alamat ini"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "Atur OKX Wallet sebagai dompet default jika Anda memilih menggunakan dompet ini untuk terhubung ke DApp"
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "Berhasil diatur"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "Dalam proses"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "OKX Wallet diatur ulang"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "An unknown error occurred while processing your transaction. Please re-initiate the transaction"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "Atur OKX Wallet sebagai dompet default Anda?"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "Salin alamat"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "Hubungkan"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "Pengaturan"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "Kelola dompet"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "Rata-Rata"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "Berikutnya"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "Jumlah yang diterima"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "dari"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "=Harga gas ({gasPrice} Gwei)*Batas gas ({gasLimit})"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "ke"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "Sesuaikan"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "Batas gas harus antara {minGasLimit} dan {maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "Harga gas harus lebih tinggi dari {minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "Batas gas"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "Harga gas (GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "Cepat"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "Harap masukkan alamat yang valid"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "Jumlah yang dimasukkan tidak boleh kosong"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "Jumlah yang dimasukkan harus lebih dari 0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "Saldo tidak cukup"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "{chainSymbol} tidak cukup untuk membayar biaya jaringan"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "Alamat tidak valid"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "Alamat penerima tidak boleh sama dengan alamat pengirim"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "Ke"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "Maks"
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "Jumlah"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0,000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "Masukkan alamat dompet atau nama domain"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "Lanjutkan menunggu"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "Ganti"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "Lewati"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "Terdapat transaksi yang gagal"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "Terdapat transaksi yang tertunda selama lebih dari satu jam"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "Jika ada transaksi yang gagal, transaksi baru tidak dapat dimulai. Ganti transaksi yang gagal dengan transaksi baru?"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "Jika Anda memiliki transaksi yang tertunda, transaksi baru tidak dapat dimulai sebelum transaksi tertunda diselesaikan. Ganti transaksi yang tertunda dengan transaksi baru?"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "Lambat"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "mnt"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "Alamat {network} disalin"
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "Mengerti"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "Lupa kata sandi?"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "Sebentar"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "Saya memahami semua pemberitahuan di atas dan siap mengatur ulang dompet"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "OKX Wallet adalah platform yang sepenuhnya terdesentralisasi. Kami tidak menyimpan kata sandi Anda. Kata sandi tidak dapat diambil."
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "Jika kata sandi hilang, SATU-SATUNYA cara membuat kata sandi baru dan mengembalikan akses adalah dengan mengatur ulang dompet menggunakan frasa sandi atau kunci pribadi."
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "Pengaturan ulang dompet akan menghapus semua data dompet di perangkat. Jika Anda mengatur ulang tanpa mencadangkan frasa benih atau kunci pribadi, dompet dan semua aset di dalamnya akan hilang secara permanen."
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "Atur OKX Wallet sebagai dompet default"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "Cadangkan sekarang"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "Dompet Anda belum dicadangkan"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "Jika Anda kehilangan perangkat, menginstal ulang aplikasi, atau menghapus data aplikasi, dompet ini beserta asetnya akan hilang dan tidak bisa didapatkan kembali"
+   },
+   "wallet_home_btn_close": {
+      "message": "Tutup"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "Dikonfirmasi"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "Impor dompet"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "Buat dompet"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "Kelola"
+   },
+   "wallet_home_btn_receive": {
+      "message": "Terima"
+   },
+   "wallet_home_btn_send": {
+      "message": "Kirim"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "Saya baru mengenal dunia yang terdesentralisasi"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "Buka"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "Hubungkan"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "Terjadi kesalahan saat menilai aset. Keluar dari halaman ini, lalucoba lagi nanti."
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "Terhubung"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "Masukkan kata sandi Anda"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "OKX Wallet mengalami masalah"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "Portal Anda ke Web3"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "Nanti"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "Pastikan frasa benih sudah dicadangkan sebelum melakukan penyetoran"
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "Dompet kripto ‧ Dunia NFT ‧ Akses DApp"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "Coba lagi dengan menutup dan membuka kembali popup, atau hubungi dukungan"
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "Stack:"
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "Kode: {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "Detail kesalahan"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "Pesan: {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "Kode: {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "Coba lagi dengan memuat ulang halaman, atau hubungi dukungan"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "Saya sudah memiliki dompet"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "Terjadi kesalahan jaringan. Coba lagi nanti"
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "Input tidak valid. Silakan coba lagi"
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "Impor melalui kunci pribadi"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "Frasa benih"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "Masukkan kunci pribadi Anda"
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "Masukkan frasa benih yang dipisahkan spasi."
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "Dompet kunci pribadi sudah ada"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "Dompet sudah ada"
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "Kunci pribadi dengan panjang standar 64-bit didukung"
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "Input tidak valid. Coba lagi."
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "Frasa Benih"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "Pisahkan setiap kata dengan satu spasi"
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "Semua format frasa benih (12, 15, 18, 21, dan 24 kata) didukung."
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "Kunci pribadi"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "Tempelkan atau masukkan kunci pribadi Anda."
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "Frasa benih"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "Format frasa benih dengan 12, 15, 18, 21, dan 24 kata didukung"
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "Periksa urutan frasa sandi"
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "Frasa benih salah. Silakan coba lagi"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "{length} kata"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "OKX Wallet"
+   },
+   "wallet_intro_text_desc": {
+      "message": "OKX Wallet adalah dompet kripto universal multi-platform (seluler/web/ekstensi)"
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "Hubungkan dompet perangkat keras"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "Cadangkan frasa benih Anda"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "Cadangkan dompet"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "Selesai"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "Kelola"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "Desimal"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "Alamat tidak valid"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "Kripto berhasil ditambahkan"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "Alamat penerima tidak valid"
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "Alamat kontrak"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "Multichain"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "Kripto yang ditambahkan"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "Kripto kustom"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "Kelola"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "Cari kripto atau alamat kontrak"
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "Simbol"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "Kripto populer"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "Tambahkan kripto kustom"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "Kripto kustom"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "Berhasil"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "Tambahkan dompet"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "Cadangkan dompet"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "Edit dompet"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "Tambahkan akun"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "Hubungkan kembali"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "Akun sudah ada. Coba lagi."
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "Dompet perangkat keras terhubung"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "Total aset"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "Akun"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "Akun"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "Dompet"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "Dompet perangkat keras"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "Kunci pribadi"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "Persetujuan"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "Salin"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "Disalin!"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "Catatan tidak ditemukan"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "OK"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "Crypto not supported"
+   },
+   "wallet_send_text_register_address": {
+      "message": "Register address"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "Konfirmasi"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "Minimal 6 karakter"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "Kata sandi tidak sesuai. Silakan coba lagi"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "Kata sandi salah. Coba lagi."
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "Pelajari selengkapnya"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "Re-enter your password"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "Masukkan kata sandi"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "Masukkan kata sandi"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "Masukkan ulang kata sandi baru"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "Konfirmasi kata sandi"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "Kata sandi"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "Unduh log status"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "Unduh log status"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "Kunci dompet"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "Lanjutkan"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "Konfirmasi pengaturan ulang"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "Saya mengetahui risikonya"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "Pilih bahasa"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "Bahasa"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "Umum"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "Peringatan risiko"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "Pengaturan"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "Log status"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "Pastikan dompet sudah dicadangkan"
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "Kata sandi salah. Coba lagi."
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "Ubah kata sandi"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "Masukkan kata sandi minimal 6 karakter"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "Masukkan kata sandi lama"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "Masukkan ulang kata sandi baru"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "Kata sandi baru"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "Demi melindungi privasi Anda, OKX Wallet tidak akan menyimpan kata sandi dompet Anda. Simpan kata sandi dengan aman."
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "Kata sandi lama"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "Konfirmasi"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "Terjadi kesalahan saat mengambil log status"
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "Log status"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "Log status OKX Wallet"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "Log status berisi alamat akun publik dan catatan transaksi Anda"
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "Mata uang"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "Atur ulang dompet"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "Pastikan frasa benih atau kunci pribadi dompet sudah dicadangkan sebelum diatur ulang. Jika tidak, dompet dan semua aset di dalamnya akan hilang secara permanen"
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "Jika Anda mengatur ulang dompet tanpa mencadangkannya, dompet dan semua aset di dalamnya akan hilang secara permanen. Pastikan Anda telah mencadangkan semua dompet dan catat frasa benih atau kunci pribadi sebelum mengatur ulang"
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "Keamanan dompet"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "Kelola Dompet"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "Tingkat Lanjut"
+   },
+   "wallet_settings_text_desc": {
+      "message": "Versi, pusat dukungan, dan info kontak."
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "Mata uang, bahasa, dan lainnya."
+   },
+   "wallet_settings_text_language_en": {
+      "message": "id"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "Ubah kata sandi, atur ulang dompet"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "Tambahkan, edit, dan cadangkan dompet."
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "Atur kata sandi"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "Demi melindungi privasi Anda, OKX Wallet tidak akan menyimpan kata sandi dompet Anda. Simpan kata sandi dengan aman."
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "Batalkan transaksi"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "Konfirmasi Txn"
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "Konfirmasi transaksi"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "Pesan"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "Konfirmasi {index} dari {total}"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "Biaya jaringan"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "TxID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "Tertunda{num}"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "Waktu"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "Jenis"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "Alamat kontrak"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "Nama jaringan"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "Transaksi tidak ditemukan"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "Mengirim..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "Alamat disalin"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "Disalin ke clipboard"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "Salin TxID ke clipboard"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "Total biaya"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "Otorisasi"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "Mengonfirmasi"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "Jumlah wajib diisi"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "Jumlah harus lebih dari 0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "Batalkan"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "Maks."
+   },
+   "wallet_transfer_btn_next": {
+      "message": "Berikutnya"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "Percepat"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "Kirim 0 {coinSymbol} untuk menggantikan transaksi asli. Terjadi masalah jaringan sehingga pembatalan transaksi belum tentu berhasil."
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "Biaya Txn"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "Dompet"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "Biaya Transaksi"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "Penerapan kontrak"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "Interaksi kontrak"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "Batas gas minimal harus {minimumGasLimit}"
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "Saldo tidak cukup"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "{chainSymbol} tidak cukup untuk membayar biaya gas"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "Masukkan alamat yang valid"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "Gagal"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "Batas gas tidak boleh kosong"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "Maksimum 15M"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "Batas gas harus lebih dari 21.000"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "Harga gas tidak boleh kosong"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "Harga gas harus lebih dari 0"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "Sesuaikan"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "Batas gas"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "min"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "Harga Gas"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "Harga Gas (GWEI)"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "Kustom"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "Dalam proses"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "Detail Transaksi"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "Alamat penerima tidak boleh sama dengan alamat pengirim"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "Anda belum memiliki kripto apa pun"
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "Mempercepat transaksi menggunakan harga gas yang lebih tinggi akan semakin memungkinkan transaksi diproses lebih cepat oleh jaringan, tetapi ini tidak pasti."
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "Pilih jaringan"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "Persetujuan {first} gagal"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "{first} berhasil disetujui"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "Pembatalan persetujuan {first} gagal"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "Pesan pembatalan persetujuan {first} terkirim"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "Persetujuan {first} dibatalkan"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "Interaksi kontrak gagal"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "Interaksi kontrak berhasil"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "Trading NFT gagal"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "Trading NFT berhasil"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "Pengiriman {first} {second} gagal"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "{first} {second} berhasil dikirim"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "Penukaran {first} {second} ke {third} {fourth} gagal"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "Penukaran {first} {second} ke {third} {fourth} berhasil"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "Transaksi terkirim"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "Lihat di penjelajah"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "Selesaikan semua transaksi terlebih dahulu."
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "masukkan alamat (0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "Pilih kripto"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "Cari kripto"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "Tunggu blok dikonfirmasi"
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "Tanda tangan perangkat keras gagal"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "Tanda tangani dengan dompet perangkat keras"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "Setelah"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "Sebelum"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "Jumlah yang diterima"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "Biaya jaringan"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "Ke"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "Dari"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "Rata-Rata"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "Cepat"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "Lambat"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "Kembali ke beranda"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "Terkirim"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "Selesai"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "Tertunda"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "Tidak dapat membuka tanpa brankas versi sebelumnya"
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "Dompet perangkat keras hanya mendukung aset pada jaringan yang kompatibel dengan EVM"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "Saldo SOL tidak cukup untuk membayar biaya jaringan"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "Saldo tidak cukup. perlu minimal {number} SOL di akun Anda untuk memulai transaksi"
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "Kirim minimal {number} SOL untuk memenuhi syarat biaya minimum bebas sewa"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "Cadangkan minimal {number} SOL sebagai biaya bebas sewa"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "Pengaturan ulang dompet"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "Setujui"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "Tidak ada data"
+   }
+}

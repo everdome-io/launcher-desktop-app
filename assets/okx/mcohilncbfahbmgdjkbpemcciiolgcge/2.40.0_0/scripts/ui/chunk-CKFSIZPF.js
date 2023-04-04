@@ -1,0 +1,5 @@
+import{b as s}from"./chunk-PFUOJJI2.js";import{$k as a,_a as t,i as n,k as c}from"./chunk-YC2Z7II3.js";n();c();var m=s("Chain"),i={blockNumber:0},p=a({name:m,initialState:i,reducers:{setBlockNumber:(e,{payload:r})=>{e.blockNumber=r}}}),f=e=>e[p.name].blockNumber,R=e=>{let{metamask:{defaultNets:r,customNets:o,suiNets:u}}=e;return{defaultNets:r,customNets:o,suiNets:u}},C=e=>e.metamask.rpcInfo,b=e=>()=>{t().setCurrentRpc(e)};var y=e=>async()=>{await t().createRpcByDapp(e)},B=e=>()=>{t().handleDeleteNetWork(e)},L=()=>()=>{t().setPreviousProvider()},S=e=>()=>{t().updateRpcLoadingState(e)},h=e=>()=>{t().setCurrentWalletRpcType(e)},D=e=>{var r,o;return(o=(r=e.metamask)==null?void 0:r.rpcModeCommonConf)==null?void 0:o.rpcType};function W(e){return e.metamask.rpcLoading}function T(e){return e.metamask.rpcLoadingCount}var{actions:l,reducer:d}=p,{setBlockNumber:v}=l;var P=d;export{m as a,f as b,R as c,C as d,b as e,y as f,B as g,L as h,S as i,h as j,D as k,W as l,T as m,v as n,P as o};
+
+window.inOKXExtension = true;
+window.ASSETS_BUILD_TYPE = "publish";
+

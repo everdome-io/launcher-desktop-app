@@ -1,0 +1,163 @@
+<!doctype html>
+<html xml:lang="en" class="pc-adapter">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>OKX Wallet</title>
+  <style>
+    body {
+      background-color: #fff;
+    }
+
+    /* Browser mode (add background color in widescreen mode just for beauty) */
+    @media (min-width: 361px) {
+      html, body {
+        width: 100%;
+        height: 100%;
+        background-color: #eee;
+      }
+
+      .pc-adapter #app-content {
+        background-color: #fff;
+        position: absolute;
+        width: 360px;
+        height: 600px;
+        top: 50%;
+        left: 50%;
+        margin-left: -180px;
+        margin-top: -300px;
+      }
+
+      .pc-adapter .page-container {
+        box-shadow: none;
+        height: 100%;
+      }
+
+      /* Restrict fixed elements to HTML tags */
+      .pc-adapter .permissions-connect-choose-wallet__confirm,
+      .pc-adapter .ok-seed-check-bottom,
+      .pc-adapter .chains-choose-network-modal__wrap,
+      .pc-adapter .okui-dialog-float,
+      .pc-adapter .loading-overlay,
+      .pc-adapter .okui-drawer {
+        position: absolute;
+      }
+
+      .pc-adapter .okui-dialog-window.bottom-align {
+        top: auto;
+        bottom: 0;
+        border-radius: 8px 8px 0 0;
+        /* transform: none; */
+      }
+
+      .pc-adapter .mask-wrapper {
+        height: 600px;
+        top: 50%;
+        margin-top: -300px;
+      }
+
+      .pc-adapter .ok-home-bottom-panel__fixed {
+        position: sticky !important;
+      }
+
+      .pc-adapter .ok-nft-filter--button-group {
+        position: sticky;
+        bottom: 0;
+      }
+
+      .pc-adapter .main-container-wrapper .main-container {
+        min-height: auto;
+      }
+
+      .pc-adapter .select-create-wallet-method-dialog {
+        min-width: 360px;
+        bottom: 0;
+        transform: initial;
+        top: initial;
+        left: 0;
+      }
+
+      .pc-adapter .okui-dialog-window {
+        min-width: 360px;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .pc-adapter .request-encryption-public-key__container,
+      .pc-adapter  .request-signature__container {
+        height: 100%;
+      }
+
+      /* seed-check */
+      .pc-adapter .ok-seed-check-container {
+        padding-bottom: 0;
+      }
+
+      .pc-adapter .okui-notification-box {
+        width: 100%;
+        min-width: unset;
+      }
+
+      .pc-adapter .network-fee {
+        top: 50%;
+        left: 50%;
+        width: 360px;
+        height: 600px;
+        margin-left: -180px;
+        margin-top: -300px;
+      }
+
+      .pc-adapter .network-fee__head {
+        position: absolute;
+      }
+    }
+
+    #app-content {
+      display: flex;
+      flex-flow: column;
+      position: relative;
+    }
+
+    #loading__logo {
+      width: 133px;
+      height: 100px;
+      align-self: center;
+      margin: 180px 0 0 0;
+    }
+
+    #loading__spinner {
+      width: 30px;
+      height: 30px;
+      margin-top: 50px;
+      align-self: center;
+      border-color: #3d3d3d #dbdbdb #dbdbdb;
+      border-width: 2px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border-style: solid;
+      background-color: transparent;
+      animation: spinner-rotation 1s linear infinite;
+    }
+
+    @keyframes spinner-rotation {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(1turn)
+      }
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./scripts/ui/ui.css" title="ltr">
+</head>
+
+<body style="width:360px; height:600px; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);" class="notification theme-light">
+  <div id="app-content"></div>
+  <div id="popover-content"></div>
+  <script src="./scripts/lib/globalthis.js"></script>
+  <script src="./scripts/lib/sentry.js"></script>
+  <script src="./scripts/ui/ui.js" type="module" charset="utf-8"></script>
+</body>
+
+</html>

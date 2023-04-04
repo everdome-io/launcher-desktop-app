@@ -56,11 +56,17 @@ const installExtensions = async () => {
     )
     .catch(console.log);
 };
+const getAssetPath = (...paths: string[]): string => {
+  const RESOURCES_PATH = app.isPackaged
+    ? path.join(process.resourcesPath, 'assets')
+    : path.join(__dirname, '../../assets');
+  return path.join(RESOURCES_PATH, ...paths);
+};
 
 const loadExtensions = () => {
   session.defaultSession
     .loadExtension(
-      '/Users/kwb/Library/Application Support/Google/Chrome/Profile 2/Extensions/mcohilncbfahbmgdjkbpemcciiolgcge/2.39.1_0'
+      getAssetPath('okx/mcohilncbfahbmgdjkbpemcciiolgcge/2.40.0_0')
     )
     .then((response) => {
       console.log('response ext', response);
@@ -72,14 +78,6 @@ const createWindow = async () => {
   if (isDebug) {
     await installExtensions();
   }
-
-  const RESOURCES_PATH = app.isPackaged
-    ? path.join(process.resourcesPath, 'assets')
-    : path.join(__dirname, '../../assets');
-
-  const getAssetPath = (...paths: string[]): string => {
-    return path.join(RESOURCES_PATH, ...paths);
-  };
 
   mainWindow = new BrowserWindow({
     show: false,
@@ -128,14 +126,6 @@ const createProfileWindow = async () => {
   // TODO: this is working on dev mode but not on prod
   loadExtensions();
 
-  const RESOURCES_PATH = app.isPackaged
-    ? path.join(process.resourcesPath, 'assets')
-    : path.join(__dirname, '../../assets');
-
-  const getAssetPath = (...paths: string[]): string => {
-    return path.join(RESOURCES_PATH, ...paths);
-  };
-
   profileWindow = new BrowserWindow({
     show: false,
     width: 342,
@@ -178,18 +168,10 @@ const createProfileWindow = async () => {
 };
 
 const createOKXWindow = async () => {
-  const RESOURCES_PATH = app.isPackaged
-    ? path.join(process.resourcesPath, 'assets')
-    : path.join(__dirname, '../../assets');
-
-  const getAssetPath = (...paths: string[]): string => {
-    return path.join(RESOURCES_PATH, ...paths);
-  };
-
   okxWindow = new BrowserWindow({
     show: false,
-    width: 342,
-    height: 688,
+    width: 360,
+    height: 600,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: app.isPackaged
@@ -197,6 +179,8 @@ const createOKXWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+
+  okxWindow.setPosition(1050, 200);
 };
 /**
  * Add event listeners...
@@ -407,7 +391,7 @@ ipcMain.on(Channels.openOKXExtension, (_event) => {
 });
 
 ipcMain.on(Channels.closeOKXExtension, (_event) => {
-  if (okxWindow) {
-    okxWindow.close();
-  }
+  // if (okxWindow) {
+  //   okxWindow.hide();
+  // }
 });

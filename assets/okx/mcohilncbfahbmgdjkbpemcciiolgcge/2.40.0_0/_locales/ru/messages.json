@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Способ оплаты комиссии сети"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "Этот адрес недоступен для оплаты комиссии за газ с целью безопасного перевода данного NFT."
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "Мы рекомендуем переводить NFT на адрес Tarpoot, который начинается с bc1. При переводе на другие адреса вы можете потерять активы."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Выберите кошелек для оплаты комиссии сети"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "Продолжить посещение"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "Вы находитесь на сайте, который может обманным путем заставить вас раскрыть личную или финансовую информацию. Для сохранения ваших активов в безопасности перед продолжением просим ознакомиться с приведенными ниже инструкциями"
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "Вы находитесь на сайте, который может обманным путем заставить вас раскрыть личную или финансовую информацию. Для сохранения ваших активов в безопасности перед продолжением просим ознакомиться с приведенными ниже инструкциями"
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· Для блокировки вредоносных сайтов в OKX Wallet одновременно используется несколько надежных баз данных"
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· Если вы обнаружите подозрительные сайты или столкнетесь с ошибками блокчейна, сообщите об этом на service@okx.com. Благодарим вас за участие в повышении безопасности блокчейна"
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· Если вы не хотите получать это предупреждение так часто, в пункте «Безопасность кошелька» можете переставить уровень защиты на «низкий»"
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· Обращаем ваше внимание на то, что мы не гарантируем безопасность сайта, даже если вы не получили данное предупреждение. Вы сами несете ответственность за риски, связанные с посещением небезопасного сайта"
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· Система безопасности OKX Wallet находит этот сайт подозрительным. Ответственность за риски, связанные с посещением небезопасного сайта, лежит на вас"
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "Предупреждение: вводящий в заблуждение сайт"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "Предупреждение о подозрительном сайте"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "Введите адрес получателя"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0,000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "Одобрить"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "Отмена"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "Понятно"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "Кошелек OKX Wallet не проверяет пользовательские сети. Вам следует помнить о потенциальных угрозах безопасности"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "Добавить сеть"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "URL обозревателя блоков"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "ID цепочки"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "Символ"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "Сеть"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "URL-адрес сети"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "Не удалось добавить"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "Сохранить"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "Записи не найдены"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "Отклонить"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "Контрактное взаимодействие"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "Nonce (optional)"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "Данные транзакции"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "От"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "Лимит газа"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "Цена газа ({gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "Взаимодействие с"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "Сеть"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "Общая стоимость"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "Кошелек"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "Успешно развернуто"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "Развернуть не удалось"
+   },
+   "developer_mode_header_title_history": {
+      "message": "History"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "Cancel transaction"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "Completed"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": ""
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "Speed up"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "Время"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "Контрактное взаимодействие"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "Отправить"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "Адрес контракта"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "Date"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "Посмотреть в браузере"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "Блоки"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "Развернуть контакт"
+   },
+   "developer_mode_history_title_from": {
+      "message": "От"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": ""
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "Взаимодействие с"
+   },
+   "developer_mode_history_title_network": {
+      "message": "Сеть"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Одноразовый"
+   },
+   "developer_mode_history_title_status": {
+      "message": "Status"
+   },
+   "developer_mode_history_title_time": {
+      "message": "Время"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "Данные транзакции"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "Хеш транзакции"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "Пользовательская сеть"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "Custom network"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "Кран"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "Выйти"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "Получить"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "Отправить"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "История"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "Настроить крипту"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "Подключено"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "Добавлено"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "Адрес {network} скопирован"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": ""
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "ID цепочки, используемый RPC: {chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "Too large. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "Нет подходящего RPC URL-адреса для символа данной криптовалюты. Пожалуйста, проверьте введенный символ"
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "Invalid number. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "Для URL-адреса требуется соответствующий префикс HTTP/HTTPS"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "Для URL-адреса требуется соответствующий префикс HTTP/HTTPS"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "Invalid URL. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "ID цепочки уже используется сетью {network}"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "Сеть с ID цепочки {number} обычно использует {symbol}. Проверьте введенный символ"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "Недействительный URL RPC"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "Не опознано. Проверьте введенный URL RPC"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "Этот URL уже используется сетью {network}"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "Сведения о крипте"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "Адрес контракта"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "Сеть"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "Десятичный разделитель"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "Скопировано"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "Сведения о крипте"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "Approve"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "Contract interaction"
+   },
+   "developer_mode_list_text_send": {
+      "message": "Отправить"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "To {addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "Этот адрес уже существует"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "Неправильный адрес"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "Обновить"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "Ошибка сети. Обновите и попробуйте ещё раз"
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "Введите до 11 символов"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "Пользовательская крипта"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "Пользовательская крипта"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "Добавленная крипта"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "Нет добавленной крипты"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "Адрес контракта"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "Десятичный разделитель"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "Сеть"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "Символ"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "Добавлено"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "Отмена"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "Удалить"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "Подключение к {network}"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "Неправильный ввод"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "Вы удалите эту сеть из списка"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "Кран"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "Удалить эту сеть?"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "Добавить пользовательскую сеть"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "Отмена"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "Назад"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "Переключить сеть"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "Редактировать"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "Повторить попытку"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "Это поле не может быть пустым"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "Неизвестные интернет-провайдеры могут раскрывать статус блокчейна и отслеживать вашу сетевую активность. Добавляйте сеть, только если вы полностью ей доверяете"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "Добавить пользовательскую сеть"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "Обозреватель блоков (необязательно)"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "ID цепочки"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "Пользовательская сеть"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "Пользовательская сеть"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "Сеть"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "Сеть"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "URL RPC"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "Тестовая сеть"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "Символ"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "Вы не можете удалить подключенную сеть"
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "Обновите, чтобы повторить попытку, или переключиться на другую сеть"
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "Ошибка подключения"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "Удалено"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "ID цепочки, используемый для подписания транзакций, должен совпадать с ID цепочки, возвращаемым сетью. Вы можете вводить десятичные или шестнадцатеричные цифры с префиксом 0x. Десятичные цифры отображаются по умолчанию"
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "Копировать"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "Отправляйте на этот адрес только активы в сети {chainname}"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "Optional"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "Не удалось получить лимит газа. Выполните ввод"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "Полученная сумма"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "От"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "Входные данные (необязательно)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "Входные данные"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "Макс."
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "Комиссия сети"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "Комиссия сети"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Nonce (optional)"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Одноразовый"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "Сумма"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "Адрес получателя"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "Кому"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "Баланс: {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= Цена газа ({gasprice} {unit}) × Лимит газа ({gaslimit})"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "Настроить"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "Лимит газа"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "Цена газа ({unit})"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "Select crypto"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data copied"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "Криптовалюты в кошельке отсутствуют"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "Дополнительная информация, включенная в транзакцию, например, данные о вызове контрактного взаимодействия или сообщение, отправленное получателю"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "Больше, чем рекомендуется: {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "Меньше, чем рекомендуется: {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "Понятно"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "Заблокировать кошелёк"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "Custom network mode is only available on EVM networks. Please switch wallets and try again"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "Developers"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "Custom network"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "Enable to use advanced features such as testnet, custom RPC or Nonce"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "Настройки"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "Установить в качестве кошелька по умолчанию"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "Версия {version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "Безопасность кошелька"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "Настройки"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "Для этой сети недоступен режим разработчика"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "Completed"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "Failed"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "Pending"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "Waiting"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_top_text_done": {
+      "message": "Готово"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "Сеть управления"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "Общая сумма активов"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "Управлять"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "Изменить кошелек"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "Пользовательский режим"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "Добро пожаловать на"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "By proceeding, you'll allow {contract} access to your {asset}"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "Approve"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "Получить"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "Доступные NFT"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "Получение NFT"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "Go back to homepage"
+   },
+   "extension_bug_text_fixing": {
+      "message": "You can go back to homepage and try again later"
+   },
+   "extension_bug_title_error": {
+      "message": "Error"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "Page not found"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "Contract:"
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "Asset change (est.)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "Request from"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "Transaction amount"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "The network information entered belongs to the Sui network. Custom network only supports adding EVM networks"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "Unable to import a private key of the Sui network. Try a different one"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "extension_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "extension_history_index_pending": {
+      "message": "Pending"
+   },
+   "extension_history_title_farm": {
+      "message": "Farm"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "Получить"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "NFT, доступные для получения: {num}"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "Получено"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "To secure your transaction, we estimate an amount for your reference"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "extension_input_errortip_max20": {
+      "message": "Maximum 20 characters"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "By proceeding, you'll revoke {contract} access to your {asset}"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "Revoke approval"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "Подробнее на веб-сайте OKX"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/10558617769613-OKX-Wallet-Passed-Security-Key-Audit-by-Slowmist"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "Центр поддержки"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "Сообщество OKX"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/okx"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "OKX Wallet"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "О кошельке OKX Wallet"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "Электронная почта OKX"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "Подтверждение безопасности"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "Условия использования"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "Управление кошельком"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "Адрес электронной почты скопирован"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "Requesting"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "Request success"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "{num} {crypto} requested"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "Too many requests sent to the faucet. Try again later"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "Confirm"
+   },
+   "extension_toast_btn_ok": {
+      "message": "OK"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "You need to spend more network fees in order to replace the transaction"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas price ({unit})"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "Current DApp network belongs to testnet. Switch to custom network mode in Settings and try again"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "Transaction canceled"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "Current fee"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "Required fee"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "Wallet address copied"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "Please switch wallet mode"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "Replace transaction"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "Введите адрес"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "Confirm"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "Понятно"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "Если вы не видите такой функции в OKX Wallet, можете подключиться через Metamask или Phantom"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "Вы установите кошелек OKX Wallet в качестве предпочтительного кошелька для подключения"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "Установить в качестве кошелька по умолчанию"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "Как подключиться к DApp?"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "Wallet connected"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "Up to {amount} wallets can be added"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "Couldn't obtain addresses. Make sure you've unlocked your device and opened the required app on it"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "Check {transaction} in Ledger wallet"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "Device disconnected. If you need to continue, connect Ledger to your computer via USB and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "Keep the USB connection between your Ledger and computer, unlock Ledger wallet, and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "OK"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "Retry"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "transaction details"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "Transaction details sent. Check and confirm via your device"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "Added"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "Переходите через новые сети, используя универсальный кошелек"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "Обеспечьте безопасность своих транзакций с помощью OKX Wallet"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "Универсальный шлюз ко всем dApp"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "Подтвердить"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "Максимальная базовая комиссия должна быть больше 0."
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "Установленная вами максимальная базовая комиссия меньше требуемой базовой комиссии сети Gwei в {baseFee}. Выполнение транзакции занимает много времени."
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "Комиссия за приоритет должна быть больше 0."
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "Требуется базовая комиссия: {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "Максимальная базовая комиссия"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "мин"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "Комиссия за приоритет"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "с"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "Сбросить кошелек"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "Забыли пароль?"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "Кошелек OKX Wallet не хранит пароли к вашим кошелькам"
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "Если вы забудете пароль к своему кошельку, то можете сбросить его, сбросив кошелек"
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "Обратите внимание, что если вы сбросите кошелек без его резервного копирования, то потеряете кошелек и все свои активы, которые в нем находятся. Обязательно создавайте резервные копии всех кошельков"
+   },
+   "metax_mid_colored_stake": {
+      "message": "Stake"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "Создайте резервную копию"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "Сбросить кошелек"
+   },
+   "securityreset_header_text_reset": {
+      "message": "Сбросить кошелек"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "Отмена"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "Обратите внимание, что если вы сбросите кошелек без его резервного копирования, то потеряете кошелек и все свои активы, которые в нем находятся. Обязательно создавайте резервные копии всех кошельков"
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "Для подтверждения сброса кошелька введите {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "Вы хотите сбросить кошелек?"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "Предупреждение о рисках"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "Уровень защиты кошелька"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "Уровень строгости проверки. Более высокий уровень может блокировать более подозрительные сайты"
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "Высокий"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "Низкий"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "Блокировка как вредоносных, так и подозрительных сайтов"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "Блокировка только вредоносных сайтов"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "Уровень защиты кошелька"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "Недостаточно {token}"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "Обменять"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "У вас есть ордер услуги «Обмен на газ», ожидающий исполнения. Вы не можете одновременно разместить еще один ордер. Повторите попытку после исполнения этого ордера."
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "OK"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "Услуга «Обмен на газ» пока не предоставляется."
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "Вы уже разместили подобный ордер. Не рекомендуем размещать новый ордер, пока не обновится ваш баланс."
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "Просмотреть в обозревателе"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "Вы достигли дневного лимита ордеров для услуги «Обмен на газ». Повторите попытку завтра."
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "Наш механизм контроля рисков обнаружил, что вы совершили несколько нестандартных операций. Вам больше не разрешено пользоваться услугой «Обмен на газ»."
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "Посмотреть в обозревателе"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "Не удалось заправить {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "Не удалось заправить {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "Выполнен обмен {payValue} {paySymbol} на {receiveValue} {receiveSymbol}"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "Транзакция отправлена"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "Заправить {nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value} general transactions"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "Выберите количество средств для оплаты"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "Выберите платежный токен"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "Обмен на газ"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "OK"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "Это ориентировочный курс обмена для услуги «Обмен на газ». Он рассчитывается с учетом рыночных цен и курсов централизованных бирж. После подтверждения ордера фактический курс может измениться. За использование услуги «Обмен на газ» также взимается комиссия сети, которая будет автоматически включена в количество уплачиваемых средств."
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "Trading on blockchains requires paying a network fee with native tokens such as ETH, BNB, OKT, MATIC, etc. When you don't have these tokens to make a transaction, you can quickly swap tokens you already hold for native tokens using the Swap for gas feature (it's only available for a few networks).\nGetting native tokens via Swap for gas also requires a network fee, which will be automatically factored into the amount you pay.\nYou'll see an estimated number of general transactions when placing an order on Swap for gas. It refers to the number of token transfers you can make with your selected amount. The actual number may vary."
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "Обмен на газ"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "Обмен на газ"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "Обмен на газ"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "Справка"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "Вы получаете"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "Перезагрузить"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "Ошибка сети"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "Если вы создадите другой ордер, текущий ордер может быть не выполнен. Закрытие этой страницы не приведет к прерыванию процесса. Подробнее можно узнать в разделе «История»."
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "Выберите платежный токен"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "Не удалось получить цену {paySymbol} и {receiveSymbol}, а также невозможно подтвердить количество средств, которое вы получите. Повторите попытку позже."
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "Не удалось получить цену {paySymbol}, и невозможно подтвердить количество средств, которое вы заплатите. Повторите попытку позже."
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "Не удалось получить цену {receiveSymbol}, и невозможно подтвердить количество средств, которое вы получите. Повторите попытку позже."
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "В настоящее время комиссия сети слишком высокая, поэтому сейчас не лучшее время для транзакции. Повторите попытку позже."
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "Insufficient {token} for network fee "
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "Recommend"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "Receive {token} with QR code or wallet address"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "Top up {token} quicker than ever"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "Receive"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "Swap for gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "Перед просмотром адреса сделайте резервную копию своего кошелька"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "Клиент Ledger"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "Пожалуйста, сначала загрузите {downloadUrl}, а затем, после открытия домашней страницы ledger-клиента, нажмите на расположенную ниже кнопку «Подключить»."
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "Подключить аппаратный кошелёк"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "Добавить кошелёк"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "Подключиться не удалось"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "Убедитесь, что вы вставили аппаратный кошелек в компьютер и разблокировали его."
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "Выберите аппаратный кошелёк"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "Убедитесь, что аппаратный кошелек подключен к компьютеру"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "Подключение"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "Аккаунт {newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "Новый аккаунт создан"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "Подключить"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "Подключите аппаратный кошелёк"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "Создать новый кошелек"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "Hardware wallet"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "Закрытый ключ"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "Сид-фраза"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "Импортировать существующий кошелек"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "Для подключения к аппаратному кошельку необходимо использовать OKX Wallet в Google Chrome."
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "Ваш браузер не поддерживается..."
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "Скачать Google Chrome"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "(прежние версии)"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "Подключить аппаратный кошелёк"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "Перед добавлением нового аккаунта необходимо воспользоваться предыдущим."
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "Подключение…"
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "Подключите свой аппаратный кошелёк"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "Создать новый кошелек с сид-фразой"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "Если ниже не указан адрес вашего кошелька, переключите путь на тот, который использовался до этого (MEW / MyCrypto)"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "Забыть этот аппаратный кошелек"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "Выберите путь"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "Выбрать кошельки"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "Импортировать сид-фразу или закрытый ключ"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "Вы можете добавить не более 50 кошельков."
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "Создано"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "Отменить одобрение"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "Авторизация кошелька"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "Разрешение {tokenSymbol} будет отменено"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "Закрытый ключ"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "Копирование приватного ключа сопряжено с риском легкого отслеживания буфера обмена или его использоваться сторонними приложениями."
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "Проверьте сид-фразу"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "Резервная копия создана"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "Все равно копировать"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "Не копировать"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "Закрытый ключ"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "Запишите приведенные далее слова в правильном порядке. Храните их в безопасном месте и никому не показывайте!"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "Запишите сид-фразу"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "Убедитесь, что за вашим экраном никто не подглядывает"
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "Коснитесь для просмотра сид-фразы"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "Готово"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "Скопировано"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.okx.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "Network fee"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "Register zkSync Lite to continue the transaction"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "Сумма"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "Разрешенная сумма"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "Одобрить"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "Взаимодействие с"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "Сети"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "Сеть"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "URL обозревателя блоков"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "Идентификатор цепочки, используемый для подписи транзакций в данной сети."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "Идентификатор цепочки, используемый для подписи транзакций в данной сети."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "Символ валюты"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "Сокращенное название для обозначения валюты данной сети."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "URL, используемый в качестве обозревателя блоков данной сети."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "URL, используемый в качестве обозревателя блоков данной сети."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "Название, связанное с данной сетью."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "название связанное с данной сетью"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "URL доступа к данной сети."
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "Предоставляя разрешение, вы разрешаете {name} переводить ваши {tokenSymbol}и автоматизировать для вас транзакции"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "У вас не будет DApp-доступа, пока вы не создадите резервную копию сид-фразы. Пожалуйста, сделайте ее сейчас."
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "Отклонить"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "Предоставить"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "Переключиться"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "Увеличение комиссии может (хотя и не гарантировано) сократить время обработки."
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "Это сообщение не может быть расшифровано из-за ошибки: {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "Подключайтесь только к тем сайтам, которым вы доверяете."
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "Подключить аккаунт"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "Выбрать аккаунт(ы)"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "Создать резервную копию кошелька"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "Вы одобрили это разрешение"
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "Разрешить текущему DApp подключаться к OKX Wallet."
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "OKX Wallet не подключился к данному сайту. Для подключения к данному сайту найдите и нажмите кнопку подключения."
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "{siteName} хотел бы прочесть данное сообщение, чтобы завершить ваше действие"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "URL-адрес сети"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "Вы не одобрили это разрешение"
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName} хотел бы получить ваш открытый ключ шифрования. После получения согласия этот сайт сможет составлять для вас зашифрованные сообщения."
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "Запросить открытый ключ шифрования"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "Подписать"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "Запрос подписи"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "Подключенные аккаунты"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "Текущая сеть"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "Вы хотите использовать {curWalletName}-подключение к {host}"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "Подключенные сайты"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "Расшифровать"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "Скопировать зашифрованное сообщение"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "Расшифровать сообщение"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "Расшифровать запрос"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "Внешнее расширение"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "Сеть"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "Новый контракт"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "+ еще {length}"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "Кому:"
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "Выбрать аккаунты"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "Выбрать все"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "Тип"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "{curWalletName} подключился к данному сайту"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "{curWalletName} отключился от данного сайта"
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "Отключить"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "Отклонить"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "Недостаточно газа"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "Добавить криптовалюту"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "Подключитесь ко всем своим {account}"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "Подключиться к {origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "аккаунтам"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "Вы подтверждаете одобрение? Одобрение означает, что вы разрешаете этому DApp выводить ваши {tokenSymbol} в любое время"
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "Разрешить этому сайту:"
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "Это позволит использовать данную сеть в OKX Wallet."
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "Разрешить данному внешнему расширению:"
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "Добавить токен"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "Добавить токены"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "Не ограничено"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "Баланс"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "ID цепочки"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "Данные"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "Введите максимальную сумму ({tokenSymbol})"
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "В данный момент OKX Wallet не поддерживает эту цепочку."
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "Back"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "Couldn't send this crypto because it's not available for paying network fees"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "Address not registered"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "You need to register this address before using it"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "Register"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "Неправильные слова. Попробуйте еще раз"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "Слово"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "Выберите фразы в нужном порядке."
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "Удалить"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "Название кошелька не должно быть длиннее 20 символов."
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "Кошелек с таким названием уже существует."
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "Название аккаунта"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "Изменено"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "Предупреждение о рисках"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "Удаление кошелька приведет к уничтожению всех его данных на текущем устройстве. Перед удалением убедитесь, что вы создали резервную копию сид-фразы или закрытого ключа кошелька. В противном случае, вы навсегда потеряете кошелек и все содержащиеся в нем активы."
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "Название кошелька"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "Удалено"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "Условия использования"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "Перейти к редактированию"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "Отмена"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "Подтвердить"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "Этот адрес уже существует"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "Максимум 20 символов"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "Неправильный адрес. Попробуйте еще раз"
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "Введите адрес"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "Введите имя до 20 символов"
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "Выйти из меню добавления адреса?"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "Адрес"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "Имя"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "Добавить адрес"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "Понятно"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "Скоро появится больше сетей!"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "Сеть {network} не поддерживается"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "Отмена"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "Продолжить"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "Предупреждение о безопасности"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "Вы отправляете крипту на контрактный, а не на приватный адрес. Прежде чем продолжить, убедитесь, что адрес действителен, чтобы избежать возможных потерь"
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "Добавить адрес"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "Скопируйте адрес"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "Удаление адреса"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "Редактировать адрес"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "Все сети"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "Поиск по адресу или имени"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "Без адреса"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "Адресная книга"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "Выберите сеть"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "Адрес добавлен"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "Адрес удален"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "Достигнут лимит адресной книги (200 записей)"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "Все NFT из этого набора"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "Одобрить"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "Для"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number} ч"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number} ч"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number} ч"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number} мин"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number} мин"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "Никогда"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "Назад"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "Просмотреть функцию «Доход»"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "Подробнее"
+   },
+   "wallet_extension_btn_register": {
+      "message": "Регистрация"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "Переключить сеть"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "Копировать приватный ключ"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "Прибл. сумма получения"
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "Понятно"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "Окончательная сумма получения будет подтверждена при успешной отправке транзакции в блокчейн"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "Понятно"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "Окончательная сумма получения будет подтверждена при успешной отправке транзакции в блокчейн"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "Примерная сумма инвестиции"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "Текущая транзакция ожидает выполнения более {pendingTips} ч. Поторопитесь или отмените транзакцию."
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "ИД аккаунта"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "From"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "Зарегистрируйте ZKSpace, чтобы продолжить транзакцию"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "Регистрация ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "Удаленные"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "Утвердить доступ {approved_address} ко всем вашим {approved_asset}?"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "Отозвать доступ {approved_address} ко всем вашим {approved_asset}?"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "By confirming, you will allow {address} to transfer your assets or automate transactions on your behalf. Please take caution before moving on"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "Unknown NFT collection"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "You'll allow this DApp to transfer your main-chain crypto, please proceed with caution"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "The transaction may fail due to a low network fee. We recommend you adjust the network fee before proceeding"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "Обзор"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "Вы можете воспользоваться DApps, поддерживающими следующие сети"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "Перед использованием данной крипты, вам необходимо ее зарегистрировать"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "Другие сети, совместимые с EVM, были синхронизированы автоматически"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "Вы можете воспользоваться DApps, поддерживающими следующие сети"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "Вы можете воспользоваться DApps, поддерживающими следующие сети. Если у вас возникли проблемы с использованием этих DApps, нажмите кнопку ниже, чтобы переключиться на сети EVM"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "Вы можете использовать этот кошелек для управления своими криптоактивами в сети Биткоин."
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "Вы можете использовать этот кошелек для управления своими криптоактивами в сети {network}."
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "Перевод"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "Отмена"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "Удалить"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "Удалить адрес?"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "Выберите сеть"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "Редактировать адрес"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "Сохранено"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "Go back"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "Обновить"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "Превышено ограничение на количество символов, введите повторно"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "Подписание этого сообщения может быть опасным. Чтобы защитить свои активы, подписывайте его только если вы полностью доверяете сайту"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "Скоро предстоит форк ETHW"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "Удвойте свои активы Ethereum бесплатно!"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "Понятно"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "Последняя версия"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "Кошелек OKX Wallet теперь принимает активы ETHW. Проверьте сами"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "Номер версии"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "Вы можете переключиться на сети EVM ниже, а сети DApps будут изменены автоматически"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "Посмотреть в обозревателе блокчейна"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "Просмотреть в кошельке"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "Забыли пароль?"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "Нажмите на кнопку «СБРОСИТЬ» внизу, чтобы подтвердить сброс"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "Подтвердить сброс"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "Сбросить кошелек"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "Посчитать токены NFT в сумме"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "Одобрить"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "Отмена разрешения"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "Для"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "Получить"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "Отправлено"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "История"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "Получить"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "Инвестирование средств"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "Вернуть"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "Type"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "Все сети"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "Время"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "Адрес"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "Одобрить {symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "Получить"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "Контрактное взаимодействие"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "Создать"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "Получить"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "От"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "Вернуть"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "Отменить разрешение {symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "Revoke approval of {approvedasset}"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "Отправить"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "Кому"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "Отмена транзакции"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "Ускорить"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "Ускорить отмену"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "В ожидании"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "Ожидание"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "Подписаться"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "Дополнительно…"
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "Торговать"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "Ожидающие ({num})"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "Нажмите, чтобы добавить в адресную книгу"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Одноразовый"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "Завершенные"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "Не выполнено"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "Failed"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "Pending"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "Waiting"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "Завершенные"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "Completed"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "В ожидании"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "Регистрация ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "Неизвестный протокол"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "Неизвестный токен"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "Revoke approval"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "Подключено"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "История"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "Обменять"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "Нажмите, чтобы сменить адрес"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "Нажмите, чтобы перейти ко введению в раздельное заверение"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "Очистить"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "У меня есть"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "Сид-фраза из 12 слов"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "Сид-фраза из 15 слов"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "Сид-фраза из 18 слов"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "Сид-фраза из 21 слова"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "Сид-фраза из 24 слов"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "Такой кошелёк уже существует"
+   },
+   "wallet_extension_info_pay": {
+      "message": "Уплачено"
+   },
+   "wallet_extension_info_receive": {
+      "message": "Получено"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "Тип"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "Фарминг"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "Пул"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "Сохранить"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "Выделить под стейкинг"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "Сейфы"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "Пароли не совпадают!"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "Пароли совпадают!"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "Хорошие"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "Отлично"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "Низкая"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "Введите мемо, до 256 символов"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "Искать сеть"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "Искать сеть"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "Выделить под стейкинг"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "Сейф"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "Зарегистрированный адрес"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "Доступ ограничен"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "Продукты и услуги okx.com недоступны в вашем регионе ({area}) из-за требований местного законодательства."
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "У вас есть кошельки без резервных копий. Аккаунты кошельков без резервных копий не могут подключаться к сторонним приложениям DApp"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "Посмотреть в обозревателе блокчейна"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "{num} подключаемых аккаунтов"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "Одобренная сумма"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "Подтверждение блока"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "От"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "Взаимодействие с"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "Сеть"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "Статус"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "Время"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "Кому"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "Хеш транзакции"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "Не ограничено"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "{contractaddress} представляет риск. Чтобы защитить свои активы, убедитесь, что этот адрес является вашим часто используемым адресом для перевода, прежде чем подтверждать транзакцию"
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "Подайте заявку"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "Назад к списку всех элементов"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "Очистить все"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "Обновить"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "Лучшее предложение"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "Последние"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "Цена"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "Цепочки"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "Статус продаж"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "Получено предложений"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "Продается"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "Поиск"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "Посмотреть на NFT рынке"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "Адрес контракта"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "Минимальная цена коллекции"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "Сеть"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "Цена NFT"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "Стандарт токена"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "Фильтр"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "Элементы, отправленные на неправильный адрес, восстановить невозможно"
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "Криптовалюта"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "NFT"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "Обзор NFT"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "Все лучшие NFT — на OKX"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "Коллекции"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "Не удалось загрузить"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "Макс."
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "Коллекция отсутствует"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "Элементы по данному запросы не найдены"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "Количество должно быть больше 0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "Сумма вывода не может превышать {max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "Введите сумму, которую хотите перевести"
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "Стоимость NFT рассчитывается на основе минимальной цены коллекции."
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "Во владении"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "Для данного адреса для вывода средств не зарегистрирован и не может быть использован {token}"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "Кошелек OKX Wallet полностью децентрализован, и мы не храним ваш пароль. Если вы забыли свой пароль, сбросьте свой кошелек и импортируйте исходную фразу или закрытый ключ, чтобы создать новый пароль, который следует держать в безопасности."
+   },
+   "wallet_extension_option_allchain": {
+      "message": "Все сети"
+   },
+   "wallet_extension_option_desc": {
+      "message": "На данный момент {domain} в сети {chain}"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "Переключиться на сети EVM"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "Мультичейн-соединение"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "Общая сумма активов"
+   },
+   "wallet_extension_overview_more": {
+      "message": "Дополнительно"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "Адрес для вывода скопирован"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "Активы по сетям"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "Подтверждая, вы соглашаетесь с {terms_service} OKX"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "Заправить {token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "Недостаточно {token} для оплаты комиссии за использование сети."
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "Скрыть сид-фразу"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "Одобрить"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "Отмена"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "Отмена разрешения"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "Отмена"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "Отправьте транзакцию 0 {symbol}, чтобы заменить исходную."
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "По причинам, связанным с сетью, отмена транзакции не гарантирует успеха."
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "Цена газа ({gasPrice} GWEI) * Лимит газа ({gasLimit})"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "Крипта не зарегистрирована"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "Недостаточно средств"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "Копировать приватные ключи рискованно. Содержимое вашего буфера обмена может отслеживаться или использоваться сторонними приложениями. Храните свои приватные ключи в безопасном месте."
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "Начать ознакомление"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "Недостаточно {token} для комиссии за использование сети"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "Старые версии"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/learn/what-is-segregated-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "Собственное раздельное заверение"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "Вложенное раздельное заверение"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "Повторить ордер"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "Перейти к отправке"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "Посмотреть в истории"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "Вы уже размещали идентичный ордер. Вы точно хотите продолжить текущий?"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "После"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "До"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "Отмена"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "Ускорьте транзакцию за счет увеличения комиссии сети"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "= Цена газа ({gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "Все сети"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "Взаимодействие с"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "Проект"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "Контракт проекта"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "Добавить сеть"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "Форматы адреса"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "Отменить размещение"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "Отмена транзакции"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "Контрактное взаимодействие"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "Адрес скопирован"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "Выберите сеть"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "Ускорение транзакции"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "Хеш транзакции скопирован"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "Вы подтверждаете копирование?"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "Создано {walletName}"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "Импортировано {walletName}"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "Скачать выписки о состоянии"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "Понятно"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "Сумма позволяющая третьим сторонам выводить средства и автоматизировать транзакции для вас"
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "Продолжить"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "Отклонить"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "Предупреждение о рисках"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "Контрактный адрес {accountAddress} указан как вредоносный. Существует риск кражи активов. Убедитесь, что адрес безопасен"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "Одобренная сумма"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "Одобренная сумма"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "Адрес {accountAddress} указан как вредоносный. Существует риск кражи активов. Убедитесь, что адрес безопасен"
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "Confirm"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "Couldn't trade with fiat money since retrieving est. value of this crypto isn't available"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "Понятно"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "Понятно"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "Оцените"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "OKX Wallet теперь принимает активы ETHW"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. Кошелек OKX Wallet теперь принимает активы ETHW"
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. Мир так велик, и мне хочется его посмотреть"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "Новинки"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "Новинки"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "Новинки"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "V2.15.10"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "Новинки версии 2.16.2"
+   },
+   "wallet_extension_rn_button": {
+      "message": "Понятно"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. Теперь вы можете совершать транзакции и взаимодействовать с DApps в сети ETHF"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "Теперь вы можете совершать транзакции и взаимодействовать с DApps в сети Aptos"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. Теперь можно отслеживать подозрительные сайты и подавать жалобу в систему контроля рисков"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. NFTs on Aptos can now be displayed and claimed in the wallet"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. Теперь вы можете напрямую совершать транзакции с помощью DApps в сетях EVM и Solana"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. Теперь вы можете совершать транзакции и взаимодействовать с DApps в сети Tron"
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. You can now use ENS, Unstoppable Domains, and SPACE ID domains to make transfers"
+   },
+   "wallet_extension_rn_title": {
+      "message": "Новинки"
+   },
+   "wallet_extension_rn_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "Продолжить"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "Отклонить"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "Предупреждение о рисках"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "Адрес {accountAddress} указан как вредоносный. Существует риск кражи активов. Убедитесь, что адрес безопасен"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "Показать больше видов мошенничества"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "Контрактный адрес {accountAddress} указан как вредоносный. Существует риск кражи активов. Убедитесь, что адрес безопасен"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "На данный момент поддерживаются {number}+ совместимые с EVM сети"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "Совместимые с EVM сети"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "Ваш адрес является сетевым адресом EVM. Вы можете использовать его для управления своими активами в других сетях, совместимых с EVM."
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "В числе поддерживаемых, совместимых с EVM сетей: {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "Выберите криптовалюту для оплаты"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "Добавить сейчас"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "Confirm"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "Далее"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "Next"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "To"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "Адресная книга"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "Текущий адрес"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "Введите действительный адрес"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "Отсутствует в адресной книге"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "Couldn't estimate"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "Введите адрес или название адреса"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "Search currency"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "All"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "По умолчанию"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "Balance"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "Pay with"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "Select crypto to pay for network fees"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "Canceled"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "Отменяется"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "Canceling"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "Ускоряется"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "Speeding up"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "Сумма"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "Баланс"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "Макс."
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "The maximum amount is {fiatamount} ({cryptoamount}) after deducting network fees"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "Receiving address"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "Select currency"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "Ни одного {crypto} для отправки не найдено"
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "Transfer at least {amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "Настройки"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "Автоблокировка"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "Создать резервную копию кошелька"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "Настройки"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "Изменить пароль"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "Установить в качестве кошелька по умолчанию"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "Адресная книга"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "Управлять контактами"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "Версия {number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "Don't refresh this page as it could cause hardware wallet import failure. To protect your privacy, OKX Wallet doesn't store your wallet password. Please keep your password safe."
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "Одобрить доступ ко всем NFT из этой коллекции?"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "Получить"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "Прибл. сумма получения"
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "Теперь с помощью OKX wallet можно изучить более 25 сетей."
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "От"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "В"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "Инвестирование с"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "Прибл. инвестирование с"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "Получить"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "Вернуть из"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "Регистрация"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "Отменить доступ ко всем NFT из этой коллекции?"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "Децентрализованные финансовые сервисы"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "Все ваши {collection}"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "Одобренные активы"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "Мы автоматически синхронизировали для вас другие сети {networkname}"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "Отменить размещение"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "Вкл."
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "Ваш универсальный попутчик в мире DeFi"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "Мемо"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "Результаты не найдены"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "Одобрить"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "Одобрить {collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "Неизвестный NFT"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "Неизвестный набор NFT"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "Отменить размещение"
+   },
+   "wallet_extension_title_memo": {
+      "message": "Мемо"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "Мемо (необязательно)"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "По умолчанию выбрано мультичейн-соединение"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "Поддерживается мультичейн-соединение"
+   },
+   "wallet_extension_title_register": {
+      "message": "Регистрация"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "Зарегистрировать крипту"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "Отмена разрешения"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "Кошелек OKX Wallet поддерживает следующие сети"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "Текущая сеть"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "Переключить сеть"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "Адрес кошелька"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "Адрес скопирован"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "Формат адреса изменен"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "Одобрить {collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "Network error. Please check your network connection"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "Не сейчас"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "Установить по умолчанию"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "Успешно создано"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "Не удалось зарегистрироваться"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "В настоящее время аппаратный кошелек поддерживает только активы EVM"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "Успешно импортировано"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "Успешно импортировано"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "Макс. сумма: {max} Sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "Мин. сумма: {min} Sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "Ошибка сети. Обновите и попробуйте ещё раз"
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "Если адрес получателя не активирован, может произойти сбой транзакции."
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "Зарегистрировано"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "Отправляйте на этот адрес только активы в сети {chain_name}"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "Установите кошелек OKX Wallet в качестве кошелька по умолчанию, если это ваш первый выбор для соединения с DApps среди других установленных расширений кошельков."
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "Успешно установлено"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "Выполняются"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "Кошелек OKX wallet сброшен"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "An unknown error occurred while processing your transaction. Please re-initiate the transaction"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "Установить кошелек OKX Wallet в качестве кошелька по умолчанию?"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "Скопируйте адрес"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "Подключить"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "Настройки"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "Управлять кошельком"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "Средняя"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "Далее"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "Полученная сумма"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "с"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "=цена газа ({gasPrice} GWEI)*Газ ({gasLimit})"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "по"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "Настроить"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "Лимит газа должен быть в промежутке {minGasLimit} и {maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "Цена газа должна превышать {minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "Лимит газа"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "Цена газа (GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "Быстро"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "Поле адреса не может быть пустым"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "Поле с суммой ввода не может быть пустым"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "Сумма ввода должна превышать 0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "Недостаточно средств"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "Недостаточно {chainSymbol} для внесения платы за газ"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "Неправильный адрес"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "Адрес получения не может совпадать с адресом отправления"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "Кому"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "Макс."
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "Сумма"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0,000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "Введите адрес"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "Продолжить ожидание"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "Заменить"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "Пропустить"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "У вашей транзакции произошел сбой"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "У вас есть транзакция, ожидающая завершение на протяжении более одного часа"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "Вы не можете инициировать новую транзакцию, если у вашей транзакции произошел сбой. Вы хотите заменить неудавшуюся транзакцию текущей?"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "Вы не можете инициировать новую транзакцию, пока ожидающая транзакция не будет завершена. Вы хотите заменить ожидающую транзакцию текущей?"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "Медленно"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "мин"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "Адрес {network} скопирован."
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "Понятно"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "Забыли пароль?"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "Пока отложить"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "Я понимаю вышеуказанные предупреждения и готов к сбросу кошелька"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "OKX Wallet — это полностью децентрализованная платформа. Мы не храним ваш пароль. Извлечь его невозможно."
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "Если вы забудете пароль, сброс кошелька с использованием его сид-фразы или закрытого ключа станет ЕДИНСТВЕННЫМ способом установить новый пароль и восстановить доступ."
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "Сброс кошелька приведет к уничтожению всех его данных на текущем устройстве. Если сбросить кошелек без создания резервной копии его сид-фразы или закрытого ключа, вы навсегда потеряете кошелек и все находящиеся в нем активы."
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "Установить OKX Wallet в качестве кошелька по умолчанию"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "Немедленно создайте резервную копию"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "Резервная копия этого кошелька не создана"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "Если ваше устройство будет утеряно или украдено, вы навсегда потеряете свой кошелёк и всю криптовалюту"
+   },
+   "wallet_home_btn_close": {
+      "message": "Закрыть"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "Подтверждено"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "Импортировать кошелек"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "Создать кошелек"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "Управлять"
+   },
+   "wallet_home_btn_receive": {
+      "message": "Получить"
+   },
+   "wallet_home_btn_send": {
+      "message": "Отправить"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "Я новичок в децентрализованном мире"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "Разблокировать"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "Подключить"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "Ошибка оценки активов. Выйдите с текущей страницы и повторите попытку попозже"
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "Подключено"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "Введите пароль"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "OKX Wallet столкнулся с ошибкой"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "Ваш портал в Web3"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "Позже"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "Перед внесением депозита обязательно сделайте резервную копию своей сид-фразы."
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "Криптовалютный кошелек · Мир NFT · Доступ к DApp"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "Попробуйте повторить попытку, закрыв и снова открыв всплывающее окно, либо обратитесь в службу поддержки"
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "Стек:"
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "Код: {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "Подробнее об ошибке"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "Сообщение: {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "Код: {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "Попробуйте повторить попытку, перезагрузив страницу, или обратитесь в службу поддержки"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "У меня уже есть кошелек"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "Ошибка сети. Попробуйте ещё раз попозже"
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "Введены недопустимые данные. Попробуйте еще раз."
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "Импортировать закрытый ключ"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "Сид-фраза"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "Введите сюда свой закрытый ключ."
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "Введите сид-фразу, разделяя слова пробелами."
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "Кошелек с закрытым ключом уже существовал"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "Кошелёк уже существовал."
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "Поддерживаются стандартные закрытые ключи длиной 64 бита"
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "Введены недопустимые данные. Попробуйте еще раз."
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "Сид-фраза"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "Между словами должен быть один пробел"
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "Поддерживаются все форматы сид-фраз (12, 15, 18, 21 и 24 слова)."
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "Закрытый ключ"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "Вставьте или введите закрытый ключ."
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "Сид-фраза"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "Поддерживаются все форматы сид-фраз (12, 15, 18, 21 и 24 слова)."
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "Пожалуйста, проверьте порядок сид-фазы"
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "Введены недопустимые данные. Попробуйте еще раз"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "{length} слов"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "OKX Wallet"
+   },
+   "wallet_intro_text_desc": {
+      "message": "OKX Wallet — это мультиплатформенный (доступный как мобильное приложение, в веб-версии и как расширение браузера) универсальный криптокошелек."
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "Подключить аппаратный кошелёк"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "Создать резервную копию своей сид-фразы"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "Создать резервную копию кошелька"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "Готово"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "Управлять"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "Десятичная запятая"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "Неверный адрес"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "Такая криптовалюта уже существует"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "Неверный адрес получателя"
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "Адрес контракта"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "Мультичейн"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "Добавленная криптовалюта"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "Пользовательская крипта"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "Управлять"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "Поиск по криптовалюте или адресу контракта"
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "Символ"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "Популярная криптовалюта"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "Добавить пользовательскую крипту"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "Пользовательская крипта"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "Успех!"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "Добавить кошелёк"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "Создать резервную копию кошелька"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "Редактировать кошелёк"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "Добавить аккаунт"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "Переподключить"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "Существующий аккаунт, попробуйте еще раз."
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "Аппаратный кошелек подключен"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "Общая сумма активов"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "Аккаунт"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "Аккаунт"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "Кошелек"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "Аппаратный кошелек"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "Закрытый ключ"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "Одобрение"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "Копировать"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "Скопировано!"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "не найдено"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "OK"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "Crypto not supported"
+   },
+   "wallet_send_text_register_address": {
+      "message": "Register address"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "Подтвердить"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "Как минимум 6 символов"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "Пароли не совпадают"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "Неверный пароль. Попробуйте еще раз."
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "Узнать больше"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "Re-enter your password"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "Введите пароль"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "Введите пароль"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "Введите новый пароль еще раз"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "Подтвердить"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "Пароль"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "Скачать выписки о состоянии"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "Скачать выписки о состоянии"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "Заблокировать кошелёк"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "Продолжить"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "Подтвердить сброс"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "Я осознаю риски"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "Выбрать язык"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "Язык"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "Общее"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "Предупреждение о рисках"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "Настройки"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "Выписки о состоянии"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "Убедитесь в наличии резервной копии своего кошелька"
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "Неверный пароль. Попробуйте еще раз."
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "Изменить пароль"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "Введите пароль минимум из 6 символов"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "Введите свой старый пароль"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "Введите новый пароль еще раз"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "Новый пароль"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "Из соображений конфиденциальности в OKX Wallet не сохраняются сведения о вашем кошельке. Храните пароль в безопасном месте."
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "Старый пароль"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "Подтвердить"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "Ошибка при получении выписок о состоянии."
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "Выписки о состоянии"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "Выписки о состоянии OKX Wallet"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "В выписках о состоянии содержатся адреса ваших публичных аккаунтов и записи о транзакциях."
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "Валюта"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "Сбросить кошелек"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "Перед сбросом кошелька убедитесь, что вы сделали резервную копию сид-фразы или закрытого ключа. В противном случае вы навсегда потеряете кошелек и все находящиеся в нем активы."
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "Это приведет к удалению всех данных в OKX Wallet. Перед сбросом убедитесь, что у вас есть резервные копии всех сид-фраз."
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "Безопасность кошелька"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "Управление кошельком"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "Продвинутый"
+   },
+   "wallet_settings_text_desc": {
+      "message": "Версия, центр поддержки и контактная информация"
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "Валюта, язык и прочее"
+   },
+   "wallet_settings_text_language_en": {
+      "message": "ru"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "Изменить пароль, сбросить кошелек"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "Добавление, редактирование и резервное копирование кошелька"
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "Установить пароль"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "Из соображений конфиденциальности в OKX Wallet не сохраняются сведения о вашем кошельке. Храните пароль в безопасном месте."
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "Отменить транзакцию"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "Подтверждение транзакции"
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "Подтверждение транзакции"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "Сообщение"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "{index} из {total} подтверждений"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "Комиссия сети"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "TxID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "{num} в ожидании"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "Время"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "Тип"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "Адрес контракта"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "Название сети"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "Транзакции не найдены"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "Отправка..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "Адрес скопирован"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "Скопировать в буфер обмена"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "Скопировать идентификатор транзакции в буфер обмена"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "Общая стоимость"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "Авторизация"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "Подтверждаем"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "Поле с суммой ввода не может оставаться пустым"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "Введенная сумма должна превышать 0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "Отмена"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "Макс."
+   },
+   "wallet_transfer_btn_next": {
+      "message": "Далее"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "Ускорить"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "Отправьте 0 {coinSymbol} для замены первоначальной транзакции. По связанным с сетью причинам отмена транзакции не гарантирует успеха."
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "Комиссия за транзакцию"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "Кошелек"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "Комиссия за транзакцию"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "Развертывание контракта"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "Контрактное взаимодействие"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "Лимит газа должен составлять не менее {minimumGasLimit}"
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "Недостаточно средств"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "Недостаточно {chainSymbol} для оплаты за газ"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "Поле адреса не может оставаться пустым"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "Не выполнено"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "Лимит газа не может оставаться пустым"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "Максимум 15 млн"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "Лимит газа должен превышать 21 000"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "Цена газа не может оставаться пустой"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "Цена газа должна быть больше 0"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "Настроить"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "Лимит газа"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "мин"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "Цена газа"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "Цена газа (GWEI)"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "Другие"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "Выполняется"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "Подробнее о транзакции"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "Адрес получения не может совпадать с адресом отправления"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "Сейчас у вас нет ни одного токена."
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "Ускорение транзакции за счет использования более высокой цены на газ увеличивает ее шансы на более быструю обработку сетью, но это не всегда гарантировано."
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "Выбрать сеть"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "Не удалось одобрить {first}"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "{first} успешно одобрено"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "Не удалось отменить подтверждение {first}"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "Отправлена заявка на отмену одобрения {first}"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "Одобрение {first} отменено"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "Невыполненный вызов контракта"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "Транзакция выполнена"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "Транзакция NFT не выполнена"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "Транзакция NFT успешно выполнена"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "Не удалось отправить {first} {second}"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "{first} {second} успешно отправлено"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "Не удалось выполнить своп {first} {second} на {third} {fourth}"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "Своп {first} {second} на {third} {fourth} прошел успешно"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "Транзакция отправлена"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "Посмотреть в обозревателе"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "Просим сначала обработать все транзакции."
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "введите адрес (0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "Выбрать токен"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "Поиск токена"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "Пожалуйста, дождитесь подтверждения блока"
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "Сбой аппаратной подписи"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "Подписать с помощью аппаратного кошелька"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "После"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "До"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "Полученная сумма"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "Комиссия сети"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "Кому"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "От"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "Средняя"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "Быстро"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "Медленно"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "Вернуться на домашнюю страницу"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "Отправлено"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "Завершено"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "В ожидании"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "Невозможно разблокировать без предыдущего хранилища"
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "Аппаратный кошелек поддерживает активы только в сетях, совместимых с EVM"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "Недостаточно средств на балансе SOL для оплаты комиссии сети"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "Недостаточно средств. Вам необходимо иметь как минимум {number} SOL на своем аккаунте, чтобы инициировать транзакцию"
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "Отправьте как минимум {number} SOL для совершения минимальной платы за освобождение от аренды"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "Зарезервируйте как минимум {number} SOL в качестве освобождения от арендной платы"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "Ваш кошелек был сброшен"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "Одобрить"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "Нет данных"
+   }
+}
