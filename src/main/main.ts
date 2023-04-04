@@ -405,3 +405,9 @@ ipcMain.on(Channels.openOKXExtension, (_event) => {
     okxWindow.show();
   }
 });
+
+ipcMain.on(Channels.closeOKXExtension, (_event) => {
+  if (okxWindow) {
+    okxWindow.close();
+  }
+});

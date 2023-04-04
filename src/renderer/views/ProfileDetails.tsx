@@ -16,6 +16,8 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
       .request({ method: 'eth_requestAccounts' })
       .then((res: string) => {
         setIsLogged(true);
+        console.log(`OKX res`, res);
+        window.electron.ipcRenderer.sendMessage(Channels.closeOKXExtension);
       })
       .catch((err) => {
         if (err.code === 4001) {

@@ -12,6 +12,7 @@ export enum Channels {
   appUpdate = 'app-update',
 
   openOKXExtension = 'open-okx',
+  closeOKXExtension = 'close-okx',
 }
 /* eslint-disable no-shadow */
 export enum AppUpdateStatus {
