@@ -10,7 +10,7 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, dialog } from 'electron';
+import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
@@ -22,6 +22,7 @@ import { extractWithProgress } from './utils/extract';
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
+let okxWindow: BrowserWindow | null = null;
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -47,19 +48,28 @@ const installExtensions = async () => {
     )
     .catch(console.log);
 };
+const getAssetPath = (...paths: string[]): string => {
+  const RESOURCES_PATH = app.isPackaged
+    ? path.join(process.resourcesPath, 'assets')
+    : path.join(__dirname, '../../assets');
+  return path.join(RESOURCES_PATH, ...paths);
+};
+
+const loadExtensions = () => {
+  session.defaultSession
+    .loadExtension(
+      getAssetPath('okx/mcohilncbfahbmgdjkbpemcciiolgcge/2.40.0_0')
+    )
+    .then((response) => {
+      console.log('response ext', response);
+      // TODO: We have global window.okxwallet object, we need it in the renderer process
+    });
+};
 
 const createWindow = async () => {
   if (isDebug) {
     await installExtensions();
   }
-
-  const RESOURCES_PATH = app.isPackaged
-    ? path.join(process.resourcesPath, 'assets')
-    : path.join(__dirname, '../../assets');
-
-  const getAssetPath = (...paths: string[]): string => {
-    return path.join(RESOURCES_PATH, ...paths);
-  };
 
   mainWindow = new BrowserWindow({
     show: false,
@@ -106,14 +116,6 @@ const createProfileWindow = async () => {
     await installExtensions();
   }
 
-  const RESOURCES_PATH = app.isPackaged
-    ? path.join(process.resourcesPath, 'assets')
-    : path.join(__dirname, '../../assets');
-
-  const getAssetPath = (...paths: string[]): string => {
-    return path.join(RESOURCES_PATH, ...paths);
-  };
-
   profileWindow = new BrowserWindow({
     show: false,
     width: 342,
@@ -155,6 +157,21 @@ const createProfileWindow = async () => {
   });
 };
 
+const createOKXWindow = async () => {
+  okxWindow = new BrowserWindow({
+    show: false,
+    width: 360,
+    height: 600,
+    icon: getAssetPath('icon.png'),
+    webPreferences: {
+      preload: app.isPackaged
+        ? path.join(__dirname, 'preload.js')
+        : path.join(__dirname, '../../.erb/dll/preload.js'),
+    },
+  });
+
+  okxWindow.setPosition(1050, 200);
+};
 /**
  * Add event listeners...
  */
@@ -170,12 +187,16 @@ app.on('window-all-closed', () => {
 app
   .whenReady()
   .then(() => {
+    // TODO: this is working on dev mode but not on prod
+    loadExtensions();
     createProfileWindow();
     createWindow();
+    createOKXWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
       if (profileWindow === null) createProfileWindow();
+      if (okxWindow === null) createOKXWindow();
       if (mainWindow === null) createWindow();
     });
   })
@@ -351,4 +372,18 @@ ipcMain.on(Channels.crossWindow, async function (_event, state) {
 
 ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
   if (state === true) profileWindow?.show();
+});
+
+ipcMain.on(Channels.openOKXExtension, (_event) => {
+  const extensionId = 'mcohilncbfahbmgdjkbpemcciiolgcge';
+  if (okxWindow) {
+    okxWindow.loadURL(`chrome-extension://${extensionId}/home.html`);
+    okxWindow.show();
+  }
+});
+
+ipcMain.on(Channels.closeOKXExtension, (_event) => {
+  // if (okxWindow) {
+  //   okxWindow.hide();
+  // }
 });
