@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Pay network fee with"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "To safely transfer this NFT, this address is unavailable for gas payment"
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "We recommend that you transfer the NFT to a Tarpoot address that starts with “bc1”. Transferring it to other addresses may pose a risk of asset loss."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Select wallet to pay network fee"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "Tiếp tục truy cập"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "Bạn đang truy cập một trang web có thể lừa bạn tiết lộ thông tin cá nhân hoặc thông tin tài chính. Để đảm bảo an toàn cho tài sản của bạn, vui lòng đọc hướng dẫn dưới đây trước khi tiếp tục"
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "Bạn đang truy cập một trang web có thể lừa bạn tiết lộ thông tin cá nhân hoặc thông tin tài chính. Để đảm bảo an toàn cho tài sản của bạn, vui lòng đọc hướng dẫn dưới đây trước khi tiếp tục"
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· OKX Wallet tích hợp nhiều cơ sở dữ liệu an toàn để chặn các trang web độc hại"
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· Liên hệ với service@okx.com để phản hồi nếu bạn thấy trang web đáng ngờ hoặc gặp lỗi khối. Cảm ơn bạn đã góp phần bảo mật blockchain"
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· Nếu không muốn nhận cảnh báo này quá thường xuyên, bạn có thể thay đổi cấp độ bảo vệ để giảm bảo mật Ví"
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· Xin lưu ý chúng tôi không thể đảm bảo một trang web an toàn ngay cả khi bạn không nhận được cảnh báo này. Bạn chịu trách nhiệm về mọi rủi ro khi truy cập trang web không an toàn"
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· Hệ thống bảo mật OKX Wallet phát hiện trang web này đáng ngờ. Bạn chịu trách nhiệm về mọi rủi ro khi truy cập trang web không an toàn"
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "Cảnh báo trang web lừa đảo"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "Cảnh báo trang web đáng ngờ"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "Nhập địa chỉ nhận"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0.000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "Phê duyệt"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "Hủy"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "Tôi đã hiểu"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "OKX Wallet không xác thực các mạng tùy chỉnh. Vui lòng lưu ý những rủi ro bảo mật tiềm ẩn"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "Thêm mạng"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "URL trình khám phá khối"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "ID chuỗi"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "Ký hiệu"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "Mạng"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "URL mạng"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "Không thêm được"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "Lưu"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "Không tìm thấy bản ghi"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "Từ chối"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "Tương tác hợp đồng"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "Số ngẫu nhiên tùy chỉnh"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "Dữ liệu giao dịch"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "Từ"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "Giới hạn gas"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "Giá gas ( {gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "Tương tác với"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "Mạng"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "Phí mạng"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "Tổng chi phí"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "Ví"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "Đã triển khai thành công"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "Triển khai không thành công"
+   },
+   "developer_mode_header_title_history": {
+      "message": "History"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "Cancel transaction"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "Completed"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": ""
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "Speed up"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "Thời gian"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "Tương tác hợp đồng"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "Gửi"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "Địa chỉ hợp đồng"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "Date"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "Xem trong trình duyệt"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "Khối"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "Triển khai liên hệ"
+   },
+   "developer_mode_history_title_from": {
+      "message": "Từ"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": ""
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "Tương tác với"
+   },
+   "developer_mode_history_title_network": {
+      "message": "Mạng"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "Phí mạng"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Số ngẫu nhiên"
+   },
+   "developer_mode_history_title_status": {
+      "message": "Status"
+   },
+   "developer_mode_history_title_time": {
+      "message": "Thời gian"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "Dữ liệu giao dịch"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "Băm giao dịch"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "Mạng tùy chỉnh"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "Chế độ nhà phát triển"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "Thoát"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "Nhận"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "Gửi"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "Lịch sử"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "Quản lý tiền mã hóa"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "Đã kết nối"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "Đã thêm"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "Đã sao chép địa chỉ {network}"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": ""
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "ID chuỗi được RPC sử dụng là {chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "Too large. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "Không có URL RPC khớp cho ký hiệu tiền mã hóa này. Vui lòng kiểm tra ký hiệu bạn đã nhập"
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "Invalid number. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "URL yêu cầu tiền tố HTTP/HTTPS tương ứng"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "URL yêu cầu tiền tố HTTP/HTTPS tương ứng"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "Invalid URL. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "ID chuỗi đã được sử dụng trên mạng {network}"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "Mạng có ID chuỗi {number} thường sử dụng {symbol}. Vui lòng kiểm tra ký hiệu bạn đã nhập"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "URL RPC không hợp lệ"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "Không nhận diện được. Vui lòng kiểm tra URL RPC bạn đã nhập"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "URL đã được mạng {network} sử dụng"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "Chi tiết tiền mã hóa"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "Địa chỉ hợp đồng"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "Mạng"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "Dấu thập phân"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "Đã sao chép"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "Chi tiết tiền mã hóa"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "Approve"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "Contract interaction"
+   },
+   "developer_mode_list_text_send": {
+      "message": "Gửi"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "To {addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "Địa chỉ đã tồn tại"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "Địa chỉ không hợp lệ"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "Làm mới"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "Lỗi mạng. Vui lòng làm mới và thử lại"
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "Nhập tối đa 11 ký tự"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "Tiền mã hóa tùy chỉnh"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "Tiền mã hóa tùy chỉnh"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "Đã thêm tiền mã hóa"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "Chưa thêm tiền mã hóa"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "Địa chỉ hợp đồng"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "Dấu thập phân"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "Mạng"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "Ký hiệu"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "Đã thêm"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "Hủy"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "Xóa"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "Đang kết nối với {network}"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "Mục nhập không hợp lệ"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "Bạn sẽ xóa mạng này khỏi danh sách"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "Xóa mạng này?"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "Thêm mạng tùy chỉnh"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "Hủy"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "Quay lại"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "Chuyển mạng"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "Chỉnh sửa"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "Thử lại"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "Không được để trống trường này"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "Các nhà cung cấp dịch vụ Internet không xác định có thể tiết lộ trạng thái blockchain và theo dõi các hoạt động mạng của bạn. Vui lòng chỉ thêm mạng nếu bạn hoàn toàn tin tưởng"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "Thêm mạng tùy chỉnh"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "Trình khám phá khối (tùy chọn)"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "ID chuỗi"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "Mạng tùy chỉnh"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "Mạng tùy chỉnh"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "Mạng"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "Mạng"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "URL RPC"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "Kiểm tra mạng"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "Ký hiệu"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "Bạn không thể xóa mạng đã kết nối"
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "Làm mới để thử lại hoặc chuyển sang mạng khác"
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "Kết nối không thành công"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "Đã xóa"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "ID chuỗi được sử dụng để ký giao dịch phải khớp với ID chuỗi do mạng trả về. Bạn có thể nhập chữ số thập phân hoặc chữ số thập lục phân có tiền tố là 0x. Các chữ số thập phân được hiển thị theo mặc định"
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "Sao chép"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "Chỉ gửi tài sản mạng {chainname} tới địa chỉ này"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "Optional"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "Không thể đạt giới hạn gas. Vui lòng nhập"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "Số tiền đã nhận"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "Từ"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "Dữ liệu đầu vào (tùy chọn)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "Dữ liệu đầu vào"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "Tối đa"
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "Phí mạng"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "Phí mạng"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Số ngẫu nhiên"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Số ngẫu nhiên"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "Số tiền"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "Địa chỉ nhận"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "Đến"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "Số dư: {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= giá gas ({gasprice} {unit})× giới hạn gas ({gaslimit})"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "Tùy chỉnh"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "Giới hạn gas"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "Giá gas ({unit})"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "Select crypto"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data copied"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "Không có tiền mã hóa trong ví"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "Thông tin bổ sung được bao gồm cho giao dịch, chẳng hạn như dữ liệu cuộc gọi của tương tác hợp đồng hoặc tin nhắn được gửi tới người nhận"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "Cao hơn khuyến nghị: {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "Thấp hơn khuyến nghị: {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "Tôi đã hiểu"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "Khóa ví"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "Chế độ nhà phát triển chỉ khả dụng trên các mạng EVM. Vui lòng chuyển ví và thử lại"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "Tài liệu dành cho nhà phát triển"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "Chế độ nhà phát triển"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "Bật chế độ này để sử dụng các tính năng nâng cao như kiểm tra mạng, thêm RPC hoặc Số ngẫu nhiên tùy chỉnh"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "Tùy chọn"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "Đặt làm ví mặc định"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "Phiên bản {version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "Bảo mật ví"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "Cài đặt"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "Chế độ nhà phát triển không khả dụng trên mạng này"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "Completed"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "Failed"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "Pending"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "Waiting"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_top_text_done": {
+      "message": "Xong"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "Quản lý mạng"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "Tổng tài sản"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "Quản lý"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "Chỉnh sửa ví"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "Chế độ người dùng"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "Chào mừng bạn đến với"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "By proceeding, you'll allow {contract} access to your {asset}"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "Approve"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "Nhận"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "NFT sẵn có"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "Nhận NFT"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "Go back to homepage"
+   },
+   "extension_bug_text_fixing": {
+      "message": "You can go back to homepage and try again later"
+   },
+   "extension_bug_title_error": {
+      "message": "Error"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "Page not found"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "Contract:"
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "Asset change (est.)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "Request from"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "Transaction amount"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "The network information entered belongs to the Sui network. Custom network only supports adding EVM networks"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "Unable to import a private key of the Sui network. Try a different one"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "extension_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "extension_history_index_pending": {
+      "message": "Pending"
+   },
+   "extension_history_title_farm": {
+      "message": "Farm"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "Nhận"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "{num} NFT để nhận"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "Đã nhận"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "To secure your transaction, we estimate an amount for your reference"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "extension_input_errortip_max20": {
+      "message": "Maximum 20 characters"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "By proceeding, you'll revoke {contract} access to your {asset}"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "Revoke approval"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "Tìm hiểu thêm trên trang web OKX"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/10558617769613-OKX-Wallet-Passed-Security-Key-Audit-by-Slowmist"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "Trung tâm hỗ trợ"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "Cộng đồng OKX"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/okx"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "OKX Wallet"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "Giới thiệu về OKX Wallet"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "Email OKX"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "Kiểm tra bảo mật"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "Điều khoản dịch vụ"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "Quản lý ví"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "Đã sao chép địa chỉ email"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "Requesting"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "Request success"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "{num} {crypto} requested"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "Too many requests sent to the faucet. Try again later"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "Confirm"
+   },
+   "extension_toast_btn_ok": {
+      "message": "OK"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "You need to spend more network fees in order to replace the transaction"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas price ({unit})"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "Current DApp network belongs to testnet. Switch to custom network mode in Settings and try again"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "Transaction canceled"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "Current fee"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "Required fee"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "Wallet address copied"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "Please switch wallet mode"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "Replace transaction"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "Nhập địa chỉ"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "Confirm"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "Tôi đã hiểu"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "Nếu không thấy tùy chọn OKX Wallet, bạn có thể kết nối qua Metamask hoặc Phantom"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "Bạn sẽ đặt OKX Wallet làm ví ưu tiên kết nối của mình"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "Đặt làm ví mặc định"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "Cách kết nối với DApp"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "Wallet connected"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "Up to {amount} wallets can be added"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "Couldn't obtain addresses. Make sure you've unlocked your device and opened the required app on it"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "Check {transaction} in Ledger wallet"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "Device disconnected. If you need to continue, connect Ledger to your computer via USB and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "Keep the USB connection between your Ledger and computer, unlock Ledger wallet, and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "OK"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "Retry"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "transaction details"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "Transaction details sent. Check and confirm via your device"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "Added"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "Chuyển ngang các mạng mới bằng ví đa năng"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "Bảo vệ an toàn cho giao dịch của bạn bằng OKX Wallet"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "Cổng chung tới tất cả các DApp"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "Xác nhận"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "Phí cơ sở tối đa phải cao hơn 0"
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "Phí cơ sở tối đa bạn đặt thấp hơn phí cơ sở bắt buộc của mạng lưới {baseFee} Gwei. Quá trình hoàn tất giao dịch phải mất nhiều thời gian"
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "Phí ưu tiên phải cao hơn 0"
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "Phí cơ sở bắt buộc: {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "Phí cơ sở tối đa"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "phút"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "Phí ưu tiên"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "giây"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "Đặt lại ví"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "Quên mật khẩu?"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "OKX Wallet không lưu trữ mật khẩu ví của bạn"
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "Nếu quên mật khẩu ví, bạn có thể đặt lại mật khẩu bằng cách đặt lại ví"
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "Xin lưu ý nếu bạn đặt lại ví mà không sao lưu, bạn sẽ bị mất ví và tất cả tài sản trong đó. Hãy đảm bảo tất cả các ví đều được sao lưu"
+   },
+   "metax_mid_colored_stake": {
+      "message": "Stake"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "Sao lưu ngay"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "Đặt lại ví"
+   },
+   "securityreset_header_text_reset": {
+      "message": "Đặt lại ví"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "Hủy"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "Xin lưu ý nếu bạn đặt lại ví mà không sao lưu, bạn sẽ bị mất ví và tất cả tài sản trong đó. Hãy đảm bảo tất cả các ví đều được sao lưu"
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "Để xác nhận đặt lại ví, vui lòng nhập: {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "Đặt lại ví?"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "Cảnh báo rủi ro"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "Cấp độ bảo vệ ví"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "Cấp độ sàng lọc nghiêm ngặt. Cấp độ cao hơn có thể chặn nhiều trang web đáng ngờ hơn"
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "Cao"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "Thấp"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "Chặn những trang web độc hại và đáng ngờ"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "Chỉ chặn trang web độc hại"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "Cấp độ bảo vệ ví"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "Số dư {token} không đủ"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "Hoán đổi"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "Bạn có một lệnh Hoán đổi sang phí gas đang chờ xử lý. Bạn không thể bắt đầu một lệnh khác cùng lúc. Vui lòng thử lại sau khi hoàn thành lệnh này."
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "OK"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "Dịch vụ Hoán đổi sang phí gas hiện đang đóng"
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "Bạn đã đặt một lệnh tương tự. Bạn không nên đặt lệnh mới cho đến khi số dư của bạn được cập nhật."
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "Xem trong trình khám phá"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "Bạn đã đạt đến giới hạn lệnh Hoán đổi sang phí gas hằng ngày. Vui lòng thử lại vào ngày mai."
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "Công cụ quản lý rủi ro của chúng tôi phát hiện bạn có một số hoạt động bất thường. Bạn không được phép sử dụng dịch vụ Hoán đổi sang phí gas nữa."
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "Xem trong Trình khám phá"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "Không nạp đầy được {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "Không nạp đầy được {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "Đã hoán đổi {payValue} {paySymbol} sang {receiveValue} {receiveSymbol}"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "Đã gửi giao dịch"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "Nạp đầy {nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value} general transactions"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "Chọn số tiền thanh toán"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "Chọn token thanh toán"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "Hoán đổi sang phí gas"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "OK"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "Đây là tỷ giá giao dịch ước tính khi dùng tính năng Hoán đổi sang phí gas. Con số này được tính bằng cách tính giá thị trường và tỷ giá từ các sàn giao dịch tập trung. Tỷ giá thực tế có thể thay đổi khi lệnh của bạn được xác nhận. Sử dụng dịch vụ Hoán đổi sang phí gas cũng yêu cầu phí mạng. Phí này sẽ được tự động tính vào số tiền bạn thanh toán."
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "Trading on blockchains requires paying a network fee with native tokens such as ETH, BNB, OKT, MATIC, etc. When you don't have these tokens to make a transaction, you can quickly swap tokens you already hold for native tokens using the Swap for gas feature (it's only available for a few networks).\nGetting native tokens via Swap for gas also requires a network fee, which will be automatically factored into the amount you pay.\nYou'll see an estimated number of general transactions when placing an order on Swap for gas. It refers to the number of token transfers you can make with your selected amount. The actual number may vary."
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "Hoán đổi sang phí gas"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "Hoán đổi sang phí gas"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "Hoán đổi sang phí gas"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "Tham chiếu"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "Bạn nhận"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "Tải lại"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "Lỗi mạng"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "Vui lòng không đặt lệnh khác cho đến khi lệnh này hoàn thành. Nếu không, lệnh có thể không thành công. Việc đóng trang này sẽ không làm gián đoạn quá trình. Bạn có thể kiểm tra chi tiết trong phần Lịch sử."
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "Chọn token thanh toán"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "Không tải được giá của {paySymbol} và {receiveSymbol}, không thể xác nhận số tiền bạn nhận. Vui lòng thử lại sau."
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "Không tải được giá của {paySymbol}, không thể xác nhận số tiền bạn thanh toán. Vui lòng thử lại sau."
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "Không tải được giá của {receiveSymbol}, không thể xác nhận số tiền bạn nhận. Vui lòng thử lại sau."
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "Phí mạng hiện tại quá cao. Đây không phải là thời điểm phù hợp để thực hiện giao dịch. Vui lòng thử lại sau."
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "Insufficient {token} for network fee "
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "Recommend"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "Receive {token} with QR code or wallet address"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "Top up {token} quicker than ever"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "Receive"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "Swap for gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "Trước tiên, vui lòng sao lưu ví trước khi xem địa chỉ"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "Máy khách sổ cái"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "Trước tiên, vui lòng tải xuống {downloadUrl}, sau đó bấm nút kết nối dưới đây sau khi mở trang chủ của máy khách sổ cái."
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "Kết nối ví phần cứng"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "Thêm ví"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "Kết nối không thành công"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "Đảm bảo bạn đã chèn ví phần cứng vào máy tính và mở khóa ví"
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "Chọn ví phần cứng"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "Đảm bảo ví phần cứng của bạn đã kết nối với máy tính"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "Đang kết nối"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "Tài khoản {newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "Đã tạo tài khoản mới"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "Kết nối"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "Kết nối ví phần cứng"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "Tạo ví mới"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "Hardware wallet"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "Khóa riêng tư"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "Cụm từ hạt giống"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "Nhập ví hiện có"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "Bạn cần sử dụng OKX Wallet trên Google Chrome để kết nối với Ví phần cứng."
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "Trình duyệt của bạn không được hỗ trợ..."
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "Tải xuống Google Chrome"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "(kế thừa)"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "Kết nối ví phần cứng"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "Bạn cần tận dụng tài khoản cuối cùng trước khi có thể thêm tài khoản mới."
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "Đang kết nối..."
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "Kết nối ví phần cứng của bạn"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "Tạo ví cụm từ hạt giống mới"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "Nếu địa chỉ ví của bạn không được liệt kê dưới đây, hãy chuyển đường dẫn sang Kế thừa (MEW / MyCrypto)"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "Quên ví phần cứng này"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "Chọn đường dẫn"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "Chọn ví"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "Nhập cụm từ hạt giống hoặc khóa riêng tư"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "Bạn có thể thêm tối đa 50 ví."
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "Đã tạo"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "Thu hồi phê duyệt"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "Ủy quyền ví"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "Bạn sẽ thu hồi phê duyệt {tokenSymbol}"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "Khóa riêng tư"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "Hành động sao chép khóa riêng tư có nguy cơ khiến bộ nhớ tạm dễ bị các ứng dụng bên thứ ba theo dõi hoặc lạm dụng."
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "Xác minh cụm từ hạt giống"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "Tôi đã ghi lại"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "Vẫn sao chép"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "Không sao chép"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "Khóa riêng tư"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "Bạn có thể ghi lại những từ này theo thứ tự và lưu giữ chúng theo cách an toàn"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "Ghi lại cụm từ hạt giống"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "Đảm bảo không có ai đang nhìn màn hình của bạn"
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "Xem cụm từ hạt giống"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "Thành công"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "Đã sao chép"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.okx.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "Network fee"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "Register zkSync Lite to continue the transaction"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "Số tiền"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "Số tiền được ủy quyền"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "Phê duyệt"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "Đã tương tác với"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "Mạng"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "Mạng"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "URL trình khám phá khối"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "ID chuỗi được sử dụng để ký giao dịch cho mạng này."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "ID chuỗi được sử dụng để ký giao dịch cho mạng này."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "Ký hiệu đồng tiền"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "Ký hiệu được hiển thị cho đồng tiền của mạng này"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "URL được sử dụng làm trình khám phá khối cho mạng này."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "URL trình khám phá blockchain được sử dụng bởi mạng này"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "Tên được liên kết với mạng này"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "Tên được liên kết với mạng này"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "URL dùng để truy cập mạng này"
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "Bằng cách cấp quyền, bạn đang cho phép {name} chuyển {tokenSymbol} của bạn và tự động hóa giao dịch cho bạn"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "Vui lòng sao lưu cụm từ hạt giống trước khi cố gắng truy cập DApp"
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "Bỏ qua"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "Cung cấp"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "Chuyển đổi"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "Việc tăng phí có thể giảm thời gian xử lý nhưng chúng tôi không đảm bảo điều này."
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "Không thể giải mã tin nhắn này do lỗi: {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "Chỉ kết nối với những trang đáng tin cậy."
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "Kết nối tài khoản"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "Chọn tài khoản"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "Sao lưu ví của bạn"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "Bạn đã phê duyệt quyền này"
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "Cho phép DApp hiện tại kết nối với OKX Wallet."
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "Bạn chưa kết nối OKX Wallet với trang này. Để kết nối với trang này, hãy tìm và bấm vào nút kết nối"
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "{siteName} muốn đọc tin nhắn này để tiếp tục"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "URL mạng"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "Bạn chưa phê duyệt quyền này"
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName} yêu cầu bạn cung cấp khóa riêng tư được mã hóa. Bằng việc chấp thuận, trang này sẽ có thể gửi tin nhắn được mã hóa cho bạn"
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "Yêu cầu khóa công khai mã hóa"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "Ký tên"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "Yêu cầu chữ ký"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "Tài khoản hiện tại"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "Mạng hiện tại"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "Bạn có muốn kết nối với {host} bằng{curWalletName}"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "Trang đã kết nối"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "Giải mã"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "Sao chép tin nhắn được mã hóa"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "Giải mã tin nhắn"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "Giải mã yêu cầu"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "Phần mở rộng bên ngoài"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "Mạng"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "Phí mạng"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "Hợp đồng mới"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "Thêm hơn {length}"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "Đến:"
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "Chọn tài khoản"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "Chọn tất cả"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "Loại"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "{curWalletName} đã kết nối với trang này"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "{curWalletName} đã ngắt kết nối với trang này"
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "Ngắt kết nối"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "Từ chối"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "Không đủ gas"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "Nạp token được đề xuất"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "Kết nối với tất cả {account} của bạn"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "Kết nối với {origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "tài khoản"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "Bạn có chắc chắn phê duyệt không? Phê duyệt nghĩa là bạn cho phép DApp này rút {tokenSymbol} của bạn bất kỳ lúc nào"
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "Cho phép trang này:"
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "Việc này sẽ cho phép sử dụng mạng này trong OKX Wallet."
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "Cho phép phần mở rộng bên ngoài này:"
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "Nạp token"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "Thêm token"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "Không giới hạn"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "Số dư"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "ID chuỗi"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "Dữ liệu"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "Vui lòng nhập số tiền tối đa ({tokenSymbol})"
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "OKX Wallet không hỗ trợ mạng này"
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "Back"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "Couldn't send this crypto because it's not available for paying network fees"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "Address not registered"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "You need to register this address before using it"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "Register"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "Sai cụm từ hạt giống. Vui lòng nhập lại"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "Cụm từ hạt giống"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "Chọn từng từ theo thứ tự"
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "Xóa"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "Tên ví không được vượt quá 20 ký tự"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "Tên ví đã tồn tại"
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "Tên tài khoản"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "Đã sửa đổi"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "Cảnh báo rủi ro"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "Việc xóa ví sẽ xóa tất cả dữ liệu ví hiện có trên thiết bị hiện tại. Vui lòng đảm bảo bạn đã sao lưu cụm từ hạt giống hoặc khóa riêng tư của ví trước khi xóa ví. Nếu không, bạn sẽ mất ví và tất cả tài sản trong ví vĩnh viễn."
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "Tên ví"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "Đã xóa"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "Điều khoản dịch vụ"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "Đi đến chỉnh sửa"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "Hủy"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "Xác nhận"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "Địa chỉ đã tồn tại"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "Tối đa 20 ký tự"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "Sai địa chỉ. Vui lòng thử lại."
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "Nhập địa chỉ"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "Nhập tên dưới 20 ký tự"
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "Bỏ thêm địa chỉ?"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "Địa chỉ"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "Tên"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "Thêm địa chỉ"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "Sẽ sớm có thêm mạng!"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "mạng {network} không được hỗ trợ"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "Hủy"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "Tiếp tục"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "Cảnh báo bảo mật"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "Bạn đang gửi tiền mã hóa đến một địa chỉ hợp đồng thay vì một địa chỉ riêng tư. Vui lòng đảm bảo địa chỉ này hợp lệ trước khi tiếp tục để tránh xảy ra mọi tổn thất tiềm ẩn."
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "Thêm địa chỉ"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "Sao chép địa chỉ"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "Xóa địa chỉ"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "Chỉnh sửa địa chỉ"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "Tất cả các mạng"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "Tìm kiếm địa chỉ hoặc tên"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "Không có địa chỉ"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "Sổ địa chỉ"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "Chọn mạng"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "Đã thêm địa chỉ"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "Đã xóa địa chỉ"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "Đã đạt giới hạn sổ địa chỉ (200 mục nhập)"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "Tất cả NFT trong bộ sưu tập này"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "Phê duyệt"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "Cho"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number} giờ"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number} giờ"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number} giờ"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number} phút"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number} phút"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "Không bao giờ"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "Quay lại"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "Khám phá Yield"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "Khám phá thêm"
+   },
+   "wallet_extension_btn_register": {
+      "message": "Đăng ký"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "Chuyển mạng"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "Sao chép khóa riêng tư"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "Số tiền nhận được ước tính"
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "Số tiền nhận được cuối cùng sẽ được xác nhận khi gửi giao dịch thành công trên blockchain"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "Số tiền nhận được cuối cùng sẽ được xác nhận khi gửi giao dịch thành công trên blockchain"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "Số tiền đầu tư ước tính"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "Giao dịch hiện tại đang chờ xử lý trong hơn {pendingTips} giờ. Vui lòng tăng tốc hoặc hủy giao dịch."
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "ID tài khoản"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "From"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "Đăng ký ZKSpace để tiếp tục giao dịch"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "Đăng ký ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "Đã xóa"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "Phê duyệt quyền truy cập {approved_address} vào tất cả {approved_asset} của bạn?"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "Thu hồi quyền truy cập {approved_address} vào tất cả {approved_asset} của bạn?"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "By confirming, you will allow {address} to transfer your assets or automate transactions on your behalf. Please take caution before moving on"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "Unknown NFT collection"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "You'll allow this DApp to transfer your main-chain crypto, please proceed with caution"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "The transaction may fail due to a low network fee. We recommend you adjust the network fee before proceeding"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "Tổng quan"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "Bạn có thể sử dụng DApps hỗ trợ các mạng sau"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "Bạn cần đăng ký tiền mã hóa này trước khi sử dụng"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "Các mạng tương thích với EVM khác đã được đồng bộ hóa tự động"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "Bạn có thể sử dụng DApps hỗ trợ các mạng sau"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "Bạn có thể sử dụng DApps hỗ trợ các mạng sau. Nếu bạn gặp sự cố khi sử dụng các DApp này, hãy bấm vào nút bên dưới để chuyển sang mạng EVM"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "Bạn có thể dùng ví này để quản lý tài sản mã hóa trong mạng Bitcoin"
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "Bạn có thể dùng ví này để quản lý tài sản mã hóa trong mạng {network}"
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "Chuyển tiền"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "Hủy"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "Xóa"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "Xóa địa chỉ?"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "Chọn mạng"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "Chỉnh sửa địa chỉ"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "Đã lưu"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "Quay lại"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "Làm mới"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "Đã vượt quá giới hạn ký tự. Vui lòng nhập lại"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "Việc ký vào tin nhắn này có thể nguy hiểm. Để bảo vệ tài sản của bạn, chỉ ký nếu bạn hoàn toàn tin tưởng trang web"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "Chia tách ETHW sắp diễn ra"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "Tăng gấp đôi tài sản Ethereum của bạn hoàn toàn miễn phí!"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "Phiên bản mới nhất"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "OKX Wallet hiện hỗ trợ tài sản ETHW. Vào xem ngay"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "Số phiên bản"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "Bạn có thể chuyển sang mạng EVM bên dưới và mạng của DApps sẽ tự động thay đổi"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "Xem trong Trình khám phá blockchain"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "Xem trong ví"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "Quên mật khẩu?"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "Vui lòng nhập \"ĐẶT LẠI\" dưới đây để xác nhận đặt lại"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "Xác nhận đặt lại"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "Đặt lại ví"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "Đếm tổng số NFT"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "Phê duyệt"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "Thu hồi phê duyệt"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "Cho"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "Nhận"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "Gửi"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "Lịch sử"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "Nhận"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "Đầu tư"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "Rút"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "Type"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "Tất cả các mạng"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "Ngày"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "Địa chỉ"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "Phê duyệt {symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "Nhận"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "Trao đổi hợp đồng"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "Đúc tiền"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "Nhận"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "Từ"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "Rút"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "Thu hồi phê duyệt {symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "Revoke approval of {approvedasset}"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "Gửi"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "Người nhận"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "Hủy giao dịch"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "Tăng tốc"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "Tăng tốc hủy"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "Đang chờ xử lý"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "Đang chờ"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "Đăng ký"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "Thêm..."
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "Giao dịch"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "Đang chờ xử lý ({num})"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "Bấm để thêm sổ địa chỉ"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Số nonce"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "Đã hoàn tất"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "Không thành công"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "Failed"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "Pending"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "Waiting"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "Đã hoàn tất"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "Completed"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "Đang chờ xử lý"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "Đăng ký ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "Giao thức chưa xác định"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "Token chưa xác định"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "Revoke approval"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "Đã kết nối"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "Lịch sử"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "Hoán đổi"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "Bấm để thay đổi định dạng địa chỉ"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "Bấm để đi đến giới thiệu về SegWit"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "Xóa"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "Cụm từ hạt giống của tôi có"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "12 từ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "15 từ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "18 từ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "21 từ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "24 từ"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "Ví đã tồn tại"
+   },
+   "wallet_extension_info_pay": {
+      "message": "Đã thanh toán"
+   },
+   "wallet_extension_info_receive": {
+      "message": "Đã nhận"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "Loại"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "Trang trại"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "Lưu"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "Vault"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "Mật khẩu không khớp!"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "Mật khẩu khớp!"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "Rất mạnh"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "Tuyệt"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "Có thể mạnh hơn"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "Nhập mã định danh, tối đa 256 ký tự"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "Tìm mạng"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "Tìm mạng"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "Vault"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "Địa chỉ đã đăng ký"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "Quyền truy cập bị hạn chế"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "Sản phẩm hoặc dịch vụ okx.com không khả dụng trong khu vực của bạn ({area}) theo luật pháp và quy định địa phương."
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "Bạn có ví chưa được sao lưu. Tài khoản của ví không được sao lưu không thể kết nối với DApps bên thứ ba"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "Xem trong Trình khám phá Blockchain"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "{num} tài khoản có thể kết nối"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "Số tiền được duyệt"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "Xác nhận khối"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "Từ"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "Đã tương tác với"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "Mạng"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "Phí mạng"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "Trạng thái"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "Thời gian"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "Người nhận"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "Băm giao dịch"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "Không giới hạn"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "{contractaddress} có rủi ro. Để bảo vệ tài sản của bạn, vui lòng đảm bảo địa chỉ này là địa chỉ chuyển tiền thường được sử dụng trước khi xác nhận giao dịch"
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "Áp dụng"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "Quay lại tất cả vật phẩm"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "Xóa tất cả"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "Làm mới"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "Chào bán tốt nhất"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "Gần nhất"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "Giá"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "Chuỗi"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "Trạng thái bán"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "Giá chào đã nhận"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "Đang bán"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "Tìm kiếm"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "Xem trong Thị trường NFT"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "Địa chỉ hợp đồng"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "Giá sàn bộ sưu tập"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "Mạng"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "Giá NFT"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "Tiêu chuẩn token"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "Lọc"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "Không thể phục hồi vật phẩm đã gửi đến sai địa chỉ"
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "Tiền mã hóa"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "NFT"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "Khám phá NFT"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "Tất cả các NFT tốt nhất đều có trong OKX"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "Bộ sưu tập"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "Tải không thành công"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "Tối đa"
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "Không có bộ sưu tập"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "Không tìm thấy vật phẩm cho tìm kiếm này"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "Số tiền không được bằng 0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "Số tiền nhập vào không được lớn hơn {max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "Nhập số tiền bạn muốn chuyển"
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "Giá trị NFT được tính dựa trên giá sàn của bộ sưu tập"
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "Đã sở hữu"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "Địa chỉ nhận này chưa đăng ký {token} và không thể sử dụng được"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "OKX Wallet hoàn toàn phi tập trung và chúng tôi không lưu mật khẩu của bạn. Nếu bạn quên mật khẩu, vui lòng đặt lại ví và nhập cụm từ hạt giống hoặc khóa riêng tư để tạo mật khẩu mới. Bảo vệ an toàn cho mật khẩu."
+   },
+   "wallet_extension_option_allchain": {
+      "message": "Tất cả các mạng"
+   },
+   "wallet_extension_option_desc": {
+      "message": "{domain} hiện ở trên mạng {chain}"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "Chuyển mạng EVM"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "Kết nối đa chuỗi"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "Tổng tài sản"
+   },
+   "wallet_extension_overview_more": {
+      "message": "Thêm"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "Đã sao chép địa chỉ nhận"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "Tài sản theo mạng"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "Bằng việc tiếp tục, bạn đồng ý với {terms_service} của OKX"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "Nạp lại {token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "Không đủ {token} để trả phí mạng lưới"
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "Ẩn cụm từ hạt giống"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "Phê duyệt"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "Hủy"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "Thu hồi phê duyệt"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "Hủy"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "Gửi giao dịch 0 {symbol} để thay thế giao dịch ban đầu"
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "Do sự cố mạng nên thao tác hủy giao dịch không chắc chắn sẽ thành công"
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "Giá gas ({gasPrice} GWEI) *Giới hạn gas ({gasLimit})"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "Tiền mã hóa chưa được đăng ký"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "Số dư không đủ"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "Thao tác sao chép khóa riêng tư vào bộ nhớ tạm có thể bị ứng dụng bên thứ ba theo dõi hoặc lạm dụng. Vui lòng giữ khóa riêng tư an toàn"
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "Bắt đầu khám phá"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "Không đủ {token} để trả phí mạng lưới"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "Kế thừa"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/learn/what-is-segregated-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "SegWit gốc"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "SegWit lồng nhau"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "Đặt lại lệnh"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "Tiếp tục gửi"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "Xem trong lịch sử"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "Bạn đã đặt lệnh giống hệt. Bạn vẫn muốn tiếp tục lệnh này?"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "Sau"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "Trước"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "Hủy"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "Tăng tốc giao dịch bằng cách tăng phí mạng"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "=Giá gas ({gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "Tất cả các mạng"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "Tương tác với"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "Dự án"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "Hợp đồng dự án"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "Thêm mạng"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "Định dạng địa chỉ"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "Hủy niêm yết"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "Hủy giao dịch"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "Tương tác hợp đồng"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "Đã sao chép địa chỉ"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "Chọn mạng"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "Tăng tốc giao dịch"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "Đã sao chép băm giao dịch"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "Bạn có chắc chắn muốn sao chép không?"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "Đã tạo {walletName}"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "Đã nhập {walletName}"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "Tải xuống báo cáo trạng thái"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "Số tiền cho phép bên thứ ba rút và tự động hóa giao dịch cho bạn"
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "Tiếp tục"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "Từ chối"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "Cảnh báo rủi ro"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "{accountAddress} được báo cáo là địa chỉ hợp đồng gây hại. Có nguy cơ trộm cắp tài sản. Vui lòng đảm bảo địa chỉ này an toàn"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "Số tiền được duyệt"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "Số tiền được duyệt"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "{accountAddress} đã được gắn cờ là địa chỉ độc hại. Thao tác tương tác với địa chỉ này có thể gây tổn hại đến sự an toàn của tài sản. Đảm bảo bạn đang tương tác với địa chỉ an toàn."
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "Confirm"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "Couldn't trade with fiat money since retrieving est. value of this crypto isn't available"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "Xem ngay"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "OKX Wallet hiện hỗ trợ tài sản ETHW"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. OKX Wallet hiện hỗ trợ tài sản ETHW."
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. Thế giới vô cùng rộng lớn và tôi muốn chiêm ngưỡng"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "Điểm mới"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "Điểm mới"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "Điểm mới"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "V2.15.10"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "Điểm mới trong 2.16.2"
+   },
+   "wallet_extension_rn_button": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. Giờ đây bạn có thể thực hiện giao dịch và tương tác với DApps trên mạng ETHF"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "Giờ đây bạn có thể thực hiện giao dịch và tương tác với DApps trên mạng Aptos"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. Các trang web đáng ngờ hiện có thể được sàng lọc và cảnh báo rủi ro"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. NFTs on Aptos can now be displayed and claimed in the wallet"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. Giờ đây bạn có thể trực tiếp thực hiện giao dịch bằng cách sử dụng DApps trên các mạng EVM và Solana"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. Giờ đây bạn có thể thực hiện giao dịch và tương tác với DApps trên mạng Tron"
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. You can now use ENS, Unstoppable Domains, and SPACE ID domains to make transfers"
+   },
+   "wallet_extension_rn_title": {
+      "message": "Điểm mới"
+   },
+   "wallet_extension_rn_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "Tiếp tục"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "Từ chối"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "Cảnh báo rủi ro"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "{accountAddress} được báo cáo là địa chỉ gây hại. Có nguy cơ trộm cắp tài sản. Vui lòng đảm bảo địa chỉ này an toàn"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "Xem thêm trò lừa đảo"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "{accountAddress} được báo cáo là địa chỉ hợp đồng gây hại. Có nguy cơ trộm cắp tài sản. Vui lòng đảm bảo địa chỉ này an toàn"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "Hiện hỗ trợ hơn{number} mạng EVM"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "Mạng EVM"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "Địa chỉ của bạn là địa chỉ mạng EVM. Bạn có thể sử dụng địa chỉ này để quản lý tài sản trên các mạng tương thích với EVM khác."
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "Các mạng tương thích với EVM được hỗ trợ bao gồm: {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "Chọn loại tiền mã hóa để thanh toán"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "Thêm ngay"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "Confirm"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "Tiếp theo"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "Next"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "To"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "Sổ địa chỉ"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "Địa chỉ gần đây"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "Vui lòng nhập địa chỉ hợp lệ"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "Không có trong sổ địa chỉ"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "Couldn't estimate"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "Nhập địa chỉ hoặc tên địa chỉ"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "Search currency"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "All"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "Mặc định"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "Balance"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "Pay with"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "Select crypto to pay for network fees"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "Canceled"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "Đang hủy"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "Canceling"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "Đang tăng tốc"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "Speeding up"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "Số tiền"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "Số dư"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "Tối đa"
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "The maximum amount is {fiatamount} ({cryptoamount}) after deducting network fees"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "Receiving address"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "Select currency"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "Không tìm thấy {crypto}. Bạn có thể thử thêm tiền mã hóa này"
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "Transfer at least {amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "Tùy chọn"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "Tự động khóa"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "Sao lưu ví"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "Tùy chọn"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "Đổi mật khẩu"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "Đặt làm ví mặc định"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "Sổ địa chỉ"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "Quản lý danh bạ"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "Phiên bản {number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "Don't refresh this page as it could cause hardware wallet import failure. To protect your privacy, OKX Wallet doesn't store your wallet password. Please keep your password safe."
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "Phê duyệt tất cả NFT trong bộ sưu tập này?"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "Nhận"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "Số tiền nhận được ước tính"
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "Giờ đây, bạn có thể khám phá hơn 25 mạng nhờ OKX Wallet"
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "Từ"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "Sang"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "Đầu tư bằng"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "Số tiền đầu tư ước tính bằng"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "Nhận"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "Rút từ"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "Đăng ký"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "Thu hồi quyền truy cập vào tất cả NFT trong bộ sưu tập này?"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "DeFi"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "Tất cả {collection} của bạn"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "Tài sản được phê duyệt"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "Chúng tôi đã tự động đồng bộ hóa các mạng {networkname} khác cho bạn"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "Hủy niêm yết"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "Bật"
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "Cổng kết nối chung của bạn với thế giới DeFi"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "Mã định danh"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "Không tìm thấy kết quả"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "Phê duyệt"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "Phê duyệt {collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "NFT chưa xác định"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "Bộ sưu tập NFT chưa xác định"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "Hủy niêm yết"
+   },
+   "wallet_extension_title_memo": {
+      "message": "Mã định danh"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "Mã định danh (không bắt buộc)"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "Kết nối đa chuỗi được chọn theo mặc định"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "Kết nối đa chuỗi được hỗ trợ"
+   },
+   "wallet_extension_title_register": {
+      "message": "Đăng ký"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "Đăng ký tiền mã hóa"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "Thu hồi phê duyệt"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "OKX Wallet hỗ trợ các mạng sau"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "Mạng hiện tại"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "Chuyển mạng"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "Địa chỉ ví"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "Đã sao chép địa chỉ"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "Đã thay đổi định dạng địa chỉ"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "Phê duyệt {collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "Lỗi mạng. Vui lòng kiểm tra kết nối mạng và làm mới để thử lại"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "Không phải bây giờ"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "Đặt làm ví mặc định"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "Đã tạo thành công"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "Đăng ký không thành công"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "Ví phần cứng hiện chỉ hỗ trợ tài sản EVM"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "Đã nhập thành công"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "Đã nhập thành công"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "Số tiền tối đa là {max} Sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "Số tiền tối thiểu là {min} Sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "Lỗi mạng. Vui lòng làm mới và thử lại"
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "Nếu địa chỉ nhận tiền không được kích hoạt, giao dịch có thể không thành công"
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "Đã đăng ký"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "Chỉ gửi tài sản mạng {chain_name} tới địa chỉ này"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "Đặt OKX Wallet làm ví mặc định nếu bạn muốn sử dụng ví này để kết nối với DApp"
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "Đã đặt thành công"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "Đang thực hiện"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "OKX Wallet được đặt lại"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "An unknown error occurred while processing your transaction. Please re-initiate the transaction"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "Đặt OKX Wallet làm ví mặc định của bạn?"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "Sao chép địa chỉ"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "Kết nối"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "Cài đặt"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "Quản lý ví"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "Trung bình"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "Tiếp theo"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "Số tiền nhận được"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "từ"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "=Giá gas ({gasPrice} GWEI)*Giới hạn gas ({gasLimit})"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "Phí mạng"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "sang"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "Tùy chỉnh"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "Giới hạn gas phải nằm trong khoảng từ {minGasLimit}đến {maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "Giá gas phải cao hơn {minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "Giới hạn gas"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "Giá gas (GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "Nhanh"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "Vui lòng nhập địa chỉ hợp lệ"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "Không được để trống số tiền nhập"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "Số tiền phải lớn hơn 0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "Số dư không đủ"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "Không đủ {chainSymbol} để trả phí mạng"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "Địa chỉ không hợp lệ"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "Địa chỉ nhận tiền phải khác với địa chỉ gửi tiền"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "Phí mạng"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "Người nhận"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "Tối đa"
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "Số tiền"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0.000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "Nhập địa chỉ ví hoặc tên miền"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "Tiếp tục chờ"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "Thay thế"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "Bỏ qua"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "Bạn có một giao dịch không thành công"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "Bạn có một giao dịch đang chờ xử lý trong hơn một giờ"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "Nếu bạn có giao dịch không thành công, bạn không thể bắt đầu giao dịch mới. Bạn có muốn thay thế giao dịch không thành công bằng giao dịch hiện tại không?"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "Nếu bạn có giao dịch đang chờ xử lý, bạn không thể bắt đầu giao dịch mới cho đến khi hoàn tất giao dịch đang chờ xử lý. Bạn có muốn thay thế giao dịch đang chờ xử lý bằng giao dịch hiện tại không?"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "Chậm"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "tối thiểu"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "Phí mạng"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "Đã sao chép địa chỉ {network}"
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "Tôi đã hiểu"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "Quên mật khẩu?"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "Để tôi suy nghĩ"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "Tôi đã hiểu các thông báo trên và sẵn sàng đặt lại ví"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "OKX Wallet là một nền tảng hoàn toàn phi tập trung. Chúng tôi không lưu mật khẩu của bạn. Không thể truy xuất mật khẩu của bạn."
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "Nếu bị mất mật khẩu, đặt lại mật khẩu với cụm từ hạt giống hoặc khóa riêng tư là cách DUY NHẤT để đặt mật khẩu mới và lấy lại quyền truy cập."
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "Việc đặt lại ví sẽ xóa tất cả dữ liệu ví hiện có trên thiết bị hiện tại. Nếu bạn đặt lại ví mà không sao lưu cụm từ hạt giống hoặc khóa riêng tư, bạn sẽ mất ví và tất cả tài sản trong ví vĩnh viễn."
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "Đặt OKX Wallet làm ví mặc định"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "Sao lưu ngay"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "Bạn chưa sao lưu ví"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "Nếu thiết bị của bạn bị mất, ứng dụng được cài đặt lại hoặc dữ liệu ứng dụng bị xóa thì bạn sẽ mất ví này và tài sản trong đó cũng không thể khôi phục được"
+   },
+   "wallet_home_btn_close": {
+      "message": "Đóng"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "Đã xác nhận"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "Nhập ví"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "Tạo ví"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "Quản lý"
+   },
+   "wallet_home_btn_receive": {
+      "message": "Nhận"
+   },
+   "wallet_home_btn_send": {
+      "message": "Gửi"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "Tôi là mới biết đến lĩnh vực phi tập trung"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "Mở khóa"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "Kết nối"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "Đánh giá lỗi tài sản. Thoát trang hiện tại và thử lại sau"
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "Đã kết nối"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "Nhập mật khẩu"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "Đã xảy ra lỗi với OKX Wallet"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "Cổng thông tin Web3 của bạn"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "Để sau"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "Đảm bảo sao lưu cụm từ hạt giống trước khi thực hiện bất kỳ giao dịch nạp tiền nào"
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "Ví tiền mã hóa ‧ Thế giới NFT ‧ Quyền truy cập DApp"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "Thử lại bằng cách đóng và mở lại cửa sổ bật lên hoặc liên hệ với bộ phận hỗ trợ"
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "Tích lũy:"
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "Mã: {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "Chi tiết lỗi"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "Tin nhắn: {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "Mã: {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "Tải lại trang để thử lại hoặc liên hệ bộ phận hỗ trợ"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "Tôi đã có ví"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "Lỗi mạng, vui lòng thử lại sau"
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "Không hợp lệ. Vui lòng nhập lại"
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "Nhập qua khóa riêng tư"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "Cụm từ hạt giống"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "Nhập khóa riêng tư"
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "Vui lòng nhập cụm từ hạt giống phân tách bằng dấu cách."
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "Ví khóa riêng tư đã tồn tại"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "Ví đã tồn tại"
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "Khóa riêng tư độ dài 64 bit tiêu chuẩn được hỗ trợ"
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "Giá trị nhập không hợp lệ. Vui lòng thử lại."
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "Cụm từ hạt giống"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "Tách mỗi từ bằng một dấu cách"
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "Hỗ trợ tất cả các định dạng cụm từ hạt giống (12, 15, 18, 21 và 24 từ)."
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "Khóa riêng tư"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "Dán hoặc nhập khóa riêng tư."
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "Cụm từ hạt giống"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "Hỗ trợ cụm từ hạt giống có 12, 15, 18, 21 và 24 từ"
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "Vui lòng kiểm tra thứ tự của cụm từ hạt giống"
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "Sai cụm từ hạt giống. Vui lòng nhập lại"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "{length} từ"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "OKX Wallet"
+   },
+   "wallet_intro_text_desc": {
+      "message": "OKX Wallet là ví tiền mã hóa vạn năng và đa nền tảng (di động/web/phần mở rộng)"
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "Kết nối ví phần cứng"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "Sao lưu cụm từ hạt giống của bạn"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "Sao lưu ví"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "Xong"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "Quản lý"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "Số thập phân"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "Địa chỉ không hợp lệ"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "Đã thêm đồng tiền mã hóa này"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "Địa chỉ người nhận không hợp lệ"
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "Địa chỉ hợp đồng"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "Đa chuỗi"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "Đã thêm tiền mã hóa"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "Tiền mã hóa tùy chỉnh"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "Quản lý"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "Tìm kiếm tiền mã hóa hoặc địa chỉ hợp đồng"
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "Ký hiệu"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "Đồng tiền mã hóa phổ biến"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "Thêm tiền mã hóa tùy chỉnh"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "Tiền mã hóa tùy chỉnh"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "Thành công"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "Thêm ví"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "Sao lưu ví"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "Chỉnh sửa ví"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "Thêm tài khoản"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "Kết nối lại"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "Tài khoản đã tồn tại, vui lòng thử lại."
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "Đã kết nối ví phần cứng"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "Tổng tài sản"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "Tài khoản"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "Tài khoản"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "Ví"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "Ví phần cứng"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "Khóa riêng tư"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "Phê duyệt"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "Sao chép"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "Đã sao chép!"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "Không tìm thấy bản ghi nào"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "OK"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "Crypto not supported"
+   },
+   "wallet_send_text_register_address": {
+      "message": "Register address"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "Xác nhận"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "Ít nhất 6 ký tự"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "Mật khẩu không khớp. Vui lòng thử lại"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "Sai mật khẩu. Vui lòng thử lại."
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "Tìm hiểu thêm"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "Re-enter your password"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "Nhập mật khẩu"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "Nhập mật khẩu"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "Nhập lại mật khẩu mới"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "Xác nhận mật khẩu"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "Mật khẩu"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "Tải xuống nhật ký trạng thái"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "Tải xuống nhật ký trạng thái"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "Khóa ví"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "Tiếp tục"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "Xác nhận đặt lại"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "Tôi nhận thức được các rủi ro"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "Chọn ngôn ngữ"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "Ngôn ngữ"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "Chung"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "Cảnh báo rủi ro"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "Cài đặt"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "Nhật ký trạng thái"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "Đảm bảo ví của bạn đã được sao lưu"
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "Sai mật khẩu. Vui lòng thử lại."
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "Đổi mật khẩu"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "Nhập mật khẩu, ít nhất 6 ký tự"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "Nhập mật khẩu cũ"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "Nhập lại mật khẩu mới"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "Mật khẩu mới"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "Để bảo vệ quyền riêng tư của bạn, OKX Wallet không lưu mật khẩu ví của bạn. Vui lòng giữ mật khẩu của bạn an toàn."
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "Mật khẩu cũ"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "Xác nhận"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "Đã xảy ra lỗi trong khi truy xuất nhật ký trạng thái"
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "Nhật ký trạng thái"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "Nhật ký trạng thái OKX Wallet"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "Nhật ký trạng thái có chứa địa chỉ tài khoản công khai và bản ghi giao dịch"
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "Đồng tiền"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "Đặt lại ví"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "Đảm bảo bạn đã sao lưu cụm từ hạt giống hoặc khóa riêng tư của ví trước khi đặt lại ví. Nếu không, bạn sẽ mất ví và toàn bộ tài sản trong đó vĩnh viễn"
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "Nếu bạn đặt lại ví mà không sao lưu, bạn sẽ mất ví và toàn bộ tài sản trong đó vĩnh viễn. Đảm bảo sao lưu tất cả ví và giữ cụm từ hạt giống hoặc khóa riêng tư an toàn trước khi đặt lại"
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "Bảo mật ví"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "Quản lý ví"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "Nâng cao"
+   },
+   "wallet_settings_text_desc": {
+      "message": "Phiên bản, trung tâm hỗ trợ và thông tin liên hệ"
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "Đồng tiền, ngôn ngữ và hơn thế nữa"
+   },
+   "wallet_settings_text_language_en": {
+      "message": "vi"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "Đổi mật khẩu, đặt lại ví"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "Thêm, chỉnh sửa và sao lưu ví"
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "Đặt mật khẩu"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "Để bảo vệ quyền riêng tư của bạn, OKX Wallet không lưu mật khẩu ví của bạn. Vui lòng giữ mật khẩu của bạn an toàn."
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "Hủy giao dịch"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "Xác nhận giao dịch"
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "Xác nhận giao dịch"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "Tin nhắn"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "{index}/{total} xác nhận"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "Phí mạng"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "TxID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "Đang chờ xử lý{num}"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "Thời gian"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "Loại"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "Địa chỉ hợp đồng"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "Tên mạng"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "Không tìm thấy giao dịch nào"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "Đang gửi..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "Đã sao chép địa chỉ"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "Sao chép vào bộ nhớ tạm"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "Sao chép TxID vào bộ nhớ tạm"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "Tổng chi phí"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "Ủy quyền"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "Đang xác nhận"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "Không được để trống số tiền"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "Số tiền phải lớn hơn 0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "Hủy"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "Tối đa"
+   },
+   "wallet_transfer_btn_next": {
+      "message": "Tiếp theo"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "Tăng tốc"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "Gửi 0 {coinSymbol} để thay thế giao dịch ban đầu. Vì những lý do mạng nên chúng tôi không đảm bảo sẽ hủy giao dịch thành công."
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "Phí giao dịch"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "Ví"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "Phí giao dịch"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "Triển khai hợp đồng"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "Tương tác hợp đồng"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "Giới hạn gas tối thiểu phải là {minimumGasLimit}"
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "Số dư không đủ"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "Không đủ {chainSymbol} để trả phí gas"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "Nhập địa chỉ hợp lệ"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "Không thành công"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "Không được để trống giới hạn gas"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "Tối đa 15 triệu"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "Giới hạn gas không được vượt quá 21.000"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "Không được để trống giá gas"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "Giá gas phải lớn hơn 0"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "Tùy chỉnh"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "Giới hạn gas"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "tối thiểu"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "Giá gas"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "Giá gas (GWEI)"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "Tùy chỉnh"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "Đang thực hiện"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "Chi tiết giao dịch"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "Địa chỉ nhận tiền phải khác với địa chỉ gửi tiền"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "Bạn không nắm giữ bất kỳ đồng tiền mã hóa nào"
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "Tăng tốc giao dịch bằng cách sử dụng giá gas cao hơn sẽ tăng cơ hội được mạng xử lý nhanh hơn nhưng chúng tôi không đảm bảo chắc chắn điều này."
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "Chọn mạng"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "Phê duyệt {first} không thành công"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "Đã phê duyệt {first} thành công"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "Thu hồi phê duyệt {first} không thành công"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "Đã gửi thông báo thu hồi phê duyệt {first}"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "Đã thu hồi phê duyệt {first}"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "Tương tác hợp đồng không thành công"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "Tương tác hợp đồng thành công"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "Giao dịch NFT không thành công"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "Đã giao dịch NFT thành công"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "Gửi {first} {second} không thành công"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "Đã gửi {first} {second} thành công"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "Hoán đổi {first} {second} thành {third} {fourth} không thành công"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "Đã hoán đổi {first} {second} thành{third} {fourth} thành công"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "Đã gửi giao dịch"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "Xem trên trình khám phá"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "Vui lòng xử lý tất cả các giao dịch trước tiên."
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "địa chỉ nhập (0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "Chọn tiền mã hóa"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "Tìm kiếm token"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "Vui lòng chờ xác nhận khối"
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "Ký tên phần cứng không thành công"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "Ký tên bằng ví phần cứng"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "Sau"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "Trước"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "Số tiền nhận được"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "Phí mạng"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "Sang"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "Từ"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "Trung bình"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "Nhanh"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "Chậm"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "Quay lại trang chủ"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "Đã gửi"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "Đã hoàn tất"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "Đang chờ xử lý"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "Không thể mở khóa nếu thiếu vault trước đó"
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "Ví phần cứng chỉ hỗ trợ tài sản trên mạng tương thích với EVM"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "Không đủ số dư SOL để trả phí mạng"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "Số dư không đủ. Bạn cần ít nhất {number} SOL trong tài khoản để bắt đầu giao dịch"
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "Vui lòng gửi tối thiểu {number} SOL để đáp ứng Phí miễn tiền thuê tối thiểu"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "Vui lòng dự trữ tối thiểu {number} SOL để được miễn tiền thuê"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "Ví của bạn đã được đặt lại"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "Phê duyệt"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "Không có dữ liệu"
+   }
+}

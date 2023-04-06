@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Pay network fee with"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "To safely transfer this NFT, this address is unavailable for gas payment"
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "We recommend that you transfer the NFT to a Tarpoot address that starts with “bc1”. Transferring it to other addresses may pose a risk of asset loss."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Select wallet to pay network fee"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "Continua a visitare"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "Stai visitando un sito che potrebbe indurti a rivelare informazioni personali o finanziarie. Prima di continuare, leggi le istruzioni qui sotto per proteggere i tuoi asset"
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "Stai visitando un sito che potrebbe indurti a rivelare informazioni personali o finanziarie. Prima di continuare, leggi le istruzioni qui sotto per proteggere i tuoi asset"
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· OKX Wallet integra diversi database sicuri per bloccare i siti dannosi"
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· Contatta l'indirizzo service@okx.com per fornire un feedback nel caso in cui trovassi siti sospetti o riscontrassi errori di blocco. Grazie per il tuo contributo nel proteggere la blockchain"
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· Se non desideri ricevere questo avviso troppo frequentemente, puoi impostare il livello di protezione su Basso in Sicurezza del portafoglio"
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· Non possiamo garantire la sicurezza di un sito anche se non ricevi questo avviso. Sei responsabile dei rischi associati alla visita di un sito non sicuro"
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· Il sistema di sicurezza di OKX Wallet ritiene che questo sito sia sospetto. Sei responsabile dei rischi associati alla visita di un sito non sicuro"
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "Avviso di sito ingannevole"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "Avviso di sito sospetto"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "Inserisci un indirizzo ricevente"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0,000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "Approva"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "Annulla"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "OK"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "OKX Wallet non convalida le reti personalizzate. Fai attenzione ai potenziali rischi per la sicurezza"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "Aggiungi rete"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "URL di Block explorer"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "ID blockchain"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "Simbolo"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "Rete"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "URL di rete"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "Aggiunta non riuscita"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "Salva"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "Nessun registro trovato"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "Conferma"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "Rifiuta"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "Interazione contrattuale"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "Nonce (optional)"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "Dati transazione"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "Da"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "Limite gas"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "Prezzo gas ({gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "Interagisci con"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "Rete"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "Costo totale"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "Portafoglio"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "Distribuzione riuscita"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "Distribuzione non riuscita"
+   },
+   "developer_mode_header_title_history": {
+      "message": "History"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "Cancel transaction"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "Completed"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": ""
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "Speed up"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "Ora"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "Interazione contrattuale"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "Invia"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "Indirizzo di contratto"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "Date"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "Visualizza nel browser"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "Blocchi"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "Implementa contatto"
+   },
+   "developer_mode_history_title_from": {
+      "message": "Da"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": ""
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "Interagisci con"
+   },
+   "developer_mode_history_title_network": {
+      "message": "Rete"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Nonce"
+   },
+   "developer_mode_history_title_status": {
+      "message": "Status"
+   },
+   "developer_mode_history_title_time": {
+      "message": "Ora"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "Dati transazione"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "Hash transazione"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "Personalizza rete"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "Custom network"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "Esci"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "Ricevi"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "Invia"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "Cronologia"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "Gestisci criptovaluta"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "Collegamento riuscito"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "Aggiunta"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "Indirizzo {network} copiato"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": ""
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "L'ID blockchain utilizzato da RDC è {chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "Too large. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "Nessun URL RPC corrispondente per questo simbolo della criptovaluta. Verifica il simbolo inserito"
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "Invalid number. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "L'URL richiede un prefisso HTTP/HTTPS corrispondente"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "L'URL richiede un prefisso HTTP/HTTPS corrispondente"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "Invalid URL. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "Questo ID blockchain è già utilizzato sulla rete {network}"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "Una rete con ID blockchain {number} di solito utilizza {symbol}. Controlla il simbolo che hai inserito"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "URL RPC non valido"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "Non riconosciuto. Controlla l'URL RPC che hai inserito"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "Questo URL è già utilizzato dalla rete {network}"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "Dettagli criptovaluta"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "Indirizzo di contratto"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "Rete"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "Punto decimale"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "Copia riuscita"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "Dettagli criptovaluta"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "Approve"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "Contract interaction"
+   },
+   "developer_mode_list_text_send": {
+      "message": "Invia"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "To {addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "Conferma"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "L'indirizzo esiste già"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "Indirizzo non valido"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "Aggiorna"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "Errore di rete. Aggiorna e riprova"
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "Inserisci fino a 11 caratteri"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "Criptovaluta personalizzata"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "Criptovaluta personalizzata"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "Criptovaluta aggiunta"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "Nessuna criptovaluta aggiunta"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "Indirizzo di contratto"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "Punto decimale"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "Rete"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "Simbolo"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "Aggiunta"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "Annulla"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "Rimuovi"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "Connessione a {network}"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "Voce non valida"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "L'operazione rimuoverà questa rete dall'elenco"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "Rimuovere questa rete?"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "Aggiungi rete personalizzata"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "Annulla"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "Torna indietro"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "Cambia rete"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "Conferma"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "Modifica"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "Riprova"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "Il campo non può essere vuoto"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "I fornitori di servizi Internet sconosciuti possono esporre lo stato della blockchain e tenere traccia delle tua attività di rete. Aggiungi una rete solo se la consideri assolutamente affidabile"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "Aggiungi rete personalizzata"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "URL di Block explorer (opzionale)"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "ID blockchain"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "Personalizza rete"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "Personalizza rete"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "Rete"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "Rete"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "URL RPC"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "Testa rete"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "Simbolo"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "Impossibile rimuovere una rete connessa"
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "Aggiorna per riprovare oppure passa a un'altra rete"
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "Connessione non riuscita"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "Rimossa"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "L'ID blockchain utilizzato per firmare le transazioni deve corrispondere all'ID blockchain restituito dalla rete. È possibile inserire cifre decimali o esadecimali precedute da 0x. Le cifre decimali vengono visualizzate per impostazione predefinita"
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "Copia"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "Invia solo asset di rete {chainname} a questo indirizzo"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "Optional"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "Conferma"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "Impossibile acquisire il limite gas. Inserisci"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "Importo ricevuto"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "Da"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "Inserisci dati (opzionale)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "Inserisci dati"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "Massimo"
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "Commissione di rete"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "Commissione di rete"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Nonce (optional)"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Nonce"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "Importo"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "Indirizzo ricevente"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "A"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "Saldo: {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= prezzo gas ({gasprice} {unit})× limite gas ({gaslimit})"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "Personalizza"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "Limite gas"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "Prezzo gas ({unit})"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "Select crypto"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data copied"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "Nessuna criptovaluta nel portafoglio"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "Informazioni aggiuntive incluse per una transazione, come i dati della chiamata dell'interazione contrattuale o il messaggio inviato a un destinatario"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "Superiore a quanto consigliato: {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "Inferiore a quanto consigliato: {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "OK"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "Blocca portafoglio"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "Custom network mode is only available on EVM networks. Please switch wallets and try again"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "Developers"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "Custom network"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "Enable to use advanced features such as testnet, custom RPC or Nonce"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "Preferenze"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "Imposta come portafoglio predefinito"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "Versione {version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "Sicurezza del portafoglio"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "Impostazioni"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "La modalità per sviluppatori non è disponibile su questa rete"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "Completed"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "Failed"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "Pending"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "Waiting"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_top_text_done": {
+      "message": "Fine"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "Gestisci rete"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "Asset totali"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "Gestisci"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "Modifica portafoglio"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "Modalità utente"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "Ti diamo il benvenuto in"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "By proceeding, you'll allow {contract} access to your {asset}"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "Approve"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "Riscatta"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "NFT disponibili"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "Riscatta NFT"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "Go back to homepage"
+   },
+   "extension_bug_text_fixing": {
+      "message": "You can go back to homepage and try again later"
+   },
+   "extension_bug_title_error": {
+      "message": "Error"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "Page not found"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "Contract:"
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "Asset change (est.)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "Request from"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "Transaction amount"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "The network information entered belongs to the Sui network. Custom network only supports adding EVM networks"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "Unable to import a private key of the Sui network. Try a different one"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "extension_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "extension_history_index_pending": {
+      "message": "Pending"
+   },
+   "extension_history_title_farm": {
+      "message": "Farm"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "Riscatta"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "{num} NFT da riscattare"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "Riscattato"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "To secure your transaction, we estimate an amount for your reference"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "extension_input_errortip_max20": {
+      "message": "Maximum 20 characters"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "By proceeding, you'll revoke {contract} access to your {asset}"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "Revoke approval"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "Scopri di più sul sito Web di OKX"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/10558617769613-OKX-Wallet-Passed-Security-Key-Audit-by-Slowmist"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "Centro assistenza"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "Community di OKX"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/okx"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "OKX Wallet"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "Informazioni su OKX Wallet"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "E-mail di OKX"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "Controllo di sicurezza"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "Termini di servizio"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "Gestione dei portafogli"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "Indirizzo e-mail copiato"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "Requesting"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "Request success"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "{num} {crypto} requested"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "Too many requests sent to the faucet. Try again later"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "Confirm"
+   },
+   "extension_toast_btn_ok": {
+      "message": "OK"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "You need to spend more network fees in order to replace the transaction"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas price ({unit})"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "Current DApp network belongs to testnet. Switch to custom network mode in Settings and try again"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "Transaction canceled"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "Current fee"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "Required fee"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "Wallet address copied"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "Please switch wallet mode"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "Replace transaction"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "Inserisci un indirizzo"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "Confirm"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "OK"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "Se non vedi l'opzione di OKX Wallet, puoi collegarti tramite MetaMask o Phantom"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "Hai impostato OKX Wallet come il portafoglio preferito da collegare"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "Imposta come portafoglio predefinito"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "Come eseguire il collegamento a dApp"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "Wallet connected"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "Up to {amount} wallets can be added"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "Couldn't obtain addresses. Make sure you've unlocked your device and opened the required app on it"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "Check {transaction} in Ledger wallet"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "Device disconnected. If you need to continue, connect Ledger to your computer via USB and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "Keep the USB connection between your Ledger and computer, unlock Ledger wallet, and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "OK"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "Retry"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "transaction details"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "Transaction details sent. Check and confirm via your device"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "Added"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "Attraversa nuove reti con un portafoglio completo"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "Proteggi la transazione con OKX Wallet"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "Gateway universale per tutte le dApp"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "Conferma"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "La commissione base massima deve essere superiore a 0"
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "La commissione base massima da te impostata è inferiore alla commissione base di rete di {baseFee} Gwei. È necessario molto tempo affinché la transazione vada a buon fine"
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "La commissione con priorità deve essere superiore a 0"
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "Commissione base richiesta: {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "Commissione base massima"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "min"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "Commissione con priorità"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "sec"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "Ripristina portafoglio"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "Password dimenticata?"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "OKX Wallet non memorizza le password del tuo portafoglio"
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "Se dimentichi la password del portafoglio, puoi reimpostarla ripristinando il tuo portafoglio"
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "Se ripristini il tuo portafoglio senza eseguire il backup, perderai il portafoglio e tutti gli asset contenuti al suo interno. Assicurati che tutti i portafogli siano stati sottoposti a backup"
+   },
+   "metax_mid_colored_stake": {
+      "message": "Stake"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "Esegui il backup ora"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "Ripristina portafoglio"
+   },
+   "securityreset_header_text_reset": {
+      "message": "Ripristina portafoglio"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "Annulla"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "Conferma"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "Se ripristini il tuo portafoglio senza eseguire il backup, perderai il portafoglio e tutti gli asset contenuti al suo interno. Assicurati che tutti i portafogli siano stati sottoposti a backup"
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "Per confermare il ripristino del portafoglio, inserisci: {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "Ripristinare portafoglio?"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "Avviso di rischio"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "Livello di protezione del portafoglio"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "Livello di efficacia per il rilevamento. Un livello più elevato può bloccare un maggior numero di siti sospetti"
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "Alto"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "Basso"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "Blocca siti sospetti e dannosi"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "Blocca solo siti dannosi"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "Livello di protezione del portafoglio"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "Saldo insufficiente di {token}"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "Swap"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "Hai un ordine Swap con gas in sospeso. Non puoi avviarne un altro contemporaneamente. Riprova dopo che questo è stato completato."
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "OK"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "Il servizio Swap con gas è chiuso al momento"
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "Hai già effettuato un ordine simile. Ti consigliamo di non effettuarne uno nuovo fino a quando il tuo saldo non verrà aggiornato."
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "Visualizza in Explorer"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "Hai raggiunto il limite giornaliero di ordini Swap con gas. Riprova domani."
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "Il nostro risk engine ha rilevato che hai eseguito alcune operazioni irregolari. Non ti è più permesso usare il servizio Swap con gas."
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "Visualizza in Explorer"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "Impossibile riempire {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "Impossibile riempire {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "Swap da {payValue} {paySymbol} a {receiveValue} {receiveSymbol} effettuato"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "Transazione inviata"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "Ricarica {nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value} general transactions"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "Seleziona importo del pagamento"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "Seleziona token di pagamento"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "Swap con gas"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "OK"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "È il tasso di cambio stimato in Swap con gas. Viene calcolato tenendo conto dei prezzi di mercato e dei tassi degli exchange centralizzati. Il tasso effettivo può variare al momento della conferma dell'ordine. L'utilizzo del servizio Swap con gas richiede anche una commissione di rete, che verrà automaticamente calcolata nell'importo da pagare."
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "Trading on blockchains requires paying a network fee with native tokens such as ETH, BNB, OKT, MATIC, etc. When you don't have these tokens to make a transaction, you can quickly swap tokens you already hold for native tokens using the Swap for gas feature (it's only available for a few networks).\nGetting native tokens via Swap for gas also requires a network fee, which will be automatically factored into the amount you pay.\nYou'll see an estimated number of general transactions when placing an order on Swap for gas. It refers to the number of token transfers you can make with your selected amount. The actual number may vary."
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "Swap con gas"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "Swap con gas"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "Swap con gas"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "Riferimento"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "Ricevi"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "Ricarica"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "Errore di rete"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "Non effettuare un altro ordine finché questo è completo, altrimenti potrebbe non andare a buon fine. Chiudendo questa pagina il processo non verrà interrotto. Puoi controllare i relativi dettagli in Cronologia."
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "Seleziona token di pagamento"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "Impossibile ottenere il prezzo di {paySymbol} e {receiveSymbol}; non è possibile confermare l'importo da ricevere. Riprova più tardi."
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "Impossibile ottenere il prezzo di {paySymbol}; non è possibile confermare l'importo da pagare. Riprova più tardi."
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "Impossibile ottenere il prezzo di {receiveSymbol}; non è possibile confermare l'importo da ricevere. Riprova più tardi."
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "La commissione di rete è troppo alta al momento, quindi non è il caso di effettuare una transazione. Riprova più tardi."
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "Insufficient {token} for network fee "
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "Recommend"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "Receive {token} with QR code or wallet address"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "Top up {token} quicker than ever"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "Receive"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "Swap for gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "Esegui il backup del portafoglio prima di visualizzare l'indirizzo"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "Registro dei clienti"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "Innanzitutto, scarica {downloadUrl}, quindi fai clic sul pulsante di collegamento qui sotto dopo aver aperto la home page del registro dei clienti."
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "Collega portafoglio hardware"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "Aggiungi portafoglio"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "Collegamento non riuscito"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "Assicurati di aver inserito il portafoglio hardware nel computer e di averlo sbloccato."
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "Seleziona un portafoglio hardware"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "Assicurati che il portafoglio hardware sia collegato al computer"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "Collegamento in corso"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "Conto {newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "Nuovo conto creato"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "Collega"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "Collega portafoglio hardware"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "Crea nuovo portafoglio"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "Hardware wallet"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "Chiave privata"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "Seed phrase"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "Importa un portafoglio esistente"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "Devi utilizzare OKX Wallet su Google Chrome per effettuare il collegamento al tuo portafoglio hardware."
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "Browser non supportato..."
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "Scarica Google Chrome"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "(legacy)"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "Collega portafoglio hardware"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "Devi utilizzare il tuo ultimo conto per aggiungerne uno nuovo."
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "Collegamento..."
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "Collega il portafoglio hardware"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "Crea un nuovo portafoglio con seed phrase"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "Se l'indirizzo del portafoglio non è elencato qui sotto, cambia il percorso in Legacy (MEW/MyCrypto)"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "Dimentica questo portafoglio hardware"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "Seleziona un percorso"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "Seleziona portafogli"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "Importa seed phrase o chiave privata"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "Puoi aggiungere fino a 50 portafogli."
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "Creazione riuscita"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "Revoca approvazione"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "Autorizzazione del portafoglio"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "Revocherai l’approvazione di {tokenSymbol}"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "Chiave privata"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "La copia della chiave privata comporta il rischio che sia facile per applicazioni di terze parti monitorare o utilizzare impropriamente gli appunti."
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "Verifica la seed phrase"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "Ho eseguito il backup"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "Copia comunque"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "Non copiare"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "Chiave privata"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "Scrivi le seguenti parole nell'ordine corretto. Tienile al sicuro e non condividerle con nessuno!"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "Annota la seed phrase"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "Assicurati che nessuno stia guardando lo schermo"
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "Tocca per visualizzare la seed phrase"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "Operazione riuscita"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "Copiata"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.okx.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "Network fee"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "Register zkSync Lite to continue the transaction"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "Importo"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "Importo autorizzato"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "Approva"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "Interazione con (a)"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "Reti"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "Rete"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "URL di block explorer"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "L'ID blockchain utilizzato per firmare le transazioni per questa rete."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "L'ID blockchain utilizzato per firmare le transazioni per questa rete."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "Simbolo di valuta"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "Il simbolo del ticker visualizzato per la valuta di questa rete."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "L'URL utilizzato come block explorer per questa rete."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "L'URL utilizzato come block explorer per questa rete."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "Il nome associato a questa rete."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "il nome associato a questa rete"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "L'accesso URL a questa rete."
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "Concedendo l'autorizzazione, consenti a {name} di trasferire {tokenSymbol} e automatizzare le transazioni per te"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "Non è possibile accedere alla dApp finché non esegui il backup della seed phrase. Esegui il backup ora."
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "Ignora"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "Fornisci"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "Cambia"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "L'aumento della commissione potrebbe diminuire i tempi di elaborazione, ma non è garantito."
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "Impossibile decrittografare questo messaggio a causa di un errore: {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "Collega solo ai siti attendibili."
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "Collega conto"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "Seleziona conto/i"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "Esegui il backup del tuo portafoglio"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "Hai approvato questa autorizzazione"
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "Consenti alla dApp attuale di collegarsi a OKX Wallet."
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "OKX Wallet non è stato collegato a questo sito. Per collegarlo a questo sito, trova e fai clic sul pulsante di collegamento."
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "{siteName} vorrebbe leggere questo messaggio per completare l'operazione"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "URL di rete"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "Non hai approvato questa autorizzazione"
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName} vorrebbe la tua chiave pubblica di crittografia. Fornendo il tuo consenso, questo sito potrà comporre messaggi crittografati per te."
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "Richiedi chiave pubblica di crittografia"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "Firma"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "Richiesta di firma"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "Conti collegati"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "Rete attuale"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "Vuoi usare {curWalletName} e collegarlo a {host}?"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "Siti collegati"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "Decrittografa"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "Copia messaggio crittografato"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "Decrittografa messaggio"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "Decrittografa richiesta"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "Estensione esterna"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "Rete"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "Nuovo contratto"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "Altri {length}+"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "A:"
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "Seleziona conti"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "Seleziona tutto"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "Tipo"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "{curWalletName} non è stato collegato a questo sito"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "{curWalletName} è stato scollegato da questo sito"
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "Scollega"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "Rifiuta"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "Gas insufficiente"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "Aggiungi criptovaluta"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "Collegati a tutti i tuoi {account}"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "Collega a {origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "conti"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "Vuoi davvero approvare? L'approvazione implica che consenti a questa dApp di prelevare {tokenSymbol} in qualsiasi momento"
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "Consenti a questo sito di:"
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "Questa operazione consentirà l'utilizzo di questa rete all'interno di OKX Wallet."
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "Consenti a questa estensione esterna di:"
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "Aggiungi token"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "Aggiungi token"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "Illimitato"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "Saldo"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "ID blockchain"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "Dati"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "Inserisci l'importo massimo ({tokenSymbol})"
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "Al momento OKX Wallet non supporta questa blockchain."
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "Back"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "Couldn't send this crypto because it's not available for paying network fees"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "Address not registered"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "You need to register this address before using it"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "Register"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "Parole errate. Riprova"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "Parola"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "Seleziona ogni frase in ordine."
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "Delete wallet"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "Il nome del portafoglio non deve superare i 20 caratteri."
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "Il nome del portafoglio esiste già."
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "Nome conto"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "Modificato"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "Are you sure to delete this wallet?"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "This action will remove this wallet from the app. You can re-import it with its seed phrase without affecting your assets. Be sure to back up your wallet before deleting it, otherwise you will permanently lose it and all assets"
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "Nome portafoglio"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "Eliminato"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "Termini di servizio"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "Vai a Modifica"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "Annulla"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "Conferma"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "L’indirizzo esiste già"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "Massimo 20 caratteri"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "Indirizzo errato. Riprova"
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "Inserisci un indirizzo"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "Inserisci un nome di lunghezza inferiore a 20 caratteri"
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "Interrompere l'aggiunta dell'indirizzo?"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "Indirizzo"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "Nome"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "Aggiungi indirizzo"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "OK"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "Altre reti in arrivo a breve!"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "Rete {network} non supportata"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "Annulla"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "Continua"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "Avviso di sicurezza"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "Stai inviando criptovalute a un indirizzo di contratto piuttosto che a un indirizzo privato. Assicurati che l'indirizzo sia valido prima di procedere per evitare potenziali perdite"
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "Aggiungi indirizzo"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "Copia indirizzo"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "Elimina indirizzo"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "Modifica indirizzo"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "Tutte le reti"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "Cerca indirizzo o nome"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "Nessun indirizzo"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "Rubrica"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "Seleziona rete"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "Indirizzo aggiunto"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "Indirizzo eliminato"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "Limite della rubrica raggiunto (200 voci)"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "Tutti gli NFT di questa raccolta"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "Approva"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "Per"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number} ore"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number} ore"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number} ore"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number} minuti"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number} minuti"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "Mai"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "Indietro"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "Esplora rendimento"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "Esplora altro"
+   },
+   "wallet_extension_btn_register": {
+      "message": "Registra"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "Cambia rete"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "Copia chiave privata"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "Importo di riscatto appross."
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "OK"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "L'importo di riscatto finale sarà confermato quando la transazione sarà correttamente inviata alla blockchain"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "OK"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "L'importo di riscatto finale sarà confermato quando la transazione sarà correttamente inviata alla blockchain"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "Importo stimato dell'investimento"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "La transazione attuale è in sospeso da più di {pendingTips} h. Accelera o annulla la transazione."
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "ID conto"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "From"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "Registra ZKSpace per continuare la transazione"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "Registra ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "Eliminata"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "Approvare l'accesso di {approved_address} a tutti i tuoi {approved_asset}?"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "Revocare l'accesso di {approved_address} a tutti i tuoi {approved_asset}?"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "By confirming, you will allow {address} to transfer your assets or automate transactions on your behalf. Please take caution before moving on"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "Unknown NFT collection"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "You'll allow this DApp to transfer your main-chain crypto, please proceed with caution"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "The transaction may fail due to a low network fee. We recommend you adjust the network fee before proceeding"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "Panoramica"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "Puoi utilizzare dApp che supportano le seguenti reti"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "Devi registrare questa criptovaluta prima di usarla"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "Altre reti compatibili con EVM sono state sincronizzate automaticamente"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "Puoi utilizzare dApp che supportano le seguenti reti"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "Puoi utilizzare dApp che supportano le seguenti reti. In caso di problemi nell'utilizzo di queste dApp, fai clic sul pulsante in basso per passare alle reti EVM"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "Puoi utilizzare questo portafoglio per gestire i tuoi asset di criptovaluta nella rete Bitcoin."
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "Puoi utilizzare questo portafoglio per gestire i tuoi asset di criptovaluta nella rete {network}."
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "Trasferisci"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "Annulla"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "Conferma"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "Elimina"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "Eliminare l'indirizzo?"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "Seleziona rete"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "Modifica indirizzo"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "Salvato"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "Go back"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "Aggiorna"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "Limite caratteri superato. Inserisci di nuovo"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "Firmare questo messaggio può essere pericoloso. Per proteggere i tuoi asset, firmalo solo se ti fidi completamente del sito"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "Fork ETHW presto disponibile"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "Raddoppia i tuoi asset Ethereum gratis!"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "OK"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "Versione più recente"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "OKX Wallet ora supporta gli asset ETHW. Dai un'occhiata"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "Numero di versione"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "Puoi passare alle reti EVM di seguito; le reti di dApp verranno modificate automaticamente"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "Visualizza su Blockchain Explorer"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "Visualizza in portafoglio"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "Hai dimenticato la password?"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "Inserisci \"RIPRISTINA\" di seguito per confermare il ripristino"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "Conferma ripristino"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "Ripristina portafoglio"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "Conta NFT in totale"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "Approva"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "Revoca approvazione"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "Per"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "Ricevi"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "Inviato"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "Cronologia"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "Riscatta"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "Investi"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "Riscatta"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "Type"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "Tutte le reti"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "Ora"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "Indirizzo"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "Approva {symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "Riscatta"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "Interazione contrattuale"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "Conia"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "Ricevi"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "Da"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "Riscatta"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "Revoca approvazione {symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "Revoke approval of {approvedasset}"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "Invia"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "A"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "Annulla transazione"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "Accelera"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "Accelera annullamento"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "In sospeso"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "In attesa"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "Iscriviti"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "Altro..."
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "Trading"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "In sospeso ({num})"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "Fai clic per aggiungere alla rubrica"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "Completata"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "Non riuscita"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "Failed"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "Pending"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "Waiting"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "Completata"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "Completed"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "In sospeso"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "Registra ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "Protocollo sconosciuto"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "Token sconosciuto"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "Revoke approval"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "Connessione riuscita"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "Cronologia"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "Swap"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "Fai clic per modificare il formato dell'indirizzo"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "Fai clic per andare all'introduzione di SegWit"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "Cancella"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "Ho un "
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "Seed phrase da 12 parole"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "Seed phrase da 15 parole"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "Seed phrase da 18 parole"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "Seed phrase da 21 parole"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "Seed phrase da 24 parole"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "Il portafoglio esiste già"
+   },
+   "wallet_extension_info_pay": {
+      "message": "Pagato"
+   },
+   "wallet_extension_info_receive": {
+      "message": "Ricevuto"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "Tipo"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "Salva"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "Metti in stake"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "Depositi"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "Le password non corrispondono!"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "Le password corrispondono!"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "Buona"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "Perfetta"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "Debole"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "Inserisci promemoria, fino a 256 caratteri"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "Cerca rete"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "Cerca rete"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "Metti in stake"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "Vault"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "Indirizzo registrato"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "Accesso limitato"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "I prodotti o servizi su okx.com non sono disponibili nella tua regione ({area}) in base alle leggi e alle normative locali."
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "Hai dei portafogli di cui non è stato eseguito il backup. I conti di portafogli di cui non è stato eseguito il backup non possono connettersi a dApp di terze parti"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "Visualizza in Blockchain Explorer"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "{num} conti collegabili"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "Importo approvato"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "Conferma del blocco"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "Da"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "Interazione con"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "Rete"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "Stato"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "Ora"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "A"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "Hash transazione"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "Illimitato"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "{contractaddress} è rischioso. Per proteggere i tuoi asset, prima di confermare la transazione, assicurati che l'indirizzo corrisponda all'indirizzo di trasferimento usato di frequente."
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "Applica"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "Torna a tutti gli elementi"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "Cancella tutto"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "Aggiorna"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "Migliore offerta"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "Ultimo"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "Prezzo"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "Blockchain"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "Stato vendite"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "Offerte ricevute"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "In vendita"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "Cerca"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "Visualizza nel mercato NFT"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "Indirizzo di contratto"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "Prezzo minimo della raccolta"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "Rete"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "Prezzo NFT"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "Standard dei token"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "Filtra"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "Impossibile recuperare gli elementi inviati all'indirizzo errato"
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "Criptovaluta"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "NFT"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "Esplora NFT"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "Tutti i migliori NFT sono su OKX"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "Raccolte"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "Errore durante il caricamento"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "Max"
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "Nessuna raccolta"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "Nessun risultato per questa ricerca"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "L'importo non può essere pari a 0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "L'importo immesso non può essere maggiore di {max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "Inserisci l'importo da trasferire"
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "Il valore NFT viene calcolato sul prezzo minimo della raccolta."
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "Di proprietà"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "Questo indirizzo ricevente non ha registrato {token} e non può essere utilizzato"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "OKX Wallet è completamente decentralizzato e la tua password non viene salvata. Se la dimentichi, ripristina il tuo portafoglio e importa la seed phrase o la chiave privata per creare una nuova password. Ti chiediamo di mantenerla al sicuro."
+   },
+   "wallet_extension_option_allchain": {
+      "message": "Tutte le reti"
+   },
+   "wallet_extension_option_desc": {
+      "message": "{domain} è attualmente sulla rete {chain}"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "Cambia reti EVM"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "Connessione multi-chain"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "Asset totali"
+   },
+   "wallet_extension_overview_more": {
+      "message": "Altro"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "Indirizzo ricevente copiato correttamente"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "Asset in base alla rete"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "Confermando, accetti i {terms_service} di OKX"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "Ricarica {token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "{token} insufficiente per la commissione di rete"
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "Nascondi seed phrase"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "Approva"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "Annulla"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "Conferma"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "Revoca approvazione"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "Annulla"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "Conferma"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "Invia Transazione 0 {symbol} per sostituire quella originale."
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "Per motivi di rete, l'annullamento della transazione non garantisce il buon esito dell'operazione."
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "Prezzo gas ({gasPrice} GWEI) * Limite gas ({gasLimit})"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "Criptovaluta non registrata"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "Saldo insufficiente"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "La copia delle chiavi private è un'operazione rischiosa. I contenuti dei tuoi appunti possono essere monitorati o utilizzati in modo improprio da applicazioni di terze parti. Mantieni al sicuro le tue chiavi private."
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "Inizia esplorazione"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "{token} insufficiente per la commissione di rete"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "Legacy"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/learn/what-is-segregated-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "SegWit nativo"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "SegWit annidato"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "Ripeti ordine"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "Continua a inviare"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "Visualizza nella cronologia"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "Hai già effettuato un ordine identico; vuoi continuare comunque?"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "Dopo"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "Prima"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "Annulla"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "Conferma"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "Accelera la transazione aumentando la commissione di rete"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "= Prezzo gas ({gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "Tutte le reti"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "Interazione con (a)"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "Progetto"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "Contratto di progetto"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "Aggiungi rete"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "Formati indirizzo"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "Annulla quotazione"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "Annulla transazione"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "Interazione contrattuale"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "Indirizzo copiato"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "Seleziona rete"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "Accelera transazione"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "Hash della transazione copiata"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "Conferma per copiare?"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "Creazione di {walletName} riuscita"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "Importazione di {walletName} riuscita"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "Scarica log di stato"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "OK"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "L'importo che consente a terzi di prelevare e automatizzare le transazioni per te"
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "Continua"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "Rifiuta"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "Avviso di rischio"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "{accountAddress} è segnalato come indirizzo di contratto dannoso. C'è il rischio di furto di asset. Assicurati che l'indirizzo sia sicuro"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "Importo approvato"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "Importo approvato"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "{accountAddress} è segnalato come indirizzo dannoso. C'è il rischio di furto di asset. Assicurati che l'indirizzo sia sicuro"
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "Confirm"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "Couldn't trade with fiat money since retrieving est. value of this crypto isn't available"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "OK"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "OK"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "Dai un'occhiata"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "OKX Wallet ora supporta gli asset ETHW"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. OKX Wallet ora supporta gli asset ETHW"
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. Il mondo è così grande che voglio vederlo"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "Ultime novità"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "Novità"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "Ultime novità"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "V2.15.10"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "Ultime novità della versione 2.16.2"
+   },
+   "wallet_extension_rn_button": {
+      "message": "OK"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. Ora puoi effettuare transazioni e interagire con le dApp sulla rete ETHF"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "Ora puoi effettuare transazioni e interagire con le dApp sulla rete Aptos"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. Ora i siti sospetti possono essere controllati e segnalati come rischiosi"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. NFTs on Aptos can now be displayed and claimed in the wallet"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. Ora puoi effettuare transazioni direttamente utilizzando le dApp sulle reti EVM e Solana"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. Ora puoi effettuare transazioni e interagire con le dApp sulla rete Tron"
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. You can now use ENS, Unstoppable Domains, and SPACE ID domains to make transfers"
+   },
+   "wallet_extension_rn_title": {
+      "message": "Ultime novità"
+   },
+   "wallet_extension_rn_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "Continua"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "Rifiuta"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "Avviso di rischio"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "{accountAddress} è segnalato come indirizzo dannoso. C'è il rischio di furto di asset. Assicurati che l'indirizzo sia sicuro"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "Visualizza altre truffe"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "{accountAddress} è segnalato come indirizzo di contratto dannoso. C'è il rischio di furto di asset. Assicurati che l'indirizzo sia sicuro"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "Al momento sono supportate altre {number} reti compatibili con EVM"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "Reti compatibili con EVM"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "Il tuo è un indirizzo di rete EVM. Puoi usarlo per gestire i tuoi asset su altre reti compatibili con EVM."
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "Le reti compatibili con EVM supportate includono: {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "Seleziona criptovaluta per pagamento"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "Aggiungi ora"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "Confirm"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "Avanti"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "Next"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "To"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "Rubrica"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "Indirizzo recente"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "Inserisci un indirizzo valido"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "Non presente in rubrica"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "Couldn't estimate"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "Inserisci un indirizzo o un nome indirizzo"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "Search currency"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "All"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "Predefinito"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "Balance"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "Pay with"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "Select crypto to pay for network fees"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "Canceled"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "Annullamento in corso"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "Canceling"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "Velocizzazione"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "Speeding up"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "Importo"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "Saldo"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "Max"
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "The maximum amount is {fiatamount} ({cryptoamount}) after deducting network fees"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "Receiving address"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "Select currency"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "Nessuna {crypto} trovata da inviare"
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "Transfer at least {amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "Preferenze"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "Blocco automatico"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "Esegui backup del portafoglio"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "Preferenze"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "Cambia password"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "Imposta come portafoglio predefinito"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "Rubrica"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "Gestisci contatti"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "Versione {number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "Don't refresh this page as it could cause hardware wallet import failure. To protect your privacy, OKX Wallet doesn't store your wallet password. Please keep your password safe."
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "Approvare l'accesso a tutti gli NFT di questa raccolta?"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "Riscatta"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "Riscatto appross."
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "Ora puoi esplorare oltre 25 reti con OKX Wallet."
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "Da"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "In"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "Investi con"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "Investimento approssimativo con"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "Ricevi"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "Riscatta da"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "Registra"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "Revocare l'accesso a tutti gli NFT di questa raccolta?"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "DeFi"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "Tutta la tua {collection}"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "Asset approvati"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "Abbiamo sincronizzato automaticamente altre reti {networkname} per te"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "Annulla quotazione"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "Attivato"
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "Il tuo gateway universale per il mondo della DeFi"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "Promemoria"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "Nessun risultato trovato"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "Approva"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "Approva {collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "NFT sconosciuto"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "Raccolta NFT sconosciuta"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "Annulla quotazione"
+   },
+   "wallet_extension_title_memo": {
+      "message": "Promemoria"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "Promemoria (facoltativo)"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "Connessione multi-chain selezionata per impostazione predefinita"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "Connessione multi-chain supportata"
+   },
+   "wallet_extension_title_register": {
+      "message": "Registra"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "Registra criptovaluta"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "Revoca approvazione"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "OKX Wallet supporta le seguenti reti"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "Rete attuale"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "Cambia rete"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "Indirizzo del portafoglio"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "Indirizzo copiato"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "Formato indirizzo modificato"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "Approva {collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "Network error. Please check your network connection"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "Non adesso"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "Imposta come predefinito"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "Creazione riuscita correttamente"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "Registrazione non riuscita"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "Al momento, il portafoglio hardware supporta solo asset EVM"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "Importazione riuscita"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "Importazione riuscita"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "L'importo massimo è {max} Sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "L'importo minimo è {min} Sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "Errore di rete. Aggiorna e riprova"
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "L'indirizzo ricevente non è attivato e la transazione potrebbe non riuscire."
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "Registrata"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "Invia solo asset di rete {chain_name} a questo indirizzo"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "Imposta OKX Wallet come portafoglio predefinito se è la tua prima scelta per connetterti a dApp tra le altre estensioni del portafoglio installate."
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "Impostazione riuscita"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "In corso"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "Il portafoglio OKX è ripristinato"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "An unknown error occurred while processing your transaction. Please re-initiate the transaction"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "Impostare OKX Wallet come portafoglio predefinito?"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "Copia indirizzo"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "Connetti"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "Impostazioni"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "Gestisci portafoglio"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "Medio"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "Avanti"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "Importo ricevuto"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "da"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "= Prezzo Gas ({gasPrice} GWEI)*GAS ({gasLimit})"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "a"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "Personalizza"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "Il limite gas deve essere > {minGasLimit} e \u003C {maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "Il prezzo del gas deve essere > {minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "Limite gas"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "Prezzo gas (GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "Veloce"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "Conferma"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "L'indirizzo non può essere vuoto"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "L'importo immesso non deve essere vuoto"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "L'importo immesso deve essere superiore a 0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "Saldo insufficiente"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "{chainSymbol} insufficiente per pagare la gas fee"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "Indirizzo non valido"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "L'indirizzo ricevente non può essere uguale all'indirizzo di invio"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "A"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "Max"
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "Importo"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0,000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "Inserisci un indirizzo"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "Rimani in attesa"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "Sostituisci"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "Salta"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "Una delle tue transazioni non è riuscita"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "Una delle tue transazioni è in sospeso da oltre un'ora"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "Se una transazione non è riuscita, non puoi avviarne una nuova. Sostituire la transazione non riuscita con quella attuale?"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "Se la transazione in sospeso non è stata completata, non puoi avviarne una nuova. Sostituire la transazione in sospeso con quella attuale?"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "Lento"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "min"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "Indirizzo {network} copiato"
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "OK"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "Password dimenticata?"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "Devo pensarci"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "Comprendo le informazioni riportate sopra e desidero ripristinare il mio portafoglio"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "OKX Wallet è una piattaforma completamente decentralizzata. Non salviamo la tua password. Non è possibile recuperare la tua password."
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "Se smarrisci la password, ripristinare il portafoglio con la sua seed phrase o chiave privata è l'UNICO modo per impostare una nuova password e riottenere l'accesso."
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "Il ripristino del portafoglio cancellerà tutti i dati del portafoglio esistenti sul dispositivo corrente. Se ripristini il portafoglio senza eseguire il backup della seed phrase o della chiave privata, perderai in modo permanente il portafoglio e tutti gli asset in esso contenuti."
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "Imposta OKX Wallet come portafoglio predefinito"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "Esegui il backup ora"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "Non è stato eseguito il backup del portafoglio"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "Se il dispositivo viene smarrito o rubato, perderai per sempre il tuo portafoglio e tutte le tue criptovalute"
+   },
+   "wallet_home_btn_close": {
+      "message": "Chiudi"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "Confermato"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "Importa portafoglio"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "Crea un portafoglio"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "Gestisci"
+   },
+   "wallet_home_btn_receive": {
+      "message": "Ricevi"
+   },
+   "wallet_home_btn_send": {
+      "message": "Invia"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "Sono un nuovo utente del mondo decentralizzato"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "Sblocca"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "Collega"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "Errore di valutazione degli asset. Esci dalla pagina attuale e riprova più tardi"
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "Collegamento riuscito"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "Inserisci la password"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "OKX Wallet ha riscontrato un errore"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "Il tuo portale nel Web3"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "Più tardi"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "Assicurati di eseguire il backup della seed phrase prima di effettuare depositi."
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "Portafoglio di criptovaluta ‧ Mondo NFT ‧ Accesso a dApp"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "Riprova chiudendo o riaprendo la finestra pop-up oppure contatta l'assistenza"
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "Stacking:"
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "Codice: {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "Dettagli errore"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "Messaggio: {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "Codice: {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "Prova a ricaricare la pagina oppure contatta l'assistenza"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "Ho già un portafoglio"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "Errore di rete. Riprova più tardi"
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "Input non validi. Riprova."
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "Importa chiave privata"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "Seed phrase"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "Inserisci la tua chiave privata qui."
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "Inserisci le seed phrase separate da spazi."
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "Il portafoglio con chiave privata esiste già"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "Il portafoglio esiste già."
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "Sono supportate le chiavi private standard a 64 bit"
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "Input non validi. Riprova."
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "Seed phrase"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "Separa ogni parola con un singolo spazio"
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "Sono supportati tutti i formati (12, 15, 18, 21 e 24 parole) di seed phrase."
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "Chiave privata"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "Incolla o inserisci la tua chiave privata."
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "Seed phrase"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "Sono supportati tutti i formati (12, 15, 18, 21 e 24 parole) di seed phrase."
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "Verifica l'ordine della seed phrase"
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "Input non validi. Riprova"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "{length} parole"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "OKX Wallet"
+   },
+   "wallet_intro_text_desc": {
+      "message": "OKX Wallet è un portafoglio universale di criptovaluta multipiattaforma (dispositivi mobili/Web/estensioni)."
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "Collega portafoglio hardware"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "Esegui backup della seed phrase"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "Esegui backup del portafoglio"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "Fine"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "Gestisci"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "Decimale"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "Indirizzo non valido"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "Questa criptovaluta esiste già"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "Indirizzo del destinatario non valido"
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "Indirizzo di contratto"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "Multichain"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "Criptovaluta aggiunta"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "Criptovaluta personalizzata"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "Gestisci"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "Cerca criptovaluta o indirizzo del contratto"
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "Simbolo"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "Criptovalute popolari"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "Aggiungi criptovaluta personalizzata"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "Criptovaluta personalizzata"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "Operazione riuscita"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "Aggiungi portafoglio"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "Esegui backup del portafoglio"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "Modifica portafoglio"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "Aggiungi conto"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "Ricollega"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "Conto esistente. Riprova."
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "Portafoglio hardware collegato"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "Asset totali"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "Conto"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "Conto"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "Portafoglio"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "Portafoglio hardware"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "Chiave privata"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "Approvazione"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "Copia"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "Copiato"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "non trovato"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "OK"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "Crypto not supported"
+   },
+   "wallet_send_text_register_address": {
+      "message": "Register address"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "Conferma"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "Almeno 6 caratteri"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "Le password non corrispondono"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "Password errata. Riprova."
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "Scopri di più"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "Re-enter your password"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "Inserisci password"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "Inserisci password"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "Inserisci di nuovo la nuova password"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "Conferma"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "Password"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "Scarica log di stato"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "Scarica log di stato"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "Blocca portafoglio"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "Continua"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "Conferma ripristino"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "I'm aware of the above risks"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "Seleziona lingua"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "Lingua"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "Generali"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "Avviso di rischio"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "Impostazioni"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "Log di stato"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "Verifica che il tuo portafoglio sia stato sottoposto a backup"
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "Password errata. Riprova."
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "Cambia password"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "Inserisci una password di almeno 6 caratteri"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "Inserisci la vecchia password"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "Inserisci di nuovo la nuova password"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "Nuova password"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "Per proteggere la tua privacy, OKX Wallet non archivia la password del tuo portafoglio. Mantieni la tua password al sicuro."
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "Vecchia password"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "Conferma"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "Errore durante il recupero dei log di stato."
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "Log di stato"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "Log di stato di OKX Wallet"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "I log di stato contengono le registrazioni delle transazioni e gli indirizzi dei conti pubblici."
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "Valuta"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "Ripristina portafoglio"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "Assicurati di eseguire il backup della seed phrase o della chiave privata del portafoglio prima del ripristino, altrimenti perderai in modo permanente il portafoglio e tutti gli asset in esso contenuti."
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "Questa operazione eliminerà tutti i dati su OKX Wallet. Assicurati di eseguire il backup di tutte le seed phrase prima del ripristino."
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "Sicurezza del portafoglio"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "Gestisci portafoglio"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "Avanzate"
+   },
+   "wallet_settings_text_desc": {
+      "message": "Versione, centro assistenza e informazioni di contatto"
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "Valuta, lingua e molto altro"
+   },
+   "wallet_settings_text_language_en": {
+      "message": "it"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "Modifica password, ripristina portafoglio"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "Aggiungi, modifica ed esegui il backup del portafoglio"
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "Imposta password"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "Per proteggere la tua privacy, OKX Wallet non archivia la password del tuo portafoglio. Mantieni la tua password al sicuro."
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "Annulla transazione"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "Conferma txn"
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "Conferma della transazione"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "Messaggio"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "{index} di {total} conferme"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "Commissione di rete"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "TxID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "In sospeso{num}"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "Ora"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "Tipo"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "Indirizzo di contratto"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "Nome della rete"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "Nessuna transazione trovata"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "Invio..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "Indirizzo copiato"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "Copia negli appunti"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "Copia TxID negli appunti"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "Costo totale"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "Autorizzazione"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "Conferma in corso"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "L'importo immesso non deve essere vuoto"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "L'importo immesso deve essere superiore a 0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "Annulla"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "Max"
+   },
+   "wallet_transfer_btn_next": {
+      "message": "Avanti"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "Accelera"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "Invia 0 {coinSymbol} per sostituire la transazione originale. Per motivi di rete, l'annullamento della transazione non garantisce il buon esito dell'operazione."
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "Commissione txn"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "Portafoglio"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "Compenso dovuto per la transazione"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "Distribuzione del contratto"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "Interazione contrattuale"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "Il limite gas deve essere almeno di {minimumGasLimit}"
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "Importo insufficiente"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "{chainSymbol} insufficiente per pagare la gas fee"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "L'indirizzo non può essere vuoto"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "Non riuscito"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "Il limite gas non può essere vuoto"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "Massimo 15 M"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "Il limite gas deve superare 21.000"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "Il prezzo del gas non può essere vuoto"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "Il prezzo del gas deve superare 0"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "Personalizza"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "Limite gas"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "min"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "Prezzo gas"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "Prezzo gas (GWEI)"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "Personalizza"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "In corso"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "Dettagli della transazione"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "L'indirizzo ricevente non può essere uguale all'indirizzo di invio"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "Al momento non possiedi token."
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "L'accelerazione di una transazione tramite un prezzo del gas più alto aumenta le probabilità che questa venga elaborata più rapidamente dalla rete, ma non è sempre garantito."
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "Seleziona rete"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "Approvazione di {first} non riuscita"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "Approvazione di {first} completata"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "Annullamento dell'approvazione {first} non riuscito"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "Annullamento dell'approvazione di {first} inviato"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "Approvazione di {first} annullata"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "Contratto call non riuscito"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "Transazione riuscita"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "Transazione di NFT non riuscita"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "Transazione di NFT riuscita"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "Invio di {first} {second} non riuscito"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "Invio di {first} {second} completato"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "Swap di {first} {second} in {third} {fourth} non riuscito"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "Swap di {first} {second} in {third} {fourth} riuscito"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "Transazione inviata"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "Visualizza in Explorer"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "Per prima cosa, elabora tutte le transazioni."
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "inserisci indirizzo (0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "Seleziona token"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "Cerca token"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "Attendi la conferma del blocco"
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "Firma hardware non riuscita"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "Firma con portafoglio hardware"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "Dopo"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "Prima"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "Importo ricevuto"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "Commissione di rete"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "A"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "Da"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "Media"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "Veloce"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "Lenta"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "Torna alla home"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "Inviato"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "Completato"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "In sospeso"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "Impossibile sbloccare senza un vault precedente"
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "Il portafoglio hardware supporta solo asset su reti compatibili EVM"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "Saldo SOL insufficiente per pagare la commissione di rete"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "Saldo insufficiente. Hai bisogno di almeno {number}SOL per avviare la transazione"
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "Invia almeno {number} SOL per soddisfare la commissione minima esente dal costo di affitto"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "Riserva almeno {number} SOL come commissione esente dal costo di affitto"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "Il portafoglio è stato ripristinato"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "Approva"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "Nessun dato"
+   }
+}

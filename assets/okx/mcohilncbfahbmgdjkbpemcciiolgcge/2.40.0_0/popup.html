@@ -1,0 +1,68 @@
+<!doctype html>
+<html style="width:360px; height:600px;" xml:lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>OKX Wallet</title>
+  <style>
+    * {
+      touch-action: manipulation;
+    }
+
+    body {
+      background-color: #fff;
+    }
+
+    #app-content {
+      display: flex;
+      flex-flow: column;
+    }
+
+    #loading__logo {
+      width: 133px;
+      height: 100px;
+      align-self: center;
+      margin: 180px 0 0 0;
+    }
+
+
+    #loading__spinner {
+      width: 30px;
+      height: 30px;
+      margin-top: 50px;
+      align-self: center;
+      border-color: #3d3d3d #dbdbdb #dbdbdb;
+      border-width: 2px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border-style: solid;
+      background-color: transparent;
+      animation: spinner-rotation 1s linear infinite;
+    }
+
+    @keyframes spinner-rotation {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(1turn)
+      }
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./scripts/ui/ui.css" title="ltr">
+</head>
+
+<body style="width:360px; height:600px;" class="theme-light">
+  <div id="app-content">
+    <img id="loading__logo" src="./static/images/logo.svg" alt="" />
+    <div id="loading__spinner"></div>
+  </div>
+  <div id="popover-content"></div>
+
+  <script src="./scripts/lib/globalthis.js"></script>
+  <script src="./scripts/lib/sentry.js"></script>
+  <script src="./scripts/ui/ui.js" type="module" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Pay network fee with"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "To safely transfer this NFT, this address is unavailable for gas payment"
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "We recommend that you transfer the NFT to a Tarpoot address that starts with “bc1”. Transferring it to other addresses may pose a risk of asset loss."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Select wallet to pay network fee"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "Pokračovat v návštěvě"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "Chystáte se navštívit web, který by vás mohl podvodně přimět k odhalení osobních nebo finančních informací. Pro bezpečnost vašich aktiv si prosím přečtěte pokyny níže, než budete pokračovat."
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "Chystáte se navštívit web, který by vás mohl podvodně přimět k odhalení osobních nebo finančních informací. Pro bezpečnost vašich aktiv si prosím přečtěte pokyny níže, než budete pokračovat."
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· OKX Wallet integruje zabezpečené databáze s cílem blokovat škodlivé weby."
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· Kontaktujte service@okx.com, pokud narazíte na podezřelé weby nebo chybná blokování. Děkujeme, že se zapojujete do zabezpečení blockchainu."
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· Pokud toto varování nechcete dostávat příliš často, můžete úroveň ochrany v zabezpečení peněženky změnit na nízkou."
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· Mějte prosím na paměti, že nemůžeme zaručit, že je určitý web bezpečný, ani v případě, že se vám toto varování nezobrazí. Odpovědnost za rizika spojená s návštěvou nebezpečného webu nesete vy."
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· Systém zabezpečení peněženky OKX Wallet detekuje tento web jako podezřelý. Odpovědnost za rizika spojená s návštěvou nebezpečného webu nesete vy."
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "Varování před podvodným webem"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "Varování před podezřelým webem"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "Zadejte adresu pro příjem"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0,000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "Schválit"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "Zrušit"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "Rozumím"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "OKX Wallet neověřuje vlastní sítě. Věnujte prosím pozornost možným bezpečnostním rizikům"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "Přidat síť"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "Adresa URL pro block explorer"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "ID blockchainu"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "Symbol"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "Síť"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "Síťová adresa URL"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "Přidání selhalo"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "Uložit"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "Nebyly nalezeny žádné záznamy"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "Zamítnout"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "Interakce s kontraktem"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "Nonce (optional)"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "Údaje o transakci"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "Z"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "Limit gas poplatku"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "Výše gas poplatku ({gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "Interakce s"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "Síť"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "Celková cena"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "Peněženka"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "Úspěšně nasazeno"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "Nepodařilo se nasadit"
+   },
+   "developer_mode_header_title_history": {
+      "message": "History"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "Cancel transaction"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "Completed"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": ""
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "Speed up"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "Čas"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "Interakce s kontraktem"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "Odeslat"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "Adresa kontraktu"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "Date"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "Zobrazit v prohlížeči"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "Bloky"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "Nasadit kontrakt"
+   },
+   "developer_mode_history_title_from": {
+      "message": "Z"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": ""
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "Interakce s"
+   },
+   "developer_mode_history_title_network": {
+      "message": "Síť"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Nonce"
+   },
+   "developer_mode_history_title_status": {
+      "message": "Status"
+   },
+   "developer_mode_history_title_time": {
+      "message": "Čas"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "Údaje o transakci"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "Hash transakce"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "Vlastní síť"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "Vývojářský režim"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "Ukončit"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "Přijmout"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "Odeslat"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "Historie"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "Spravovat krypto"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "Připojeno"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "Přidáno"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "Adresa sítě {network} byla zkopírována"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": ""
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "ID blockchainu používané rozhraním RPC je {chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "Too large. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "Pro tento symbol kryptoměny se nenašla žádná adresa URL RPC. Zkontrolujte prosím zadaný symbol."
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "Invalid number. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "Adresa URL vyžaduje odpovídající předponu HTTP/HTTPS"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "Adresa URL vyžaduje odpovídající předponu HTTP/HTTPS"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "Invalid URL. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "Toto ID blockchainu se již v síti {network} používá"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "Síť s ID blockchainu {number} obvykle používá {symbol}. Zkontrolujte prosím zadaný symbol"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "Neplatná adresa URL RPC"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "Nerozpoznáno. Zkontrolujte prosím zadanou adresu URL RPC"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "Tato adresa URL se již v síti {network} používá"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "Podrobnosti o kryptoměnách"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "Adresa kontraktu"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "Síť"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "Desetinná čárka"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "Zkopírováno"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "Podrobnosti o kryptoměnách"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "Approve"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "Contract interaction"
+   },
+   "developer_mode_list_text_send": {
+      "message": "Odeslat"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "To {addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "Adresa již existuje"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "Neplatná adresa"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "Aktualizovat"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "Chyba sítě. Proveďte prosím aktualizaci a zkuste to znovu."
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "Zadejte maximálně 11 znaků"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "Vlastní krypto"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "Vlastní krypto"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "Přidané krypto"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "Nepřidané krypto"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "Adresa kontraktu"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "Desetinná čárka"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "Síť"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "Symbol"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "Přidáno"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "Zrušit"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "Odebrat"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "Připojování k síti {network}"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "Neplatné zadání"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "Tuto síť odeberete ze seznamu"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "Odebrat tuto síť?"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "Přidat vlastní síť"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "Zrušit"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "Přejít zpět"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "Přepnout síť"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "Upravit"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "Zkusit znovu"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "Toto pole nemůže být prázdné"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "Neznámí poskytovatelé internetových služeb mohou zjistit stav blockchainu a sledovat vaše aktivity v síti. Síť prosím přidejte pouze v případě, že ji považujete za zcela důvěryhodnou"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "Přidat vlastní síť"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "Block explorer (volitelné)"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "ID blockchainu"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "Vlastní síť"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "Vlastní síť"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "Síť"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "Síť"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "Adresa URL RPC"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "Testovací síť"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "Symbol"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "Nemůžete odebrat připojenou síť."
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "Zkuste to znovu aktualizací zobrazení nebo přepněte na jinou síť."
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "Připojení selhalo"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "Odebráno"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "ID blockchainu používané pro podepisování transakcí se musí shodovat s ID blockchainu vráceným sítí. Můžete zadat desítkové číslice nebo šestnáctkové číslice s předponou 0x. Ve výchozím nastavení se zobrazují desítkové číslice"
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "Kopírovat"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "Na tuto adresu posílejte pouze aktiva sítě {chainname}"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "Optional"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "Nepodařilo se získat limit gas poplatku. Zadejte prosím"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "Obdržená částka"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "Z"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "Vstupní data (volitelné)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "Vstupní data"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "Max."
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "Síťový poplatek"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "Síťový poplatek"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Nonce (optional)"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Nonce"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "Částka"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "Adresa pro příjem"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "Na"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "Zůstatek: {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= gas poplatek ({gasprice} {unit}) × limit gas poplatku ({gaslimit})"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "Přizpůsobit"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "Limit gas poplatku"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "Výše gas poplatku ({unit})"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "Select crypto"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data copied"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "Žádné kryptoměny v peněžence"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "Další informace o transakci, například data volání při interakci s kontraktem nebo zpráva odeslaná příjemci"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "Vyšší než doporučená: {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "Nižší než doporučená: {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "Rozumím"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "Uzamknout peněženku"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "Vývojářský režim je k dispozici pouze v sítích EVM. Přepněte prosím peněženku a zkuste to znovu"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "Developers"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "Custom network"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "Enable to use advanced features such as testnet, custom RPC or Nonce"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "Předvolby"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "Nastavit jako výchozí peněženku"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "Verze {version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "Zabezpečení peněženky"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "Nastavení"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "V této síti není k dispozici vývojářský režim"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "Completed"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "Failed"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "Pending"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "Waiting"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_top_text_done": {
+      "message": "Hotovo"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "Spravovat síť"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "Aktiva celkem"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "Spravovat"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "Upravit peněženku"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "Uživatelský režim"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "Vítá vás"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "By proceeding, you'll allow {contract} access to your {asset}"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "Approve"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "Vyzvednout"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "Tokeny NFT k dispozici"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "Vyzvednout NFT"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "Go back to homepage"
+   },
+   "extension_bug_text_fixing": {
+      "message": "You can go back to homepage and try again later"
+   },
+   "extension_bug_title_error": {
+      "message": "Error"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "Page not found"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "Contract:"
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "Asset change (est.)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "Request from"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "Transaction amount"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "The network information entered belongs to the Sui network. Custom network only supports adding EVM networks"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "Unable to import a private key of the Sui network. Try a different one"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "extension_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "extension_history_index_pending": {
+      "message": "Pending"
+   },
+   "extension_history_title_farm": {
+      "message": "Farm"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "Vyzvednout"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "Počet tokenů NFT k vyzvednutí: {num}"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "Vyzvednuto"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "To secure your transaction, we estimate an amount for your reference"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "extension_input_errortip_max20": {
+      "message": "Maximum 20 characters"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "By proceeding, you'll revoke {contract} access to your {asset}"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "Revoke approval"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "Více informací naleznete na webu společnosti OKX"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/10558617769613-OKX-Wallet-Passed-Security-Key-Audit-by-Slowmist"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "Centrum podpory"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "Komunita OKX"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/okx"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "OKX Wallet"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "Informace o peněžence OKX Wallet"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "OKX Email"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "Bezpečnostní audit"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "Podmínky poskytování služeb"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "Správa peněženky"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "E-mailová adresa byla zkopírována"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "Requesting"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "Request success"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "{num} {crypto} requested"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "Too many requests sent to the faucet. Try again later"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "Confirm"
+   },
+   "extension_toast_btn_ok": {
+      "message": "OK"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "You need to spend more network fees in order to replace the transaction"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas price ({unit})"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "Current DApp network belongs to testnet. Switch to custom network mode in Settings and try again"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "Transaction canceled"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "Current fee"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "Required fee"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "Wallet address copied"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "Please switch wallet mode"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "Replace transaction"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "Zadejte adresu"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "Confirm"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "Rozumím"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "Pokud se vám nezobrazí možnost peněženky OKX Wallet, můžete se připojit přes Metamask nebo Phantom"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "Nastavíte si peněženku OKX jako preferovanou peněženku pro připojení"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "Nastavit jako výchozí peněženku"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "Jak se připojit k aplikaci DApp"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "Wallet connected"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "Up to {amount} wallets can be added"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "Couldn't obtain addresses. Make sure you've unlocked your device and opened the required app on it"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "Check {transaction} in Ledger wallet"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "Device disconnected. If you need to continue, connect Ledger to your computer via USB and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "Keep the USB connection between your Ledger and computer, unlock Ledger wallet, and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "OK"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "Retry"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "transaction details"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "Transaction details sent. Check and confirm via your device"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "Added"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "Traverse new networks with all-in-one wallet"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "Zajistěte si bezpečné transakce přes OKX Wallet"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "Univerzální brána ke všem aplikacím DApp"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "Potvrdit"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "Částka by měla být větší než 0"
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "Maximální základní poplatek, který jste nastavili, je nižší než požadovaný základní síťový poplatek {baseFee} Gwei. Provedení transakce trvá dlouho"
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "Prioritní poplatek by měl být větší než 0"
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "Požadovaný základní poplatek: {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "Max. základní poplatek"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "min"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "Prioritní poplatek"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "s"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "Obnovit peněženku"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "Zapomněli jste heslo?"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "OKX Wallet neuchovává vaše hesla v peněžence"
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "Pokud zapomenete heslo ke své peněžence, můžete si ho resetovat obnovením peněženky."
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "Mějte prosím na paměti, že pokud si obnovíte peněženku, aniž byste si ji nejprve zálohovali, pak o ni i všechna aktiva v ní přijdete. Ujistěte se prosím, že máte všechny peněženky zálohované."
+   },
+   "metax_mid_colored_stake": {
+      "message": "Stake"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "Zazálohovat"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "Obnovit peněženku"
+   },
+   "securityreset_header_text_reset": {
+      "message": "Obnovit peněženku"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "Zrušit"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "Mějte prosím na paměti, že pokud si obnovíte peněženku, aniž byste si ji nejprve zálohovali, pak o ni i všechna aktiva v ní přijdete. Ujistěte se prosím, že máte všechny peněženky zálohované."
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "Pokud chcete potvrdit obnovení peněženky, zadejte prosím: {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "Obnovit peněženku?"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "Varování před rizikem"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "Úroveň ochrany peněženky"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "Úroveň přísnosti screeningu. Vyšší úroveň může zablokovat více podezřelých webů."
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "Vysoká"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "Nízká"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "Blokovat škodlivé i podezřelé weby"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "Blokovat jen škodlivé weby"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "Úroveň ochrany peněženky"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "Nedostatečný zůstatek {token}"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "Swap"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "Máte nevyřízenou objednávku služby Swap za gas. Nemůžete jich najednou iniciovat více. Zkuste to prosím znovu po dokončení této objednávky."
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "OK"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "Služba Swap za gas je nyní uzavřena"
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "Podobnou objednávku jste již zadali. Doporučujeme novou objednávku zadat až po aktualizaci zůstatku."
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "Zobrazit v průzkumníku"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "Dosáhli jste denního limitu objednávek služby Swap za gas. Zkuste to prosím znovu zítra."
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "Náš mechanismus pro vyhodnocování rizik zjistil, že jste provedli nestandardní operace. Ztrácíte nárok na používání služby Swap za gas."
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "Zobrazit v průzkumníku"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "Nepodařilo se doplnit token {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "Nepodařilo se doplnit token {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "Vyměněno {payValue} {paySymbol} za {receiveValue} {receiveSymbol}"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "Transakce byla odeslána"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "Doplnit {nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value} general transactions"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "Vyberte částku pro platbu"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "Vyberte token pro platbu"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "Swap za gas"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "OK"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "Jde o odhadovaný směnný kurz ve službě Swap za gas. Je vypočítán s ohledem na tržní ceny a kurzy z centralizovaných burz. Skutečný kurz se může při potvrzení objednávky lišit. Používání služby Swap za gas vyžaduje také síťový poplatek, který bude automaticky započítán do částky, kterou zaplatíte."
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "Trading on blockchains requires paying a network fee with native tokens such as ETH, BNB, OKT, MATIC, etc. When you don't have these tokens to make a transaction, you can quickly swap tokens you already hold for native tokens using the Swap for gas feature (it's only available for a few networks).\nGetting native tokens via Swap for gas also requires a network fee, which will be automatically factored into the amount you pay.\nYou'll see an estimated number of general transactions when placing an order on Swap for gas. It refers to the number of token transfers you can make with your selected amount. The actual number may vary."
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "Swap za gas"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "Swap za gas"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "Swap za gas"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "Reference"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "Dostanete"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "Znovu načíst"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "Chyba sítě"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "Dokud nebude tato objednávka dokončena, nezadávejte prosím další, jinak by mohla selhat. Zavřením této stránky se proces nepřeruší. Podrobnosti můžete zkontrolovat v Historii."
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "Vyberte token pro platbu"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "Nepodařilo se získat cenu {paySymbol} a {receiveSymbol}, nelze potvrdit částku, kterou dostanete. Zkuste to prosím znovu později."
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "Nepodařilo se získat cenu {paySymbol}, nelze potvrdit částku, kterou zaplatíte. Zkuste to prosím znovu později."
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "Nepodařilo se získat cenu {receiveSymbol}, nelze potvrdit částku, kterou dostanete. Zkuste to prosím znovu později."
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "Síťový poplatek je v tuto chvíli příliš vysoký, což není vhodná doba k provedení transakce. Zkuste to prosím znovu později."
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "Insufficient {token} for network fee "
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "Recommend"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "Receive {token} with QR code or wallet address"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "Top up {token} quicker than ever"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "Receive"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "Swap for gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "Před zobrazením adresy si prosím nejdříve zazálohujte peněženku"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "Klient ledgeru"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "Stáhněte si prosím nejprve {downloadUrl} a pak po otevření domovské stránky klientu ledgeru klikněte na tlačítko Připojit níže."
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "Propojit hardwarovou peněženku"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "Přidat peněženku"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "Připojení selhalo"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "Ujistěte se, že jste svou hardwarovou peněženku připojili k počítači a odemkli ji"
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "Vyberte hardwarovou peněženku"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "Ujistěte se, že máte hardwarovou peněženku připojenou k počítači."
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "Připojování"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "Účet {newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "Byl vytvořen nový účet"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "Připojit"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "Propojit hardwarovou peněženku"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "Vytvořit novou peněženku"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "Hardware wallet"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "Privátní klíč"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "Seed"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "Importovat existující peněženku"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "Pro připojení ke své hardwarové peněžence musíte použít OKX Wallet v prohlížeči Google Chrome."
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "Váš prohlížeč se nepodporuje..."
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "Stáhnout Google Chrome"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "(starší verze)"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "Propojit hardwarovou peněženku"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "Před přidáním nového účtu musíte použít svůj poslední."
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "Připojování..."
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "Vyberte svou hardwarovou peněženku"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "Vytvořit novou peněženku se seedem"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "Pokud adresa vaší peněženky není uvedena níže, přepněte cestu na starší verzi (MEW / MyCrypto)."
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "Zapomenout tuto hardwarovou peněženku"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "Vyberte cestu"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "Vybrat peněženky"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "Importovat seed nebo privátní klíč"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "Můžete přidat maximálně 50 peněženek."
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "Vytvořeno"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "Odvolat schválení"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "Autorizace peněženky"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "Odvoláte schválení: {tokenSymbol}"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "Privátní klíč"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "Kopírování privátního klíče představuje riziko, že schránka bude snadno monitorována nebo zneužita aplikacemi třetích stran."
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "Ověřte svůj seed"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "Zapsal(a) jsem si ho"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "Stejně zkopírovat"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "Nekopírovat"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "Privátní klíč"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "Slova si můžete popořadě zapsat a bezpečně uložit"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "Zapište si seed"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "Ujistěte se, že se nikdo nedívá na vaši obrazovku."
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "Zobrazit seed"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "Úspěch"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "Zkopírováno"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.okx.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "Network fee"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "Register zkSync Lite to continue the transaction"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "Částka"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "Autorizovaná částka"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "Schválit"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "Interakce s"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "Sítě"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "Síť"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "Adresa URL pro block explorer"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "ID řetězce použité k podepisování transakcí pro tuto síť"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "ID řetězce použité k podepisování transakcí pro tuto síť"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "Symbol měny"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "Symbol zobrazovaný pro měnu této sítě"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "Adresa URL použitá jako block explorer pro tuto síť"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "Adresa URL blockchainového průzkumníka použitá touto sítí"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "Název spojený s touto sítí"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "Název spojený s touto sítí"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "Adresa URL použitá pro přístup k této síti"
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "Udělením povolení umožňujete entitě {name} převést vaše {tokenSymbol} a automatizovat vaše transakce"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "Nejdříve si prosím zazálohujte svůj seed, než začnete pracovat s decentralizovanou aplikací (DApp)"
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "Zavřít"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "Poskytnout"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "Přepnout"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "Při zvýšení poplatku se může zkrátit doba zpracování, ale není to zaručeno."
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "Tuto zprávu nelze dešifrovat kvůli chybě: {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "Připojujte se jen k webům, kterým důvěřujete."
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "Připojit účet"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "Vybrat účet nebo účty"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "Zálohujte si peněženku"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "Toto oprávnění jste schválili."
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "Povolí připojení aktuální DApp k peněžence OKX Wallet."
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "Peněženku OKX Wallet jste k tomuto webu nepřipojili. Chcete-li se k němu připojit, najděte tlačítko pro připojení a klikněte na něho"
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "Web {siteName} si chce tuto zprávu přečíst, aby bylo možné pokračovat"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "Síťová adresa URL"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "Toto oprávnění jste neschválili."
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName} žádá o váš zašifrovaný veřejný klíč. Pokud budete souhlasit, bude vám web moci posílat šifrované zprávy"
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "Požadovat veřejný šifrovací klíč"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "Podepsat"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "Žádost o podpis"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "Připojené účty"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "Aktuální síť"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "Chcete se připojit k hostiteli {host} s peněženkou {curWalletName}?"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "Připojené weby"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "Dešifrovat"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "Kopírovat šifrovanou zprávu"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "Dešifrovat zprávu"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "Dešifrovat požadavek"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "Externí rozšíření"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "Síť"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "Nový kontrakt"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "+ {length} navíc"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "Komu:"
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "Vybrat účty"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "Vybrat vše"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "Typ"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "Peněženka {curWalletName} se připojila k tomuto webu."
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "Peněženka {curWalletName} se odpojila od tohoto webu."
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "Odpojit"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "Zamítnout"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "Nedostatečný gas"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "Přidat navrhované tokeny"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "Připojit ke všem vašim {account}"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "Připojit se k {origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "účtům"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "Opravdu to chcete schválit? Schválení znamená, že tato DApp může kdykoli vybírat {tokenSymbol}."
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "Povolit tomuto webu toto:"
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "Tímto povolíte použité této sítě v peněžence OKX Wallet."
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "Přidat toto externí rozšíření do:"
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "Přidat token"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "Přidat tokeny"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "Neomezené"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "Zůstatek"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "ID řetězce"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "Data"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "Zadejte prosím maximální částku ({tokenSymbol})."
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "Peněženka OKX Wallet tuto síť nepodporuje"
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "Back"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "Couldn't send this crypto because it's not available for paying network fees"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "Address not registered"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "You need to register this address before using it"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "Register"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "Nesprávný seed. Zadejte ho prosím znovu"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "Seed"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "Vyberte jednotlivá slova v pořadí"
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "Delete wallet"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "Název peněženky by neměl překročit 20 znaků"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "Název peněženky už existuje"
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "Název účtu"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "Změněno"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "Are you sure to delete this wallet?"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "This action will remove this wallet from the app. You can re-import it with its seed phrase without affecting your assets. Be sure to back up your wallet before deleting it, otherwise you will permanently lose it and all assets"
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "Název peněženky"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "Odstraněno"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "Podmínkami poskytování služeb"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "Přejít na úpravy"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "Zrušit"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "Potvrdit"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "Tato adresa již existuje"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "Maximálně 20 znaků"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "Nesprávná adresa. Zkuste to prosím znovu"
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "Zadejte adresu"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "Zadejte jméno s délkou maximálně 20 znaků."
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "Ukončit přidávání adresy?"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "Adresa"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "Název"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "Přidat adresu"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "Další sítě již brzy!"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "Síť {network} není podporována"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "Zrušit"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "Pokračovat"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "Bezpečnostní upozornění"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "Odesíláte krypto na adresu kontraktu, nikoli na privátní adresu. Před pokračováním se prosím ujistěte, že je adresa platná, abyste se vyhnuli případným ztrátám."
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "Přidat adresu"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "Kopírovat adresu"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "Odstranit adresu"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "Upravit adresu"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "Všechny sítě"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "Vyhledat adresu nebo jméno"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "Žádná adresa"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "Adresář"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "Vybrat síť"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "Adresa byla přidána"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "Adresa byla odstraněna"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "Bylo dosaženo limitu adresáře (200 záznamů)"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "Všechny tokeny NFT této kolekce"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "Schválit"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "Pro"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number} h"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number} h"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number} h"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number} min"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number} min"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "Nikdy"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "Zpět"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "Prozkoumat výnosy"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "Prozkoumat další"
+   },
+   "wallet_extension_btn_register": {
+      "message": "Registrovat"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "Přepnout síť"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "Kopírovat privátní klíč"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "Přibl. výše k vyzvednutí"
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "Konečná výše k vyzvednutí bude potvrzena po úspěšném odeslání transakce na blockchainu"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "Konečná výše k vyzvednutí bude potvrzena po úspěšném odeslání transakce na blockchainu"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "Odhadovaná výše investice"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "Aktuální transakce probíhá již více než {pendingTips} h. Urychlete ji prosím nebo ji zrušte."
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "ID účtu"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "From"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "Zaregistrujte ZKSpace, ať můžete pokračovat v transakci"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "Zaregistrujte ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "Odstraněno"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "Chcete adrese {approved_address} schválit přístup ke všem vašim aktivům {approved_asset}?"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "Chcete adrese {approved_address} odvolat přístup ke všem vašim aktivům {approved_asset}?"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "By confirming, you will allow {address} to transfer your assets or automate transactions on your behalf. Please take caution before moving on"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "Unknown NFT collection"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "You'll allow this DApp to transfer your main-chain crypto, please proceed with caution"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "The transaction may fail due to a low network fee. We recommend you adjust the network fee before proceeding"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "Přehled"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "Můžete používat aplikace DApp, které podporují následující sítě"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "Před použitím je nutné toto krypto zaregistrovat"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "Ostatní sítě kompatibilní s EVM byly synchronizovány automaticky"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "Můžete používat aplikace DApp, které podporují následující sítě"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "Můžete používat aplikace DApp, které podporují následující sítě. Pokud se při používání těchto aplikací DApp vyskytnou problémy, kliknutím na tlačítko níže přepněte na sítě EVM"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "Tuto peněženku můžete používat ke správě svých kryptoaktiv v síti Bitcoin"
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "Tuto peněženku můžete používat ke správě svých kryptoaktiv v síti {network}"
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "Převést"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "Zrušit"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "Odstranit"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "Chcete odstranit adresu?"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "Vybrat síť"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "Upravit adresu"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "Uloženo"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "Go back"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "Aktualizovat"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "Byl překročen limit počtu znaků. Zadejte prosím memo znovu"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "Podepsání této zprávy může být nebezpečné. Za účelem ochrany vašich aktiv ji podepište pouze v případě, že je pro vás daný web naprosto důvěryhodný"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "Blíží se fork ETHW"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "Zdvojnásobte zdarma objem svých aktiv ETH!"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "Nejnovější verze"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "OKX Wallet nyní podporuje aktiva ETHW. Můžete to zkontrolovat"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "Číslo verze"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "Níže můžete přepnout na sítě EVM a sítě aplikací DApp se automaticky změní"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "Zobrazit v blockchainovém průzkumníku"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "Zobrazit v peněžence"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "Zapomněli jste heslo?"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "Zadáním „OBNOVIT“ níže potvrďte prosím obnovení"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "Potvrdit obnovení"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "Obnovit peněženku"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "Spočítat celkový počet NFT"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "Schválit"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "Odvolat schválení"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "Pro"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "Přijmout"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "Odeslat"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "Historie"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "Vyzvednout"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "Investovat"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "Vybrat"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "Type"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "Všechny sítě"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "Datum"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "Adresa"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "Schválit: {symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "Vyzvednout"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "Interakce s kontraktem"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "Razit"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "Přijmout"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "Z"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "Vybrat"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "Odvolat schválení: {symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "Revoke approval of {approvedasset}"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "Odeslat"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "Na"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "Zrušit transakci"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "Urychlení"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "Rušení urychlování"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "Čeká na zpracování"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "Čekání"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "Upsat aktiva"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "Více..."
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "Obchodovat"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "Čeká na zpracování ({num})"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "Kliknutím přidáte do adresáře"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "Dokončeno"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "Selhalo"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "Failed"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "Pending"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "Waiting"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "Dokončeno"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "Completed"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "Čeká na zpracování"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "Registrovat ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "Neznámý protokol"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "Neznámý token"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "Revoke approval"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "Připojeno"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "Historie"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "Swap"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "Po kliknutí můžete změnit formát adresy"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "Kliknutím přejdete na představení technologie SegWit"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "Vymazat"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "Můj seed má"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "12 slov"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "15 slov"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "18 slov"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "21 slov"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "24 slov"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "Peněženka již existuje"
+   },
+   "wallet_extension_info_pay": {
+      "message": "Zaplaceno"
+   },
+   "wallet_extension_info_receive": {
+      "message": "Přijato"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "Typ"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "Farming"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "Fond"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "Uložit"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "Staking"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "Trezory"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "Hesla se neshodují!"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "Hesla se shodují!"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "Velmi silný"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "Skvěle"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "Mohl by být silnější"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "Zadejte memo, maximálně 256 znaků"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "Vyhledat síť"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "Vyhledat síť"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "Staking"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "Trezor"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "Registrovaná adresa"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "Omezený přístup"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "Produkty nebo služby okx.com nejsou ve vaší oblasti ({area}) z důvodu místních zákonů a předpisů k dispozici."
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "Máte nezazálohované peněženky. Účty nezálohovaných peněženek se nemohou připojit k aplikacím DApp třetích stran"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "Zobrazit v blockchainovém průzkumníku"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "{num} in total"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "Schválená částka"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "Potvrzení bloku"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "Z"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "Interakce s"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "Síť"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "Stav"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "Čas"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "Na"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "Hash transakce"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "Neomezené"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "Adresa {contractaddress} je riziková. Za účelem ochrany svých aktiv se prosím před potvrzením transakce ujistěte, že je tato adresa často používanou adresou pro převody"
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "Použít"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "Zpět na všechny položky"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "Vymazat vše"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "Aktualizovat"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "Nejlepší nabídka"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "Poslední"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "Cena"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "Blockchainy"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "Stav prodeje"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "Nabídka přijata"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "Na prodej"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "Hledat"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "Zobrazit na trhu NFT"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "Adresa kontraktu"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "Minimální cena kolekce"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "Síť"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "Cena NFT"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "Tokenový standard"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "Filtrovat"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "Položky odeslané na chybnou adresu nelze obnovit."
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "Krypto"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "Tokeny NFT"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "Prozkoumat NFT"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "Ty nejlepší tokeny NFT najdete na OKX"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "Kolekce"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "Nepodařilo se načíst"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "Max."
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "Žádná kolekce"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "Pro toto hledání nebyly nalezeny žádné položky"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "Částka nemůže být 0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "Vstupní částka nemůže být vyšší než {max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "Zadejte částku, kterou chcete převést."
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "Hodnota NFT se počítá z minimální ceny kolekce"
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "Vlastněno"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "Pro tuto adresu pro příjem není zaregistrována kryptoměna {token}, takže ji nelze použít"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "Peněženka OKX Wallet je plně decentralizovaná a vaše heslo neukládáme. Pokud heslo zapomenete, obnovte si prosím peněženku a naimportováním seedu nebo privátního klíče si vytvořte nové heslo. Uchovávejte ho prosím v bezpečí."
+   },
+   "wallet_extension_option_allchain": {
+      "message": "Všechny sítě"
+   },
+   "wallet_extension_option_desc": {
+      "message": "{domain} je aktuálně v síti {chain}"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "Přepnout sítě EVM"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "Multichainové připojení"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "Aktiva celkem"
+   },
+   "wallet_extension_overview_more": {
+      "message": "Více"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "Adresa pro příjem byla zkopírována"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "Aktiva podle sítě"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "Pokračováním souhlasím s následujícími podmínkami společnosti OKX: {terms_service}"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "Doplnit {token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "Nedostatek {token} na síťové poplatky"
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "Skrýt seed"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "Schválit"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "Zrušit"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "Odvolat schválení"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "Zrušit"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "Odešlete transakci 0 {symbol} jako náhradu za původní transakci"
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "Z důvodu problému se sítí není zrušení transakce zárukou úspěchu"
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "Výše gas poplatku ({gasPrice} Gwei) *limit gas poplatku ({gasLimit})"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "Krypto není registrováno"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "Nedostatečný zůstatek"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "Kopírování privátního klíče do schránky může být sledováno nebo zneužito aplikacemi třetích stran. Uchovávejte prosím svůj privátní klíč v bezpečí"
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "Začněte s objevováním"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "Nedostatek {token} na síťové poplatky"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "Starší"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/learn/what-is-segregated-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "Native SegWit"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "Nested SegWit"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "Opakovaná objednávka"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "Pokračovat a odeslat"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "Zobrazit v historii"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "Zadali jste identickou objednávku. Chcete v této objednávce pokračovat?"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "Po"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "Před"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "Zrušit"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "Transakci urychlíte zvýšením síťového poplatku"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "= Cena gas poplatku ({gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "Všechny sítě"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "Interakce s"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "Projekt"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "Projektový kontrakt"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "Přidat síť"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "Formát adresy"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "Zrušit listing"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "Zrušit transakci"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "Interakce s kontraktem"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "Adresa byla zkopírována"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "Vybrat síť"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "Urychlení transakce"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "Hash transakce zkopírován"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "Opravdu chcete kopírovat?"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "Peněženka {walletName} vytvořena"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "Peněženka {walletName} naimportována"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "Stáhnout protokoly stavu"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "Částka, která umožňuje třetím stranám za vás provádět výběry a automatizovat transakce"
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "Pokračovat"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "Zamítnout"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "Varování před rizikem"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "{accountAddress} je hlášena jako škodlivá adresa kontraktu. Existuje riziko odcizení aktiv. Ujistěte se prosím, že je adresa bezpečná"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "Schválená částka"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "Schválená částka"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "Adresa {accountAddress} je označena jako škodlivá. Interakce s touto adresou může ohrozit bezpečnost vašich aktiv. Ujistěte se, že komunikujete s bezpečnou adresou."
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "Confirm"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "Couldn't trade with fiat money since retrieving est. value of this crypto isn't available"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "Zjistěte více"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "OKX Wallet nyní podporuje aktiva ETHW"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. OKX Wallet nyní podporuje aktiva ETHW"
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. Svět je tak velký, že ho chci vidět"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "Co je nového"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "Co je nového"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "Co je nového"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "V2.15.10"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "Co je nového ve verzi 2.16.2"
+   },
+   "wallet_extension_rn_button": {
+      "message": "Rozumím"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. Nyní můžete provádět transakce a interagovat s aplikacemi DApp v síti ETHF"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "Nyní můžete provádět transakce a interagovat s aplikacemi DApp v síti Aptos"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. Nyní lze prověřovat podezřelé weby a upozorňovat u nich na rizika"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. NFTs on Aptos can now be displayed and claimed in the wallet"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. Nyní můžete v sítích EVM a Solana přímo provádět transakce pomocí aplikací DApp"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. Nyní můžete provádět transakce a interagovat s aplikacemi DApp v síti Tron."
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. You can now use ENS, Unstoppable Domains, and SPACE ID domains to make transfers"
+   },
+   "wallet_extension_rn_title": {
+      "message": "Co je nového"
+   },
+   "wallet_extension_rn_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "Pokračovat"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "Zamítnout"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "Varování před rizikem"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "{accountAddress} je hlášena jako škodlivá adresa. Existuje riziko odcizení aktiv. Ujistěte se prosím, že je adresa bezpečná"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "Zobrazit informace o dalších podvodech"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "{accountAddress} je hlášena jako škodlivá adresa kontraktu. Existuje riziko odcizení aktiv. Ujistěte se prosím, že je adresa bezpečná"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "Aktuálně je podporováno více než {number} EVM sítí"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "EVM sítě"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "Vaše adresa je adresa sítě EVM. Můžete ji používat ke správě svých aktiv v jiných sítích kompatibilních s EVM."
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "Mezi podporované sítě kompatibilní s EVM patří: {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "Vyberte kryptoměnu pro platbu"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "Přidat nyní"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "Confirm"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "Další"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "Next"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "To"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "Adresář"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "Poslední adresa"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "Zadejte prosím platnou adresu"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "Není v adresáři"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "Couldn't estimate"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "Zadejte adresu nebo název adresy"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "Search currency"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "All"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "Výchozí"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "Balance"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "Pay with"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "Select crypto to pay for network fees"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "Canceled"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "Ruší se"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "Canceling"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "Urychlování"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "Speeding up"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "Částka"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "Zůstatek"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "Max."
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "The maximum amount is {fiatamount} ({cryptoamount}) after deducting network fees"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "Receiving address"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "Select currency"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "Nenalezena žádná kryptoměna {crypto} k odeslání"
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "Transfer at least {amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "Předvolby"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "Automatické zamknutí"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "Zálohovat peněženku"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "Předvolby"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "Změnit heslo"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "Nastavit jako výchozí peněženku"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "Adresář"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "Spravovat kontakty"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "Verze {number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "Don't refresh this page as it could cause hardware wallet import failure. To protect your privacy, OKX Wallet doesn't store your wallet password. Please keep your password safe."
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "Schválit přístup ke všem tokenům NFT této kolekce?"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "Vyzvednout"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "Přibl. k vyzvednutí"
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "Nyní můžete přes OKX Wallet prozkoumat více než 25 sítí"
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "Z"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "Do"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "Investovat s"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "Přibl. invest. s"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "Přijmout"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "Vybrat z"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "Registrovat"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "Odvolat přístup ke všem tokenům NFT této kolekce?"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "DeFi"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "Vše z vaší kolekce {collection}"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "Schválená aktiva"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "Automaticky jsme pro vás synchronizovali další sítě {networkname}"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "Zrušit listing"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "Zapnuto"
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "Vaše univerzální brána do světa DeFi"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "Poznámka"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "Nebyly nalezeny žádné výsledky"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "Schválit"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "Schválit: {collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "Neznámý token NFT"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "Neznámá kolekce NFT"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "Zrušit listing"
+   },
+   "wallet_extension_title_memo": {
+      "message": "Poznámka"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "Poznámka (volitelné)"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "Multichainové připojení vybráno ve výchozím nastavení"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "Podpora multichainového připojení"
+   },
+   "wallet_extension_title_register": {
+      "message": "Registrovat"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "Registrovat krypto"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "Odvolat schválení"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "Peněženka OKX Wallet podporuje následující sítě"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "Aktuální síť"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "Přepnout síť"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "Adresa peněženky"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "Adresa byla zkopírována"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "Byl změněn formát adresy"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "Schválit: {collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "Network error. Please check your network connection"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "Teď ne"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "Nastavit jako výchozí peněženku"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "Úspěšně vytvořeno"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "Nepovedlo se zaregistrovat"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "Hardwarová peněženka aktuálně podporuje pouze aktiva EVM"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "Úspěšně naimportováno"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "Úspěšně naimportováno"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "Maximální částka je{max} sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "Minimální částka je{min} sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "Chyba sítě. Proveďte prosím aktualizaci a zkuste to znovu."
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "Pokud není adresa pro příjem plateb aktivována, transakce může selhat"
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "Registrováno"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "Na tuto adresu posílejte pouze aktiva sítě {chain_name}"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "Nastavte peněženku OKX Wallet jako výchozí peněženku, pokud ji chcete používat k připojení k DApps"
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "Úspěšně nastaveno"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "Probíhá zpracování"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "Peněženka OKX Wallet byla obnovena"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "An unknown error occurred while processing your transaction. Please re-initiate the transaction"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "Chcete peněženku OKX Wallet nastavit jako výchozí peněženku?"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "Kopírovat adresu"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "Připojit"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "Nastavení"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "Spravovat peněženku"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "Průměrně"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "Další"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "Přijatá částka"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "z"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "=výše gas poplatku ({gasPrice} Gwei)*limit gas poplatku ({gasLimit})"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "až"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "Přizpůsobit"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "Limit gas poplatku by měl být v rozmezí {minGasLimit} a {maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "Výše gas poplatku by měla být vyšší než {minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "Limit gas poplatku"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "Cena gas poplatku (GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "Rychle"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "Zadejte prosím platnou adresu"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "Vstupní částka nesmí být prázdná"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "Částka musí být vyšší než 0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "Nedostatečný zůstatek"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "Nedostatečný objem {chainSymbol} k zaplacení síťového poplatku"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "Neplatná adresa"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "Adresa pro příjem by se měla lišit od adresy pro odesílání"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "Na"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "Max."
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "Částka"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0,000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "Zadejte adresu peněženky nebo název domény"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "Dál čekat"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "Nahradit"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "Přeskočit"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "Vaše transakce selhala"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "Máte transakci nevyřízenou déle než hodinu"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "Pokud máte transakci, která selhala, nemůžete zahájit novou. Chcete transakci, která selhala, nahradit aktuální transakcí?"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "Pokud máte nevyřízenou transakci, nemůžete zahájit novou transakci, dokud se nedokončí ta nevyřízená. Chcete nevyřízenou transakci nahradit aktuální transakcí?"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "Pomalu"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "min"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "Adresa sítě {network} byla zkopírována"
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "Rozumím"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "Zapomněli jste heslo?"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "Promyslím si to"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "Beru na vědomí všechna výše uvedená oznámení a chci si resetovat peněženku"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "OKX Wallet je plně decentralizovaná platforma. Vaše heslo neukládáme. V případě ztráty ho není možné nijak zjistit."
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "V případě ztráty hesla je resetování peněženky pomocí jejího seedu nebo privátního klíče JEDINÝM způsobem, jak nastavit nové heslo a obnovit přístup."
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "Resetováním peněženky se vymažou všechna stávající data peněženky v aktuálním zařízení. Pokud resetujete peněženku bez zálohování jejího seedu nebo privátního klíče, pak o peněženku a všechna aktiva v ní trvale přijdete."
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "Nastavit OKX Wallet jako výchozí peněženku"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "Zazálohovat"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "Nezálohovali jste si peněženku"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "Pokud dojde ke ztrátě zařízení, přeinstalování aplikace nebo odstranění dat aplikace, přijdete o tuto peněženku i s aktivy v ní a nebudete je moci získat zpět"
+   },
+   "wallet_home_btn_close": {
+      "message": "Zavřít"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "Potvrzeno"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "Importovat peněženku"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "Vytvořit peněženku"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "Spravovat"
+   },
+   "wallet_home_btn_receive": {
+      "message": "Přijmout"
+   },
+   "wallet_home_btn_send": {
+      "message": "Odeslat"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "S decentralizovaným světem se teprve seznamuji"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "Odemknout"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "Připojit"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "Posuzuje se chyba s aktivy. Opusťte aktuální stránku a zkuste to později."
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "Připojeno"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "Zadejte své heslo"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "V peněžence OKX Wallet došlo k chybě"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "Váš portál pro Web3"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "Později"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "Před provedením jakéhokoli vkladu si nezapomeňte zálohovat seed"
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "Kryptopeněženka ‧ svět NFT ‧ přístup k aplikacím DApp"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "Zkuste to znovu zavřením a novým otevřením překryvného okna nebo kontaktujte podporu."
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "Stack:"
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "Kód: {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "Detaily chyby"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "Zpráva: {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "Kód: {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "Zkuste to znovu opětovným načtením stránky nebo kontaktujte podporu"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "Peněženku už mám"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "Chyba sítě. Zkuste to prosím později."
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "Neplatný. Zadejte ho prosím znovu"
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "Importovat přes privátní klíč"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "Seed"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "Zadejte svůj privátní klíč"
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "Zadejte prosím jednotlivá slova seedu oddělená mezerami."
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "Peněženka s privátním klíčem už existuje"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "Peněženka už existuje"
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "Podporují se privátní klíče se standardní 64bitovou délkou."
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "Neplatná zadání. Zkuste to prosím znovu."
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "Seed"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "Jednotlivá slova oddělte jednou mezerou."
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "Podporovány jsou všechny formáty seedu (12, 15, 18, 21 a 24 slov)."
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "Privátní klíč"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "Vložte nebo zadejte svůj privátní klíč."
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "Seed"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "Jsou podporovány seedy o 12, 15, 18, 21 a 24 slovech"
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "Zkontrolujte pořadí seed."
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "Nesprávný seed. Zadejte ho prosím znovu"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "Počet slov: {length}"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "OKX Wallet"
+   },
+   "wallet_intro_text_desc": {
+      "message": "OKX Wallet je univerzální multiplatformní (mobil/web/rozšíření) kryptopeněženka"
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "Propojit hardwarovou peněženku"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "Zazálohujte si svůj seed"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "Zálohovat peněženku"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "Hotovo"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "Spravovat"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "Desetinné"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "Neplatná adresa"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "Tato kryptoměna již existuje"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "Adresa příjemce je neplatná."
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "Adresa kontraktu"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "Více blockchainů"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "Přidané krypto"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "Vlastní krypto"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "Spravovat"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "Vyhledejte kryptoměnu nebo adresu kontraktu."
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "Symbol"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "Populární kryptoměny"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "Přidat vlastní krypto"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "Vlastní krypto"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "Úspěch"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "Přidat peněženku"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "Zálohovat peněženku"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "Upravit peněženku"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "Přidat účet"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "Znovu připojit"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "Existující účet. Zkuste to prosím znovu"
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "Hardwarová peněženka připojena"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "Aktiva celkem"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "Účet"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "Účet"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "Peněženka"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "Hardwarová peněženka"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "Privátní klíč"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "Schválení"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "Kopírovat"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "Zkopírováno!"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "Nebyly nalezeny žádné záznamy"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "OK"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "Crypto not supported"
+   },
+   "wallet_send_text_register_address": {
+      "message": "Register address"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "Potvrdit"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "Minimálně 6 znaků"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "Hesla se neshodují. Zkuste to prosím znovu"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "Nesprávné heslo. Zkuste to prosím znovu."
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "Další informace"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "Re-enter your password"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "Zadejte heslo"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "Zadejte heslo"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "Zadejte znovu nové heslo"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "Potvrdit heslo"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "Heslo"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "Stáhnout protokoly stavu"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "Stáhnout protokoly stavu"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "Uzamknout peněženku"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "Pokračovat"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "Potvrdit obnovení"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "I'm aware of the above risks"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "Vyberte jazyk"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "Jazyk"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "Obecné"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "Varování před rizikem"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "Nastavení"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "Stavové protokoly"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "Ujistěte se, že máte peněženku zálohovanou."
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "Nesprávné heslo. Zkuste to prosím znovu."
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "Změnit heslo"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "Zadejte heslo (minimálně 6 znaků)"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "Zadejte své staré heslo"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "Zadejte znovu nové heslo"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "Nové heslo"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "V zájmu ochrany vašeho soukromí neukládá OKX Wallet heslo k vaší peněžence. Uchovávejte prosím své heslo v bezpečí."
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "Staré heslo"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "Potvrdit"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "Při načítání stavových protokolů došlo k chybě"
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "Stavové protokoly"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "Stavové protokoly pro OKX Wallet"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "Stavové protokoly obsahují vaše adresy veřejných účtů a transakční záznamy"
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "Měna"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "Obnovit peněženku"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "Před obnovením peněženky se ujistěte, že jste si zálohovali její seed nebo privátní klíč. V opačném případě o peněženku a všechna aktiva v ní trvale přijdete"
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "Pokud peněženku obnovíte, aniž byste ji zálohovali, trvale o ni i o veškerá aktiva přijdete. Před obnovením si všechny peněženky zazálohujte a uchovávejte v bezpečí svůj seed nebo privátní klíč"
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "Zabezpečení peněženky"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "Spravovat peněženku"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "Pokročilé"
+   },
+   "wallet_settings_text_desc": {
+      "message": "Verze, centrum podpory a kontaktní údaje"
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "Měna, jazyk a další nastavení"
+   },
+   "wallet_settings_text_language_en": {
+      "message": "cs"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "Změnit heslo, obnovit peněženku"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "Přidat, upravit nebo zálohovat peněženku"
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "Nastavit heslo"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "V zájmu ochrany vašeho soukromí neukládá OKX Wallet heslo k vaší peněžence. Uchovávejte prosím své heslo v bezpečí."
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "Zrušit transakci"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "Potvrzení trans."
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "Potvrdit transakci"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "Zpráva"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "{index} z {total} potvrzení"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "Síťový poplatek"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "TxID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "Čeká na zpracování: {num}"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "Čas"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "Typ"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "Adresa kontraktu"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "Název sítě"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "Nenalezeny žádné transakce"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "Odesílání..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "Adresa byla zkopírována"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "Zkopírovat do schránky"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "Zkopírovat TxID do schránky"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "Celková cena"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "Autorizace"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "Potvrzování"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "Částka nesmí být prázdná"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "Částka by měla být vyšší než 0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "Zrušit"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "Max."
+   },
+   "wallet_transfer_btn_next": {
+      "message": "Další"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "Urychlit"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "Původní transakci nahraďte odesláním 0 {coinSymbol}. Z důvodů sítě není zrušení transakce zárukou úspěchu."
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "Trans. poplatek"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "Peněženka"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "Poplatek za provedení transakce"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "Nasazení kontraktu"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "Interakce s kontraktem"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "Limit gas poplatku musí být alespoň {minimumGasLimit}."
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "Nedostatečný zůstatek"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "Nedostatečný objem {chainSymbol} k zaplacení gas poplatku"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "Zadejte platnou adresu"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "Selhalo"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "Limit gas poplatku nemůže být prázdný"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "Maximum 15M"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "Limit gas poplatku musí být vyšší než 21,000."
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "Výše gas poplatku nemůže být prázdná."
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "Výše gas poplatku musí být vyšší než 0."
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "Přizpůsobit"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "Limit gas poplatku"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "min"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "Výše gas poplatku"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "Výše gas poplatku (GWEI)"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "Vlastní"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "Zpracovává se"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "Detaily transakce"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "Adresa pro příjem by se měla lišit od adresy pro odesílání"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "Nedržíte žádné kryptoměny"
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "Urychlení transakce použitím vyššího gas poplatku zvýší jeho šance, že ho rychleji zpracuje síť, ale není to vždy zaručeno."
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "Vybrat síť"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "{first} – schválení selhalo"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "{first} – úspěšně schváleno"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "Nepodařilo se odvolat schválení pro {first}"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "Byla odeslána zpráva o odvolání schválení pro {first}"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "Bylo odvoláno schválení {first}"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "Interakce s kontraktem selhala"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "Interakce s kontraktem byla úspěšná"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "Nepodařilo se zobchodovat NFT"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "NFT bylo úspěšně zobchodováno"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "Odeslání {first} {second} selhalo"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "Úspěšně odesláno {first} {second}"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "Swap {first} {second} za {third} {fourth} selhal"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "Úspěšně swapem vyměněno {first} {second} za {third} {fourth}"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "Transakce byla odeslána"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "Zobrazit v průzkumníku"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "Nejprve prosím zpracujte všechny transakce."
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "zadat adresu (0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "Vybrat kryptoměnu"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "Hledat token"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "Počkejte prosím na potvrzení bloku."
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "Hardwarový podpis se nezdařil"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "Přihlásit se hardwarovou peněženkou"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "Po"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "Před"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "Přijatá částka"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "Síťový poplatek"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "Na"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "Z"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "Průměrně"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "Rychle"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "Pomalu"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "Zpět na domovskou stránku"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "Odesláno"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "Dokončeno"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "Čeká na zpracování"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "Nelze odemknout bez předchozího trezoru."
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "Hardwarová peněženka podporuje pouze aktiva v sítích kompatibilních s EVM"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "Nedostatečný zůstatek tokenů SOL k zaplacení síťového poplatku"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "Nedostatečný zůstatek. Aby bylo možné iniciovat transakci, musíte mít na účtu minimálně {number} SOL."
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "Odešlete prosím minimálně {number} SOL, abyste splnili minimální poplatek Rent Exempt Fee"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "Rezervujte si prosím minimálně {number} SOL pro poplatek Rent Exempt Fee"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "Vaše peněženka byla obnovena"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "Schválit"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "Žádná data"
+   }
+}

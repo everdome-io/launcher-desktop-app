@@ -1,0 +1,5 @@
+import{f as a,g as b}from"./chunk-JCASDMPT.js";import"./chunk-TL6DTDXH.js";import"./chunk-XKAB6HLO.js";import"./chunk-LDTVDPAV.js";import"./chunk-EQU2E42M.js";import"./chunk-Z3F5FSEH.js";import"./chunk-HXYG5WFL.js";import"./chunk-POEDNLGY.js";import"./chunk-JHZWQWSH.js";import"./chunk-IWZNXKTF.js";import"./chunk-3HAJNEFC.js";import"./chunk-APQAOS3P.js";import"./chunk-QYLV6ZSX.js";import"./chunk-Z2IGO6V3.js";import"./chunk-MFUKPLPN.js";import"./chunk-TV2DN7Q7.js";import"./chunk-MXVCAI6G.js";import"./chunk-PGO4M2SB.js";import"./chunk-4SCEKLXQ.js";import"./chunk-RYMLTDAH.js";import"./chunk-VNM7HA44.js";import"./chunk-ZHOBAN7R.js";import"./chunk-TNSQYVIA.js";import"./chunk-65FA4JB3.js";import"./chunk-KWSHYTX5.js";import"./chunk-SBW523XW.js";import"./chunk-NEW56Z2U.js";import"./chunk-ZC3KOV3J.js";import"./chunk-GGV226OL.js";import"./chunk-4DLG5GSZ.js";import"./chunk-H5E7HL55.js";import"./chunk-LN5KNA7T.js";import"./chunk-HX34N4W4.js";import"./chunk-F7QJ6WQ5.js";import"./chunk-TNVBYBO5.js";import"./chunk-KRRNVCWZ.js";import"./chunk-YC2Z7II3.js";export{b as default,a as useUnapprovedRequests};
+
+window.inOKXExtension = true;
+window.ASSETS_BUILD_TYPE = "publish";
+
