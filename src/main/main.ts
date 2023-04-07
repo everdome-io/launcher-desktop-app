@@ -20,6 +20,8 @@ import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
 
+const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
+
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
 let okxWindow: BrowserWindow | null = null;
@@ -131,6 +133,7 @@ const createProfileWindow = async () => {
   profileWindow.loadURL(resolveHtmlPath('profile.html'));
 
   profileWindow.setPosition(1300, 200);
+  profileWindow.setAlwaysOnTop(true, 'floating', 1);
 
   profileWindow.on('ready-to-show', () => {
     if (!profileWindow) {
@@ -179,6 +182,7 @@ const createOKXWindow = async () => {
   });
 
   okxWindow.setPosition(1295, 200);
+  okxWindow.setAlwaysOnTop(true, 'floating', 2);
 };
 /**
  * Add event listeners...
@@ -382,8 +386,8 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
   if (state === true) profileWindow?.show();
 });
 
-ipcMain.on(Channels.openOKXExtension, (_event) => {
-  profileWindow!.loadURL('https://okx.prod.aws.everdome.io/');
+ipcMain.on(Channels.openOKXExtension, (event) => {
+  profileWindow!.loadURL(OKX_WEB_APP_URL);
 
   const extensionId = 'mcohilncbfahbmgdjkbpemcciiolgcge';
   if (okxWindow) {

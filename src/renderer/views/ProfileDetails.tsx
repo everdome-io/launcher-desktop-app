@@ -1,5 +1,5 @@
 import { AppState, Channels } from '@interfaces';
-import { FC, useState, useEffect } from 'react';
+import { FC, useState } from 'react';
 import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
 import settingsIcon from 'assets/images/settings-icon.png';
@@ -8,14 +8,6 @@ import './ProfileDetails.css';
 
 export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
   const [isLogged, setIsLogged] = useState(false);
-
-  const [okxTest, setOkxTest] = useState('not installed');
-
-  useEffect(() => {
-    if (typeof window.okxwallet !== 'undefined') {
-      setOkxTest('installed!');
-    }
-  }, []);
 
   const connectWallet = () => {
     window.electron.ipcRenderer.sendMessage(Channels.openOKXExtension);
@@ -60,8 +52,6 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
         </div>
       </div>
       <div className="MainSection">
-        <p style={{ marginBottom: 100 }}>OKX Wallet: {okxTest}</p>
-
         {!isLogged && (
           <div className="EmptyMessage">
             <p className="InfoText">If you new to decentralized world</p>
