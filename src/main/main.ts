@@ -143,6 +143,14 @@ const createProfileWindow = async () => {
     }
   });
 
+  profileWindow.webContents.on('did-navigate', (event, url) => {
+    if (url.includes('/success')) {
+      console.log(`did-navigate`);
+      profileWindow?.loadURL(resolveHtmlPath('profile.html'));
+      okxWindow?.hide();
+    }
+  });
+
   profileWindow.on('closed', () => {
     profileWindow = null;
   });
@@ -170,7 +178,7 @@ const createOKXWindow = async () => {
     },
   });
 
-  okxWindow.setPosition(1050, 200);
+  okxWindow.setPosition(1295, 200);
 };
 /**
  * Add event listeners...
@@ -375,15 +383,11 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
 });
 
 ipcMain.on(Channels.openOKXExtension, (_event) => {
+  profileWindow!.loadURL('https://okx.prod.aws.everdome.io/');
+
   const extensionId = 'mcohilncbfahbmgdjkbpemcciiolgcge';
   if (okxWindow) {
     okxWindow.loadURL(`chrome-extension://${extensionId}/home.html`);
     okxWindow.show();
   }
-});
-
-ipcMain.on(Channels.closeOKXExtension, (_event) => {
-  // if (okxWindow) {
-  //   okxWindow.hide();
-  // }
 });
