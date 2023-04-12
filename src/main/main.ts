@@ -22,6 +22,10 @@ import { extractWithProgress } from './utils/extract';
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
 
+const log = require('electron-log');
+
+Object.assign(console, log.functions);
+
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
 let okxWindow: BrowserWindow | null = null;
@@ -33,6 +37,9 @@ if (process.env.NODE_ENV === 'production') {
 
 const isDebug =
   process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
+
+log.transports.file.resolvePath = () =>
+  path.join(app.getAppPath(), 'logs/main.log');
 
 if (isDebug) {
   require('electron-debug')();
@@ -50,6 +57,7 @@ const installExtensions = async () => {
     )
     .catch(console.log);
 };
+
 const getAssetPath = (...paths: string[]): string => {
   const RESOURCES_PATH = app.isPackaged
     ? path.join(process.resourcesPath, 'assets')
