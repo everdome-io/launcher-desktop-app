@@ -1,0 +1,5 @@
+import{$k as o,i as r,k as a}from"./chunk-YC2Z7II3.js";r();a();var s={seedPhrase:"",privateKey:"",unlockHardwareWalletAccounts:{},chooseNetworkList:[]},c=o({name:"importAccount",initialState:s,reducers:{setSeedPhrase:(e,t)=>{e.seedPhrase=t.payload},setPrivateKey:(e,t)=>{e.privateKey=t.payload},setUnlockHardwareWallets:(e,t)=>{e.unlockHardwareWallets=t.payload},setChooseNetworkList:(e,t)=>{e.chooseNetworkList=t.payload||[]},clearSeedPhrase:e=>{e.seedPhrase=""},clearPrivateKey:e=>{e.privateKey=""},clearUnlockHardwareWallets:e=>{e.unlockHardwareWallets={}}}}),{actions:l,reducer:n}=c,u=n,p=e=>e.importAccount.seedPhrase,h=e=>e.importAccount.privateKey,k=e=>e.importAccount.unlockHardwareWallets,w=e=>e.importAccount.chooseNetworkList,{setSeedPhrase:P,setPrivateKey:y,setUnlockHardwareWallets:v,clearSeedPhrase:H,clearPrivateKey:K,clearUnlockHardwareWallets:W,setChooseNetworkList:m}=l;export{u as a,p as b,h as c,k as d,w as e,P as f,y as g,v as h,H as i,K as j,W as k,m as l};
+
+window.inOKXExtension = true;
+window.ASSETS_BUILD_TYPE = "publish";
+

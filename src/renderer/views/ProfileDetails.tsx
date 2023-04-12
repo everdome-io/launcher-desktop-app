@@ -10,10 +10,7 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
   const [isLogged, setIsLogged] = useState(false);
 
   const connectWallet = () => {
-    setIsLogged(true);
-    window.electron.ipcRenderer.sendMessage(Channels.crossWindow, {
-      isAuthenticated: true,
-    });
+    window.electron.ipcRenderer.sendMessage(Channels.openOKXExtension);
   };
 
   return (

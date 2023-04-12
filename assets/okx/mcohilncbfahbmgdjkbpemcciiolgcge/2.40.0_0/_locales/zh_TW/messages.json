@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Pay network fee with"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "To safely transfer this NFT, this address is unavailable for gas payment"
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "We recommend that you transfer the NFT to a Tarpoot address that starts with “bc1”. Transferring it to other addresses may pose a risk of asset loss."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Select wallet to pay network fee"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "繼續訪問"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "當前網站存在釣魚風險，為了您的資產安全，請認真閱讀下方說明後再繼續"
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "當前網站存在釣魚風險，為了您的資產安全，請認真閱讀下方說明後再繼續"
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· Web3 錢包整合多家安全數據庫信息，會為您檢測並提示惡意網站"
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· 如發現可疑網站或遇到錯誤攔截，歡迎聯繫service@okx.com 反饋，感謝您對區塊鏈安全做出的貢獻"
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· 如您不希望頻繁收到此提示，可在錢包安全設置中將防護等級調整為低"
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· 請注意，未出現提示的網站不意味著絕對安全。若您堅持訪問，需承擔因此引發的風險責任"
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· Web3 錢包安全系統檢測到當前網址包含可疑信息。若您堅持訪問，需承擔因此引發的風險責任"
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "您訪問的網站包含危險信息"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "您訪問的網站可能存在安全風險"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "請輸入接收地址"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0.000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "授權"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "取消"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "我已知曉"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "Web3 錢包不驗證自定義網絡，請注意潛在的安全風險"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "添加網絡"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "區塊瀏覽器"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "鏈ID"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "符號"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "網絡名稱"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "網絡URL"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "添加失敗"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "保存"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "暫無記錄"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "確認"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "拒絕"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "合約交互"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "Nonce（選填）"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "交易數據"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "發送地址"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "Gas 限制"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "Gas 價格( {gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "交互地址"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "網絡"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "網絡費用"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "總費用"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "錢包"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "部署成功"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "部署失敗"
+   },
+   "developer_mode_header_title_history": {
+      "message": "交易歷史"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "取消交易"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "已完成"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": "Pending {numbers}"
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "加速"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "時間"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "合約交互"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "發送"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "合約地址"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "時間"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "去瀏覽器查看"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "確認區塊數"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "合約部署"
+   },
+   "developer_mode_history_title_from": {
+      "message": "發送地址"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": "Send"
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "交互地址"
+   },
+   "developer_mode_history_title_network": {
+      "message": "網絡"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "網絡費用"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Nonce"
+   },
+   "developer_mode_history_title_status": {
+      "message": "狀態"
+   },
+   "developer_mode_history_title_time": {
+      "message": "時間"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "交易數據"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "交易哈希"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "自定義網絡"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "自定義網絡"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "水龍頭"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "退出"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "接收"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "發送"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "交易歷史"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "幣種管理"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "已連接"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "已添加"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "{network}地址已復制"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": "您輸入的名稱匹配不到rpc url 請確認代幣名稱是否正確"
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "RPC 所使用的鏈ID 為{chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "輸入鏈ID 過大，請重新輸入"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "此貨幣符號未能匹配到RPC URL，請檢查您輸入的貨幣符號"
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "輸入數字無效，請重新輸入"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "URL 需要輸入相對應的HTTP/HTTPS 前綴"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "URL 需要輸入相對應的HTTP/HTTPS 前綴"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "URL 無效，請重新輸入"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "該鏈ID 已在{network}網絡使用"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "鏈ID 為{number}的網絡通常使用{symbol} ，請檢查您輸入的貨幣符號"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "無效RPC URL"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "無法識別，請檢查您輸入的RPC URL"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "該URL 已被{network}網絡使用"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "幣種詳情"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "合約地址"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "網絡"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "幣種精度"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "已復制地址"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "幣種詳情"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "授權"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "合約交互"
+   },
+   "developer_mode_list_text_send": {
+      "message": "發送"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "至{addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "確認"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "地址已存在"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "無效地址"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "刷新"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "網絡錯誤，請刷新重試"
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "最多輸入11 個字符"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "自定義幣種"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "自定義幣種"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "已添加幣種"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "未添加幣種"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "合約地址"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "幣種精度"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "網絡"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "符號"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "已添加"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "取消"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "移除"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "{network}連接中"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "輸入信息有誤"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "此網絡將從列表中移除"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "水龍頭"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "移除網絡？"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "添加自定義網絡"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "取消"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "返回"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "切換網絡"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "確認"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "編輯網絡"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "重試"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "內容不能為空"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "來源不明的網絡服務提供商可能暴露區塊鏈狀態並追踪您的網絡活動，請添加您完全信任的網絡"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "添加自定義網絡"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "區塊瀏覽器（選填）"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "鏈ID"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "自定義網絡"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "自定義網絡"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "網絡"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "網絡名稱"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "RPC URL"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "測試網絡"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "符號"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "無法移除正在連接的網絡"
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "請刷新重試或切換其他網絡"
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "網絡連接失敗"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "已移除"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "鏈ID 用於簽署交易，必須與網絡返回的鏈ID 相匹配。您可輸入十進製或0x 前綴的十六進制數字，將默認顯示十進制數字"
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "複製"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "該地址僅支持{chainname}資產收款"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "選填"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "搜索幣種"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "確認"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "Gas 限制獲取失敗，請手動輸入"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "搜索幣種"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "實際接收數量"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "來自"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "Input data (選填)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "Input data"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "全部"
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "網絡費用"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "網絡費用"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Nonce（選填）"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Nonce"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "數量"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "接收地址"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "至"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "餘額： {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= gas 價格( {gasprice} {unit} )× gas 限制( {gaslimit} )"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "自定義"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "Gas 限制"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "Gas 價格( {unit} )"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "選擇幣種"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "未找到 {crypto} ，您可以嘗試添加此幣種"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data 已復制"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "錢包中尚無數字貨幣"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "指可補充的附加信息，如合約交互的調用數據、發送給收款人的信息等"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "高於建議值： {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "低於建議值： {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "我已知曉"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "鎖定錢包"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "自定義網絡功能目前僅可在EVM 網絡使用，請切換錢包後再嘗試啟用"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "技術支持"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "自定義網絡"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "啟用後可使用測試網絡、自定義RPC、自定義交易Nonce 等高級功能"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "偏好設置"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "設置為默認錢包"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "當前版本{version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "錢包安全"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "設置"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "暫不支持啟用開發者模式"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "已完成"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "失敗"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "處理中"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "等待中"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "未找到 {crypto} ，您可以嘗試添加此幣種"
+   },
+   "developer_mode_top_text_done": {
+      "message": "完成"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "網絡管理"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "資產總值"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "錢包管理"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "編輯錢包"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "用戶模式"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "歡迎使用"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "授權後，您將允許{contract}轉出您的{asset}或為您自動執行交易"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "授權"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "領取"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "可領取 NFT"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "確認領取"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "返回首頁"
+   },
+   "extension_bug_text_fixing": {
+      "message": "請返回首頁稍後再試"
+   },
+   "extension_bug_title_error": {
+      "message": "錯誤"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "頁面加載失敗"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "合約地址："
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "資產變化(預估)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "請求來自"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "總交易額"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "您輸入的網絡信息屬於SUI 網絡，當前僅支持添加EVM 的網絡"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "暫不支持導入Sui 網絡私鑰，請使用其他私鑰"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "跨鏈交易"
+   },
+   "extension_history_index_gas_station": {
+      "message": "兌換Gas"
+   },
+   "extension_history_index_pending": {
+      "message": "待確認"
+   },
+   "extension_history_title_farm": {
+      "message": "挖礦"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "立即領取"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "您有 {num} 個 NFT 待領取"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "已領取"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "為了保證您的交易，我們估計了一個金額供您參考"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "總花費包括gas費用加上其他資產花費綜合"
+   },
+   "extension_input_errortip_max20": {
+      "message": "最多20 個字符"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "撤回{contract}轉移您所有的{asset}的授權"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "取消授權"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "前往官網了解更多"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/zh-cn/articles/10558617769613- %E6% AC %A7% E6 %98% 93Web3 %E9% 92 %B1% E5 %8C% 85 %E9% 80 %9A% E8 %BF% 87 %E6% 85 %A2% E9 %9B% BE-Slowmist- %E7% A7 %81% E9 %92% A5 %E5% AE %89% E5 %85% A8 %E5% AE %A1% E8 %AE% A1"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/zh-cn/articles/8307929259021-OKX-Web3 %E7% 94 %9F %E6% 80 %81% E7 %B3% BB %E7% BB %9F %E6% 9C %8D% E5 %8A% A1 %E6% 9D %A1% E6 %AC% BE"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "幫助中心"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord 社群"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "歐易社群"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/JQrrNVJc"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "Web3 錢包"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "關於歐易錢包"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "OKX 郵箱"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "安全審計"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "服務條款"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "錢包管理"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "郵箱地址已復制"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "申領中"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "申領成功"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "申領{num} {crypto}成功"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "申領Sui 測試幣次數過多，請稍後重試"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "確認"
+   },
+   "extension_toast_btn_ok": {
+      "message": "我已知曉"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "您需要消耗更多網絡費用以完成交易替換"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas 價格( {unit} )"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "餘額不足"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "當前dapp網絡為測試網絡，請在設置中心切換到測試網模式進行交易"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "交易已取消"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "合約地址已復制"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "當前網絡費用"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "所需網絡費用"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "錢包地址已復制"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "交互地址已復制"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "請切換到測試網模式"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "替換交易"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "請輸入地址"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "確認"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "我已知曉"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "如果連接錢包時沒有歐易Web3 錢包選項，你可以通過MetaMask 連接"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "開啟後將優先連接到歐易錢包"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "設置歐易Web3 錢包為默認錢包"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "如何連接DApp"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "連接成功"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "您最多可添加{amount}個錢包"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "未能獲取到地址，確認是否解鎖並打開對應的應用"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "在Ledger 錢包內確認{transaction}"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "檢測到連接已斷開，如果需要繼續，將Ledger 通過USB 連接至電腦，並打開對應的應用"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "保持Ledger 與電腦的USB 連接，解鎖並打開Ledger 設備內對應的應用"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "我知道了"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "重試"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "交易信息"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "交易信息已發送至錢包，可通過設備查看並確認"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "已添加"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "更多新鏈，一個錢包盡在掌握"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "安全錢包，為您的交易保駕護航"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "所有DApp，一站式輕鬆暢連"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "確認"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "最高基本費用需大於0"
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "您設置的最高基本費用低於當前網絡要求的基本費用{baseFee} Gwei，交易成功需等待較長時間"
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "優先費用需大於0"
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "網絡所需基本費用： {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "最高基本費用"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "分鐘"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "優先費用"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "秒"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "交易金額和網絡費用的總和"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "重置錢包"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "忘記錢包密碼？"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "歐易Web3 錢包不存儲您的密碼，無法幫您找回"
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "如果您忘記了錢包密碼，可以重置錢包後重新設置。您可以用備份錢包時生成的助記詞或私鑰重新導入錢包，不會影響您的資產"
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "若錢包在未備份的情況下重置，您將永久丟失錢包及其中的資產。請務必在重置前備份所有錢包並妥善保管助記詞或私鑰"
+   },
+   "metax_mid_colored_stake": {
+      "message": "存幣"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "立即備份"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "重置錢包"
+   },
+   "securityreset_header_text_reset": {
+      "message": "重置錢包"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "取消"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "確認"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "請注意，若在未備份錢包的情況下重置錢包，您將丟失錢包及其中所有資產。請務必確保所有錢包已備份"
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "如確認重置錢包，請在下方輸入： {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "確認重置錢包？"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "風險提示"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "錢包防護等級"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "指釣魚網站防護敏感度。 “高”等級會攔截更多可疑網站"
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "高"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "低"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "攔截惡意和可疑網站"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "僅攔截惡意網站"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "錢包防護等級"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "{token}餘額不足"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "繼續交易"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "當前已有一筆兌換Gas 訂單在執行中，無法發起第二筆交易，請待上一筆訂單成功後，再次發起該筆交易。"
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "我知道了"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "兌換Gas 服務已關閉，暫時無法交易"
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "您已發起一筆相似訂單，建議等待餘額更新後再次發起新的交易。"
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "瀏覽器中查看"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "兌換Gas 交易已超出單日限額，請次日再進行交易。"
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "風控檢測到您之前有過異常操作，無法繼續使用兌換Gas 服務。"
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "去瀏覽器查看"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "補充{nativeToken}失敗"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "補充{nativeToken}失敗"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "已將{payValue} {paySymbol}兌換為{receiveValue} {receiveSymbol}"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "交易已提交"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "補充{nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value}筆普通交易"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "選擇數量"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "選擇幣種"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "補充{token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "兌換Gas"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "OK"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "兌換Gas 的參考匯率是將中心化交易所匯率及鏈上價格綜合計算得出。使用該服務時仍需要支付鏈上網絡費，這部分費用將從你的支付幣種中扣除，最終匯率以實際交易為準。"
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "由於區塊鏈交易需要消耗主網幣（ETH、BNB、OKT、MATIC...）作為網絡費用，如果遇到網絡費不足導致你無法繼續交易時，只需要在兌換Gas 服務中使用其它代幣快速兌換成主網幣即可（該服務目前僅支持部分鏈）\n使用該服務需要支付鏈上網絡費，這部分費用將從你的支付幣種中扣除。\n支付數量檔位裡的普通交易筆數是指預估轉賬交易次數，請以實際交易次數為準。"
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "兌換Gas 服務"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "兌換Gas"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "兌換Gas"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "參考匯率"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "預計補充"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "Reload"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "Network error"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "請在兌換成功後，再次發起其它交易以免交易失敗。關閉彈窗不會中斷兌換流程，可前往交易歷史查看。"
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "選擇幣種"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "{paySymbol}和{receiveSymbol}價格獲取失敗，暫時無法確認支付數量，請稍後重試。"
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "{paySymbol}價格獲取失敗，暫時無法確認支付數量，請稍後重試。"
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "{receiveSymbol}價格獲取失敗，暫時無法確認接收數量，請稍後重試。"
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "因鏈上網絡費用波動較大，若繼續交易將導致你的資產損失，請稍後使用該服務。"
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "{token}餘額不足以支付網絡費用"
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "補充{token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "餘額不足"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "補充{token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "推薦"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "使用二維碼或錢包地址直接收取{token}"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "使用其它代幣快速兌換成{token}"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "鏈上收Gas"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "兌換Gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "請備份助記詞，完成可查看錢包地址"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "Ledger 客戶端"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "請下載{downloadUrl}並打開客戶端首頁，再點擊連接"
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "連接硬件錢包"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "添加錢包"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "連接失敗"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "請確保您已將硬件錢包接入電腦並解鎖"
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "選擇硬件錢包"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "請確認您的硬件錢包已連接電腦"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "連接中"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "錢包賬戶{newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "新賬戶已生成"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "連接"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "連接硬件錢包"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "創建新錢包"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "硬件錢包"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "私鑰"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "助記詞"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "導入已有錢包"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "您需要在谷歌瀏覽器（Google Chrome）上使用歐易Web3錢包才能連接到您的硬件錢包。"
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "您的瀏覽器不支持該功能…"
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "下載Google Chrome 瀏覽器"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "（舊）"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "連接硬件錢包"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "在添加新的錢包之前，需要使用您的最後一個錢包。"
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "連接中…"
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "連接您的硬件錢包"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "創建新的助記詞錢包"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "如果您的錢包地址未在下方列出，可切換路徑查詢"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "斷開這個硬件錢包"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "選擇導入路徑"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "選擇錢包"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "導入助記詞或私鑰"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "您可添加最多50 個錢包"
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "創建成功"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "取消授權"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "錢包授權"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "您將取消{tokenSymbol}的轉賬授權"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "私鑰"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "複製私鑰到剪貼板會有被第三方應用竊取或控制的風險"
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "再次確認您的助記詞"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "我已備份"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "仍然複製"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "不復制"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "私鑰"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "請按順序寫下下列單詞。妥善保存，切勿與他人分享！"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "寫下您的助記詞"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "請確保沒有其他人查看您的屏幕"
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "點擊查看助記詞"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "備份成功"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "已復制"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.zixinshi.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "網絡費用"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "註冊zkSync Lite 後可以繼續交易"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "註冊zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "數量"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "授權數量"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "授權"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "與(向)合約交互"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "網絡"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "網絡"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "區塊瀏覽器"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "用於簽署此網絡交易的鏈路ID。"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "用來簽署此網絡交易的鏈路ID"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "貨幣符號"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "此網絡貨幣顯示的符號"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "此網絡使用區塊瀏覽器的URL。"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "此網絡使用的區塊瀏覽器的URL"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "與此網絡關聯的名稱。"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "與此網絡關聯的名稱"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "用於訪問此網絡的URL"
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "授權後，您將允許{name}轉出您的{tokenSymbol}或為您自動執行交易"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "在未備份錢包助記詞的情況下，不建議您連接第三方應用，請先備份。"
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "關閉"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "提供"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "切換"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "提升費用可能會縮短處理時間，但不保證絕對有效。"
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "無法解密此消息，錯誤： {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "請核實網站信息，只連接您信任的網站。"
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "連接賬戶"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "選擇錢包"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "備份你的錢包"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "您已同意該權限"
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "允許當前DApp 連接插件錢包"
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "當前錢包未連接過當前網站。如想連接到當前網站，請在他們的網站上找到連接按鈕。"
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "{siteName}希望閱讀此信息來完成您的操作。"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "網絡URL"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "您還未同意該權限"
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName}希望得到您的加密公鑰。同意後該網站將可以想您發送加密信息。"
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "申請加密公鑰"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "簽名"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "請求籤名"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "可連接賬戶"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "當前網絡"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "你是否想要使用{curWalletName}連接{host}"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "已連接的網站"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "解密"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "複製加密信息"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "解密信息"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "解密請求"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "外部擴展"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "網絡"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "網絡費用"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "新合約"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "+ {length}"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "至："
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "選擇賬戶"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "選擇全部"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "類型"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "{curWalletName}已接入當前網站"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "{curWalletName}已斷開當前網站"
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "斷開"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "拒絕"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "交易手續費不足"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "添加推薦代幣"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "連接到您的全部{account}"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "連接到{origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "錢包"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "是否授權？授權即表示您允許此DApp隨時提取您的{tokenSymbol}"
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "允許此網站："
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "這將允許在歐易錢包中使用此網絡。"
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "允許外部擴展到："
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "添加代幣"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "添加代幣"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "無限制"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "餘額"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "鏈ID"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "數據"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "請輸入最大值( {tokenSymbol} )"
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "錢包不支持當前鏈"
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "返回"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "當前幣種不能發送，此幣種不可用於支付網絡費用"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "當前地址尚未註冊"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "您需完成註冊後再使用"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "去註冊"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "助記詞輸入有誤，請再嘗試一次"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "助記詞"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "請按順序選擇您的助記詞"
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "我明白，確認刪除"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "錢包名稱不得超過20個字符"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "錢包名稱已存在"
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "賬戶名稱"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "修改成功"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "確認要刪除此錢包嗎？"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "確認刪除會將此錢包從應用中移除，您可以用備份錢包時生成的助記詞重新導入，不會影響您的資產。請務必在刪除前備份錢包，否則您將永久丟失此錢包及其中的資產"
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "錢包名稱"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "刪除成功"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "服務條款"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "去編輯"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "取消"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "放棄"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "該地址已存在"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "名稱不能超過20個字符"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "地址錯誤，請重新輸入"
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "請輸入地址"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "請輸入名稱，最多20 個字符"
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "放棄添加地址？"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "地址"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "名稱"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "添加地址"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "我已知曉"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "更多網絡努力接入中，敬請期待！"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "暫不支持{network}網絡"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "取消交易"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "繼續交易"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "安全提示"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "您正在將數字貨幣發送到合約地址而不是私人地址。繼續之前請先確保該地址有效，以避免任何潛在的損失。"
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "添加地址"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "複製地址"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "刪除地址"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "編輯地址"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "全部網絡"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "搜索地址或名稱"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "暫無地址"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "地址簿"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "選擇網絡"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "添加成功"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "刪除成功"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "已超過地址簿上限（200條）"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "該NFT 合集下的所有藏品"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "授權"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "給"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number}小時"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number}小時"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number}小時"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number}分鐘"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number}分鐘"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "永不鎖屏"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "返回"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "探索DApps"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "查看更多"
+   },
+   "wallet_extension_btn_register": {
+      "message": "去激活"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "切換網絡"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "複製私鑰"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "預計領取數量"
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "知道了"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "最終領取數量將在上鍊成功後確認"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "知道了"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "最終投資數量將在上鍊成功後確認"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "預計投入數量"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "當前交易等待確認時間已超過{pendingTips}小時，建議加速或取消"
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "賬戶 ID"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "發送地址"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "註冊 ZKSpace 後可以繼續交易"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "註冊 ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "已刪除"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "允許{approved_address}轉移您所有{approved_asset} ？"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "撤回{approved_address}轉移您所有{approved_asset}的授權？"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "繼續確認將允許{address}轉賬您的資產或自動執行您的交易，請謹慎操作"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "未知NFT 合集"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "繼續確認將允許轉賬您的主鏈幣，請謹慎操作"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "當前手續費過低，交易可能失敗，建議您調整手續費"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "總覽"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "您可以使用支持以下網絡的DApp 發起交易"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "您需先激活該幣種後再使用"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "已為您自動同步其他EVM系的網絡"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "您可以使用支持以下網絡的DApp 發起交易"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "您可以使用支持以下網絡的DApp 發起交易。若使用DApp 遇到問題，可點擊下方按鈕切換EVM 網絡"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "您可以使用此錢包管理Bitcoin 鏈上的加密資產"
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "您可以使用此錢包管理{network}鏈上的加密資產"
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "去查看"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "轉移"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "挖礦"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "流動性池"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "存幣"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "質押"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "機槍池"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "持幣賺幣"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "取消"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "確認"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "刪除"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "刪除地址？"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "選擇網絡"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "編輯地址"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "保存成功"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "返回"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "刷新"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "備註長度超過字符限制，請重新輸入"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "簽署此消息存在風險。為確保資產安全，請確認該網站為您完全信任的網站後再簽名"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "ETHW 分叉在即"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "零成本翻倍你的以太坊資產！"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "我已知曉"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "最新版本"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "歐易Web3 錢包現已支持ETHW 資產，快去看看吧"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "版本號"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "可切換為以下EVM 網絡，DApp 將同步切換"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "去瀏覽器查看"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "前往錢包查看更多"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "忘記密碼？"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "請在下方輸入“重置”來確認"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "確認重置"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "重置錢包"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "NFT 估值計入總資產"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "授權"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "取消授權"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "給"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "接收"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "發送"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "交易歷史"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "領礦幣"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "認購"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "贖回"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "類型"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "所有網絡"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "時間"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "發送地址"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "授權{symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "領取礦幣"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "合約交互"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "鑄造"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "接收"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "來自"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "贖回"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "取消授權{symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "取消 {approvedasset} 的授權"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "發送"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "至"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "取消交易"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "加速"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "加速取消"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "待確認"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "排隊中"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "申購"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "更多..."
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "交易"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "待確認( {num} )"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "點擊添加到地址簿"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "已完成"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "失敗"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "失敗"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "待確認"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "等待中"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "已完成"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "已完成"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "待確認"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "註冊 ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "未知項目"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "未知幣種"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "取消授權"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "已連接"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "歷史記錄"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "幣幣兌換"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "點擊切換地址格式"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "點擊跳轉隔離見證地址相關介紹"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "清除"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "我有一個"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "12 字的助記詞"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "15 字的助記詞"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "18 字的助記詞"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "21 字的助記詞"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "24 字的助記詞"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "錢包已存在"
+   },
+   "wallet_extension_info_pay": {
+      "message": "支付"
+   },
+   "wallet_extension_info_receive": {
+      "message": "獲得"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "類型"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "挖礦"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "流動性池"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "存幣"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "質押"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "機槍池"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "密碼不匹配！"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "匹配！"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "密碼較強"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "密碼非常強"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "密碼較弱"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "請輸入備註，最多256 個字符"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "搜索網絡"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "搜索網絡"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "質押"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "機槍池"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "激活地址"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "地區訪問限制"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "根據當地法律法規，您所在的地區( {area} )無法訪問okx.com 的產品或服務。"
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "您有錢包尚未備份。未備份錢包內的賬戶無法連接第三方DApp"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "在瀏覽器查看"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "共{num}個"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "授權數量"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "區塊確認數"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "發送地址"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "交互地址"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "網絡"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "網絡費用"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "狀態"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "時間"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "接收地址"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "交易哈希"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "無限"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "檢測到{contractaddress}地址存在風險，為確保資產安全，請確認交易地址為您常用的轉賬地址再謹慎確認交易"
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "確定"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "返回NFT列表"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "重置"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "刷新"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "最高出價"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "最近成交價"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "價格"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "網絡"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "售賣狀態"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "收到報價"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "售賣中"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "搜索"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "到NFT 市場查看"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "合約地址"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "合集地板價"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "網絡"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "NFT 價格"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "代幣標準"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "篩選"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "發送到錯誤地址的NFT無法被找回"
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "幣種"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "NFT"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "探索NFT"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "交易熱門NFT，盡在歐易NFT 市場"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "合集"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "加載失敗"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "最大值"
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "暫無匹配記錄"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "暫無匹配記錄"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "輸入數量不能為0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "輸入數量不能大於{max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "輸入轉移數量"
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "NFT估值根據所在合集地板價計算"
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "擁有"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "該接收地址尚未激活{token} ，無法向其發送該幣種"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "歐易Web3 錢包是完全去中心化的錢包，不會存儲用戶密碼。如果忘記密碼，請通過重置錢包後，重新導入助記詞或私鑰來更新密碼，並妥善保管。"
+   },
+   "wallet_extension_option_allchain": {
+      "message": "可用網絡"
+   },
+   "wallet_extension_option_desc": {
+      "message": "{domain}當前在{chain}網絡上"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "切換EVM 網絡"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "多鏈連接"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "去查看"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "總資產"
+   },
+   "wallet_extension_overview_more": {
+      "message": "更多"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "接收地址已復制"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "資產網絡分佈"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "挖礦"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "流動性池"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "存幣"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "質押"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "機槍池"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "持幣賺幣"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/zh-cn/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/zh-cn/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "點擊確認即表示同意歐易的{terms_service}"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "補充{token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "{token}餘額不足以支付網絡費用"
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "隱藏助記詞"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "授權"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "取消"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "確定"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "取消授權"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "取消"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "確定"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "發送一筆數量為0 {symbol}的交易替代原交易"
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "由於網絡原因，取消交易不能保證成功"
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "Gas 價格( {gasPrice} GWEI) *Gas 上限( {gasLimit} )"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "該幣種尚未激活"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "餘額不足"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "複製私鑰存在風險，剪切板的內容可能被第三方應用監控或濫用，請注意私鑰安全。"
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "即刻探索"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "{token}費用不足以支付網絡費用"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "傳統地址"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/cn/learn/isolate-the-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "原生隔離見證地址"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "隔離見證兼容地址"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "重複交易"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "繼續發送"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "在歷史記錄查看"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "您已經有一筆相同的交易，是否想要繼續本交易？"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "加速後"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "加速前"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "取消"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "確定"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "提高網絡費用來加速交易"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "=Gas 價格( {gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "多鏈"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "交互地址"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "項目"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "項目地址"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "添加網絡"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "地址格式"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "下架"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "取消交易"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "合約交互"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "地址已復制"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "選擇網絡"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "加速交易"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "交易哈希已復制"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "確認複製？"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "{walletName}創建成功"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "{walletName}導入成功"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "下載狀態日誌"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "我已知曉"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "允許第三方為您提取和自動交易的金額。"
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "繼續交易"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "拒絕"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "風險警示"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "{accountAddress}被報告為惡意合約地址，存在資產被盜的風險。請確保地址安全。"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "授權額度"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "授權額度"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "{accountAddress}被報告為惡意地址，存在資產被盜的風險。請確保地址安全。"
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "確認"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "修改數額"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "設置數額"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "修改數額"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "設置數額"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "無法獲取該幣種法幣估值，暫不支持輸入法幣交易"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "我知道了"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "我知道了"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "去看看"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "Web3 錢包現已支持ETHW 資產，快去看看吧"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. Web3 錢包現已支持ETHW 資產，快去看看吧"
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. 世界那麼大，我想去看看"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "版本更新"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "版本更新啦"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "版本更新啦"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "版本號{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "2.15.10 版本"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "快來看看2.16.2 版本帶來了什麼"
+   },
+   "wallet_extension_rn_button": {
+      "message": "我知道了"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. 現已支持ETHF 網絡。您可通過ETHF 網絡收發資產和連接使用DApp"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "現已支持Aptos 網絡。您可通過Aptos 網絡收發資產和連接使用DApp"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. 現可對危險和可疑網址持續檢測並發送風險警告"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. 現可在錢包展示和領取Aptos NFT"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. 多鏈連接現已支持Solana。使用EVM 或Solana DApp 時，您可直接發起交易，無需切換網絡"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. 現已支持Tron 網絡。您可連接使用DApp 發起交易"
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. 現可使用ENS、Unstoppable Domains 和SPACE ID 域名轉賬"
+   },
+   "wallet_extension_rn_title": {
+      "message": "版本更新啦"
+   },
+   "wallet_extension_rn_version": {
+      "message": "{version}版本"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "繼續交易"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "取消交易"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "風險警示"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "{accountAddress}被報告為惡意地址，存在資產被盜的風險。請確保地址安全"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "查看更多騙局"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "{accountAddress}被報告為惡意合約地址，存在資產被盜的風險。請確保地址安全。"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "已支持{number} + EVM 網絡"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "EVM 網絡"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "您的地址屬於EVM 網絡，該地址可兼容管理其他EVM 網絡上的資產。"
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "當前支持以下EVM 網絡： {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "選擇支付幣種"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "去添加"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "下一步"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "下一步"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "下一步"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "發送"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "至"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "地址簿"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "最近地址"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "請輸入正確的地址"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "未添加到地址薄"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "估算失敗"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "輸入地址或地址名稱"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "搜索法幣名稱"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "餘額不足"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "全部"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "默認"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "餘額"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "支付幣種"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "可選擇以下任一幣種支付網絡費用"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "已取消"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "取消中"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "取消中"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "加速中"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "加速中"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "數量"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "餘額"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "全部"
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "扣除網絡費用後，最高可用金額為{fiatamount} ( {cryptoamount} )"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "接收地址"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "選擇法幣"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "發送"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "未找到可發送的{crypto}"
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "轉賬數量至少{amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "偏好設置"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "自定義鎖屏時間"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "備份錢包"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "偏好設置"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "修改密碼"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "設置為默認錢包"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "地址簿"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "管理賬戶"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "版本號{number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "請勿刷新本頁面，會導致硬件錢包導入失敗。為了您的隱私安全，Web3 錢包不會存儲您的錢包密碼，請務必妥善保管。"
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "允許該NFT 合集下所有藏品的授權？"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "領取"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "預計領取"
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "使用歐易Web3 錢包探索25+ 主流公鏈"
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "從"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "投入"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "用"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "預計用"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "得到"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "從該池中贖回"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "激活"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "取消該NFT 合集下所有藏品的授權？"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "DeFi"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "您所有的{collection}"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "授權資產"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "已為您自動同步其他{networkname}的網絡"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "下架"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "在"
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "DeFi 世界一站式暢遊"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "備註"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "未找到相關結果"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "授權"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "授權{collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "未知NFT"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "未知NFT 合集"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "下架"
+   },
+   "wallet_extension_title_memo": {
+      "message": "備註"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "備註（選填）"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "已默認選擇多鏈連接"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "支持多鏈連接"
+   },
+   "wallet_extension_title_register": {
+      "message": "激活"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "幣種激活"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "取消授權"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "Web3 錢包支持以下網絡"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "當前網絡"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "切換網絡"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "錢包地址"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "地址已復制"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "地址格式已更改"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "授權{collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "網絡異常，請檢查網絡設置"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "暫時不用"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "設為默認錢包"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "創建成功"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "激活失敗"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "硬件錢包當前僅支持EVM系資產"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "導入成功"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "導入成功"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "最大額度為 {max} Sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "最小額度為 {min} Sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "網絡異常，請刷新重試"
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "如收款地址未激活，可能導致交易失敗"
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "激活成功"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "該地址僅支持{chain_name}資產收款"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "當您安裝多個插件錢包時，如希望優先使用歐易Web3 錢包來連接DApp，請設置為默認錢包。"
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "設置成功"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "激活中"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "歐易Web3 錢包已重置"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "交易出現異常，繼續交易將會失敗，請重新發起交易"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "將歐易Web3 錢包設為默認錢包？"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "複製地址"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "連接"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "設置"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "錢包管理"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "平均"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "下一步"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "實際接收數量"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "發送地址"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "=Gas 價格（ {gasPrice} GWEI）*Gas 限制（ {gasLimit} ）"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "網絡費用"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "接收地址"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "自定義"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "Gas 上限必須大於{minGasLimit} ，小於{maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "Gas 價格必須大於{minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "Gas 上限"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "Gas 價格(GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "快"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "確認"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "地址不能為空"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "輸入數量不能為空"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "輸入數量需大於0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "餘額不足"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "{chainSymbol}餘額不足以支付網絡費用"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "無效地址"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "接收地址不能與發送地址相同"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "網絡費用"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "接收地址"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "全部"
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "數量"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0.000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "請輸入錢包地址或域名"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "繼續等待"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "替換"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "跳過"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "你有一筆失敗交易"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "你有一筆超過一小時的待確認交易"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "如果你有一個失敗的交易，您將無法發起新的交易。是否將失敗的交易替換為當前交易？"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "如果待確認的交易無法完成，您將無法發起新的交易。是否將待處理的交易替換為當前交易？"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "慢"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "分鐘"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "網絡費用"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "{network} 地址已復制"
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "我已知曉"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "忘記密碼？"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "我再想想"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "我已了解上方所有註意事項，並決定重置我的錢包"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "歐易Web3錢包是完全去中心化的平台，不會存儲用戶密碼，錢包密碼無法被找回。"
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "如果您忘記錢包密碼，可以通過助記詞或私鑰來重置錢包，並重新設置錢包密碼。"
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "請您注意，重置錢包會清除設備中現有的錢包數據。若您在未備份助記詞或私鑰的前提下重置錢包，您將永久失去此錢包及其中所有代幣。"
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "將Web3錢包設置為默認錢包"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "跨鏈交易"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "兌換Gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "註冊zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "現在備份"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "此錢包尚未備份"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "若您未備份助記詞並發生以下情況：設備丟失、卸載插件重新安裝、清除插件數據，您將永久失去此錢包及其中所有代幣"
+   },
+   "wallet_home_btn_close": {
+      "message": "關閉"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "確認"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "我已有錢包"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "我沒有錢包"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "幣種管理"
+   },
+   "wallet_home_btn_receive": {
+      "message": "接收"
+   },
+   "wallet_home_btn_send": {
+      "message": "發送"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "創建新錢包"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "解鎖"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "連接"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "獲取資產異常。請退出當前頁面，稍後重試"
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "已連接"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "請輸入密碼"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "Web3錢包遇到了一個錯誤"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "Web3 入口一個就夠"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "稍後"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "在進行任何操作之前，請確保您的助記詞已備份"
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "數字貨幣錢包、NFT 世界、DApp 探索——您想要的應有盡有"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "關閉並重新打開彈出窗口，或聯繫支持。"
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "棧："
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "代碼： {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "錯誤詳情"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "信息： {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "代碼： {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "重新加載頁面或聯繫支持。"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "導入錢包"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "網絡錯誤，請稍後重試"
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "無效地址，請重新輸入"
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "導入私鑰"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "導入助記詞"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "請在這裡輸入私鑰"
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "請輸入助記詞，按空格間隔"
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "私鑰錢包已存在"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "錢包已存在"
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "支持64位私鑰"
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "無效助記詞，請檢查拼寫或順序"
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "助記詞"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "用空格分隔每個單詞"
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "支持所有格式（12，15，18，21，24 字）的助記詞"
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "私鑰"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "粘貼或輸入您的私鑰"
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "助記詞"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "支持所有格式（12，15，18，21，24 字）的助記詞"
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "請檢查助記詞順序"
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "助記詞輸入有誤，請重試"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "{length}位助記詞"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "歐易Web3錢包"
+   },
+   "wallet_intro_text_desc": {
+      "message": "歐易Web3錢包是一個多平台（手機端/Web端/插件端）通用加密錢包。"
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "連接硬件錢包"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "請盡快備份您的助記詞"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "備份錢包"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "完成"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "錢包管理"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "精度"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "無效地址"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "該代幣已添加"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "收款地址無效"
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "合約地址"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "多鏈"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "已添加代幣"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "自定義幣種"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "幣種管理"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "搜索幣種名稱或合約地址"
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "符號"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "熱門代幣"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "添加自定義幣種"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "自定義幣種"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "成功"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "添加錢包"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "備份錢包"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "編輯錢包"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "添加賬戶"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "重新連接"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "該賬戶已存在，請重新輸入。"
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "已連接的硬件錢包"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "總資產"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "錢包"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "賬戶"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "錢包"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "硬件錢包"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "私鑰"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "授權"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "複製"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "已復制"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "搜索無結果"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "我已知曉"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "暫不支持"
+   },
+   "wallet_send_text_register_address": {
+      "message": "地址註冊"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "確認"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "密碼最少6 個字符"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "密碼不匹配"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "密碼有誤，請重新輸入"
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "查看更多"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/zh-cn/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "再次輸入密碼"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "輸入密碼"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "輸入密碼"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "請再次輸入確認"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "確認密碼"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "密碼"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "下載狀態日誌"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "下載狀態日誌"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "鎖定錢包"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "繼續"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "確認重置"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "我已知曉上述風險"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "選擇語言"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "語言"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "通用"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "風險警告"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "設置"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "狀態日誌"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "請確認錢包已備份"
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "密碼輸入有誤，請再次嘗試"
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "修改密碼"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "請輸入密碼，最少6 個字符"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "請輸入原密碼"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "請再次輸入確認"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "新密碼"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "為了您的隱私安全，Web3 錢包不會存儲您的錢包密碼，請務必妥善保管。"
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "原密碼"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "確認密碼"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "檢索狀態日誌時出錯"
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "狀態日誌"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "錢包狀態日誌"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "狀態日誌包含您的錢包地址和交易記錄。"
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "貨幣設置"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "重置錢包"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "請在重置錢包前確認您已備份錢包助記詞或私鑰。若重置未備份的錢包，您將永久失去此錢包及其中所有代幣。"
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "重置錢包會清除設備中現有的錢包數據，請在重置錢包前確認您已備份所有錢包助記詞或私鑰，否則您將永久失去此錢包及其中所有代幣。"
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "錢包安全"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "錢包管理"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "高級"
+   },
+   "wallet_settings_text_desc": {
+      "message": "版本、支持中心和聯繫方式。"
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "貨幣、語言和其他設置"
+   },
+   "wallet_settings_text_language_en": {
+      "message": "zh_CN"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "修改密碼，重置錢包"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "添加、編輯和備份錢包"
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "創建密碼"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "為了您的隱私安全，Web3 錢包不會存儲您的錢包密碼，請務必妥善保管。"
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "交易取消"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "交易確認"
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "交易確認"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "消息"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "您有{total}筆待確認"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "交易手續費"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "交易ID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "待處理{num}"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "時間"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "類型"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "合約地址"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "網絡名稱"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "暫無交易記錄"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "發送中..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "地址已復制"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "複製到剪貼板"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "複製交易ID到剪切板"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "總費用"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "授權"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "確認中"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "輸入數量不能為空"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "輸入數量需大於0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "取消"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "全部"
+   },
+   "wallet_transfer_btn_next": {
+      "message": "下一步"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "加速"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "發送一筆數量為0 {coinSymbol}的交易代替原交易。"
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "交易費用"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "錢包"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "交易費用"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "合約部署"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "合約交互"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "Gas 上限至少要{minimumGasLimit}"
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "餘額不足"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "{chainSymbol}餘額不足以支付網絡費用"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "地址不能為空"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "失敗"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "Gas 上限不能為空"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "Gas 上限不得高於15M"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "Gas 上限需要≥ 21,000"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "Gas 價格不能為空"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "Gas 價格需要> 0"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "自定義"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "Gas 上限"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "分鐘"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "Gas 價格"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "Gas 價格"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "自定義"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "處理中"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "交易詳情"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "接收地址不能與發送地址相同"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "您當前錢包中沒有代幣資產"
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "設定更高Gas 價格，可以加快交易完成進度，提高網絡快速處理機率，但無法保證每次均能夠實現提速。"
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "選擇網絡"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "{first}授權失敗"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "{first}成功授權"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "{first}取消授權失敗"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "{first}取消授權已提交"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "{first}取消授權成功"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "合約交互失敗"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "合約交互成功"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "NFT 交易失敗"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "NFT 交易成功"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "{first} {second}發送失敗"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "{first} {second}已發送"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "{first} {second}兌換{third} {fourth}失敗"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "{first} {second}成功兌換{third} {fourth}"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "交易已提交"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "在瀏覽器上查看"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "請先處理完全部交易"
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "請輸入地址(0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "選擇幣種"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "輸入幣種名稱"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "請等待區塊確認"
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "硬件簽名失敗"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "請用硬件錢包簽名"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "加速後"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "加速前"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "實際接收數量"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "網絡費用"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "接收地址"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "發送地址"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "平均"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "快"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "慢"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "返回首頁"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "已發送"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "完成"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "待確認"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "不能解鎖"
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "硬件錢包僅支持展示EVM 系資產"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "SOL 餘額已不足以支付網絡費用"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "賬戶SOL 餘額不足，請預留{number} SOL 來發起交易"
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "請至少發送{number} SOL 來滿足最低賬戶租金費用"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "請保留至少{number} SOL 作為賬戶租金"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "錢包已重置"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "授權"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "無數據"
+   }
+}

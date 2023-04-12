@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Pay network fee with"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "To safely transfer this NFT, this address is unavailable for gas payment"
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "We recommend that you transfer the NFT to a Tarpoot address that starts with “bc1”. Transferring it to other addresses may pose a risk of asset loss."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Select wallet to pay network fee"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "เข้าชมต่อไป"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "คุณกำลังเข้าชมเว็บไซต์ที่อาจหลอกให้คุณเปิดเผยข้อมูลส่วนตัวหรือข้อมูลทางการเงิน เพื่อรักษาความปลอดภัยให้กับสินทรัพย์ของคุณ โปรดอ่านคำแนะนำด้านล่างก่อนดำเนินการต่อ"
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "คุณกำลังเข้าชมเว็บไซต์ที่อาจหลอกให้คุณเปิดเผยข้อมูลส่วนตัวหรือข้อมูลทางการเงิน เพื่อรักษาความปลอดภัยให้กับสินทรัพย์ของคุณ โปรดอ่านคำแนะนำด้านล่างก่อนดำเนินการต่อ"
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· OKX Wallet รวบรวมฐานข้อมูลที่ปลอดภัยหลายๆ แห่งเพื่อบล็อกเว็บไซต์อันตราย"
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· ติดต่อ service@okx.com เพื่อให้ข้อเสนอแนะ หากคุณพบเว็บไซต์ที่น่าสงสัยหรือพบข้อผิดพลาดเกี่ยวกับบล็อก ขอบคุณสำหรับการสนับสนุนของคุณที่ช่วยรักษาความปลอดภัยภายในบล็อกเชน"
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· หากคุณไม่ต้องการรับคำเตือนนี้บ่อยเกินไป คุณสามารถเปลี่ยนระดับการป้องกันเป็นระดับต่ำที่การรักษาความปลอดภัยวอลเล็ต"
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· โปรดทราบว่าเราไม่สามารถรับประกันได้ว่าเว็บไซต์นั้นๆ จะปลอดภัย แม้ว่าคุณจะไม่ได้รับคำเตือนใดๆ ก็ตาม คุณต้องรับผิดชอบต่อความเสี่ยงในการเข้าชมเว็บไซต์ที่ไม่ปลอดภัยด้วยตัวเอง"
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· ระบบรักษาความปลอดภัยของ OKX Wallet ตรวจพบว่าเว็บไซต์นี้น่าสงสัย คุณต้องรับผิดชอบต่อความเสี่ยงจากการเข้าชมเว็บไซต์ที่ไม่ปลอดภัยด้วยตัวเอง"
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "คำเตือนเกี่ยวกับเว็บไซต์ที่หลอกลวง"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "คำเตือนเกี่ยวกับเว็บไซต์ที่น่าสงสัย"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "ป้อนที่อยู่สำหรับรับเงิน"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0.000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "อนุมัติ"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "ยกเลิก"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "เข้าใจแล้ว"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "OKX Wallet ไม่มีการตรวจสอบเครือข่ายที่กำหนดเอง โปรดระวังความเสี่ยงด้านความปลอดภัยที่อาจเกิดขึ้น"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "เพิ่มเครือข่าย"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "URL ตัวสำรวจบล็อก"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "ID เครือข่าย"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "สัญลักษณ์"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "เครือข่าย"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "URL เครือข่าย"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "เพิ่มไม่สำเร็จ"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "บันทึก"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "ไม่พบรายการบันทึก"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "ปฏิเสธ"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "สัญญาแบบโต้ตอบ"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "กำหนด Nonce เอง"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "ข้อมูลธุรกรรม"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "จาก"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "ลิมิตค่าธรรมเนียมแก๊ส"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "ราคาค่าธรรมเนียมแก๊ส ({gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "โต้ตอบกับ"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "เครือข่าย"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "ค่าใช้จ่ายทั้งหมด"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "วอลเล็ต"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "ปรับใช้สำเร็จ"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "ปรับใช้ไม่สำเร็จ"
+   },
+   "developer_mode_header_title_history": {
+      "message": "History"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "Cancel transaction"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "Completed"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": ""
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "Speed up"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "เวลา"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "สัญญาแบบโต้ตอบ"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "ส่ง"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "ที่อยู่สัญญา"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "Date"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "ดูในบราวเซอร์"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "บล็อก"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "ปรับใช้ผู้ติดต่อ"
+   },
+   "developer_mode_history_title_from": {
+      "message": "จาก"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": ""
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "โต้ตอบกับ"
+   },
+   "developer_mode_history_title_network": {
+      "message": "เครือข่าย"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Nonce"
+   },
+   "developer_mode_history_title_status": {
+      "message": "Status"
+   },
+   "developer_mode_history_title_time": {
+      "message": "เวลา"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "ข้อมูลธุรกรรม"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "แฮชการทำธุรกรรม"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "เครือข่ายที่กำหนดเอง"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "โหมดผู้พัฒนา"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "ออก"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "รับ"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "ส่ง"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "ประวัติ"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "จัดการคริปโท"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "เชื่อมต่อแล้ว"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "เพิ่มแล้ว"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "คัดลอกที่อยู่ {network} แล้ว"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": ""
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "ID เครือข่ายที่ใช้โดย RPC คือ {chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "Too large. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "ไม่มี URL RPC ที่ตรงกันสำหรับสัญลักษณ์คริปโทนี้ กรุณาตรวจสอบสัญลักษณ์ที่คุณป้อน"
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "Invalid number. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "URL ต้องการคำนำหน้า HTTP/HTTPS ที่สอดคล้องกัน"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "URL ต้องการคำนำหน้า HTTP/HTTPS ที่สอดคล้องกัน"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "Invalid URL. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "ID เครือข่ายที่ใช้อยู่บนเครือข่าย {network} อยู่แล้ว"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "เครือข่ายที่มี ID เครือข่าย {number} มักใช้ {symbol}โปรดตรวจสอบสัญลักษณ์ที่คุณป้อน"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "URL RPC ไม่ถูกต้อง"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "จำไม่ได้ โปรดตรวจสอบ URL ของ RPC ที่คุณป้อน"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "URL นี้ถูกใช้งานโดยเครือข่าย {network} แล้ว"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "รายละเอียดคริปโท"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "ที่อยู่สัญญา"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "เครือข่าย"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "จุดทศนิยม"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "คัดลอกแล้ว"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "รายละเอียดคริปโท"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "Approve"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "Contract interaction"
+   },
+   "developer_mode_list_text_send": {
+      "message": "ส่ง"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "To {addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "มีที่อยู่นี้อยู่แล้ว"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "ที่อยู่ไม่ถูกต้อง"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "โหลดซ้ำ"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "ข้อผิดพลาดของเครือข่าย โปรดโหลดซ้ำแล้วลองอีกครั้ง"
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "ป้อนได้สูงสุด 11 อักขระ"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "คริปโทที่กำหนดเอง"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "คริปโทที่กำหนดเอง"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "เพิ่มคริปโทแล้ว"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "ไม่ได้เพิ่มคริปโท"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "ที่อยู่สัญญา"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "จุดทศนิยม"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "เครือข่าย"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "สัญลักษณ์"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "เพิ่มแล้ว"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "ยกเลิก"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "นำออก"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "กำลังเชื่อมต่อไปยัง {network}"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "ข้อมูลที่ป้อนไม่ถูกต้อง"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "คุณจะนำเครือข่ายนี้ออกจากรายการ"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "Faucet"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "นำเครือข่ายนี้ออกหรือไม่"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "เพิ่มเครือข่ายที่กำหนดเอง"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "ยกเลิก"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "กลับไป"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "สลับเครือข่าย"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "แก้ไข"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "ลองอีกครั้ง"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "ช่องนี้ต้องไม่เว้นว่างไว้"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "ผู้ให้บริการอินเทอร์เน็ตที่ไม่รู้จักอาจเปิดเผยสถานะของบล็อกเชนและติดตามกิจกรรมของเครือข่ายที่คุณใช้ โปรดเพิ่มเครือข่ายก็ต่อเมื่อในกรณีที่คุณเชื่อถือเครือข่ายนั้นๆ อย่างสมบูรณ์เท่านั้น"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "เพิ่มเครือข่ายที่กำหนดเอง"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "ตัวสำรวจบล็อก (ไม่บังคับ)"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "ID เครือข่าย"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "เครือข่ายที่กำหนดเอง"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "เครือข่ายที่กำหนดเอง"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "เครือข่าย"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "เครือข่าย"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "URL RPC"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "เครือข่ายทดสอบ"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "สัญลักษณ์"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "คุณไม่สามารถลบเครือข่ายที่เชื่อมต่ออยู่ได้"
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "รีเฟรชเพื่อลองอีกครั้ง หรือเปลี่ยนไปใช้เครือข่ายอื่น"
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "เชื่อมต่อไม่สำเร็จ"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "ลบออกแล้ว"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "ID เครือข่ายที่ใช้สำหรับธุรกรรมการเซ็นชื่อต้องตรงกับ ID เครือข่ายที่ส่งคืนโดยเครือข่าย คุณสามารถป้อนเลขทศนิยมหรือเลขฐานสิบหกที่นำหน้าด้วย 0x ได้ หลักทศนิยมจะแสดงตามค่าเริ่มต้น"
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "คัดลอก"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "ส่งเฉพาะเครือข่ายสินทรัพย์ {chainname} ไปยังที่อยู่นี้"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "Optional"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "ไม่สามารถรับลิมิตค่าธรรมเนียมแก๊สได้ โปรดป้อน"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "จำนวนเงินที่ได้รับ"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "จาก"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "ข้อมูลที่ป้อน (ไม่บังคับ)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "ข้อมูลที่ป้อน"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "สูงสุด"
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Nonce"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Nonce"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "จำนวนเงิน"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "ที่อยู่สำหรับรับเงิน"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "ไปยัง"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "ยอดคงเหลือ: {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= ราคาค่าธรรมเนียมแก๊ส ({gasprice} {unit})× ลิมิตค่าธรรมเนียมแก๊ส ({gaslimit})"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "ปรับแต่ง"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "ลิมิตค่าธรรมเนียมแก๊ส"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "ราคาค่าธรรมเนียมแก๊ส ({unit})"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "Select crypto"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data copied"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "ไม่มีคริปโทในวอลเล็ต"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "ข้อมูลเพิ่มเติมที่รวมไว้สำหรับธุรกรรม เช่น ข้อมูลการโทรของการโต้ตอบตามสัญญา หรือข้อความที่ส่งถึงผู้รับ"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "สูงกว่าที่แนะนำ: {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "ต่ำกว่าที่แนะนำ: {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "เข้าใจแล้ว"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "ล็อกวอลเล็ต"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "โหมดผู้พัฒนาใช้ได้เฉพาะในเครือข่าย EVM โปรดสลับวอลเล็ต แล้วลองอีกครั้ง"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "เอกสารสำหรับผู้พัฒนา"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "โหมดผู้พัฒนา"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "เปิดใช้งานโหมดนี้เพื่อใช้ฟีเจอร์ขั้นสูง เช่น การทดสอบเครือข่าย การเพิ่ม RPC หรือ Nonce ที่กำหนดเอง"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "การตั้งค่า"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "ตั้งเป็นวอลเล็ตเริ่มต้น"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "เวอร์ชัน {version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "การรักษาความปลอดภัยวอลเล็ต"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "การตั้งค่า"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "โหมดผู้พัฒนาใช้งานในเครือข่ายนี้ไม่ได้"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "Completed"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "Failed"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "Pending"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "Waiting"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_top_text_done": {
+      "message": "เรียบร้อย"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "จัดการเครือข่าย"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "สินทรัพย์ทั้งหมด"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "จัดการ"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "แก้ไขวอลเล็ต"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "โหมดผู้ใช้"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "ยินดีต้อนรับสู่"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "By proceeding, you'll allow {contract} access to your {asset}"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "Approve"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "ขอรับ"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "NFT ที่มีอยู่"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "ขอรับ NFT"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "Go back to homepage"
+   },
+   "extension_bug_text_fixing": {
+      "message": "You can go back to homepage and try again later"
+   },
+   "extension_bug_title_error": {
+      "message": "Error"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "Page not found"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "Contract:"
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "Asset change (est.)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "Request from"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "Transaction amount"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "The network information entered belongs to the Sui network. Custom network only supports adding EVM networks"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "Unable to import a private key of the Sui network. Try a different one"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "extension_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "extension_history_index_pending": {
+      "message": "Pending"
+   },
+   "extension_history_title_farm": {
+      "message": "Farm"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "ขอรับ"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "{num} NFT ที่จะขอรับ"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "ขอรับแล้ว"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "To secure your transaction, we estimate an amount for your reference"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "extension_input_errortip_max20": {
+      "message": "Maximum 20 characters"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "By proceeding, you'll revoke {contract} access to your {asset}"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "Revoke approval"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "เรียนรู้เพิ่มเติมที่เว็บไซต์ OKX"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/10558617769613-OKX-Wallet-Passed-Security-Key-Audit-by-Slowmist"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "ศูนย์สนับสนุน"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "ชุมชน OKX"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/okx"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "OKX Wallet"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "เกี่ยวกับ OKX Wallet"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "อีเมล OKX"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "การตรวจสอบการรักษาความปลอดภัย"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "เงื่อนไขการให้บริการ"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "การจัดการวอลเล็ต"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "คัดลอกที่อยู่อีเมลแล้ว"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "Requesting"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "Request success"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "{num} {crypto} requested"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "Too many requests sent to the faucet. Try again later"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "Confirm"
+   },
+   "extension_toast_btn_ok": {
+      "message": "OK"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "You need to spend more network fees in order to replace the transaction"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas price ({unit})"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "Current DApp network belongs to testnet. Switch to custom network mode in Settings and try again"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "Transaction canceled"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "Current fee"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "Required fee"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "Wallet address copied"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "Please switch wallet mode"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "Replace transaction"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "ป้อนที่อยู่"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "Confirm"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "เข้าใจแล้ว"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "หากคุณไม่เห็นตัวเลือกของ OKX Wallet คุณสามารถเชื่อมต่อผ่านทาง Metamask หรือ Phantom"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "คุณจะตั้งค่า OKX Wallet เป็นวอลเล็ตที่คุณต้องการเชื่อมต่อ"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "ตั้งเป็นวอลเล็ตค่าเริ่มต้น"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "วิธีการเชื่อมต่อ DApp"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "Wallet connected"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "Up to {amount} wallets can be added"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "Couldn't obtain addresses. Make sure you've unlocked your device and opened the required app on it"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "Check {transaction} in Ledger wallet"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "Device disconnected. If you need to continue, connect Ledger to your computer via USB and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "Keep the USB connection between your Ledger and computer, unlock Ledger wallet, and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "OK"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "Retry"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "transaction details"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "Transaction details sent. Check and confirm via your device"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "Added"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "สำรวจเครือข่ายใหม่ด้วยวอลเล็ตแบบออลอินวัน"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "รักษาธุรกรรมของคุณให้ปลอดภัยด้วย OKX Wallet"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "เกตเวย์สากลไปยัง DApps ทั้งหมด"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "ยืนยัน"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "ค่าธรรมเนียมฐานสูงสุดต้องมากกว่า 0"
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "ค่าธรรมเนียมฐานสูงสุดที่คุณกำหนดน้อยกว่าค่าธรรมเนียมฐานของเครือข่ายที่จำเป็น {baseFee} Gwei และธุรกรรมใช้เวลานานในการดำเนินการ"
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "ค่าธรรมเนียมเพื่อเร่งธุรกรรมควรมากกว่า 0"
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "ค่าธรรมเนียมฐานที่จำเป็น: {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "ค่าธรรมเนียมฐานสูงสุด"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "นาที"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "ค่าธรรมเนียมเพื่อเร่งธุรกรรม"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "วินาที"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "รีเซตวอลเล็ต"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "ลืมรหัสผ่านใช่หรือไม่"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "OKX Wallet ไม่เก็บรหัสผ่านวอลเล็ตของคุณไว้"
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "หากคุณลืมรหัสผ่านวอลเล็ต คุณสามารถรีเซตได้โดยการรีเซตวอลเล็ตของคุณ"
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "โปรดทราบว่าหากคุณรีเซตวอลเล็ตของคุณโดยไม่สำรองข้อมูลไว้ คุณจะสูญเสียวอลเล็ตและสินทรัพย์ทั้งหมดของคุณไป โปรดตรวจสอบให้แน่ใจว่าได้สำรองข้อมูลวอลเล็ตทั้งหมดเอาไว้ก่อนแล้ว"
+   },
+   "metax_mid_colored_stake": {
+      "message": "Stake"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "สำรองข้อมูลเลย"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "รีเซตวอลเล็ต"
+   },
+   "securityreset_header_text_reset": {
+      "message": "รีเซตวอลเล็ต"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "ยกเลิก"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "โปรดทราบว่าหากคุณรีเซตวอลเล็ตของคุณโดยไม่สำรองข้อมูลไว้ คุณจะสูญเสียวอลเล็ตและสินทรัพย์ทั้งหมดของคุณไป โปรดตรวจสอบให้แน่ใจว่าได้สำรองข้อมูลวอลเล็ตทั้งหมดเอาไว้ก่อนแล้ว"
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "เพื่อยืนยันการรีเซตวอลเล็ต โปรดป้อน: {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "รีเซตวอลเล็ตใช่หรือไม่"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "คำเตือนเรื่องความเสี่ยง"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "ระดับการป้องกันของวอลเล็ต"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "ระดับความเข้มงวดในการคัดกรอง ระดับที่สูงขึ้นสามารถช่วยบล็อกเว็บไซต์ที่น่าสงสัยได้มากขึ้น"
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "สูง"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "ต่ำ"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "บล็อกทั้งเว็บไซต์ที่เป็นอันตรายและน่าสงสัย"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "บล็อกเฉพาะเว็บไซต์ที่เป็นอันตรายเท่านั้น"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "ระดับการป้องกันของวอลเล็ต"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "ยอดคงเหลือ {token} ไม่เพียงพอ"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "สวอป"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "คุณมีคำสั่งสวอปเป็นแก๊สที่รอดำเนินการอยู่ จึงไม่สามารถเริ่มคำสั่งใหม่ได้ในขณะเดียวกัน โปรดลองใหม่อีกครั้งหลังจากขั้นตอนนี้เสร็จสิ้น"
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "ตกลง"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "ปิดให้บริการสวอปเป็นแก๊สในขณะนี้"
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "คุณส่งคำสั่งที่คล้ายกันแล้ว เราขอแนะนำว่าอย่าเพิ่งส่งคำสั่งใหม่จนกว่ายอดคงเหลือของคุณจะอัปเดต"
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "ดูใน Explorer"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "ถึงขีดจำกัดคำสั่งสวอปเป็นแก๊สรายวันแล้ว โปรดลองอีกครั้งในวันพรุ่งนี้"
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "เครื่องมือด้านความเสี่ยงของเราตรวจพบว่าคุณได้ดำเนินการที่ผิดปกติ คุณจึงไม่ได้รับอนุญาตให้ใช้บริการสวอปเป็นแก๊สอีกต่อไป"
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "ดูใน Explorer"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "เติม {nativeToken} ไม่สำเร็จ"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "เติม {nativeToken} ไม่สำเร็จ"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "สวอป {payValue} {paySymbol} เป็น {receiveValue} {receiveSymbol}"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "ส่งธุรกรรมแล้ว"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "เติม {nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value} general transactions"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "เลือกจำนวนเงินที่จะชำระ"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "เลือกโทเคนในการชำระเงิน"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "สวอปเป็นแก๊ส"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "ตกลง"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "นี่คืออัตราแลกเปลี่ยนโดยประมาณของการสวอปเป็นแก๊ส ซึ่งเป็นการคำนวณโดยคำนึงถึงราคาตลาดและอัตราจากการแลกเปลี่ยนแบบรวมศูนย์ อัตราที่แท้จริงอาจแตกต่างไปเมื่อคำสั่งของคุณได้รับการยืนยัน การใช้บริการสวอปเป็นแก๊สจะต้องมีค่าธรรมเนียมเครือข่าย ซึ่งจะรวมอยู่ในจำนวนเงินที่คุณจ่ายโดยอัตโนมัติ"
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "Trading on blockchains requires paying a network fee with native tokens such as ETH, BNB, OKT, MATIC, etc. When you don't have these tokens to make a transaction, you can quickly swap tokens you already hold for native tokens using the Swap for gas feature (it's only available for a few networks).\nGetting native tokens via Swap for gas also requires a network fee, which will be automatically factored into the amount you pay.\nYou'll see an estimated number of general transactions when placing an order on Swap for gas. It refers to the number of token transfers you can make with your selected amount. The actual number may vary."
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "สวอปเป็นแก๊ส"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "สวอปเป็นแก๊ส"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "สวอปเป็นแก๊ส"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "อ้างอิง"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "คุณได้รับ"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "โหลดใหม่"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "ข้อผิดพลาดของเครือข่าย"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "โปรดอย่าส่งคำสั่งซื้ออีกครั้งจนกว่าคำสั่งนี้จะเสร็จสมบูรณ์ มิฉะนั้นอาจทำได้ไม่สำเร็จ การปิดหน้านี้จะไม่ขัดจังหวะกระบวนการ คุณสามารถตรวจสอบรายละเอียดได้ในประวัติ"
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "เลือกโทเคนในการชำระเงิน"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "ไม่สามารถเรียกดูราคา {paySymbol} และ {receiveSymbol} ได้ จึงไม่สามารถยืนยันจำนวนเงินที่คุณได้รับได้ โปรดลองใหม่อีกครั้งในภายหลัง"
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "ไม่สามารถเรียกดูราคา {paySymbol} ได้ จึงไม่สามารถยืนยันจำนวนเงินที่คุณจ่ายได้ โปรดลองใหม่อีกครั้งในภายหลัง"
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "ไม่สามารถเรียกดูราคา {receiveSymbol} ได้ ขึงไม่สามารถยืนยันจำนวนเงินที่คุณได้รับได้ โปรดลองใหม่อีกครั้งในภายหลัง"
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "ค่าธรรมเนียมเครือข่ายสูงเกินไปในขณะนี้ จึงไม่ใช่เวลาอันเหมาะสมในการทำธุรกรรม โปรดลองใหม่อีกครั้งในภายหลัง"
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "Insufficient {token} for network fee "
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "Recommend"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "Receive {token} with QR code or wallet address"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "Top up {token} quicker than ever"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "Receive"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "Swap for gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "โปรดสำรองข้อมูลวอลเล็ตของคุณก่อนที่จะดูที่อยู่"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "ลูกค้าบัญชีแยกประเภท"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "โปรดดาวน์โหลด {downloadUrl} และคลิกปุ่มเชื่อมต่อด้านล่าง หลังจากที่เปิดหน้าแรกของลูกค้าบัญชีแยกประเภทแล้ว"
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "เชื่อมต่อวอลเล็ตฮาร์ดแวร์"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "เพิ่มวอลเล็ต"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "การเชื่อมต่อไม่สำเร็จ"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "ตรวจสอบว่าคุณได้ใส่วอลเล็ตฮาร์ดแวร์เข้าไปยังคอมพิวเตอร์และปลดล็อกมันแล้ว"
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "เลือกวอลเล็ตฮาร์ดแวร์"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "ตรวจสอบว่าวอลเล็ตฮาร์ดแวร์ของคุณเชื่อมต่อกับคอมพิวเตอร์แล้ว"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "กำลังเชื่อมต่อ"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "บัญชี {newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "สร้างบัญชีใหม่แล้ว"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "เชื่อมต่อ"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "เชื่อมต่อวอลเล็ตฮาร์ดแวร์"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "สร้างวอลเล็ตใหม่"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "Hardware wallet"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "คีย์ส่วนตัว"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "Seed Phrase"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "นำเข้าวอลเล็ตที่มีอยู่"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "คุณต้องใช้ OKX Wallet บน Google Chrome เพื่อเชื่อมต่อกับวอลเล็ตฮาร์ดแวร์ของคุณ"
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "ไม่รองรับบราวเซอร์ของคุณ"
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "ดาวน์โหลด Google Chrome"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "(Legacy)"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "เชื่อมต่อวอลเล็ตฮาร์ดแวร์"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "คุณต้องใช้บัญชีล่าสุดของคุณก่อน จึงจะสามารถเพิ่มบัญชีใหม่ได้"
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "กำลังเชื่อมต่อ..."
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "เชื่อมต่อวอลเล็ตฮาร์ดแวร์ของคุณ"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "สร้างวอลเล็ต Seed Phrase อันใหม่"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "หากที่อยู่วอลเล็ตของคุณไม่อยู่ในรายการด้านล่าง ให้สลับเส้นทางเป็น Legacy (MEW / MyCrypto)"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "ลืมวอลเล็ตฮาร์ดแวร์นี้"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "เลือกเส้นทาง"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "เลือกวอลเล็ต"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "นำเข้า Seed Phrase หรือคีย์ส่วนตัว"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "คุณสามารถเพิ่มได้สูงสุด 50 วอลเล็ต"
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "สร้างแล้ว"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "เพิกถอนการอนุมัติ"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "การอนุญาตวอลเล็ต"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "คุณจะเพิกถอนการอนุมัติของ {tokenSymbol}"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "คีย์ส่วนตัว"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "การคัดลอกคีย์ส่วนตัวมีความเสี่ยงว่าคลิปบอร์ดจะถูกตรวจสอบหรือถูกใช้ในทางที่ผิดจากแอปพลิเคชันตัวกลาง"
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "ยืนยัน Seed Phrase ของคุณ"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "ฉันรับทราบแล้ว"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "คัดลอกต่อไป"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "อย่าคัดลอก"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "คีย์ส่วนตัว"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "คุณสามารถจดคำเอาไว้ได้ตามลำดับ และเก็บมันเอาไว้ให้ปลอดภัย"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "จด Seed Phrase เอาไว้"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "ตรวจสอบให้แน่ใจว่าไม่มีใครเห็นหน้าจอของคุณ"
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "ดู Seed Phrase"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "สำรองข้อมูลแล้ว"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "คัดลอกแล้ว"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.okx.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "Network fee"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "Register zkSync Lite to continue the transaction"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "จำนวนเงิน"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "จำนวนเงินที่อนุญาต"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "อนุมัติ"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "โต้ตอบกับ (ไปยัง)"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "เครือข่าย"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "เครือข่าย"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "URL ตัวสำรวจบล็อก"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "ID เครือข่ายที่ใช้ในการลงนามธุรกรรมสำหรับเครือข่ายนี้"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "ID เชนที่ใช้ในการลงนามธุรกรรมสำหรับเครือข่ายนี้"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "สัญลักษณ์คริปโท"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "สัญลักษณ์ที่แสดงสำหรับเครือข่ายสกุลเงินนี้"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "URL ที่ใช้เป็นตัวสำรวจบล็อกสำหรับเครือข่ายนี้"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "URL ตัวสำรวจบล็อกเชนที่เครือข่ายนี้ใช้"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "ชื่อที่เกี่ยวข้องกับเครือข่ายนี้"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "ชื่อที่เกี่ยวข้องกับเครือข่ายนี้"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "URL ที่ใช้เพื่อเข้าถึงเครือข่ายนี้"
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "การอนุญาตนี้แสดงว่าคุณอนุญาตให้ {name} โอน {tokenSymbol} ของคุณ และทำธุรกรรมให้คุณโดยอัตโนมัติ"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "โปรดสำรอง Seed Phrase ของคุณเอาไว้ ก่อนที่จะลองเข้าถึง DApp"
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "ยกเลิก"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "ระบุ"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "สลับ"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "ค่าธรรมเนียมที่เพิ่มขึ้นอาจช่วยลดเวลาในการดำเนินการ แต่ไม่มีการรับประกันว่าจะเป็นดังนั้น"
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "ข้อความนี้ไม่สามารถถอดรหัสได้เนื่องจากข้อผิดพลาด: {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "เชื่อมต่อกับเว็บไซต์ที่คุณเชื่อถือเท่านั้น"
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "เชื่อมต่อบัญชี"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "เลือกบัญชี"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "สำรองข้อมูลวอลเล็ตของคุณ"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "คุณได้อนุมัติการอนุญาตนี้"
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "อนุญาตให้ DApp ปัจจุบันเชื่อมต่อกับ OKX Wallet"
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "คุณไม่ได้เชื่อมต่อ OKX Wallet กับเว็บไซต์นี้ หากต้องการเชื่อมต่อกับเว็บไซต์นี้ ให้ค้นหาและคลิกปุ่มเชื่อมต่อ"
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "{siteName} ต้องการอ่านข้อความนี้เพื่อดำเนินการต่อ"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "URL เครือข่าย"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "คุณยังไม่ได้อนุมัติการอนุญาตนี้"
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName} ต้องการคีย์ที่เข้ารหัสสาธารณะของคุณ เมื่อทำการยินยอม เว็บไซต์นี้จะสามารถส่งข้อความที่เข้ารหัสถึงคุณได้"
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "ขอคีย์การเข้ารหัสสาธารณะ"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "เซ็น"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "คำขอด้านลายเซ็น"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "บัญชีปัจจุบัน"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "เครือข่ายปัจจุบัน"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "คุณต้องการใช้ {curWalletName} เชื่อมต่อไปยัง {host} หรือไม่"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "เว็บไซต์ที่เชื่อมต่อ"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "ถอดรหัส"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "คัดลอกข้อความที่เข้ารหัสแล้ว"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "ถอดรหัสข้อความ"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "คำขอเพื่อถอดรหัส"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "ส่วนขยายภายนอก"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "เครือข่าย"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "สัญญาใหม่"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "+ {length} เพิ่มเติม"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "ไปยัง:"
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "เลือกบัญชี"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "เลือกทั้งหมด"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "ประเภท"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "{curWalletName} เชื่อมต่อกับเว็บไซต์นี้แล้ว"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "{curWalletName} ยกเลิกการเชื่อมต่อกับเว็บไซต์นี้แล้ว"
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "ยกเลิกการเชื่อมต่อ"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "ปฏิเสธ"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "ค่าแก๊สไม่เพียงพอ"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "เพิ่มโทเคนที่ได้รับการแนะนำ"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "เชื่อมต่อไปยัง {account} ทั้งหมดของคุณ"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "เชื่อมต่อไปยัง {origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "บัญชี"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "คุณแน่ใจหรือไม่ว่าจะอนุมัติ การอนุมัติหมายความว่าคุณอนุญาตให้ DApp นี้ทำการถอน {tokenSymbol} ของคุณได้ตลอดเวลา"
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "อนุญาตให้เว็บไซต์นี้:"
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "ซึ่งจะอนุญาตให้ใช้เครือข่ายนี้ได้ภายใน OKX Wallet"
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "อนุญาตให้ส่วนขยายภายนอกนี้:"
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "เพิ่มโทเคน"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "เพิ่มโทเคน"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "ไม่จำกัด"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "ยอดคงเหลือ"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "ID เครือข่าย"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "ข้อมูล"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "โปรดป้อนจำนวนเงินสูงสุด ({tokenSymbol})"
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "OKX Wallet ไม่รองรับเครือข่ายนี้"
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "Back"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "Couldn't send this crypto because it's not available for paying network fees"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "Address not registered"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "You need to register this address before using it"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "Register"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "Seed Phrase ไม่ถูกต้อง โปรดป้อนอีกครั้ง"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "Seed Phrase"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "โปรดเลือกแต่ละคำตามลำดับ"
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "ลบ"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "ชื่อวอลเล็ตไม่ควรเกิน 20 อักขระ"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "มีชื่อวอลเล็ตนี้แล้ว"
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "ชื่อบัญชี"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "ปรับแก้แล้ว"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "คำเตือนเรื่องความเสี่ยง"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "การลบวอลเล็ตจะล้างข้อมูลวอลเล็ตที่มีอยู่ทั้งหมดบนอุปกรณ์ปัจจุบัน โปรดตรวจสอบให้แน่ใจว่าคุณได้สำรองข้อมูล Seed Phrase หรือคีย์ส่วนตัวของวอลเล็ตไว้ก่อนที่จะลบ ไม่อย่างนั้นคุณจะสูญเสียวอลเล็ตและสินทรัพย์ทั้งหมดในนั้นถาวร"
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "ชื่อวอลเล็ต"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "ลบแล้ว"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "เงื่อนไขการให้บริการ"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "ไปที่แก้ไข"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "ยกเลิก"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "ยืนยัน"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "มีที่อยู่นี้อยู่แล้ว"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "สูงสุด 20 อักขระ"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "ที่อยู่ไม่ถูกต้อง โปรดลองอีกครั้ง"
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "ป้อนที่อยู่"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "ป้อนชื่อให้อยู่ภายใน 20 อักขระ"
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "ยกเลิกการเพิ่มที่อยู่หรือไม่"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "ที่อยู่"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "ชื่อ"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "เพิ่มที่อยู่"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "เครือข่ายอื่นๆ เร็วๆ นี้!"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "ไม่รองรับเครือข่าย {network}"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "ยกเลิก"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "ดำเนินการต่อ"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "การแจ้งเตือนด้านความปลอดภัย"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "คุณกำลังส่งคริปโทไปยังที่อยู่ตามสัญญาแทนที่จะเป็นที่อยู่ส่วนตัว โปรดตรวจสอบให้แน่ใจว่าที่อยู่ถูกต้องก่อนดำเนินการต่อเพื่อหลีกเลี่ยงความสูญเสียที่อาจเกิดขึ้น"
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "เพิ่มที่อยู่"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "คัดลอกที่อยู่"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "ลบที่อยู่"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "แก้ไขที่อยู่"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "เครือข่ายทั้งหมด"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "ค้นหาที่อยู่หรือชื่อ"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "ไม่มีที่อยู่"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "สมุดที่อยู่"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "เลือกเครือข่าย"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "เพิ่มที่อยู่แล้ว"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "ลบที่อยู่แล้ว"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "ถึงขีดจำกัดสมุดที่อยู่ (200 รายการ)"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "NFT ทั้งหมดของคอลเล็คชั่นนี้"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "อนุมัติ"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "สำหรับ"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number} ชั่วโมง"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number} ชั่วโมง"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number} ชั่วโมง"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number} นาที"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number} นาที"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "ไม่เลย"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "ย้อนกลับ"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "สำรวจผลตอบแทน"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "สำรวจเพิ่มเติม"
+   },
+   "wallet_extension_btn_register": {
+      "message": "ลงทะเบียน"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "สลับเครือข่าย"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "คัดลอกคีย์ส่วนตัว"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "จำนวนเงินที่ขอรับโดยประมาณ"
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "จำนวนเงินขาดทุนที่ขอรับขั้นสุดท้ายจะได้รับการยืนยันเมื่อส่งธุรกรรมบนบล็อกเชนสำเร็จแล้ว"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "จำนวนเงินขาดทุนที่ขอรับขั้นสุดท้ายจะได้รับการยืนยันเมื่อส่งธุรกรรมบนบล็อกเชนสำเร็จแล้ว"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "จำนวนเงินลงทุนโดยประมาณ"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "ธุรกรรมปัจจุบันรอดำเนินการนานกว่า {pendingTips} ชม. กรุณาเร่งความเร็วหรือยกเลิกธุรกรรม"
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "ID บัญชี"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "From"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "ลงทะเบียน ZKSpace เพื่อทำธุรกรรมต่อ"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "ลงทะเบียน ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "ลบแล้ว"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "อนุมัติการเข้าถึง {approved_address} ไปยัง {approved_asset} ทั้งหมดของคุณ"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "ถอนการเข้าถึง {approved_address} ไปยัง {approved_asset} ทั้งหมดของคุณ"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "By confirming, you will allow {address} to transfer your assets or automate transactions on your behalf. Please take caution before moving on"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "Unknown NFT collection"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "You'll allow this DApp to transfer your main-chain crypto, please proceed with caution"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "The transaction may fail due to a low network fee. We recommend you adjust the network fee before proceeding"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "ภาพรวม"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "คุณสามารถใช้ DApps ที่สนับสนุนเครือข่ายต่อไปนี้"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "คุณต้องลงทะเบียนคริปโทนี้ก่อนใช้งาน"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "เครือข่ายอื่นๆ ที่รองรับ EVM ได้รับการซิงโครไนซ์โดยอัตโนมัติ"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "คุณสามารถใช้ DApps ที่สนับสนุนเครือข่ายต่อไปนี้"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "คุณสามารถใช้ DApps ที่สนับสนุนเครือข่ายต่อไปนี้ หากคุณพบปัญหาในการใช้ DApps เหล่านี้ ให้คลิกปุ่มด้านล่างเพื่อเปลี่ยนไปใช้เครือข่าย EVM"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "คุณสามารถใช้วอลเล็ตนี้เพื่อจัดการสินทรัพย์คริปโทของคุณในเครือข่ายบิทคอยน์"
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "คุณสามารถใช้วอลเล็ตนี้เพื่อจัดการสินทรัพย์คริปโทของคุณในเครือข่าย {network}"
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "โอน"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "ยกเลิก"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "ลบ"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "ลบเลือกที่อยู่ใช่หรือไม่"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "เลือกเครือข่าย"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "แก้ไขที่อยู่"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "บันทึกแล้ว"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "ย้อนกลับ"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "โหลดซ้ำ"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "เกินลิมิตจำนวนตัวอักษร โปรดป้อนอีกครั้ง"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "การลงชื่อเข้าใช้ในข้อความนี้อาจเป็นอันตรายได้เพื่อปกป้องสินทรัพย์ของคุณ ให้ลงชื่อเข้าใช้ก็ต่อเมื่อคุณเชื่อถือไซต์อย่างสมบูรณ์"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "Fork ETHW ได้ในเร็ว ๆ นี้"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "เพิ่มสินทรัพย์ Ethereum ของคุณเป็นสองเท่าฟรี!"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "เวอร์ชันล่าสุด"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "OKX Wallet รองรับสินทรัพย์ ETHW แล้ว ไปดูกันเลย"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "หมายเลขเวอร์ชัน"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "คุณสามารถเปลี่ยนไปใช้เครือข่าย EVM ด้านล่างและเครือข่ายของ DApps จะเปลี่ยนโดยอัตโนมัติ"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "ดูในตัวสำรวจบล็อกเชน"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "ดูในวอลเล็ต"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "ลืมรหัสผ่านของคุณใช่หรือไม่"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "โปรดป้อน \"รีเซต\" ด้านล่างเพื่อยืนยันการรีเซต"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "ยืนยันการรีเซต"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "รีเซตวอลเล็ต"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "นับ NFT ทั้งหมด"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "อนุมัติ"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "เพิกถอนการอนุมัติ"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "สำหรับ"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "ได้รับ"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "ส่ง"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "ประวัติ"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "ขอรับ"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "ลงทุน"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "แลก"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "Type"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "เครือข่ายทั้งหมด"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "วันที่"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "ที่อยู่"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "อนุมัติ {symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "ขอรับ"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "สัญญาแบบโต้ตอบ"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "มินต์"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "ได้รับ"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "จาก"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "แลก"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "เพิกถอนการอนุมัติ {symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "Revoke approval of {approvedasset}"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "ส่ง"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "ไปยัง"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "ยกเลิกธุรกรรม"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "เพิ่มความเร็ว"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "ยกเลิกการเพิ่มความเร็ว"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "รอดำเนินการ"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "กำลังรอ"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "จองซื้อ"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "เพิ่มเติม..."
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "เทรด"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "รอดำเนินการ ({num})"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "คลิกเพื่อเพิ่มไปยังสมุดที่อยู่"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "เสร็จสิ้นแล้ว"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "ไม่สำเร็จ"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "Failed"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "Pending"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "Waiting"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "เสร็จสิ้นแล้ว"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "Completed"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "รอดำเนินการ"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "ลงทะเบียน ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "โปรโตคอลที่ไม่รู้จัก"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "โทเคนที่ไม่รู้จัก"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "Revoke approval"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "เชื่อมต่อแล้ว"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "ประวัติ"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "สวอป"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "คลิกเพื่อเปลี่ยนรูปแบบที่อยู่"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "คลิกเพื่อไปที่บทนำของ SegWit"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "ล้าง"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "Seed Phrase ของฉันมี"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "12 คำ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "15 คำ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "18 คำ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "21 คำ"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "24 คำ"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "มีวอลเล็ตอยู่แล้ว"
+   },
+   "wallet_extension_info_pay": {
+      "message": "ชำระเงินแล้ว"
+   },
+   "wallet_extension_info_receive": {
+      "message": "ได้รับแล้ว"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "ประเภท"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "ฟาร์ม"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "พูล"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "บันทึก"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "สเตก"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "ห้องนิรภัย"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "รหัสผ่านไม่ตรง!"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "รหัสผ่านตรง!"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "ปลอดภัยมาก"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "เยี่ยม"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "ยังปลอดภัยได้มากกว่านี้"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "ป้อนบันทึกได้สูงสุด 256 ตัวอักษร"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "ค้นหาเครือข่าย"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "ค้นหาเครือข่าย"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "สเตก"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "ห้องนิรภัย"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "ที่อยู่ที่ลงทะเบียนไว้"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "จำกัดการเข้าถึง"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "ผลิตภัณฑ์หรือบริการของ okx.com ไม่สามารถใช้ได้ในภูมิภาคของคุณ ({area}) ตามกฎหมายและระเบียบข้อบังคับของท้องถิ่น"
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "คุณมีวอลเล็ตที่ไม่ได้สำรอง บัญชีของวอลเล็ตที่ไม่ได้สำรองไม่สามารถเชื่อมต่อกับ DApps ของบุคคลภายนอกได้"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "ดูในตัวสำรวจบล็อกเชน"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "{num} บัญชีที่เชื่อมต่อได้"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "จำนวนเงินที่อนุมัติ"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "การยืนยันบล็อก"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "จาก"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "โต้ตอบกับ"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "เครือข่าย"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "สถานะ"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "เวลา"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "ไปยัง"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "แฮชธุรกรรม"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "ไม่จำกัด"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "{contractaddress} มีความเสี่ยง เพื่อปกป้องสินทรัพย์ของคุณ โปรดตรวจสอบให้แน่ใจว่าที่อยู่นี้เป็นที่อยู่การโอนเงินที่คุณใช้บ่อย ก่อนที่จะยืนยันธุรกรรม"
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "สมัคร"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "กลับไปที่รายการทั้งหมด"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "ล้างทั้งหมด"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "โหลดซ้ำ"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "ข้อเสนอที่ดีที่สุด"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "ล่าสุด"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "ราคา"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "เชน"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "สถานะการขาย"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "ได้รับข้อเสนอแล้ว"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "ลดราคา"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "ค้นหา"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "ดูในตลาด NFT"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "ที่อยู่สัญญา"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "ราคาฐานของคอลเล็กชัน"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "เครือข่าย"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "ราคา NFT"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "มาตรฐานของโทเคน"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "ตัวกรอง"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "รายการที่ส่งไปยังที่อยู่ที่ไม่ถูกต้องไม่สามารถเรียกคืนได้"
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "คริปโท"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "NFT"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "สำรวจ NFT"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "NFT ที่ดีที่สุดทั้งหมดอยู่ใน OKX"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "คอลเล็กชัน"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "โหลดไม่สำเร็จ"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "สูงสุด"
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "ไม่มีคอลเล็กชัน"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "ไม่มีรายการในการค้นหานี้"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "จำนวนเงินต้องไม่เป็น 0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "จำนวนเงินที่ป้อนต้องไม่เกิน {max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "ป้อนจำนวนที่คุณต้องการโอน"
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "มูลค่า NFT คำนวณจากราคาฐานของคอลเล็กชัน"
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "เป็นเจ้าของแล้ว"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "ที่อยู่นี้ยังไม่ได้ลงทะเบียน {token} และไม่สามารถใช้ได้"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "OKX Wallet มีการกระจายอำนาจอย่างสมบูรณ์และเราจะไม่บันทึกรหัสผ่านของคุณ หากคุณลืมรหัสผ่าน โปรดรีเซตวอลเล็ตของคุณและนำเข้าวลีหรือคีย์ส่วนตัวเพื่อสร้างรหัสผ่านใหม่ โปรดเก็บมันให้ปลอดภัย"
+   },
+   "wallet_extension_option_allchain": {
+      "message": "เครือข่ายทั้งหมด"
+   },
+   "wallet_extension_option_desc": {
+      "message": "{domain} อยู่ในเครือข่าย {chain}"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "สลับเครือข่าย EVM"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "การเชื่อมต่อหลายเชน"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "สินทรัพย์ทั้งหมด"
+   },
+   "wallet_extension_overview_more": {
+      "message": "เพิ่มเติม"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "คัดลอกที่อยู่สำหรับรับเงินแล้ว"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "สินทรัพย์ตามเครือข่าย"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "ด้วยการดำเนินการต่อ แสดงว่าคุณยอมรับ {terms_service} ของ OKX แล้ว"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "เติม {token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "{token} ไม่เพียงพอสำหรับค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "ซ่อน Seed Phrase"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "อนุมัติ"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "ยกเลิก"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "เพิกถอนการอนุมัติ"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "ยกเลิก"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "ส่งธุรกรรม {symbol} 0 รายการเพื่อแทนที่ธุรกรรมเดิม"
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "เนื่องจากเหตุผลด้านเครือข่าย การยกเลิกธุรกรรมจะไม่รับประกันความสำเร็จ"
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "ราคาค่าธรรมเนียมแก๊ส ({gasPrice} Gwei) * ลิมิตค่าธรรมเนียมแก๊ส ({gasLimit})"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "คริปโทยังไม่ได้ลงทะเบียน"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "ยอดคงเหลือไม่เพียงพอ"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "การคัดลอกคีย์ส่วนตัวมายังคลิปบอร์ดอาจถูกแอปบุคคลภายนอกจับตาดูหรือนำไปใช้ในทางที่ไม่ดีได้ โปรดเก็บคีย์ส่วนตัวไว้ให้ปลอดภัย"
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "เริ่มการสำรวจ"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "{token} ไม่เพียงพอสำหรับค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "Legacy"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/learn/what-is-segregated-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "Native SegWit"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "Nested SegWit"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "คำสั่งซ้ำ"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "ดำเนินการส่งต่อ"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "ดูในประวัติ"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "คุณได้วางคำสั่งที่เหมือนกันไว้แล้ว ยังต้องการดำเนินการต่อด้วยคำสั่งนี้หรือไม่"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "หลัง"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "ก่อน"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "ยกเลิก"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "เร่งการทำธุรกรรมด้วยการเพิ่มค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "= ราคาค่าธรรมเนียมแก๊ส ({gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "เครือข่ายทั้งหมด"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "โต้ตอบกับ"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "โปรเจกต์"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "สัญญาโปรเจกต์"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "เพิ่มเครือข่าย"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "รูปแบบที่อยู่"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "ยกเลิกการลงขาย"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "ยกเลิกธุรกรรม"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "สัญญาโต้ตอบ"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "คัดลอกที่อยู่แล้ว"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "เลือกเครือข่าย"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "เพิ่มความเร็วธุรกรรม"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "คัดลอกแฮชธุรกรรมแล้ว"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "คุณยืนยันเพื่อคัดลอกใช่หรือไม่"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "สร้าง {walletName} แล้ว"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "นำเข้า {walletName} แล้ว"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "ดาวน์โหลดใบแจ้งยอด"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "จำนวนเงินที่อนุญาตให้บุคคลภายนอกถอนและทำธุรกรรมให้คุณโดยอัตโนมัติ"
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "ดำเนินการต่อ"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "ปฏิเสธ"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "คำเตือนเรื่องความเสี่ยง"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "{accountAddress} ถูกรายงานว่าเป็นที่อยู่สัญญาที่มีความเสี่ยง มีความเสี่ยงต่อการถูกขโมยสินทรัพย์ โปรดตรวจสอบให้แน่ใจว่าที่อยู่นั้นปลอดภัย"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "จำนวนเงินที่อนุมัติ"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "จำนวนเงินที่อนุมัติ"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "{accountAddress} ถูกรายงานว่าเป็นที่อยู่ที่มีความเสี่ยง การโต้ตอบกับที่อยู่นี้อาจส่งผลต่อความปลอดภัยต่อสินทรัพย์ของคุณ ตรวจสอบให้แน่ใจว่าที่อยู่ที่คุณกำลังโต้ตอบอยู่เป็นที่อยู่ที่ปลอดภัย"
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "Confirm"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "Couldn't trade with fiat money since retrieving est. value of this crypto isn't available"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "ตรวจสอบเลย"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "OKX Wallet รองรับสินทรัพย์ ETHW แล้ว"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. OKX Wallet รองรับสินทรัพย์ ETHW แล้ว"
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. โลกนี้กว้างใหญ่จนฉันอยากเห็น"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "มีอะไรใหม่"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "มีอะไรใหม่"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "มีอะไรใหม่"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "V2.15.10"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "มีอะไรใหม่ใน 2.16.2"
+   },
+   "wallet_extension_rn_button": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. ตอนนี้คุณสามารถทำธุรกรรมและโต้ตอบกับ DApps บนเครือข่าย ETHF ได้"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "ตอนนี้คุณสามารถทำธุรกรรมและโต้ตอบกับ DApps บนเครือข่าย Aptos ได้"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. สามารถคัดกรองและแจ้งเตือนความเสี่ยงของไซต์ที่น่าสงสัยได้แล้ว"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. NFTs on Aptos can now be displayed and claimed in the wallet"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. ตอนนี้คุณสามารถทำธุรกรรมได้โดยตรงโดยใช้ DApps บนเครือข่าย EVM และ Solana"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. ตอนนี้คุณสามารถทำธุรกรรมและโต้ตอบกับ DApps บนเครือข่าย Tron ได้"
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. You can now use ENS, Unstoppable Domains, and SPACE ID domains to make transfers"
+   },
+   "wallet_extension_rn_title": {
+      "message": "มีอะไรใหม่"
+   },
+   "wallet_extension_rn_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "ดำเนินการต่อ"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "ปฏิเสธ"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "คำเตือนเรื่องความเสี่ยง"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "{accountAddress} ถูกรายงานว่าเป็นที่อยู่ที่มีความเสี่ยง มีความเสี่ยงต่อการถูกขโมยสินทรัพย์ โปรดตรวจสอบให้แน่ใจว่าที่อยู่นั้นปลอดภัย"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "ดูการฉ้อโกงเพิ่มเติม"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "{accountAddress} ถูกรายงานว่าเป็นที่อยู่สัญญาที่มีความเสี่ยง มีความเสี่ยงต่อการถูกขโมยสินทรัพย์ โปรดตรวจสอบให้แน่ใจว่าที่อยู่นั้นปลอดภัย"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "รองรับ {number} + เครือข่าย EVM แล้ว"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "เครือข่าย EVM"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "ที่อยู่ของคุณคือที่อยู่เครือข่าย EVM คุณสามารถใช้มันเพื่อจัดการสินทรัพย์ของคุณบนเครือข่ายอื่นๆ ที่รองรับ EVM"
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "เครือข่ายที่รองรับ EVM ที่รองรับ ได้แก่: {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "เลือกคริปโทสำหรับการชำระเงิน"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "เพิ่มเลย"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "Confirm"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "ถัดไป"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "Next"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "To"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "สมุดที่อยู่"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "ที่อยู่ล่าสุด"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "โปรดป้อนที่อยู่ที่ถูกต้อง"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "ไม่อยู่ในสมุดที่อยู่"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "Couldn't estimate"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "ป้อนที่อยู่หรือชื่อที่อยู่"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "Search currency"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "All"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "ค่าเริ่มต้น"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "Balance"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "Pay with"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "Select crypto to pay for network fees"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "Canceled"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "กำลังยกเลิก"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "Canceling"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "กำลังเร่ง"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "Speeding up"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "จำนวนเงิน"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "ยอดคงเหลือ"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "สูงสุด"
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "The maximum amount is {fiatamount} ({cryptoamount}) after deducting network fees"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "Receiving address"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "Select currency"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "ไม่พบ {crypto} คุณสามารถเพิ่มคริปโทนี้ได้"
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "Transfer at least {amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "การตั้งค่า"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "ล็อกอัตโนมัติ"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "วอลเล็ตสำรอง"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "การตั้งค่า"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "เปลี่ยนรหัสผ่าน"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "ตั้งเป็นวอลเล็ตเริ่มต้น"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "สมุดที่อยู่"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "ข้อมูลการติดต่อ"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "เวอร์ชัน {number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "Don't refresh this page as it could cause hardware wallet import failure. To protect your privacy, OKX Wallet doesn't store your wallet password. Please keep your password safe."
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "อนุมัติการเข้าถึง NFT ทั้งหมดของคอลเล็กชันนี้หรือไม่"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "ขอรับ"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "ขอรับโดยประมาณ"
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "คุณสามารถสำรวจเครือข่ายมากกว่า 25 รายการด้วย OKX Wallet ได้แล้ว"
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "จาก"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "ไปยัง"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "ลงทุนด้วย"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "ลงทุนโดยประมาณด้วย"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "ได้รับ"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "แลกจาก"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "ลงทะเบียน"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "เพิกถอนการเข้าถึง NFT ทั้งหมดของคอลเล็กชันนี้หรือไม่"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "DeFi"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "{collection} ทั้งหมดของคุณ"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "สินทรัพย์ที่อนุมัติ"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "เราทำการประสานเครือข่าย {networkname} อื่นๆ ให้คุณโดยอัตโนมัติ"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "ยกเลิกการลงขาย"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "เปิด"
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "ประตูสู่โลก DeFi สากลของคุณ"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "บันทึก"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "ไม่พบผลลัพธ์"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "อนุมัติ"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "อนุมัติ {collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "NFT ที่ไม่รู้จัก"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "คอลเล็กชัน NFT ที่ไม่รู้จัก"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "ยกเลิกการลงขาย"
+   },
+   "wallet_extension_title_memo": {
+      "message": "บันทึก"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "บันทึก (ไม่บังคับ)"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "การเชื่อมต่อแบบหลายเชนที่ถูกเลือกโดยค่าเริ่มต้น"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "สนับสนุนการเชื่อมต่อหลายเชน"
+   },
+   "wallet_extension_title_register": {
+      "message": "ลงทะเบียน"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "ลงทะเบียนคริปโท"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "เพิกถอนการอนุมัติ"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "OKX Wallet รองรับเครือข่ายต่อไปนี้"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "เครือข่ายปัจจุบัน"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "สลับเครือข่าย"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "ที่อยู่วอลเล็ต"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "คัดลอกที่อยู่แล้ว"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "เปลี่ยนรูปแบบที่อยู่แล้ว"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "อนุมัติ {collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "ข้อผิดพลาดของเครือข่าย โปรดตรวจสอบการเชื่อมต่อเครือข่ายและรีเฟรชเพื่อลองอีกครั้ง"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "ไม่ใช่ตอนนี้"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "ตั้งเป็นวอลเล็ตเริ่มต้น"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "สร้างสำเร็จแล้ว"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "ลงทะเบียนไม่สำเร็จ"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "วอลเล็ตฮาร์ดแวร์รองรับเฉพาะสินทรัพย์ EVM เท่านั้น"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "นำเข้าสำเร็จแล้ว"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "นำเข้าสำเร็จแล้ว"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "จำนวนเงินสูงสุดคือ {max} Sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "จำนวนเงินต่ำสุดคือ {min} Sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "ข้อผิดพลาดของเครือข่าย โปรดโหลดซ้ำแล้วลองอีกครั้ง"
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "หากที่อยู่ผู้รับไม่ถูกเปิดใช้งาน ธุรกรรมอาจไม่สำเร็จ"
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "ลงทะเบียนแล้ว"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "ส่งเฉพาะเครือข่ายสินทรัพย์ {chain_name} ไปยังที่อยู่นี้"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "โปรดตั้งค่า OKX Wallet เป็นวอลเล็ตเริ่มต้น หากคุณต้องการใช้วอลเล็ตนี้ในการเชื่อมต่อกับ DApp"
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "ตั้งค่าเรียบร้อยแล้ว"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "กำลังดำเนินการ"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "OKX Wallet ถูกรีเซต"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "An unknown error occurred while processing your transaction. Please re-initiate the transaction"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "ตั้ง OKX Wallet เป็นวอลเล็ตเริ่มต้นของคุณหรือไม่"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "คัดลอกที่อยู่"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "เชื่อมต่อ"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "การตั้งค่า"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "จัดการวอลเล็ต"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "โดยเฉลี่ย"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "ถัดไป"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "จำนวนเงินที่ได้รับแล้ว"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "จาก"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "= ราคาค่าธรรมเนียมแก๊ส ({gasPrice} GWEI) * ลิมิตค่าธรรมเนียมแก๊ส ({gasLimit})"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "ถึง"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "ปรับแต่ง"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "ลิมิตค่าธรรมเนียมแก๊สต้องเป็นระหว่าง {minGasLimit} และ {maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "ราคาค่าธรรมเนียมแก๊สควรสูงกว่า {minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "ลิมิตค่าธรรมเนียมแก๊ส"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "ราคาค่าธรรมเนียมแก๊ส (GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "เร็ว"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "โปรดป้อนที่อยู่ที่ถูกต้อง"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "จำนวนเงินที่ป้อนต้องไม่เว้นว่างไว้"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "จำนวนเงินต้องมากกว่า 0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "ยอดคงเหลือไม่เพียงพอ"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "{chainSymbol} ไม่พอจ่ายค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "ที่อยู่ไม่ถูกต้อง"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "ที่อยู่สำหรับรับเงินต้องไม่เหมือนกับที่อยู่สำหรับส่ง"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "ไปยัง"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "สูงสุด"
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "จำนวนเงิน"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0.000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "ป้อนที่อยู่วอลเล็ตหรือชื่อโดเมน"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "รอต่อไป"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "แทนที่"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "ข้าม"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "คุณมีธุรกรรมที่ไม่สำเร็จ"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "คุณมีธุรกรรมที่รอดำเนินการนานกว่าหนึ่งชั่วโมง"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "หากคุณมีธุรกรรมที่ไม่สำเร็จ คุณจะไม่สามารถเริ่มต้นธุรกรรมใหม่ได้ คุณต้องการแทนที่ธุรกรรมที่ไม่สำเร็จด้วยธุรกรรมปัจจุบันหรือไม่"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "หากคุณมีธุรกรรมที่รอดำเนินการอยู่ คุณจะไม่สามารถเริ่มต้นธุรกรรมใหม่ได้ จนกว่าอันที่รอดำเนินการอยู่จะเสร็จสิ้น คุณต้องการแทนที่ธุรกรรมที่รอดำเนินการอยู่ด้วยธุรกรรมปัจจุบันหรือไม่"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "ช้า"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "นาที"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "คัดลอกที่อยู่ {network} แล้ว"
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "เข้าใจแล้ว"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "ลืมรหัสผ่านใช่หรือไม่"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "ขอคิดก่อน"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "ฉันเข้าใจประกาศข้างต้นและพร้อมที่จะรีเซตวอลเล็ตของฉัน"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "OKX Wallet เป็นแพลตฟอร์มที่มีการกระจายอำนาจอย่างสมบูรณ์ เราจะไม่บันทึกรหัสผ่านของคุณ รหัสผ่านของคุณจึงไม่สามารถกู้คืนได้"
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "หากรหัสผ่านของคุณสูญหาย การรีเซ็ตวอลเล็ตด้วย Seed Pharse หรือคีย์ส่วนตัวเป็นวิธีเดียวในการตั้งค่ารหัสผ่านใหม่ เพื่อให้สามารถเข้าถึงได้อีกครั้ง"
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "การรีเซ็ตวอลเล็ตจะล้างข้อมูลวอลเล็ตทั้งหมดที่มีอยู่ในอุปกรณ์ปัจจุบัน หากคุณรีเซ็ตวอลเล็ตโดยไม่สำรอง Seed Phrase หรือคีย์ส่วนตัว คุณจะสูญเสียวอลเล็ตและสินทรัพย์ทั้งหมดในนั้นอย่างถาวร"
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "ตั้ง OKX Wallet เป็นวอลเล็ตเริ่มต้น"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "สำรองข้อมูลเลย"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "คุณยังไม่ได้สำรองข้อมูลในวอลเล็ตนี้"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "หากอุปกรณ์ของคุณสูญหาย แอปถูกติดตั้งใหม่ หรือข้อมูลแอปถูกลบทิ้ง คุณจะสูญเสียวอลเล็ตนี้และสินทรัพย์ในนั้น และไม่สามารถกู้คืนมันได้"
+   },
+   "wallet_home_btn_close": {
+      "message": "ปิด"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "ยืนยันแล้ว"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "นำเข้าวอลเล็ต"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "สร้างวอลเล็ต"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "จัดการ"
+   },
+   "wallet_home_btn_receive": {
+      "message": "รับ"
+   },
+   "wallet_home_btn_send": {
+      "message": "ส่ง"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "ฉันยังใหม่กับโลกแบบกระจายอำนาจ"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "ปลดล็อก"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "เชื่อมต่อ"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "ข้อผิดพลาดด้านการประเมินสินทรัพย์ ออกจากหน้าปัจจุบันแล้วลองอีกครั้งในภายหลัง"
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "เชื่อมต่อแล้ว"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "ป้อนรหัสผ่านของคุณ"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "เกิดข้อผิดพลาดกับ OKX Wallet"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "พอร์ทัลไปยัง Web3 ของคุณ"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "ภายหลัง"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "ตรวจสอบให้แน่ใจว่าได้สำรอง Seed Phrase ของคุณก่อนทำการฝากใดๆ"
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "วอลเล็ตคริปโท · โลก NFT · การเข้าถึง DApp"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "ลองอีกครั้งโดยปิดและเปิดหน้าต่างป๊อปอัปอีกครั้ง หรือติดต่อฝ่ายสนับสนุน"
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "รวม:"
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "รหัส: {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "รายละเอียดข้อผิดพลาด"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "ข้อความ: {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "รหัส: {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "โหลดหน้านี้ซ้ำเพื่อลองอีกครั้ง หรือติดต่อฝ่ายสนับสนุน"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "ฉันมีวอลเล็ตอยู่แล้ว"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "ข้อผิดพลาดของเครือข่าย โปรดลองอีกครั้งในภายหลัง"
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "ข้อมูลไม่ถูกต้อง โปรดป้อนอีกครั้ง"
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "นำเข้าผ่านคีย์ส่วนตัว"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "Seed Phrase"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "โปรดป้อนคีย์ส่วนตัวของคุณ"
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "โปรดป้อน Seed Phrase โดยคั่นด้วยช่องว่าง"
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "มีคีย์ส่วนตัวของวอลเล็ตอยู่แล้ว"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "มีวอลเล็ตอยู่แล้ว"
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "รองรับคีย์ส่วนตัวความยาวมาตรฐาน 64 บิต"
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "ข้อมูลไม่ถูกต้อง โปรดลองอีกครั้ง"
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "Seed Phrase"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "คั่นแต่ละคำด้วยช่องว่างเพียงหนึ่งสเปซ"
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "รองรับรูปแบบ Seed Phrase ทั้งหมด (12, 15, 18, 21 และ 24 คำ)"
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "คีย์ส่วนตัว"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "วางหรือป้อนคีย์ส่วนตัวของคุณ"
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "Seed Phrase"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "รองรับ Seed Phrase แบบ 12 15 18 21 24 คำ"
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "กรุณาตรวจสอบลำดับของ Seed Phrase"
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "Seed Phrase ไม่ถูกต้อง โปรดป้อนอีกครั้ง"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "{length} คำ"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "OKX Wallet"
+   },
+   "wallet_intro_text_desc": {
+      "message": "OKX Wallet เป็นวอลเล็ตคริปโทสากลที่มีหลายแพลตฟอร์ม (มือถือ/เว็บ/ส่วนขยาย)"
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "เชื่อมต่อวอลเล็ตฮาร์ดแวร์"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "สำรอง Seed Phrase ของคุณ"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "สำรองข้อมูลวอลเล็ต"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "เรียบร้อย"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "จัดการ"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "ทศนิยม"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "ที่อยู่ไม่ถูกต้อง"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "เพิ่มคริปโทนี้แล้ว"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "ที่อยู่ผู้รับไม่ถูกต้อง"
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "ที่อยู่สัญญา"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "มัลติเชน"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "เพิ่มคริปโทแล้ว"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "คริปโทที่กำหนดเอง"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "จัดการ"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "ค้นหาคริปโทหรือที่อยู่ของสัญญา"
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "สัญลักษณ์"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "คริปโทยอดนิยม"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "เพิ่มคริปโทที่กำหนดเอง"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "คริปโทที่กำหนดเอง"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "สำเร็จ"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "เพิ่มวอลเล็ต"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "สำรองข้อมูลวอลเล็ต"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "แก้ไขวอลเล็ต"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "เพิ่มบัญชี"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "เชื่อมต่ออีกครั้ง"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "บัญชีที่มีอยู่แล้ว โปรดลองอีกครั้ง"
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "เชื่อมต่อวอลเล็ตฮาร์ดแวร์แล้ว"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "สินทรัพย์ทั้งหมด"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "บัญชี"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "บัญชี"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "วอลเล็ต"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "วอลเล็ตฮาร์ดแวร์"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "คีย์ส่วนตัว"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "การอนุมัติ"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "คัดลอก"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "คัดลอกแล้ว!"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "ไม่พบรายการบันทึก"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "OK"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "Crypto not supported"
+   },
+   "wallet_send_text_register_address": {
+      "message": "Register address"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "ยืนยัน"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "อย่างน้อย 6 อักขระ"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "รหัสผ่านไม่ตรงกัน โปรดลองอีกครั้ง"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "รหัสผ่านไม่ถูกต้อง โปรดลองอีกครั้ง"
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "เรียนรู้เพิ่มเติม"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "Re-enter your password"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "ป้อนรหัสผ่าน"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "ป้อนรหัสผ่าน"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "ป้อนรหัสผ่านใหม่อีกรอบ"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "ยืนยันรหัสผ่าน"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "รหัสผ่าน"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "ดาวน์โหลดรายการบันทึกสถานะ"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "ดาวน์โหลดรายการบันทึกสถานะ"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "ล็อกวอลเล็ต"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "ดำเนินการต่อ"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "ยืนยันการรีเซต"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "ฉันตระหนักถึงความเสี่ยง"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "เลือกภาษา"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "ภาษา"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "ทั่วไป"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "คำเตือนเรื่องความเสี่ยง"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "การตั้งค่า"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "รายการบันทึกสถานะ"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "ตรวจสอบให้แน่ใจว่าได้สำรองข้อมูลวอลเล็ตของคุณแล้ว"
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "รหัสผ่านไม่ถูกต้อง โปรดลองอีกครั้ง"
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "เปลี่ยนรหัสผ่าน"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "ป้อนรหัสผ่านที่มีความยาวอย่างน้อย 6 อักขระ"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "ป้อนรหัสผ่านเก่าของคุณ"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "ป้อนรหัสผ่านใหม่อีกรอบ"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "รหัสผ่านใหม่"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "เพื่อปกป้องความเป็นส่วนตัวของคุณ OKX Wallet จะไม่จัดเก็บรหัสผ่านวอลเล็ตของคุณ โปรดรักษารหัสผ่านของคุณให้ปลอดภัย"
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "รหัสผ่านเก่า"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "ยืนยัน"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "ข้อผิดพลาดจากการเรียกข้อมูลรายการบันทึกสถานะ"
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "รายการบันทึกสถานะ"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "รายการบันทึกสถานะของ OKX Wallet"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "รายการบันทึกสถานะประกอบด้วยที่อยู่บัญชีสาธารณะและบันทึกการทำธุรกรรมของคุณ"
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "สกุลเงิน"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "รีเซตวอลเล็ต"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "โปรดตรวจสอบให้แน่ใจว่าคุณได้สำรองข้อมูล Seed Phrase หรือคีย์ส่วนตัวของวอลเล็ตไว้ก่อนที่จะรีเซต ไม่อย่างนั้นคุณจะสูญเสียวอลเล็ตและสินทรัพย์ทั้งหมดในนั้นถาวร"
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "หากคุณรีเซตวอลเล็ตโดยไม่สำรองข้อมูล คุณจะสูญเสียวอลเล็ตและสินทรัพย์ทั้งหมดในนั้นอย่างถาวร ตรวจสอบให้แน่ใจว่าได้สำรองวอลเล็ตทั้งหมด และเก็บ Seed Phrase หรือคีย์ส่วนตัวของคุณให้ปลอดภัยก่อนที่จะทำการรีเซต"
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "การรักษาความปลอดภัยวอลเล็ต"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "จัดการวอลเล็ต"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "ขั้นสูง"
+   },
+   "wallet_settings_text_desc": {
+      "message": "เวอร์ชัน ศูนย์สนับสนุน และข้อมูลติดต่อ"
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "สกุลเงิน ภาษา และอื่นๆ"
+   },
+   "wallet_settings_text_language_en": {
+      "message": "en"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "เปลี่ยนรหัสผ่าน, รีเซตวอลเล็ต"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "เพิ่ม แก้ไข และสำรองข้อมูลวอลเล็ต"
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "ตั้งรหัสผ่าน"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "เพื่อปกป้องความเป็นส่วนตัวของคุณ OKX Wallet จะไม่จัดเก็บรหัสผ่านวอลเล็ตของคุณ โปรดรักษารหัสผ่านของคุณให้ปลอดภัย"
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "ยกเลิกธุรกรรม"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "ยืนยัน Txn"
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "ยืนยันธุรกรรมแล้ว"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "ข้อความ"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "การยืนยัน {index} จาก {total} รายการ"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "TxID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "รอดำเนินการ {num}"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "เวลา"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "ประเภท"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "ที่อยู่สัญญา"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "ชื่อเครือข่าย"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "ไม่พบธุรกรรมใดๆ"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "กำลังส่ง..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "คัดลอกที่อยู่แล้ว"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "คัดลอกไปยังคลิบบอร์ด"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "คัดลอก TxID ไปยังคลิปบอร์ด"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "ค่าใช้จ่ายทั้งหมด"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "การอนุญาต"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "กำลังยืนยัน"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "จำนวนเงินต้องไม่เว้นว่างไว้"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "จำนวนเงินต้องมากกว่า 0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "ยกเลิก"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "สูงสุด"
+   },
+   "wallet_transfer_btn_next": {
+      "message": "ถัดไป"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "เพิ่มความเร็ว"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "ส่ง 0 {coinSymbol} เพื่อแทนที่ธุรกรรมดั้งเดิม เนื่องจากเหตุผลด้านเครือข่าย การยกเลิกธุรกรรมจะไม่รับประกันความสำเร็จ"
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "ค่าธรรมเนียม Txn"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "วอลเล็ต"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "ค่าธรรมเนียมธุรกรรม"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "การปรับใช้สัญญา"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "สัญญาโต้ตอบ"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "ลิมิตค่าธรรมเนียมแก๊สต้องเป็นอย่างน้อย {minimumGasLimit}"
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "ยอดคงเหลือไม่เพียงพอ"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "{chainSymbol} ไม่พอจ่ายค่าธรรมเนียมแก๊ส"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "โปรดป้อนที่อยู่ที่ถูกต้อง"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "ไม่สำเร็จ"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "ลิมิตค่าธรรมเนียมแก๊สต้องไม่เว้นว่างไว้"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "สูงสุด 15M"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "ค่าธรรมเนียมแก๊สต้องมากกว่า 21,000"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "ค่าธรรมเนียมแก๊สต้องไม่เว้นว่างไว้"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "ค่าธรรมเนียมแก๊สต้องมากกว่า 0"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "ปรับแต่ง"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "ลิมิตค่าธรรมเนียมแก๊ส"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "นาที"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "ราคาค่าธรรมเนียมแก๊ส"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "ราคาค่าธรรมเนียมแก๊ส (GWEI)"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "กำหนดเอง"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "อยู่ในกระบวนการ"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "รายละเอียดธุรกรรม"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "ที่อยู่สำหรับรับเงินต้องไม่เหมือนกับที่อยู่สำหรับส่ง"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "คุณไม่ได้ถือคริปโทใดๆ อยู่"
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "การเร่งธุรกรรมโดยใช้ราคาค่าธรรมเนียมแก๊สที่สูงขึ้นจะช่วยเพิ่มโอกาสในการดำเนินการโดยเครือข่ายให้เร็วขึ้น แต่ก็ไม่รับประกันว่าจะเป็นแบบนั้นเสมอไป"
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "เลือกเครือข่าย"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "อนุมัติ {first} ไม่สำเร็จ"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "อนุมัติ {first} สำเร็จแล้ว"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "เพิกถอนการอนุมัติ {first} ไม่สำเร็จ"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "ส่งข้อความเพิกถอนการอนุมัติ {first} ไปแล้ว"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "เพิกถอนการอนุมัติ {first} แล้ว"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "ทำสัญญาโต้ตอบไม่สำเร็จ"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "ทำสัญญาโต้ตอบสำเร็จแล้ว"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "เทรด NFT ไม่สำเร็จ"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "เทรด NFT สำเร็จแล้ว"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "ส่ง {first} {second} ไม่สำเร็จ"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "ส่ง {first} {second} เรียบร้อยแล้ว"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "สวอป {first} {second} สำหรับ {third} {fourth} ไม่สำเร็จ"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "สวอป {first} {second} สำหรับ {third} {fourth} สำเร็จ"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "ส่งธุรกรรมแล้ว"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "ดูบน Explorer"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "กรุณาดำเนินการธุรกรรมทั้งหมดก่อน"
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "ป้อนที่อยู่ (0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "เลือกคริปโท"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "ค้นหาโทเคน"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "โปรดรอการยืนยันบล็อก"
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "ลายเซ็นแบบฮาร์ดแวร์ทำไม่สำเร็จ"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "เซ็นด้วยวอลเล็ตฮาร์ดแวร์"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "หลัง"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "ก่อน"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "จำนวนเงินที่ได้รับแล้ว"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "ค่าธรรมเนียมเครือข่าย"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "ไปยัง"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "จาก"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "โดยเฉลี่ย"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "เร็ว"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "ช้า"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "กลับไปหน้าแรก"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "ส่งแล้ว"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "เสร็จสิ้นแล้ว"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "รอดำเนินการ"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "ไม่สามารถปลดล็อกได้หากไม่มีตู้นิรภัยก่อนหน้านี้"
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "วอลเล็ตฮาร์ดแวร์รองรับสินทรัพย์บนเครือข่ายที่รองรับ EVM เท่านั้น"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "ยอดคงเหลือ SOL ไม่เพียงพอสำหรับชำระค่าธรรมเนียมเครือข่าย"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "ยอดคงเหลือไม่เพียงพอ คุณต้องมีอย่างน้อย {number} SOL ในบัญชีของคุณเพื่อเริ่มต้นการทำธุรกรรม"
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "โปรดส่ง SOL อย่างน้อย {number} เพื่อให้เป็นไปตามค่าธรรมเนียมการยกเว้นค่าเช่าขั้นต่ำ"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "โปรดสำรองอย่างน้อย {number} SOL เพื่อเป็นการยกเว้นค่าเช่า"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "วอลเล็ตถูกรีเซตแล้ว"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "อนุมัติ"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "ไม่มีข้อมูล"
+   }
+}

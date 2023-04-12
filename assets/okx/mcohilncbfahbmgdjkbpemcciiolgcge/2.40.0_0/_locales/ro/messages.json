@@ -1,0 +1,3833 @@
+{
+   "btcnft_gas_label_pay_gas_with": {
+      "message": "Plătiți comisionul de rețea cu"
+   },
+   "btcnft_gas_reminder_protect_nft_address_unavailable": {
+      "message": "Pentru a transfera acest NFT în siguranță, această adresă nu este disponibilă pentru plata de gas"
+   },
+   "btcnft_gas_reminder_recommend_tarpoot_avoid_loss": {
+      "message": "Vă recomandăm să transferați NFT-ul către o adresă Tarpoot care începe cu „bc1”. Transferul către o altă adresă poate atrage riscul de pierdere a activelor."
+   },
+   "btcnft_gas_title_pay_gas_with": {
+      "message": "Selectați portofelul pentru plata comisionului de rețea"
+   },
+   "dapp_toast_btn_continue_visiting": {
+      "message": "Continuați vizitarea"
+   },
+   "dapp_toast_subtitle_asset_safety": {
+      "message": "Vizitați un site care vă poate păcăli pentru dezvăluirea informațiilor personale sau financiare. Pentru siguranța activelor dvs., citiți instrucțiunile de mai jos înainte de a continua"
+   },
+   "dapp_toast_subtitle_asset_safety1": {
+      "message": "Vizitați un site care vă poate păcăli pentru dezvăluirea informațiilor personale sau financiare. Pentru siguranța activelor dvs., citiți instrucțiunile de mai jos înainte de a continua"
+   },
+   "dapp_toast_text_block_sites": {
+      "message": "· OKX Wallet integrează mai multe baze de date securizate pentru blocarea site-urilor rău intenționate"
+   },
+   "dapp_toast_text_contact_support": {
+      "message": "· Contactați service@okx.com pentru a furniza feedback dacă găsiți site-uri suspecte sau întâlniți erori de bloc. Vă mulțumim pentru contribuția la securitatea blockchain"
+   },
+   "dapp_toast_text_low_protection": {
+      "message": "· Dacă nu doriți să primiți acest avertisment prea des, puteți schimba nivelul de protecție la redus din Securitate din portofel"
+   },
+   "dapp_toast_text_risks_mention": {
+      "message": "· Țineți cont că nu putem garanta siguranța unui site chiar dacă nu primiți acest avertisment. Sunteți responsabil pentru orice riscuri de vizitare a unui site nesigur"
+   },
+   "dapp_toast_text_secure_detects": {
+      "message": "· Sistemul de securitate OKX Wallet detectează acest site ca suspect. Sunteți responsabil pentru orice riscuri asociate vizitării unui site nesigur"
+   },
+   "dapp_toast_title_site_warning": {
+      "message": "Avertisment de site înșelător"
+   },
+   "dapp_toast_title_site_warning1": {
+      "message": "Avertisment de site suspect"
+   },
+   "developer_mode__send_input_input_add": {
+      "message": "Introduceți o adresă de primire"
+   },
+   "developer_mode__send_input_price": {
+      "message": "0,000000"
+   },
+   "developer_mode_add_network_btn_approve": {
+      "message": "Aprobare"
+   },
+   "developer_mode_add_network_btn_cancel": {
+      "message": "Anulare"
+   },
+   "developer_mode_add_network_btn_gotit": {
+      "message": "Am înțeles"
+   },
+   "developer_mode_add_network_errortip_risk_aware": {
+      "message": "OKX Wallet nu validează rețele personalizate. Țineți cont de riscurile de securitate potențiale"
+   },
+   "developer_mode_add_network_maintitle_add_network": {
+      "message": "Adăugare rețea"
+   },
+   "developer_mode_add_network_title_block_explorerurl": {
+      "message": "URL explorator blockchain"
+   },
+   "developer_mode_add_network_title_chainid": {
+      "message": "ID blockchain"
+   },
+   "developer_mode_add_network_title_currency_symbol": {
+      "message": "Simbol"
+   },
+   "developer_mode_add_network_title_network_name": {
+      "message": "Rețea"
+   },
+   "developer_mode_add_network_title_networkurl": {
+      "message": "URL rețea"
+   },
+   "developer_mode_add_network_toast_add_fail": {
+      "message": "Nu s-a adăugat"
+   },
+   "developer_mode_bot_btn_save": {
+      "message": "Salvare"
+   },
+   "developer_mode_bot_text_no_transactions": {
+      "message": "Nu s-a găsit nicio înregistrare"
+   },
+   "developer_mode_dapp_connection_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "developer_mode_dapp_connection_btn_reject": {
+      "message": "Respingere"
+   },
+   "developer_mode_dapp_connection_maintitle_contract_interaction": {
+      "message": "Interacțiune în baza contractului"
+   },
+   "developer_mode_dapp_connection_title_custom": {
+      "message": "Număr arbitrar personalizat"
+   },
+   "developer_mode_dapp_connection_title_data": {
+      "message": "Date tranzacție"
+   },
+   "developer_mode_dapp_connection_title_from": {
+      "message": "De la"
+   },
+   "developer_mode_dapp_connection_title_gas_limit": {
+      "message": "Limită combustibil"
+   },
+   "developer_mode_dapp_connection_title_gas_price": {
+      "message": "Preț combustibil ({gasprice} GWEI)"
+   },
+   "developer_mode_dapp_connection_title_interacted_with": {
+      "message": "Interacționați cu"
+   },
+   "developer_mode_dapp_connection_title_network": {
+      "message": "Rețea"
+   },
+   "developer_mode_dapp_connection_title_network_fee": {
+      "message": "Comision rețea"
+   },
+   "developer_mode_dapp_connection_title_total_cost": {
+      "message": "Cost total"
+   },
+   "developer_mode_dapp_connection_title_wallet": {
+      "message": "Portofel"
+   },
+   "developer_mode_dapp_toast_deployed_successfully": {
+      "message": "Implementare reușită"
+   },
+   "developer_mode_dapp_toast_deployfailed": {
+      "message": "Implementarea nu a reușit"
+   },
+   "developer_mode_header_title_history": {
+      "message": "History"
+   },
+   "developer_mode_history_btn_cancel_transactoion": {
+      "message": "Cancel transaction"
+   },
+   "developer_mode_history_btn_complete": {
+      "message": "Completed"
+   },
+   "developer_mode_history_btn_pending": {
+      "message": ""
+   },
+   "developer_mode_history_btn_speedup": {
+      "message": "Speed up"
+   },
+   "developer_mode_history_btn_time": {
+      "message": "Oră"
+   },
+   "developer_mode_history_maintitle_contract_interaction": {
+      "message": "Interacțiune în baza contractului"
+   },
+   "developer_mode_history_maintitle_historyto": {
+      "message": "Trimitere"
+   },
+   "developer_mode_history_subtitle_developer": {
+      "message": "Adresă contract"
+   },
+   "developer_mode_history_tab_time": {
+      "message": "Date"
+   },
+   "developer_mode_history_textbtn_view_explorer": {
+      "message": "Vizualizare în browser"
+   },
+   "developer_mode_history_title_blockconfirm": {
+      "message": "Blocuri"
+   },
+   "developer_mode_history_title_contract_eployment": {
+      "message": "Implementare contact"
+   },
+   "developer_mode_history_title_from": {
+      "message": "De la"
+   },
+   "developer_mode_history_title_historysend": {
+      "message": ""
+   },
+   "developer_mode_history_title_interacted_with": {
+      "message": "Interacționați cu"
+   },
+   "developer_mode_history_title_network": {
+      "message": "Rețea"
+   },
+   "developer_mode_history_title_network_fee": {
+      "message": "Comision rețea"
+   },
+   "developer_mode_history_title_nonce": {
+      "message": "Număr arbitrar"
+   },
+   "developer_mode_history_title_status": {
+      "message": "Status"
+   },
+   "developer_mode_history_title_time": {
+      "message": "Oră"
+   },
+   "developer_mode_history_title_transaction_data": {
+      "message": "Date tranzacție"
+   },
+   "developer_mode_history_title_transaction_hash": {
+      "message": "Hash tranzacție"
+   },
+   "developer_mode_home_btn_developer_mode": {
+      "message": "Rețea personalizată"
+   },
+   "developer_mode_home_btn_devmode": {
+      "message": "Mod dezvoltator"
+   },
+   "developer_mode_home_btn_faucet": {
+      "message": "Robinet"
+   },
+   "developer_mode_home_btn_leave": {
+      "message": "Ieșire"
+   },
+   "developer_mode_home_btn_receive": {
+      "message": "Primiți"
+   },
+   "developer_mode_home_btn_send": {
+      "message": "Trimitere"
+   },
+   "developer_mode_home_btn_t_tradinghistory": {
+      "message": "Istoric"
+   },
+   "developer_mode_home_maintitle_managecpt": {
+      "message": "Gestionare criptomonedă"
+   },
+   "developer_mode_home_text_connected": {
+      "message": "Conectat"
+   },
+   "developer_mode_home_toast_added": {
+      "message": "Adăugat"
+   },
+   "developer_mode_home_toast_address_copied": {
+      "message": "Adresa {network} copiată"
+   },
+   "developer_mode_infor_errortip_": {
+      "message": ""
+   },
+   "developer_mode_infor_errortip_chainid": {
+      "message": "ID-ul de blockchain utilizat de RPC este {chainID}"
+   },
+   "developer_mode_infor_errortip_errorchainid": {
+      "message": "Too large. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_errorname_rpcurl": {
+      "message": "Niciun URL RPC corespondent pentru acest simbol cripto. Verificați simbolul introdus"
+   },
+   "developer_mode_infor_errortip_errornum": {
+      "message": "Invalid number. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_https": {
+      "message": "Adresa URL necesită un prefix HTTP/HTTPS corespunzător"
+   },
+   "developer_mode_infor_errortip_https1": {
+      "message": "Adresa URL necesită un prefix HTTP/HTTPS corespunzător"
+   },
+   "developer_mode_infor_errortip_invalidurl": {
+      "message": "Invalid URL. Please re-enter it"
+   },
+   "developer_mode_infor_errortip_network": {
+      "message": "ID-ul de blockchain este deja utilizat pe rețeaua {network}"
+   },
+   "developer_mode_infor_errortip_network_correct": {
+      "message": "O rețea cu ID-ul de blockchain {number} utilizează de obicei {symbol}. Verificați simbolul introdus"
+   },
+   "developer_mode_infor_errortip_rpcurl": {
+      "message": "URL RPC nevalid"
+   },
+   "developer_mode_infor_errortip_rpcurl_confirm": {
+      "message": "Nerecunoscut. Verificați adresa URL RPC introdusă"
+   },
+   "developer_mode_infor_errortip_used_network": {
+      "message": "Acest URL este deja utilizat de rețeaua {network}"
+   },
+   "developer_mode_infor_maintitle_tokendetails": {
+      "message": "Detalii cripto"
+   },
+   "developer_mode_infor_subtitle_contractadd": {
+      "message": "Adresă contract"
+   },
+   "developer_mode_infor_subtitle_network": {
+      "message": "Rețea"
+   },
+   "developer_mode_infor_subtitle_tokendecimal": {
+      "message": "Punct zecimală"
+   },
+   "developer_mode_infor_toast_success": {
+      "message": "Copiat"
+   },
+   "developer_mode_infor_tooltip_token_details": {
+      "message": "Detalii cripto"
+   },
+   "developer_mode_list_text_approw": {
+      "message": "Approve"
+   },
+   "developer_mode_list_text_contract_interaction": {
+      "message": "Contract interaction"
+   },
+   "developer_mode_list_text_send": {
+      "message": "Trimitere"
+   },
+   "developer_mode_list_text_to_addnumber": {
+      "message": "To {addnumber}"
+   },
+   "developer_mode_manage_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "developer_mode_manage_errortip_duplicate_add": {
+      "message": "Adresa există deja"
+   },
+   "developer_mode_manage_errortip_invalid_add": {
+      "message": "Adresă nevalidă"
+   },
+   "developer_mode_manage_errortip_refresh": {
+      "message": "Reîmprospătare"
+   },
+   "developer_mode_manage_errortip_request_failed": {
+      "message": "Eroare de rețea. Reîmprospătați și încercați din nou"
+   },
+   "developer_mode_manage_errortip_symbollimit": {
+      "message": "Introduceți până la 11 caractere"
+   },
+   "developer_mode_manage_maintitle_customcpt": {
+      "message": "Criptomonedă personalizată"
+   },
+   "developer_mode_manage_text_customcpt": {
+      "message": "Criptomonedă personalizată"
+   },
+   "developer_mode_manage_title_addedcpt": {
+      "message": "Criptomonedă adăugată"
+   },
+   "developer_mode_manage_title_adding": {
+      "message": "Criptomonedă neadăugată"
+   },
+   "developer_mode_manage_title_contractadd": {
+      "message": "Adresă contract"
+   },
+   "developer_mode_manage_title_decimals": {
+      "message": "Punct zecimală"
+   },
+   "developer_mode_manage_title_network": {
+      "message": "Rețea"
+   },
+   "developer_mode_manage_title_symbol": {
+      "message": "Simbol"
+   },
+   "developer_mode_manage_toast_added": {
+      "message": "Adăugat"
+   },
+   "developer_mode_mid_btn_canceldele": {
+      "message": "Anulare"
+   },
+   "developer_mode_mid_btn_confirmdele": {
+      "message": "Eliminare"
+   },
+   "developer_mode_mid_loading_connecting": {
+      "message": "Se conectează la {network}"
+   },
+   "developer_mode_mid_notif_errortips": {
+      "message": "Intrare nevalidă"
+   },
+   "developer_mode_mid_subtitle_deleselect": {
+      "message": "Veți elimina această rețea din listă"
+   },
+   "developer_mode_mid_text_faucet": {
+      "message": "Robinet"
+   },
+   "developer_mode_mid_title_delete": {
+      "message": "Eliminați această rețea?"
+   },
+   "developer_mode_network_btn_add_network": {
+      "message": "Adăugare rețea personalizată"
+   },
+   "developer_mode_network_btn_botcancel": {
+      "message": "Anulare"
+   },
+   "developer_mode_network_btn_cancel": {
+      "message": "Înapoi"
+   },
+   "developer_mode_network_btn_changenetwork": {
+      "message": "Comutare rețea"
+   },
+   "developer_mode_network_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "developer_mode_network_btn_editor": {
+      "message": "Editare"
+   },
+   "developer_mode_network_btn_retry": {
+      "message": "Încercați din nou"
+   },
+   "developer_mode_network_errortip_cannotspace": {
+      "message": "Acest câmp nu poate fi necompletat"
+   },
+   "developer_mode_network_errortip_trust_network": {
+      "message": "Furnizorii de servicii de internet necunoscuți pot expune starea blockchainului și vă pot urmări activitățile pe rețea. Adăugați o rețea doar dacă aveți încredere în ea"
+   },
+   "developer_mode_network_maintitle_add_network": {
+      "message": "Adăugare rețea personalizată"
+   },
+   "developer_mode_network_title_blockchain_explorer": {
+      "message": "Explorator blockchain (opțional)"
+   },
+   "developer_mode_network_title_chainid": {
+      "message": "ID blockchain"
+   },
+   "developer_mode_network_title_custom": {
+      "message": "Rețea personalizată"
+   },
+   "developer_mode_network_title_editcustom": {
+      "message": "Rețea personalizată"
+   },
+   "developer_mode_network_title_edittest_network": {
+      "message": "Rețea"
+   },
+   "developer_mode_network_title_netname": {
+      "message": "Rețea"
+   },
+   "developer_mode_network_title_rpcurl": {
+      "message": "URL RPC"
+   },
+   "developer_mode_network_title_test_network": {
+      "message": "Testare rețea"
+   },
+   "developer_mode_network_title_tokenname": {
+      "message": "Simbol"
+   },
+   "developer_mode_network_toast_cannot_delete": {
+      "message": "Nu puteți elimina o rețea conectată"
+   },
+   "developer_mode_network_toast_changenetwork": {
+      "message": "Reîmprospătați din nou sau comutați la o altă rețea"
+   },
+   "developer_mode_network_toast_connect_failed": {
+      "message": "Nu s-a reușit conectarea"
+   },
+   "developer_mode_network_toast_delete_done": {
+      "message": "Eliminat"
+   },
+   "developer_mode_network_tooltip_display_decimal": {
+      "message": "ID-ul de blockchain utilizat pentru semnarea tranzacțiilor trebuie să corespundă ID-ului de blockchain returnat de rețea. Introduceți cifrele zecimale sau cifrele hexazecimale cu prefixul 0x. Cifrele zecimale sunt afișate implicit"
+   },
+   "developer_mode_receive_btn_copy": {
+      "message": "Copiere"
+   },
+   "developer_mode_receive_errortip_network": {
+      "message": "Trimiteți doar {chainname} active de rețea la această adresă"
+   },
+   "developer_mode_select_a_token_input_optional": {
+      "message": "Optional"
+   },
+   "developer_mode_select_a_token_input_searchtoken": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "developer_mode_send_input_gaslimit_failure": {
+      "message": "Eșec la preluarea limitei de combustibil. Introduceți"
+   },
+   "developer_mode_send_input_selecta_token": {
+      "message": "Search crypto"
+   },
+   "developer_mode_send_maintitle_amount_received": {
+      "message": "Suma primită"
+   },
+   "developer_mode_send_maintitle_from": {
+      "message": "De la"
+   },
+   "developer_mode_send_maintitle_gasprice": {
+      "message": "Introducere date (opțional)"
+   },
+   "developer_mode_send_maintitle_inputdata": {
+      "message": "Introducere date"
+   },
+   "developer_mode_send_maintitle_max": {
+      "message": "Max"
+   },
+   "developer_mode_send_maintitle_networkfee": {
+      "message": "Comision rețea"
+   },
+   "developer_mode_send_maintitle_networkfee1": {
+      "message": "Comision rețea"
+   },
+   "developer_mode_send_maintitle_nonce": {
+      "message": "Număr arbitrar"
+   },
+   "developer_mode_send_maintitle_nonce1": {
+      "message": "Număr arbitrar"
+   },
+   "developer_mode_send_maintitle_numbers": {
+      "message": "Valoare"
+   },
+   "developer_mode_send_maintitle_receiveadd": {
+      "message": "Adresa de primire"
+   },
+   "developer_mode_send_maintitle_to": {
+      "message": "Către"
+   },
+   "developer_mode_send_text_balanceprice": {
+      "message": "Sold: {balance}"
+   },
+   "developer_mode_send_text_gasprice_gas": {
+      "message": "= preț combustibil ({gasprice} {unit}) x limită combustibil ({gaslimit})"
+   },
+   "developer_mode_send_title_customize": {
+      "message": "Personalizare"
+   },
+   "developer_mode_send_title_gaslimit": {
+      "message": "Limită combustibil"
+   },
+   "developer_mode_send_title_gasprice": {
+      "message": "Preț combustibil ({unit})"
+   },
+   "developer_mode_send_title_selecta_token": {
+      "message": "Select crypto"
+   },
+   "developer_mode_send_toast_addnewtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_send_toast_copytips": {
+      "message": "Input data copied"
+   },
+   "developer_mode_send_toast_nonetoken": {
+      "message": "Nicio criptomonedă în portofel"
+   },
+   "developer_mode_send_tooltip_additional_data": {
+      "message": "Informații suplimentare incluse pentru o tranzacție, cum ar fi datele de apel pentru interacțiunea contractului sau mesajul transmis către un destinatar"
+   },
+   "developer_mode_send_tooltip_higher": {
+      "message": "Mai mare ca recomandat: {num}"
+   },
+   "developer_mode_send_tooltip_lower": {
+      "message": "Mai mic ca recomandat: {num}"
+   },
+   "developer_mode_settings_btn_gotit": {
+      "message": "Am înțeles"
+   },
+   "developer_mode_settings_btn_lockwallet": {
+      "message": "Blocare portofel"
+   },
+   "developer_mode_settings_subtitle_evmonly": {
+      "message": "Modul dezvoltator este disponibil doar pe rețelele EVM. Comutați portofelele și încercați din nou"
+   },
+   "developer_mode_settings_text_devdoc": {
+      "message": "Documentație dezvoltatori"
+   },
+   "developer_mode_settings_text_devmode": {
+      "message": "Mod dezvoltator"
+   },
+   "developer_mode_settings_text_morefunction": {
+      "message": "Activați acest mod pentru utilizarea caracteristicilor avansate cum ar fi testarea rețelei, adăugare de RPC personalizate sau număr arbitrar"
+   },
+   "developer_mode_settings_text_preferences": {
+      "message": "Preferințe"
+   },
+   "developer_mode_settings_text_setwallet": {
+      "message": "Setați ca portofel implicit"
+   },
+   "developer_mode_settings_text_version": {
+      "message": "Versiune {version}"
+   },
+   "developer_mode_settings_text_walletsecurity": {
+      "message": "Securitate portofel"
+   },
+   "developer_mode_settings_title_settings": {
+      "message": "Setări"
+   },
+   "developer_mode_settings_title_unsupported": {
+      "message": "Modul dezvoltator nu este disponibil pe această rețea"
+   },
+   "developer_mode_tag_text_completed": {
+      "message": "Completed"
+   },
+   "developer_mode_tag_text_failed": {
+      "message": "Failed"
+   },
+   "developer_mode_tag_text_pending": {
+      "message": "Pending"
+   },
+   "developer_mode_tag_text_waiting": {
+      "message": "Waiting"
+   },
+   "developer_mode_toast_text_addtoken": {
+      "message": "{crypto} not found. You can try adding this crypto"
+   },
+   "developer_mode_top_text_done": {
+      "message": "Terminat"
+   },
+   "developer_mode_top_title_network_management": {
+      "message": "Gestionare rețea"
+   },
+   "developer_mode_top_title_total_assets": {
+      "message": "Active totale"
+   },
+   "developer_mode_wallet_list_maintitle_manage": {
+      "message": "Gestionare"
+   },
+   "developer_mode_wallet_list_text_edit_wallet": {
+      "message": "Editare portofel"
+   },
+   "developer_mode_welcome_page_text_usermode": {
+      "message": "Mod utilizator"
+   },
+   "developer_mode_welcome_page_text_welcome": {
+      "message": "Bun venit la"
+   },
+   "extension_approve_alert_authorized_tips": {
+      "message": "By proceeding, you'll allow {contract} access to your {asset}"
+   },
+   "extension_approve_maintitle_approve": {
+      "message": "Approve"
+   },
+   "extension_aptos_nft_btn_getnft": {
+      "message": "Revendicare"
+   },
+   "extension_aptos_nft_title_receiveallowed": {
+      "message": "NFT-uri disponibile"
+   },
+   "extension_aptos_nft_title_receiveconfirm": {
+      "message": "Revendicați NFT"
+   },
+   "extension_btn_link_okxweb3yield": {
+      "message": "https://www.okx.com/web3/yield"
+   },
+   "extension_bug_btn_back_homepage": {
+      "message": "Go back to homepage"
+   },
+   "extension_bug_text_fixing": {
+      "message": "You can go back to homepage and try again later"
+   },
+   "extension_bug_title_error": {
+      "message": "Error"
+   },
+   "extension_bug_title_page_notfound": {
+      "message": "Page not found"
+   },
+   "extension_confirmation_maintitle_contract": {
+      "message": "Contract:"
+   },
+   "extension_contract_interaction_maintitle_asset_changes": {
+      "message": "Asset change (est.)"
+   },
+   "extension_contract_interaction_maintitle_request_from": {
+      "message": "Request from"
+   },
+   "extension_contract_interaction_maintitle_total_cost": {
+      "message": "Transaction amount"
+   },
+   "extension_custom_network_errortip_evmonly": {
+      "message": "The network information entered belongs to the Sui network. Custom network only supports adding EVM networks"
+   },
+   "extension_custom_network_errortip_sui_unavailable": {
+      "message": "Unable to import a private key of the Sui network. Try a different one"
+   },
+   "extension_custom_network_tab_evm": {
+      "message": "EVM"
+   },
+   "extension_custom_network_tab_sui": {
+      "message": "Sui"
+   },
+   "extension_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "extension_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "extension_history_index_pending": {
+      "message": "Pending"
+   },
+   "extension_history_title_farm": {
+      "message": "Farm"
+   },
+   "extension_home_aptos_nft_card_receivenow": {
+      "message": "Revendicare"
+   },
+   "extension_home_aptos_nft_card_receivenum": {
+      "message": "{num} NFT-uri de revendicat"
+   },
+   "extension_home_toast_receivecompleted": {
+      "message": "Revendicat"
+   },
+   "extension_infor_tooltip_asset_changestips": {
+      "message": "To secure your transaction, we estimate an amount for your reference"
+   },
+   "extension_infor_tooltip_total_costtips": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "extension_input_errortip_max20": {
+      "message": "Maximum 20 characters"
+   },
+   "extension_revoke_approval_alert_evoke_authorization": {
+      "message": "By proceeding, you'll revoke {contract} access to your {asset}"
+   },
+   "extension_revoke_approval_maintitle_revoke_approval": {
+      "message": "Revoke approval"
+   },
+   "extension_settings_link_learn_onwebsite": {
+      "message": "Aflați mai mult pe site-ul OKX"
+   },
+   "extension_settings_link_linkwallet": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/10558617769613-OKX-Wallet-Passed-Security-Key-Audit-by-Slowmist"
+   },
+   "extension_settings_link_linkweb3": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "extension_settings_link_supportcanter": {
+      "message": "Centru de asistență"
+   },
+   "extension_settings_link_supportcanteradd": {
+      "message": "https://www.okx.com/support-center.html"
+   },
+   "extension_settings_link_text_discord": {
+      "message": "Discord"
+   },
+   "extension_settings_link_text_joinokx": {
+      "message": "Comunitatea OKX"
+   },
+   "extension_settings_link_text_linkadd": {
+      "message": "https://discord.gg/okx"
+   },
+   "extension_settings_link_text_linkadd1": {
+      "message": "https://www.okx.com/community"
+   },
+   "extension_settings_text_okx_wallet": {
+      "message": "OKX Wallet"
+   },
+   "extension_settings_textbtn_emailadd": {
+      "message": "help.okxwallet@gmail.com"
+   },
+   "extension_settings_title_about_wallet": {
+      "message": "Despre portofelul OKX"
+   },
+   "extension_settings_title_okxemail": {
+      "message": "E-mail OKX"
+   },
+   "extension_settings_title_security_audit": {
+      "message": "Audit de securitate"
+   },
+   "extension_settings_title_service_terms": {
+      "message": "Condiții de utilizare a serviciului"
+   },
+   "extension_settings_title_wallet_management": {
+      "message": "Gestionarea portofelului"
+   },
+   "extension_settings_toast_emailaotucopy": {
+      "message": "Adresa de e-mail copiată"
+   },
+   "extension_sui_toast_request_progress": {
+      "message": "Requesting"
+   },
+   "extension_sui_toast_request_success": {
+      "message": "Request success"
+   },
+   "extension_sui_toast_request_success_new": {
+      "message": "{num} {crypto} requested"
+   },
+   "extension_sui_toast_try_later": {
+      "message": "Too many requests sent to the faucet. Try again later"
+   },
+   "extension_toast_btn_confirmgasfee": {
+      "message": "Confirm"
+   },
+   "extension_toast_btn_ok": {
+      "message": "OK"
+   },
+   "extension_toast_subtitle_gasincrease": {
+      "message": "You need to spend more network fees in order to replace the transaction"
+   },
+   "extension_toast_subtitle_gasprice_numbers": {
+      "message": "Gas price ({unit})"
+   },
+   "extension_toast_text_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "extension_toast_text_switch_fortrading": {
+      "message": "Current DApp network belongs to testnet. Switch to custom network mode in Settings and try again"
+   },
+   "extension_toast_text_tradecanceled": {
+      "message": "Transaction canceled"
+   },
+   "extension_toast_title_contractadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_current_transaction": {
+      "message": "Current fee"
+   },
+   "extension_toast_title_gasprice": {
+      "message": "Required fee"
+   },
+   "extension_toast_title_receiveadd_copied": {
+      "message": "Wallet address copied"
+   },
+   "extension_toast_title_sendadd_copied": {
+      "message": "Contract address copied"
+   },
+   "extension_toast_title_switch_walletmode": {
+      "message": "Please switch wallet mode"
+   },
+   "extension_toast_title_transaction_replace": {
+      "message": "Replace transaction"
+   },
+   "extension_token_input_addcustom_crypto": {
+      "message": "Introduceți o adresă"
+   },
+   "extension_transactions_btn_confirm": {
+      "message": "Confirm"
+   },
+   "extension_tutorial_btn_gotit": {
+      "message": "Am înțeles"
+   },
+   "extension_tutorial_subtitle_icon_display": {
+      "message": "Dacă nu vedeți opțiunea OKX Wallet, puteți să vă conectați prin Metamask sau Phantom"
+   },
+   "extension_tutorial_text_metamaskoption": {
+      "message": "Veți seta OKX Wallet ca portofelul dvs. preferat pentru conectare"
+   },
+   "extension_tutorial_text_set_defaultwallet": {
+      "message": "Setați ca portofel implicit"
+   },
+   "extension_tutorial_title_connect_dapp": {
+      "message": "Cum vă conectați la DApp"
+   },
+   "extension_wallet_addwallet_connect_success": {
+      "message": "Wallet connected"
+   },
+   "extension_wallet_addwallet_toast_wallets_added": {
+      "message": "Up to {amount} wallets can be added"
+   },
+   "extension_wallet_conncecthardware_cant_obtainadd": {
+      "message": "Couldn't obtain addresses. Make sure you've unlocked your device and opened the required app on it"
+   },
+   "extension_wallet_conncecthardware_check_ledgerwallet": {
+      "message": "Check {transaction} in Ledger wallet"
+   },
+   "extension_wallet_conncecthardware_device_disconnected": {
+      "message": "Device disconnected. If you need to continue, connect Ledger to your computer via USB and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_keep_usbconnection": {
+      "message": "Keep the USB connection between your Ledger and computer, unlock Ledger wallet, and open the required app on it"
+   },
+   "extension_wallet_conncecthardware_okbtn": {
+      "message": "OK"
+   },
+   "extension_wallet_conncecthardware_page1": {
+      "message": "{num}"
+   },
+   "extension_wallet_conncecthardware_retry": {
+      "message": "Retry"
+   },
+   "extension_wallet_conncecthardware_transaction_details": {
+      "message": "transaction details"
+   },
+   "extension_wallet_conncecthardware_transaction_sent": {
+      "message": "Transaction details sent. Check and confirm via your device"
+   },
+   "extension_wallet_import_active_wallet": {
+      "message": "Added"
+   },
+   "extension_wallet_maintitle_allinone": {
+      "message": "Traversați noi rețele cu noul portofel universal"
+   },
+   "extension_wallet_maintitle_crosschain_safety": {
+      "message": "Păstrați tranzacțiile în siguranță cu OKX Wallet"
+   },
+   "extension_wallet_maintitle_dapps": {
+      "message": "Gateway universal pentru toate DApps"
+   },
+   "extension_wallet_transaction_btn_gasfeeconfirm": {
+      "message": "Confirmare"
+   },
+   "extension_wallet_transaction_errortip_basefeelimit": {
+      "message": "Comisionul maxim de bază trebuie să fie mai mare ca 0"
+   },
+   "extension_wallet_transaction_errortip_notsuccess": {
+      "message": "Comisionul maxim de bază pe care l-ați setat este mai mic decât comisionul de bază necesar al rețelei {baseFee} Gwei. Va trece un timp până ce se va concretiza tranzacția"
+   },
+   "extension_wallet_transaction_errortip_priorityfeelimit": {
+      "message": "Comisionul de prioritate trebuie să fie mai mare ca 0"
+   },
+   "extension_wallet_transaction_input_gwei": {
+      "message": "Gwei"
+   },
+   "extension_wallet_transaction_text_current": {
+      "message": "Comision de bază necesar: {number} Gwei"
+   },
+   "extension_wallet_transaction_text_maxbase_fee": {
+      "message": "Comision de bază maxim"
+   },
+   "extension_wallet_transaction_text_minute": {
+      "message": "min"
+   },
+   "extension_wallet_transaction_text_priority_fee": {
+      "message": "Comision de prioritate"
+   },
+   "extension_wallet_transaction_text_second": {
+      "message": "sec"
+   },
+   "extension_wallet_transaction_toast_total_price": {
+      "message": "Transaction amount is the sum of asset cost and network fee"
+   },
+   "forgotpwd_footer_btn_reset_password": {
+      "message": "Resetare portofel"
+   },
+   "forgotpwd_header_title_forget_password": {
+      "message": "Ați uitat parola?"
+   },
+   "forgotpwd_mid_item_desc1": {
+      "message": "OKX Wallet nu păstrează parolele portofelului dvs."
+   },
+   "forgotpwd_mid_item_desc2": {
+      "message": "Dacă vă uitați parola portofelului, o puteți reseta prin resetarea portofelului"
+   },
+   "forgotpwd_mid_item_desc3": {
+      "message": "Țineți cont că dacă vă resetați portofelul fără copie de rezervă, veți pierde portofelul și toate activele din acesta. Asigurați realizarea copiilor de rezervă pentru toate portofelele"
+   },
+   "metax_mid_colored_stake": {
+      "message": "Stake"
+   },
+   "metax_mid_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "securityreset_footer_btn_back": {
+      "message": "Creați acum o copie de rezervă"
+   },
+   "securityreset_footer_btn_reset": {
+      "message": "Resetare portofel"
+   },
+   "securityreset_header_text_reset": {
+      "message": "Resetare portofel"
+   },
+   "securityreset_mid_btn_cancel": {
+      "message": "Anulare"
+   },
+   "securityreset_mid_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "securityreset_mid_placeholder_reset": {
+      "message": "RESET"
+   },
+   "securityreset_mid_subtitle_note": {
+      "message": "Țineți cont că dacă vă resetați portofelul fără copie de rezervă, veți pierde portofelul și toate activele din acesta. Asigurați realizarea copiilor de rezervă pentru toate portofelele"
+   },
+   "securityreset_mid_text_enter_reset": {
+      "message": "Pentru a confirma resetarea portofelului, introduceți: {text}"
+   },
+   "securityreset_mid_title_reset_password": {
+      "message": "Resetare portofel?"
+   },
+   "securityreset_mid_title_risk_warning": {
+      "message": "Avertizare de risc"
+   },
+   "settings_intro_title_protection_level": {
+      "message": "Nivel de protecție portofel"
+   },
+   "settings_intro_tooltips_strictness_level": {
+      "message": "Nivel de strictețe pentru filtrare. Un nivel mai mare poate bloca mai multe site-uri suspecte"
+   },
+   "settings_wallet_security_maintitle_high": {
+      "message": "Ridicat"
+   },
+   "settings_wallet_security_maintitle_low": {
+      "message": "Scăzut"
+   },
+   "settings_wallet_security_subtitle_block_both": {
+      "message": "Blocați atât site-urile rău intenționate cât și pe cele suspecte"
+   },
+   "settings_wallet_security_subtitle_block_malicious": {
+      "message": "Blocați doar site-urile rău intenționate"
+   },
+   "settings_wallet_security_title_protection_level": {
+      "message": "Nivel de protecție portofel"
+   },
+   "swaptrade_bot_btn_insufficient_balance": {
+      "message": "Sold insuficient de {token}"
+   },
+   "swaptrade_dialog_btn_continue_swap": {
+      "message": "Swap"
+   },
+   "swaptrade_dialog_modal_oneorder_pending": {
+      "message": "Aveți un ordin swap pentru combustibil în așteptare. Nu puteți iniția altul în același timp. Încercați din nou după finalizarea acestuia."
+   },
+   "swaptrade_dialog_modal_oneorder_pending_okbtn": {
+      "message": "OK"
+   },
+   "swaptrade_dialog_modal_service_closed": {
+      "message": "Serviciul swap pentru combustibil este închis momentan"
+   },
+   "swaptrade_dialog_modal_similar_order": {
+      "message": "Ați plasat deja un ordin similar. Vă recomandăm să nu mai plasați niciun ordin nou până la actualizarea soldului."
+   },
+   "swaptrade_dialog_modal_viewin_explorer": {
+      "message": "Vizualizare în explorator"
+   },
+   "swaptrade_dialog_text_daily_orderlimit": {
+      "message": "Ați atins limita de ordine zilnice pentru swap pentru combustibil. Încercați din nou mâine."
+   },
+   "swaptrade_dialog_text_irregular_operations": {
+      "message": "Motorul nostru de riscuri a detectat că ați avut unele operații neregulate. Nu mai puteți folosi serviciul swap pentru combustibil."
+   },
+   "swaptrade_extension_feedback_anchor_view_browser": {
+      "message": "Vizualizare în Explorator"
+   },
+   "swaptrade_extension_feedback_toast_approval_fillup_gas_failed": {
+      "message": "Nu s-a reușit completarea {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_fillup_gas_failed": {
+      "message": "Nu s-a reușit completarea {nativeToken}"
+   },
+   "swaptrade_extension_feedback_toast_swapped_successfully": {
+      "message": "S-a realizat un swap de {payValue} {paySymbol} pentru {receiveValue} {receiveSymbol}"
+   },
+   "swaptrade_extension_feedback_toast_transaction_submitted": {
+      "message": "Tranzacție remisă"
+   },
+   "swaptrade_footer_btn_fill_up": {
+      "message": "Completați {nativeToken}"
+   },
+   "swaptrade_function_tag_trade_times": {
+      "message": "≈ {value} general transactions"
+   },
+   "swaptrade_function_title_select_pay_amount": {
+      "message": "Selectați valoarea de plată"
+   },
+   "swaptrade_function_title_select_token": {
+      "message": "Selectați tokenul de plată"
+   },
+   "swaptrade_header_title_fillup_gas": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_header_title_swap_forgas": {
+      "message": "Swap pentru combustibil"
+   },
+   "swaptrade_intro_btn_ok": {
+      "message": "OK"
+   },
+   "swaptrade_intro_text_gassation_reference_explained": {
+      "message": "Acesta reprezintă un curs de schimb estimat ca swap pentru combustibil. Este calculat ținând cont de prețurile pieței și cursurile de la bursele centralizate. Cursul real poate varia când este confirmat ordinul dvs. Utilizarea serviciului swap pentru combustibil necesită și un onorariu de rețea, care va fi luat în considerare automat în valoarea pe care o plătiți."
+   },
+   "swaptrade_intro_text_swap_forgas_desc": {
+      "message": "Trading on blockchains requires paying a network fee with native tokens such as ETH, BNB, OKT, MATIC, etc. When you don't have these tokens to make a transaction, you can quickly swap tokens you already hold for native tokens using the Swap for gas feature (it's only available for a few networks).\nGetting native tokens via Swap for gas also requires a network fee, which will be automatically factored into the amount you pay.\nYou'll see an estimated number of general transactions when placing an order on Swap for gas. It refers to the number of token transfers you can make with your selected amount. The actual number may vary."
+   },
+   "swaptrade_intro_title_swap_forgas": {
+      "message": "Swap pentru combustibil"
+   },
+   "swaptrade_list_text_history_swap_gas": {
+      "message": "Swap pentru combustibil"
+   },
+   "swaptrade_list_text_transaction_swap_gas": {
+      "message": "Swap pentru combustibil"
+   },
+   "swaptrade_list_title_reference": {
+      "message": "Referință"
+   },
+   "swaptrade_list_title_you_receive": {
+      "message": "Primiți"
+   },
+   "swaptrade_mid_btn_reload": {
+      "message": "Reîncărcare"
+   },
+   "swaptrade_mid_title_network_error": {
+      "message": "Eroare de rețea"
+   },
+   "swaptrade_placeorder_reminder_transaction_details_tips": {
+      "message": "Nu efectuați un alt ordin până la finalizarea acestuia, sau poate eșua. Închiderea acestei pagini nu va întrerupe procesul. Puteți consulta detaliile în Istoric."
+   },
+   "swaptrade_top_nav_select_paytoken": {
+      "message": "Selectați tokenul de plată"
+   },
+   "swaptrade_top_reminder_payreceive_failed": {
+      "message": "Nu s-a putut prelua prețul pentru {paySymbol} și {receiveSymbol}, nu se poate confirma valoarea de primit. Încercați din nou mai târziu."
+   },
+   "swaptrade_top_reminder_paysymbol_failed": {
+      "message": "Nu s-a putut prelua prețul pentru {paySymbol}, nu se poate confirma valoarea de plătit. Încercați din nou mai târziu."
+   },
+   "swaptrade_top_reminder_receivesymbol_failed": {
+      "message": "Nu s-a putut prelua prețul pentru {receiveSymbol}, nu se poate confirma valoarea de primit. Încercați din nou mai târziu."
+   },
+   "swaptrade_top_reminder_unfavorable_moment": {
+      "message": "Onorariul de rețea este prea mare pe moment, nefiind un moment bun pentru realizarea unei tranzacții. Încercați din nou mai târziu."
+   },
+   "swaptrade_transfer_errortip_gas_insufficient": {
+      "message": "Insufficient {token} for network fee "
+   },
+   "swaptrade_transfer_errortip_gas_insufficient1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "swaptrade_transfer_errortip_insufficient_balance1": {
+      "message": "Fill up {token}"
+   },
+   "swaptrade_transfer_tag_recommend": {
+      "message": "Recommend"
+   },
+   "swaptrade_transfer_text_receive_gasdesc": {
+      "message": "Receive {token} with QR code or wallet address"
+   },
+   "swaptrade_transfer_text_swap_forgasdesc": {
+      "message": "Top up {token} quicker than ever"
+   },
+   "swaptrade_transfer_title_receive_gas": {
+      "message": "Receive"
+   },
+   "swaptrade_transfer_title_swap_forgas": {
+      "message": "Swap for gas"
+   },
+   "wallet_account_toast_backup_view_address": {
+      "message": "Faceți mai întâi o copie de siguranță a portofelului, înainte de vizualizarea adresei"
+   },
+   "wallet_add_hardware_btn_ledger_client": {
+      "message": "Client Ledger"
+   },
+   "wallet_add_hardware_tutorials_ledger_connect_tips": {
+      "message": "Descărcați mai întâi {downloadUrl}, apoi faceți clic pe butonul de conectare de mai jos după deschiderea paginii clientului Ledger."
+   },
+   "wallet_add_wallet_btn_conncet_hardware_wallet": {
+      "message": "Conectare portofel hardware"
+   },
+   "wallet_add_wallet_maintitle_add_wallet": {
+      "message": "Adăugați portofel"
+   },
+   "wallet_add_wallet_maintitle_hardware_wallet_conncet_failed": {
+      "message": "Conexiunea a eșuat"
+   },
+   "wallet_add_wallet_modal_hardware_wallet_conncet_failed_tip": {
+      "message": "Verificați introducerea portofelului hardware în computer și deblocarea acestuia."
+   },
+   "wallet_add_wallet_subtitle_connect_hardware_select_a_hardware": {
+      "message": "Selectați un portofel hardware"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_conncet_tip": {
+      "message": "Asigurați-vă că portofelul dvs. hardware este conectat la computer"
+   },
+   "wallet_add_wallet_subtitle_hardware_wallet_connceting": {
+      "message": "Se conectează"
+   },
+   "wallet_add_wallet_toast_account_name_number": {
+      "message": "Cont {newAccountNumber}"
+   },
+   "wallet_addacount_toast_account_created": {
+      "message": "Noul cont a fost creat"
+   },
+   "wallet_addwallet_btn_conncet_hardware_wallet": {
+      "message": "Conectare"
+   },
+   "wallet_addwallet_btn_connect_hardware_wallet": {
+      "message": "Conectare portofel hardware"
+   },
+   "wallet_addwallet_btn_create_wallet": {
+      "message": "Creați un portofel nou"
+   },
+   "wallet_addwallet_btn_hardware_wallet": {
+      "message": "Hardware wallet"
+   },
+   "wallet_addwallet_btn_import_private_key": {
+      "message": "Cheie privată"
+   },
+   "wallet_addwallet_btn_import_seed_phase": {
+      "message": "Frază de protecție"
+   },
+   "wallet_addwallet_btn_import_wallet": {
+      "message": "Importați un portofel existent"
+   },
+   "wallet_addwallet_errortip_required_choreme_to_connect_hardware_wallet": {
+      "message": "Trebuie să utilizați OKX Wallet pe Google Chrome pentru a vă conecta la portofelul dvs. hardware."
+   },
+   "wallet_addwallet_hardware_errortip_browser_not_supported": {
+      "message": "Browserul dvs. nu este acceptat..."
+   },
+   "wallet_addwallet_hardware_wallet_notify_download_chrome": {
+      "message": "Descărcare Google Chrome"
+   },
+   "wallet_addwallet_hardware_wallet_subtitle_legacy_desc": {
+      "message": "(moștenire)"
+   },
+   "wallet_addwallet_maintitle_connect_hareware_wallet": {
+      "message": "Conectare portofel hardware"
+   },
+   "wallet_addwallet_notify_connect_new_hardware_wallet": {
+      "message": "Trebuie să utilizați cel mai recent cont înainte de a putea adăuga unul nou."
+   },
+   "wallet_addwallet_notify_hardware_wallet_connecting": {
+      "message": "Se conectează..."
+   },
+   "wallet_addwallet_subtitle_connect_hardware_wallet": {
+      "message": "Conectați-vă portofelul hardware"
+   },
+   "wallet_addwallet_subtitle_create_wallet": {
+      "message": "Creați un nou portofel cu frază de protecție"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_connecting_tip": {
+      "message": "Dacă adresa portofelului dvs. nu este listată mai jos, comutați calea la Moștenire (MEW / MyCrypto)"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_forget_conncetion": {
+      "message": "Uitați acest portofel hardware"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_a_hd_path": {
+      "message": "Selectați o cale"
+   },
+   "wallet_addwallet_subtitle_hardware_wallet_select_wallets": {
+      "message": "Selectați portofelele"
+   },
+   "wallet_addwallet_subtitle_import_wallet": {
+      "message": "Importați fraza de protecție sau cheia privată"
+   },
+   "wallet_addwallet_toast_add_wallet_limit": {
+      "message": "Puteți adăuga până la cel mult 50 de portofele."
+   },
+   "wallet_addwallet_toast_create_wallet_success": {
+      "message": "Creat"
+   },
+   "wallet_approval_btn_revoke_approval": {
+      "message": "Revocați aprobarea"
+   },
+   "wallet_approval_confirmation_maintitle_wallet_confirmation": {
+      "message": "Autorizare portofel"
+   },
+   "wallet_approval_subtitle_revoke_approval_desc": {
+      "message": "Veți revoca aprobarea pentru {tokenSymbol}"
+   },
+   "wallet_backup_maintitle_copy_to_clipbord_warning": {
+      "message": "Cheie privată"
+   },
+   "wallet_backup_subtitle_copy_to_clipbord_warning": {
+      "message": "Copierea cheii private presupune un risc privind monitorizarea ușoară a clipboardului sau folosirea acestuia de către aplicații terțe."
+   },
+   "wallet_backup_subtitle_double_check_seed_phase": {
+      "message": "Verificați fraza de protecție"
+   },
+   "wallet_backup_wallet_btn_i_have_backed_up": {
+      "message": "Am făcut o copie de rezervă"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_copy": {
+      "message": "Copiați oricum"
+   },
+   "wallet_backup_wallet_copy_to_clipbord_warning_btn_not_copy": {
+      "message": "Nu copiați"
+   },
+   "wallet_backup_wallet_modal_maintitle_private_key": {
+      "message": "Cheie privată"
+   },
+   "wallet_backup_wallet_subtitle_write_down_seed_phase": {
+      "message": "Notați următoarele cuvinte în ordinea corectă. Păstrați-le în siguranță și nu le partajați cu nimeni!"
+   },
+   "wallet_backup_wallet_subtitle_write_down_the_seed_phase": {
+      "message": "Notați fraza de protecție"
+   },
+   "wallet_backup_wallet_text_no_one_is_looking": {
+      "message": "Verificați ca nimeni să nu se uite la ecranul dvs."
+   },
+   "wallet_backup_wallet_text_tap_to_view": {
+      "message": "Atingeți pentru a vedea fraza de protecție"
+   },
+   "wallet_backup_wallet_toast_backup_success": {
+      "message": "Succes"
+   },
+   "wallet_backup_wallet_toast_private_key_copied": {
+      "message": "Copiat"
+   },
+   "wallet_common_okx_link": {
+      "message": "www.okx.com"
+   },
+   "wallet_confirm_text_network_fee": {
+      "message": "Network fee"
+   },
+   "wallet_confirm_text_register_first": {
+      "message": "Register zkSync Lite to continue the transaction"
+   },
+   "wallet_confirm_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_contract_interactiom_subtitle_amount": {
+      "message": "Valoare"
+   },
+   "wallet_contract_interaction_approval_permission_authorized_amount": {
+      "message": "Sumă autorizată"
+   },
+   "wallet_contract_interaction_btn_approval_permission": {
+      "message": "Aprobare"
+   },
+   "wallet_contract_interaction_subtitle_interacted_with": {
+      "message": "Interacționat cu (la)"
+   },
+   "wallet_custom_crypto_subtitle_network": {
+      "message": "Rețele"
+   },
+   "wallet_custom_crypto_subtitle_select_network": {
+      "message": "Rețea"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_block_explorer_url": {
+      "message": "URL explorator blockchain"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_defination": {
+      "message": "ID-ul de blockchain utilizat pentru semnarea tranzacțiilor pentru această rețea."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_chain_id_tips": {
+      "message": "ID-ul de blockchain utilizat pentru semnarea tranzacțiilor pentru această rețea."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol": {
+      "message": "Simbol monedă"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_currency_symbol_tips": {
+      "message": "Simbolul ticker afișat pentru moneda acestei rețele."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_defination": {
+      "message": "Adresa URL utilizată ca explorator blockchain pentru această rețea."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_explorer_url_tips": {
+      "message": "Adresa URL utilizată ca explorator blockchain pentru această rețea."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name": {
+      "message": "Numele asociat cu această rețea."
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_name_tips": {
+      "message": "numele asociat cu această rețea"
+   },
+   "wallet_dapp_conncetion_add_network_subtitle_network_url_tips": {
+      "message": "Adresa URL de accesare a acestei rețele."
+   },
+   "wallet_dapp_conncetion_alert_approve_tip": {
+      "message": "Dacă acordați permisiunea, permiteți {name} să vă transfere {tokenSymbol} și să vă automatizeze tranzacțiile"
+   },
+   "wallet_dapp_conncetion_alert_backup_wallet": {
+      "message": "Nu aveți acces DApp înainte de a realiza copia de siguranță pentru fraza de protecție. Realizați copia de siguranță acum."
+   },
+   "wallet_dapp_conncetion_btn_dismiss": {
+      "message": "Anulați"
+   },
+   "wallet_dapp_conncetion_btn_provide": {
+      "message": "Furnizare"
+   },
+   "wallet_dapp_conncetion_btn_switch_network": {
+      "message": "Comutare"
+   },
+   "wallet_dapp_conncetion_custom_gas_subtitle_desc": {
+      "message": "Creșterea comisionului poate reduce timpii de procesare, dar nu este garantat."
+   },
+   "wallet_dapp_conncetion_errortip_decrypt_error": {
+      "message": "Acest mesaj nu poate fi decriptat din cauza unei erori: {errorMessage}"
+   },
+   "wallet_dapp_conncetion_foot_notify_only_connect_trust": {
+      "message": "Conectați-vă doar la site-urile în care aveți încredere."
+   },
+   "wallet_dapp_conncetion_maintitle_conncet_account": {
+      "message": "Conectare cont"
+   },
+   "wallet_dapp_conncetion_maintitle_select_accounts": {
+      "message": "Selectare cont(uri)"
+   },
+   "wallet_dapp_conncetion_modal_backup_your_wallet": {
+      "message": "Realizați copia de siguranță pentru portofel"
+   },
+   "wallet_dapp_conncetion_notify_agree_approval": {
+      "message": "Ați aprobat această permisiune"
+   },
+   "wallet_dapp_conncetion_notify_conncet_permission": {
+      "message": "Permiteți DApp curente să se conecteze cu OKX Wallet."
+   },
+   "wallet_dapp_conncetion_notify_conncetion_confirmation": {
+      "message": "OKX Wallet nu s-a conectat la acest site. Pentru conectare la acest site, găsiți și faceți clic pe butonul de conectare."
+   },
+   "wallet_dapp_conncetion_notify_decrypt_message": {
+      "message": "{siteName} ar dori să citească acest mesaj pentru a vă finaliza acțiunea"
+   },
+   "wallet_dapp_conncetion_notify_network_url": {
+      "message": "URL rețea"
+   },
+   "wallet_dapp_conncetion_notify_not_agree_approval": {
+      "message": "Nu ați aprobat această permisiune"
+   },
+   "wallet_dapp_conncetion_notify_public_key_notice": {
+      "message": "{siteName} ar dori cheia dvs. de criptare publică. Dacă sunteți de acord, acest site va putea să vă scrie mesaje criptate."
+   },
+   "wallet_dapp_conncetion_notify_public_key_request": {
+      "message": "Solicitare cheie de criptare publică"
+   },
+   "wallet_dapp_conncetion_notify_signature": {
+      "message": "Semnați"
+   },
+   "wallet_dapp_conncetion_notify_signature_request": {
+      "message": "Solicitare de semnătură"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_account": {
+      "message": "Conturi conectate"
+   },
+   "wallet_dapp_conncetion_requesr_subtitle_current_network": {
+      "message": "Rețea curentă"
+   },
+   "wallet_dapp_conncetion_subtitle_change_wallet": {
+      "message": "Doriți să utilizați {curWalletName} pentru conectare la {host}"
+   },
+   "wallet_dapp_conncetion_subtitle_connected_sites": {
+      "message": "Site-uri conectate"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt": {
+      "message": "Decriptare"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_copy": {
+      "message": "Copiere mesaj criptat"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_metamask_information": {
+      "message": "Decriptare mesaj"
+   },
+   "wallet_dapp_conncetion_subtitle_decrypt_request": {
+      "message": "Cerere de decriptare"
+   },
+   "wallet_dapp_conncetion_subtitle_external_extension": {
+      "message": "Extensie externă"
+   },
+   "wallet_dapp_conncetion_subtitle_network": {
+      "message": "Rețea"
+   },
+   "wallet_dapp_conncetion_subtitle_network_fee": {
+      "message": "Comision rețea"
+   },
+   "wallet_dapp_conncetion_subtitle_new_contract": {
+      "message": "Contract nou"
+   },
+   "wallet_dapp_conncetion_subtitle_plus": {
+      "message": "+ {length} mai mult"
+   },
+   "wallet_dapp_conncetion_subtitle_receive_address": {
+      "message": "Către:"
+   },
+   "wallet_dapp_conncetion_subtitle_select_accounts": {
+      "message": "Selectați conturile"
+   },
+   "wallet_dapp_conncetion_subtitle_select_all": {
+      "message": "Selectați tot"
+   },
+   "wallet_dapp_conncetion_subtitle_transcation_type": {
+      "message": "Tip"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_connceted_to": {
+      "message": "{curWalletName} s-a conectat la acest site"
+   },
+   "wallet_dapp_conncetion_subtitle_wallet_has_disconnceted_to": {
+      "message": "{curWalletName} s-a deconectat de la acest site"
+   },
+   "wallet_dapp_connection_btn_disconncet": {
+      "message": "Deconectare"
+   },
+   "wallet_dapp_connection_btn_reject": {
+      "message": "Respingere"
+   },
+   "wallet_dapp_connection_errortip_insufficient_tip": {
+      "message": "Combustibil insuficient"
+   },
+   "wallet_dapp_connection_maintitle_add_suggested_tokens": {
+      "message": "Adăugați criptomonedă"
+   },
+   "wallet_dapp_connection_modal_account_conncetion": {
+      "message": "Conectați-vă toate {account}"
+   },
+   "wallet_dapp_connection_modal_connected_project": {
+      "message": "Conectare la {origin}"
+   },
+   "wallet_dapp_connection_modal_wallet_conncetion": {
+      "message": "conturi"
+   },
+   "wallet_dapp_connection_notification_approval_permission": {
+      "message": "Sigur aprobați? Aprobarea înseamnă că permiteți aceste DApp să vă retragă {tokenSymbol} în orice moment"
+   },
+   "wallet_dapp_connection_notification_permission": {
+      "message": "Permiteți acestui site să:"
+   },
+   "wallet_dapp_connection_notify_add_chain_desc": {
+      "message": "Acest lucru va permite utilizarea acestei rețele din OKX Wallet."
+   },
+   "wallet_dapp_connection_notify_allow_external_extension_permission": {
+      "message": "Permiteți acestei extensii externe să:"
+   },
+   "wallet_dapp_connection_subtitle_add_token": {
+      "message": "Adăugați token"
+   },
+   "wallet_dapp_connection_subtitle_add_tokens": {
+      "message": "Adăugare tokenuri"
+   },
+   "wallet_dapp_connection_subtitle_approval_amount_unlimitied": {
+      "message": "Nelimitat"
+   },
+   "wallet_dapp_connection_subtitle_balance": {
+      "message": "Sold"
+   },
+   "wallet_dapp_connection_subtitle_chain_id": {
+      "message": "ID blockchain"
+   },
+   "wallet_dapp_connection_subtitle_data_label": {
+      "message": "Date"
+   },
+   "wallet_dapp_connection_subtitle_input_the_maximum": {
+      "message": "Introduceți suma maximă ({tokenSymbol})"
+   },
+   "wallet_dapp_connection_toast_unsupported_chain": {
+      "message": "OKX Wallet nu acceptă acest blockchain acum."
+   },
+   "wallet_dialog_modal_backbtn": {
+      "message": "Back"
+   },
+   "wallet_dialog_modal_crypto_notavailable": {
+      "message": "Couldn't send this crypto because it's not available for paying network fees"
+   },
+   "wallet_dialog_modal_not_registered": {
+      "message": "Address not registered"
+   },
+   "wallet_dialog_modal_register_before_using": {
+      "message": "You need to register this address before using it"
+   },
+   "wallet_dialog_modal_registerbtn": {
+      "message": "Register"
+   },
+   "wallet_double_check_seed_phase_errortip_wrong": {
+      "message": "Cuvinte greșite, încercați din nou"
+   },
+   "wallet_double_check_seed_phase_label_seed_word": {
+      "message": "Cuvânt"
+   },
+   "wallet_double_check_seed_phase_subtitle_verify_seed_phase": {
+      "message": "Selectați fiecare frază în ordine."
+   },
+   "wallet_edit_wallet_btn_delete_wallet_risk": {
+      "message": "Delete wallet"
+   },
+   "wallet_edit_wallet_errortip_wallet_name_limit": {
+      "message": "Numele portofelului nu trebuie să depășească 20 de caractere."
+   },
+   "wallet_edit_wallet_errortip_wallet_name_repeat": {
+      "message": "Numele portofelului există deja."
+   },
+   "wallet_edit_wallet_maintitle_change_acoount_name": {
+      "message": "Numele contului"
+   },
+   "wallet_edit_wallet_toast_renamed_success": {
+      "message": "Modificat"
+   },
+   "wallet_editwallet_alert_maintitle_delete_wallet_risk": {
+      "message": "Are you sure to delete this wallet?"
+   },
+   "wallet_editwallet_alert_subtitle_delete_wallet_risk": {
+      "message": "This action will remove this wallet from the app. You can re-import it with its seed phrase without affecting your assets. Be sure to back up your wallet before deleting it, otherwise you will permanently lose it and all assets"
+   },
+   "wallet_editwallet_subtitle_wallet_name": {
+      "message": "Nume portofel"
+   },
+   "wallet_editwallet_toast_delete_wallet_success": {
+      "message": "Șters"
+   },
+   "wallet_estension_password_toast_link_terms_service": {
+      "message": "Condiții de utilizare a serviciului"
+   },
+   "wallet_extension_addaddress_anchor_go_to_edit": {
+      "message": "Accesați editarea"
+   },
+   "wallet_extension_addaddress_btn_no": {
+      "message": "Anulare"
+   },
+   "wallet_extension_addaddress_btn_yes": {
+      "message": "Confirmare"
+   },
+   "wallet_extension_addaddress_errortip_address_exists": {
+      "message": "Adresa există deja"
+   },
+   "wallet_extension_addaddress_errortip_maximum_20": {
+      "message": "Maxim 20 de caractere"
+   },
+   "wallet_extension_addaddress_errortip_wrong_address": {
+      "message": "Adresă greșită. Încercați din nou"
+   },
+   "wallet_extension_addaddress_input_enter_address": {
+      "message": "Introduceți o adresă"
+   },
+   "wallet_extension_addaddress_input_enter_name_limit": {
+      "message": "Introduceți un nume cu maxim 20 de caractere"
+   },
+   "wallet_extension_addaddress_modal_cancel_adding": {
+      "message": "Anulați introducerea adresei?"
+   },
+   "wallet_extension_addaddress_subtitle_address": {
+      "message": "Adresă"
+   },
+   "wallet_extension_addaddress_subtitle_name": {
+      "message": "Nume"
+   },
+   "wallet_extension_addaddress_title_add_address": {
+      "message": "Adăugare adresă"
+   },
+   "wallet_extension_addnetwork_btn_got_it": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_addnetwork_text_morenetworks_coming": {
+      "message": "Mai multe rețele vor fi disponibil în curând!"
+   },
+   "wallet_extension_addnetwork_title_network_notsupported": {
+      "message": "Rețeaua {network} nu este acceptată"
+   },
+   "wallet_extension_address_popup_btn_cancel": {
+      "message": "Anulare"
+   },
+   "wallet_extension_address_popup_btn_continue": {
+      "message": "Continuare"
+   },
+   "wallet_extension_address_popup_security_alert": {
+      "message": "Alertă de securitate"
+   },
+   "wallet_extension_address_popup_security_alert_desc": {
+      "message": "Trimiteți criptomonedă către o adresă de contract și nu o adresă privată. Verificați validitatea adresei înainte de a continua pentru a evita orice pierderi potențiale"
+   },
+   "wallet_extension_addressbook_btn_add_address": {
+      "message": "Adăugare adresă"
+   },
+   "wallet_extension_addressbook_dropdown_copy_address": {
+      "message": "Copiați adresa"
+   },
+   "wallet_extension_addressbook_dropdown_detele_address": {
+      "message": "Ștergeți adresa"
+   },
+   "wallet_extension_addressbook_dropdown_edit_address": {
+      "message": "Editați adresa"
+   },
+   "wallet_extension_addressbook_dropdown_select_networks": {
+      "message": "Toate rețelele"
+   },
+   "wallet_extension_addressbook_input_search_address": {
+      "message": "Căutare adresă sau nume"
+   },
+   "wallet_extension_addressbook_text_no_address": {
+      "message": "Nicio adresă"
+   },
+   "wallet_extension_addressbook_title_address_book": {
+      "message": "Agendă"
+   },
+   "wallet_extension_addressbook_title_select_networks": {
+      "message": "Selectați rețeaua"
+   },
+   "wallet_extension_addressbook_toast_address_added": {
+      "message": "Adresă adăugată"
+   },
+   "wallet_extension_addressbook_toast_address_deleted": {
+      "message": "Adresă ștearsă"
+   },
+   "wallet_extension_addressbook_toast_address_limit_reached": {
+      "message": "Limită agendă atinsă (200 de intrări)"
+   },
+   "wallet_extension_approve_all_nft_collection": {
+      "message": "Toate NFT-urile din această colecție"
+   },
+   "wallet_extension_approve_text_approve": {
+      "message": "Aprobare"
+   },
+   "wallet_extension_approve_text_for": {
+      "message": "Pentru"
+   },
+   "wallet_extension_auto_lock_hours": {
+      "message": "{number} ore"
+   },
+   "wallet_extension_auto_lock_hours2": {
+      "message": "{number} ore"
+   },
+   "wallet_extension_auto_lock_hours3": {
+      "message": "{number} ore"
+   },
+   "wallet_extension_auto_lock_minutes": {
+      "message": "{number} minute"
+   },
+   "wallet_extension_auto_lock_minutes2": {
+      "message": "{number} minute"
+   },
+   "wallet_extension_auto_lock_never": {
+      "message": "Niciodată"
+   },
+   "wallet_extension_btn_cancel": {
+      "message": "Înapoi"
+   },
+   "wallet_extension_btn_explore_dapps": {
+      "message": "Explorare Yield"
+   },
+   "wallet_extension_btn_explore_more": {
+      "message": "Explorați mai multe"
+   },
+   "wallet_extension_btn_register": {
+      "message": "Înregistrare"
+   },
+   "wallet_extension_btn_switch_network": {
+      "message": "Comutare rețea"
+   },
+   "wallet_extension_button_text_copy_private_key": {
+      "message": "Copiere cheie privată"
+   },
+   "wallet_extension_card_ntfy_claim_amount": {
+      "message": "Valoare aproximativă revendicare"
+   },
+   "wallet_extension_card_ntfy_claim_got_it": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_card_ntfy_claim_text": {
+      "message": "Valoarea finală a revendicării va fi confirmată când este remisă cu succes pe blockchain"
+   },
+   "wallet_extension_card_ntfy_got_it": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_card_ntfy_invest_desc": {
+      "message": "Valoarea finală a revendicării va fi confirmată când este remisă cu succes pe blockchain"
+   },
+   "wallet_extension_card_ntfy_investamount": {
+      "message": "Sumă investită estimată"
+   },
+   "wallet_extension_card_toast_pending_transaction_speedup": {
+      "message": "Tranzacția curentă este în așteptare de peste {pendingTips} h. Grăbiți sau anulați tranzacția."
+   },
+   "wallet_extension_confirm_item_account_id": {
+      "message": "ID cont"
+   },
+   "wallet_extension_confirm_item_nonce": {
+      "message": "Nonce"
+   },
+   "wallet_extension_confirm_item_pubkey": {
+      "message": "From"
+   },
+   "wallet_extension_confirm_subtitle_register_first": {
+      "message": "Înregistrați ZKSpace pentru a continua tranzacția"
+   },
+   "wallet_extension_confirm_title_register_zkspace": {
+      "message": "Înregistrați ZKSpace"
+   },
+   "wallet_extension_connect_toast_deleted": {
+      "message": "Șters"
+   },
+   "wallet_extension_contract_interaction_approve_access": {
+      "message": "Aprobați accesul pentru {approved_address} la toate {approved_asset} dvs.?"
+   },
+   "wallet_extension_contract_interaction_revoke_access": {
+      "message": "Revocați accesul pentru {approved_address} la toate {approved_asset} dvs.?"
+   },
+   "wallet_extension_contract_interaction_transactiontips": {
+      "message": "By confirming, you will allow {address} to transfer your assets or automate transactions on your behalf. Please take caution before moving on"
+   },
+   "wallet_extension_contract_interaction_unknownnft_collection": {
+      "message": "Unknown NFT collection"
+   },
+   "wallet_extension_contractinteraction_text_transferconfirm": {
+      "message": "You'll allow this DApp to transfer your main-chain crypto, please proceed with caution"
+   },
+   "wallet_extension_dappgas_adjustment_fee": {
+      "message": "The transaction may fail due to a low network fee. We recommend you adjust the network fee before proceeding"
+   },
+   "wallet_extension_dashboard_tab_overview": {
+      "message": "Imagine de ansamblu"
+   },
+   "wallet_extension_desc_allnetwork": {
+      "message": "Puteți utiliza DApps care acceptă următoarele rețele"
+   },
+   "wallet_extension_desc_crypto_register": {
+      "message": "Trebuie să înregistrați această criptomonedă înainte de a o utiliza"
+   },
+   "wallet_extension_desc_evm_networks_synchronized": {
+      "message": "Alte rețele compatibile EVM au fost sincronizate automat"
+   },
+   "wallet_extension_desc_multichain_default": {
+      "message": "Puteți utiliza DApps care acceptă următoarele rețele"
+   },
+   "wallet_extension_desc_switch_network": {
+      "message": "Puteți utiliza DApps care acceptă următoarele rețele. Dacă întâmpinați probleme la utilizarea acestor DApps, faceți clic pe butonul de mai jos pentru a comuta la rețelele EVM"
+   },
+   "wallet_extension_desc_wallet_manage_network": {
+      "message": "Puteți utiliza acest portofel pentru a vă gestiona activele de criptomonedă din rețeaua Bitcoin."
+   },
+   "wallet_extension_desc_wallet_manage_network_variable": {
+      "message": "Puteți utiliza acest portofel pentru a vă gestiona activele de criptomonedă din rețeaua {network}"
+   },
+   "wallet_extension_details_btn_details_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_details_btn_transfer": {
+      "message": "Transfer"
+   },
+   "wallet_extension_details_colored_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_colored_tvlnum": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_details_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_details_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_details_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_details_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_details_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_details_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_details_text_details_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_editaddress_btn_cancel": {
+      "message": "Anulare"
+   },
+   "wallet_extension_editaddress_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "wallet_extension_editaddress_btn_detele": {
+      "message": "Ștergere"
+   },
+   "wallet_extension_editaddress_modal_detele_address": {
+      "message": "Selectați adresa?"
+   },
+   "wallet_extension_editaddress_subtitle_select_netwroks": {
+      "message": "Selectați rețeaua"
+   },
+   "wallet_extension_editaddress_title_edit_address": {
+      "message": "Editați adresa"
+   },
+   "wallet_extension_editaddress_toast_edit_saved": {
+      "message": "Salvat"
+   },
+   "wallet_extension_error_popup_btn_back": {
+      "message": "Go back"
+   },
+   "wallet_extension_error_popup_btn_refresh": {
+      "message": "Reîmprospătare"
+   },
+   "wallet_extension_errortip_memolimit": {
+      "message": "Limită de caractere depășită. Reintroduceți"
+   },
+   "wallet_extension_eth_sign": {
+      "message": "Semnarea acestui mesaj poate fi periculoasă. Pentru a vă proteja activele, semnați-l numai dacă aveți încredere deplină în acest site"
+   },
+   "wallet_extension_ethw_card_text_ethwfork_coming": {
+      "message": "Ramificarea ETHW urmează curând"
+   },
+   "wallet_extension_ethw_card_title_double_ethassets": {
+      "message": "Dublați-vă activele Ethereum gratuit!"
+   },
+   "wallet_extension_ethw_got_it": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_ethw_latest_version": {
+      "message": "Cea mai recentă versiune"
+   },
+   "wallet_extension_ethw_supports_assets": {
+      "message": "OKX Wallet acceptă acum active ETHW. Verificați"
+   },
+   "wallet_extension_ethw_version": {
+      "message": "Număr versiune"
+   },
+   "wallet_extension_evm_desc": {
+      "message": "Puteți comuta la rețelele EVM de mai jos, iar rețelele pentru DApps vor fi schimbate automat"
+   },
+   "wallet_extension_footer_btn_view_in_explorer": {
+      "message": "Vizualizare din Explorator Blockchain"
+   },
+   "wallet_extension_footer_btn_view_in_wallet": {
+      "message": "Vizualizare în portofel"
+   },
+   "wallet_extension_forgotpassword_notification_title_forgot_password": {
+      "message": "Ați uitat parola?"
+   },
+   "wallet_extension_forgotpassword_popup_desc_please_enter_reset": {
+      "message": "Introduceți „RESET” mai jos pentru a confirma resetarea"
+   },
+   "wallet_extension_forgotpassword_popup_text_confirm_reset": {
+      "message": "Confirmare resetare"
+   },
+   "wallet_extension_forgotpassword_popup_title_resetwallet": {
+      "message": "Resetare portofel"
+   },
+   "wallet_extension_general_countnft_intotal": {
+      "message": "Numărați NFT-urile totale"
+   },
+   "wallet_extension_header_approval_title_approve": {
+      "message": "Aprobare"
+   },
+   "wallet_extension_header_approval_title_cancel_approval": {
+      "message": "Revocați aprobarea"
+   },
+   "wallet_extension_header_approval_title_for": {
+      "message": "Pentru"
+   },
+   "wallet_extension_header_redeem_title_reveive": {
+      "message": "Primiți"
+   },
+   "wallet_extension_header_redeem_title_sent": {
+      "message": "Trimitere"
+   },
+   "wallet_extension_header_text_history": {
+      "message": "Istoric"
+   },
+   "wallet_extension_header_title_claim": {
+      "message": "Revendicare"
+   },
+   "wallet_extension_header_title_invest": {
+      "message": "Investiți"
+   },
+   "wallet_extension_header_title_redeem": {
+      "message": "Recuperare"
+   },
+   "wallet_extension_history_details_itemtype": {
+      "message": "Type"
+   },
+   "wallet_extension_history_dropdown_all_network": {
+      "message": "Toate rețelele"
+   },
+   "wallet_extension_history_dropdown_time": {
+      "message": "Dată"
+   },
+   "wallet_extension_history_item_address": {
+      "message": "Adresă"
+   },
+   "wallet_extension_history_list_approval": {
+      "message": "Aprobare {symbol}"
+   },
+   "wallet_extension_history_list_claim": {
+      "message": "Revendicare"
+   },
+   "wallet_extension_history_list_contract_interaction": {
+      "message": "Interacțiune în baza contractului"
+   },
+   "wallet_extension_history_list_mint": {
+      "message": "Fabricare"
+   },
+   "wallet_extension_history_list_receive": {
+      "message": "Primiți"
+   },
+   "wallet_extension_history_list_receive_from": {
+      "message": "De la"
+   },
+   "wallet_extension_history_list_redeem": {
+      "message": "Recuperare"
+   },
+   "wallet_extension_history_list_revoke_approval": {
+      "message": "Revocați aprobarea {symbol}"
+   },
+   "wallet_extension_history_list_revoke_asset": {
+      "message": "Revoke approval of {approvedasset}"
+   },
+   "wallet_extension_history_list_send": {
+      "message": "Trimitere"
+   },
+   "wallet_extension_history_list_send_to": {
+      "message": "Către"
+   },
+   "wallet_extension_history_list_status_btn_cancel_transaction": {
+      "message": "Anulare tranzacție"
+   },
+   "wallet_extension_history_list_status_btn_speed_up": {
+      "message": "Accelerare"
+   },
+   "wallet_extension_history_list_status_btn_speed_up_cancellation": {
+      "message": "Anulare accelerare"
+   },
+   "wallet_extension_history_list_status_pending": {
+      "message": "În așteptare"
+   },
+   "wallet_extension_history_list_status_waiting": {
+      "message": "În așteptare"
+   },
+   "wallet_extension_history_list_subscribe": {
+      "message": "Subscriere"
+   },
+   "wallet_extension_history_list_text_more": {
+      "message": "Mai mult..."
+   },
+   "wallet_extension_history_list_trade": {
+      "message": "Tranzacționați"
+   },
+   "wallet_extension_history_option_pending": {
+      "message": "În așteptare ({num})"
+   },
+   "wallet_extension_history_pop_tap_to_add": {
+      "message": "Faceți clic pentru adăugare la agendă"
+   },
+   "wallet_extension_history_receive_nonce": {
+      "message": "Număr arbitrar"
+   },
+   "wallet_extension_history_status_completed": {
+      "message": "Finalizat"
+   },
+   "wallet_extension_history_status_failed": {
+      "message": "Eșuat"
+   },
+   "wallet_extension_history_status_failed1": {
+      "message": "Failed"
+   },
+   "wallet_extension_history_status_pending": {
+      "message": "Pending"
+   },
+   "wallet_extension_history_status_waiting": {
+      "message": "Waiting"
+   },
+   "wallet_extension_history_tab_completed": {
+      "message": "Finalizat"
+   },
+   "wallet_extension_history_tab_completed1": {
+      "message": "Completed"
+   },
+   "wallet_extension_history_tab_pending": {
+      "message": "În așteptare"
+   },
+   "wallet_extension_history_text_change_pubkey": {
+      "message": "ChangePubKey"
+   },
+   "wallet_extension_history_text_register_tab": {
+      "message": "Înregistrați ZKSpace"
+   },
+   "wallet_extension_history_text_unknown_protocol": {
+      "message": "Protocol necunoscut"
+   },
+   "wallet_extension_history_text_unknown_token": {
+      "message": "Token necunoscut"
+   },
+   "wallet_extension_history_title_revoke_approval1": {
+      "message": "Revoke approval"
+   },
+   "wallet_extension_home_foot_dapp_connceted": {
+      "message": "Conectat"
+   },
+   "wallet_extension_home_function_history": {
+      "message": "Istoric"
+   },
+   "wallet_extension_homepage_feature_name_swap": {
+      "message": "Swap"
+   },
+   "wallet_extension_hover_change_address_format": {
+      "message": "Faceți clic pentru a schimba formatul adresei"
+   },
+   "wallet_extension_hover_intro_of_segwit": {
+      "message": "Faceți clic pentru a accesa introducerea SegWit"
+   },
+   "wallet_extension_import_seed_phrase_button_clear": {
+      "message": "Ștergere"
+   },
+   "wallet_extension_import_seed_phrase_dropdown_ihave": {
+      "message": "Fraza mea de protecție are"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_12word": {
+      "message": "12 cuvinte"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_15word": {
+      "message": "15 cuvinte"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_18word": {
+      "message": "18 cuvinte"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_21word": {
+      "message": "21 de cuvinte"
+   },
+   "wallet_extension_import_seedphrase_dropdown_text_24word": {
+      "message": "24 de cuvinte"
+   },
+   "wallet_extension_imported_toast_wallet_existes": {
+      "message": "Portofelul există deja"
+   },
+   "wallet_extension_info_pay": {
+      "message": "Plătit"
+   },
+   "wallet_extension_info_receive": {
+      "message": "Primit"
+   },
+   "wallet_extension_info_text_type": {
+      "message": "Tip"
+   },
+   "wallet_extension_info_type_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_info_type_pool": {
+      "message": "Fond"
+   },
+   "wallet_extension_info_type_save": {
+      "message": "Salvare"
+   },
+   "wallet_extension_info_type_stake": {
+      "message": "Miză"
+   },
+   "wallet_extension_info_type_vaults": {
+      "message": "Seifuri"
+   },
+   "wallet_extension_input_errortip_passwords_donot_match": {
+      "message": "Parolele nu se potrivesc!"
+   },
+   "wallet_extension_input_errortip_passwords_match": {
+      "message": "Parolele se potrivesc!"
+   },
+   "wallet_extension_input_errortip_text_good": {
+      "message": "Foarte puternică"
+   },
+   "wallet_extension_input_errortip_text_great": {
+      "message": "Grozav"
+   },
+   "wallet_extension_input_errortip_text_weak": {
+      "message": "Poate fi mai puternică"
+   },
+   "wallet_extension_input_memoinfro": {
+      "message": "Introduceți notificarea, până la 256 de caractere"
+   },
+   "wallet_extension_input_search_network": {
+      "message": "Căutare rețea"
+   },
+   "wallet_extension_input_search_network1": {
+      "message": "Căutare rețea"
+   },
+   "wallet_extension_invest_sub_type_stake": {
+      "message": "Miză"
+   },
+   "wallet_extension_invest_sub_type_vault": {
+      "message": "Seif"
+   },
+   "wallet_extension_item_register_address": {
+      "message": "Adresă înregistrată"
+   },
+   "wallet_extension_login_title_access_restricted": {
+      "message": "Acces restricționat"
+   },
+   "wallet_extension_login_toast_unavailable_inyourregion": {
+      "message": "În conformitate cu legislația și reglementările locale, produsele sau serviciile okx.com nu sunt disponibile în regiunea dvs. ({area})."
+   },
+   "wallet_extension_mid_alert_unbackedup": {
+      "message": "Aveți portofele fără copii de rezervă. Conturile portofelelor fără copii de rezervă nu se pot conecta la DApps terțe"
+   },
+   "wallet_extension_mid_link_explorer": {
+      "message": "Vizualizare în Explorator Blockchain"
+   },
+   "wallet_extension_mid_text_accounts": {
+      "message": "{num} conturi conectabile"
+   },
+   "wallet_extension_mid_text_approved_amount": {
+      "message": "Sumă aprobată"
+   },
+   "wallet_extension_mid_text_block_confirmation": {
+      "message": "Confirmare de bloc"
+   },
+   "wallet_extension_mid_text_from": {
+      "message": "De la"
+   },
+   "wallet_extension_mid_text_interaction_address": {
+      "message": "Interacționat cu"
+   },
+   "wallet_extension_mid_text_network": {
+      "message": "Rețea"
+   },
+   "wallet_extension_mid_text_network_fee": {
+      "message": "Comision rețea"
+   },
+   "wallet_extension_mid_text_status": {
+      "message": "Stare"
+   },
+   "wallet_extension_mid_text_time": {
+      "message": "Oră"
+   },
+   "wallet_extension_mid_text_to": {
+      "message": "Către"
+   },
+   "wallet_extension_mid_text_transaction_hash": {
+      "message": "Hash tranzacție"
+   },
+   "wallet_extension_mid_text_unlimited": {
+      "message": "Nelimitat"
+   },
+   "wallet_extension_modaldesc_riskaddress": {
+      "message": "{contractaddress} este riscant. Pentru a vă proteja activele, verificați ca această adresă să fie adresa dvs. de transfer utilizată frecvent înainte de confirmarea tranzacției"
+   },
+   "wallet_extension_nft_btn_apply": {
+      "message": "Candidați"
+   },
+   "wallet_extension_nft_btn_back_to_items": {
+      "message": "Înapoi la toate articolele"
+   },
+   "wallet_extension_nft_btn_clear": {
+      "message": "Ștergeți tot"
+   },
+   "wallet_extension_nft_btn_refresh": {
+      "message": "Reîmprospătare"
+   },
+   "wallet_extension_nft_detail_text_best_offer": {
+      "message": "Cea mai bună ofertă"
+   },
+   "wallet_extension_nft_detail_text_last": {
+      "message": "Cel mai recent"
+   },
+   "wallet_extension_nft_detail_text_price": {
+      "message": "Preț"
+   },
+   "wallet_extension_nft_filter_network": {
+      "message": "Blockchainuri"
+   },
+   "wallet_extension_nft_filter_status": {
+      "message": "Stare vânzări"
+   },
+   "wallet_extension_nft_filter_tag_offer_received": {
+      "message": "Oferte primite"
+   },
+   "wallet_extension_nft_filter_tag_on_sale": {
+      "message": "La vânzare"
+   },
+   "wallet_extension_nft_placeholder_search_collections": {
+      "message": "Căutare"
+   },
+   "wallet_extension_nft_popup_subtitle_view_nftmarket": {
+      "message": "Vizualizare în piața NFT"
+   },
+   "wallet_extension_nft_popup_text_contract_address": {
+      "message": "Adresă contract"
+   },
+   "wallet_extension_nft_popup_text_floor_price": {
+      "message": "Preț plafon colecție"
+   },
+   "wallet_extension_nft_popup_text_network": {
+      "message": "Rețea"
+   },
+   "wallet_extension_nft_popup_text_nftprice": {
+      "message": "Preț NFT"
+   },
+   "wallet_extension_nft_popup_text_token_standard": {
+      "message": "Standard token"
+   },
+   "wallet_extension_nft_popup_title_filter": {
+      "message": "Filtru"
+   },
+   "wallet_extension_nft_popup_toast_wrong_address_cannnot_retrieved": {
+      "message": "Articolele trimise la o adresă greșită nu pot fi recuperate"
+   },
+   "wallet_extension_nft_tab_coins": {
+      "message": "Cripto"
+   },
+   "wallet_extension_nft_tab_nfts": {
+      "message": "NFT-uri"
+   },
+   "wallet_extension_nft_tab_nfts_btn_explorenfts": {
+      "message": "Explorați NFT-urile"
+   },
+   "wallet_extension_nft_tab_nfts_desc": {
+      "message": "Cele mai bune NFT-uri sunt pe OKX"
+   },
+   "wallet_extension_nft_text_collections": {
+      "message": "Colecții"
+   },
+   "wallet_extension_nft_text_loading_failed": {
+      "message": "Nu s-a realizat încărcarea"
+   },
+   "wallet_extension_nft_text_max": {
+      "message": "Max"
+   },
+   "wallet_extension_nft_text_no_collection": {
+      "message": "Nicio colecție"
+   },
+   "wallet_extension_nft_text_no_items_found": {
+      "message": "Niciun element găsit pentru această căutare"
+   },
+   "wallet_extension_nft_toast_input_amount_no0": {
+      "message": "Suma nu poate fi 0"
+   },
+   "wallet_extension_nft_toast_input_amount_no_greater": {
+      "message": "Suma de intrare nu poate fi mai mare decât {max_amount}"
+   },
+   "wallet_extension_nft_toast_input_transfer_amount": {
+      "message": "Introduceți suma de transferat"
+   },
+   "wallet_extension_nft_toast_nftvalue_collection_floorprice": {
+      "message": "Valoarea NFT este calculată la prețul plafon al colecției. "
+   },
+   "wallet_extension_nft_toast_owned": {
+      "message": "Deținut"
+   },
+   "wallet_extension_note_address_not_register": {
+      "message": "Această adresă de primire nu a înregistrat {token} și nu poate fi utilizată"
+   },
+   "wallet_extension_notification_desc_okx_wallet_fully_decentralized": {
+      "message": "OKX Wallet este complet descentralizat, și nu vă salvăm parola. Dacă vă uitați parola, resetați portofelul și importați-vă fraza de protecție sau cheia privată pentru a genera o nouă parolă. Păstrați-o în siguranță."
+   },
+   "wallet_extension_option_allchain": {
+      "message": "Toate rețelele"
+   },
+   "wallet_extension_option_desc": {
+      "message": "{domain} este în prezent pe rețeaua {chain}"
+   },
+   "wallet_extension_option_singlechain": {
+      "message": "Comutare rețele EVM"
+   },
+   "wallet_extension_option_title_multichain": {
+      "message": "Conexiune blockchain multiple"
+   },
+   "wallet_extension_overview_btw_overview_gobtn": {
+      "message": "View"
+   },
+   "wallet_extension_overview_mid_total_assets": {
+      "message": "Active totale"
+   },
+   "wallet_extension_overview_more": {
+      "message": "Mai mult"
+   },
+   "wallet_extension_overview_receive_address_copied": {
+      "message": "Adresă de primire copiată"
+   },
+   "wallet_extension_overview_subtitle_assetsby_network": {
+      "message": "Active după rețea"
+   },
+   "wallet_extension_overview_tab_borrow": {
+      "message": "Borrow"
+   },
+   "wallet_extension_overview_tab_farm": {
+      "message": "Farm"
+   },
+   "wallet_extension_overview_tab_pool": {
+      "message": "Pool"
+   },
+   "wallet_extension_overview_tab_save": {
+      "message": "Save"
+   },
+   "wallet_extension_overview_tab_stake": {
+      "message": "Stake"
+   },
+   "wallet_extension_overview_tab_tvl": {
+      "message": "{num} TVL"
+   },
+   "wallet_extension_overview_tab_vaults": {
+      "message": "Vaults"
+   },
+   "wallet_extension_overview_text_overview_highestrevenue": {
+      "message": "Top picks in Yield"
+   },
+   "wallet_extension_password_toast_link_terms_service2": {
+      "message": "/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_link_terms_servicenew": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/8307929259021-OKX-Web3-Ecosystem-Terms-of-Service"
+   },
+   "wallet_extension_password_toast_text_continue_to_agree": {
+      "message": "Prin continuare, sunt de acord cu {terms_service} OKX"
+   },
+   "wallet_extension_placeorder_textbtn_replenish": {
+      "message": "Completare {token}"
+   },
+   "wallet_extension_placeorder_tooltips_insufficient": {
+      "message": "{token} insuficienți pentru comisionul de rețea"
+   },
+   "wallet_extension_popup_backup_hide_seedphrase": {
+      "message": "Ascundeți fraza de protecție"
+   },
+   "wallet_extension_popup_btn_approve": {
+      "message": "Aprobare"
+   },
+   "wallet_extension_popup_btn_cancel": {
+      "message": "Anulare"
+   },
+   "wallet_extension_popup_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "wallet_extension_popup_btn_revoke_approval": {
+      "message": "Revocați aprobarea"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_cancel": {
+      "message": "Anulare"
+   },
+   "wallet_extension_popup_cancle_transaction_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "wallet_extension_popup_cancle_transaction_desc": {
+      "message": "Trimiteți o tranzacție de 0 {symbol} pentru a o înlocui pe cea inițială"
+   },
+   "wallet_extension_popup_cancle_transaction_desc2": {
+      "message": "Din cauza unei probleme de rețea, anularea tranzacției nu garantează succesul"
+   },
+   "wallet_extension_popup_cancle_transaction_gasprice_gaslimit": {
+      "message": "Preț combustibil ({gasPrice} GWEI) * Limită combustibil ({gasLimit})"
+   },
+   "wallet_extension_popup_crypto_register": {
+      "message": "Criptomonedă neînregistrată"
+   },
+   "wallet_extension_popup_dapp_insufficient_balance": {
+      "message": "Sold insuficient"
+   },
+   "wallet_extension_popup_desc_copying_private_keys_risky": {
+      "message": "Copierea cheii private în clipboard poate fi monitorizată sau abuzată de aplicații terțe. Păstrați cheia privată în siguranță"
+   },
+   "wallet_extension_popup_evmnetwork_btn_explore_now": {
+      "message": "Începeți explorarea"
+   },
+   "wallet_extension_popup_insufficient_network_fee": {
+      "message": "{token} insuficienți pentru comisionul de rețea"
+   },
+   "wallet_extension_popup_legacy": {
+      "message": "Moștenire"
+   },
+   "wallet_extension_popup_link": {
+      "message": "https://www.okx.com/learn/what-is-segregated-witness"
+   },
+   "wallet_extension_popup_native_segwit": {
+      "message": "SegWit nativ"
+   },
+   "wallet_extension_popup_nested_segwit": {
+      "message": "SegWit imbricat"
+   },
+   "wallet_extension_popup_repeat_order": {
+      "message": "Repetare comandă"
+   },
+   "wallet_extension_popup_repeat_order_btn_continue": {
+      "message": "Continuați să trimiteți"
+   },
+   "wallet_extension_popup_repeat_order_btn_viewhistory": {
+      "message": "Vizualizare în istoric"
+   },
+   "wallet_extension_popup_repeat_order_desc": {
+      "message": "Ați plasat deja un ordin identic. Doriți să continuați cu acesta?"
+   },
+   "wallet_extension_popup_speedup_transaction_after": {
+      "message": "După"
+   },
+   "wallet_extension_popup_speedup_transaction_before": {
+      "message": "Înainte"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_cancel": {
+      "message": "Anulare"
+   },
+   "wallet_extension_popup_speedup_transaction_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "wallet_extension_popup_speedup_transaction_desc": {
+      "message": "Accelerați tranzacția prin creșterea comisionului de rețea"
+   },
+   "wallet_extension_popup_speedup_transaction_gasprice": {
+      "message": "= Preț combustibil({gasPrice} GWEI)"
+   },
+   "wallet_extension_popup_text_all_networks": {
+      "message": "Toate rețelele"
+   },
+   "wallet_extension_popup_text_interact_with": {
+      "message": "Interacționați cu"
+   },
+   "wallet_extension_popup_text_project": {
+      "message": "Proiect"
+   },
+   "wallet_extension_popup_text_project_contract": {
+      "message": "Contract proiect"
+   },
+   "wallet_extension_popup_title_add_network": {
+      "message": "Adăugare rețea"
+   },
+   "wallet_extension_popup_title_address_format": {
+      "message": "Format adresă"
+   },
+   "wallet_extension_popup_title_cancel_listing": {
+      "message": "Anulare listare"
+   },
+   "wallet_extension_popup_title_cancle_transaction": {
+      "message": "Anulare tranzacție"
+   },
+   "wallet_extension_popup_title_contract_interaction": {
+      "message": "Interacțiune în baza contractului"
+   },
+   "wallet_extension_popup_title_receiving_address_copied": {
+      "message": "Adresă copiată"
+   },
+   "wallet_extension_popup_title_select_network": {
+      "message": "Selectați rețeaua"
+   },
+   "wallet_extension_popup_title_speedup_transaction": {
+      "message": "Accelerați tranzacția"
+   },
+   "wallet_extension_popup_title_transaction_hash_copied": {
+      "message": "Hash tranzacție copiat"
+   },
+   "wallet_extension_popup_tittle_confirm_to_copy": {
+      "message": "Sigur doriți să copiați?"
+   },
+   "wallet_extension_popupsubtitle_created": {
+      "message": "{walletName} creat"
+   },
+   "wallet_extension_popupsubtitle_imported": {
+      "message": "{walletName} importat"
+   },
+   "wallet_extension_preferences_btn_download_logs": {
+      "message": "Descărcare jurnale de stare"
+   },
+   "wallet_extension_protocol_popup_approved_amount_btn_gotit": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_protocol_popup_approved_amount_desc": {
+      "message": "Suma care le permite terților să retragă și să facă tranzacții automate pentru dvs."
+   },
+   "wallet_extension_protocol_popup_btn_continue": {
+      "message": "Continuare"
+   },
+   "wallet_extension_protocol_popup_btn_reject": {
+      "message": "Respingere"
+   },
+   "wallet_extension_protocol_popup_risk_warning": {
+      "message": "Avertizare de risc"
+   },
+   "wallet_extension_protocol_popup_risk_warning_desc": {
+      "message": "Adresa de contract {accountAddress} e raportată ca fiind rău intenționată. Există riscul de furt al activelor. Asigurați-vă că adresa este sigură"
+   },
+   "wallet_extension_protocol_popup_text_approved_amount": {
+      "message": "Sumă aprobată"
+   },
+   "wallet_extension_protocol_popup_title_approved_amount": {
+      "message": "Sumă aprobată"
+   },
+   "wallet_extension_protocol_toast_risk_warning_desc": {
+      "message": "{accountAddress} a fost marcată ca o adresă rău intenționată. Interacționarea cu această adresă vă poate compromite siguranța activelor. Asigurați interacțiunea cu o adresă sigură."
+   },
+   "wallet_extension_receive_btn_confirm": {
+      "message": "Confirm"
+   },
+   "wallet_extension_receive_btn_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_btn_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_title_modify_amount": {
+      "message": "Modify amount"
+   },
+   "wallet_extension_receive_title_set_amount": {
+      "message": "Set amount"
+   },
+   "wallet_extension_receive_tooltip_not_support": {
+      "message": "Couldn't trade with fiat money since retrieving est. value of this crypto isn't available"
+   },
+   "wallet_extension_releasenote_button": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_releasenote_button_link_v2_16_2": {
+      "message": "https://office-design.okg.com/docs/"
+   },
+   "wallet_extension_releasenote_button_v2_15_10": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_releasenote_button_v2_16_2": {
+      "message": "Vedeți ce conține"
+   },
+   "wallet_extension_releasenote_content_1_v2_15_10": {
+      "message": "OKX Wallet acceptă acum active ETHW"
+   },
+   "wallet_extension_releasenote_content_1_v2_16_2": {
+      "message": "1. OKX Wallet acceptă acum active ETHW"
+   },
+   "wallet_extension_releasenote_content_2_v2_16_2": {
+      "message": "2. Lumea este foarte mare și vreau să o văd"
+   },
+   "wallet_extension_releasenote_title": {
+      "message": "Ce este nou"
+   },
+   "wallet_extension_releasenote_title_v2_15_10": {
+      "message": "Ce este nou"
+   },
+   "wallet_extension_releasenote_title_v2_16_2": {
+      "message": "Ce este nou"
+   },
+   "wallet_extension_releasenote_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_releasenote_version_v2_15_10": {
+      "message": "V2.15.10"
+   },
+   "wallet_extension_releasenote_version_v2_16_2": {
+      "message": "Ce este nou în 2.16.2"
+   },
+   "wallet_extension_rn_button": {
+      "message": "Am înțeles"
+   },
+   "wallet_extension_rn_content_1_v2_17_0": {
+      "message": "1. Acum puteți efectua tranzacții și interacționa cu DApps pe rețeaua ETHF"
+   },
+   "wallet_extension_rn_content_1_v2_18_0": {
+      "message": "Acum puteți efectua tranzacții și interacționa cu DApps pe rețeaua Aptos"
+   },
+   "wallet_extension_rn_content_1_v2_21_0": {
+      "message": "1. Site-urile suspecte pot fi acum filtrate și alertate cu privire la riscuri"
+   },
+   "wallet_extension_rn_content_1_v2_25_0": {
+      "message": "1. NFTs on Aptos can now be displayed and claimed in the wallet"
+   },
+   "wallet_extension_rn_content_2_v2_17_0": {
+      "message": "2. Acum puteți efectua tranzacții direct utilizând DApps pe rețelele EVM și Solana"
+   },
+   "wallet_extension_rn_content_2_v2_21_0": {
+      "message": "2. Acum puteți efectua tranzacții și interacționa cu DApps pe rețeaua Tron"
+   },
+   "wallet_extension_rn_content_2_v2_25_0": {
+      "message": "2. You can now use ENS, Unstoppable Domains, and SPACE ID domains to make transfers"
+   },
+   "wallet_extension_rn_title": {
+      "message": "Ce este nou"
+   },
+   "wallet_extension_rn_version": {
+      "message": "V{version}"
+   },
+   "wallet_extension_scam_popup_btn_continue": {
+      "message": "Continuare"
+   },
+   "wallet_extension_scam_popup_btn_reject": {
+      "message": "Respingere"
+   },
+   "wallet_extension_scam_popup_risk_warning": {
+      "message": "Avertizare de risc"
+   },
+   "wallet_extension_scam_popup_risk_warning_desc": {
+      "message": "Adresa {accountAddress} e raportată ca fiind rău intenționată. Există riscul de furt al activelor. Asigurați-vă că adresa este sigură"
+   },
+   "wallet_extension_scam_toast_link_view_scams": {
+      "message": "Vizualizați mai multe înșelătorii"
+   },
+   "wallet_extension_scam_toast_risk_warning_desc_2": {
+      "message": "Adresa de contract {accountAddress} e raportată ca fiind rău intenționată. Există riscul de furt al activelor. Asigurați-vă că adresa este sigură"
+   },
+   "wallet_extension_select_network_text_support_network": {
+      "message": "{number}+ rețelele EVM sunt acceptate acum"
+   },
+   "wallet_extension_select_network_title_evm_network": {
+      "message": "Rețele EVM"
+   },
+   "wallet_extension_select_network_toast_desc": {
+      "message": "Adresa dvs. este o adresă de rețea EVM. O puteți utiliza pentru a vă gestiona activele pe alte rețele compatibile EVM."
+   },
+   "wallet_extension_select_network_toast_desc2": {
+      "message": "Rețelele compatibile EVM acceptate includ: {network}"
+   },
+   "wallet_extension_send_alert_choose_token": {
+      "message": "Selectați cripto pentru plată"
+   },
+   "wallet_extension_send_anchor_add_now": {
+      "message": "Adăugați acum"
+   },
+   "wallet_extension_send_btn_continue": {
+      "message": "Confirm"
+   },
+   "wallet_extension_send_btn_next": {
+      "message": "Următorul"
+   },
+   "wallet_extension_send_btn_next_step": {
+      "message": "Next"
+   },
+   "wallet_extension_send_colored_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_colored_to": {
+      "message": "To"
+   },
+   "wallet_extension_send_dropdown_address_book": {
+      "message": "Agendă"
+   },
+   "wallet_extension_send_dropdown_recent_address": {
+      "message": "Adresă recentă"
+   },
+   "wallet_extension_send_errortip_invalid_address": {
+      "message": "Introduceți o adresă validă"
+   },
+   "wallet_extension_send_errortip_not_in_address_book": {
+      "message": "Nu este în agendă"
+   },
+   "wallet_extension_send_fail_to_estimate": {
+      "message": "Couldn't estimate"
+   },
+   "wallet_extension_send_input_enter_address": {
+      "message": "Introduceți o adresă sau numele adresei"
+   },
+   "wallet_extension_send_input_search_fiat": {
+      "message": "Search currency"
+   },
+   "wallet_extension_send_insufficient_balance": {
+      "message": "Insufficient balance"
+   },
+   "wallet_extension_send_item_all": {
+      "message": "All"
+   },
+   "wallet_extension_send_item_default": {
+      "message": "Implicit"
+   },
+   "wallet_extension_send_item_total_amount": {
+      "message": "Balance"
+   },
+   "wallet_extension_send_pay_with_crypto": {
+      "message": "Pay with"
+   },
+   "wallet_extension_send_selectcrypto_pay_fee": {
+      "message": "Select crypto to pay for network fees"
+   },
+   "wallet_extension_send_status_canceled": {
+      "message": "Canceled"
+   },
+   "wallet_extension_send_status_canceling": {
+      "message": "Se anulează"
+   },
+   "wallet_extension_send_status_canceling1": {
+      "message": "Canceling"
+   },
+   "wallet_extension_send_status_speedingup": {
+      "message": "Se accelerează"
+   },
+   "wallet_extension_send_status_speedingup1": {
+      "message": "Speeding up"
+   },
+   "wallet_extension_send_subtitle_amount": {
+      "message": "Valoare"
+   },
+   "wallet_extension_send_text_balance": {
+      "message": "Sold"
+   },
+   "wallet_extension_send_text_max": {
+      "message": "Max"
+   },
+   "wallet_extension_send_text_max_price": {
+      "message": "The maximum amount is {fiatamount} ({cryptoamount}) after deducting network fees"
+   },
+   "wallet_extension_send_title_recipient_address": {
+      "message": "Receiving address"
+   },
+   "wallet_extension_send_title_select_fiat": {
+      "message": "Select currency"
+   },
+   "wallet_extension_send_title_send": {
+      "message": "Send"
+   },
+   "wallet_extension_send_toast_unfoundcrypto": {
+      "message": "Niciun {crypto} găsit pentru trimitere"
+   },
+   "wallet_extension_send_transfer_at_least": {
+      "message": "Transfer at least {amount}"
+   },
+   "wallet_extension_setting_item_wallet_preferances": {
+      "message": "Preferințe"
+   },
+   "wallet_extension_settings_auto_lock": {
+      "message": "Auto blocare"
+   },
+   "wallet_extension_settings_backup_wallet": {
+      "message": "Copie de siguranță portofel"
+   },
+   "wallet_extension_settings_preferences": {
+      "message": "Preferințe"
+   },
+   "wallet_extension_settings_reset_password": {
+      "message": "Modificare parolă"
+   },
+   "wallet_extension_settings_set_default": {
+      "message": "Setați ca portofel implicit"
+   },
+   "wallet_extension_settings_subtitle_address_book": {
+      "message": "Agendă"
+   },
+   "wallet_extension_settings_text_address_book_desc": {
+      "message": "Gestionare persoane de contact"
+   },
+   "wallet_extension_settings_text_version": {
+      "message": "Versiune {number}"
+   },
+   "wallet_extension_signup_subtitle_set_password_hardware": {
+      "message": "Don't refresh this page as it could cause hardware wallet import failure. To protect your privacy, OKX Wallet doesn't store your wallet password. Please keep your password safe."
+   },
+   "wallet_extension_subtitle_approveall": {
+      "message": "Aprobați accesul la toate NFT-urile din această colecție?"
+   },
+   "wallet_extension_subtitle_claim": {
+      "message": "Revendicare"
+   },
+   "wallet_extension_subtitle_claimwith": {
+      "message": "Revendicare aproximativă"
+   },
+   "wallet_extension_subtitle_evm_networks_supported": {
+      "message": "Acum puteți explora peste 25 rețele cu portofelul OKX."
+   },
+   "wallet_extension_subtitle_from": {
+      "message": "De la"
+   },
+   "wallet_extension_subtitle_into": {
+      "message": "În"
+   },
+   "wallet_extension_subtitle_investwith": {
+      "message": "Investiți cu"
+   },
+   "wallet_extension_subtitle_orderdetail_investwith": {
+      "message": "Investiție aproximativă cu"
+   },
+   "wallet_extension_subtitle_receive": {
+      "message": "Primiți"
+   },
+   "wallet_extension_subtitle_redeem_from": {
+      "message": "Recuperare de la"
+   },
+   "wallet_extension_subtitle_register": {
+      "message": "Înregistrare"
+   },
+   "wallet_extension_subtitle_revokeall": {
+      "message": "Revocați accesul la toate NFT-urile din această colecție?"
+   },
+   "wallet_extension_tab_defi": {
+      "message": "DeFi"
+   },
+   "wallet_extension_text_allofyour_collection": {
+      "message": "Toate {collection}"
+   },
+   "wallet_extension_text_approved_asset": {
+      "message": "Active aprobate"
+   },
+   "wallet_extension_text_automatically_synchronize_networks": {
+      "message": "Am sincronizat automat pentru dvs. alte rețele {networkname}"
+   },
+   "wallet_extension_text_cancel_listing": {
+      "message": "Anulare listare"
+   },
+   "wallet_extension_text_cancel_listing_on": {
+      "message": "Activat"
+   },
+   "wallet_extension_text_enjoy_massive_defi": {
+      "message": "Poarta universală pentru lumea DeFi"
+   },
+   "wallet_extension_text_memocontent": {
+      "message": "Notificare"
+   },
+   "wallet_extension_text_noresults": {
+      "message": "Nu s-au găsit rezultate"
+   },
+   "wallet_extension_text_satb": {
+      "message": "Sat/b"
+   },
+   "wallet_extension_title_approve": {
+      "message": "Aprobare"
+   },
+   "wallet_extension_title_approve_collection": {
+      "message": "Aprobare {collection}"
+   },
+   "wallet_extension_title_approve_nft": {
+      "message": "NFT necunoscut"
+   },
+   "wallet_extension_title_approve_nft_collection": {
+      "message": "Colecții NFT necunoscute"
+   },
+   "wallet_extension_title_cancel_listing": {
+      "message": "Anulare listare"
+   },
+   "wallet_extension_title_memo": {
+      "message": "Notificare"
+   },
+   "wallet_extension_title_memo_optional": {
+      "message": "Notificare (opțional)"
+   },
+   "wallet_extension_title_multichain": {
+      "message": "Conexiunea cu blockchain multiple selectată implicit"
+   },
+   "wallet_extension_title_multichain_connection_supported": {
+      "message": "Conexiune blockchain multiple acceptată"
+   },
+   "wallet_extension_title_register": {
+      "message": "Înregistrare"
+   },
+   "wallet_extension_title_register_crypto": {
+      "message": "Înregistrare criptomonedă"
+   },
+   "wallet_extension_title_revoke_approve": {
+      "message": "Revocați aprobarea"
+   },
+   "wallet_extension_title_select_multichain": {
+      "message": "OKX Wallet acceptă următoarele rețele"
+   },
+   "wallet_extension_title_select_network": {
+      "message": "Rețea curentă"
+   },
+   "wallet_extension_title_switch_network": {
+      "message": "Comutare rețea"
+   },
+   "wallet_extension_title_wallet_address": {
+      "message": "Adresa portofelului"
+   },
+   "wallet_extension_toast_address_copied": {
+      "message": "Adresă copiată"
+   },
+   "wallet_extension_toast_address_format_changed": {
+      "message": "Format adresă schimbat"
+   },
+   "wallet_extension_toast_approve_collection": {
+      "message": "Aprobare {collection}"
+   },
+   "wallet_extension_toast_asset_error_try_again": {
+      "message": "Network error. Please check your network connection"
+   },
+   "wallet_extension_toast_btn_not_now": {
+      "message": "Nu acum"
+   },
+   "wallet_extension_toast_btn_set_as_default": {
+      "message": "Setați ca portofel implicit"
+   },
+   "wallet_extension_toast_created_successfully": {
+      "message": "Creat cu succes"
+   },
+   "wallet_extension_toast_fail_to_register": {
+      "message": "Înregistrare nereușită"
+   },
+   "wallet_extension_toast_hardware_only_supports_evm_assets": {
+      "message": "Portofelul hardware acceptă doar active EVM în prezent"
+   },
+   "wallet_extension_toast_imported_successfully": {
+      "message": "Importat cu succes"
+   },
+   "wallet_extension_toast_imported_successfully_privatekey": {
+      "message": "Importat cu succes"
+   },
+   "wallet_extension_toast_max_amount": {
+      "message": "Suma maximă este{max} Sat/b"
+   },
+   "wallet_extension_toast_min_amount": {
+      "message": "Suma minimă este{min} Sat/b"
+   },
+   "wallet_extension_toast_network_error_try_again": {
+      "message": "Eroare de rețea. Reîmprospătați și încercați din nou"
+   },
+   "wallet_extension_toast_receive_address_not_activated": {
+      "message": "Dacă adresa de primire nu este activată tranzacția poate eșua"
+   },
+   "wallet_extension_toast_register_success": {
+      "message": "Înregistrată"
+   },
+   "wallet_extension_toast_send_only_network_assets_tothis_address": {
+      "message": "Trimiteți doar {chain_name} active de rețea la această adresă"
+   },
+   "wallet_extension_toast_set_as_default_desc": {
+      "message": "Setați OKX Wallet ca portofelul implicit dacă preferați să utilizați acest portofel pentru conectare la DApps"
+   },
+   "wallet_extension_toast_set_successfully": {
+      "message": "Setare reușită"
+   },
+   "wallet_extension_toast_status_register": {
+      "message": "În curs"
+   },
+   "wallet_extension_toast_text_okxwallet_is_reset": {
+      "message": "Portofelul OKX este resetat"
+   },
+   "wallet_extension_toast_text_unknown_error": {
+      "message": "An unknown error occurred while processing your transaction. Please re-initiate the transaction"
+   },
+   "wallet_extension_toast_title_set_as_default": {
+      "message": "Setați OKX Wallet ca portofelul dvs. implicit?"
+   },
+   "wallet_extension_top_copy_address": {
+      "message": "Copiați adresa"
+   },
+   "wallet_extension_top_hover_connect": {
+      "message": "Conectare"
+   },
+   "wallet_extension_top_hover_settings": {
+      "message": "Setări"
+   },
+   "wallet_extension_top_manage_wallet": {
+      "message": "Administrare portofel"
+   },
+   "wallet_extension_transaction_average": {
+      "message": "Medie"
+   },
+   "wallet_extension_transaction_btn_next": {
+      "message": "Următorul"
+   },
+   "wallet_extension_transaction_confirmation_amount_received": {
+      "message": "Suma primită"
+   },
+   "wallet_extension_transaction_confirmation_from": {
+      "message": "de la"
+   },
+   "wallet_extension_transaction_confirmation_gas_detail": {
+      "message": "= Preț combustibil ({gasPrice} GWEI) * Limită combustibil ({gasLimit})"
+   },
+   "wallet_extension_transaction_confirmation_network_fee": {
+      "message": "Comision rețea"
+   },
+   "wallet_extension_transaction_confirmation_to": {
+      "message": "către"
+   },
+   "wallet_extension_transaction_customize": {
+      "message": "Personalizare"
+   },
+   "wallet_extension_transaction_customize_error_gas_restriction": {
+      "message": "Limita de combustibil trebuie să fie între {minGasLimit} și {maxGasLimit}"
+   },
+   "wallet_extension_transaction_customize_error_gasprice_mustbe": {
+      "message": "Prețul combustibilului trebuie să fie mai mare de {minGasPriceGWei}"
+   },
+   "wallet_extension_transaction_customize_label_gaslimit": {
+      "message": "Limită combustibil"
+   },
+   "wallet_extension_transaction_customize_label_gasprice": {
+      "message": "Preț combustibil (GWEI)"
+   },
+   "wallet_extension_transaction_fast": {
+      "message": "Rapid"
+   },
+   "wallet_extension_transaction_gas_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "wallet_extension_transaction_input_error_emptu_address": {
+      "message": "Introduceți o adresă validă"
+   },
+   "wallet_extension_transaction_input_error_empty": {
+      "message": "Suma de intrare nu poate fi necompletată"
+   },
+   "wallet_extension_transaction_input_error_exceed0": {
+      "message": "Suma trebuie să depășească 0"
+   },
+   "wallet_extension_transaction_input_error_insufficient_balance": {
+      "message": "Sold insuficient"
+   },
+   "wallet_extension_transaction_input_error_insufficient_gas_fee": {
+      "message": "{chainSymbol} insuficiente pentru plata comisionului de rețea"
+   },
+   "wallet_extension_transaction_input_error_invalid_address": {
+      "message": "Adresă nevalidă"
+   },
+   "wallet_extension_transaction_input_error_receiving_same_sending_address": {
+      "message": "Adresa de destinație trebuie să fie diferită de adresa expeditoare"
+   },
+   "wallet_extension_transaction_input_label_network_fee": {
+      "message": "Comision rețea"
+   },
+   "wallet_extension_transaction_input_label_to": {
+      "message": "Către"
+   },
+   "wallet_extension_transaction_input_max": {
+      "message": "Max"
+   },
+   "wallet_extension_transaction_module_input_label_amount": {
+      "message": "Valoare"
+   },
+   "wallet_extension_transaction_module_placeholder": {
+      "message": "0,000000"
+   },
+   "wallet_extension_transaction_placeholder_input_address": {
+      "message": "Introduceți adresa sau numele domeniului pentru portofel"
+   },
+   "wallet_extension_transaction_popup_btn_continue_wait": {
+      "message": "Continuați așteptarea"
+   },
+   "wallet_extension_transaction_popup_btn_replace": {
+      "message": "Înlocuire"
+   },
+   "wallet_extension_transaction_popup_btn_skip": {
+      "message": "Omiteți"
+   },
+   "wallet_extension_transaction_popup_failed_transaction": {
+      "message": "Aveți o tranzacție eșuată"
+   },
+   "wallet_extension_transaction_popup_pending_transaction": {
+      "message": "Aveți o tranzacție în așteptare de peste o oră"
+   },
+   "wallet_extension_transaction_popup_replace_failed_transaction": {
+      "message": "Dacă aveți o tranzacție eșuată, nu puteți iniția una nouă. Doriți să înlocuiți tranzacția eșuată cu cea curentă?"
+   },
+   "wallet_extension_transaction_popup_replace_pending_transaction": {
+      "message": "Dacă tranzacția în așteptare nu este finalizată nu puteți iniția o nouă tranzacție. Doriți să înlocuiți tranzacția în așteptare cu cea curentă?"
+   },
+   "wallet_extension_transaction_slow": {
+      "message": "Lent"
+   },
+   "wallet_extension_transaction_text_gwei": {
+      "message": "Gwei"
+   },
+   "wallet_extension_transaction_text_min": {
+      "message": "min"
+   },
+   "wallet_extension_transaction_title_network_fee": {
+      "message": "Comision rețea"
+   },
+   "wallet_extension_transaction_toast_network_address_copied": {
+      "message": "Adresa {network} copiată"
+   },
+   "wallet_extension_transfer_unit_sat_b": {
+      "message": "Sat/b"
+   },
+   "wallet_footer_btn_got_it": {
+      "message": "Am înțeles"
+   },
+   "wallet_footer_subtitle_forgot_password": {
+      "message": "Ați uitat parola?"
+   },
+   "wallet_forgot_password_btn_think_again": {
+      "message": "Încă mă gândesc"
+   },
+   "wallet_forgot_password_checkbox_reset_confirmation": {
+      "message": "Am înțeles notificările de mai sus și sunt pregătit să îmi resetez portofelul"
+   },
+   "wallet_forgot_password_subtitle_warning_content_1": {
+      "message": "OKX Wallet este o platformă complet descentralizată. Nu vă salvăm parola. Parola dvs. nu poate fi recuperată."
+   },
+   "wallet_forgot_password_subtitle_warning_content_2": {
+      "message": "Dacă parola dvs. este pierdută, resetarea portofelului folosind fraza de protecție sau cheia privată este UNICUL mod de a configura o parolă nouă și a obține accesul."
+   },
+   "wallet_forgot_password_subtitle_warning_content_3": {
+      "message": "Resetarea portofelului va șterge toate datele existente ale portofelului de pe dispozitivul curent. Dacă resetați portofelul fără a face o copie de protecție pentru fraza de protecție sau cheia privată, veți pierde portofelul și toate activele din el permanent."
+   },
+   "wallet_general_settings_subtitle_default_okx_wallet": {
+      "message": "Setați OKX Wallet ca portofel implicit"
+   },
+   "wallet_history_index_crosschain_swap": {
+      "message": "Cross-chain swap"
+   },
+   "wallet_history_index_gas_station": {
+      "message": "Swap for gas"
+   },
+   "wallet_history_text_register_zksync_lite": {
+      "message": "Register zkSync Lite"
+   },
+   "wallet_home_backup_warning_btn_backup_now": {
+      "message": "Creați acum o copie de rezervă"
+   },
+   "wallet_home_backup_warning_maintitle_not_backup": {
+      "message": "Nu s-a creat o copie de rezervă pentru portofel"
+   },
+   "wallet_home_backup_warning_subtitle_not_backup_risk": {
+      "message": "Dacă dispozitivul dvs. este pierdut sau furat, veți pierde definitiv portofelul și toate monedele"
+   },
+   "wallet_home_btn_close": {
+      "message": "Închidere"
+   },
+   "wallet_home_btn_confirmed": {
+      "message": "Confirmat"
+   },
+   "wallet_home_btn_import_wallet": {
+      "message": "Importare portofel"
+   },
+   "wallet_home_btn_maintitle_create_wallet": {
+      "message": "Creați un portofel"
+   },
+   "wallet_home_btn_manage_crypto": {
+      "message": "Gestionare"
+   },
+   "wallet_home_btn_receive": {
+      "message": "Primiți"
+   },
+   "wallet_home_btn_send": {
+      "message": "Trimitere"
+   },
+   "wallet_home_btn_subtitle_new_user": {
+      "message": "Sunt începător în lumea descentralizată"
+   },
+   "wallet_home_btn_unlock": {
+      "message": "Deblocare"
+   },
+   "wallet_home_dapp_connection_btn_connect": {
+      "message": "Conectare"
+   },
+   "wallet_home_errortip_asset_show_wrong": {
+      "message": "Eroare de evaluare a activelor. Ieșiți din pagina curentă și încercați din nou"
+   },
+   "wallet_home_foot_dapp_connceted": {
+      "message": "Conectat"
+   },
+   "wallet_home_lock_wallet_placeholder_input_password": {
+      "message": "Introduceți parola"
+   },
+   "wallet_home_maintitle_errortip_error_page_title": {
+      "message": "OKX Wallet a întâlnit o eroare"
+   },
+   "wallet_home_maintitle_one_web3_portal": {
+      "message": "Portalul dvs. pentru Web3"
+   },
+   "wallet_home_receive_btn_backup_later": {
+      "message": "Mai târziu"
+   },
+   "wallet_home_receive_modal_backup_wallet": {
+      "message": "Asigurați salvarea unei copii de siguranță pentru fraza de protecție înainte de realizarea oricărei depuneri."
+   },
+   "wallet_home_subtitle_crypto_dapp_nft": {
+      "message": "Portofel cripto ‧ Lumea NFT ‧ Acces DApp"
+   },
+   "wallet_home_subtitle_errortip_error_popup_message": {
+      "message": "Încercați din nou prin închiderea și redeschiderea ferestrei pop-up, sau contactați asistența"
+   },
+   "wallet_home_subtitle_errortip_error_stack": {
+      "message": "Stivă:"
+   },
+   "wallet_home_subtitle_errortip_errorcode": {
+      "message": "Cod: {errorCode}"
+   },
+   "wallet_home_subtitle_errortip_errordetail": {
+      "message": "Detalii eroare"
+   },
+   "wallet_home_subtitle_errortip_errormessage": {
+      "message": "Mesaj: {errorMessage}"
+   },
+   "wallet_home_subtitle_errortip_errorname": {
+      "message": "Cod: {errorName}"
+   },
+   "wallet_home_subtitle_errortip_errorpage_message": {
+      "message": "Încercați din nou prin reîncărcarea paginii, sau contactați asistența"
+   },
+   "wallet_home_subtitle_import_wallet": {
+      "message": "Am deja un portofel"
+   },
+   "wallet_home_toast_network_error": {
+      "message": "Eroare de rețea, încercați din nou mai târziu"
+   },
+   "wallet_import_errortip_wrong_private_key": {
+      "message": "Intrări nevalide. Încercați din nou."
+   },
+   "wallet_import_maintitle_import_private_key": {
+      "message": "Importare cheie privată"
+   },
+   "wallet_import_maintitle_import_seed_phase": {
+      "message": "Frază de protecție"
+   },
+   "wallet_import_placeholder_import_private_key": {
+      "message": "Introduceți-vă cheia privată aici."
+   },
+   "wallet_import_placeholder_import_seed_phase": {
+      "message": "Introduceți fraza de protecție separată prin spații."
+   },
+   "wallet_import_private_key_errortip_private_key_repeat": {
+      "message": "Portofelul cu cheie privată există deja"
+   },
+   "wallet_import_private_key_errortip_wallet_repeat": {
+      "message": "Portofelul există deja."
+   },
+   "wallet_import_private_key_subtitle_import_private_key_desc": {
+      "message": "Sunt acceptate cheile private cu lungime standard de 64 biți"
+   },
+   "wallet_import_seed_phase_errortip_seed_phase_wrong": {
+      "message": "Intrări nevalide. Încercați din nou."
+   },
+   "wallet_import_seed_phase_maintitle_seed_phase": {
+      "message": "Frază de protecție"
+   },
+   "wallet_import_seed_phase_placeholder_input_seed_phase": {
+      "message": "Separați fiecare cuvânt cu un singur spațiu"
+   },
+   "wallet_import_seed_phase_subtitle_import_seed_phase_desc": {
+      "message": "Sunt acceptate toate formatele de frază de protecție (cu 12, 15, 18, 21 și 24 de cuvinte)."
+   },
+   "wallet_import_subtitle_import_private_key": {
+      "message": "Cheie privată"
+   },
+   "wallet_import_subtitle_import_private_key_desc": {
+      "message": "Lipiți sau introduceți-vă cheia privată."
+   },
+   "wallet_import_subtitle_import_seed_phase": {
+      "message": "Frază de protecție"
+   },
+   "wallet_import_subtitle_import_seed_phase_desc": {
+      "message": "Sunt acceptate toate formatele de frază de protecție (cu 12, 15, 18, 21 și 24 de cuvinte)."
+   },
+   "wallet_import_wallet_errortip_seed_phase_order_wrong": {
+      "message": "Verificați ordinea frazei de protecție"
+   },
+   "wallet_import_wallet_errortip_seed_phase_wrong": {
+      "message": "Intrări nevalide, încercați din nou"
+   },
+   "wallet_import_wallet_fliter_seed_phase_number": {
+      "message": "{length} cuvinte"
+   },
+   "wallet_intro_maintitle_product_name": {
+      "message": "OKX Wallet"
+   },
+   "wallet_intro_text_desc": {
+      "message": "OKX Wallet este un portofel cripto universal multi-platformă (mobil/web/extensie)."
+   },
+   "wallet_manage_add_btn_connect_hardware_wallet": {
+      "message": "Conectare portofel hardware"
+   },
+   "wallet_manage_alert_backup_wallet": {
+      "message": "Faceți copie de rezervă pentru fraza de protecție"
+   },
+   "wallet_manage_btn_backup_wallet": {
+      "message": "Copie de siguranță portofel"
+   },
+   "wallet_manage_btn_edit_done": {
+      "message": "Terminat"
+   },
+   "wallet_manage_btn_manage": {
+      "message": "Gestionare"
+   },
+   "wallet_manage_crypto_custom_coin_subtitle_decimals": {
+      "message": "Zecimală"
+   },
+   "wallet_manage_crypto_custom_crypto_errortip_invalid_address": {
+      "message": "Adresă nevalidă"
+   },
+   "wallet_manage_crypto_errortip_crypto_added": {
+      "message": "Această criptomonedă există deja"
+   },
+   "wallet_manage_crypto_errortip_invalid_address_tips": {
+      "message": "Adresa destinatarului este nevalidă"
+   },
+   "wallet_manage_crypto_label_contract_address": {
+      "message": "Adresă contract"
+   },
+   "wallet_manage_crypto_labels_crypto_multichain": {
+      "message": "Multichain"
+   },
+   "wallet_manage_crypto_list_added_crypto": {
+      "message": "Criptomonedă adăugată"
+   },
+   "wallet_manage_crypto_maintitle_custom_crypto": {
+      "message": "Criptomonedă personalizată"
+   },
+   "wallet_manage_crypto_maintitle_manage_crypto": {
+      "message": "Gestionare"
+   },
+   "wallet_manage_crypto_placeholder_search_coin": {
+      "message": "Căutați o criptomonedă sau o adresă de contract"
+   },
+   "wallet_manage_crypto_subtitle_custom_crpto_symbol": {
+      "message": "Simbol"
+   },
+   "wallet_manage_crypto_subtitle_popular_crypto": {
+      "message": "Criptomonedă populară"
+   },
+   "wallet_manage_crypto_text_add_custom_crypto": {
+      "message": "Adăugați o criptomonedă personalizată"
+   },
+   "wallet_manage_crypto_text_custom_crypto": {
+      "message": "Criptomonedă personalizată"
+   },
+   "wallet_manage_crypto_toast_custom_crypto_success": {
+      "message": "Succes"
+   },
+   "wallet_manage_filter_btn_add_wallet": {
+      "message": "Adăugați portofel"
+   },
+   "wallet_manage_filter_btn_backup_wallet": {
+      "message": "Copie de siguranță portofel"
+   },
+   "wallet_manage_filter_btn_edit_wallet": {
+      "message": "Editați portofel"
+   },
+   "wallet_manage_wallet_btn_add_acoount": {
+      "message": "Adăugați cont"
+   },
+   "wallet_manage_wallet_btn_reconncet_hardware_wallet": {
+      "message": "Reconectare"
+   },
+   "wallet_manage_wallet_errortip_duplicate_account": {
+      "message": "Cont existent, încercați din nou."
+   },
+   "wallet_manage_wallet_subtitle_hardware_wallet_connceted": {
+      "message": "Portofel hardware conectat"
+   },
+   "wallet_manage_wallet_subtitle_total_assests": {
+      "message": "Active totale"
+   },
+   "wallet_manage_wallet_top_account": {
+      "message": "Cont"
+   },
+   "wallet_manage_wallet_top_account_default_name": {
+      "message": "Cont"
+   },
+   "wallet_manage_wallet_top_default_wallet_name": {
+      "message": "Portofel"
+   },
+   "wallet_manage_wallet_top_hardware_wallet_defalult_name": {
+      "message": "Portofel hardware"
+   },
+   "wallet_manage_wallet_top_private_key_default_name": {
+      "message": "Cheie privată"
+   },
+   "wallet_notification_approval_permission": {
+      "message": "Aprobare"
+   },
+   "wallet_receive_btn_copy_address": {
+      "message": "Copiere"
+   },
+   "wallet_receive_toast_address_copied": {
+      "message": "Copiat!"
+   },
+   "wallet_search_text_search_no_results": {
+      "message": "nu s-a găsit"
+   },
+   "wallet_send_modal_notsupported_okbtn": {
+      "message": "OK"
+   },
+   "wallet_send_modaltitle_crypto_not_supported": {
+      "message": "Crypto not supported"
+   },
+   "wallet_send_text_register_address": {
+      "message": "Register address"
+   },
+   "wallet_send_text_register_crypto": {
+      "message": "Register crypto"
+   },
+   "wallet_set_password_btn_confirm": {
+      "message": "Confirmare"
+   },
+   "wallet_set_password_errortip_password_not_long_enough": {
+      "message": "Cel puțin 6 caractere"
+   },
+   "wallet_set_password_errortip_password_not_match": {
+      "message": "Parolele nu se potrivesc"
+   },
+   "wallet_set_password_errortip_password_wrong": {
+      "message": "Parolă greșită. Încercați din nou."
+   },
+   "wallet_set_password_header_link_learn_more": {
+      "message": "Aflați mai mult"
+   },
+   "wallet_set_password_header_link_learn_more_url": {
+      "message": "https://www.okx.com/support/hc/en-us/articles/4407989094413"
+   },
+   "wallet_set_password_input_reenter": {
+      "message": "Re-enter your password"
+   },
+   "wallet_set_password_maintitle_enter_password": {
+      "message": "Introduceți parola"
+   },
+   "wallet_set_password_maintitle_input_password": {
+      "message": "Introduceți parola"
+   },
+   "wallet_set_password_placeholder_password_confirmation": {
+      "message": "Re-introduceți parola nouă"
+   },
+   "wallet_set_password_subtitle_confirm_password": {
+      "message": "Confirmare"
+   },
+   "wallet_set_password_subtitle_password": {
+      "message": "Parolă"
+   },
+   "wallet_settings_btn_advanced_setting_download_statelogs": {
+      "message": "Descărcare jurnale de stare"
+   },
+   "wallet_settings_btn_anvanced_download_state_logs": {
+      "message": "Descărcare jurnale de stare"
+   },
+   "wallet_settings_btn_lock_wallet": {
+      "message": "Blocare portofel"
+   },
+   "wallet_settings_btn_reset_wallet_backup_confirmation": {
+      "message": "Continuare"
+   },
+   "wallet_settings_btn_reset_wallet_confirmation": {
+      "message": "Confirmare resetare"
+   },
+   "wallet_settings_checkbox_reset_wallet_risk_konwn": {
+      "message": "I'm aware of the above risks"
+   },
+   "wallet_settings_language_maintitle_select_language": {
+      "message": "Selectați limba"
+   },
+   "wallet_settings_language_subtitle_language": {
+      "message": "Limbă"
+   },
+   "wallet_settings_maintitle_general_settings": {
+      "message": "General"
+   },
+   "wallet_settings_maintitle_reset_wallet_risk_warning": {
+      "message": "Avertizare de risc"
+   },
+   "wallet_settings_maintitle_settings": {
+      "message": "Setări"
+   },
+   "wallet_settings_maintitle_state_logs": {
+      "message": "Jurnale de stare"
+   },
+   "wallet_settings_modal_reset_wallet_backup_confirmation": {
+      "message": "Asigurați copia de rezervă pentru portofel"
+   },
+   "wallet_settings_reset_passord_errortip_input_error": {
+      "message": "Parolă greșită. Încercați din nou."
+   },
+   "wallet_settings_reset_passord_maintitle_reset_password": {
+      "message": "Modificare parolă"
+   },
+   "wallet_settings_reset_passord_placeholder_input_desc": {
+      "message": "Introduceți o parolă, cel puțin 6 caractere"
+   },
+   "wallet_settings_reset_passord_placeholder_input_old_password": {
+      "message": "Introduceți parola veche"
+   },
+   "wallet_settings_reset_passord_placeholder_input_password_confirmation": {
+      "message": "Re-introduceți parola nouă"
+   },
+   "wallet_settings_reset_passord_subtitle_new_password": {
+      "message": "Parolă nouă"
+   },
+   "wallet_settings_reset_passord_subtitle_not_store_explanation": {
+      "message": "Pentru a vă proteja confidențialitatea, OKX Wallet nu stochează parola portofelului dvs. Păstrați parola în siguranță."
+   },
+   "wallet_settings_reset_passord_subtitle_old_password": {
+      "message": "Parolă veche"
+   },
+   "wallet_settings_reset_passord_subtitle_password_confirmation": {
+      "message": "Confirmare"
+   },
+   "wallet_settings_state_logs_errortip_statelog_error": {
+      "message": "Eroare la preluarea jurnalelor de stare."
+   },
+   "wallet_settings_state_logs_maintitle_state_logs": {
+      "message": "Jurnale de stare"
+   },
+   "wallet_settings_state_logs_maintitle_wallet_state_logs": {
+      "message": "Jurnale de stare OKX Wallet"
+   },
+   "wallet_settings_state_logs_subtitle_state_logs_desc": {
+      "message": "Jurnalele de stare conțin adresele contului dvs. public și înregistrările tranzacțiilor."
+   },
+   "wallet_settings_subtitle_currency_setting": {
+      "message": "Monedă"
+   },
+   "wallet_settings_subtitle_reset_wallet": {
+      "message": "Resetare portofel"
+   },
+   "wallet_settings_subtitle_reset_wallet_backup_confirmation": {
+      "message": "Asigurați crearea unei copii de protecție pentru fraza de protecție sau cheia privată înainte de resetare. În caz contrar, veți pierde portofelul și toate activele din el permanent."
+   },
+   "wallet_settings_subtitle_reset_wallet_risk_warning": {
+      "message": "Acest lucru va șterge toate datele din OKX Wallet, asigurați realizarea copiei de siguranță pentru toate frazele de protecție înainte de resetare."
+   },
+   "wallet_settings_subtitle_security_settings": {
+      "message": "Securitate portofel"
+   },
+   "wallet_settings_subtitle_wallet_manage": {
+      "message": "Gestionare portofel"
+   },
+   "wallet_settings_text_advanced_setting": {
+      "message": "Avansat"
+   },
+   "wallet_settings_text_desc": {
+      "message": "Versiune, centru de asistență și informații de contact"
+   },
+   "wallet_settings_text_general_settings_desc": {
+      "message": "Monedă, limbă și multe altele"
+   },
+   "wallet_settings_text_language_en": {
+      "message": "ro"
+   },
+   "wallet_settings_text_security_settings_desc": {
+      "message": "Schimbați parola, resetați portofelul"
+   },
+   "wallet_settings_text_wallet_manage_desc": {
+      "message": "Adăugare, editare și copie de siguranță portofel"
+   },
+   "wallet_signup_maintitle_set_password": {
+      "message": "Setați parola"
+   },
+   "wallet_signup_subtitle_set_password": {
+      "message": "Pentru a vă proteja confidențialitatea, OKX Wallet nu stochează parola portofelului dvs. Păstrați parola în siguranță."
+   },
+   "wallet_trade_maintitle_trade_cancelation": {
+      "message": "Anulare tranzacție"
+   },
+   "wallet_trade_maintitle_trade_cofirmation": {
+      "message": "Confirmare Txn"
+   },
+   "wallet_trade_maintitle_transaction_confirm": {
+      "message": "Confirmare tranzacție"
+   },
+   "wallet_trade_subtitle_sign_data": {
+      "message": "Mesaj"
+   },
+   "wallet_transaction_confirm_subtitle_pending_orders_number": {
+      "message": "{index} din {total} confirmări"
+   },
+   "wallet_transaction_confirmation_tx_fee": {
+      "message": "Comision rețea"
+   },
+   "wallet_transaction_confirmation_tx_id": {
+      "message": "TxID"
+   },
+   "wallet_transaction_confirmation_tx_processing_number": {
+      "message": "În așteptare{num}"
+   },
+   "wallet_transaction_confirmation_tx_time": {
+      "message": "Oră"
+   },
+   "wallet_transaction_confirmation_tx_type": {
+      "message": "Tip"
+   },
+   "wallet_transaction_history_subtitle_contract_address": {
+      "message": "Adresă contract"
+   },
+   "wallet_transaction_history_subtitle_network_name": {
+      "message": "Nume rețea"
+   },
+   "wallet_transaction_history_subtitle_no_records": {
+      "message": "Nu s-au găsit tranzacții"
+   },
+   "wallet_transaction_history_subtitle_sending": {
+      "message": "Se trimite..."
+   },
+   "wallet_transaction_history_toast_address_copied": {
+      "message": "Adresă copiată"
+   },
+   "wallet_transation_confirmation_copy_to_clipboard": {
+      "message": "Copiați în clipboard"
+   },
+   "wallet_transation_confirmation_copy_txid_to_clipboard": {
+      "message": "Copiați TxID în clipboard"
+   },
+   "wallet_transation_confirmation_subtitle_total_cost": {
+      "message": "Cost total"
+   },
+   "wallet_transation_history_subtitle_approval_transation": {
+      "message": "Autorizare"
+   },
+   "wallet_transation_history_subtitle_confirming": {
+      "message": "Se confirmă"
+   },
+   "wallet_transfer_amount_errortip_amount_empty": {
+      "message": "Suma introdusă nu poate fi necompletată"
+   },
+   "wallet_transfer_amount_errortip_amount_zero": {
+      "message": "Suma introdusă trebuie să depășească 0"
+   },
+   "wallet_transfer_btn_cancel_transaction": {
+      "message": "Anulare"
+   },
+   "wallet_transfer_btn_max_balance_amount": {
+      "message": "Max"
+   },
+   "wallet_transfer_btn_next": {
+      "message": "Următorul"
+   },
+   "wallet_transfer_btn_speedup": {
+      "message": "Accelerare"
+   },
+   "wallet_transfer_cancelation_modal_transaction_cancelled_desc": {
+      "message": "Trimiteți 0 {coinSymbol} pentru înlocuirea tranzacției originale. Din motive de rețea, anularea tranzacției nu garantează succesul."
+   },
+   "wallet_transfer_confirmation_subtitle_gas_fee": {
+      "message": "Comision Txn"
+   },
+   "wallet_transfer_confirmation_subtitle_wallet": {
+      "message": "Portofel"
+   },
+   "wallet_transfer_confirmation_transcation_fee": {
+      "message": "Comision de tranzacție"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_deployment": {
+      "message": "Implementare contract"
+   },
+   "wallet_transfer_dapp_conncetion_subtitle_contracrt_interaction": {
+      "message": "Interacțiune în baza contractului"
+   },
+   "wallet_transfer_errortip_gaslimit_at_least": {
+      "message": "Limita de combustibil trebuie să fie cel puțin {minimumGasLimit}"
+   },
+   "wallet_transfer_errortip_insufficient_balance": {
+      "message": "Sumă insuficientă"
+   },
+   "wallet_transfer_errortip_mainchain_coin_insufficient": {
+      "message": "{chainSymbol} insuficiente pentru plata comisionului de combustibil"
+   },
+   "wallet_transfer_errortip_receive_address_empty": {
+      "message": "Adresa nu poate fi necompletată"
+   },
+   "wallet_transfer_failure_subtitle_failed": {
+      "message": "Eșuat"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_empty": {
+      "message": "Limita de combustibil nu poate fi necompletată"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_maximum": {
+      "message": "15M maxim"
+   },
+   "wallet_transfer_gasfee_errortip_gas_limit_minmum": {
+      "message": "Limita de combustibil trebuie să depășească 21.000"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_empty": {
+      "message": "Prețul de combustibil nu poate fi necompletat"
+   },
+   "wallet_transfer_gasfee_errortip_gas_price_zero": {
+      "message": "Prețul de combustibil trebuie să depășească 0"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_fee": {
+      "message": "Personalizare"
+   },
+   "wallet_transfer_gasfee_subtitle_custom_gas_limit": {
+      "message": "Limită combustibil"
+   },
+   "wallet_transfer_gasfee_subtitle_estimate_time": {
+      "message": "min"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_fee": {
+      "message": "Preț combustibil"
+   },
+   "wallet_transfer_gasfee_subtitle_gas_price": {
+      "message": "Preț combustibil (GWEI)"
+   },
+   "wallet_transfer_gasfee_subtitle_gasfee_custom": {
+      "message": "Personalizat"
+   },
+   "wallet_transfer_history_subtitle_in_process": {
+      "message": "În proces"
+   },
+   "wallet_transfer_history_transcation_details": {
+      "message": "Detaliu tranzacție"
+   },
+   "wallet_transfer_input_address_errortip_same_address": {
+      "message": "Adresa de primire nu poate fi aceeași cu adresa de trimitere"
+   },
+   "wallet_transfer_maintitle_not_any_token": {
+      "message": "Nu aveți niciun token în prezent."
+   },
+   "wallet_transfer_modal_accelerate_transaction": {
+      "message": "Accelerarea unei tranzacții prin utilizarea unui comision de combustibil mai mare îi crește șansele de a fi procesată de rețea mai rapid, dar nu este întotdeauna garantat."
+   },
+   "wallet_transfer_multichain_coin_maintitle_select_network": {
+      "message": "Selectați rețeaua"
+   },
+   "wallet_transfer_notif_approval_fail": {
+      "message": "Aprobarea {first} nu a reușit"
+   },
+   "wallet_transfer_notif_approval_success": {
+      "message": "{first} aprobate cu succes"
+   },
+   "wallet_transfer_notif_cancel_approval_fail": {
+      "message": "Anularea aprobării {first} nu a reușit"
+   },
+   "wallet_transfer_notif_cancel_approval_submit": {
+      "message": "A fost trimisă anularea aprobării {first}"
+   },
+   "wallet_transfer_notif_cancel_approval_success": {
+      "message": "Aprobare {first} anulată"
+   },
+   "wallet_transfer_notif_contract_interaction_fail": {
+      "message": "Apel contract eșuat"
+   },
+   "wallet_transfer_notif_contract_interaction_success": {
+      "message": "Tranzacție reușită"
+   },
+   "wallet_transfer_notif_nft_transaction_fail": {
+      "message": "Tranzacția NFT a eșuat"
+   },
+   "wallet_transfer_notif_nft_transaction_success": {
+      "message": "Tranzacția NFT a reușit"
+   },
+   "wallet_transfer_notif_send_fail": {
+      "message": "Trimiterea {first} {second} nu a reușit"
+   },
+   "wallet_transfer_notif_send_success": {
+      "message": "S-au trimis cu succes {first} {second}"
+   },
+   "wallet_transfer_notif_swap_transaction_fail": {
+      "message": "Schimbarea {first} {second} în {third} {fourth} a eșuat"
+   },
+   "wallet_transfer_notif_swap_transaction_success": {
+      "message": "S-au schimbat cu succes{first} {second} în {third} {fourth}"
+   },
+   "wallet_transfer_notif_transaction_submit": {
+      "message": "Tranzacție remisă"
+   },
+   "wallet_transfer_notif_view_on_explorer": {
+      "message": "Vizualizați pe explorator"
+   },
+   "wallet_transfer_notify_please_complete_all_transation": {
+      "message": "Procesați mai întâi toate tranzacțiile."
+   },
+   "wallet_transfer_placeholder_receive_address": {
+      "message": "introduceți adresa (0x)"
+   },
+   "wallet_transfer_send_select_coin_maintitle_select_coin": {
+      "message": "Selectați tokenul"
+   },
+   "wallet_transfer_send_select_coin_placeholder_input_name": {
+      "message": "Căutare token"
+   },
+   "wallet_transfer_sent_subtitle_wait_for_block": {
+      "message": "Așteptați pentru confirmarea de bloc"
+   },
+   "wallet_transfer_signature_errortip_hardware_wallet_signature_failed": {
+      "message": "Semnătură hardware eșuată"
+   },
+   "wallet_transfer_signature_notify_hardware_wallet_signature": {
+      "message": "Conectare cu portofel hardware"
+   },
+   "wallet_transfer_speed_up_subtitle_after": {
+      "message": "După"
+   },
+   "wallet_transfer_speed_up_subtitle_before": {
+      "message": "Înainte"
+   },
+   "wallet_transfer_subtitle_amount": {
+      "message": "Suma primită"
+   },
+   "wallet_transfer_subtitle_network_fee": {
+      "message": "Comision rețea"
+   },
+   "wallet_transfer_subtitle_receive_address": {
+      "message": "Către"
+   },
+   "wallet_transfer_subtitle_send_address": {
+      "message": "De la"
+   },
+   "wallet_transfer_subtitle_trading_speed_average": {
+      "message": "Medie"
+   },
+   "wallet_transfer_subtitle_trading_speed_fast": {
+      "message": "Rapid"
+   },
+   "wallet_transfer_subtitle_trading_speed_slow": {
+      "message": "Lent"
+   },
+   "wallet_transfer_success_btn_back_to_home": {
+      "message": "Înapoi acasă"
+   },
+   "wallet_transfer_success_subtitle_sent": {
+      "message": "Trimis"
+   },
+   "wallet_transfer_success_toast_completed": {
+      "message": "Finalizat"
+   },
+   "wallet_transfer_transaction_history_subtitle_pending": {
+      "message": "În așteptare"
+   },
+   "wallet_unlockwallet_errotip_wrong_password_cannot_unlock": {
+      "message": "Nu se poate debloca fără un seif anterior"
+   },
+   "walletextension_toast_text_hardware_evm": {
+      "message": "Portofelul hardware acceptă doar activele de pe rețelele compatibile EVM"
+   },
+   "walletextension_toast_text_insufficient_balance": {
+      "message": "Sold SOL insuficient pentru plata comisionului de rețea"
+   },
+   "walletextension_toast_text_insufficient_balance_initiate_transaction": {
+      "message": "Sold insuficient. Aveți nevoie de cel puțin {number} SOL în cont pentru inițierea tranzacției"
+   },
+   "walletextension_toast_text_minimum_rent_fee": {
+      "message": "Trimiteți cel puțin {number} SOL pentru a satisface criteriul scutirii de comisionul pentru chirie"
+   },
+   "walletextension_toast_text_reserve_rent_exempt": {
+      "message": "Rezervați cel puțin {number} SOL ca valoare a chiriei scutită"
+   },
+   "walletsecurity_top_toast_notification": {
+      "message": "Portofelul dvs. a fost resetat"
+   },
+   "walllet_extension_approve_title_aaprove": {
+      "message": "Aprobare"
+   },
+   "wallt_extension_history_text_no_data": {
+      "message": "Fără date"
+   }
+}
