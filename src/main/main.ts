@@ -12,6 +12,7 @@
 import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
+import * as childProcess from 'child_process';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
@@ -394,4 +395,28 @@ ipcMain.on(Channels.openOKXExtension, (event) => {
     okxWindow.loadURL(`chrome-extension://${extensionId}/home.html`);
     okxWindow.show();
   }
+});
+
+app.on('before-quit', () => {
+  // Check the platform to run the appropriate command
+  const command =
+    process.platform === 'win32'
+      ? 'taskkill /IM Electron.exe /F'
+      : 'pkill -f Electron';
+
+  childProcess.exec(command, (error, stdout, stderr) => {
+    if (error) {
+      console.error(
+        `Error executing command to kill Electron processes: ${error}`
+      );
+      return;
+    }
+
+    if (stderr) {
+      console.error(`Error killing Electron processes: ${stderr}`);
+      return;
+    }
+
+    console.log(`Killed Electron processes: ${stdout}`);
+  });
 });
