@@ -24,6 +24,8 @@ const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
 
 const log = require('electron-log');
 
+log.transports.file.level = 'debug'
+
 Object.assign(console, log.functions);
 
 let mainWindow: BrowserWindow | null = null;
@@ -38,13 +40,14 @@ if (process.env.NODE_ENV === 'production') {
 const isDebug =
   process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
 
-const logingPath = path.join(path.join(app.getAppPath(), 'logs'), 'main.log');
+const exePath = path.dirname(app.getPath('exe'));
 
-console.log(`Logging path : ${logingPath}`);
+const logingPath = path.join(path.join(exePath, 'logs'), 'main.log');
 
 log.transports.file.resolvePath = () => {
   return logingPath;
 };
+
 
 if (isDebug) {
   require('electron-debug')();
