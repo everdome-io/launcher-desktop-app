@@ -46,9 +46,3 @@ jobs:
           author_name: GitHub Actions
           author_email: actions@github.com
           message: 'Bump version number'
-
-      - name: Run Publish workflow
-        uses: tcardonne/workflow-call-action@v2.1
-        with:
-          workflow: Publish
-          token: ${{ secrets.GITHUB_TOKEN }}

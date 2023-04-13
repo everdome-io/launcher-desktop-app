@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'release-*'
+  workflow_run:
+    workflows: [Update Version]
+    types: [completed]
 
 jobs:
   publish:
