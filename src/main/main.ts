@@ -20,8 +20,10 @@ import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
 
-const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
+const log = require('electron-log');
+const dateFormatter = require('date-and-time');
 
+const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
@@ -60,8 +62,6 @@ const getAssetPath = (...paths: string[]): string => {
 };
 
 function setupLogging() {
-  const log = require('electron-log');
-  const dateFormatter = require('date-and-time');
 
   Object.assign(console, log.functions);
   const logingPath = path.join(app.getAppPath(), 'logs');
@@ -71,10 +71,11 @@ function setupLogging() {
   // by using date.format() method
   const date = dateFormatter.format(now, 'YYYY/MM/DD HH:mm:ss');
   console.log(`Logging path : ${logingPath}`);
+  const exePath = path.dirname(app.getPath('exe'));
 
   log.transports.file.resolvePath = () => {
     const newPath = path.join(
-      path.join(app.getAppPath(), 'logs'),
+      path.join(exePath, 'logs'),
       `log${date}.txt`
     );
     return newPath;
