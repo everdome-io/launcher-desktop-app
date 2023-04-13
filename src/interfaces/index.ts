@@ -27,6 +27,7 @@ export enum Processes {
   download = 'download',
   extract = 'extract',
   installation = 'installation',
+  error = 'error',
 }
 
 export type LocalFile = {

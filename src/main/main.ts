@@ -10,6 +10,7 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
+import date from 'date-and-time';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
@@ -21,8 +22,7 @@ import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
 
 const log = require('electron-log');
-const dateFormatter = require('date-and-time');
-
+var fs = require('fs');
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
 
 let mainWindow: BrowserWindow | null = null;
@@ -65,21 +65,35 @@ function setupLogging() {
 
   Object.assign(console, log.functions);
   const logingPath = path.join(app.getAppPath(), 'logs');
-  const now = new Date();
+  let now = new Date();
 
   // Formatting the date and time
   // by using date.format() method
-  const date = dateFormatter.format(now, 'YYYY/MM/DD HH:mm:ss');
-  console.log(`Logging path : ${logingPath}`);
+  let dateStr = date.format(now, 'YYYYMMDDHHm000');
   const exePath = path.dirname(app.getPath('exe'));
+  const example = path.join(
+    path.join(exePath, 'logs'),
+    `log${dateStr}.txt`
+  );
+  console.log(`Logging path : ${logingPath}, date : ${dateStr}, example:${example}`);
 
+  log.transports.file.maxSize = 1024*1024;
+
+  const currentLogNameWithPath = path.join(
+    path.join(exePath, 'logs'),
+    `log.txt`
+  );
   log.transports.file.resolvePath = () => {
-    const newPath = path.join(
-      path.join(exePath, 'logs'),
-      `log${date}.txt`
-    );
-    return newPath;
+    return currentLogNameWithPath;
   };
+  log.transports.file.archiveLog = (file: any)=>{
+    var oldPath = file.toString();
+    now = new Date();
+    dateStr = date.format(now, 'YYYYMMDDHHmmss');
+    const newPath = oldPath.replace('log.txt', `log${dateStr}.txt`)
+    fs.renameSync(oldPath, newPath);
+
+  }
 }
 
 const loadExtensions = () => {
@@ -254,8 +268,12 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
       isFinished: false,
     },
   });
+  let prevProgress = 0;
   downloadFileWithProgress(localUserPath, webLink, event, (progress) => {
-    console.log(`Downloaded ${progress.toFixed(2)}%`);
+    if(progress-prevProgress>=0.1){
+      console.log(`Downloaded ${progress.toFixed(2)}%`);
+      prevProgress = progress;
+    }
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
@@ -304,6 +322,8 @@ ipcMain.on(Channels.openDialog, async function (event) {
 ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   const eventsInstance = eventsClient(event);
 
+  console.log("Extracting started", localFile.filepath);
+
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
@@ -313,6 +333,8 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
       isFinished: false,
     },
   });
+
+  console.log("State updated");
 
   await extractWithProgress(
     path.join(localFile.filepath, 'game.zip'),
@@ -344,6 +366,15 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
     })
     .catch((error) => {
       console.error('Error during extraction:', error);
+      eventsInstance.reply({
+        channel: Channels.changeState,
+        message: {
+          process: Processes.error,
+          progress: 100,
+          localUserPath: '',
+          isFinished: true,
+        },
+      });
     });
 });
 

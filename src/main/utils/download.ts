@@ -39,10 +39,24 @@ export function downloadFileWithProgress(
   });
 
   req.on('end', () => {
+    console.log("download finished");
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
         process: Processes.download,
+        progress: 100,
+        localUserPath: '',
+        isFinished: true,
+      },
+    });
+  });
+
+  req.on('error', () => {
+    console.log("download failed");
+    eventsInstance.reply({
+      channel: Channels.changeState,
+      message: {
+        process: Processes.error,
         progress: 100,
         localUserPath: '',
         isFinished: true,

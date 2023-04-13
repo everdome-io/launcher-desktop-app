@@ -30,6 +30,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     );
   }
   if (couldExtract) {
+    console.log("starting extraction in renderer");
     window.electron.ipcRenderer.sendMessage(Channels.extractProcess, {
       filepath: localUserPath,
     });
@@ -42,7 +43,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     className = 'DuringProcessButton';
     buttonText = `${progress.toFixed(2)} %`;
     additionalInfo =
-      process === Processes.download ? 'Downloading...' : 'Extracting...';
+      process === Processes.download ? 'Downloading...' : (process === Processes.extract ) ? 'Extracting...' : 'Error!!!!';
   }
 
   const handleOnClick = () => {

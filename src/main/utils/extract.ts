@@ -27,15 +27,22 @@ async function extractEntry(
   destination: string
 ): Promise<number> {
   // Change the return type to Promise<number>
+  console.log(`Extracting filePath:${filePath} name:${entry.name} destination:${destination}`)
   const zip = new StreamZip.async({ file: filePath });
   const outputPath = path.join(destination, entry.name);
 
   // Create the directory if it doesn't exist
   const outputDir = path.dirname(outputPath);
-  await mkdir(outputDir, { recursive: true });
+  console.log(`Extracting outputPath:${outputPath} outputDir:${outputDir}`)
+  try{
+    await mkdir(outputDir, { recursive: true });
 
-  await zip.extract(entry.name, outputPath);
-  await zip.close();
+    await zip.extract(entry.name, outputPath);
+    await zip.close();
+    console.log(`Extraction successful`)
+  }catch(ex){
+    console.error(`Error while extracting.`)
+  }
 
   return entry.size; // Return the entry size
 }
@@ -49,18 +56,26 @@ async function processEntriesInChunks(
 ): Promise<void> {
   const chunks: StreamZip.ZipEntry[][] = [];
 
-  const sizes = entries.map((entry) => entry.size);
-  console.log(`entry sizes ${JSON.stringify(sizes)}`);
-
-  for (let i = 0; i < entries.length; i += concurrency) {
-    chunks.push(entries.slice(i, i + concurrency));
+  let accumulatedSize = 0;
+  let chunkIndex = 0;
+  const maxSize = 10 * 1024 * 1024;
+  chunks.push([])
+  for (let i = 0; i < entries.length; i += 1) {
+    chunks[chunkIndex].push(entries[i]);
+    accumulatedSize += entries[i].size;
+    if(accumulatedSize>maxSize || chunks[chunkIndex].length>=concurrency){
+      console.log(`chunk formed, size:${accumulatedSize}, count:${chunks[chunkIndex].length}`);
+      chunkIndex += 1;
+      accumulatedSize = 0;
+      chunks.push([]);
+    }
   }
 
   let counter = 0;
   // eslint-disable-next-line no-restricted-syntax
   for (const chunk of chunks) {
     counter += 1;
-    console.log(`chunk ${counter}`);
+    console.log(`chunk ${counter}, fileCount : ${chunk.length}, totalSize : ${chunk.reduce((prev, next) => prev+next.size,0)}`);
     const extractPromises = chunk.map((entry) =>
       extractEntry(filePath, entry, destination)
     );
