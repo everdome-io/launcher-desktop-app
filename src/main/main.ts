@@ -38,8 +38,13 @@ if (process.env.NODE_ENV === 'production') {
 const isDebug =
   process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
 
-log.transports.file.resolvePath = () =>
-  path.join(app.getAppPath(), 'logs/main.log');
+const logingPath = path.join(path.join(app.getAppPath(), 'logs'), 'main.log');
+
+console.log(`Logging path : ${logingPath}`);
+
+log.transports.file.resolvePath = () => {
+  return logingPath;
+};
 
 if (isDebug) {
   require('electron-debug')();
