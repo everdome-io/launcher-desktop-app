@@ -22,9 +22,6 @@ import { extractWithProgress } from './utils/extract';
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
 
-const log = require('electron-log');
-
-Object.assign(console, log.functions);
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
@@ -37,14 +34,6 @@ if (process.env.NODE_ENV === 'production') {
 
 const isDebug =
   process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
-
-const logingPath = path.join(path.join(app.getAppPath(), 'logs'), 'main.log');
-
-console.log(`Logging path : ${logingPath}`);
-
-log.transports.file.resolvePath = () => {
-  return logingPath;
-};
 
 if (isDebug) {
   require('electron-debug')();
@@ -69,6 +58,28 @@ const getAssetPath = (...paths: string[]): string => {
     : path.join(__dirname, '../../assets');
   return path.join(RESOURCES_PATH, ...paths);
 };
+
+function setupLogging() {
+  const log = require('electron-log');
+  const dateFormatter = require('date-and-time');
+
+  Object.assign(console, log.functions);
+  const logingPath = path.join(app.getAppPath(), 'logs');
+  const now = new Date();
+
+  // Formatting the date and time
+  // by using date.format() method
+  const date = dateFormatter.format(now, 'YYYY/MM/DD HH:mm:ss');
+  console.log(`Logging path : ${logingPath}`);
+
+  log.transports.file.resolvePath = () => {
+    const newPath = path.join(
+      path.join(app.getAppPath(), 'logs'),
+      `log${date}.txt`
+    );
+    return newPath;
+  };
+}
 
 const loadExtensions = () => {
   session.defaultSession
@@ -200,6 +211,9 @@ const createOKXWindow = async () => {
 /**
  * Add event listeners...
  */
+
+
+setupLogging();
 
 app.on('window-all-closed', () => {
   // Respect the OSX convention of having the application in memory even
