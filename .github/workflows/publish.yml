@@ -7,8 +7,49 @@ on:
       - 'release-*'
 
 jobs:
+  update-version:
+    if: |
+      github.event.pull_request.merged == true &&
+      startsWith(github.head_ref, 'patch') ||
+      startsWith(github.head_ref, 'minor') ||
+      startsWith(github.head_ref, 'major') &&
+      contains(github.head_ref, '-')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+
+      - name: Determine version increment
+        id: version
+        run: |
+          if [[ "$GITHUB_HEAD_REF" =~ ^(patch|minor|major)- ]]; then
+            echo "::set-output name=increment::${BASH_REMATCH[1]}"
+          else
+            echo "::error::Invalid branch name format"
+            exit 1
+          fi
+
+      - name: Update version in package.json
+        working-directory: ./release/app
+        run: |
+          npm version ${{ steps.version.outputs.increment }}
+          git push --follow-tags
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v8
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: 'Bump version number'
+
   publish:
     runs-on: ${{ matrix.os }}
+    needs: update-version
 
     strategy:
       matrix:
