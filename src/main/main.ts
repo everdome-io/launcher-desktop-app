@@ -10,19 +10,16 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import date from 'date-and-time';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
-import { getDownloadLink, resolveHtmlPath } from './utils';
+import { getDownloadLink, resolveHtmlPath, setupLogging } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
 
-const log = require('electron-log');
-var fs = require('fs');
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
 
@@ -61,41 +58,6 @@ const getAssetPath = (...paths: string[]): string => {
     : path.join(__dirname, '../../assets');
   return path.join(RESOURCES_PATH, ...paths);
 };
-
-function setupLogging() {
-
-  Object.assign(console, log.functions);
-  const logingPath = path.join(app.getAppPath(), 'logs');
-  let now = new Date();
-
-  // Formatting the date and time
-  // by using date.format() method
-  let dateStr = date.format(now, 'YYYYMMDDHHm000');
-  const exePath = path.dirname(app.getPath('exe'));
-  const example = path.join(
-    path.join(exePath, 'logs'),
-    `log${dateStr}.txt`
-  );
-  console.log(`Logging path : ${logingPath}, date : ${dateStr}, example:${example}`);
-
-  log.transports.file.maxSize = 1024*1024;
-
-  const currentLogNameWithPath = path.join(
-    path.join(exePath, 'logs'),
-    `log.txt`
-  );
-  log.transports.file.resolvePath = () => {
-    return currentLogNameWithPath;
-  };
-  log.transports.file.archiveLog = (file: any)=>{
-    var oldPath = file.toString();
-    now = new Date();
-    dateStr = date.format(now, 'YYYYMMDDHHmmss');
-    const newPath = oldPath.replace('log.txt', `log${dateStr}.txt`)
-    fs.renameSync(oldPath, newPath);
-
-  }
-}
 
 const loadExtensions = async () => {
   return await session.defaultSession.loadExtension(
@@ -225,7 +187,7 @@ const createOKXWindow = async () => {
  */
 
 
-setupLogging();
+setupLogging(app.getPath("exe"), "log.txt");
 
 app.on('window-all-closed', () => {
   // Respect the OSX convention of having the application in memory even
@@ -281,6 +243,10 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
     });
   });
 });
+
+ipcMain.on(Channels.rendererError,async (event, payload) => {
+  (console as any)[payload.lvl](payload.message);
+})
 
 ipcMain.on(Channels.installationProcess, async function (event, userPath) {
   console.log('Installing game...');

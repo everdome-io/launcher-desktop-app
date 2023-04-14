@@ -15,6 +15,7 @@ let state: AppState = {
   process: Processes.openDialog,
   isFinished: false,
 };
+
 let updateState: AppUpdate = {
   status: AppUpdateStatus.nothing,
   message: null,
@@ -26,6 +27,7 @@ let crossWindowState: CrossWindowState = {
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
+
 function renderAppComponent() {
   root.render(
     <App
@@ -35,6 +37,7 @@ function renderAppComponent() {
     />
   );
 }
+
 renderAppComponent();
 
 window.electron.ipcRenderer.on(

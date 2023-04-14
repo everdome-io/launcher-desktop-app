@@ -4,6 +4,7 @@ export enum Channels {
   downloadProcess = 'download-process',
   extractProcess = 'extract-process',
   installationProcess = 'installation-process',
+  rendererError = 'renderer-error',
   showProfileWindow = 'show-profile-window',
 
   crossWindow = 'cross-window',
@@ -60,10 +61,17 @@ export type AppUpdate = {
   message: string | null;
 };
 
+export type RendererError = {
+  lvl: string,
+  message: string
+}
+
 export type ElectronEventArgs<T> = T extends Channels.changeState
   ? AppState
   : T extends Channels.installationProcess
   ? string
   : T extends Channels.crossWindow
   ? CrossWindowState
+  : T extends Channels.rendererError
+  ? RendererError
   : never;
