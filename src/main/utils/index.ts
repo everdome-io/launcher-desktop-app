@@ -1,6 +1,7 @@
 import { URL } from 'url';
 import path from 'path';
 import date from 'date-and-time';
+import { ErrorTypes } from '@interfaces';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -45,7 +46,7 @@ export function getDownloadLink(): string {
   }
 }
 
-export function setupLogging(exePath : string, baseFileName : string, level : string = 'silly') {
+export function setupLogging(exePath : string, baseFileName : string, level : ErrorTypes = ErrorTypes.silly) {
 
   const log = require('electron-log');
   var fs = require('fs');
@@ -59,7 +60,7 @@ export function setupLogging(exePath : string, baseFileName : string, level : st
 
   Object.assign(console, log.functions);
 
-  log.transports.file.level = level;
+  log.transports.file.level = level.toString();
   log.transports.file.maxSize = 1024*1024;
 
   const currentLogNameWithPath = path.join(

@@ -66,6 +66,15 @@ export type RendererError = {
   message: string
 }
 
+export enum ErrorTypes {
+  error,
+  warn,
+  info,
+  verbose,
+  debug,
+  silly
+}
+
 export type ElectronEventArgs<T> = T extends Channels.changeState
   ? AppState
   : T extends Channels.installationProcess
