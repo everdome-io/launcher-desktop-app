@@ -122,7 +122,7 @@ const createProfileWindow = async () => {
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
     parent: mainWindow || undefined,
-    skipTaskbar: true,
+    autoHideMenuBar: true,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -131,8 +131,7 @@ const createProfileWindow = async () => {
   });
 
   profileWindow.loadURL(resolveHtmlPath('profile.html'));
-
-  profileWindow.setPosition(1300, 200);
+  profileWindow.setPosition(1100, 100);
 
   profileWindow.on('ready-to-show', () => {
     if (!profileWindow) {
@@ -173,9 +172,11 @@ const createOKXWindow = async () => {
     width: 360,
     height: 600,
     icon: getAssetPath('icon.png'),
+    backgroundColor: '#000000',
     parent: profileWindow || undefined,
     modal: true,
-    skipTaskbar: true,
+    autoHideMenuBar: true,
+    frame: false,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -183,7 +184,7 @@ const createOKXWindow = async () => {
     },
   });
 
-  okxWindow.setPosition(1295, 200);
+  okxWindow.setPosition(1095, 100);
 };
 
 /**
@@ -388,7 +389,10 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
 });
 
 ipcMain.on(Channels.openOKXExtension, (event) => {
-  profileWindow!.loadURL(OKX_WEB_APP_URL);
+  profileWindow!.loadURL(OKX_WEB_APP_URL).then(() => {
+    okxWindow!.focus();
+
+  });
 
   if (okxWindow) {
     okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
