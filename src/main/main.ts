@@ -221,6 +221,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
     channel: Channels.changeState,
     message: {
       process: Processes.download,
+      processingSize:null,
       progress: 0,
       localUserPath: '',
       isFinished: false,
@@ -236,6 +237,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
       channel: Channels.changeState,
       message: {
         process: Processes.download,
+        processingSize: 0,
         progress,
         localUserPath: '',
         isFinished: false,
@@ -244,7 +246,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
   });
 });
 
-ipcMain.on(Channels.rendererError,async (_event, payload) => {
+ipcMain.on(Channels.rendererLog,async (_event, payload) => {
   (console as any)[payload.lvl](`From renderer: ${payload.message}`);
 })
 
@@ -255,6 +257,7 @@ ipcMain.on(Channels.installationProcess, async function (event, userPath) {
     channel: Channels.changeState,
     message: {
       process: Processes.installation,
+      processingSize: 0,
       progress: null,
       localUserPath: '',
       isFinished: false,
@@ -274,6 +277,7 @@ ipcMain.on(Channels.openDialog, async function (event) {
     channel: Channels.changeState,
     message: {
       process: Processes.openDialog,
+      processingSize: 0,
       progress: null,
       localUserPath: localUserPath.filePaths[0],
       isFinished: false,
@@ -290,6 +294,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
     channel: Channels.changeState,
     message: {
       process: Processes.extract,
+      processingSize: 0,
       progress: 0,
       localUserPath: '',
       isFinished: false,
@@ -301,13 +306,14 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   await extractWithProgress(
     path.join(localFile.filepath, 'game.zip'),
     localFile.filepath,
-    (progress) => {
+    (chunkSize ,progress) => {
       console.log(`Extraction progress: ${progress.toFixed(2)}%`);
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
           process: Processes.extract,
           progress,
+          processingSize: chunkSize,
           localUserPath: '',
           isFinished: false,
         },
@@ -320,6 +326,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
         channel: Channels.changeState,
         message: {
           process: Processes.extract,
+          processingSize: 0,
           progress: 100,
           localUserPath: '',
           isFinished: true,
@@ -333,6 +340,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
         message: {
           process: Processes.error,
           progress: 100,
+          processingSize: 0,
           localUserPath: '',
           isFinished: true,
         },

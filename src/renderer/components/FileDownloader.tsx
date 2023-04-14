@@ -3,8 +3,22 @@ import { FC } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import './FileDownloader.css';
 
+
+function toShortSize(size : number){
+  if(size>1000_000_000){
+    size = size/1000_000_000;
+    return size.toFixed(2)+" GB"
+  }
+  if(size>1000_000){
+    size = size/1000_000;
+    return size.toFixed(2)+" MB"
+  }
+  size = size/1000;
+  return size.toFixed(2)+" KB"
+}
+
 export const FileDownloader: FC<{ state: AppState }> = ({
-  state: { process, progress, localUserPath, isFinished },
+  state: { process, progress, localUserPath, isFinished, processingSize },
 }) => {
   let className = 'ProcessButton';
   let buttonText = 'DOWNLOAD';
@@ -41,7 +55,12 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     buttonText = 'PLAY';
   } else if (duringDownloadOrExtract) {
     className = 'DuringProcessButton';
-    buttonText = `${progress.toFixed(2)} %`;
+    if(process === Processes.download){
+      buttonText = `${progress.toFixed(2)} %`;
+    }
+    else{
+      buttonText = toShortSize(processingSize!);
+    }
     additionalInfo =
       process === Processes.download ? 'Downloading...' : (process === Processes.extract ) ? 'Extracting...' : 'Error!!!!';
   }
@@ -74,7 +93,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
           {progress !== null &&
           progress !== 100 &&
           process === Processes.extract ? (
-            <div className="Spinner" />
+            <div className="ProcessButtonText">{buttonText}</div>
           ) : (
             <div className="ProcessButtonText">{buttonText}</div>
           )}

@@ -1,7 +1,7 @@
 import { URL } from 'url';
 import path from 'path';
 import date from 'date-and-time';
-import { ErrorTypes } from '@interfaces';
+import { ErrorTypes } from '../../interfaces';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -52,7 +52,7 @@ export function setupLogging(exePath : string, baseFileName : string, level : Er
   var fs = require('fs');
 
   if(baseFileName.split('.').length!==2){
-    throw new Error(`baseFileName must have exacly one '.'`);
+    throw new Error(`baseFileName must have exacly one '.' `);
   }
 
   const fileName = baseFileName.split('.')[0];
@@ -63,8 +63,10 @@ export function setupLogging(exePath : string, baseFileName : string, level : Er
   log.transports.file.level = level.toString();
   log.transports.file.maxSize = 1024*1024;
 
+  const exeDir = path.parse(exePath).dir;
+
   const currentLogNameWithPath = path.join(
-    path.join(exePath, 'logs'),
+    path.join(exeDir, 'logs'),
     baseFileName
   );
 
@@ -76,7 +78,6 @@ export function setupLogging(exePath : string, baseFileName : string, level : Er
     var oldPath = file.toString();
     const now = new Date();
     const dateStr = date.format(now, 'YYYYMMDDHHmmss');
-    console.log(`Archiving ${baseFileName} to ${fileName}${dateStr}.${extension}`);
     const newPath = oldPath.replace(baseFileName, `${fileName}${dateStr}.${extension}`)
     fs.renameSync(oldPath, newPath);
 

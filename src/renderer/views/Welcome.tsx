@@ -4,6 +4,7 @@ import {
   AppUpdateStatus,
   Channels,
   CrossWindowState,
+  ErrorTypes
 } from '@interfaces';
 import { FC } from 'react';
 import { Hello, FileDownloader, Menu } from 'src/renderer/components';
@@ -18,16 +19,12 @@ export const Welcome: FC<{
 }> = ({ state, updateState, crossWindowState }) => {
   if (updateState.status === AppUpdateStatus.error) {
     console.log(`update error ${updateState.message}`);
-    window.electron.ipcRenderer.sendMessage(Channels.rendererError, {
-      lvl: 'error',
+    window.electron.ipcRenderer.sendMessage(Channels.rendererLog, {
+      lvl: ErrorTypes.error,
       message:`update error ${updateState.message}`
     });
   }
   console.log(`Is user authenticated?: ${crossWindowState.isAuthenticated}`);
-  window.electron.ipcRenderer.sendMessage(Channels.rendererError, {
-    lvl: 'log',
-    message:`Is user authenticated?: ${crossWindowState.isAuthenticated}`
-  });
   return (
     <div className="container">
       <Menu />

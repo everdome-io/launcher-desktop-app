@@ -51,7 +51,7 @@ async function processEntriesInChunks(
   filePath: string,
   entries: StreamZip.ZipEntry[],
   destination: string,
-  progressCallback: (percent: number) => void,
+  progressCallback: (chunkSize: number ) => void,
   concurrency: number
 ): Promise<void> {
   const chunks: StreamZip.ZipEntry[][] = [];
@@ -75,7 +75,8 @@ async function processEntriesInChunks(
   // eslint-disable-next-line no-restricted-syntax
   for (const chunk of chunks) {
     counter += 1;
-    console.log(`chunk ${counter}, fileCount : ${chunk.length}, totalSize : ${chunk.reduce((prev, next) => prev+next.size,0)}`);
+    const totalSize = chunk.reduce((prev, next) => prev+next.size,0);
+    progressCallback(totalSize);
     const extractPromises = chunk.map((entry) =>
       extractEntry(filePath, entry, destination)
     );
@@ -84,22 +85,21 @@ async function processEntriesInChunks(
 
     const chunkSize = extractedSizes.reduce((sum, size) => sum + size, 0);
     console.log(`total chunk size ${chunkSize}`);
-    progressCallback(chunkSize);
   }
 }
 
 export async function extractWithProgress(
   filePath: string,
   destination: string,
-  progressCallback: (percent: number) => void
+  progressCallback: (chunkSize: number ,percent: number) => void
 ): Promise<void> {
-  const entries = await getEntries(filePath);
-  console.log(`entries count=${entries.length}`);
+  const entries = (await getEntries(filePath)).sort((a,b)=>a.size - b.size);
   const totalSize = entries.reduce((sum, entry) => sum + entry.size, 0);
+  console.log(`entries count=${entries.length} totalSize=${totalSize}`);
 
   let extractedSize = 0;
 
-  const concurrency = 100;
+  const concurrency = 3;
 
   await processEntriesInChunks(
     filePath,
@@ -109,7 +109,7 @@ export async function extractWithProgress(
       console.log(`chunk processed size=${chunkSize}`);
       extractedSize += chunkSize;
       const percent = (extractedSize / totalSize) * 100;
-      progressCallback(percent);
+      progressCallback(chunkSize, percent);
     },
     concurrency
   );

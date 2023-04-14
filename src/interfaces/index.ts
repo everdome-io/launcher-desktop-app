@@ -4,7 +4,7 @@ export enum Channels {
   downloadProcess = 'download-process',
   extractProcess = 'extract-process',
   installationProcess = 'installation-process',
-  rendererError = 'renderer-error',
+  rendererLog = 'renderer-log',
   showProfileWindow = 'show-profile-window',
 
   crossWindow = 'cross-window',
@@ -47,6 +47,7 @@ export type ElectronHandlerArgs<T> = T extends Channels.downloadProcess
 
 export type AppState = {
   progress: null | number;
+  processingSize: null | number;
   isFinished: boolean;
   process: Processes;
   localUserPath: string;
