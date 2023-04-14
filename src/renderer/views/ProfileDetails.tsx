@@ -1,17 +1,26 @@
-import { AppState, Channels } from '@interfaces';
-import { FC, useState } from 'react';
+import { AppState, Channels, CrossWindowState } from '@interfaces';
+import { FC, useEffect, useState } from 'react';
 import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
 import settingsIcon from 'assets/images/settings-icon.png';
 import iconDOME from 'assets/images/icon_DOME.png';
 import './ProfileDetails.css';
 
-export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
+export const ProfileDetails: FC<{
+  state: AppState;
+  crossWindowState: CrossWindowState;
+}> = ({ state, crossWindowState }) => {
   const [isLogged, setIsLogged] = useState(false);
 
   const connectWallet = () => {
     window.electron.ipcRenderer.sendMessage(Channels.openOKXExtension);
   };
+
+  useEffect(() => {
+    if (crossWindowState.isAuthenticated) {
+      setIsLogged(true);
+    }
+  }, [crossWindowState]);
 
   return (
     <div className="container">

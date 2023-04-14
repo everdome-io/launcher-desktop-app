@@ -12,15 +12,18 @@
 import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
+import Store from 'electron-store';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
-import { getDownloadLink, resolveHtmlPath } from './utils';
+import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
 
-const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
+const store = new Store();
+
+const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
 
 let mainWindow: BrowserWindow | null = null;
@@ -146,9 +149,30 @@ const createProfileWindow = async () => {
 
   profileWindow.webContents.on('did-navigate', (event, url) => {
     if (url.includes('/success')) {
-      console.log(`did-navigate`);
       profileWindow?.loadURL(resolveHtmlPath('profile.html'));
       okxWindow?.hide();
+      const userId = store.get('userId') as string | undefined;
+      if (userId) {
+        fetch(`https://backend.prod.aws.everdome.io/user/${userId}`)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error('Error fetching user data');
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log('data', data);
+            profileWindow?.webContents.send(Channels.crossWindow, {
+              isAuthenticated: true,
+            });
+            mainWindow?.webContents.send(Channels.crossWindow, {
+              isAuthenticated: true,
+            });
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     }
   });
 
@@ -380,19 +404,28 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
     .catch((err) => console.log(err));
 });
 
-ipcMain.on(Channels.crossWindow, async function (_event, state) {
-  mainWindow?.webContents.send(Channels.crossWindow, state);
-});
-
 ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
   if (state === true) profileWindow?.show();
 });
 
 ipcMain.on(Channels.openOKXExtension, (event) => {
-  profileWindow!.loadURL(OKX_WEB_APP_URL).then(() => {
-    okxWindow!.focus();
-
-  });
+  let userId: string;
+  const storeUserId = store.get('userId') as undefined | string;
+  if (storeUserId) {
+    userId = storeUserId;
+  } else {
+    userId = uuid();
+    store.set('userId', userId);
+  }
+  const finalUrl = `${OKX_WEB_APP_URL}?userId=${userId}`;
+  profileWindow!
+    .loadURL(finalUrl)
+    .then(() => {
+      okxWindow!.focus();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 
   if (okxWindow) {
     okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
