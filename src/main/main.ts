@@ -245,7 +245,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
 });
 
 ipcMain.on(Channels.rendererError,async (event, payload) => {
-  (console as any)[payload.lvl](payload.message);
+  (console as any)[payload.lvl](`From renderer: ${payload.message}`);
 })
 
 ipcMain.on(Channels.installationProcess, async function (event, userPath) {
