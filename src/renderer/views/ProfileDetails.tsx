@@ -34,40 +34,27 @@ export const ProfileDetails: FC<{ state: AppState }> = ({ state }) => {
           </div>
         </div>
       )}
-      <div className="Wallet" hidden={!isLogged}>
-        <div className="WalletItem">
-          <h5>Wallet</h5>
-          <div className="WalletItemDetails">
-            <span>
-              <img
-                style={{ verticalAlign: 'middle' }}
-                src={iconDOME}
-                alt="DOME"
-              />{' '}
-              DOME
-            </span>
-            <span>0.00</span>
-            <span>$0.00</span>
+      <div>
+        <div className="Wallet" hidden={!isLogged}>
+          <div className="WalletItem">
+            <h5>Wallet</h5>
+            <div className="WalletItemDetails">
+              <span>
+                <img
+                  style={{ verticalAlign: 'middle' }}
+                  src={iconDOME}
+                  alt="DOME"
+                />{' '}
+                DOME
+              </span>
+              <span>0.00</span>
+              <span>$0.00</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="MainSection">
         {!isLogged && (
-          <div className="EmptyMessage">
-            <p className="InfoText">If you new to decentralized world</p>
-            <a
-              className="CTAButton CreateWallet"
-              href="https://www.okx.com/account/register"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Create Wallet
-            </a>
-            <p className="InfoText">or if you already have a wallet</p>
-            <button
-              className="CTAButton CTAButtonInverse ConnectWallet"
-              onClick={connectWallet}
-            >
+          <div className="NotConnected">
+            <button className="CTAButton ConnectWallet" onClick={connectWallet}>
               Connect Wallet
             </button>
           </div>

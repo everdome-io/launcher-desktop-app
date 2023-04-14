@@ -24,6 +24,7 @@ import { extractWithProgress } from './utils/extract';
 const log = require('electron-log');
 var fs = require('fs');
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io/';
+const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
@@ -96,15 +97,10 @@ function setupLogging() {
   }
 }
 
-const loadExtensions = () => {
-  session.defaultSession
-    .loadExtension(
-      getAssetPath('okx/mcohilncbfahbmgdjkbpemcciiolgcge/2.40.0_0')
-    )
-    .then((response) => {
-      console.log('response ext', response);
-      // TODO: We have global window.okxwallet object, we need it in the renderer process
-    });
+const loadExtensions = async () => {
+  return await session.defaultSession.loadExtension(
+    getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`)
+  );
 };
 
 const createWindow = async () => {
@@ -162,6 +158,7 @@ const createProfileWindow = async () => {
     width: 342,
     height: 688,
     icon: getAssetPath('icon.png'),
+    backgroundColor: '#000000',
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -241,7 +238,6 @@ app.on('window-all-closed', () => {
 app
   .whenReady()
   .then(() => {
-    // TODO: this is working on dev mode but not on prod
     loadExtensions();
     createProfileWindow();
     createWindow();
@@ -448,9 +444,8 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
 ipcMain.on(Channels.openOKXExtension, (event) => {
   profileWindow!.loadURL(OKX_WEB_APP_URL);
 
-  const extensionId = 'mcohilncbfahbmgdjkbpemcciiolgcge';
   if (okxWindow) {
-    okxWindow.loadURL(`chrome-extension://${extensionId}/home.html`);
+    okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
     okxWindow.show();
   }
 });
