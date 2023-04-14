@@ -74,6 +74,7 @@ const createWindow = async () => {
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
+    skipTaskbar: true,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -120,6 +121,8 @@ const createProfileWindow = async () => {
     height: 688,
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
+    parent: mainWindow || undefined,
+    skipTaskbar: true,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -130,7 +133,6 @@ const createProfileWindow = async () => {
   profileWindow.loadURL(resolveHtmlPath('profile.html'));
 
   profileWindow.setPosition(1300, 200);
-  profileWindow.setAlwaysOnTop(true, 'floating', 1);
 
   profileWindow.on('ready-to-show', () => {
     if (!profileWindow) {
@@ -171,6 +173,9 @@ const createOKXWindow = async () => {
     width: 360,
     height: 600,
     icon: getAssetPath('icon.png'),
+    parent: profileWindow || undefined,
+    modal: true,
+    skipTaskbar: true,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -179,8 +184,8 @@ const createOKXWindow = async () => {
   });
 
   okxWindow.setPosition(1295, 200);
-  okxWindow.setAlwaysOnTop(true, 'floating', 2);
 };
+
 /**
  * Add event listeners...
  */
