@@ -63,7 +63,7 @@ async function processEntriesInChunks(
   for (let i = 0; i < entries.length; i += 1) {
     chunks[chunkIndex].push(entries[i]);
     accumulatedSize += entries[i].size;
-    if(accumulatedSize>maxSize || chunks[chunkIndex].length>=concurrency){
+    if(accumulatedSize>maxSize || (chunks[chunkIndex].length>=concurrency)){
       console.log(`chunk formed, size:${accumulatedSize}, count:${chunks[chunkIndex].length}`);
       chunkIndex += 1;
       accumulatedSize = 0;
@@ -93,13 +93,13 @@ export async function extractWithProgress(
   destination: string,
   progressCallback: (chunkSize: number ,percent: number) => void
 ): Promise<void> {
-  const entries = (await getEntries(filePath)).sort((a,b)=>a.size - b.size);
+  const entries = (await getEntries(filePath)).filter((item)=> item.size>0).sort((a,b)=> b.name.length - a.name.length);
   const totalSize = entries.reduce((sum, entry) => sum + entry.size, 0);
   console.log(`entries count=${entries.length} totalSize=${totalSize}`);
 
   let extractedSize = 0;
 
-  const concurrency = 3;
+  const concurrency = 10;
 
   await processEntriesInChunks(
     filePath,
@@ -109,7 +109,7 @@ export async function extractWithProgress(
       console.log(`chunk processed size=${chunkSize}`);
       extractedSize += chunkSize;
       const percent = (extractedSize / totalSize) * 100;
-      progressCallback(chunkSize, percent);
+      progressCallback(extractedSize, percent);
     },
     concurrency
   );

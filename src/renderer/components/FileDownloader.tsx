@@ -20,6 +20,7 @@ function toShortSize(size : number){
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: { process, progress, localUserPath, isFinished, processingSize },
 }) => {
+  console.log("Rendering FileDownloader",  { process, progress, localUserPath, isFinished, processingSize });
   let className = 'ProcessButton';
   let buttonText = 'DOWNLOAD';
   let additionalInfo = null;

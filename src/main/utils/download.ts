@@ -33,7 +33,19 @@ export function downloadFileWithProgress(
   const filePath = path.join(localUserPath, 'game.zip');
 
   if(fileExists(filePath)){
-
+    console.warn("Download skipped");
+    eventsInstance.reply({
+      channel: Channels.changeState,
+      message: {
+        process: Processes.download,
+        progress: 100,
+        processingSize: 0,
+        localUserPath: '',
+        isFinished: true,
+      },
+    });
+    //progressCallback(100);
+    return;
   }
 
   const out = fs.createWriteStream(filePath);
