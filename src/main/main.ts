@@ -244,7 +244,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
   });
 });
 
-ipcMain.on(Channels.rendererError,async (event, payload) => {
+ipcMain.on(Channels.rendererError,async (_event, payload) => {
   (console as any)[payload.lvl](`From renderer: ${payload.message}`);
 })
 
