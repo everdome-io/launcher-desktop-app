@@ -5,16 +5,11 @@ import {
   AppUpdateStatus,
   Channels,
   CrossWindowState,
-  Processes,
+  initAppState,
 } from '@interfaces';
 import App from './App';
 
-let state: AppState = {
-  progress: 0,
-  localUserPath: '',
-  process: Processes.openDialog,
-  isFinished: false,
-};
+let state: AppState = initAppState;
 let updateState: AppUpdate = {
   status: AppUpdateStatus.nothing,
   message: null,
@@ -64,6 +59,14 @@ window.electron.ipcRenderer.on(
   Channels.crossWindow,
   (newCrossWindowState: CrossWindowState) => {
     crossWindowState = newCrossWindowState;
+    renderAppComponent();
+  }
+);
+
+window.electron.ipcRenderer.on(
+  Channels.acceptTerms,
+  (updatedState: AppState) => {
+    state = { ...updatedState, termsAccepted: true };
     renderAppComponent();
   }
 );

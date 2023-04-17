@@ -1,13 +1,13 @@
 import { createRoot } from 'react-dom/client';
-import { AppState, Channels, CrossWindowState, Processes } from '../interfaces';
+import {
+  AppState,
+  Channels,
+  CrossWindowState,
+  initAppState,
+} from '../interfaces';
 import UserProfile from './UserProfile';
 
-let state: AppState = {
-  progress: 0,
-  localUserPath: '',
-  process: Processes.openDialog,
-  isFinished: false,
-};
+let state: AppState = initAppState;
 
 let crossWindowState: CrossWindowState = {
   isAuthenticated: false,
@@ -30,7 +30,7 @@ window.electron.ipcRenderer.on(
       localUserPath:
         updatedState.localUserPath !== ''
           ? updatedState.localUserPath
-          : state.localUserPath,
+          : initAppState.localUserPath,
     };
     renderComponent();
   }

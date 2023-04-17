@@ -5,6 +5,7 @@ export enum Channels {
   extractProcess = 'extract-process',
   installationProcess = 'installation-process',
   showProfileWindow = 'show-profile-window',
+  acceptTerms = 'accept-terms',
 
   crossWindow = 'cross-window',
   changeState = 'change-state',
@@ -48,6 +49,7 @@ export type AppState = {
   isFinished: boolean;
   process: Processes;
   localUserPath: string;
+  termsAccepted: boolean;
 };
 
 export type CrossWindowState = {
@@ -67,3 +69,12 @@ export type ElectronEventArgs<T> = T extends Channels.changeState
   : T extends Channels.crossWindow
   ? CrossWindowState
   : never;
+
+// init states
+export const initAppState: AppState = {
+  progress: 0,
+  localUserPath: '',
+  process: Processes.openDialog,
+  isFinished: false,
+  termsAccepted: false,
+};

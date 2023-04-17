@@ -9,6 +9,7 @@ import { Hello, FileDownloader, Menu } from 'src/renderer/components';
 import headerImage from 'assets/images/Genesis_NFT.png';
 import { News } from './News';
 import './Welcome.css';
+import { TermsOfService } from './TermsOfService';
 
 export const Welcome: FC<{
   state: AppState;
@@ -22,17 +23,21 @@ export const Welcome: FC<{
   if (crossWindowState.errorMessage) {
     console.log(`Error message?: ${crossWindowState.errorMessage}`);
   }
-  return (
-    <div className="container">
-      <Menu />
-      <section className="mainSection">
-        <div className="welcomeMessage">
-          <Hello />
-          <FileDownloader state={state} />
-        </div>
-        <img src={headerImage} />
-      </section>
-      <News />
+  return state.termsAccepted ? (
+    <div className="main">
+      <div className="container">
+        <Menu />
+        <section className="mainSection">
+          <div className="welcomeMessage">
+            <Hello />
+            <FileDownloader state={state} />
+          </div>
+          <img src={headerImage} />
+        </section>
+        <News />
+      </div>
     </div>
+  ) : (
+    <TermsOfService />
   );
 };

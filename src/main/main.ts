@@ -13,7 +13,12 @@ import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
-import { AppUpdateStatus, Channels, Processes } from '../interfaces';
+import {
+  AppUpdateStatus,
+  Channels,
+  Processes,
+  initAppState,
+} from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
 import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
@@ -251,6 +256,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
+      ...initAppState,
       process: Processes.download,
       progress: 0,
       localUserPath: '',
@@ -262,6 +268,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
+        ...initAppState,
         process: Processes.download,
         progress,
         localUserPath: '',
@@ -277,6 +284,7 @@ ipcMain.on(Channels.installationProcess, async function (event, userPath) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
+      ...initAppState,
       process: Processes.installation,
       progress: null,
       localUserPath: '',
@@ -296,6 +304,7 @@ ipcMain.on(Channels.openDialog, async function (event) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
+      ...initAppState,
       process: Processes.openDialog,
       progress: null,
       localUserPath: localUserPath.filePaths[0],
@@ -310,6 +319,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
+      ...initAppState,
       process: Processes.extract,
       progress: 0,
       localUserPath: '',
@@ -325,6 +335,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
+          ...initAppState,
           process: Processes.extract,
           progress,
           localUserPath: '',
@@ -338,6 +349,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
+          ...initAppState,
           process: Processes.extract,
           progress: 100,
           localUserPath: '',
@@ -436,4 +448,10 @@ ipcMain.on(Channels.openOKXExtension, (event) => {
     okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
     okxWindow.show();
   }
+});
+
+ipcMain.on(Channels.acceptTerms, (event) => {
+  mainWindow?.webContents.send(Channels.acceptTerms, {
+    termsAccepted: true,
+  });
 });
