@@ -444,3 +444,9 @@ ipcMain.on(Channels.openOKXExtension, (event) => {
     okxWindow.show();
   }
 });
+
+ipcMain.on(Channels.acceptTerms, (event) => {
+  mainWindow?.webContents.send(Channels.acceptTerms, {
+    termsAccepted: true,
+  });
+});

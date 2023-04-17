@@ -61,3 +61,11 @@ window.electron.ipcRenderer.on(
     renderAppComponent();
   }
 );
+
+window.electron.ipcRenderer.on(
+  Channels.acceptTerms,
+  (updatedState: AppState) => {
+    state = { ...updatedState, termsAccepted: true };
+    renderAppComponent();
+  }
+);

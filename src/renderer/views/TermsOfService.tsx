@@ -2,8 +2,12 @@ import { FC } from 'react';
 import OKX_Framed from 'assets/images/OKX_Framed.png';
 import logo from 'assets/images/logo.png';
 import './TermsOfService.css';
+import { Channels } from '@interfaces';
 
 export const TermsOfService: FC = () => {
+  const acceptTerms = () => {
+    window.electron.ipcRenderer.sendMessage(Channels.acceptTerms);
+  };
   return (
     <div className="tosContainer">
       <div className="banner">
@@ -33,7 +37,9 @@ export const TermsOfService: FC = () => {
           <span className="indicator"></span>
           <span className="inputLabel">I am over 18 years old</span>
         </label>
-        <button className="tosCTA">I read and accept terms & conditions</button>
+        <button className="tosCTA" onClick={acceptTerms}>
+          I read and accept terms & conditions
+        </button>
       </div>
     </div>
   );

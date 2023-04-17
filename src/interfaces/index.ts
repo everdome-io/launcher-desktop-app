@@ -5,6 +5,7 @@ export enum Channels {
   extractProcess = 'extract-process',
   installationProcess = 'installation-process',
   showProfileWindow = 'show-profile-window',
+  acceptTerms = 'accept-terms',
 
   crossWindow = 'cross-window',
   changeState = 'change-state',
