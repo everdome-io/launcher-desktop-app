@@ -20,6 +20,9 @@ export const Welcome: FC<{
     console.log(`update error ${updateState.message}`);
   }
   console.log(`Is user authenticated?: ${crossWindowState.isAuthenticated}`);
+  if (crossWindowState.errorMessage) {
+    console.log(`Error message?: ${crossWindowState.errorMessage}`);
+  }
   return state.termsAccepted ? (
     <div className="main">
       <div className="container">
@@ -28,9 +31,6 @@ export const Welcome: FC<{
           <div className="welcomeMessage">
             <Hello />
             <FileDownloader state={state} />
-            {crossWindowState.errorMessage && (
-              <span>{crossWindowState.errorMessage}</span>
-            )}
           </div>
           <img src={headerImage} />
         </section>

@@ -152,41 +152,34 @@ const createProfileWindow = async () => {
     }
   });
 
-  profileWindow.webContents.on('did-navigate', (event, url) => {
+  profileWindow.webContents.on('did-navigate', async (event, url) => {
     if (url.includes('/success')) {
-      mainWindow?.webContents.send(Channels.crossWindow, {
-        isAuthenticated: false,
-        errorMessage: 'Success page',
-      });
-      profileWindow?.loadURL(resolveHtmlPath('profile.html'));
+      await profileWindow?.loadURL(resolveHtmlPath('profile.html'));
       okxWindow?.hide();
       const userId = store.get('userId') as string | undefined;
       if (userId) {
-        fetch(`https://backend.prod.aws.everdome.io/user/${userId}`)
+        await fetch(`https://backend.prod.aws.everdome.io/user/${userId}`)
           .then((response) => {
             if (!response.ok) {
               throw new Error('Error fetching user data');
             }
             return response.json();
           })
-          .then((data) => {
-            console.log('data', data);
-            profileWindow?.webContents.send(Channels.crossWindow, {
-              isAuthenticated: true,
-            });
-            mainWindow?.webContents.send(Channels.crossWindow, {
-              isAuthenticated: true,
-            });
-          })
           .catch((error) => {
             mainWindow?.webContents.send(Channels.crossWindow, {
-              isAuthenticated: false,
-              errorMessage: error?.toString(),
+              isAuthenticated: true,
+              errorMessage: error.toString(),
             });
           });
+        profileWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+        });
+        mainWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+        });
       } else {
         mainWindow?.webContents.send(Channels.crossWindow, {
-          isAuthenticated: false,
+          isAuthenticated: true,
           errorMessage: 'No userId',
         });
       }
@@ -455,10 +448,6 @@ ipcMain.on(Channels.openOKXExtension, (event) => {
     okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
     okxWindow.show();
   }
-  mainWindow?.webContents.send(Channels.crossWindow, {
-    isAuthenticated: false,
-    errorMessage: 'Opened openOKXExtension',
-  });
 });
 
 ipcMain.on(Channels.acceptTerms, (event) => {
