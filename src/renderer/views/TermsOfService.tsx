@@ -14,9 +14,10 @@ export const TermsOfService: FC = () => {
         </p>
       </div>
       <div className="tosForm">
-        <div className="checkbox">
-          <input type="checkbox" name="tos" id="tos" />
-          <label htmlFor="tos">
+        <label className="checkbox">
+          <input type="checkbox" />
+          <span className="indicator"></span>
+          <span className="inputLabel">
             I agree to{' '}
             <a
               className="tosPDF"
@@ -25,12 +26,13 @@ export const TermsOfService: FC = () => {
             >
               terms & conditions
             </a>
-          </label>
-        </div>
-        <div className="checkbox">
-          <input type="checkbox" name="age" id="age" />
-          <label htmlFor="age">I am over 18 years old</label>
-        </div>
+          </span>
+        </label>
+        <label className="checkbox">
+          <input type="checkbox" />
+          <span className="indicator"></span>
+          <span className="inputLabel">I am over 18 years old</span>
+        </label>
         <button className="tosCTA">I read and accept terms & conditions</button>
       </div>
     </div>
