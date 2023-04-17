@@ -6,12 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
 
 body {
-  margin: 20px 50px;
   font-family: 'Rajdhani', sans-serif;
   color: white;
-  background-color: #04374D;
-  background-image: url('../../assets/images/img-bg.png');
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 button {

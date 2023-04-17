@@ -1,0 +1,76 @@
+@import url(//db.onlinewebfonts.com/c/876476f9c21d688286b0ec4bf47013a7?family=HarmonyOS+Sans);
+
+.tosContainer {
+  font-family: 'HarmonyOS Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+.banner {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.poweredBy {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.poweredBy img {
+  margin-left: 16px;
+}
+
+.tosForm {
+  margin-top: 150px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkbox {
+  height: 24px;
+  margin-bottom: 16px;
+}
+
+.checkbox label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+a.tosPDF {
+  margin: 0;
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.tosCTA {
+  background: #3BD6FF;
+  box-shadow: 0px 64px 67px rgba(0, 0, 0, 0.06), 0px 23.3611px 24.4561px rgba(0, 0, 0, 0.0413989), 0px 11.3414px 11.873px rgba(0, 0, 0, 0.0333774), 0px 5.55974px 5.82036px rgba(0, 0, 0, 0.0266226), 0px 2.19833px 2.30138px rgba(0, 0, 0, 0.0186011);
+  border-radius: 38px;
+  width: 444px;
+  height: 56px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 64px;
+  align-self: center;
+}
+
+.tosCTA:hover {
+  background-color: #fff;
+}
