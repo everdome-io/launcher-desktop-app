@@ -22,6 +22,7 @@ let updateState: AppUpdate = {
 
 let crossWindowState: CrossWindowState = {
   isAuthenticated: false,
+  errorMessage: '',
 };
 
 const container = document.getElementById('root')!;

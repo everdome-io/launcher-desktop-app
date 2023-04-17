@@ -149,6 +149,10 @@ const createProfileWindow = async () => {
 
   profileWindow.webContents.on('did-navigate', (event, url) => {
     if (url.includes('/success')) {
+      mainWindow?.webContents.send(Channels.crossWindow, {
+        isAuthenticated: false,
+        errorMessage: 'Success page',
+      });
       profileWindow?.loadURL(resolveHtmlPath('profile.html'));
       okxWindow?.hide();
       const userId = store.get('userId') as string | undefined;
@@ -170,8 +174,16 @@ const createProfileWindow = async () => {
             });
           })
           .catch((error) => {
-            console.log(error);
+            mainWindow?.webContents.send(Channels.crossWindow, {
+              isAuthenticated: false,
+              errorMessage: error?.toString(),
+            });
           });
+      } else {
+        mainWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: false,
+          errorMessage: 'No userId',
+        });
       }
     }
   });
@@ -431,4 +443,8 @@ ipcMain.on(Channels.openOKXExtension, (event) => {
     okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
     okxWindow.show();
   }
+  mainWindow?.webContents.send(Channels.crossWindow, {
+    isAuthenticated: false,
+    errorMessage: 'Opened openOKXExtension',
+  });
 });

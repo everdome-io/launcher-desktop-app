@@ -26,6 +26,9 @@ export const Welcome: FC<{
         <div className="welcomeMessage">
           <Hello />
           <FileDownloader state={state} />
+          {crossWindowState.errorMessage && (
+            <span>{crossWindowState.errorMessage}</span>
+          )}
         </div>
         <img src={headerImage} />
       </section>
