@@ -1,5 +1,5 @@
 import { AppState, Channels, CrossWindowState } from '@interfaces';
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
 import settingsIcon from 'assets/images/settings-icon.png';
@@ -10,22 +10,17 @@ export const ProfileDetails: FC<{
   state: AppState;
   crossWindowState: CrossWindowState;
 }> = ({ state, crossWindowState }) => {
-  const [isLogged, setIsLogged] = useState(false);
-
   const connectWallet = () => {
     window.electron.ipcRenderer.sendMessage(Channels.openOKXExtension);
   };
 
-  useEffect(() => {
-    if (crossWindowState.isAuthenticated) {
-      setIsLogged(true);
-    }
-  }, [crossWindowState]);
-
   return (
     <div className="container">
-      {isLogged && (
-        <div className="UserProfileHeader" hidden={!isLogged}>
+      {crossWindowState.isAuthenticated && (
+        <div
+          className="UserProfileHeader"
+          hidden={!crossWindowState.isAuthenticated}
+        >
           <div className="UserInfo">
             <img src={profileIcon} width="40" height="40" alt="" />
             <div className="UserDetails">
@@ -44,7 +39,7 @@ export const ProfileDetails: FC<{
         </div>
       )}
       <div>
-        <div className="Wallet" hidden={!isLogged}>
+        <div className="Wallet" hidden={!crossWindowState.isAuthenticated}>
           <div className="WalletItem">
             <h5>Wallet</h5>
             <div className="WalletItemDetails">
@@ -61,7 +56,7 @@ export const ProfileDetails: FC<{
             </div>
           </div>
         </div>
-        {!isLogged && (
+        {!crossWindowState.isAuthenticated && (
           <div className="NotConnected">
             <button className="CTAButton ConnectWallet" onClick={connectWallet}>
               Connect Wallet
