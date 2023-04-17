@@ -9,10 +9,16 @@ let state: AppState = {
   isFinished: false,
 };
 
+let crossWindowState: CrossWindowState = {
+  isAuthenticated: false,
+};
+
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 function renderComponent() {
-  root.render(<UserProfile state={state} />);
+  root.render(
+    <UserProfile state={state} crossWindowState={crossWindowState} />
+  );
 }
 renderComponent();
 
@@ -26,6 +32,14 @@ window.electron.ipcRenderer.on(
           ? updatedState.localUserPath
           : state.localUserPath,
     };
+    renderComponent();
+  }
+);
+
+window.electron.ipcRenderer.on(
+  Channels.crossWindow,
+  (newCrossWindowState: CrossWindowState) => {
+    crossWindowState = newCrossWindowState;
     renderComponent();
   }
 );

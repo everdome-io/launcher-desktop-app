@@ -1,5 +1,6 @@
 import { URL } from 'url';
 import path from 'path';
+import * as uuid1 from 'uuid';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -43,3 +44,5 @@ export function getDownloadLink(): string {
       return '';
   }
 }
+
+export const uuid = uuid1.v4;
