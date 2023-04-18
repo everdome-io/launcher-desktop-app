@@ -450,7 +450,8 @@ ipcMain.on(Channels.openOKXExtension, (event) => {
   }
 });
 
-ipcMain.on(Channels.acceptTerms, (event) => {
+ipcMain.on(Channels.acceptTerms, (_event) => {
+  store.set('termsAccepted', true);
   mainWindow?.webContents.send(Channels.acceptTerms, {
     termsAccepted: true,
   });

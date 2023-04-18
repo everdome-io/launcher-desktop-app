@@ -99,11 +99,11 @@ a.tosPDF {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  cursor: pointer;
   margin-top: 64px;
   align-self: center;
 }
 
-.tosCTA:hover {
+.tosCTA:not(:disabled):hover {
   background-color: #fff;
+  cursor: pointer;
 }
