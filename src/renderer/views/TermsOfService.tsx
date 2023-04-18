@@ -1,13 +1,16 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import OKX_Framed from 'assets/images/OKX_Framed.png';
 import logo from 'assets/images/logo.png';
 import './TermsOfService.css';
 import { Channels } from '@interfaces';
 
 export const TermsOfService: FC = () => {
+  const [isTermsChecked, setIsTermsChecked] = useState(false);
+  const [isAgeChecked, setIsAgeChecked] = useState(false);
   const acceptTerms = () => {
     window.electron.ipcRenderer.sendMessage(Channels.acceptTerms);
   };
+
   return (
     <div className="tosContainer">
       <div className="banner">
@@ -19,7 +22,10 @@ export const TermsOfService: FC = () => {
       </div>
       <div className="tosForm">
         <label className="checkbox">
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            onChange={(e) => setIsTermsChecked(e.target.checked)}
+          />
           <span className="indicator"></span>
           <span className="inputLabel">
             I agree to{' '}
@@ -33,11 +39,18 @@ export const TermsOfService: FC = () => {
           </span>
         </label>
         <label className="checkbox">
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            onChange={(e) => setIsAgeChecked(e.target.checked)}
+          />
           <span className="indicator"></span>
           <span className="inputLabel">I am over 18 years old</span>
         </label>
-        <button className="tosCTA" onClick={acceptTerms}>
+        <button
+          className="tosCTA"
+          onClick={acceptTerms}
+          disabled={!isTermsChecked || !isAgeChecked}
+        >
           I read and accept terms & conditions
         </button>
       </div>
