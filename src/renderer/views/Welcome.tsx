@@ -15,14 +15,10 @@ export const Welcome: FC<{
   state: AppState;
   updateState: AppUpdate;
   crossWindowState: CrossWindowState;
-}> = ({ state, updateState, crossWindowState }) => {
+}> = ({ state }) => {
   const termsAccepted =
     window.electron.store.get('termsAccepted') || state.termsAccepted;
 
-  console.log(
-    `store.get('termsAccepted')`,
-    window.electron.store.get('termsAccepted')
-  );
   return termsAccepted ? (
     <div className="main">
       <div className="container">
