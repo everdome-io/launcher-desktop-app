@@ -16,14 +16,14 @@ export const Welcome: FC<{
   updateState: AppUpdate;
   crossWindowState: CrossWindowState;
 }> = ({ state, updateState, crossWindowState }) => {
-  if (updateState.status === AppUpdateStatus.error) {
-    console.log(`update error ${updateState.message}`);
-  }
-  console.log(`Is user authenticated?: ${crossWindowState.isAuthenticated}`);
-  if (crossWindowState.errorMessage) {
-    console.log(`Error message?: ${crossWindowState.errorMessage}`);
-  }
-  return state.termsAccepted ? (
+  const termsAccepted =
+    window.electron.store.get('termsAccepted') || state.termsAccepted;
+
+  console.log(
+    `store.get('termsAccepted')`,
+    window.electron.store.get('termsAccepted')
+  );
+  return termsAccepted ? (
     <div className="main">
       <div className="container">
         <Menu />
