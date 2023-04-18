@@ -142,13 +142,15 @@ const createProfileWindow = async () => {
   profileWindow.setPosition(1100, 100);
 
   profileWindow.on('ready-to-show', () => {
-    if (!profileWindow) {
-      throw new Error('"profileWindow" is not defined');
-    }
-    if (process.env.START_MINIMIZED) {
-      profileWindow.minimize();
-    } else {
-      profileWindow.show();
+    if (store.get('termsAccepted')) {
+      if (!profileWindow) {
+        throw new Error('"profileWindow" is not defined');
+      }
+      if (process.env.START_MINIMIZED) {
+        profileWindow.minimize();
+      } else {
+        profileWindow.show();
+      }
     }
   });
 
@@ -455,6 +457,7 @@ ipcMain.on(Channels.acceptTerms, (_event) => {
   mainWindow?.webContents.send(Channels.acceptTerms, {
     termsAccepted: true,
   });
+  profileWindow?.show();
 });
 
 ipcMain.on('electron-store-get', async (event, val) => {
