@@ -19,6 +19,10 @@ export const Main: FC<{
     window.electron.store.get('termsAccepted') || false
   );
 
+  if (crossWindowState.errorMessage) {
+    console.log(`Error message?: ${crossWindowState.errorMessage}`);
+  }
+
   const renderView = () => {
     if (!termsAccepted && !crossWindowState.isAuthenticated) {
       return <TermsOfService onAccept={() => setTermsAccepted(true)} />;

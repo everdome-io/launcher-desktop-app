@@ -162,7 +162,14 @@ const createProfileWindow = async () => {
       store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;
       if (userId) {
-        await getUserFromAPI({ userId, mainWindow });
+        await getUserFromAPI({
+          userId,
+          handleError: (err: any) =>
+            mainWindow?.webContents.send(Channels.crossWindow, {
+              isAuthenticated: true,
+              errorMessage: err.toString(),
+            }),
+        });
         profileWindow?.webContents.send(Channels.crossWindow, {
           isAuthenticated: true,
         });

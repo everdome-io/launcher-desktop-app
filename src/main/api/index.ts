@@ -1,16 +1,13 @@
-import { Channels } from '../../interfaces';
-import { BrowserWindow } from 'electron';
-
 const BACKEND_URL = 'https://backend.prod.aws.everdome.io';
 
 export async function getUserFromAPI({
   userId,
-  mainWindow,
+  handleError,
 }: {
   userId: string;
-  mainWindow: BrowserWindow | null;
+  handleError: (err: any) => void;
 }) {
-  await fetch(`${BACKEND_URL}/user/${userId}`)
+  await fetch(`${BACKEND_URL}/users/${userId}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error('Error fetching user data');
@@ -18,9 +15,6 @@ export async function getUserFromAPI({
       return response.json();
     })
     .catch((error) => {
-      mainWindow?.webContents.send(Channels.crossWindow, {
-        isAuthenticated: true,
-        errorMessage: error.toString(),
-      });
+      handleError(error);
     });
 }
