@@ -1,19 +1,16 @@
-import { AppState, Channels, CrossWindowState } from '@interfaces';
+import { AppState, CrossWindowState } from '@interfaces';
 import { FC } from 'react';
 import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
 import settingsIcon from 'assets/images/settings-icon.png';
 import iconDOME from 'assets/images/icon_DOME.png';
 import './ProfileDetails.css';
+import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 
 export const ProfileDetails: FC<{
   state: AppState;
   crossWindowState: CrossWindowState;
-}> = ({ state, crossWindowState }) => {
-  const connectWallet = () => {
-    window.electron.ipcRenderer.sendMessage(Channels.openOKXExtension);
-  };
-
+}> = ({ crossWindowState }) => {
   return (
     <div className="container">
       {crossWindowState.isAuthenticated && (
@@ -58,9 +55,7 @@ export const ProfileDetails: FC<{
         </div>
         {!crossWindowState.isAuthenticated && (
           <div className="NotConnected">
-            <button className="CTAButton ConnectWallet" onClick={connectWallet}>
-              Connect Wallet
-            </button>
+            <ConnectOKXWallet fromProfileWindow={true} />
           </div>
         )}
       </div>

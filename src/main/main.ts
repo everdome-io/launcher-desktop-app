@@ -221,6 +221,21 @@ const createOKXWindow = async () => {
   });
 
   okxWindow.setPosition(1095, 100);
+
+  okxWindow.on('ready-to-show', () => {
+    if (!okxWindow) {
+      throw new Error('"okxWindow" is not defined');
+    }
+    if (process.env.START_MINIMIZED) {
+      okxWindow.minimize();
+    } else {
+      okxWindow.show();
+    }
+  });
+
+  okxWindow.on('closed', () => {
+    okxWindow = null;
+  });
 };
 
 /**
@@ -427,30 +442,39 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
   if (state === true) profileWindow?.show();
 });
 
-ipcMain.on(Channels.openOKXExtension, (event) => {
-  let userId: string;
-  const storeUserId = store.get('userId') as undefined | string;
-  if (storeUserId) {
-    userId = storeUserId;
-  } else {
-    userId = uuid();
-    store.set('userId', userId);
-  }
-  const finalUrl = `${OKX_WEB_APP_URL}?userId=${userId}`;
-  profileWindow!
-    .loadURL(finalUrl)
-    .then(() => {
-      okxWindow!.focus();
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+ipcMain.on(
+  Channels.openOKXExtension,
+  (_event, state: { fromProfileWindow: boolean }) => {
+    if (!state.fromProfileWindow) {
+      profileWindow?.hide();
+    }
+    let userId: string;
+    const storeUserId = store.get('userId') as undefined | string;
+    if (storeUserId) {
+      userId = storeUserId;
+    } else {
+      userId = uuid();
+      store.set('userId', userId);
+    }
+    const finalUrl = `${OKX_WEB_APP_URL}?userId=${userId}`;
+    profileWindow!
+      .loadURL(finalUrl)
+      .then(() => {
+        okxWindow!.focus();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 
-  if (okxWindow) {
-    okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
-    okxWindow.show();
+    if (okxWindow === null) {
+      createOKXWindow();
+    }
+    if (okxWindow) {
+      okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
+      okxWindow.show();
+    }
   }
-});
+);
 
 ipcMain.on(Channels.acceptTerms, (_event) => {
   store.set('termsAccepted', true);
