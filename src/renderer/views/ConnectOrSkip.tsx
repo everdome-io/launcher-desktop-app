@@ -16,7 +16,9 @@ export const ConnectOrSkip: FC<ConnectOrSkipProps> = ({ onSkip }) => {
     <div className="cosContainer">
       <ConnectOKXWallet fromProfileWindow={false} />
 
-      <button onClick={skipConnect}>Skip</button>
+      <button className="skipBtn" onClick={skipConnect}>
+        Skip
+      </button>
     </div>
   );
 };

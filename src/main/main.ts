@@ -25,6 +25,7 @@ import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
+import { getUserFromAPI } from './api';
 
 const store = new Store();
 
@@ -158,21 +159,10 @@ const createProfileWindow = async () => {
     if (url.includes('/success')) {
       await profileWindow?.loadURL(resolveHtmlPath('profile.html'));
       okxWindow?.hide();
+      store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;
       if (userId) {
-        await fetch(`https://backend.prod.aws.everdome.io/user/${userId}`)
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error('Error fetching user data');
-            }
-            return response.json();
-          })
-          .catch((error) => {
-            mainWindow?.webContents.send(Channels.crossWindow, {
-              isAuthenticated: true,
-              errorMessage: error.toString(),
-            });
-          });
+        await getUserFromAPI({ userId, mainWindow });
         profileWindow?.webContents.send(Channels.crossWindow, {
           isAuthenticated: true,
         });
@@ -185,6 +175,7 @@ const createProfileWindow = async () => {
           errorMessage: 'No userId',
         });
       }
+      profileWindow?.show();
     }
   });
 
@@ -209,9 +200,6 @@ const createOKXWindow = async () => {
     height: 600,
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
-    parent: profileWindow || undefined,
-    modal: true,
-    autoHideMenuBar: true,
     frame: false,
     webPreferences: {
       preload: app.isPackaged
@@ -219,8 +207,6 @@ const createOKXWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
-
-  okxWindow.setPosition(1095, 100);
 
   okxWindow.on('ready-to-show', () => {
     if (!okxWindow) {
@@ -445,20 +431,9 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
 ipcMain.on(
   Channels.openOKXExtension,
   (_event, state: { fromProfileWindow: boolean }) => {
-    if (!state.fromProfileWindow) {
-      profileWindow?.hide();
-    }
-    let userId: string;
-    const storeUserId = store.get('userId') as undefined | string;
-    if (storeUserId) {
-      userId = storeUserId;
-    } else {
-      userId = uuid();
-      store.set('userId', userId);
-    }
-    const finalUrl = `${OKX_WEB_APP_URL}?userId=${userId}`;
+    const userId = handleUserId();
     profileWindow!
-      .loadURL(finalUrl)
+      .loadURL(`${OKX_WEB_APP_URL}?userId=${userId}`)
       .then(() => {
         okxWindow!.focus();
       })
@@ -471,6 +446,11 @@ ipcMain.on(
     }
     if (okxWindow) {
       okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
+      if (state.fromProfileWindow) {
+        okxWindow.setPosition(1095, 100);
+      } else {
+        okxWindow.center();
+      }
       okxWindow.show();
     }
   }
@@ -504,3 +484,15 @@ ipcMain.on('electron-store-set', async (event, key, val) => {
 ipcMain.on('dev:clear-store', async (event) => {
   store.clear();
 });
+
+const handleUserId = () => {
+  let userId: string;
+  const storeUserId = store.get('userId') as undefined | string;
+  if (storeUserId) {
+    userId = storeUserId;
+  } else {
+    userId = uuid();
+    store.set('userId', userId);
+  }
+  return userId;
+};

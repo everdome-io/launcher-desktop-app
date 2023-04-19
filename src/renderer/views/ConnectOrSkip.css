@@ -7,3 +7,14 @@
   width: 100%;
   background-color: #000;
 }
+
+.skipBtn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  appearance: none;
+  font-family: inherit;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+}

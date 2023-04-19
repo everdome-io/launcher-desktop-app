@@ -5,13 +5,13 @@ import headerImage from 'assets/images/Genesis_NFT.png';
 import { News } from './News';
 import { TermsOfService } from './TermsOfService';
 import { ConnectOrSkip } from './ConnectOrSkip';
-import './Welcome.css';
+import './Main.css';
 
 export const Main: FC<{
   state: AppState;
   updateState: AppUpdate;
   crossWindowState: CrossWindowState;
-}> = ({ state }) => {
+}> = ({ state, crossWindowState }) => {
   const [connectedOrSkipped, setConnectedOrSkipped] = useState(
     window.electron.store.get('connectedOrSkipped') || false
   );
@@ -20,10 +20,10 @@ export const Main: FC<{
   );
 
   const renderView = () => {
-    if (!termsAccepted) {
+    if (!termsAccepted && !crossWindowState.isAuthenticated) {
       return <TermsOfService onAccept={() => setTermsAccepted(true)} />;
     }
-    if (!connectedOrSkipped) {
+    if (!connectedOrSkipped && !crossWindowState.isAuthenticated) {
       return <ConnectOrSkip onSkip={() => setConnectedOrSkipped(true)} />;
     }
     return (
