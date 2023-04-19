@@ -1,0 +1,47 @@
+import { AppState, AppUpdate, CrossWindowState } from '@interfaces';
+import { FC, useState } from 'react';
+import { Hello, FileDownloader, Menu } from 'src/renderer/components';
+import headerImage from 'assets/images/Genesis_NFT.png';
+import { News } from './News';
+import { TermsOfService } from './TermsOfService';
+import { ConnectOrSkip } from './ConnectOrSkip';
+import './Welcome.css';
+
+export const Main: FC<{
+  state: AppState;
+  updateState: AppUpdate;
+  crossWindowState: CrossWindowState;
+}> = ({ state }) => {
+  const [connectedOrSkipped, setConnectedOrSkipped] = useState(
+    window.electron.store.get('connectedOrSkipped') || false
+  );
+  const [termsAccepted, setTermsAccepted] = useState(
+    window.electron.store.get('termsAccepted') || false
+  );
+
+  const renderView = () => {
+    if (!termsAccepted) {
+      return <TermsOfService onAccept={() => setTermsAccepted(true)} />;
+    }
+    if (!connectedOrSkipped) {
+      return <ConnectOrSkip onSkip={() => setConnectedOrSkipped(true)} />;
+    }
+    return (
+      <div className="main">
+        <div className="container">
+          <Menu />
+          <section className="mainSection">
+            <div className="welcomeMessage">
+              <Hello />
+              <FileDownloader state={state} />
+            </div>
+            <img src={headerImage} />
+          </section>
+          <News />
+        </div>
+      </div>
+    );
+  };
+
+  return renderView();
+};

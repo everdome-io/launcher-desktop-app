@@ -6,6 +6,7 @@ export enum Channels {
   installationProcess = 'installation-process',
   showProfileWindow = 'show-profile-window',
   acceptTerms = 'accept-terms',
+  connectedOrSkipped = 'connected-or-skipped',
 
   crossWindow = 'cross-window',
   changeState = 'change-state',
@@ -49,7 +50,6 @@ export type AppState = {
   isFinished: boolean;
   process: Processes;
   localUserPath: string;
-  termsAccepted: boolean;
 };
 
 export type CrossWindowState = {
@@ -76,5 +76,4 @@ export const initAppState: AppState = {
   localUserPath: '',
   process: Processes.openDialog,
   isFinished: false,
-  termsAccepted: false,
 };

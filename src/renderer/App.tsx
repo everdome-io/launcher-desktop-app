@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppState, AppUpdate, CrossWindowState } from '../interfaces';
 import './App.css';
-import { Welcome } from './views/Welcome';
+import { Main } from './views/Main';
 
 const App: FC<{
   state: AppState;
@@ -15,7 +15,7 @@ const App: FC<{
         <Route
           path="/"
           element={
-            <Welcome
+            <Main
               state={state}
               updateState={updateState}
               crossWindowState={crossWindowState}
