@@ -500,3 +500,7 @@ ipcMain.on('electron-store-get', async (event, val) => {
 ipcMain.on('electron-store-set', async (event, key, val) => {
   store.set(key, val);
 });
+
+ipcMain.on('dev:clear-store', async (event) => {
+  store.clear();
+});

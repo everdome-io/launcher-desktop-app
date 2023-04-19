@@ -6,6 +6,7 @@ import settingsIcon from 'assets/images/settings-icon.png';
 import iconDOME from 'assets/images/icon_DOME.png';
 import './ProfileDetails.css';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
+import { ClearStore } from '@renderer/components/ClearStore';
 
 export const ProfileDetails: FC<{
   state: AppState;
@@ -13,6 +14,7 @@ export const ProfileDetails: FC<{
 }> = ({ crossWindowState }) => {
   return (
     <div className="container">
+      <ClearStore />
       {crossWindowState.isAuthenticated && (
         <div
           className="UserProfileHeader"
