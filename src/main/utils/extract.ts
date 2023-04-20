@@ -48,28 +48,46 @@ async function processEntriesInChunks(
 ): Promise<void> {
   const chunks: StreamZip.ZipEntry[][] = [];
 
-  for (let i = 0; i < entries.length; i += concurrency) {
-    chunks.push(entries.slice(i, i + concurrency));
+  let accumulatedSize = 0;
+  let chunkIndex = 0;
+  const maxSize = 10 * 1024 * 1024;
+  chunks.push([]);
+  for (let i = 0; i < entries.length; i += 1) {
+    chunks[chunkIndex].push(entries[i]);
+    accumulatedSize += entries[i].size;
+    if (accumulatedSize > maxSize || chunks[chunkIndex].length >= concurrency) {
+      console.log(
+        `chunk formed, size:${accumulatedSize}, count:${chunks[chunkIndex].length}`
+      );
+      chunkIndex += 1;
+      accumulatedSize = 0;
+      chunks.push([]);
+    }
   }
 
+  let counter = 0;
   // eslint-disable-next-line no-restricted-syntax
   for (const chunk of chunks) {
+    counter += 1;
+    const totalSize = chunk.reduce((prev, next) => prev + next.size, 0);
+    progressCallback(totalSize);
+
     const extractPromises = chunk.map((entry) =>
       extractEntry(filePath, entry, destination)
     );
-    const extractedSizes = await Promise.all(extractPromises);
-
-    const chunkSize = extractedSizes.reduce((sum, size) => sum + size, 0);
-    progressCallback(chunkSize);
+    await Promise.all(extractPromises);
   }
 }
 
 export async function extractWithProgress(
   filePath: string,
   destination: string,
-  progressCallback: (percent: number) => void
+  progressCallback: (chunkSize: number, percent: number) => void
 ): Promise<void> {
-  const entries = await getEntries(filePath);
+  const entries = (await getEntries(filePath))
+    .filter((item) => item.size > 0)
+    .sort((a, b) => b.name.length - a.name.length);
+
   const totalSize = entries.reduce((sum, entry) => sum + entry.size, 0);
 
   let extractedSize = 0;
@@ -83,7 +101,7 @@ export async function extractWithProgress(
     (chunkSize: number) => {
       extractedSize += chunkSize;
       const percent = (extractedSize / totalSize) * 100;
-      progressCallback(percent);
+      progressCallback(extractedSize, percent);
     },
     concurrency
   );

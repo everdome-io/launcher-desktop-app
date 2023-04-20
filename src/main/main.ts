@@ -68,7 +68,7 @@ const getAssetPath = (...paths: string[]): string => {
 };
 
 const loadExtensions = async () => {
-  return await session.defaultSession.loadExtension(
+  return await session.defaultSession.loadExtension(//TODO: Ten Await na pewno ma tu być ?
     getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`)
   );
 };
@@ -271,10 +271,15 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
       progress: 0,
       localUserPath: '',
       isFinished: false,
+      processingSize: null,
     },
   });
+  let prevProgress = 0;
   downloadFileWithProgress(localUserPath, webLink, event, (progress) => {
-    console.log(`Downloaded ${progress.toFixed(2)}%`);
+    if (progress - prevProgress >= 0.1) {
+      console.log(`Downloaded ${progress.toFixed(2)}%`);
+      prevProgress = progress;
+    }
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
@@ -283,6 +288,7 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
         progress,
         localUserPath: '',
         isFinished: false,
+        processingSize: 0,
       },
     });
   });
@@ -299,6 +305,7 @@ ipcMain.on(Channels.installationProcess, async function (event, userPath) {
       progress: null,
       localUserPath: '',
       isFinished: false,
+      processingSize: 0,
     },
   });
   installEverdome(userPath);
@@ -319,6 +326,7 @@ ipcMain.on(Channels.openDialog, async function (event) {
       progress: null,
       localUserPath: localUserPath.filePaths[0],
       isFinished: false,
+      processingSize: 0,
     },
   });
 });
@@ -326,11 +334,14 @@ ipcMain.on(Channels.openDialog, async function (event) {
 ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   const eventsInstance = eventsClient(event);
 
+  //TODO: Add Sentry log on started extraction
+
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
       ...initAppState,
       process: Processes.extract,
+      processingSize: 0,
       progress: 0,
       localUserPath: '',
       isFinished: false,
@@ -340,7 +351,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   await extractWithProgress(
     path.join(localFile.filepath, 'game.zip'),
     localFile.filepath,
-    (progress) => {
+    (chunkSize : number ,progress : number) => {
       console.log(`Extraction progress: ${progress.toFixed(2)}%`);
       eventsInstance.reply({
         channel: Channels.changeState,
@@ -350,6 +361,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
           progress,
           localUserPath: '',
           isFinished: false,
+          processingSize: chunkSize,
         },
       });
     }
@@ -364,11 +376,22 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
           progress: 100,
           localUserPath: '',
           isFinished: true,
+          processingSize: 0,
         },
       });
     })
     .catch((error) => {
       console.error('Error during extraction:', error);
+      eventsInstance.reply({
+        channel: Channels.changeState,
+        message: {
+          process: Processes.error,
+          progress: 100,
+          processingSize: 0,
+          localUserPath: '',
+          isFinished: true,
+        },
+      });
     });
 });
 
