@@ -3,8 +3,22 @@ import { FC } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import styles from './FileDownloader.module.css';
 
+function toShortSize(_size: number) {
+  let size = _size;
+  if (size > 1000_000_000) {
+    size /= 1000_000_000;
+    return `${size.toFixed(2)} GB`;
+  }
+  if (size > 1000_000) {
+    size /= 1000_000;
+    return `${size.toFixed(2)} MB`;
+  }
+  size /= 1000;
+  return `${size.toFixed(2)} KB`;
+}
+
 export const FileDownloader: FC<{ state: AppState }> = ({
-  state: { process, progress, localUserPath, isFinished },
+  state: { process, progress, localUserPath, isFinished, processingSize },
 }) => {
   let className = 'ProcessButton';
   let buttonText = 'DOWNLOAD';
@@ -40,9 +54,18 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     buttonText = 'PLAY';
   } else if (duringDownloadOrExtract) {
     className = 'DuringProcessButton';
-    buttonText = `${progress.toFixed(2)} %`;
+    if (process === Processes.download) {
+      buttonText = `${progress.toFixed(2)} %`;
+    } else {
+      buttonText = toShortSize(processingSize!);
+    }
     additionalInfo =
-      process === Processes.download ? 'Downloading...' : 'Extracting...';
+      // eslint-disable-next-line no-nested-ternary
+      process === Processes.download
+        ? 'Downloading...'
+        : process === Processes.extract
+        ? 'Extracting...'
+        : 'Error!!!!';
   }
 
   const handleOnClick = () => {
@@ -70,13 +93,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
           }}
           onClick={handleOnClick}
         >
-          {progress !== null &&
-          progress !== 100 &&
-          process === Processes.extract ? (
-            <div className={styles.Spinner} />
-          ) : (
-            <div className={styles.ProcessButtonText}>{buttonText}</div>
-          )}
+          <div className="ProcessButtonText">{buttonText}</div>
           {additionalInfo !== null && (
             <div style={{ color: 'white', fontSize: '12px' }}>
               {additionalInfo}

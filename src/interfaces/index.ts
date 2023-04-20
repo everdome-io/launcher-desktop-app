@@ -29,6 +29,7 @@ export enum Processes {
   download = 'download',
   extract = 'extract',
   installation = 'installation',
+  error = 'error',
 }
 
 export type LocalFile = {
@@ -50,6 +51,7 @@ export type AppState = {
   isFinished: boolean;
   process: Processes;
   localUserPath: string;
+  processingSize: null | number;
 };
 
 export type CrossWindowState = {
@@ -76,4 +78,5 @@ export const initAppState: AppState = {
   localUserPath: '',
   process: Processes.openDialog,
   isFinished: false,
+  processingSize: 0,
 };
