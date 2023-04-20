@@ -1,7 +1,7 @@
 import { AppState, Channels, Processes } from '@interfaces';
 import { FC } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
-import './FileDownloader.css';
+import styles from './FileDownloader.module.css';
 
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: { process, progress, localUserPath, isFinished },
@@ -58,8 +58,8 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   return (
     <div>
-      <button className="BuyNFT">Buy Genesis NFT on Opensea</button>
-      <div className="FileDownloader">
+      <button className={styles.BuyNFT}>Buy Genesis NFT on Opensea</button>
+      <div className={styles.FileDownloader}>
         <button
           type="button"
           className={className}
@@ -73,9 +73,9 @@ export const FileDownloader: FC<{ state: AppState }> = ({
           {progress !== null &&
           progress !== 100 &&
           process === Processes.extract ? (
-            <div className="Spinner" />
+            <div className={styles.Spinner} />
           ) : (
-            <div className="ProcessButtonText">{buttonText}</div>
+            <div className={styles.ProcessButtonText}>{buttonText}</div>
           )}
           {additionalInfo !== null && (
             <div style={{ color: 'white', fontSize: '12px' }}>
@@ -83,8 +83,8 @@ export const FileDownloader: FC<{ state: AppState }> = ({
             </div>
           )}
         </button>
-        <div className="AdditionalInfo">
-          <span className="AppVersion">Version: ED-0.16.66</span>
+        <div className={styles.AdditionalInfo}>
+          <span className={styles.AppVersion}>Version: ED-0.16.66</span>
           <a href="#">
             What’s new{' '}
             <img src={chevronRight} style={{ verticalAlign: 'middle' }} />

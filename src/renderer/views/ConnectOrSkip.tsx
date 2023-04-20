@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import './ConnectOrSkip.css';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { Channels } from '@interfaces';
+import styles from './ConnectOrSkip.module.css';
 
 interface ConnectOrSkipProps {
   onSkip: () => void;
@@ -13,10 +13,10 @@ export const ConnectOrSkip: FC<ConnectOrSkipProps> = ({ onSkip }) => {
     onSkip();
   };
   return (
-    <div className="cosContainer">
+    <div className={styles.cosContainer}>
       <ConnectOKXWallet fromProfileWindow={false} />
 
-      <button className="skipBtn" onClick={skipConnect}>
+      <button className={styles.skipBtn} onClick={skipConnect}>
         Skip
       </button>
     </div>

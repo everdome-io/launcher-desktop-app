@@ -4,30 +4,30 @@ import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
 import settingsIcon from 'assets/images/settings-icon.png';
 import iconDOME from 'assets/images/icon_DOME.png';
-import './ProfileDetails.css';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { ClearStore } from '@renderer/components/ClearStore';
+import styles from './ProfileDetails.module.css';
 
 export const ProfileDetails: FC<{
   state: AppState;
   crossWindowState: CrossWindowState;
 }> = ({ crossWindowState }) => {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <ClearStore />
       {crossWindowState.isAuthenticated && (
         <div
-          className="UserProfileHeader"
+          className={styles.UserProfileHeader}
           hidden={!crossWindowState.isAuthenticated}
         >
-          <div className="UserInfo">
+          <div className={styles.UserInfo}>
             <img src={profileIcon} width="40" height="40" alt="" />
-            <div className="UserDetails">
+            <div className={styles.UserDetails}>
               <h3>User_3758</h3>
               <span>Wallet address</span>
             </div>
           </div>
-          <div className="SideMenu">
+          <div className={styles.SideMenu}>
             <a href="#">
               <img src={previewIcon} />
             </a>
@@ -38,10 +38,13 @@ export const ProfileDetails: FC<{
         </div>
       )}
       <div>
-        <div className="Wallet" hidden={!crossWindowState.isAuthenticated}>
-          <div className="WalletItem">
+        <div
+          className={styles.Wallet}
+          hidden={!crossWindowState.isAuthenticated}
+        >
+          <div className={styles.WalletItem}>
             <h5>Wallet</h5>
-            <div className="WalletItemDetails">
+            <div className={styles.WalletItemDetails}>
               <span>
                 <img
                   style={{ verticalAlign: 'middle' }}
@@ -56,7 +59,7 @@ export const ProfileDetails: FC<{
           </div>
         </div>
         {!crossWindowState.isAuthenticated && (
-          <div className="NotConnected">
+          <div className={styles.NotConnected}>
             <ConnectOKXWallet fromProfileWindow={true} />
           </div>
         )}
