@@ -5,7 +5,7 @@ import headerImage from 'assets/images/Genesis_NFT.png';
 import { News } from './News';
 import { TermsOfService } from './TermsOfService';
 import { ConnectOrSkip } from './ConnectOrSkip';
-import './Main.css';
+import styles from './Main.module.css';
 
 export const Main: FC<{
   state: AppState;
@@ -31,11 +31,11 @@ export const Main: FC<{
       return <ConnectOrSkip onSkip={() => setConnectedOrSkipped(true)} />;
     }
     return (
-      <div className="main">
-        <div className="container">
+      <div className={styles.main}>
+        <div className={styles.container}>
           <Menu />
-          <section className="mainSection">
-            <div className="welcomeMessage">
+          <section className={styles.mainSection}>
+            <div className={styles.welcomeMessage}>
               <Hello />
               <FileDownloader state={state} />
             </div>

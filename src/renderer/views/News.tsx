@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import './News.css';
 import twitterIcon from 'assets/images/social-icons/twitter.png';
 import discordIcon from 'assets/images/social-icons/discord.png';
 import telegramIcon from 'assets/images/social-icons/telegram.png';
@@ -10,6 +9,7 @@ import linkedinIcon from 'assets/images/social-icons/linkedin.png';
 import newsImage1 from 'assets/images/news/1.png';
 import newsImage2 from 'assets/images/news/2.png';
 import newsImage3 from 'assets/images/news/3.png';
+import styles from './News.module.css';
 const newsData = [
   {
     id: 1,
@@ -32,48 +32,72 @@ const newsImages = [newsImage1, newsImage2, newsImage3];
 
 export const News: FC = () => {
   return (
-    <section className="News">
-      <div className="NewsHeader">
+    <section className={styles.News}>
+      <div className={styles.NewsHeader}>
         <h2>News</h2>
-        <span className="separator"></span>
-        <div className="Social">
+        <span className={styles.separator}></span>
+        <div className={styles.Social}>
           <a href="#">
-            <img className="SocialIcon" src={discordIcon} alt="discord" />
-          </a>
-          <a href="#">
-            <img className="SocialIcon" src={telegramIcon} alt="telegram" />
+            <img
+              className={styles.SocialIcon}
+              src={discordIcon}
+              alt="discord"
+            />
           </a>
           <a href="#">
             <img
-              className="SocialIcon"
+              className={styles.SocialIcon}
+              src={telegramIcon}
+              alt="telegram"
+            />
+          </a>
+          <a href="#">
+            <img
+              className={styles.SocialIcon}
               src={telegramAccouncementsIcon}
               alt="telegram_accouncements"
             />
           </a>
           <a href="#">
-            <img className="SocialIcon" src={linkedinIcon} alt="linkedin" />
+            <img
+              className={styles.SocialIcon}
+              src={linkedinIcon}
+              alt="linkedin"
+            />
           </a>
           <a href="#">
-            <img className="SocialIcon" src={youtubeIcon} alt="youtube" />
+            <img
+              className={styles.SocialIcon}
+              src={youtubeIcon}
+              alt="youtube"
+            />
           </a>
           <a href="#">
-            <img className="SocialIcon" src={instagramIcon} alt="instagram" />
+            <img
+              className={styles.SocialIcon}
+              src={instagramIcon}
+              alt="instagram"
+            />
           </a>
           <a href="https://twitter.com/everdome">
-            <img className="SocialIcon" src={twitterIcon} alt="twitter" />
+            <img
+              className={styles.SocialIcon}
+              src={twitterIcon}
+              alt="twitter"
+            />
           </a>
         </div>
       </div>
-      <div className="NewsList">
+      <div className={styles.NewsList}>
         {newsData.map((newsItem) => (
-          <div className="NewsItem" key={newsItem.id}>
+          <div className={styles.NewsItem} key={newsItem.id}>
             <img
-              className="NewsImage"
+              className={styles.NewsImage}
               src={newsImages[newsItem.id - 1]}
               alt="news"
             />
-            <div className="NewsDate">{newsItem.date}</div>
-            <div className="NewsTitle">{newsItem.title}</div>
+            <div className={styles.NewsDate}>{newsItem.date}</div>
+            <div className={styles.NewsTitle}>{newsItem.title}</div>
           </div>
         ))}
       </div>

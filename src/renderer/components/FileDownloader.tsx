@@ -1,7 +1,7 @@
 import { AppState, Channels, Processes } from '@interfaces';
 import { FC } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
-import './FileDownloader.css';
+import styles from './FileDownloader.module.css';
 
 function toShortSize(_size: number) {
   let size = _size;
@@ -60,7 +60,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
       buttonText = toShortSize(processingSize!);
     }
     additionalInfo =
-    // eslint-disable-next-line no-nested-ternary
+      // eslint-disable-next-line no-nested-ternary
       process === Processes.download
         ? 'Downloading...'
         : process === Processes.extract
@@ -81,8 +81,8 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   return (
     <div>
-      <button className="BuyNFT">Buy Genesis NFT on Opensea</button>
-      <div className="FileDownloader">
+      <button className={styles.BuyNFT}>Buy Genesis NFT on Opensea</button>
+      <div className={styles.FileDownloader}>
         <button
           type="button"
           className={className}
@@ -100,8 +100,8 @@ export const FileDownloader: FC<{ state: AppState }> = ({
             </div>
           )}
         </button>
-        <div className="AdditionalInfo">
-          <span className="AppVersion">Version: ED-0.16.66</span>
+        <div className={styles.AdditionalInfo}>
+          <span className={styles.AppVersion}>Version: ED-0.16.66</span>
           <a href="#">
             What’s new{' '}
             <img src={chevronRight} style={{ verticalAlign: 'middle' }} />
