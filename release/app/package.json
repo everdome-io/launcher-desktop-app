@@ -1,10 +1,6 @@
 {
   "name": "everdome-launcher-desktop",
-<<<<<<< Updated upstream
-  "version": "1.10.6",
-=======
   "version": "1.10.7",
->>>>>>> Stashed changes
   "description": "Launcher Desktop App for Everdome Client",
   "license": "MIT",
   "repository": "https://github.com/everdome-io/launcher-desktop-app",
