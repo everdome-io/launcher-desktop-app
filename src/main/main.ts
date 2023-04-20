@@ -25,6 +25,7 @@ import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
+import { getUserFromAPI } from './api';
 
 const store = new Store();
 
@@ -142,7 +143,7 @@ const createProfileWindow = async () => {
   profileWindow.setPosition(1100, 100);
 
   profileWindow.on('ready-to-show', () => {
-    if (store.get('termsAccepted')) {
+    if (store.get('termsAccepted') && store.get('connectedOrSkipped')) {
       if (!profileWindow) {
         throw new Error('"profileWindow" is not defined');
       }
@@ -158,21 +159,17 @@ const createProfileWindow = async () => {
     if (url.includes('/success')) {
       await profileWindow?.loadURL(resolveHtmlPath('profile.html'));
       okxWindow?.hide();
+      store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;
       if (userId) {
-        await fetch(`https://backend.prod.aws.everdome.io/user/${userId}`)
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error('Error fetching user data');
-            }
-            return response.json();
-          })
-          .catch((error) => {
+        await getUserFromAPI({
+          userId,
+          handleError: (err: any) =>
             mainWindow?.webContents.send(Channels.crossWindow, {
               isAuthenticated: true,
-              errorMessage: error.toString(),
-            });
-          });
+              errorMessage: err.toString(),
+            }),
+        });
         profileWindow?.webContents.send(Channels.crossWindow, {
           isAuthenticated: true,
         });
@@ -185,6 +182,7 @@ const createProfileWindow = async () => {
           errorMessage: 'No userId',
         });
       }
+      profileWindow?.show();
     }
   });
 
@@ -209,9 +207,6 @@ const createOKXWindow = async () => {
     height: 600,
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
-    parent: profileWindow || undefined,
-    modal: true,
-    autoHideMenuBar: true,
     frame: false,
     webPreferences: {
       preload: app.isPackaged
@@ -220,7 +215,20 @@ const createOKXWindow = async () => {
     },
   });
 
-  okxWindow.setPosition(1095, 100);
+  okxWindow.on('ready-to-show', () => {
+    if (!okxWindow) {
+      throw new Error('"okxWindow" is not defined');
+    }
+    if (process.env.START_MINIMIZED) {
+      okxWindow.minimize();
+    } else {
+      okxWindow.show();
+    }
+  });
+
+  okxWindow.on('closed', () => {
+    okxWindow = null;
+  });
 };
 
 /**
@@ -427,37 +435,50 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
   if (state === true) profileWindow?.show();
 });
 
-ipcMain.on(Channels.openOKXExtension, (event) => {
-  let userId: string;
-  const storeUserId = store.get('userId') as undefined | string;
-  if (storeUserId) {
-    userId = storeUserId;
-  } else {
-    userId = uuid();
-    store.set('userId', userId);
-  }
-  const finalUrl = `${OKX_WEB_APP_URL}?userId=${userId}`;
-  profileWindow!
-    .loadURL(finalUrl)
-    .then(() => {
-      okxWindow!.focus();
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+ipcMain.on(
+  Channels.openOKXExtension,
+  (_event, state: { fromProfileWindow: boolean }) => {
+    const userId = handleUserId();
+    profileWindow!
+      .loadURL(`${OKX_WEB_APP_URL}?userId=${userId}`)
+      .then(() => {
+        okxWindow!.focus();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 
-  if (okxWindow) {
-    okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
-    okxWindow.show();
+    if (okxWindow === null) {
+      createOKXWindow();
+    }
+    if (okxWindow) {
+      okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
+      if (state.fromProfileWindow) {
+        okxWindow.setPosition(1095, 100);
+      } else {
+        okxWindow.center();
+      }
+      okxWindow.show();
+    }
   }
-});
+);
 
 ipcMain.on(Channels.acceptTerms, (_event) => {
   store.set('termsAccepted', true);
   mainWindow?.webContents.send(Channels.acceptTerms, {
     termsAccepted: true,
   });
-  profileWindow?.show();
+  if (store.get('connectedOrSkipped')) {
+    profileWindow?.show();
+  }
+});
+
+ipcMain.on(Channels.connectedOrSkipped, (_event) => {
+  store.set('connectedOrSkipped', true);
+
+  if (store.get('termsAccepted')) {
+    profileWindow?.show();
+  }
 });
 
 ipcMain.on('electron-store-get', async (event, val) => {
@@ -466,3 +487,19 @@ ipcMain.on('electron-store-get', async (event, val) => {
 ipcMain.on('electron-store-set', async (event, key, val) => {
   store.set(key, val);
 });
+
+ipcMain.on('dev:clear-store', async (event) => {
+  store.clear();
+});
+
+const handleUserId = () => {
+  let userId: string;
+  const storeUserId = store.get('userId') as undefined | string;
+  if (storeUserId) {
+    userId = storeUserId;
+  } else {
+    userId = uuid();
+    store.set('userId', userId);
+  }
+  return userId;
+};

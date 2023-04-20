@@ -4,11 +4,16 @@ import logo from 'assets/images/logo.png';
 import './TermsOfService.css';
 import { Channels } from '@interfaces';
 
-export const TermsOfService: FC = () => {
+interface TermsOfServiceProps {
+  onAccept: () => void;
+}
+
+export const TermsOfService: FC<TermsOfServiceProps> = ({ onAccept }) => {
   const [isTermsChecked, setIsTermsChecked] = useState(false);
   const [isAgeChecked, setIsAgeChecked] = useState(false);
   const acceptTerms = () => {
     window.electron.ipcRenderer.sendMessage(Channels.acceptTerms);
+    onAccept();
   };
 
   return (
