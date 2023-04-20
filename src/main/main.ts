@@ -208,11 +208,9 @@ const createOKXWindow = async () => {
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
     frame: false,
-    webPreferences: {
-      preload: app.isPackaged
-        ? path.join(__dirname, 'preload.js')
-        : path.join(__dirname, '../../.erb/dll/preload.js'),
-    },
+    parent: profileWindow || undefined,
+    modal: true,
+    autoHideMenuBar: true,
   });
 
   okxWindow.on('ready-to-show', () => {
