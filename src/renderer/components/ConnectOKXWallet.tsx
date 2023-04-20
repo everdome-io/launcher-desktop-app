@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Channels } from '@interfaces';
-import './ConnectOKXWallet.css';
+import styles from './ConnectOKXWallet.module.css';
 
 export const ConnectOKXWallet: FC<{ fromProfileWindow: boolean }> = ({
   fromProfileWindow,
@@ -11,7 +11,10 @@ export const ConnectOKXWallet: FC<{ fromProfileWindow: boolean }> = ({
     });
   };
   return (
-    <button className="CTAButton ConnectWallet" onClick={connectWallet}>
+    <button
+      className={`${styles.CTAButton} ${styles.ConnectWallet}`}
+      onClick={connectWallet}
+    >
       Connect OKX Wallet
     </button>
   );
