@@ -1,16 +1,18 @@
 import { createRoot } from 'react-dom/client';
-import {
-  AppState,
-  Channels,
-  CrossWindowState,
-  initAppState,
-} from '../interfaces';
+import { AppState, Channels, CrossWindowState, Processes } from '../interfaces';
 import UserProfile from './UserProfile';
 
-let state: AppState = initAppState;
+let state: AppState = {
+  progress: 0,
+  localUserPath: '',
+  process: Processes.openDialog,
+  isFinished: false,
+  processingSize: 0,
+};
 
 let crossWindowState: CrossWindowState = {
   isAuthenticated: false,
+  errorMessage: '',
 };
 
 const container = document.getElementById('root')!;
@@ -30,7 +32,7 @@ window.electron.ipcRenderer.on(
       localUserPath:
         updatedState.localUserPath !== ''
           ? updatedState.localUserPath
-          : initAppState.localUserPath,
+          : state.localUserPath,
     };
     renderComponent();
   }

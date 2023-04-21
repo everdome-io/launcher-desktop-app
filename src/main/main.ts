@@ -14,12 +14,7 @@ import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
-import {
-  AppUpdateStatus,
-  Channels,
-  Processes,
-  initAppState,
-} from '../interfaces';
+import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
 import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
@@ -32,6 +27,8 @@ const store = new Store();
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
+
+const windows = new Set();
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
@@ -71,7 +68,6 @@ const getAssetPath = (...paths: string[]): string => {
 
 const loadExtensions = async () => {
   return await session.defaultSession.loadExtension(
-    // TODO: Ten Await na pewno ma tu być ?
     getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`)
   );
 };
@@ -111,7 +107,7 @@ const createWindow = async () => {
   }
 
   mainWindow = new BrowserWindow({
-    show: false,
+    show: true,
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
@@ -122,6 +118,7 @@ const createWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+  windows.add(mainWindow);
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
@@ -137,6 +134,7 @@ const createWindow = async () => {
   });
 
   mainWindow.on('closed', () => {
+    windows.delete(mainWindow);
     mainWindow = null;
   });
 
@@ -170,6 +168,7 @@ const createProfileWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+  windows.add(profileWindow);
 
   profileWindow.loadURL(resolveHtmlPath('profile.html'));
   profileWindow.setPosition(1100, 100);
@@ -219,6 +218,7 @@ const createProfileWindow = async () => {
   });
 
   profileWindow.on('closed', () => {
+    windows.delete(profileWindow);
     profileWindow = null;
   });
 
@@ -240,12 +240,16 @@ const createOKXWindow = async () => {
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
     frame: false,
+    parent: profileWindow || undefined,
+    modal: true,
+    autoHideMenuBar: true,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+  windows.add(okxWindow);
 
   okxWindow.on('ready-to-show', () => {
     if (!okxWindow) {
@@ -259,6 +263,7 @@ const createOKXWindow = async () => {
   });
 
   okxWindow.on('closed', () => {
+    windows.delete(okxWindow);
     okxWindow = null;
   });
 };
@@ -282,13 +287,16 @@ app
     await setAppState();
     createProfileWindow();
     createWindow();
+    createProfileWindow();
     createOKXWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
-      if (profileWindow === null) createProfileWindow();
-      if (okxWindow === null) createOKXWindow();
-      if (mainWindow === null) createWindow();
+      if (windows.size === 0) {
+        if (mainWindow === null) createWindow();
+        if (profileWindow === null) createProfileWindow();
+        if (okxWindow === null) createOKXWindow();
+      }
     });
   })
   .catch(console.log);
@@ -301,7 +309,6 @@ ipcMain.on(Channels.downloadProcess, (event) => {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.download,
       progress: 0,
       localUserPath: '',
@@ -327,7 +334,6 @@ ipcMain.on(Channels.downloadProcess, (event) => {
         eventsInstance.reply({
           channel: Channels.changeState,
           message: {
-            ...initAppState,
             process: Processes.download,
             progress,
             localUserPath: '',
@@ -348,7 +354,6 @@ ipcMain.on(Channels.playProcess, async function (event) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.play,
       progress: null,
       localUserPath: '',
@@ -375,7 +380,6 @@ ipcMain.on(Channels.openDialog, async function (event) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.openDialog,
       progress: null,
       localUserPath: localUserPath.filePaths[0],
@@ -394,7 +398,6 @@ ipcMain.on(Channels.extractProcess, async (event) => {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.extract,
       processingSize: 0,
       progress: 0,
@@ -411,7 +414,6 @@ ipcMain.on(Channels.extractProcess, async (event) => {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
-          ...initAppState,
           process: Processes.extract,
           progress,
           localUserPath: '',
@@ -426,7 +428,6 @@ ipcMain.on(Channels.extractProcess, async (event) => {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
-          ...initAppState,
           process: Processes.extract,
           progress: 100,
           localUserPath: '',

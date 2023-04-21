@@ -71,12 +71,3 @@ export type ElectronEventArgs<T> = T extends Channels.changeState
   : T extends Channels.crossWindow
   ? CrossWindowState
   : never;
-
-// init states
-export const initAppState: AppState = {
-  progress: 0,
-  localUserPath: '',
-  process: Processes.openDialog,
-  isFinished: false,
-  processingSize: 0,
-};
