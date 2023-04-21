@@ -211,6 +211,11 @@ const createOKXWindow = async () => {
     parent: profileWindow || undefined,
     modal: true,
     autoHideMenuBar: true,
+    webPreferences: {
+      preload: app.isPackaged
+        ? path.join(__dirname, 'preload.js')
+        : path.join(__dirname, '../../.erb/dll/preload.js'),
+    },
   });
 
   okxWindow.on('ready-to-show', () => {
