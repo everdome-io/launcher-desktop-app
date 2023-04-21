@@ -54,3 +54,8 @@
   position: absolute;
   bottom: -4%;
 }
+
+.showNext {
+  composes: arrowLeft from '../theme/buttons.module.css';
+
+}

@@ -4,6 +4,9 @@
   appearance: none;
   border: none;
   font-style: normal;
+}
+
+.btn:not([disabled]) {
   cursor: pointer;
 }
 
@@ -43,4 +46,20 @@
 .contrastPrimary {
   composes: primary;
   composes: secondaryBg from "./colors.module.css";
+}
+
+.arrowLeft {
+  composes: btn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.arrowLeft:hover:not([disabled]) {
+  border: 2px solid #FFFFFF;
+  background-color: #000;
+  color: #fff;
 }

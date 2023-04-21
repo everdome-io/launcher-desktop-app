@@ -3,6 +3,8 @@ import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
 import { Channels } from '@interfaces';
 import styles from './AvatarList.module.css';
+import { ArrowRight } from '@renderer/icons/ArrowRight';
+import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 
 interface AvatarListProps {
   handleBack: () => void;
@@ -10,8 +12,11 @@ interface AvatarListProps {
 export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
   const [avatarIndex, setAvatarIndex] = useState(0);
 
-  const onClick = () => {
-    setAvatarIndex((avatarIndex + 2) % avatars.length);
+  const onClickNext = () => {
+    setAvatarIndex(avatarIndex + 2);
+  };
+  const onClickPrev = () => {
+    setAvatarIndex(avatarIndex - 2);
   };
   const onCancel = () => {
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
@@ -39,8 +44,20 @@ export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
           width: '40%',
         }}
       >
-        <button onClick={onCancel}>Cancel</button>
-        <button onClick={onClick}>Next</button>
+        <button
+          onClick={onClickPrev}
+          className={styles.showNext}
+          disabled={avatarIndex < 1}
+        >
+          <ArrowLeft />
+        </button>
+        <button
+          onClick={onClickNext}
+          className={styles.showNext}
+          disabled={avatarIndex === avatars.length - 2}
+        >
+          <ArrowRight />
+        </button>
       </div>
     </div>
   );
