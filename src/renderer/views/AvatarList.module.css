@@ -1,0 +1,56 @@
+.container {
+  composes: flexCenterColumn from '../theme/layout.module.css';
+}
+
+.container::after {
+  content: '';
+  flex: 1;
+  position: absolute;
+  left: 21.56%;
+  right: 21.56%;
+  top: -56%;
+  bottom: 65%;
+  background: #F6F6F6;
+  opacity: 0.26;
+  filter: blur(277px);
+  z-index: -1;
+}
+
+.title {
+  font-family: 'HarmonyOS Sans';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.avatarContainer::after {
+  content: '';
+  flex: 1;
+  position: absolute;
+  width: 230px;
+  height: 294px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FFFFFF;
+  opacity: 0.15;
+  filter: blur(52px);
+  z-index: -1;
+}
+
+.stand {
+  position: absolute;
+  bottom: -4%;
+}
