@@ -1,6 +1,7 @@
 import { URL } from 'url';
 import path from 'path';
 import * as uuid1 from 'uuid';
+import createS3Client from './clients/s3-client';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -31,18 +32,24 @@ export function getOS(): OperatingSystem {
   }
 }
 
-export function getDownloadLink(): string {
+export async function getDownloadLink(): Promise<string | null> {
+  const bucket = 'metahero-prod-game-builds';
+  const s3Client = createS3Client({});
+  const configFile = await s3Client.getObject({
+    path: 'version.json',
+    bucket,
+  });
   const os = getOS();
-  switch (os) {
-    // case OperatingSystem.Windows:
-    //   return 'https://metahero-prod-game-builds.s3.amazonaws.com/TLauncher-2.876-Installer-1.0.7-global.zip';
-    case OperatingSystem.Windows:
-      return 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Win64_Shipping_002499.zip';
-    case OperatingSystem.MacOS:
-      return 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Mac_Shipping_002234.zip';
-    default:
-      return '';
+  const config = configFile?.body.toString();
+  if (config) {
+    const filePath = JSON.parse(config)[os] as string;
+    const exist = await s3Client.checkObjectExistence({
+      path: filePath,
+      bucket,
+    });
+    return exist ? filePath : null;
   }
+  return null;
 }
 
 export const uuid = uuid1.v4;
