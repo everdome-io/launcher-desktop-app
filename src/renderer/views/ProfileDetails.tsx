@@ -1,5 +1,5 @@
 import { AppState, CrossWindowState } from '@interfaces';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
 import settingsIcon from 'assets/images/settings-icon.svg';
@@ -8,19 +8,26 @@ import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { ClearStore } from '@renderer/components/ClearStore';
 import styles from './ProfileDetails.module.css';
 import { ChooseAvatar } from '@renderer/components/ChooseAvatar';
+import { AvatarList } from './AvatarList';
+
+enum View {
+  ChooseAvatar = 'choose-avatar',
+  ProfileDetails = 'profile-details',
+}
 
 export const ProfileDetails: FC<{
   state: AppState;
   crossWindowState: CrossWindowState;
 }> = ({ crossWindowState }) => {
-  return (
+  const [view, setView] = useState(View.ProfileDetails);
+  return view === View.ProfileDetails ? (
     <div className={styles.container}>
       <header className={styles.userProfileHeader}>
         <p className={styles.UsernameLabel}>@Your username</p>
         <img src={settingsIcon} />
       </header>
       <ClearStore />
-      <ChooseAvatar />
+      <ChooseAvatar onClick={() => setView(View.ChooseAvatar)} />
       {crossWindowState.isAuthenticated && (
         <div
           className={styles.UserProfileHeader}
@@ -71,5 +78,7 @@ export const ProfileDetails: FC<{
         )}
       </div>
     </div>
+  ) : (
+    <AvatarList handleBack={() => setView(View.ProfileDetails)} />
   );
 };
