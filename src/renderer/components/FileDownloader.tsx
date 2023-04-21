@@ -20,7 +20,7 @@ function toShortSize(_size: number) {
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: { process, progress, localUserPath, isFinished, processingSize },
 }) => {
-  let className = 'ProcessButton';
+  let className = styles.ProcessButton;
   let buttonText = 'DOWNLOAD';
   let additionalInfo = null;
 
@@ -50,10 +50,10 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   }
 
   if (couldPlay) {
-    className = 'ProcessButton';
+    className = styles.ProcessButton;
     buttonText = 'PLAY';
   } else if (duringDownloadOrExtract) {
-    className = 'DuringProcessButton';
+    className = styles.DuringProcessButton;
     if (process === Processes.download) {
       buttonText = `${progress.toFixed(2)} %`;
     } else {

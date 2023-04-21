@@ -29,6 +29,7 @@ export const ClearStore: FC = ({}) => {
         top: '5px',
         right: '5px',
         textDecoration: 'none',
+        opacity: 0.15,
       }}
     >
       {buttonText}
