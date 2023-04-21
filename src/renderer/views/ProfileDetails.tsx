@@ -2,11 +2,12 @@ import { AppState, CrossWindowState } from '@interfaces';
 import { FC } from 'react';
 import profileIcon from 'assets/images/menu-profile-nopicture.png';
 import previewIcon from 'assets/images/preview-icon.png';
-import settingsIcon from 'assets/images/settings-icon.png';
+import settingsIcon from 'assets/images/settings-icon.svg';
 import iconDOME from 'assets/images/icon_DOME.png';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { ClearStore } from '@renderer/components/ClearStore';
 import styles from './ProfileDetails.module.css';
+import { ChooseAvatar } from '@renderer/components/ChooseAvatar';
 
 export const ProfileDetails: FC<{
   state: AppState;
@@ -14,7 +15,12 @@ export const ProfileDetails: FC<{
 }> = ({ crossWindowState }) => {
   return (
     <div className={styles.container}>
+      <header className={styles.userProfileHeader}>
+        <p className={styles.UsernameLabel}>@Your username</p>
+        <img src={settingsIcon} />
+      </header>
       <ClearStore />
+      <ChooseAvatar />
       {crossWindowState.isAuthenticated && (
         <div
           className={styles.UserProfileHeader}

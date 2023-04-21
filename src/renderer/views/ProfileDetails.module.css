@@ -59,5 +59,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  margin-top: 80px;
+}
+
+.userProfileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.UsernameLabel {
+  font-family: 'HarmonyOS Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin: 0;
 }
