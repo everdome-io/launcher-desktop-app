@@ -54,6 +54,13 @@ export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
           <ArrowRight />
         </button>
       </div>
+      <div className={styles.actionBtns}>
+        <button onClick={onCancel} className={styles.cancel}>
+          <ArrowLeft />
+          Back
+        </button>
+        <button className={styles.saveAvatar}>Save</button>
+      </div>
     </div>
   );
 };

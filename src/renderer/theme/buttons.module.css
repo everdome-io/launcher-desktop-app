@@ -4,6 +4,7 @@
   appearance: none;
   border: none;
   font-style: normal;
+  transition: all 0.5s;
 }
 
 .btn:not([disabled]) {
@@ -14,13 +15,20 @@
   composes: btn;
   composes: primaryBg from "./colors.module.css";
   border-radius: 38px;
-  width: 196px;
-  height: 56px;
+  padding: 16px 32px;
+  min-width: 148px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  width: auto;
+  position: relative;
+}
+
+.primary:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .secondary {

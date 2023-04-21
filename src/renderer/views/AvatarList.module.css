@@ -86,3 +86,18 @@
   color: #FFFFFF;
   text-shadow: 0px 0px 2px rgb(0 0 0 / 16%);
 }
+
+.actionBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 1.5rem;
+}
+
+.cancel {}
+
+.saveAvatar {
+  composes: primary from '../theme/buttons.module.css';
+  margin-top: 2rem;
+}
