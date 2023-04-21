@@ -1,7 +1,6 @@
 import { URL } from 'url';
 import path from 'path';
 import * as uuid1 from 'uuid';
-import createS3Client from './clients/s3-client';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -33,23 +32,22 @@ export function getOS(): OperatingSystem {
 }
 
 export async function getDownloadLink(): Promise<string | null> {
-  const bucket = 'metahero-prod-game-builds';
-  const s3Client = createS3Client({});
-  const configFile = await s3Client.getObject({
-    path: 'version.json',
-    bucket,
-  });
   const os = getOS();
-  const config = configFile?.body.toString();
-  if (config) {
-    const filePath = JSON.parse(config)[os] as string;
-    const exist = await s3Client.checkObjectExistence({
-      path: filePath,
-      bucket,
+  let s3Path: string | null = null;
+  await fetch(`https://metahero-prod-game-builds.s3.amazonaws.com/version.json`)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error('Error fetching user data');
+      }
+      const body = await response.json();
+      s3Path = body[os];
+      return response;
+    })
+    .catch((error) => {
+      console.log('error', error);
     });
-    return exist ? filePath : null;
-  }
-  return null;
+
+  return s3Path;
 }
 
 export const uuid = uuid1.v4;

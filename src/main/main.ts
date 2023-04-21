@@ -13,6 +13,7 @@ import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
+import request from 'request';
 import {
   AppUpdateStatus,
   Channels,
@@ -75,25 +76,36 @@ const loadExtensions = async () => {
   );
 };
 
-const createWindow = async () => {
-  // const s3Path = await getDownloadLink();
-  const s3Path = 'Thirdym.v0.1.0-alpha';
+const setAppState = async () => {
+  const s3Path = await getDownloadLink();
+  // const s3Path = 'Thirdym.v0.1.0-alpha';
   if (s3Path) {
     const pathSplit = s3Path.split('/');
     store.set(
       'folderName',
       pathSplit[pathSplit.length - 1].replace('.zip', '')
     );
+    request
+      .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
+      .on('response', (res) => {
+        const gameFileExist = res.statusCode.toString()[0] === '2';
+        if (gameFileExist) {
+          downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
+          // downloadWebLink = `https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip`;
+          const storeWebLink = store.get('webLink') as string | undefined;
+          const couldUseWebLink = storeWebLink !== downloadWebLink;
+          store.set('couldUseWebLink', couldUseWebLink);
+          if (couldUseWebLink) {
+            store.set('processStage', Processes.openDialog);
+          }
+        } else {
+          store.set('couldUseWebLink', false);
+        }
+      });
   }
-  // downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
-  downloadWebLink = `https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip`;
-  const storeWebLink = store.get('webLink') as string | undefined;
-  const couldUseWebLink = !!downloadWebLink && storeWebLink !== downloadWebLink;
-  store.set('couldUseWebLink', couldUseWebLink);
-  if (couldUseWebLink) {
-    store.set('processStage', Processes.openDialog);
-  }
+};
 
+const createWindow = async () => {
   if (isDebug) {
     await installExtensions();
   }
@@ -265,8 +277,9 @@ app.on('window-all-closed', () => {
 
 app
   .whenReady()
-  .then(() => {
-    loadExtensions();
+  .then(async () => {
+    await loadExtensions();
+    await setAppState();
     createProfileWindow();
     createWindow();
     createOKXWindow();
