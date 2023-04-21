@@ -13,12 +13,7 @@ import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
-import {
-  AppUpdateStatus,
-  Channels,
-  Processes,
-  initAppState,
-} from '../interfaces';
+import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
 import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
@@ -68,7 +63,7 @@ const getAssetPath = (...paths: string[]): string => {
 };
 
 const loadExtensions = async () => {
-  return await session.defaultSession.loadExtension(//TODO: Ten Await na pewno ma tu być ?
+  return await session.defaultSession.loadExtension(
     getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`)
   );
 };
@@ -269,7 +264,6 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.download,
       progress: 0,
       localUserPath: '',
@@ -286,7 +280,6 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
-        ...initAppState,
         process: Processes.download,
         progress,
         localUserPath: '',
@@ -303,7 +296,6 @@ ipcMain.on(Channels.installationProcess, async function (event, userPath) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.installation,
       progress: null,
       localUserPath: '',
@@ -324,7 +316,6 @@ ipcMain.on(Channels.openDialog, async function (event) {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.openDialog,
       progress: null,
       localUserPath: localUserPath.filePaths[0],
@@ -342,7 +333,6 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      ...initAppState,
       process: Processes.extract,
       processingSize: 0,
       progress: 0,
@@ -354,12 +344,11 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   await extractWithProgress(
     path.join(localFile.filepath, 'game.zip'),
     localFile.filepath,
-    (chunkSize : number ,progress : number) => {
+    (chunkSize: number, progress: number) => {
       console.log(`Extraction progress: ${progress.toFixed(2)}%`);
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
-          ...initAppState,
           process: Processes.extract,
           progress,
           localUserPath: '',
@@ -374,7 +363,6 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
-          ...initAppState,
           process: Processes.extract,
           progress: 100,
           localUserPath: '',
