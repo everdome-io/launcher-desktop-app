@@ -26,14 +26,21 @@
   font-weight: 400;
 }
 
-.avatarContainer {
+.chooseAvatarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.avatar {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 
-.avatarContainer::after {
+.avatar::after {
   content: '';
   flex: 1;
   position: absolute;
@@ -58,4 +65,24 @@
 .showNext {
   composes: arrowLeft from '../theme/buttons.module.css';
 
+}
+
+.userNameInput {
+  margin: 2.5rem 0 2rem;
+}
+
+.userNameInput input {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 6px 16px;
+  font-family: 'HarmonyOS Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 2px rgb(0 0 0 / 16%);
 }

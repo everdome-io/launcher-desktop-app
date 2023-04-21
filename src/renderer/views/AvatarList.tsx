@@ -27,23 +27,10 @@ export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
       <h1 className={styles.title}>
         Enter <strong>username</strong> & choose your <strong>avatar</strong>
       </h1>
-      <div className={styles.avatarContainer}>
-        <img
-          src={avatars[avatarIndex]}
-          srcSet={`${avatars[avatarIndex + 1]} 2x`}
-          alt="Choose avatar"
-          className={styles.avatar}
-        />
-        <img className={styles.stand} src={avatarStand} />
+      <div className={styles.userNameInput}>
+        <input type="text" placeholder="@Your username" />
       </div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          marginTop: '1rem',
-          width: '40%',
-        }}
-      >
+      <div className={styles.chooseAvatarContainer}>
         <button
           onClick={onClickPrev}
           className={styles.showNext}
@@ -51,6 +38,14 @@ export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
         >
           <ArrowLeft />
         </button>
+        <div className={styles.avatar}>
+          <img
+            src={avatars[avatarIndex]}
+            srcSet={`${avatars[avatarIndex + 1]} 2x`}
+            alt="Choose avatar"
+          />
+          <img className={styles.stand} src={avatarStand} />
+        </div>
         <button
           onClick={onClickNext}
           className={styles.showNext}
