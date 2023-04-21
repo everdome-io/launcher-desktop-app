@@ -1,0 +1,7 @@
+.container {
+  composes: flexCenterColumn from '../theme/layout.module.css';
+}
+
+.chooseAvatarBtn {
+  composes: secondary from '../theme/buttons.module.css';
+}
