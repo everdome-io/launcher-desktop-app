@@ -27,6 +27,8 @@ const store = new Store();
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
 
+let windows = new Set();
+
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
 let okxWindow: BrowserWindow | null = null;
@@ -74,7 +76,7 @@ const createWindow = async () => {
   }
 
   mainWindow = new BrowserWindow({
-    show: false,
+    show: true,
     width: 1024,
     height: 728,
     icon: getAssetPath('icon.png'),
@@ -85,6 +87,7 @@ const createWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+  windows.add(mainWindow);
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
@@ -100,6 +103,7 @@ const createWindow = async () => {
   });
 
   mainWindow.on('closed', () => {
+    windows.delete(mainWindow);
     mainWindow = null;
   });
 
@@ -133,6 +137,7 @@ const createProfileWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+  windows.add(profileWindow);
 
   profileWindow.loadURL(resolveHtmlPath('profile.html'));
   profileWindow.setPosition(1100, 100);
@@ -182,6 +187,7 @@ const createProfileWindow = async () => {
   });
 
   profileWindow.on('closed', () => {
+    windows.delete(profileWindow);
     profileWindow = null;
   });
 
@@ -212,6 +218,7 @@ const createOKXWindow = async () => {
         : path.join(__dirname, '../../.erb/dll/preload.js'),
     },
   });
+  windows.add(okxWindow);
 
   okxWindow.on('ready-to-show', () => {
     if (!okxWindow) {
@@ -225,6 +232,7 @@ const createOKXWindow = async () => {
   });
 
   okxWindow.on('closed', () => {
+    windows.delete(okxWindow);
     okxWindow = null;
   });
 };
@@ -245,15 +253,16 @@ app
   .whenReady()
   .then(() => {
     loadExtensions();
-    createProfileWindow();
     createWindow();
+    createProfileWindow();
     createOKXWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
-      if (profileWindow === null) createProfileWindow();
-      if (okxWindow === null) createOKXWindow();
+      if (windows.size === 0) {
       if (mainWindow === null) createWindow();
+      if (profileWindow === null) createProfileWindow();
+      if (okxWindow === null) createOKXWindow();}
     });
   })
   .catch(console.log);
