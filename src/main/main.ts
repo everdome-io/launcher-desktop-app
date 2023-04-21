@@ -504,6 +504,16 @@ ipcMain.on(Channels.connectedOrSkipped, (_event) => {
   }
 });
 
+ipcMain.on(Channels.openAvatarDialog, (_event) => {
+  profileWindow?.setSize(1024, 768);
+  profileWindow?.center();
+});
+
+ipcMain.on(Channels.closeAvatarDialog, (_event) => {
+  profileWindow?.setSize(342, 688);
+  profileWindow?.setPosition(1100, 100);
+});
+
 ipcMain.on('electron-store-get', async (event, val) => {
   event.returnValue = store.get(val);
 });

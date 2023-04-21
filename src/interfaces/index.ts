@@ -15,6 +15,9 @@ export enum Channels {
 
   openOKXExtension = 'open-okx',
   closeOKXExtension = 'close-okx',
+
+  openAvatarDialog = 'open-avatar-dialog',
+  closeAvatarDialog = 'close-avatar-dialog',
 }
 /* eslint-disable no-shadow */
 export enum AppUpdateStatus {
