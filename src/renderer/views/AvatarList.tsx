@@ -24,16 +24,25 @@ export const AvatarList: FC<AvatarListProps> = ({ handleChangeView }) => {
     handleChangeView();
   };
   const onSave = () => {
+    // TODO: save avatar CALL API
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
     handleChangeView();
+  };
+  const onSaveUsername = () => {
+    // TODO: save username CALL API
+    (document.activeElement as HTMLElement).blur();
   };
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
         Enter <strong>username</strong> & choose your <strong>avatar</strong>
       </h1>
-      <div className={styles.userNameInput}>
-        <input type="text" placeholder="@Your username" />
+      <div className={styles.userNameInputBox}>
+        <span className={styles.prefix}>@ </span>
+        <input type="text" placeholder="Your username" />
+        <button onClick={onSaveUsername} className={styles.inputBtn}>
+          Save
+        </button>
       </div>
       <div className={styles.chooseAvatarContainer}>
         <button

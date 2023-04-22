@@ -68,13 +68,22 @@
   composes: circleBtn from '../theme/buttons.module.css';
 }
 
-.userNameInput {
+.userNameInputBox {
   margin: 2.5rem 0 2rem;
-}
-
-.userNameInput input {
+  display: flex;
+  align-items: center;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 35px;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+
+.userNameInputBox input {
+  background: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
   outline: none;
   border: none;
   padding: 6px 16px;
@@ -86,6 +95,40 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
   text-shadow: 0px 0px 2px rgb(0 0 0 / 16%);
+  flex-grow: 1;
+  padding-left: 0;
+}
+
+.prefix {
+  color: #fff;
+  opacity: 0.5;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
+  margin-right: 0.1rem;
+}
+
+.inputBtn {
+  composes: btn from '../theme/buttons.module.css';
+  display: none;
+  padding: 4px 12px;
+  width: 56px;
+  height: 24px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.userNameInputBox:hover {
+  border: 2px solid #FFFFFF;
+}
+
+.userNameInputBox:focus-within {
+  border-color: #fff;
+  width: 337px;
+  height: 44px;
+}
+
+.userNameInputBox:focus-within .inputBtn {
+  display: block;
 }
 
 .actionBtns {
