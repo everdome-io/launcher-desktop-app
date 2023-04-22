@@ -5,11 +5,12 @@ import { Channels } from '@interfaces';
 import styles from './AvatarList.module.css';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
+import { BackButton } from '@renderer/components/BackButton';
 
 interface AvatarListProps {
-  handleBack: () => void;
+  handleChangeView: () => void;
 }
-export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
+export const AvatarList: FC<AvatarListProps> = ({ handleChangeView }) => {
   const [avatarIndex, setAvatarIndex] = useState(0);
 
   const onClickNext = () => {
@@ -20,7 +21,11 @@ export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
   };
   const onCancel = () => {
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
-    handleBack();
+    handleChangeView();
+  };
+  const onSave = () => {
+    window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
+    handleChangeView();
   };
   return (
     <div className={styles.container}>
@@ -33,7 +38,7 @@ export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
       <div className={styles.chooseAvatarContainer}>
         <button
           onClick={onClickPrev}
-          className={styles.showNext}
+          className={styles.sliderBtn}
           disabled={avatarIndex < 1}
         >
           <ArrowLeft />
@@ -48,18 +53,17 @@ export const AvatarList: FC<AvatarListProps> = ({ handleBack }) => {
         </div>
         <button
           onClick={onClickNext}
-          className={styles.showNext}
+          className={styles.sliderBtn}
           disabled={avatarIndex === avatars.length - 2}
         >
           <ArrowRight />
         </button>
       </div>
       <div className={styles.actionBtns}>
-        <button onClick={onCancel} className={styles.cancel}>
-          <ArrowLeft />
-          Back
+        <BackButton onClick={onCancel} />
+        <button onClick={onSave} className={styles.saveAvatar}>
+          Save
         </button>
-        <button className={styles.saveAvatar}>Save</button>
       </div>
     </div>
   );

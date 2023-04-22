@@ -1,5 +1,6 @@
 .container {
   composes: flexCenterColumn from '../theme/layout.module.css';
+  padding: 3.5rem 3rem;
 }
 
 .container::after {
@@ -24,6 +25,7 @@
   letter-spacing: 0.01em;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
 }
 
 .chooseAvatarContainer {
@@ -62,9 +64,8 @@
   bottom: -4%;
 }
 
-.showNext {
-  composes: arrowLeft from '../theme/buttons.module.css';
-
+.sliderBtn {
+  composes: circleBtn from '../theme/buttons.module.css';
 }
 
 .userNameInput {
@@ -91,13 +92,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  margin-top: 1.5rem;
+  width: 100%;
+  margin-top: 1.7rem;
 }
-
-.cancel {}
 
 .saveAvatar {
   composes: primary from '../theme/buttons.module.css';
-  margin-top: 2rem;
 }

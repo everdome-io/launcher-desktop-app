@@ -35,6 +35,6 @@ export const ProfileDetails: FC<{
       <ClearStore />
     </div>
   ) : (
-    <AvatarList handleBack={() => setView(View.ProfileDetails)} />
+    <AvatarList handleChangeView={() => setView(View.ProfileDetails)} />
   );
 };
