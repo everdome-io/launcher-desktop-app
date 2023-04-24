@@ -1,5 +1,5 @@
 import { AppState, Channels, Processes } from '@interfaces';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import styles from './FileDownloader.module.css';
 
@@ -18,38 +18,39 @@ function toShortSize(_size: number) {
 }
 
 export const FileDownloader: FC<{ state: AppState }> = ({
-  state: { process, progress, localUserPath, isFinished, processingSize },
+  state: { process, progress, processingSize },
 }) => {
+  const [afterDownload, setAfterDownload] = useState(false);
+  const [afterExtract, setAfterExtract] = useState(false);
   let className = styles.ProcessButton;
   let buttonText = 'DOWNLOAD';
   let additionalInfo = null;
 
-  const couldDownload =
-    process === Processes.openDialog &&
-    localUserPath !== '' &&
-    localUserPath !== undefined;
-  const couldExtract = process === Processes.download && isFinished;
-  const couldPlay =
-    (process === Processes.extract && isFinished) ||
-    process === Processes.installation;
+  const couldUseWebLink = Boolean(window.electron.store.get('couldUseWebLink'));
+  const processStageStore = window.electron.store.get(
+    'processStage'
+  ) as Processes;
+  const buttonDisabled =
+    !couldUseWebLink && processStageStore !== Processes.play;
 
   const duringDownloadOrExtract =
     (process === Processes.download || process === Processes.extract) &&
     progress !== null;
 
-  if (couldDownload) {
-    window.electron.ipcRenderer.sendMessage(
-      Channels.downloadProcess,
-      localUserPath
-    );
+  if (processStageStore === Processes.download) {
+    if (!afterDownload) {
+      window.electron.ipcRenderer.sendMessage(Channels.downloadProcess);
+      setAfterDownload(true);
+    }
   }
-  if (couldExtract) {
-    window.electron.ipcRenderer.sendMessage(Channels.extractProcess, {
-      filepath: localUserPath,
-    });
+  if (processStageStore === Processes.extract) {
+    if (!afterExtract) {
+      window.electron.ipcRenderer.sendMessage(Channels.extractProcess);
+      setAfterExtract(true);
+    }
   }
 
-  if (couldPlay) {
+  if (processStageStore === Processes.play) {
     className = styles.ProcessButton;
     buttonText = 'PLAY';
   } else if (duringDownloadOrExtract) {
@@ -69,13 +70,10 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   }
 
   const handleOnClick = () => {
-    if (couldPlay) {
-      window.electron.ipcRenderer.sendMessage(
-        Channels.installationProcess,
-        localUserPath
-      );
-    } else if (process === Processes.openDialog) {
-      window.electron.ipcRenderer.sendMessage(Channels.openDialog, null);
+    if (processStageStore === Processes.play) {
+      window.electron.ipcRenderer.sendMessage(Channels.playProcess);
+    } else if (processStageStore === Processes.openDialog) {
+      window.electron.ipcRenderer.sendMessage(Channels.openDialog);
     }
   };
 
@@ -86,6 +84,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
         <button
           type="button"
           className={className}
+          disabled={buttonDisabled}
           style={{
             display: 'flex',
             flexDirection: 'row',
@@ -95,7 +94,9 @@ export const FileDownloader: FC<{ state: AppState }> = ({
         >
           <div className="ProcessButtonText">{buttonText}</div>
           {additionalInfo !== null && (
-            <div style={{ color: 'white', fontSize: '12px' }}>
+            <div
+              style={{ color: 'black', fontSize: '12px', paddingTop: '6px' }}
+            >
               {additionalInfo}
             </div>
           )}

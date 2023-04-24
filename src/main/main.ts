@@ -13,6 +13,7 @@ import path from 'path';
 import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
+import request from 'request';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
@@ -27,11 +28,12 @@ const store = new Store();
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
 
-let windows = new Set();
+const windows = new Set();
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
 let okxWindow: BrowserWindow | null = null;
+let downloadWebLink: string | null = null;
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -70,6 +72,35 @@ const loadExtensions = async () => {
   );
 };
 
+const setAppState = async () => {
+  const s3Path = await getDownloadLink();
+  // const s3Path = 'Thirdym.v0.1.0-alpha';
+  if (s3Path) {
+    const pathSplit = s3Path.split('/');
+    store.set(
+      'folderName',
+      pathSplit[pathSplit.length - 1].replace('.zip', '')
+    );
+    request
+      .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
+      .on('response', (res) => {
+        const gameFileExist = res.statusCode.toString()[0] === '2';
+        if (gameFileExist) {
+          downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
+          // downloadWebLink = `https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip`;
+          const storeWebLink = store.get('webLink') as string | undefined;
+          const couldUseWebLink = storeWebLink !== downloadWebLink;
+          store.set('couldUseWebLink', couldUseWebLink);
+          if (couldUseWebLink) {
+            store.set('processStage', Processes.openDialog);
+          }
+        } else {
+          store.set('couldUseWebLink', false);
+        }
+      });
+  }
+};
+
 const createWindow = async () => {
   if (isDebug) {
     await installExtensions();
@@ -91,7 +122,7 @@ const createWindow = async () => {
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
-  mainWindow.on('ready-to-show', () => {
+  mainWindow.on('ready-to-show', async () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');
     }
@@ -115,7 +146,7 @@ const createWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-  const result = await autoUpdater.checkForUpdates();
+  await autoUpdater.checkForUpdates();
 };
 
 const createProfileWindow = async () => {
@@ -157,7 +188,9 @@ const createProfileWindow = async () => {
 
   profileWindow.webContents.on('did-navigate', async (event, url) => {
     if (url.includes('/success')) {
-      await profileWindow?.loadURL(resolveHtmlPath('profile.html'));
+      await profileWindow
+        ?.loadURL(resolveHtmlPath('profile.html'))
+        .catch((err) => console.log(err));
       okxWindow?.hide();
       store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;
@@ -251,8 +284,10 @@ app.on('window-all-closed', () => {
 
 app
   .whenReady()
-  .then(() => {
-    loadExtensions();
+  .then(async () => {
+    await loadExtensions();
+    await setAppState();
+    createProfileWindow();
     createWindow();
     createProfileWindow();
     createOKXWindow();
@@ -268,8 +303,10 @@ app
   })
   .catch(console.log);
 
-ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
-  const webLink = getDownloadLink();
+ipcMain.on(Channels.downloadProcess, (event) => {
+  console.log('Downloading game...');
+
+  const localFilePath = store.get('userPath') as string;
   const eventsInstance = eventsClient(event);
   eventsInstance.reply({
     channel: Channels.changeState,
@@ -282,38 +319,54 @@ ipcMain.on(Channels.downloadProcess, (event, localUserPath) => {
     },
   });
   let prevProgress = 0;
-  downloadFileWithProgress(localUserPath, webLink, event, (progress) => {
-    if (progress - prevProgress >= 0.1) {
-      console.log(`Downloaded ${progress.toFixed(2)}%`);
-      prevProgress = progress;
-    }
-    eventsInstance.reply({
-      channel: Channels.changeState,
-      message: {
-        process: Processes.download,
-        progress,
-        localUserPath: '',
-        isFinished: false,
-        processingSize: 0,
-      },
-    });
-  });
+  if (downloadWebLink) {
+    downloadFileWithProgress(
+      localFilePath,
+      downloadWebLink,
+      event,
+      (progress) => {
+        if (progress - prevProgress >= 0.1) {
+          console.log(`Downloaded ${progress.toFixed(2)}%`);
+          prevProgress = progress;
+        }
+        if (progress === 100) {
+          store.set('webLink', downloadWebLink);
+          store.set('processStage', Processes.extract);
+        }
+        eventsInstance.reply({
+          channel: Channels.changeState,
+          message: {
+            process: Processes.download,
+            progress,
+            localUserPath: '',
+            isFinished: false,
+            processingSize: 0,
+          },
+        });
+      }
+    );
+  }
 });
 
-ipcMain.on(Channels.installationProcess, async function (event, userPath) {
-  console.log('Installing game...');
+ipcMain.on(Channels.playProcess, async function (event) {
+  console.log('Starting game...');
+  const localFilePath = store.get('userPath') as string;
+
   const eventsInstance = eventsClient(event);
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
-      process: Processes.installation,
+      process: Processes.play,
       progress: null,
       localUserPath: '',
       isFinished: false,
       processingSize: 0,
     },
   });
-  installEverdome(userPath);
+  installEverdome(localFilePath, () => {
+    const windowsFolderName = store.get('folderName') as string;
+    return windowsFolderName;
+  });
 });
 
 ipcMain.on(Channels.openDialog, async function (event) {
@@ -323,6 +376,9 @@ ipcMain.on(Channels.openDialog, async function (event) {
     properties: ['openDirectory'],
     message: 'Pick directory to store everdome file',
   });
+
+  store.set('userPath', localUserPath.filePaths[0]);
+  store.set('processStage', Processes.download);
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
@@ -335,10 +391,11 @@ ipcMain.on(Channels.openDialog, async function (event) {
   });
 });
 
-ipcMain.on(Channels.extractProcess, async (event, localFile) => {
+ipcMain.on(Channels.extractProcess, async (event) => {
+  const localFilePath = store.get('userPath') as string;
   const eventsInstance = eventsClient(event);
 
-  //TODO: Add Sentry log on started extraction
+  // TODO: Add Sentry log on started extraction
 
   eventsInstance.reply({
     channel: Channels.changeState,
@@ -352,8 +409,8 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
   });
 
   await extractWithProgress(
-    path.join(localFile.filepath, 'game.zip'),
-    localFile.filepath,
+    path.join(localFilePath, 'game.zip'),
+    localFilePath,
     (chunkSize: number, progress: number) => {
       console.log(`Extraction progress: ${progress.toFixed(2)}%`);
       eventsInstance.reply({
@@ -380,6 +437,7 @@ ipcMain.on(Channels.extractProcess, async (event, localFile) => {
           processingSize: 0,
         },
       });
+      store.set('processStage', Processes.play);
     })
     .catch((error) => {
       console.error('Error during extraction:', error);

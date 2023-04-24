@@ -3,7 +3,7 @@ export enum Channels {
   openDialog = 'open-dialog-process',
   downloadProcess = 'download-process',
   extractProcess = 'extract-process',
-  installationProcess = 'installation-process',
+  playProcess = 'play-process',
   showProfileWindow = 'show-profile-window',
   acceptTerms = 'accept-terms',
   connectedOrSkipped = 'connected-or-skipped',
@@ -31,7 +31,7 @@ export enum Processes {
   openDialog = 'open-dialog',
   download = 'download',
   extract = 'extract',
-  installation = 'installation',
+  play = 'play',
   error = 'error',
 }
 
@@ -45,7 +45,7 @@ export type ElectronHandlerArgs<T> = T extends Channels.downloadProcess
   ? LocalFile
   : T extends Channels.openDialog
   ? null
-  : T extends Channels.installationProcess
+  : T extends Channels.playProcess
   ? string
   : never;
 
@@ -69,7 +69,7 @@ export type AppUpdate = {
 
 export type ElectronEventArgs<T> = T extends Channels.changeState
   ? AppState
-  : T extends Channels.installationProcess
+  : T extends Channels.playProcess
   ? string
   : T extends Channels.crossWindow
   ? CrossWindowState

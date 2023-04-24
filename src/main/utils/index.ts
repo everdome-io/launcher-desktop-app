@@ -31,18 +31,23 @@ export function getOS(): OperatingSystem {
   }
 }
 
-export function getDownloadLink(): string {
+export async function getDownloadLink(): Promise<string | null> {
   const os = getOS();
-  switch (os) {
-    // case OperatingSystem.Windows:
-    //   return 'https://metahero-prod-game-builds.s3.amazonaws.com/TLauncher-2.876-Installer-1.0.7-global.zip';
-    case OperatingSystem.Windows:
-      return 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Win64_Shipping_002499.zip';
-    case OperatingSystem.MacOS:
-      return 'https://metahero-prod-game-builds.s3.amazonaws.com/Everdome_Client_Mac_Shipping_002234.zip';
-    default:
-      return '';
-  }
+  let s3Path: string | null = null;
+  await fetch(`https://metahero-prod-game-builds.s3.amazonaws.com/version.json`)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error('Error fetching user data');
+      }
+      const body = await response.json();
+      s3Path = body[os];
+      return response;
+    })
+    .catch((error) => {
+      console.log('error', error);
+    });
+
+  return s3Path;
 }
 
 export const uuid = uuid1.v4;
