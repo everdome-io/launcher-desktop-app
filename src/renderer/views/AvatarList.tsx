@@ -2,13 +2,22 @@ import { FC, useState } from 'react';
 import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
 import { Channels } from '@interfaces';
-import styles from './AvatarList.module.css';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
 import { useNavigate } from 'react-router-dom';
+import styles from './AvatarList.module.css';
 
-export const AvatarList: FC = () => {
+export const AvatarList: FC<{
+  nickName: string;
+  saveAvatar: ({
+    nickName,
+    avatarId,
+  }: {
+    nickName: string;
+    avatarId: string;
+  }) => Promise<void>;
+}> = ({ nickName, saveAvatar }) => {
   const navigate = useNavigate();
   const [avatarIndex, setAvatarIndex] = useState(0);
 
@@ -23,12 +32,12 @@ export const AvatarList: FC = () => {
     navigate('/');
   };
   const onSave = () => {
-    // TODO: save avatar CALL API
+    saveAvatar({ nickName: 'to_be_changed', avatarId: 'to_be_changed' });
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
     navigate('/');
   };
   const onSaveUsername = () => {
-    // TODO: save username CALL API
+    saveAvatar({ nickName: 'to_be_changed', avatarId: 'to_be_changed' });
     (document.activeElement as HTMLElement).blur();
   };
   return (

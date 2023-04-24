@@ -21,7 +21,7 @@ import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
-import { getUserFromAPI } from './api';
+import { getUserFromAPI } from '../api';
 
 const store = new Store();
 
@@ -72,7 +72,20 @@ const loadExtensions = async () => {
   );
 };
 
+const handleUserId = () => {
+  let userId: string;
+  const storeUserId = store.get('userId') as undefined | string;
+  if (storeUserId) {
+    userId = storeUserId;
+  } else {
+    userId = uuid();
+    store.set('userId', userId);
+  }
+  return userId;
+};
+
 const setAppState = async () => {
+  handleUserId();
   const s3Path = await getDownloadLink();
   // const s3Path = 'Thirdym.v0.1.0-alpha';
   if (s3Path) {
@@ -520,7 +533,7 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
 ipcMain.on(
   Channels.openOKXExtension,
   (_event, state: { fromProfileWindow: boolean }) => {
-    const userId = handleUserId();
+    const userId = store.get('userId');
     profileWindow!
       .loadURL(`${OKX_WEB_APP_URL}?userId=${userId}`)
       .then(() => {
@@ -583,15 +596,3 @@ ipcMain.on('electron-store-set', async (event, key, val) => {
 ipcMain.on('dev:clear-store', async (event) => {
   store.clear();
 });
-
-const handleUserId = () => {
-  let userId: string;
-  const storeUserId = store.get('userId') as undefined | string;
-  if (storeUserId) {
-    userId = storeUserId;
-  } else {
-    userId = uuid();
-    store.set('userId', userId);
-  }
-  return userId;
-};

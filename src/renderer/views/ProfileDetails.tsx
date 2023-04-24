@@ -3,8 +3,8 @@ import { FC } from 'react';
 import settingsIcon from 'assets/images/settings-icon.svg';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { ClearStore } from '@renderer/components/ClearStore';
-import styles from './ProfileDetails.module.css';
 import { ChooseAvatar } from '@renderer/components/ChooseAvatar';
+import styles from './ProfileDetails.module.css';
 
 export const ProfileDetails: FC<{
   state: AppState;
@@ -22,7 +22,7 @@ export const ProfileDetails: FC<{
         </>
       ) : (
         <div className={styles.notConnected}>
-          <ConnectOKXWallet fromProfileWindow={true} />
+          <ConnectOKXWallet fromProfileWindow />
         </div>
       )}
       <ClearStore />
