@@ -3,14 +3,13 @@ import { Channels } from '@interfaces';
 import chooseAvatarImg from 'assets/images/choose-avatar.png';
 import chooseAvatarImg_2x from 'assets/images/choose-avatar@2x.png';
 import styles from './ChooseAvatar.module.css';
+import { useNavigate } from 'react-router-dom';
 
-interface ChooseAvatarProps {
-  onClick: () => void;
-}
-export const ChooseAvatar: FC<ChooseAvatarProps> = ({ onClick }) => {
+export const ChooseAvatar: FC = () => {
+  const navigate = useNavigate();
   const handleClick = () => {
     window.electron.ipcRenderer.sendMessage(Channels.openAvatarDialog);
-    onClick();
+    navigate('/choose-avatar');
   };
   return (
     <div className={styles.container}>
