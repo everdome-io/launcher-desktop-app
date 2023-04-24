@@ -6,11 +6,10 @@ import styles from './AvatarList.module.css';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
+import { useNavigate } from 'react-router-dom';
 
-interface AvatarListProps {
-  handleChangeView: () => void;
-}
-export const AvatarList: FC<AvatarListProps> = ({ handleChangeView }) => {
+export const AvatarList: FC = () => {
+  const navigate = useNavigate();
   const [avatarIndex, setAvatarIndex] = useState(0);
 
   const onClickNext = () => {
@@ -21,12 +20,12 @@ export const AvatarList: FC<AvatarListProps> = ({ handleChangeView }) => {
   };
   const onCancel = () => {
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
-    handleChangeView();
+    navigate('/');
   };
   const onSave = () => {
     // TODO: save avatar CALL API
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
-    handleChangeView();
+    navigate('/');
   };
   const onSaveUsername = () => {
     // TODO: save username CALL API
