@@ -1,15 +1,41 @@
-/*
- * @NOTE: Prepend a `~` to css file paths that are in your node_modules
- *        See https://github.com/webpack-contrib/sass-loader#imports
- */
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Light.ttf');
+  font-weight: 300;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf');
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Bold.ttf');
+  font-weight: 700;
+}
+
+html,
 body {
-  font-family: 'Rajdhani', sans-serif;
-  color: white;
   margin: 0;
   padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'HarmonyOS Sans', sans-serif;
+  color: white;
+  background-color: #000;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  height: 100%;
 }
 
 button {

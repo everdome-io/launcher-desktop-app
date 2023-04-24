@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'HarmonyOS Sans';
-  src: url('assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf');
-}
-
 .tosContainer {
   font-family: 'HarmonyOS Sans', sans-serif;
   display: flex;
@@ -11,7 +6,37 @@
   align-items: center;
   background-color: #000;
   color: #fff;
-  height: 100vh;
+  padding: 56px;
+}
+
+.tosContainer::after {
+  content: '';
+  flex: 1;
+  position: absolute;
+  left: 21.56%;
+  right: 21.56%;
+  top: -56%;
+  bottom: 65%;
+  background: #F6F6F6;
+  opacity: 0.26;
+  filter: blur(277px);
+}
+
+.title {
+  composes: pageTitle from '../theme/typography.module.css';
+  margin-bottom: 0.5rem;
+}
+
+.note {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.bannerContainer {
+  height: auto;
+  margin: 3.5rem auto 5rem;
 }
 
 .banner {
@@ -25,6 +50,7 @@
   line-height: 150%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  margin: 1.1rem auto 0;
 }
 
 .poweredBy img {
@@ -32,17 +58,52 @@
 }
 
 .tosForm {
-  margin-top: 100px;
   width: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
 }
 
+.tosPDF {
+  margin: 0;
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.tosPDF:hover {
+  color: #3BD6FF;
+  text-decoration: underline;
+}
+
+.tosCTA {
+  composes: primary from '../theme/buttons.module.css';
+  composes: flexCenter from '../theme/layout.module.css';
+  justify-content: space-between;
+  width: 135px;
+  padding: 16px 24px 16px 32px;
+  margin-top: 3rem;
+}
+
+.tosCTA:hover {
+  box-shadow: none;
+}
+
+
+
+
+
 /* Checkbox styles */
-label.checkbox {
+.checkbox {
   margin-right: 1rem;
-  padding-left: 1.75rem;
+  padding: 8px 24px 8px 8px;
+  padding-left: 32px;
+  border-radius: 9px 34px 34px 9px;
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -51,26 +112,28 @@ label.checkbox {
   margin-bottom: 10px;
 }
 
-label.checkbox input[type=checkbox] {
+.checkbox input[type=checkbox] {
   position: absolute;
   opacity: 0;
 }
 
-label.checkbox input[type=checkbox]:checked~span.indicator {
+.checkbox input[type=checkbox]:checked~span.indicator {
   color: #000;
+  background-color: #fff;
   background-image: url("data:image/svg+xml,%3Csvg width='11' height='9' viewBox='0 0 11 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.75 1.66504L4.25 7.16504L1.75 4.66504' stroke='black' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat no-repeat;
   background-position: center center;
 }
 
-label.checkbox span.indicator {
+.checkbox span.indicator {
   border-radius: 6px;
   position: absolute;
-  left: 0;
-  top: -2px;
+  left: 8px;
+  top: 5px;
   width: 24px;
   height: 24px;
-  background-color: #fff;
+  background: #000000;
+  border: 2px solid #FFFFFF;
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -83,30 +146,37 @@ label.checkbox span.indicator {
   vertical-align: middle;
 }
 
-a.tosPDF {
-  margin: 0;
-  color: inherit;
-  text-decoration: underline;
-  font-weight: 700;
+/* Hover */
+.checkbox:hover {
+  background: #191919;
+
 }
 
-.tosCTA {
-  background: #3BD6FF;
-  box-shadow: 0px 64px 67px rgba(0, 0, 0, 0.06), 0px 23.3611px 24.4561px rgba(0, 0, 0, 0.0413989), 0px 11.3414px 11.873px rgba(0, 0, 0, 0.0333774), 0px 5.55974px 5.82036px rgba(0, 0, 0, 0.0266226), 0px 2.19833px 2.30138px rgba(0, 0, 0, 0.0186011);
-  border-radius: 38px;
-  width: 444px;
-  height: 56px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  margin-top: 64px;
-  align-self: center;
+/* Errors */
+.invalid {
+  background: #281B1D;
+  color: #FF6E88;
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
-.tosCTA:not(:disabled):hover {
-  background-color: #fff;
-  cursor: pointer;
+.invalid span.indicator {
+  background: transparent;
+  border: 2px solid #FF6E88;
+
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
