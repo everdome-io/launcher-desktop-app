@@ -1,0 +1,25 @@
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.avatar::after {
+  content: '';
+  flex: 1;
+  position: absolute;
+  width: 188px;
+  height: 278px;
+  left: 77px;
+  top: 46px;
+  background: #FFFFFF;
+  opacity: 0.3;
+  filter: blur(52px);
+  z-index: -1;
+}
+
+.stand {
+  position: absolute;
+  bottom: 25%;
+}
