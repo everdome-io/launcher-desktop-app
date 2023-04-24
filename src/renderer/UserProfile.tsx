@@ -1,15 +1,16 @@
 import { AppState, CrossWindowState } from '@interfaces';
 import { FC } from 'react';
-import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { ProfileDetails } from './views/ProfileDetails';
 import './UserProfile.css';
+import { AvatarList } from './views/AvatarList';
 
 const UserProfile: FC<{
   state: AppState;
   crossWindowState: CrossWindowState;
 }> = ({ state, crossWindowState }) => {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -17,8 +18,9 @@ const UserProfile: FC<{
             <ProfileDetails state={state} crossWindowState={crossWindowState} />
           }
         />
+        <Route path="/choose-avatar" element={<AvatarList />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 };
 

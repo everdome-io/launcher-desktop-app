@@ -22,7 +22,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 }) => {
   const [afterDownload, setAfterDownload] = useState(false);
   const [afterExtract, setAfterExtract] = useState(false);
-  let className = 'ProcessButton';
+  let className = styles.ProcessButton;
   let buttonText = 'DOWNLOAD';
   let additionalInfo = null;
 
@@ -51,10 +51,10 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   }
 
   if (processStageStore === Processes.play) {
-    className = 'ProcessButton';
+    className = styles.ProcessButton;
     buttonText = 'PLAY';
   } else if (duringDownloadOrExtract) {
-    className = 'DuringProcessButton';
+    className = styles.DuringProcessButton;
     if (process === Processes.download) {
       buttonText = `${progress.toFixed(2)} %`;
     } else {

@@ -1,8 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Bold.ttf');
+  font-weight: 700;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  margin: 24px;
-  font-family: 'Rajdhani', sans-serif;
+  height: 100vh;
+  font-family: 'HarmonyOS Sans', sans-serif;
   color: white;
   background-color: #000;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  height: 100%;
 }
