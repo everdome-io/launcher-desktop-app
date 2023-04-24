@@ -1,4 +1,4 @@
-import { AppState, CrossWindowState } from '@interfaces';
+import { CrossWindowState } from '@interfaces';
 import { FC } from 'react';
 import settingsIcon from 'assets/images/settings-icon.svg';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
@@ -8,18 +8,18 @@ import { UserName } from '@renderer/components/UserName';
 import styles from './ProfileDetails.module.css';
 
 export const ProfileDetails: FC<{
-  state: AppState;
+  state: { avatarId: string | null; nickName: string };
   crossWindowState: CrossWindowState;
-}> = ({ crossWindowState }) => {
+}> = ({ crossWindowState, state: { avatarId, nickName } }) => {
   return (
     <div className={styles.container}>
       {crossWindowState.isAuthenticated ? (
         <>
           <header className={styles.userProfileHeader}>
-            <UserName crossWindowState={crossWindowState} />
+            <UserName userName={nickName} />
             <img src={settingsIcon} />
           </header>
-          <UserAvatar crossWindowState={crossWindowState} />
+          <UserAvatar avatarId={avatarId} />
         </>
       ) : (
         <div className={styles.notConnected}>

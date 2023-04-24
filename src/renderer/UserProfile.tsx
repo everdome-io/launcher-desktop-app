@@ -1,4 +1,4 @@
-import { AppState, CrossWindowState } from '@interfaces';
+import { CrossWindowState } from '@interfaces';
 import { FC, useEffect, useState } from 'react';
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import { ProfileDetails } from './views/ProfileDetails';
@@ -9,16 +9,15 @@ import { generateFakeEthAddress } from './utils/publicKeyGenerator';
 import { generateNickname } from './utils/usernameGenerator';
 
 const UserProfile: FC<{
-  state: AppState;
   crossWindowState: CrossWindowState;
-}> = ({ state, crossWindowState }) => {
+}> = ({ crossWindowState }) => {
   const userId = window.electron.store.get('userId');
   const [userAttributes, setUserAttributes] = useState<UserAttributes>({
     userId,
     publicKey: generateFakeEthAddress(),
     nickName: generateNickname(),
     isFakePublicKey: true,
-    avatarId: '',
+    avatarId: null,
   });
   useEffect(() => {
     getUserFromAPI({
@@ -46,7 +45,7 @@ const UserProfile: FC<{
     avatarId,
   }: {
     nickName: string;
-    avatarId: string;
+    avatarId: string | null;
   }) => {
     setUserAttributes({ ...userAttributes, avatarId, nickName });
     await setUserInAPI({ ...userAttributes, avatarId, nickName }, () =>
@@ -60,10 +59,21 @@ const UserProfile: FC<{
         <Route
           path="/"
           element={
-            <ProfileDetails state={state} crossWindowState={crossWindowState} />
+            <ProfileDetails
+              state={userAttributes}
+              crossWindowState={crossWindowState}
+            />
           }
         />
-        <Route path="/choose-avatar" element={<AvatarList />} />
+        <Route
+          path="/choose-avatar"
+          element={
+            <AvatarList
+              saveAvatar={saveUser}
+              nickName={userAttributes.nickName}
+            />
+          }
+        />
       </Routes>
     </HashRouter>
   );

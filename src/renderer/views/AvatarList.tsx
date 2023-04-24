@@ -15,7 +15,7 @@ export const AvatarList: FC<{
     avatarId,
   }: {
     nickName: string;
-    avatarId: string;
+    avatarId: string | null;
   }) => Promise<void>;
 }> = ({ nickName, saveAvatar }) => {
   const navigate = useNavigate();
@@ -37,7 +37,7 @@ export const AvatarList: FC<{
     navigate('/');
   };
   const onSaveUsername = () => {
-    saveAvatar({ nickName: 'to_be_changed', avatarId: 'to_be_changed' });
+    saveAvatar({ nickName: 'to_be_changed', avatarId: null });
     (document.activeElement as HTMLElement).blur();
   };
   return (
@@ -47,7 +47,7 @@ export const AvatarList: FC<{
       </h1>
       <div className={styles.userNameInputBox}>
         <span className={styles.prefix}>@ </span>
-        <input type="text" placeholder="Your username" />
+        <input type="text" placeholder={nickName} />
         <button onClick={onSaveUsername} className={styles.inputBtn}>
           Save
         </button>

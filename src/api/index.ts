@@ -24,7 +24,7 @@ export async function getUserFromAPI({
 export interface UserAttributes {
   userId: string;
   publicKey: string;
-  avatarId: string;
+  avatarId: string | null;
   nickName: string;
   isFakePublicKey: boolean;
 }

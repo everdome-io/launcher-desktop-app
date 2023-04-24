@@ -60,8 +60,6 @@ export type AppState = {
 export type CrossWindowState = {
   isAuthenticated: boolean;
   errorMessage: string;
-  avatarId?: string;
-  username?: string;
 };
 
 export type AppUpdate = {
