@@ -188,7 +188,9 @@ const createProfileWindow = async () => {
 
   profileWindow.webContents.on('did-navigate', async (event, url) => {
     if (url.includes('/success')) {
-      await profileWindow?.loadURL(resolveHtmlPath('profile.html'));
+      await profileWindow
+        ?.loadURL(resolveHtmlPath('profile.html'))
+        .catch((err) => console.log(err));
       okxWindow?.hide();
       store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;

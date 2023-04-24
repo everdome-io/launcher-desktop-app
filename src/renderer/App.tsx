@@ -1,8 +1,10 @@
 import { FC } from 'react';
-import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { AppState, AppUpdate, CrossWindowState } from '../interfaces';
 import './App.css';
 import { Main } from './views/Main';
+import { TermsOfService } from './views/TermsOfService';
+import { ConnectOrSkip } from './views/ConnectOrSkip';
 
 const App: FC<{
   state: AppState;
@@ -10,7 +12,7 @@ const App: FC<{
   crossWindowState: CrossWindowState;
 }> = ({ state, updateState, crossWindowState }) => {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -22,8 +24,10 @@ const App: FC<{
             />
           }
         />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/connect-or-skip" element={<ConnectOrSkip />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 };
 

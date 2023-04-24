@@ -2,15 +2,13 @@ import { FC } from 'react';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { Channels } from '@interfaces';
 import styles from './ConnectOrSkip.module.css';
+import { useNavigate } from 'react-router-dom';
 
-interface ConnectOrSkipProps {
-  onSkip: () => void;
-}
-
-export const ConnectOrSkip: FC<ConnectOrSkipProps> = ({ onSkip }) => {
+export const ConnectOrSkip: FC = () => {
+  const navigate = useNavigate();
   const skipConnect = () => {
     window.electron.ipcRenderer.sendMessage(Channels.connectedOrSkipped);
-    onSkip();
+    navigate('/');
   };
   return (
     <div className={styles.cosContainer}>
