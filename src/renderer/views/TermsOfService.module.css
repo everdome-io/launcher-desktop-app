@@ -1,4 +1,7 @@
-@import url('https://db.onlinewebfonts.com/c/876476f9c21d688286b0ec4bf47013a7?family=HarmonyOS+Sans');
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url('assets/fonts/HarmonyOS_Sans_SC/HarmonyOS_Sans_SC_Regular.ttf');
+}
 
 .tosContainer {
   font-family: 'HarmonyOS Sans', sans-serif;
