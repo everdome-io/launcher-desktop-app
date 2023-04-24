@@ -1,0 +1,17 @@
+.username {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.usernameLabel {
+  composes: username;
+}
+
+.usernameEmpty {
+  composes: username;
+  opacity: 0.5;
+}
