@@ -22,22 +22,24 @@ const UserProfile: FC<{
   useEffect(() => {
     getUserFromAPI({
       userId,
-      handleError: (err: any) => console.log('User not created jet'),
+      handleError: (err: any) => console.log(err),
     })
       .then((response) => {
         const user = {
           ...response,
-          avatarId:
-            response.nickName === null ? generateNickname() : response.nickName,
-          publicKey:
-            response.publicKey === null
+          nickName:
+            response?.nickName === null
               ? generateNickname()
+              : response.nickName,
+          publicKey:
+            response?.publicKey === null
+              ? generateFakeEthAddress()
               : response.publicKey,
         };
         setUserAttributes(user);
         return response;
       })
-      .catch((err) => console.log('User not created jet'));
+      .catch((err) => console.log(err));
   }, [userId]);
 
   const saveUser = async ({
@@ -48,8 +50,8 @@ const UserProfile: FC<{
     avatarId: string | null;
   }) => {
     setUserAttributes({ ...userAttributes, avatarId, nickName });
-    await setUserInAPI({ ...userAttributes, avatarId, nickName }, () =>
-      console.log('err')
+    await setUserInAPI({ ...userAttributes, avatarId, nickName }, (err) =>
+      console.log('err', err)
     );
   };
 

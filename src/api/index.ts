@@ -7,12 +7,15 @@ export async function getUserFromAPI({
   userId: string;
   handleError: (err: any) => void;
 }) {
-  const result = await fetch(`${BACKEND_URL}/users/${userId}`)
-    .then((response) => {
+  const result = await fetch(`${BACKEND_URL}/user/${userId}`)
+    .then(async (response) => {
       if (!response.ok) {
         throw new Error('Error fetching user data');
       }
       return response.json();
+    })
+    .then((json) => {
+      return json;
     })
     .catch((error) => {
       handleError(error);

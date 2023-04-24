@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useRef, useState } from 'react';
 import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
 import { Channels } from '@interfaces';
@@ -18,8 +18,14 @@ export const AvatarList: FC<{
     avatarId: string | null;
   }) => Promise<void>;
 }> = ({ nickName, saveAvatar }) => {
+  const [nickNameValue, setNickNameValue] = useState(nickName);
+  const nickNameRef = useRef(null);
   const navigate = useNavigate();
   const [avatarIndex, setAvatarIndex] = useState(0);
+
+  const handleInputChange = (event: any) => {
+    setNickNameValue(event.target.value);
+  };
 
   const onClickNext = () => {
     setAvatarIndex(avatarIndex + 2);
@@ -32,12 +38,12 @@ export const AvatarList: FC<{
     navigate('/');
   };
   const onSave = () => {
-    saveAvatar({ nickName: 'to_be_changed', avatarId: 'to_be_changed' });
+    saveAvatar({ nickName: nickNameValue, avatarId: avatarIndex.toString() });
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
     navigate('/');
   };
   const onSaveUsername = () => {
-    saveAvatar({ nickName: 'to_be_changed', avatarId: null });
+    saveAvatar({ nickName: nickNameValue, avatarId: null });
     (document.activeElement as HTMLElement).blur();
   };
   return (
@@ -47,7 +53,12 @@ export const AvatarList: FC<{
       </h1>
       <div className={styles.userNameInputBox}>
         <span className={styles.prefix}>@ </span>
-        <input type="text" placeholder={nickName} />
+        <input
+          ref={nickNameRef}
+          type="text"
+          value={nickNameValue}
+          onChange={handleInputChange}
+        />
         <button onClick={onSaveUsername} className={styles.inputBtn}>
           Save
         </button>
