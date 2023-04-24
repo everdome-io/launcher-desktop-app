@@ -3,17 +3,15 @@ import OKX_Framed from 'assets/images/OKX_Framed.png';
 import logo from 'assets/images/logo.png';
 import { Channels } from '@interfaces';
 import styles from './TermsOfService.module.css';
+import { useNavigate } from 'react-router-dom';
 
-interface TermsOfServiceProps {
-  onAccept: () => void;
-}
-
-export const TermsOfService: FC<TermsOfServiceProps> = ({ onAccept }) => {
+export const TermsOfService: FC = () => {
+  const navigate = useNavigate();
   const [isTermsChecked, setIsTermsChecked] = useState(false);
   const [isAgeChecked, setIsAgeChecked] = useState(false);
   const acceptTerms = () => {
     window.electron.ipcRenderer.sendMessage(Channels.acceptTerms);
-    onAccept();
+    navigate('/connect-or-skip');
   };
 
   return (

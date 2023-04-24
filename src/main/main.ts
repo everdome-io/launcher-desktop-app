@@ -157,7 +157,9 @@ const createProfileWindow = async () => {
 
   profileWindow.webContents.on('did-navigate', async (event, url) => {
     if (url.includes('/success')) {
-      await profileWindow?.loadURL(resolveHtmlPath('profile.html'));
+      await profileWindow
+        ?.loadURL(resolveHtmlPath('profile.html'))
+        .catch((err) => console.log(err));
       okxWindow?.hide();
       store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;
@@ -260,9 +262,10 @@ app
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
       if (windows.size === 0) {
-      if (mainWindow === null) createWindow();
-      if (profileWindow === null) createProfileWindow();
-      if (okxWindow === null) createOKXWindow();}
+        if (mainWindow === null) createWindow();
+        if (profileWindow === null) createProfileWindow();
+        if (okxWindow === null) createOKXWindow();
+      }
     });
   })
   .catch(console.log);
