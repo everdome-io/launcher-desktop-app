@@ -93,24 +93,18 @@ function installOnWindows(filePath: string): void {
   });
 }
 
-export function installEverdome(filePath: string): void {
+export function installEverdome(
+  filePath: string,
+  getFolderName: () => string
+): void {
   const os = getOS();
+  const folderName = getFolderName();
   switch (os) {
     case OperatingSystem.MacOS:
       installOnMacOS(path.join(filePath, 'Mac/Mars-Mac-Shipping'));
       break;
-    // case OperatingSystem.Windows:
-    //   installOnWindows(
-    //     path.join(filePath, 'TLauncher-2.876-Installer-1.0.7-global.exe')
-    //   );
-    //   break;
     case OperatingSystem.Windows:
-      installOnWindows(
-        path.join(
-          filePath,
-          'Everdome_Client_Win64_Shipping_002499/Everdome.exe'
-        )
-      );
+      installOnWindows(path.join(filePath, `${folderName}/Everdome.exe`));
       break;
     default:
   }
