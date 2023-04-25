@@ -11,7 +11,13 @@ const App: FC<{
   updateState: AppUpdate;
   crossWindowState: CrossWindowState;
 }> = ({ state, updateState, crossWindowState }) => {
-  return (
+  return crossWindowState.isAuthenticated ? (
+    <Main
+      state={state}
+      updateState={updateState}
+      crossWindowState={crossWindowState}
+    />
+  ) : (
     <HashRouter>
       <Routes>
         <Route
