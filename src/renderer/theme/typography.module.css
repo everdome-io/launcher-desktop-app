@@ -1,0 +1,10 @@
+.pageTitle {
+  font-family: 'HarmonyOS Sans';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}

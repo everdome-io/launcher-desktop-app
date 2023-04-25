@@ -16,7 +16,7 @@
   composes: primaryBg from "./colors.module.css";
   border-radius: 38px;
   padding: 16px 32px;
-  min-width: 148px;
+  width: 148px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
