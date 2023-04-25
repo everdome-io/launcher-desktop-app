@@ -6,7 +6,6 @@ import './UserProfile.css';
 import { AvatarList } from './views/AvatarList';
 import { getUserFromAPI, setUserInAPI } from '../api';
 import { generateFakeEthAddress } from './utils/publicKeyGenerator';
-import { generateNickname } from './utils/usernameGenerator';
 
 const UserProfile: FC<{
   crossWindowState: CrossWindowState;
@@ -25,18 +24,7 @@ const UserProfile: FC<{
       handleError: (err: any) => console.log(err),
     })
       .then((response) => {
-        const user = {
-          ...response,
-          nickName:
-            response?.nickName === null
-              ? generateNickname()
-              : response.nickName,
-          publicKey:
-            response?.publicKey === null
-              ? generateFakeEthAddress()
-              : response.publicKey,
-        };
-        setUserAttributes(user);
+        setUserAttributes(response);
         return response;
       })
       .catch((err) => console.log(err));
@@ -72,7 +60,7 @@ const UserProfile: FC<{
           element={
             <AvatarList
               saveAvatar={saveUser}
-              nickName={userAttributes.nickName}
+              nickName={userAttributes.nickName || undefined}
             />
           }
         />
