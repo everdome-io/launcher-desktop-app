@@ -37,6 +37,10 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     (process === Processes.download || process === Processes.extract) &&
     progress !== null;
 
+  console.log('duringDownloadOrExtract', duringDownloadOrExtract);
+  console.log('couldUseWebLink', couldUseWebLink);
+  console.log('processStageStore', processStageStore);
+
   if (processStageStore === Processes.download) {
     if (!afterDownload) {
       window.electron.ipcRenderer.sendMessage(Channels.downloadProcess);
