@@ -27,6 +27,10 @@ export const Main: FC<{
     }
     return (
       <div className={styles.main}>
+        <div className={styles.slider}>
+          <div className={styles.slide}></div>
+          <div className={styles.slide}></div>
+        </div>
         <div className={styles.container}>
           <img src={logoImage} alt="Everdome" width="70" height="44" />
           <section className={styles.mainSection}>

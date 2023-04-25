@@ -51,3 +51,21 @@ export async function getDownloadLink(): Promise<string | null> {
 }
 
 export const uuid = uuid1.v4;
+
+export const calculateProfileWindowPosition = (
+  mainWindowPosition: number[] | undefined
+) => {
+  const [x, y] = mainWindowPosition || [];
+  if (x && y) {
+    return [x + 962, y + 56];
+  } else {
+    return [1218, 216];
+  }
+};
+
+export const calculateExtensionWindowPosition = (
+  profileWindowPosition: number[]
+) => {
+  const [x, y] = profileWindowPosition;
+  return [x - 5, y - 10];
+};
