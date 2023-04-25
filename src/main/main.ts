@@ -301,6 +301,7 @@ app
     await loadExtensions();
     await setAppState();
     createWindow();
+    createProfileWindow();
     createOKXWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
