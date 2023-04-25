@@ -1,3 +1,5 @@
+import { UserAttributes } from '@interfaces';
+
 const BACKEND_URL = 'https://backend.prod.aws.everdome.io';
 
 export async function getUserFromAPI({
@@ -24,13 +26,6 @@ export async function getUserFromAPI({
   return result;
 }
 
-export interface UserAttributes {
-  userId: string;
-  publicKey: string;
-  avatarId: string | null;
-  nickName: string;
-  isFakePublicKey: boolean;
-}
 export async function setUserInAPI(
   { userId, publicKey, avatarId, nickName, isFakePublicKey }: UserAttributes,
   handleError: (err: any) => void

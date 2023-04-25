@@ -300,7 +300,6 @@ app
   .then(async () => {
     await loadExtensions();
     await setAppState();
-    createProfileWindow();
     createWindow();
     createProfileWindow();
     createOKXWindow();

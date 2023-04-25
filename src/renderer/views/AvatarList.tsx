@@ -6,10 +6,11 @@ import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
 import { useNavigate } from 'react-router-dom';
+import { generateNickname } from '@renderer/utils/usernameGenerator';
 import styles from './AvatarList.module.css';
 
 export const AvatarList: FC<{
-  nickName: string;
+  nickName: string | undefined;
   saveAvatar: ({
     nickName,
     avatarId,
@@ -19,6 +20,7 @@ export const AvatarList: FC<{
   }) => Promise<void>;
 }> = ({ nickName, saveAvatar }) => {
   const [nickNameValue, setNickNameValue] = useState(nickName);
+  const [placeholderValue] = useState(generateNickname());
   const nickNameRef = useRef(null);
   const navigate = useNavigate();
   const [avatarIndex, setAvatarIndex] = useState(0);
@@ -38,12 +40,18 @@ export const AvatarList: FC<{
     navigate('/');
   };
   const onSave = () => {
-    saveAvatar({ nickName: nickNameValue, avatarId: avatarIndex.toString() });
+    saveAvatar({
+      nickName: nickNameValue || placeholderValue,
+      avatarId: avatarIndex.toString(),
+    });
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
     navigate('/');
   };
   const onSaveUsername = () => {
-    saveAvatar({ nickName: nickNameValue, avatarId: null });
+    if (!nickNameValue) {
+      setNickNameValue(placeholderValue);
+    }
+    saveAvatar({ nickName: nickNameValue || placeholderValue, avatarId: null });
     (document.activeElement as HTMLElement).blur();
   };
   return (
@@ -57,6 +65,7 @@ export const AvatarList: FC<{
           ref={nickNameRef}
           type="text"
           value={nickNameValue}
+          placeholder={placeholderValue}
           onChange={handleInputChange}
         />
         <button onClick={onSaveUsername} className={styles.inputBtn}>

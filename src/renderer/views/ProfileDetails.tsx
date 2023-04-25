@@ -8,7 +8,7 @@ import { UserName } from '@renderer/components/UserName';
 import styles from './ProfileDetails.module.css';
 
 export const ProfileDetails: FC<{
-  state: { avatarId: string | null; nickName: string };
+  state: { avatarId: string | null; nickName: string | null };
   crossWindowState: CrossWindowState;
 }> = ({ crossWindowState, state: { avatarId, nickName } }) => {
   return (
