@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { Channels } from '@interfaces';
-import styles from './ConnectOrSkip.module.css';
 import { useNavigate } from 'react-router-dom';
+import styles from './ConnectOrSkip.module.css';
 
 export const ConnectOrSkip: FC = () => {
   const navigate = useNavigate();
