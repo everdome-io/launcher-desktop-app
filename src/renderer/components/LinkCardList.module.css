@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.9rem;
+}
+
+
+.card {
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.33), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.237222), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.196715), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.165), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.133285), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.092778);
+  border-radius: 12px;
+  padding: 27px 24px 16px;
+  height: 144px;
+  position: relative;
+  padding-right: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardImg {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.cartTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.cardLink {
+  composes: secondary from '../theme/buttons.module.css';
+  margin: 0;
+  width: auto;
+  color: #000;
+}
