@@ -51,8 +51,8 @@ export function downloadFileWithProgress(
     });
   });
 
-  req.on('error', () => {
-    console.log('download failed');
+  req.on('error', (err) => {
+    console.log('download failed', err);
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
