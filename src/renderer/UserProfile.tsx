@@ -24,7 +24,9 @@ const UserProfile: FC<{
       handleError: (err: any) => console.log(err),
     })
       .then((response) => {
-        setUserAttributes(response);
+        if (response) {
+          setUserAttributes(response);
+        }
         return response;
       })
       .catch((err) => console.log(err));
