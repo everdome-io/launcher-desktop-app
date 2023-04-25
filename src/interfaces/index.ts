@@ -60,8 +60,6 @@ export type AppState = {
 export type CrossWindowState = {
   isAuthenticated: boolean;
   errorMessage: string;
-  avatarId?: string;
-  username?: string;
 };
 
 export type AppUpdate = {
@@ -76,3 +74,11 @@ export type ElectronEventArgs<T> = T extends Channels.changeState
   : T extends Channels.crossWindow
   ? CrossWindowState
   : never;
+
+export interface UserAttributes {
+  userId: string;
+  publicKey: string;
+  avatarId: string | null;
+  nickName: string | null;
+  isFakePublicKey: boolean;
+}

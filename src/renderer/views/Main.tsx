@@ -2,9 +2,9 @@ import { AppState, AppUpdate, CrossWindowState } from '@interfaces';
 import { FC } from 'react';
 import { Hello, FileDownloader, Menu } from 'src/renderer/components';
 import headerImage from 'assets/images/Genesis_NFT.png';
+import { Navigate } from 'react-router-dom';
 import { News } from './News';
 import styles from './Main.module.css';
-import { Navigate } from 'react-router-dom';
 
 export const Main: FC<{
   state: AppState;

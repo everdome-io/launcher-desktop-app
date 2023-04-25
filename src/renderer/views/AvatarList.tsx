@@ -1,16 +1,33 @@
-import { FC, useState } from 'react';
+import { FC, useRef, useState } from 'react';
 import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
 import { Channels } from '@interfaces';
-import styles from './AvatarList.module.css';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
 import { useNavigate } from 'react-router-dom';
+import { generateNickname } from '@renderer/utils/usernameGenerator';
+import styles from './AvatarList.module.css';
 
-export const AvatarList: FC = () => {
+export const AvatarList: FC<{
+  nickName: string | undefined;
+  saveAvatar: ({
+    nickName,
+    avatarId,
+  }: {
+    nickName: string;
+    avatarId: string | null;
+  }) => Promise<void>;
+}> = ({ nickName, saveAvatar }) => {
+  const [nickNameValue, setNickNameValue] = useState(nickName);
+  const [placeholderValue] = useState(generateNickname());
+  const nickNameRef = useRef(null);
   const navigate = useNavigate();
   const [avatarIndex, setAvatarIndex] = useState(0);
+
+  const handleInputChange = (event: any) => {
+    setNickNameValue(event.target.value);
+  };
 
   const onClickNext = () => {
     setAvatarIndex(avatarIndex + 2);
@@ -23,12 +40,18 @@ export const AvatarList: FC = () => {
     navigate('/');
   };
   const onSave = () => {
-    // TODO: save avatar CALL API
+    saveAvatar({
+      nickName: nickNameValue || placeholderValue,
+      avatarId: avatarIndex.toString(),
+    });
     window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
     navigate('/');
   };
   const onSaveUsername = () => {
-    // TODO: save username CALL API
+    if (!nickNameValue) {
+      setNickNameValue(placeholderValue);
+    }
+    saveAvatar({ nickName: nickNameValue || placeholderValue, avatarId: null });
     (document.activeElement as HTMLElement).blur();
   };
   return (
@@ -38,7 +61,13 @@ export const AvatarList: FC = () => {
       </h1>
       <div className={styles.userNameInputBox}>
         <span className={styles.prefix}>@ </span>
-        <input type="text" placeholder="Your username" />
+        <input
+          ref={nickNameRef}
+          type="text"
+          value={nickNameValue}
+          placeholder={placeholderValue}
+          onChange={handleInputChange}
+        />
         <button onClick={onSaveUsername} className={styles.inputBtn}>
           Save
         </button>
