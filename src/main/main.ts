@@ -300,9 +300,9 @@ app
   .then(async () => {
     await loadExtensions();
     await setAppState();
-    createWindow();
-    createProfileWindow();
-    createOKXWindow();
+    await createWindow();
+    await createProfileWindow();
+    await createOKXWindow();
     app.on('activate', () => {
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
