@@ -90,34 +90,24 @@ const handleUserId = () => {
   return userId;
 };
 
-const setAppState = async () => {
-  handleUserId();
-  const s3Path = await getDownloadLink();
-  // const s3Path = 'Thirdym.v0.1.0-alpha';
-  if (s3Path) {
-    const pathSplit = s3Path.split('/');
-    store.set(
-      'folderName',
-      pathSplit[pathSplit.length - 1].replace('.zip', '')
-    );
-    request
-      .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
-      .on('response', (res) => {
-        const gameFileExist = res.statusCode.toString()[0] === '2';
-        if (gameFileExist) {
-          downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
-          // downloadWebLink = `https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip`;
-          const storeWebLink = store.get('webLink') as string | undefined;
-          const couldUseWebLink = storeWebLink !== downloadWebLink;
-          store.set('couldUseWebLink', couldUseWebLink);
-          if (couldUseWebLink) {
-            store.set('processStage', Processes.openDialog);
-          }
-        } else {
-          store.set('couldUseWebLink', false);
-        }
-      });
-  }
+const setStore = (statusCode: number, s3Path: string): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    const gameFileExist = statusCode.toString()[0] === '2';
+    if (gameFileExist) {
+      downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
+      // downloadWebLink = `https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip`;
+      const storeWebLink = store.get('webLink') as string | undefined;
+      const couldUseWebLink = storeWebLink !== downloadWebLink;
+      store.set('couldUseWebLink', couldUseWebLink);
+      if (couldUseWebLink) {
+        store.set('processStage', Processes.openDialog);
+      }
+      resolve();
+    } else {
+      store.set('couldUseWebLink', false);
+      reject(new Error('Game file does not exist.'));
+    }
+  });
 };
 
 const createWindow = async () => {
@@ -302,23 +292,46 @@ app.on('window-all-closed', () => {
   }
 });
 
+const setupApp = async () => {
+  handleUserId();
+  loadExtensions();
+  const s3Path = await getDownloadLink();
+  // const s3Path = 'Thirdym.v0.1.0-alpha';
+  if (s3Path) {
+    const pathSplit = s3Path.split('/');
+    store.set(
+      'folderName',
+      pathSplit[pathSplit.length - 1].replace('.zip', '')
+    );
+    request
+      .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
+      .on('response', (res) => {
+        setStore(res.statusCode, s3Path)
+          .then(() => {
+            createWindow();
+            createProfileWindow();
+            createOKXWindow();
+            app.on('activate', () => {
+              // On macOS it's common to re-create a window in the app when the
+              // dock icon is clicked and there are no other windows open.
+              if (windows.size === 0) {
+                if (mainWindow === null) createWindow();
+                if (profileWindow === null) createProfileWindow();
+                if (okxWindow === null) createOKXWindow();
+              }
+            });
+          })
+          .catch((err) => {
+            console.log('err', err);
+          });
+      });
+  }
+};
+
 app
   .whenReady()
-  .then(async () => {
-    await loadExtensions();
-    await setAppState();
-    createWindow();
-    createProfileWindow();
-    createOKXWindow();
-    app.on('activate', () => {
-      // On macOS it's common to re-create a window in the app when the
-      // dock icon is clicked and there are no other windows open.
-      if (windows.size === 0) {
-        if (mainWindow === null) createWindow();
-        if (profileWindow === null) createProfileWindow();
-        if (okxWindow === null) createOKXWindow();
-      }
-    });
+  .then(() => {
+    setupApp();
   })
   .catch(console.log);
 
