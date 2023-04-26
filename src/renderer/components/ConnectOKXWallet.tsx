@@ -12,10 +12,12 @@ export const ConnectOKXWallet: FC<{ fromProfileWindow: boolean }> = ({
   };
   return (
     <button
-      className={`${styles.CTAButton} ${styles.ConnectWallet}`}
+      className={
+        fromProfileWindow ? styles.connectWallet : styles.connectWalletPrimary
+      }
       onClick={connectWallet}
     >
-      Connect OKX Wallet
+      Collect your NFT
     </button>
   );
 };

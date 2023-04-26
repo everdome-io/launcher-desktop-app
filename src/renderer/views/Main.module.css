@@ -63,6 +63,7 @@
 .container {
   padding: 2rem 3rem;
   width: 74%;
+  z-index: 2;
 }
 
 .main::before {
@@ -75,6 +76,7 @@
   background: linear-gradient(90deg, #000000 29.01%, rgba(0, 0, 0, 0) 100%);
   opacity: 0.96;
   border-radius: 0px;
+  z-index: 1;
 }
 
 .main::after {
@@ -90,6 +92,7 @@
   background: #FFFFFF;
   opacity: 0.3;
   filter: blur(177px);
+  z-index: 1;
 }
 
 .mainSection {

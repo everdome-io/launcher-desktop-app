@@ -1,20 +1,86 @@
-.cosContainer {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-between;
   width: 100%;
   background-color: #000;
+  overflow: hidden;
+  padding: 3.5rem 3rem 3rem 3rem;
+}
+
+.container::before {
+  content: '';
+  flex: 1;
+  position: absolute;
+  left: 21.56%;
+  right: 21.56%;
+  top: -56%;
+  bottom: 65%;
+  background: #F6F6F6;
+  opacity: 0.26;
+  filter: blur(277px);
+}
+
+.glow {
+  position: absolute;
+  width: 100%;
+}
+
+.glow::after {
+  content: '';
+  flex: 1;
+  position: absolute;
+  left: 21.56%;
+  right: 21.56%;
+  top: 69.42%;
+  bottom: -60.42%;
+  background: #F6F6F6;
+  opacity: 0.26;
+  filter: blur(277px);
+}
+
+.title {
+  composes: pageTitle from '../theme/typography.module.css';
+}
+
+.infoText {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.btnGroup {
+  display: flex;
+  align-items: center;
 }
 
 .skipBtn {
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
   appearance: none;
   font-family: inherit;
   background: none;
-  color: #fff;
+  font-weight: 700;
   font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 4.5rem;
+  cursor: pointer;
+}
+
+.header {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
