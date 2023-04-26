@@ -44,26 +44,22 @@ function execSudoCommand(
   command: string,
   callback: (error: Error | null) => void
 ): void {
-  sudo.exec(
-    command,
-    { name: 'Your Application Name' },
-    (error, stdout, stderr) => {
-      if (error) {
-        console.error(`Error executing command: ${error.message}`);
-        callback(error);
-        return;
-      }
-
-      if (stderr) {
-        console.error(`Standard error output: ${stderr}`);
-        callback(new Error(stderr.toString()));
-        return;
-      }
-
-      console.log(`Successfully executed command: ${command}`);
-      callback(null);
+  sudo.exec(command, { name: 'Exerdome' }, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error executing command: ${error.message}`);
+      callback(error);
+      return;
     }
-  );
+
+    if (stderr) {
+      console.error(`Standard error output: ${stderr}`);
+      callback(new Error(stderr.toString()));
+      return;
+    }
+
+    console.log(`Successfully executed command: ${command}`);
+    callback(null);
+  });
 }
 
 function installOnMacOS(filePath: string): void {
