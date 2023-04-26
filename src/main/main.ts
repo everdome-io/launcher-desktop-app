@@ -17,7 +17,13 @@ import request from 'request';
 import { AppUpdateStatus, Channels, Processes } from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
-import { getDownloadLink, resolveHtmlPath, uuid } from './utils';
+import {
+  calculateExtensionWindowPosition,
+  calculateProfileWindowPosition,
+  getDownloadLink,
+  resolveHtmlPath,
+  uuid,
+} from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
@@ -111,8 +117,8 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     show: true,
-    width: 1024,
-    height: 728,
+    width: 1280,
+    height: 800,
     icon: getAssetPath('icon.png'),
     skipTaskbar: true,
     webPreferences: {
@@ -124,7 +130,7 @@ const createWindow = async () => {
   windows.add(mainWindow);
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
-
+  mainWindow.center();
   mainWindow.on('ready-to-show', async () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');
@@ -174,7 +180,8 @@ const createProfileWindow = async () => {
   windows.add(profileWindow);
 
   profileWindow.loadURL(resolveHtmlPath('profile.html'));
-  profileWindow.setPosition(1100, 100);
+  const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
+  profileWindow.setPosition(x, y);
 
   profileWindow.on('ready-to-show', () => {
     if (store.get('termsAccepted') && store.get('connectedOrSkipped')) {
@@ -560,8 +567,11 @@ ipcMain.on(
     }
     if (okxWindow) {
       okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
-      if (state.fromProfileWindow) {
-        okxWindow.setPosition(1095, 100);
+      if (state.fromProfileWindow && profileWindow) {
+        const [x, y] = calculateExtensionWindowPosition(
+          profileWindow.getPosition()
+        );
+        okxWindow.setPosition(x - 5, y - 10);
       } else {
         okxWindow.center();
       }
@@ -589,13 +599,14 @@ ipcMain.on(Channels.connectedOrSkipped, (_event) => {
 });
 
 ipcMain.on(Channels.openAvatarDialog, (_event) => {
-  profileWindow?.setSize(1024, 768);
+  profileWindow?.setSize(1280, 800);
   profileWindow?.center();
 });
 
 ipcMain.on(Channels.closeAvatarDialog, (_event) => {
   profileWindow?.setSize(342, 688);
-  profileWindow?.setPosition(1100, 100);
+  const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
+  profileWindow?.setPosition(x, y);
 });
 
 ipcMain.on('electron-store-get', async (event, val) => {

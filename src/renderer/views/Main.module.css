@@ -1,17 +1,100 @@
 .main {
   width: 100%;
   height: 100%;
-  background-color: #04374D;
-  background-image: url('../../../assets/images/img-bg.png');
+  background-color: #000;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 11s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url('../../../assets/images/main-bg-img.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  animation-delay: 0s;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url('../../../assets/images/main-bg-img2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  animation-delay: -5.5s;
+}
+
+@keyframes slider {
+
+  0%,
+  45%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+
+  50% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
 }
 
 .container {
-  padding: 20px 50px;
+  padding: 2rem 3rem;
+  width: 74%;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  right: 56.13%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(90deg, #000000 29.01%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.96;
+  border-radius: 0px;
+}
+
+.main::after {
+  /* Glow */
+  content: "";
+  position: absolute;
+  left: -37.35%;
+  right: 94.48%;
+  top: -5.5%;
+  bottom: 35.62%;
+
+  /* Glo White */
+  background: #FFFFFF;
+  opacity: 0.3;
+  filter: blur(177px);
 }
 
 .mainSection {
   display: flex;
+  margin-top: 3rem;
 }
 
 .welcomeMessage {
@@ -23,4 +106,55 @@
 .welcomeMessage h1 {
   color: #fff;
   text-transform: none;
+}
+
+.welcomeMessage p {
+  font-family: 'HarmonyOS Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  max-width: 396px;
+  margin: 0;
+}
+
+.downloadBtn {
+  composes: primary from "../theme/buttons.module.css";
+  width: 196px;
+  margin-top: 3.5rem;
+}
+
+.poweredBy {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 110px;
+  margin-bottom: 56px;
+  composes: flexCenter from "../theme/layout.module.css";
+  justify-content: flex-start;
+}
+
+.poweredBy::after {
+  content: "";
+  position: absolute;
+  left: 22.16%;
+  right: 29.91%;
+  top: 64.88%;
+  bottom: 35.12%;
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+}
+
+.poweredByText {
+  margin: 0;
+}
+
+.poweredByLink {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0;
 }
