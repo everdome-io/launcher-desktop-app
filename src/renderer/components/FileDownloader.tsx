@@ -1,6 +1,5 @@
 import { AppState, Channels, Processes } from '@interfaces';
 import { FC, useState } from 'react';
-import chevronRight from 'assets/images/chevron-right.png';
 import styles from './FileDownloader.module.css';
 
 function toShortSize(_size: number) {
@@ -22,7 +21,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 }) => {
   const [afterDownload, setAfterDownload] = useState(false);
   const [afterExtract, setAfterExtract] = useState(false);
-  let className = styles.ProcessButton;
+  let className = styles.mainBtn;
   let buttonText = 'DOWNLOAD';
   let additionalInfo = null;
 
@@ -55,10 +54,10 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   }
 
   if (processStageStore === Processes.play) {
-    className = styles.ProcessButton;
-    buttonText = 'PLAY';
+    className = styles.playBtn;
+    buttonText = 'Enter Metaverse';
   } else if (duringDownloadOrExtract) {
-    className = styles.DuringProcessButton;
+    className = styles.duringDownload;
     if (process === Processes.download) {
       buttonText = `${progress.toFixed(2)} %`;
     } else {
@@ -82,37 +81,15 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   };
 
   return (
-    <div>
-      <button className={styles.BuyNFT}>Buy Genesis NFT on Opensea</button>
-      <div className={styles.FileDownloader}>
-        <button
-          type="button"
-          className={className}
-          disabled={buttonDisabled}
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-around',
-          }}
-          onClick={handleOnClick}
-        >
-          <div className="ProcessButtonText">{buttonText}</div>
-          {additionalInfo !== null && (
-            <div
-              style={{ color: 'black', fontSize: '12px', paddingTop: '6px' }}
-            >
-              {additionalInfo}
-            </div>
-          )}
-        </button>
-        <div className={styles.AdditionalInfo}>
-          <span className={styles.AppVersion}>Version: ED-0.16.66</span>
-          <a href="#">
-            What’s new{' '}
-            <img src={chevronRight} style={{ verticalAlign: 'middle' }} />
-          </a>
-        </div>
-      </div>
+    <div className={styles.container}>
+      <button
+        className={className}
+        onClick={handleOnClick}
+        disabled={buttonDisabled}
+      >
+        {additionalInfo && <span>{additionalInfo}</span>}
+        <span>{buttonText}</span>
+      </button>
     </div>
   );
 };

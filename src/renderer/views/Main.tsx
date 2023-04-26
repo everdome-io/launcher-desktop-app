@@ -5,6 +5,7 @@ import styles from './Main.module.css';
 import { Navigate } from 'react-router-dom';
 import logoImage from 'assets/images/okx-logo.png';
 import { LinkCardList } from '@renderer/components/LinkCardList';
+import { FileDownloader } from '@renderer/components';
 
 export const Main: FC<{
   state: AppState;
@@ -40,7 +41,7 @@ export const Main: FC<{
                 exclusive NFT trainer drop and exclusive content from İlkay
                 Gündoğan and Rúben Dias
               </p>
-              <button className={styles.downloadBtn}>Download</button>
+              <FileDownloader state={state} />
             </div>
           </section>
           <section className={styles.poweredBy}>
