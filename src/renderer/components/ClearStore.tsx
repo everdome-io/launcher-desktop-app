@@ -23,8 +23,8 @@ export const ClearStore: FC = ({}) => {
       style={{
         position: 'absolute',
         color: '#fff',
-        fontSize: '14px',
-        lineHeight: '18px',
+        fontSize: '12px',
+        lineHeight: '16px',
         margin: 0,
         bottom: '5px',
         right: '5px',

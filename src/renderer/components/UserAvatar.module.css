@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: fit-content;
+  height: auto;
+  margin-top: 38px;
 }
 
 .avatar::after {
@@ -21,5 +24,5 @@
 
 .stand {
   position: absolute;
-  bottom: 25%;
+  bottom: -3%;
 }
