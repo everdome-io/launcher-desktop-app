@@ -7,6 +7,7 @@ import { ClearStore } from '@renderer/components/ClearStore';
 import { UserAvatar } from '@renderer/components/UserAvatar';
 import { UserName } from '@renderer/components/UserName';
 import styles from './ProfileDetails.module.css';
+import { NFTCard } from '@renderer/components/NFTCard';
 
 export const ProfileDetails: FC<{
   state: { avatarId: string | null; nickName: string | null };
@@ -21,6 +22,7 @@ export const ProfileDetails: FC<{
             <img src={settingsIcon} />
           </header>
           <UserAvatar avatarId={avatarId} />
+          <NFTCard />
         </>
       ) : (
         <div className={styles.notConnected}>
