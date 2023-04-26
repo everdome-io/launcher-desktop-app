@@ -63,6 +63,7 @@ const UserProfile: FC<{
             <AvatarList
               saveAvatar={saveUser}
               nickName={userAttributes.nickName || undefined}
+              avatarId={userAttributes.avatarId || undefined}
             />
           }
         />

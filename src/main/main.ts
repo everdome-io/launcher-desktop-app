@@ -14,7 +14,12 @@ import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
-import { AppUpdateStatus, Channels, Processes } from '../interfaces';
+import {
+  AppUpdateStatus,
+  Channels,
+  Processes,
+  ToggleWindowMode,
+} from '../interfaces';
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
 import {
@@ -122,6 +127,7 @@ const createWindow = async () => {
     icon: getAssetPath('icon.png'),
     skipTaskbar: true,
     webPreferences: {
+      webSecurity: isDebug ? false : true,
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
@@ -172,6 +178,7 @@ const createProfileWindow = async () => {
     parent: mainWindow || undefined,
     autoHideMenuBar: true,
     webPreferences: {
+      webSecurity: isDebug ? false : true,
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
@@ -598,16 +605,20 @@ ipcMain.on(Channels.connectedOrSkipped, (_event) => {
   }
 });
 
-ipcMain.on(Channels.openAvatarDialog, (_event) => {
-  profileWindow?.setSize(1280, 800);
-  profileWindow?.center();
-});
-
-ipcMain.on(Channels.closeAvatarDialog, (_event) => {
-  profileWindow?.setSize(342, 688);
-  const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
-  profileWindow?.setPosition(x, y);
-});
+ipcMain.on(
+  Channels.toggleProfileWindow,
+  (_event, state: { mode: ToggleWindowMode }) => {
+    if (state.mode === ToggleWindowMode.open) {
+      profileWindow?.setSize(1280, 800);
+      profileWindow?.center();
+    } else {
+      profileWindow?.setSize(342, 688);
+      const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
+      profileWindow?.setPosition(x, y);
+    }
+    profileWindow?.close;
+  }
+);
 
 ipcMain.on('electron-store-get', async (event, val) => {
   event.returnValue = store.get(val);
