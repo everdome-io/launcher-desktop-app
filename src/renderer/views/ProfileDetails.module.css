@@ -1,14 +1,48 @@
 .container {
   composes: flexCenterColumn from '../theme/layout.module.css';
-  padding: 1rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 4rem;
 }
 
 .notConnected {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 92vh;
+  composes: flexCenterColumn from '../theme/layout.module.css';
+  justify-content: flex-end;
+}
+
+.notConnected::before {
+  content: "";
+  flex: 1;
+  position: absolute;
+  width: 196px;
+  height: 195px;
+  left: 72px;
+  top: 163px;
+  background: #FFFFFF;
+  opacity: 0.2;
+  filter: blur(52px);
+}
+
+.notConnected::after {
+  content: "";
+  flex: 1;
+  position: absolute;
+  width: 149px;
+  height: 149px;
+  left: 96px;
+  top: 616px;
+  background: #3BD6FF;
+  opacity: 0.5;
+  filter: blur(97px);
+}
+
+.infoText {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 204px;
+  margin-top: 208px;
+  margin-bottom: 3rem;
 }
 
 .userProfileHeader {

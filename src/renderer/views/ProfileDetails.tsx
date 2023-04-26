@@ -1,6 +1,7 @@
 import { CrossWindowState } from '@interfaces';
 import { FC } from 'react';
 import settingsIcon from 'assets/images/settings-icon.svg';
+import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { ClearStore } from '@renderer/components/ClearStore';
 import { UserAvatar } from '@renderer/components/UserAvatar';
@@ -23,6 +24,10 @@ export const ProfileDetails: FC<{
         </>
       ) : (
         <div className={styles.notConnected}>
+          <img src={ag5OKXLogo} alt="Logo" width="225" />
+          <p className={styles.infoText}>
+            NFT will be available from 15th of May
+          </p>
           <ConnectOKXWallet fromProfileWindow />
         </div>
       )}
