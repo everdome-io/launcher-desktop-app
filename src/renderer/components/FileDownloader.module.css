@@ -1,139 +1,64 @@
-.BuyNFT {
-  background: #96BFE6;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 3px 12px;
+.container {
+  margin-top: 3.5rem;
 }
 
-.FileDownloader button {
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  appearance: none;
-  font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-  opacity: 0.9;
+.mainBtn {
+  composes: primary from '../theme/buttons.module.css';
 }
 
-.FileDownloader button:hover {
-  transform: scale(1.05);
-  opacity: 1;
-}
-
-.FileDownloader {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 20px 0;
-}
-
-.ProcessButtonText {
-  padding-top: 3px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
-.ProcessButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 48px;
-  gap: 10px;
-  height: 56px;
-  width: 220px;
-  left: 5.99%;
-  right: 27.84%;
-  top: calc(50% - 56px/2 - 184px);
-
-  background: #ffffff;
-  box-shadow: 0px 64px 67px rgba(0, 0, 0, 0.06), 0px 23.3611px 24.4561px rgba(0, 0, 0, 0.0413989), 0px 11.3414px 11.873px rgba(0, 0, 0, 0.0333774), 0px 5.55974px 5.82036px rgba(0, 0, 0, 0.0266226), 0px 2.19833px 2.30138px rgba(0, 0, 0, 0.0186011);
-  border-radius: 8px;
-}
-
-.DuringProcessButton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 8px 8px 24px;
-  gap: 24px;
-  width: 220px;
-  height: 56px;
-  left: 20px;
-  top: calc(50% - 56px/2 - 280px);
-  background: linear-gradient(93.02deg, #FFFFFF 26.78%, #FFFFFF 46.86%, #000000 46.86%);
-  border: 2px solid #FFFFFF;
-  box-shadow: 0px 64px 67px rgba(0, 0, 0, 0.06), 0px 23.3611px 24.4561px rgba(0, 0, 0, 0.0413989), 0px 11.3414px 11.873px rgba(0, 0, 0, 0.0333774), 0px 5.55974px 5.82036px rgba(0, 0, 0, 0.0266226), 0px 2.19833px 2.30138px rgba(0, 0, 0, 0.0186011);
-  border-radius: 8px;
-}
-
-.AdditionalInfo {
+.duringDownload {
+  composes: primary from '../theme/buttons.module.css';
+  width: 280px;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 220px;
-  margin-top: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
-.AdditionalInfo .AppVersion {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  color: #FFFFFF;
-  opacity: 0.5;
+.duringDownload:hover {
+  background-color: #000000;
+  color: #fff;
+  cursor: default;
 }
 
-.AdditionalInfo a {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: right;
-  color: #FFFFFF;
-  margin: 0;
+.duringDownload::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  animation: fill 3s linear infinite;
 }
 
-.Spinner {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-top-color: black;
-  animation: pulse 0.5s infinite linear, spin 2s infinite linear;
+.duringDownload span {
+  mix-blend-mode: difference;
 }
 
-@keyframes pulse {
+@keyframes fill {
   0% {
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: scale(1);
-    opacity: 1;
+    width: 0%;
   }
 
   100% {
-    transform: scale(0.8);
-    opacity: 0.5;
+    width: 100%;
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
+.playBtn {
+  composes: primary from '../theme/buttons.module.css';
+  width: 291px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.playBtn:hover::after {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 11L4 11L4 13L5 13L5 11ZM19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11L19 13ZM5 13L19 13L19 11L5 11L5 13Z' fill='black'/%3E%3Cpath d='M13 6L19 12L13 18' stroke='black' stroke-width='2' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  height: 24px;
+  margin-left: 10px;
 }
