@@ -115,6 +115,13 @@ const setStore = (statusCode: number, s3Path: string): Promise<void> => {
   });
 };
 
+const setStoreOnError = (): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    store.set('couldUseWebLink', false);
+    resolve();
+  });
+};
+
 const createWindow = async () => {
   if (isDebug) {
     await installExtensions();
@@ -308,6 +315,21 @@ app.on('window-all-closed', () => {
   }
 });
 
+const createAllWindows = () => {
+  createWindow();
+  createProfileWindow();
+  createOKXWindow();
+  app.on('activate', () => {
+    // On macOS it's common to re-create a window in the app when the
+    // dock icon is clicked and there are no other windows open.
+    if (windows.size === 0) {
+      if (mainWindow === null) createWindow();
+      if (profileWindow === null) createProfileWindow();
+      if (okxWindow === null) createOKXWindow();
+    }
+  });
+};
+
 const setupApp = async () => {
   handleUserId();
   loadExtensions();
@@ -321,21 +343,20 @@ const setupApp = async () => {
     );
     request
       .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
+      .on('error', (error) => {
+        // eslint-disable-next-line promise/no-promise-in-callback
+        setStoreOnError()
+          .then(() => {
+            createAllWindows();
+          })
+          .catch((err) => {
+            console.log('err', err);
+          });
+      })
       .on('response', (res) => {
         setStore(res.statusCode, s3Path)
           .then(() => {
-            createWindow();
-            createProfileWindow();
-            createOKXWindow();
-            app.on('activate', () => {
-              // On macOS it's common to re-create a window in the app when the
-              // dock icon is clicked and there are no other windows open.
-              if (windows.size === 0) {
-                if (mainWindow === null) createWindow();
-                if (profileWindow === null) createProfileWindow();
-                if (okxWindow === null) createOKXWindow();
-              }
-            });
+            createAllWindows();
           })
           .catch((err) => {
             console.log('err', err);
