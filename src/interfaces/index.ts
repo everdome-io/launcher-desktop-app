@@ -16,8 +16,7 @@ export enum Channels {
   openOKXExtension = 'open-okx',
   closeOKXExtension = 'close-okx',
 
-  openAvatarDialog = 'open-avatar-dialog',
-  closeAvatarDialog = 'close-avatar-dialog',
+  toggleProfileWindow = 'toggle-profile-window',
 }
 /* eslint-disable no-shadow */
 export enum AppUpdateStatus {
@@ -81,4 +80,9 @@ export interface UserAttributes {
   avatarId: string | null;
   nickName: string | null;
   isFakePublicKey: boolean;
+}
+
+export enum ToggleWindowMode {
+  open = 'open',
+  close = 'close',
 }
