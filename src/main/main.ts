@@ -30,9 +30,9 @@ import {
   uuid,
 } from './utils';
 import { downloadFileWithProgress } from './utils/download';
-import { installEverdome } from './utils/installation';
 import { extractWithProgress } from './utils/extract';
 import { getUserFromAPI } from '../api';
+import { playEverdome } from './utils/enter-game';
 
 const store = new Store();
 
@@ -127,7 +127,7 @@ const createWindow = async () => {
     icon: getAssetPath('icon.png'),
     autoHideMenuBar: true,
     webPreferences: {
-      webSecurity: isDebug ? false : true,
+      webSecurity: !isDebug,
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
@@ -148,9 +148,8 @@ const createWindow = async () => {
     }
   });
 
-  mainWindow.on('move', function() {
+  mainWindow.on('move', function () {
     if (mainWindow && profileWindow) {
-
       const [x, y] = calculateProfileWindowPosition(mainWindow.getPosition());
       profileWindow.setBounds({ x, y, width: 342, height: 688 });
     }
@@ -188,7 +187,7 @@ const createProfileWindow = async () => {
     titleBarStyle: 'hidden',
     skipTaskbar: true,
     webPreferences: {
-      webSecurity: isDebug ? false : true,
+      webSecurity: !isDebug,
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
         : path.join(__dirname, '../../.erb/dll/preload.js'),
@@ -412,7 +411,7 @@ ipcMain.on(Channels.playProcess, async function (event) {
       processingSize: 0,
     },
   });
-  installEverdome(localFilePath, () => {
+  playEverdome(localFilePath, () => {
     const windowsFolderName = store.get('folderName') as string;
     return windowsFolderName;
   });
