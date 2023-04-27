@@ -53,7 +53,10 @@ const UserProfile: FC<{
           element={
             <ProfileDetails
               state={userAttributes}
-              crossWindowState={crossWindowState}
+              crossWindowState={{
+                ...crossWindowState,
+                isAuthenticated: !userAttributes.isFakePublicKey,
+              }}
             />
           }
         />
