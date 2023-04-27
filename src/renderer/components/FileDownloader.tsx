@@ -1,6 +1,7 @@
 import { AppState, Channels, Processes } from '@interfaces';
 import { FC, useState } from 'react';
 import styles from './FileDownloader.module.css';
+import { useNavigate } from 'react-router-dom';
 
 function toShortSize(_size: number) {
   let size = _size;
@@ -19,6 +20,7 @@ function toShortSize(_size: number) {
 export const FileDownloader: FC<{ state: AppState }> = ({
   state: { process, progress, processingSize },
 }) => {
+  const navigate = useNavigate();
   const [afterDownload, setAfterDownload] = useState(false);
   const [afterExtract, setAfterExtract] = useState(false);
   let className = styles.mainBtn;
@@ -74,7 +76,9 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   const handleOnClick = () => {
     if (processStageStore === Processes.play) {
-      window.electron.ipcRenderer.sendMessage(Channels.playProcess);
+      window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
+      // TODO: check if avatar & username are set if not, navigate to /choose-avatar
+      navigate('/how-to');
     } else if (processStageStore === Processes.openDialog) {
       window.electron.ipcRenderer.sendMessage(Channels.openDialog);
     }

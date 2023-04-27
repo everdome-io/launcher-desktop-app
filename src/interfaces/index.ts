@@ -5,8 +5,10 @@ export enum Channels {
   extractProcess = 'extract-process',
   playProcess = 'play-process',
   showProfileWindow = 'show-profile-window',
+  hideProfileWindow = 'hide-profile-window',
   acceptTerms = 'accept-terms',
   connectedOrSkipped = 'connected-or-skipped',
+  backToMainView = 'back-to-main-view',
 
   crossWindow = 'cross-window',
   changeState = 'change-state',

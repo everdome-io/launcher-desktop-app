@@ -650,6 +650,19 @@ ipcMain.on(
   }
 );
 
+ipcMain.on(Channels.hideProfileWindow, async function (_event) {
+  profileWindow?.hide();
+});
+
+ipcMain.on(Channels.backToMainView, (_event) => {
+  mainWindow?.show();
+  mainWindow?.center();
+  const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
+  profileWindow?.setPosition(x, y);
+  profileWindow?.show();
+  mainWindow?.focus();
+});
+
 ipcMain.on('electron-store-get', async (event, val) => {
   event.returnValue = store.get(val);
 });
