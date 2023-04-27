@@ -125,7 +125,7 @@ const createWindow = async () => {
     width: 1280,
     height: 800,
     icon: getAssetPath('icon.png'),
-    skipTaskbar: true,
+    autoHideMenuBar: true,
     webPreferences: {
       webSecurity: isDebug ? false : true,
       preload: app.isPackaged
@@ -145,6 +145,14 @@ const createWindow = async () => {
       mainWindow.minimize();
     } else {
       mainWindow.show();
+    }
+  });
+
+  mainWindow.on('move', function() {
+    if (mainWindow && profileWindow) {
+
+      const [x, y] = calculateProfileWindowPosition(mainWindow.getPosition());
+      profileWindow.setBounds({ x, y, width: 342, height: 688 });
     }
   });
 
@@ -177,6 +185,8 @@ const createProfileWindow = async () => {
     backgroundColor: '#000000',
     parent: mainWindow || undefined,
     autoHideMenuBar: true,
+    titleBarStyle: 'hidden',
+    skipTaskbar: true,
     webPreferences: {
       webSecurity: isDebug ? false : true,
       preload: app.isPackaged
