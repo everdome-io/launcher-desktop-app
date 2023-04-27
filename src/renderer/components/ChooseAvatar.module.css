@@ -1,5 +1,6 @@
 .container {
   composes: flexCenterColumn from '../theme/layout.module.css';
+  margin-top: 3rem;
 }
 
 .chooseAvatarBtn {

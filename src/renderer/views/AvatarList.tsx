@@ -1,7 +1,7 @@
 import { FC, useRef, useState } from 'react';
 import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
-import { Channels } from '@interfaces';
+import { Channels, ToggleWindowMode } from '@interfaces';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
@@ -11,6 +11,7 @@ import styles from './AvatarList.module.css';
 
 export const AvatarList: FC<{
   nickName: string | undefined;
+  avatarId: string | undefined;
   saveAvatar: ({
     nickName,
     avatarId,
@@ -18,12 +19,12 @@ export const AvatarList: FC<{
     nickName: string;
     avatarId: string | null;
   }) => Promise<void>;
-}> = ({ nickName, saveAvatar }) => {
+}> = ({ nickName, avatarId, saveAvatar }) => {
   const [nickNameValue, setNickNameValue] = useState(nickName);
   const [placeholderValue] = useState(generateNickname());
   const nickNameRef = useRef(null);
   const navigate = useNavigate();
-  const [avatarIndex, setAvatarIndex] = useState(0);
+  const [avatarIndex, setAvatarIndex] = useState(Number(avatarId) || 0);
 
   const handleInputChange = (event: any) => {
     setNickNameValue(event.target.value);
@@ -36,7 +37,9 @@ export const AvatarList: FC<{
     setAvatarIndex(avatarIndex - 2);
   };
   const onCancel = () => {
-    window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
+    window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
+      mode: ToggleWindowMode.close,
+    });
     navigate('/');
   };
   const onSave = () => {
@@ -44,7 +47,9 @@ export const AvatarList: FC<{
       nickName: nickNameValue || placeholderValue,
       avatarId: avatarIndex.toString(),
     });
-    window.electron.ipcRenderer.sendMessage(Channels.closeAvatarDialog);
+    window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
+      mode: ToggleWindowMode.close,
+    });
     navigate('/');
   };
   const onSaveUsername = () => {

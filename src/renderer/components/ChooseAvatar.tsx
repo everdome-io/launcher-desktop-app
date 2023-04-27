@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Channels } from '@interfaces';
+import { Channels, ToggleWindowMode } from '@interfaces';
 import chooseAvatarImg from 'assets/images/choose-avatar.png';
 import chooseAvatarImg_2x from 'assets/images/choose-avatar@2x.png';
 import styles from './ChooseAvatar.module.css';
@@ -8,7 +8,9 @@ import { useNavigate } from 'react-router-dom';
 export const ChooseAvatar: FC = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    window.electron.ipcRenderer.sendMessage(Channels.openAvatarDialog);
+    window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
+      mode: ToggleWindowMode.open,
+    });
     navigate('/choose-avatar');
   };
   return (

@@ -53,7 +53,10 @@ const UserProfile: FC<{
           element={
             <ProfileDetails
               state={userAttributes}
-              crossWindowState={crossWindowState}
+              crossWindowState={{
+                ...crossWindowState,
+                isAuthenticated: !userAttributes.isFakePublicKey,
+              }}
             />
           }
         />
@@ -63,6 +66,7 @@ const UserProfile: FC<{
             <AvatarList
               saveAvatar={saveUser}
               nickName={userAttributes.nickName || undefined}
+              avatarId={userAttributes.avatarId || undefined}
             />
           }
         />
