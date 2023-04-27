@@ -5,6 +5,7 @@ import './App.css';
 import { Main } from './views/Main';
 import { TermsOfService } from './views/TermsOfService';
 import { ConnectOrSkip } from './views/ConnectOrSkip';
+import { HowTo } from './views/HowTo';
 
 const App: FC<{
   state: AppState;
@@ -26,6 +27,7 @@ const App: FC<{
         />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/connect-or-skip" element={<ConnectOrSkip />} />
+        <Route path="/how-to" element={<HowTo />} />
       </Routes>
     </HashRouter>
   );

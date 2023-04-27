@@ -1,0 +1,66 @@
+.container {
+  composes: flexCenterColumn from '../theme/layout.module.css';
+  height: auto;
+  padding: 42px;
+}
+
+.container::before {
+  content: '';
+  flex: 1;
+  position: absolute;
+  left: 21.56%;
+  right: 21.56%;
+  top: -56%;
+  bottom: 65%;
+  background: #F6F6F6;
+  opacity: 0.26;
+  filter: blur(277px);
+}
+
+.tabs {
+  composes: flexCenter from '../theme/layout.module.css';
+  align-items: flex-end;
+  height: auto;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 48px;
+}
+
+.defaultTab {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: none;
+  opacity: 0.3;
+  padding: 16px 28px 32px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.defaultTab:hover {
+  opacity: 1;
+}
+
+.activeTab {
+  composes: defaultTab;
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+
+.footer {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.playBtn {
+  composes: primary from '../theme/buttons.module.css';
+  composes: flexCenter from '../theme/layout.module.css';
+  width: 170px;
+  justify-content: space-between;
+}
