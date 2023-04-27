@@ -1,6 +1,5 @@
 import path from 'path';
 import { exec } from 'child_process';
-import * as sudo from 'sudo-prompt';
 import { getOS, OperatingSystem } from '.';
 
 function chmodPlusX(filePath: string): void {
@@ -40,42 +39,12 @@ export async function execCommand(command: string): Promise<void> {
   });
 }
 
-function execSudoCommand(
-  command: string,
-  callback: (error: Error | null) => void
-): void {
-  sudo.exec(command, { name: 'Exerdome' }, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`Error executing command: ${error.message}`);
-      callback(error);
-      return;
-    }
-
-    if (stderr) {
-      console.error(`Standard error output: ${stderr}`);
-      callback(new Error(stderr.toString()));
-      return;
-    }
-
-    console.log(`Successfully executed command: ${command}`);
-    callback(null);
-  });
-}
-
-function installOnMacOS(filePath: string): void {
+function playOnMacOS(filePath: string): void {
   chmodPlusX(filePath);
-  const scriptPath = path.join(__dirname, 'install_dmg.sh');
-  execSudoCommand(`sh "${scriptPath}" "${filePath}"`, (error) => {
-    if (error) {
-      console.error('An error occurred:', error);
-      return;
-    }
-
-    console.log('Application has been successfully installed.');
-  });
+  execCommand(filePath);
 }
 
-function installOnWindows(filePath: string): void {
+function playOnWindows(filePath: string): void {
   exec(`"${filePath}"`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error executing file: ${error.message}`);
@@ -89,18 +58,22 @@ function installOnWindows(filePath: string): void {
   });
 }
 
-export function installEverdome(
+export function playEverdome(
   filePath: string,
   getFolderName: () => string
 ): void {
   const os = getOS();
-  const folderName = getFolderName();
   switch (os) {
     case OperatingSystem.MacOS:
-      installOnMacOS(path.join(filePath, 'Mac/Mars-Mac-Shipping'));
+      playOnMacOS(
+        path.join(
+          filePath,
+          'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
+        )
+      );
       break;
     case OperatingSystem.Windows:
-      installOnWindows(path.join(filePath, `${folderName}/Everdome.exe`));
+      playOnWindows(path.join(filePath, `${getFolderName()}/Everdome.exe`));
       break;
     default:
   }
