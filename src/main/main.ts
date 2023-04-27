@@ -96,7 +96,7 @@ const handleUserId = () => {
 };
 
 const setStore = (statusCode: number, s3Path: string): Promise<void> => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const gameFileExist = statusCode.toString()[0] === '2';
     if (gameFileExist) {
       downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
@@ -110,8 +110,14 @@ const setStore = (statusCode: number, s3Path: string): Promise<void> => {
       resolve();
     } else {
       store.set('couldUseWebLink', false);
-      reject(new Error('Game file does not exist.'));
     }
+  });
+};
+
+const setStoreOnError = (): Promise<void> => {
+  return new Promise((resolve, reject) => {
+    store.set('couldUseWebLink', false);
+    resolve();
   });
 };
 
@@ -308,6 +314,21 @@ app.on('window-all-closed', () => {
   }
 });
 
+const createAllWindows = () => {
+  createWindow();
+  createProfileWindow();
+  createOKXWindow();
+  app.on('activate', () => {
+    // On macOS it's common to re-create a window in the app when the
+    // dock icon is clicked and there are no other windows open.
+    if (windows.size === 0) {
+      if (mainWindow === null) createWindow();
+      if (profileWindow === null) createProfileWindow();
+      if (okxWindow === null) createOKXWindow();
+    }
+  });
+};
+
 const setupApp = async () => {
   handleUserId();
   loadExtensions();
@@ -321,21 +342,21 @@ const setupApp = async () => {
     );
     request
       .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
+      .on('error', (error) => {
+        console.log('error', error);
+        // eslint-disable-next-line promise/no-promise-in-callback
+        setStoreOnError()
+          .then(() => {
+            createAllWindows();
+          })
+          .catch((err) => {
+            console.log('err', err);
+          });
+      })
       .on('response', (res) => {
         setStore(res.statusCode, s3Path)
           .then(() => {
-            createWindow();
-            createProfileWindow();
-            createOKXWindow();
-            app.on('activate', () => {
-              // On macOS it's common to re-create a window in the app when the
-              // dock icon is clicked and there are no other windows open.
-              if (windows.size === 0) {
-                if (mainWindow === null) createWindow();
-                if (profileWindow === null) createProfileWindow();
-                if (okxWindow === null) createOKXWindow();
-              }
-            });
+            createAllWindows();
           })
           .catch((err) => {
             console.log('err', err);
