@@ -58,9 +58,8 @@ export const calculateProfileWindowPosition = (
   const [x, y] = mainWindowPosition || [];
   if (x && y) {
     return [x + 962, y + 56];
-  } else {
-    return [1218, 216];
   }
+  return [1218, 216];
 };
 
 export const calculateExtensionWindowPosition = (
