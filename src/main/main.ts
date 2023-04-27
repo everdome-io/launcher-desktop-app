@@ -96,7 +96,7 @@ const handleUserId = () => {
 };
 
 const setStore = (statusCode: number, s3Path: string): Promise<void> => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const gameFileExist = statusCode.toString()[0] === '2';
     if (gameFileExist) {
       downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
@@ -110,7 +110,6 @@ const setStore = (statusCode: number, s3Path: string): Promise<void> => {
       resolve();
     } else {
       store.set('couldUseWebLink', false);
-      reject(new Error('Game file does not exist.'));
     }
   });
 };
@@ -344,6 +343,7 @@ const setupApp = async () => {
     request
       .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
       .on('error', (error) => {
+        console.log('error', error);
         // eslint-disable-next-line promise/no-promise-in-callback
         setStoreOnError()
           .then(() => {
