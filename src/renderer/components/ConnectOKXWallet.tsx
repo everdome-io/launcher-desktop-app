@@ -17,7 +17,7 @@ export const ConnectOKXWallet: FC<{ fromProfileWindow: boolean }> = ({
       }
       onClick={connectWallet}
     >
-      Collect your NFT
+      Secure your NFT
     </button>
   );
 };
