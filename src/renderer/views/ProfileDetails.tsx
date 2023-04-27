@@ -41,12 +41,16 @@ export const ProfileDetails: FC<{
         <div className={styles.notConnected}>
           <img src={ag5OKXLogo} alt="Logo" width="225" />
           <p className={styles.infoText}>
-            NFT will be available from 15th of May
+            Visit the Alex Greenwood exhibition on the 15th May to claim your
+            NFT
+          </p>
+          <p className={styles.disclaimer}>
+            This is a space for a disclaimer text, which should not extend to
+            more than 2 lines of text.
           </p>
           <ConnectOKXWallet fromProfileWindow />
         </div>
       )}
-      <ClearStore />
     </div>
   );
 };

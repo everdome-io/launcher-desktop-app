@@ -33,10 +33,18 @@ export const ConnectOrSkip: FC = () => {
           Login to the OKX Wallet and collect your NFT
         </h1>
         <p className={styles.infoText}>
-          NFT will be available from 15th of May
+          Visit the Alex Greenwood exhibition on the 15th May to claim your NFT
         </p>
       </div>
-      <img src={ag5OKXLogo} alt="Logo" width="932" />
+      <div className={styles.centerSection}>
+        <img src={ag5OKXLogo} alt="Logo" width="932" />
+        <p className={styles.disclaimer}>
+          This is a space for a disclaimer text,
+        </p>
+        <p className={styles.disclaimer}>
+          which should not extend to more than 2 lines of text.
+        </p>
+      </div>
       <div className={styles.footer}>
         <BackButton onClick={backToTerms} />
         <div className={styles.btnGroup}>

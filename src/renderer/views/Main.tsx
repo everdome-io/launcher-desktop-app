@@ -6,6 +6,7 @@ import { Navigate } from 'react-router-dom';
 import logoImage from 'assets/images/okx-logo.png';
 import { LinkCardList } from '@renderer/components/LinkCardList';
 import { FileDownloader } from '@renderer/components';
+import { ClearStore } from '@renderer/components/ClearStore';
 
 export const Main: FC<{
   state: AppState;
@@ -33,13 +34,13 @@ export const Main: FC<{
           <div className={styles.slide}></div>
         </div>
         <div className={styles.container}>
-          <img src={logoImage} alt="Everdome" width="70" height="44" />
+          <img src={logoImage} alt="Everdome" width="120" height="76" />
           <section className={styles.mainSection}>
             <div className={styles.welcomeMessage}>
               <p>
                 Enter to see Jack Grealish DJ in the metaverse, Alex Greenwood’s
-                exclusive NFT trainer drop and exclusive content from İlkay
-                Gündoğan and Rúben Dias
+                exclusive NFT drop and exclusive content from İlkay Gündoğan and
+                Rúben Dias
               </p>
               <FileDownloader state={state} />
             </div>
@@ -61,6 +62,7 @@ export const Main: FC<{
             <LinkCardList />
           </section>
         </div>
+        <ClearStore />
       </div>
     );
   };
