@@ -86,6 +86,7 @@ export function playEverdome(
 ): void {
   const os = getOS();
   const { uid, displayname, avatarid } = getOpenParams();
+  const avatarNumber = parseInt(avatarid, 10) + 1;
   switch (os) {
     case OperatingSystem.MacOS:
       playOnMacOS({
@@ -93,7 +94,7 @@ export function playEverdome(
           filePath,
           'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
         ),
-        avatarid,
+        avatarid: avatarNumber.toString(),
         displayname,
         uid,
       });
@@ -101,7 +102,7 @@ export function playEverdome(
     case OperatingSystem.Windows:
       playOnWindows({
         filePath: path.join(filePath, `WindowsClientShipping/Mars.exe`),
-        avatarid,
+        avatarid: avatarNumber.toString(),
         displayname,
         uid,
       });

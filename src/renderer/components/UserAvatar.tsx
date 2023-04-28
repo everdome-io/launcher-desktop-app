@@ -11,7 +11,8 @@ export const UserAvatar: FC<{
     <div className={styles.avatar}>
       <img
         src={avatars[Number(avatarId)]}
-        srcSet={`${avatars[Number(avatarId) + 1]} 2x`}
+        width="342"
+        height="386"
         alt="Your avatar"
       />
       <img className={styles.stand} src={avatarStand} />

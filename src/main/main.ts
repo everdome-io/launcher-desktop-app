@@ -422,6 +422,9 @@ ipcMain.on(Channels.downloadProcess, (event) => {
 ipcMain.on(Channels.playProcess, async function (event) {
   console.log('Starting game...');
   const localFilePath = store.get('userPath') as string;
+  const publicKey = store.get('publicKey') as string;
+  const avatarId = store.get('avatarId') as string;
+  const nickName = store.get('nickName') as string;
 
   const eventsInstance = eventsClient(event);
   eventsInstance.reply({
@@ -434,15 +437,12 @@ ipcMain.on(Channels.playProcess, async function (event) {
       processingSize: 0,
     },
   });
-  function getRandomAvatar() {
-    return (Math.floor(Math.random() * 6) + 1).toString();
-  }
 
   playEverdome(localFilePath, () => {
     return {
-      avatarid: getRandomAvatar(),
-      uid: generateFakeEthAddress(),
-      displayname: generateNickname(),
+      avatarid: avatarId,
+      uid: publicKey,
+      displayname: nickName,
     };
   });
 });
