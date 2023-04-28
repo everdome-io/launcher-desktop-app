@@ -28,7 +28,7 @@ const App: FC<{
         />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/connect-or-skip" element={<ConnectOrSkip />} />
-        <Route path="/how-to" element={<AvatarList beforePlay />} />
+        <Route path="/how-to" element={<HowTo />} />
         <Route path="/choose-avatar" element={<AvatarList beforePlay />} />
       </Routes>
     </HashRouter>

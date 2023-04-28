@@ -78,7 +78,6 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     if (processStageStore === Processes.play) {
       window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
       const avatarId = window.electron.store.get('avatarId') as string;
-      console.log('avatarId', avatarId);
       if (avatarId === undefined) {
         navigate('/choose-avatar');
       } else {
