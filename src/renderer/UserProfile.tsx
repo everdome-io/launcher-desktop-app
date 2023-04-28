@@ -1,3 +1,4 @@
+import { generateFakeEthAddress } from '@interfaces/publicKeyGenerator';
 import { CrossWindowState, UserAttributes } from '@interfaces';
 import { FC, useEffect, useState } from 'react';
 import { Routes, Route, HashRouter } from 'react-router-dom';
@@ -5,7 +6,6 @@ import { ProfileDetails } from './views/ProfileDetails';
 import './UserProfile.css';
 import { AvatarList } from './views/AvatarList';
 import { getUserFromAPI, setUserInAPI } from '../api';
-import { generateFakeEthAddress } from './utils/publicKeyGenerator';
 
 const UserProfile: FC<{
   crossWindowState: CrossWindowState;
