@@ -77,8 +77,13 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   const handleOnClick = () => {
     if (processStageStore === Processes.play) {
       window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
-      // TODO: check if avatar & username are set if not, navigate to /choose-avatar
-      navigate('/how-to');
+      const avatarId = window.electron.store.get('avatarId') as string;
+      console.log('avatarId', avatarId);
+      if (avatarId === undefined) {
+        navigate('/choose-avatar');
+      } else {
+        navigate('/how-to');
+      }
     } else if (processStageStore === Processes.openDialog) {
       window.electron.ipcRenderer.sendMessage(Channels.openDialog);
     }

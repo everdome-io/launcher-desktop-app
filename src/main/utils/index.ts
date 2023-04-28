@@ -37,7 +37,7 @@ export async function getDownloadLink(): Promise<string | null> {
   await fetch(`https://metahero-prod-game-builds.s3.amazonaws.com/version.json`)
     .then(async (response) => {
       if (!response.ok) {
-        throw new Error('Error fetching user data');
+        // throw new Error('Error fetching user data');
       }
       const body = await response.json();
       s3Path = body[os];

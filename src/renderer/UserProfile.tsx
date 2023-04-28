@@ -26,6 +26,9 @@ const UserProfile: FC<{
       .then((response) => {
         if (response) {
           setUserAttributes(response);
+          window.electron.store.set('publicKey', response.publicKey);
+          window.electron.store.set('avatarId', response.avatarId);
+          window.electron.store.set('nickName', response.nickName);
         }
         return response;
       })
@@ -40,9 +43,6 @@ const UserProfile: FC<{
     avatarId: string | null;
   }) => {
     setUserAttributes({ ...userAttributes, avatarId, nickName });
-    await setUserInAPI({ ...userAttributes, avatarId, nickName }, (err) =>
-      console.log('err', err)
-    );
   };
 
   return (
@@ -62,13 +62,7 @@ const UserProfile: FC<{
         />
         <Route
           path="/choose-avatar"
-          element={
-            <AvatarList
-              saveAvatar={saveUser}
-              nickName={userAttributes.nickName || undefined}
-              avatarId={userAttributes.avatarId || undefined}
-            />
-          }
+          element={<AvatarList onClickSave={saveUser} />}
         />
       </Routes>
     </HashRouter>
