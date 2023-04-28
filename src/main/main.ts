@@ -14,6 +14,8 @@ import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
+import { generateFakeEthAddress } from '../interfaces/publicKeyGenerator';
+import { generateNickname } from '../interfaces/usernameGenerator';
 import {
   AppUpdateStatus,
   Channels,
@@ -432,9 +434,16 @@ ipcMain.on(Channels.playProcess, async function (event) {
       processingSize: 0,
     },
   });
+  function getRandomAvatar() {
+    return (Math.floor(Math.random() * 6) + 1).toString();
+  }
+
   playEverdome(localFilePath, () => {
-    const windowsFolderName = store.get('folderName') as string;
-    return windowsFolderName;
+    return {
+      avatarid: getRandomAvatar(),
+      uid: generateFakeEthAddress(),
+      displayname: generateNickname(),
+    };
   });
 });
 

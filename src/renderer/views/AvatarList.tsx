@@ -1,3 +1,4 @@
+import { generateNickname } from '@interfaces/usernameGenerator';
 import { FC, useRef, useState } from 'react';
 import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
@@ -6,7 +7,6 @@ import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
 import { useNavigate } from 'react-router-dom';
-import { generateNickname } from '@renderer/utils/usernameGenerator';
 import styles from './AvatarList.module.css';
 
 export const AvatarList: FC<{
