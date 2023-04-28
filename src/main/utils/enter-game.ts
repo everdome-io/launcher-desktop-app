@@ -73,7 +73,7 @@ export function playEverdome(
       );
       break;
     case OperatingSystem.Windows:
-      playOnWindows(path.join(filePath, `${getFolderName()}/Everdome.exe`));
+      playOnWindows(path.join(filePath, `WindowsClientShipping/Mars.exe`));
       break;
     default:
   }
