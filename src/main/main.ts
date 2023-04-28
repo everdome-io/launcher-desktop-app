@@ -680,5 +680,6 @@ ipcMain.on('electron-store-set', async (event, key, val) => {
 });
 
 ipcMain.on('dev:clear-store', async (event) => {
-  store.clear();
+  // store.clear();
+  store.set('processStage', Processes.play);
 });

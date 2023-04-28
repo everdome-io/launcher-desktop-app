@@ -94,7 +94,7 @@ export function playEverdome(
           filePath,
           'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
         ),
-        avatarid,
+        avatarid: avatarNumber.toString(),
         displayname,
         uid,
       });

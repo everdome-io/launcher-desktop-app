@@ -136,3 +136,10 @@
 .saveAvatar {
   composes: primary from '../theme/buttons.module.css';
 }
+
+.playBtn {
+  composes: primary from '../theme/buttons.module.css';
+  composes: flexCenter from '../theme/layout.module.css';
+  width: 170px;
+  justify-content: space-between;
+}

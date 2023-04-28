@@ -12,6 +12,7 @@ import { setUserInAPI } from '@api';
 import { generateFakeEthAddress } from '@interfaces/publicKeyGenerator';
 
 export const AvatarList: FC<{
+  beforePlay?: boolean;
   onClickSave?: ({
     nickName,
     avatarId,
@@ -19,11 +20,10 @@ export const AvatarList: FC<{
     nickName: string;
     avatarId: string | null;
   }) => void;
-}> = ({ onClickSave }) => {
+}> = ({ beforePlay = false, onClickSave }) => {
   const userId = window.electron.store.get('userId') as string;
   const avatarId = window.electron.store.get('avatarId') || '0';
   const [avatarIndex, setAvatarIndex] = useState(Number(avatarId));
-  console.log('========avatarIndex', avatarIndex);
 
   const [placeholderValue] = useState(generateNickname());
   const nickName = window.electron.store.get('nickName') || placeholderValue;
@@ -82,7 +82,12 @@ export const AvatarList: FC<{
     window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
       mode: ToggleWindowMode.close,
     });
-    navigate('/');
+
+    if (beforePlay) {
+      navigate('/how-to');
+    } else {
+      navigate('/');
+    }
   };
   const onSaveUsername = () => {
     if (!nickNameValue) {
@@ -136,9 +141,16 @@ export const AvatarList: FC<{
       </div>
       <div className={styles.actionBtns}>
         <BackButton onClick={onCancel} />
-        <button onClick={onSave} className={styles.saveAvatar}>
-          Save
-        </button>
+        {beforePlay ? (
+          <button onClick={onSave} className={styles.saveAvatar}>
+            Next
+            <ArrowRight />
+          </button>
+        ) : (
+          <button onClick={onSave} className={styles.nextBtn}>
+            Save
+          </button>
+        )}
       </div>
     </div>
   );
