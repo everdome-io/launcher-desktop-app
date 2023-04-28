@@ -14,6 +14,8 @@ import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
+import * as Sentry from '@sentry/electron';
+import { initializeSentry } from '../common/sentry';
 import {
   AppUpdateStatus,
   Channels,
@@ -33,6 +35,8 @@ import { downloadFileWithProgress } from './utils/download';
 import { extractWithProgress } from './utils/extract';
 import { getUserFromAPI } from '../api';
 import { playEverdome } from './utils/enter-game';
+
+initializeSentry();
 
 const store = new Store();
 
@@ -68,7 +72,10 @@ const installExtensions = async () => {
       extensions.map((name) => installer[name]),
       forceDownload
     )
-    .catch(console.log);
+    .catch((err: any) => {
+      Sentry.captureException(err);
+      console.log(err);
+    });
 };
 const getAssetPath = (...paths: string[]): string => {
   const RESOURCES_PATH = app.isPackaged
@@ -78,9 +85,11 @@ const getAssetPath = (...paths: string[]): string => {
 };
 
 const loadExtensions = async () => {
-  return await session.defaultSession.loadExtension(
-    getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`)
-  );
+  return session.defaultSession
+    .loadExtension(getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`))
+    .catch((error) => {
+      Sentry.captureException(error);
+    });
 };
 
 const handleUserId = () => {
@@ -109,6 +118,7 @@ const setStore = (statusCode: number, s3Path: string): Promise<void> => {
       }
       resolve();
     } else {
+      Sentry.captureException(`${downloadWebLink} could not be found`);
       store.set('couldUseWebLink', false);
     }
   });
@@ -145,7 +155,9 @@ const createWindow = async () => {
   mainWindow.center();
   mainWindow.on('ready-to-show', async () => {
     if (!mainWindow) {
-      throw new Error('"mainWindow" is not defined');
+      const message = '"mainWindow" is not defined';
+      Sentry.captureException(message);
+      throw new Error(message);
     }
     if (process.env.START_MINIMIZED) {
       mainWindow.minimize();
@@ -208,7 +220,9 @@ const createProfileWindow = async () => {
   profileWindow.on('ready-to-show', () => {
     if (store.get('termsAccepted') && store.get('connectedOrSkipped')) {
       if (!profileWindow) {
-        throw new Error('"profileWindow" is not defined');
+        const message = '"profileWindow" is not defined';
+        Sentry.captureException(message);
+        throw new Error(message);
       }
       if (process.env.START_MINIMIZED) {
         profileWindow.minimize();
@@ -222,18 +236,23 @@ const createProfileWindow = async () => {
     if (url.includes('/success')) {
       await profileWindow
         ?.loadURL(resolveHtmlPath('profile.html'))
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          Sentry.captureException(err);
+          console.log(err);
+        });
       okxWindow?.hide();
       store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;
       if (userId) {
         await getUserFromAPI({
           userId,
-          handleError: (err: any) =>
+          handleError: (err: any) => {
+            Sentry.captureException(err);
             mainWindow?.webContents.send(Channels.crossWindow, {
               isAuthenticated: true,
               errorMessage: err.toString(),
-            }),
+            });
+          },
         });
         profileWindow?.webContents.send(Channels.crossWindow, {
           isAuthenticated: true,
@@ -343,6 +362,8 @@ const setupApp = async () => {
     request
       .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
       .on('error', (error) => {
+        Sentry.captureException(error);
+
         console.log('error', error);
         // eslint-disable-next-line promise/no-promise-in-callback
         setStoreOnError()
@@ -350,6 +371,7 @@ const setupApp = async () => {
             createAllWindows();
           })
           .catch((err) => {
+            Sentry.captureException(err);
             console.log('err', err);
           });
       })
@@ -359,6 +381,7 @@ const setupApp = async () => {
             createAllWindows();
           })
           .catch((err) => {
+            Sentry.captureException(err);
             console.log('err', err);
           });
       });
@@ -464,8 +487,6 @@ ipcMain.on(Channels.extractProcess, async (event) => {
   const localFilePath = store.get('userPath') as string;
   const eventsInstance = eventsClient(event);
 
-  // TODO: Add Sentry log on started extraction
-
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
@@ -510,6 +531,7 @@ ipcMain.on(Channels.extractProcess, async (event) => {
     })
     .catch((error) => {
       console.error('Error during extraction:', error);
+      Sentry.captureException(error);
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
@@ -552,13 +574,14 @@ autoUpdater.on('update-not-available', (info) => {
   }
 });
 
-autoUpdater.on('error', (err) => {
+autoUpdater.on('error', (error) => {
   const feedURL = autoUpdater.getFeedURL();
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.error,
-      message: JSON.stringify({ ...err, feedURL }),
+      message: JSON.stringify({ ...error, feedURL }),
     });
+    Sentry.captureException(error);
   }
 });
 
@@ -579,7 +602,10 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
     .then((returnValue) => {
       if (returnValue.response === 0) autoUpdater.quitAndInstall();
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      Sentry.captureException(err);
+      console.log(err);
+    });
 });
 
 ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
@@ -596,6 +622,7 @@ ipcMain.on(
         okxWindow!.focus();
       })
       .catch((err) => {
+        Sentry.captureException(err);
         console.log(err);
       });
 

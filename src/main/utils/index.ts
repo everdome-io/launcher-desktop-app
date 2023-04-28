@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/electron';
 import { URL } from 'url';
 import path from 'path';
 import * as uuid1 from 'uuid';
@@ -44,6 +45,8 @@ export async function getDownloadLink(): Promise<string | null> {
       return response;
     })
     .catch((error) => {
+      Sentry.captureException(err);
+
       console.log('error', error);
     });
 

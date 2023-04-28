@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/electron';
 import { CrossWindowState, UserAttributes } from '@interfaces';
 import { FC, useEffect, useState } from 'react';
 import { Routes, Route, HashRouter } from 'react-router-dom';
@@ -21,7 +22,10 @@ const UserProfile: FC<{
   useEffect(() => {
     getUserFromAPI({
       userId,
-      handleError: (err: any) => console.log(err),
+      handleError: (err: any) => {
+        Sentry.captureException(err);
+        console.log(err);
+      },
     })
       .then((response) => {
         if (response) {
@@ -29,7 +33,10 @@ const UserProfile: FC<{
         }
         return response;
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        Sentry.captureException(err);
+        console.log(err);
+      });
   }, [userId]);
 
   const saveUser = async ({
@@ -40,9 +47,10 @@ const UserProfile: FC<{
     avatarId: string | null;
   }) => {
     setUserAttributes({ ...userAttributes, avatarId, nickName });
-    await setUserInAPI({ ...userAttributes, avatarId, nickName }, (err) =>
-      console.log('err', err)
-    );
+    await setUserInAPI({ ...userAttributes, avatarId, nickName }, (err) => {
+      Sentry.captureException(err);
+      console.log('err', err);
+    });
   };
 
   return (

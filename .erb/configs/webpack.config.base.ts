@@ -10,6 +10,7 @@ import { dependencies as externals } from '../../release/app/package.json';
 
 const aliases = {
   '@interfaces': resolve(__dirname, '../src/interfaces'),
+  '@common': resolve(__dirname, '../src/common'),
   src: resolve(__dirname, '../src'),
   assets: resolve(__dirname, '../assets'),
 };
