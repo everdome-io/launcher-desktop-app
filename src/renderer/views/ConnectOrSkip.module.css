@@ -96,7 +96,6 @@
   position: absolute;
   width: 600px;
   height: 354px;
-  left: 340px;
   top: 0;
   background: #3BD6FF;
   opacity: 0.2;
@@ -104,7 +103,8 @@
 }
 
 .centerSection img {
-  margin-bottom: 11rem;
+  margin-bottom: 9rem;
+  margin-top: 6rem;
   z-index: 1;
 }
 
@@ -117,4 +117,5 @@
   opacity: 0.5;
   margin: 0;
   z-index: 1;
+  max-width: 466px;
 }

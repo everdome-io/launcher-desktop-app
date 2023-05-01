@@ -3,10 +3,10 @@
   background: #191919;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem 0.5rem;
   margin-top: 3.2rem;
-  width: 310px;
-  height: 144px;
+  max-width: 350px;
+
 }
 
 .infoText {
@@ -22,8 +22,8 @@
 
 .disclaimer {
   font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 8px;
+  line-height: 9px;
   text-align: center;
   color: #FFFFFF;
   opacity: 0.5;
