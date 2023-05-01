@@ -57,14 +57,14 @@ export const calculateProfileWindowPosition = (
 ) => {
   const [x, y] = mainWindowPosition || [];
   if (x && y) {
-    return [x + 962, y + 56];
+    return [x + 962, y + 42];
   }
-  return [1218, 216];
+  return [1218, 202];
 };
 
 export const calculateExtensionWindowPosition = (
   profileWindowPosition: number[]
 ) => {
   const [x, y] = profileWindowPosition;
-  return [x - 5, y - 10];
+  return [x - 5, y + 70];
 };

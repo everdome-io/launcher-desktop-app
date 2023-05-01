@@ -40,6 +40,7 @@ const store = new Store();
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
+const PROFILE_WINDOW_SIZE = { width: 342, height: 728 };
 
 const windows = new Set();
 
@@ -159,7 +160,12 @@ const createWindow = async () => {
   mainWindow.on('move', function () {
     if (mainWindow && profileWindow) {
       const [x, y] = calculateProfileWindowPosition(mainWindow.getPosition());
-      profileWindow.setBounds({ x, y, width: 342, height: 688 });
+      profileWindow.setBounds({
+        x,
+        y,
+        width: PROFILE_WINDOW_SIZE.width,
+        height: PROFILE_WINDOW_SIZE.height,
+      });
     }
   });
 
@@ -186,8 +192,8 @@ const createProfileWindow = async () => {
 
   profileWindow = new BrowserWindow({
     show: false,
-    width: 342,
-    height: 688,
+    width: PROFILE_WINDOW_SIZE.width,
+    height: PROFILE_WINDOW_SIZE.height,
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
     parent: mainWindow || undefined,
@@ -651,7 +657,10 @@ ipcMain.on(
       profileWindow?.setSize(1280, 800);
       profileWindow?.center();
     } else {
-      profileWindow?.setSize(342, 688);
+      profileWindow?.setSize(
+        PROFILE_WINDOW_SIZE.width,
+        PROFILE_WINDOW_SIZE.height
+      );
       const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
       profileWindow?.setPosition(x, y);
     }

@@ -45,8 +45,11 @@ export const ProfileDetails: FC<{
             NFT
           </p>
           <p className={styles.disclaimer}>
-            This is a space for a disclaimer text, which should not extend to
-            more than 2 lines of text.
+            The AG5 x OKX Non Fungible Tokens ("NFTs") are digital assets that
+            have been created as collectibles; They are free, not tradeable and
+            are not intended to be used as investment. Each NFT has no value nor
+            is there any guarantee that they can or will ever have monetary
+            value. NFTs are not regulated instruments in the UK.
           </p>
           <ConnectOKXWallet fromProfileWindow />
         </div>

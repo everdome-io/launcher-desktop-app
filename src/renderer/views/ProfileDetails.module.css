@@ -8,7 +8,7 @@
   composes: flexCenterColumn from '../theme/layout.module.css';
   justify-content: flex-end;
   height: 100%;
-  padding-bottom: 3rem;
+  padding: 0 1.5rem 3rem;
 }
 
 .notConnected::before {
@@ -30,8 +30,7 @@
   position: absolute;
   width: 149px;
   height: 75px;
-  left: 96px;
-  top: 613px;
+  top: 653px;
   background: #3BD6FF;
   opacity: 1;
   filter: blur(97px);
@@ -46,7 +45,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   max-width: 214px;
-  margin-top: 208px;
+  margin-top: 148px;
 }
 
 .disclaimer {
@@ -56,7 +55,8 @@
   text-align: center;
   color: #FFFFFF;
   opacity: 0.5;
-  margin: 1rem 0 3rem;
+  margin: 0.6rem 0 2.5rem;
+  max-width: 260px;
 }
 
 .userProfileHeader {
