@@ -710,7 +710,7 @@ ipcMain.on(Channels.backToMainView, (_event) => {
 ipcMain.on(Channels.handleUpdateForWindows, () => {
   const dialogOpts = {
     type: 'info',
-    buttons: ['Download', 'Later'],
+    buttons: ['Download please', 'Later'],
     title: 'Application Update',
     message: 'Please download and install new version of the Launcher',
   };
@@ -726,7 +726,7 @@ ipcMain.on(Channels.handleUpdateForWindows, () => {
 
 ipcMain.on('closeApp', () => {
   app.quit();
-})
+});
 
 ipcMain.on('electron-store-get', async (event, val) => {
   event.returnValue = store.get(val);
