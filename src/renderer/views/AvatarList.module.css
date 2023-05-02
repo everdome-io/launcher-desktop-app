@@ -140,6 +140,7 @@
 .playBtn {
   composes: primary from '../theme/buttons.module.css';
   composes: flexCenter from '../theme/layout.module.css';
-  width: 170px;
+  width: 135px;
+  padding-right: 1.5rem;
   justify-content: space-between;
 }
