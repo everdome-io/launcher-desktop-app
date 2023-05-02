@@ -710,7 +710,7 @@ ipcMain.on(Channels.backToMainView, (_event) => {
 ipcMain.on(Channels.handleUpdateForWindows, () => {
   const dialogOpts = {
     type: 'info',
-    buttons: ['Download please', 'Later'],
+    buttons: ['Download', 'Later'],
     title: 'Application Update',
     message: 'Please download and install new version of the Launcher',
   };
