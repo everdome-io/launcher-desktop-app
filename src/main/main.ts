@@ -469,7 +469,8 @@ ipcMain.on(Channels.openDialog, async function (event) {
 
   const localUserPath = await dialog.showOpenDialog({
     properties: ['openDirectory'],
-    message: 'Pick directory to store everdome file',
+    message: 'Select the destination folder',
+    buttonLabel: 'Save',
   });
 
   store.set('userPath', localUserPath.filePaths[0]);
