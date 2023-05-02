@@ -708,8 +708,25 @@ ipcMain.on(Channels.backToMainView, (_event) => {
 });
 
 ipcMain.on(Channels.handleUpdateForWindows, () => {
-  app.quit();
+  const dialogOpts = {
+    type: 'info',
+    buttons: ['Download', 'Later'],
+    title: 'Application Update',
+    message: 'Please download and install new version of the Launcher',
+  };
+  dialog
+    .showMessageBox(dialogOpts)
+    .then((returnValue) => {
+      if (returnValue.response === 0) {
+        mainWindow?.webContents.send('downloadLatestWindows');
+      }
+    })
+    .catch((err) => console.log(err));
 });
+
+ipcMain.on('closeApp', () => {
+  app.quit();
+})
 
 ipcMain.on('electron-store-get', async (event, val) => {
   event.returnValue = store.get(val);

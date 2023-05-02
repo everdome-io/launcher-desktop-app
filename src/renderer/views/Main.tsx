@@ -1,5 +1,5 @@
 import { AppState, AppUpdate, Channels, CrossWindowState } from '@interfaces';
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import styles from './Main.module.css';
 import { Navigate } from 'react-router-dom';
@@ -19,14 +19,14 @@ export const Main: FC<{
     'latestWindowsVersion'
   );
   const currentVersion: string | undefined =
-    window.electron.store.get('currentVersion');
+    window.electron.store.get('appCurrentVersion');
 
-  const onUpdate = () => {
-    const url = `https://github.com/everdome-io/launcher-desktop-app/releases/download/v${latestWindowsVersion}/OKX-Collective-Metaverse-Setup-${latestWindowsVersion}.exe`;
-    window.open(url, '_blank');
+    useEffect(() => {
+      if (shouldDisplayUpdateInfo(latestWindowsVersion,currentVersion)) {
     window.electron.ipcRenderer.sendMessage(Channels.handleUpdateForWindows);
-    return;
-  };
+       
+      }
+    }, [latestWindowsVersion,currentVersion])
 
   if (crossWindowState.errorMessage) {
     console.log(`Error message?: ${crossWindowState.errorMessage}`);
@@ -54,11 +54,7 @@ export const Main: FC<{
                 exclusive NFT drop and exclusive content from İlkay Gündoğan and
                 Rúben Dias
               </p>
-              {shouldDisplayUpdateInfo(latestWindowsVersion, currentVersion) ? (
-                <p onClick={onUpdate}>Please update</p>
-              ) : (
                 <FileDownloader state={state} />
-              )}
             </div>
           </section>
           <section className={styles.poweredBy}>
