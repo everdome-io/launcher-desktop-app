@@ -7,6 +7,7 @@ import { TermsOfService } from './views/TermsOfService';
 import { ConnectOrSkip } from './views/ConnectOrSkip';
 import { HowTo } from './views/HowTo';
 import { AvatarList } from './views/AvatarList';
+import { Help } from './views/Help';
 
 const App: FC<{
   state: AppState;
@@ -30,6 +31,7 @@ const App: FC<{
         <Route path="/connect-or-skip" element={<ConnectOrSkip />} />
         <Route path="/how-to" element={<HowTo />} />
         <Route path="/choose-avatar" element={<AvatarList beforePlay />} />
+        <Route path="/help" element={<Help />} />
       </Routes>
     </HashRouter>
   );
