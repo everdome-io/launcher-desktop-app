@@ -10,7 +10,15 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
+import {
+  app,
+  BrowserWindow,
+  shell,
+  ipcMain,
+  dialog,
+  session,
+  BrowserView,
+} from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
@@ -46,6 +54,7 @@ const windows = new Set();
 
 let mainWindow: BrowserWindow | null = null;
 let profileWindow: BrowserWindow | null = null;
+let okxWebView: BrowserView | null = null;
 let okxWindow: BrowserWindow | null = null;
 let downloadWebLink: string | null = null;
 
@@ -144,6 +153,9 @@ const createWindow = async () => {
   });
   windows.add(mainWindow);
 
+  okxWebView = new BrowserView();
+  mainWindow!.setBrowserView(okxWebView);
+
   mainWindow.loadURL(resolveHtmlPath('index.html'));
   mainWindow.center();
   mainWindow.on('ready-to-show', async () => {
@@ -166,6 +178,39 @@ const createWindow = async () => {
         width: PROFILE_WINDOW_SIZE.width,
         height: PROFILE_WINDOW_SIZE.height,
       });
+    }
+  });
+
+  okxWebView.webContents.on('did-navigate', async (event, url) => {
+    if (url.includes('/success')) {
+      await profileWindow
+        ?.loadURL(resolveHtmlPath('profile.html'))
+        .catch((err) => console.log(err));
+      okxWindow?.hide();
+      store.set('connectedOrSkipped', true);
+      const userId = store.get('userId') as string | undefined;
+      if (userId) {
+        await getUserFromAPI({
+          userId,
+          handleError: (err: any) =>
+            mainWindow?.webContents.send(Channels.crossWindow, {
+              isAuthenticated: true,
+              errorMessage: err.toString(),
+            }),
+        });
+        profileWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+        });
+        mainWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+        });
+      } else {
+        mainWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+          errorMessage: 'No userId',
+        });
+      }
+      profileWindow?.show();
     }
   });
 
@@ -226,39 +271,6 @@ const createProfileWindow = async () => {
     }
   });
 
-  profileWindow.webContents.on('did-navigate', async (event, url) => {
-    if (url.includes('/success')) {
-      await profileWindow
-        ?.loadURL(resolveHtmlPath('profile.html'))
-        .catch((err) => console.log(err));
-      okxWindow?.hide();
-      store.set('connectedOrSkipped', true);
-      const userId = store.get('userId') as string | undefined;
-      if (userId) {
-        await getUserFromAPI({
-          userId,
-          handleError: (err: any) =>
-            mainWindow?.webContents.send(Channels.crossWindow, {
-              isAuthenticated: true,
-              errorMessage: err.toString(),
-            }),
-        });
-        profileWindow?.webContents.send(Channels.crossWindow, {
-          isAuthenticated: true,
-        });
-        mainWindow?.webContents.send(Channels.crossWindow, {
-          isAuthenticated: true,
-        });
-      } else {
-        mainWindow?.webContents.send(Channels.crossWindow, {
-          isAuthenticated: true,
-          errorMessage: 'No userId',
-        });
-      }
-      profileWindow?.show();
-    }
-  });
-
   profileWindow.on('closed', () => {
     windows.delete(profileWindow);
     profileWindow = null;
@@ -281,10 +293,9 @@ const createOKXWindow = async () => {
     height: 600,
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
-    frame: false,
-    parent: profileWindow || undefined,
-    modal: true,
+    parent: mainWindow || undefined,
     autoHideMenuBar: true,
+    skipTaskbar: true,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -605,10 +616,12 @@ ipcMain.on(
   Channels.openOKXExtension,
   (_event, state: { fromProfileWindow: boolean }) => {
     const userId = store.get('userId');
-    profileWindow!
+    okxWebView!.setBounds({ x: 0, y: 0, width: 1, height: 1 });
+    okxWebView!.webContents
       .loadURL(`${OKX_WEB_APP_URL}?userId=${userId}`)
       .then(() => {
         okxWindow!.focus();
+        okxWindow!.setAlwaysOnTop(true, 'floating');
       })
       .catch((err) => {
         console.log(err);
@@ -643,6 +656,9 @@ ipcMain.on(Channels.acceptTerms, (_event) => {
 });
 
 ipcMain.on(Channels.connectedOrSkipped, (_event) => {
+  if (okxWindow && okxWindow.isVisible()) {
+    okxWindow.hide();
+  }
   store.set('connectedOrSkipped', true);
 
   if (store.get('termsAccepted')) {
