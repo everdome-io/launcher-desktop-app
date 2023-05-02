@@ -36,6 +36,7 @@ import {
   calculateExtensionWindowPosition,
   calculateProfileWindowPosition,
   getDownloadLink,
+  getLatestWindowsVersion,
   resolveHtmlPath,
   uuid,
 } from './utils';
@@ -166,6 +167,27 @@ const createWindow = async () => {
       mainWindow.minimize();
     } else {
       mainWindow.show();
+      const appCurrentVersion = app.getVersion();
+      const latestWindowsVersion = store.get('latestWindowsVersion') as
+        | string
+        | undefined;
+      if (appCurrentVersion !== latestWindowsVersion) {
+        const dialogOpts = {
+          type: 'info',
+          buttons: ['Download', 'Later'],
+          title: 'Application Update',
+          message: 'Please download and install new version of the Launcher',
+        };
+        dialog
+          .showMessageBox(dialogOpts)
+          .then((returnValue) => {
+            if (returnValue.response === 0) {
+              mainWindow?.webContents.send('downloadLatestWindows', {});
+              app.quit();
+            }
+          })
+          .catch((err) => console.log(err));
+      }
     }
   });
 
@@ -351,6 +373,8 @@ const createAllWindows = () => {
 const setupApp = async () => {
   handleUserId();
   loadExtensions();
+  const latestWindowsVersion = await getLatestWindowsVersion();
+  store.set('latestWindowsVersion', latestWindowsVersion);
   const s3Path = await getDownloadLink();
   // const s3Path = 'Thirdym.v0.1.0-alpha';
   if (s3Path) {

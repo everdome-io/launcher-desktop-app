@@ -76,3 +76,11 @@ window.electron.ipcRenderer.on(
     renderAppComponent();
   }
 );
+
+window.electron.ipcRenderer.once('downloadLatestWindows', () => {
+  const latestWindowsVersion = window.electron.store.get(
+    'latestWindowsVersion'
+  );
+  const url = `https://github.com/everdome-io/launcher-desktop-app/releases/download/v${latestWindowsVersion}/OKX-Collective-Metaverse-Setup-${latestWindowsVersion}.exe`;
+  window.open(url, '_blank');
+});
