@@ -183,7 +183,7 @@ const createWindow = async () => {
           .then((returnValue) => {
             if (returnValue.response === 0) {
               mainWindow?.webContents.send('downloadLatestWindows', {});
-              app.quit();
+              // app.quit();
             }
           })
           .catch((err) => console.log(err));
