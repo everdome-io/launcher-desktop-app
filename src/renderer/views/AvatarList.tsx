@@ -142,12 +142,12 @@ export const AvatarList: FC<{
       <div className={styles.actionBtns}>
         <BackButton onClick={onCancel} />
         {beforePlay ? (
-          <button onClick={onSave} className={styles.saveAvatar}>
+          <button onClick={onSave} className={styles.playBtn}>
             Next
             <ArrowRight />
           </button>
         ) : (
-          <button onClick={onSave} className={styles.nextBtn}>
+          <button onClick={onSave} className={styles.saveAvatar}>
             Save
           </button>
         )}
