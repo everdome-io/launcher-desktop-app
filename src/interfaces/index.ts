@@ -19,6 +19,8 @@ export enum Channels {
   closeOKXExtension = 'close-okx',
 
   toggleProfileWindow = 'toggle-profile-window',
+
+  handleUpdateForWindows = 'handle-update-for-windows',
 }
 /* eslint-disable no-shadow */
 export enum AppUpdateStatus {

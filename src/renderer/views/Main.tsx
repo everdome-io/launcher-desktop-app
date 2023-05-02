@@ -1,5 +1,5 @@
-import { AppState, AppUpdate, CrossWindowState } from '@interfaces';
-import { FC } from 'react';
+import { AppState, AppUpdate, Channels, CrossWindowState } from '@interfaces';
+import { FC, useEffect } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import styles from './Main.module.css';
 import { Navigate } from 'react-router-dom';
@@ -15,6 +15,18 @@ export const Main: FC<{
 }> = ({ state, crossWindowState }) => {
   const connectedOrSkipped = window.electron.store.get('connectedOrSkipped');
   const termsAccepted = window.electron.store.get('termsAccepted');
+  const latestWindowsVersion: string | undefined = window.electron.store.get(
+    'latestWindowsVersion'
+  );
+  const currentVersion: string | undefined =
+    window.electron.store.get('appCurrentVersion');
+
+    useEffect(() => {
+      if (shouldDisplayUpdateInfo(latestWindowsVersion,currentVersion)) {
+    window.electron.ipcRenderer.sendMessage(Channels.handleUpdateForWindows);
+       
+      }
+    }, [latestWindowsVersion,currentVersion])
 
   if (crossWindowState.errorMessage) {
     console.log(`Error message?: ${crossWindowState.errorMessage}`);
@@ -42,7 +54,7 @@ export const Main: FC<{
                 exclusive NFT drop and exclusive content from İlkay Gündoğan and
                 Rúben Dias
               </p>
-              <FileDownloader state={state} />
+                <FileDownloader state={state} />
             </div>
           </section>
           <section className={styles.poweredBy}>
@@ -69,3 +81,14 @@ export const Main: FC<{
 
   return renderView();
 };
+
+function shouldDisplayUpdateInfo(
+  latestWindowsVersion: string | undefined,
+  currentVersion: string | undefined
+) {
+  return (
+    latestWindowsVersion !== undefined &&
+    currentVersion !== undefined &&
+    latestWindowsVersion !== currentVersion
+  );
+}
