@@ -1,4 +1,4 @@
-import { AppState, AppUpdate, CrossWindowState } from '@interfaces';
+import { AppState, AppUpdate, Channels, CrossWindowState } from '@interfaces';
 import { FC } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import styles from './Main.module.css';
@@ -15,6 +15,18 @@ export const Main: FC<{
 }> = ({ state, crossWindowState }) => {
   const connectedOrSkipped = window.electron.store.get('connectedOrSkipped');
   const termsAccepted = window.electron.store.get('termsAccepted');
+  const latestWindowsVersion: string | undefined = window.electron.store.get(
+    'latestWindowsVersion'
+  );
+  const currentVersion: string | undefined =
+    window.electron.store.get('currentVersion');
+
+  const onUpdate = () => {
+    const url = `https://github.com/everdome-io/launcher-desktop-app/releases/download/v${latestWindowsVersion}/OKX-Collective-Metaverse-Setup-${latestWindowsVersion}.exe`;
+    window.open(url, '_blank');
+    window.electron.ipcRenderer.sendMessage(Channels.handleUpdateForWindows);
+    return;
+  };
 
   if (crossWindowState.errorMessage) {
     console.log(`Error message?: ${crossWindowState.errorMessage}`);
@@ -42,7 +54,11 @@ export const Main: FC<{
                 exclusive NFT drop and exclusive content from İlkay Gündoğan and
                 Rúben Dias
               </p>
-              <FileDownloader state={state} />
+              {shouldDisplayUpdateInfo(latestWindowsVersion, currentVersion) ? (
+                <p onClick={onUpdate}>Please update</p>
+              ) : (
+                <FileDownloader state={state} />
+              )}
             </div>
           </section>
           <section className={styles.poweredBy}>
@@ -69,3 +85,14 @@ export const Main: FC<{
 
   return renderView();
 };
+
+function shouldDisplayUpdateInfo(
+  latestWindowsVersion: string | undefined,
+  currentVersion: string | undefined
+) {
+  return (
+    latestWindowsVersion !== undefined &&
+    currentVersion !== undefined &&
+    latestWindowsVersion !== currentVersion
+  );
+}
