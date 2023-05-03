@@ -36,14 +36,7 @@ jobs:
           repository: everdome-io/launcher-desktop-app
           release-id: latest
           files: OKX-Collective-Metaverse-*.dmg
-          target: OKX-Collective-Metaverse.dmg
-   
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: arn:aws:iam::698855301757:role/ci-deployer
-          role-duration-seconds: 1200
-          aws-region: us-east-1          
+          target: OKX-Collective-Metaverse.dmg     
 
       - name: Upload file to bucket
         uses: zdurham/s3-upload-github-action@master
