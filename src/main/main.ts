@@ -56,6 +56,7 @@ const PROFILE_WINDOW_SIZE = { width: 342, height: 728 };
 const windows = new Set();
 
 let mainWindow: BrowserWindow | null = null;
+let faqWebView: BrowserView | null = null;
 let profileWindow: BrowserWindow | null = null;
 let okxWebView: BrowserView | null = null;
 let okxWindow: BrowserWindow | null = null;
@@ -726,6 +727,19 @@ ipcMain.on(Channels.handleUpdateForWindows, () => {
 
 ipcMain.on('closeApp', () => {
   app.quit();
+});
+
+ipcMain.on(Channels.openFAQWindow, () => {
+  profileWindow?.hide();
+  faqWebView = new BrowserView();
+  mainWindow!.setBrowserView(faqWebView);
+  faqWebView.webContents.loadURL(`${OKX_WEB_APP_URL}/faq.html`);
+  faqWebView.setBounds({ x: 0, y: 0, width: 1280, height: 700 });
+});
+
+ipcMain.on(Channels.closeFAQWindow, () => {
+  mainWindow!.setBrowserView(null);
+  profileWindow?.show();
 });
 
 ipcMain.on('electron-store-get', async (event, val) => {
