@@ -31,10 +31,7 @@ const App: FC<{
         <Route path="/connect-or-skip" element={<ConnectOrSkip />} />
         <Route path="/how-to" element={<HowTo />} />
         <Route path="/choose-avatar" element={<AvatarList beforePlay />} />
-        <Route
-          path="/help"
-          element={<Help crossWindowState={crossWindowState} />}
-        />
+        <Route path="/help" element={<Help />} />
       </Routes>
     </HashRouter>
   );
