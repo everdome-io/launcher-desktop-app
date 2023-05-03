@@ -1,0 +1,51 @@
+name: Upload Assets to S3
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload-win-assets-to-s3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download WIN release assets
+        uses: duhow/download-github-release-assets@v1
+        with:
+          repository: everdome-io/launcher-desktop-app
+          release-id: latest
+          files: OKX-Collective-Metaverse-Setup-*.exe
+          target: OKX-Collective-Metaverse-Setup.exe
+
+      - name: Upload file to bucket
+        uses: zdurham/s3-upload-github-action@master
+        with:
+          args: --acl public-read
+        env:
+          FILE: OKX-Collective-Metaverse-Setup.exe
+          AWS_REGION: 'us-east-1'
+          S3_BUCKET: ${{ secrets.UPLOAD_AWS_S3_BUCKET }}
+          S3_KEY: OKX-Collective-Metaverse-Setup-GH.exe
+          AWS_ACCESS_KEY_ID: ${{ secrets.UPLOAD_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.UPLOAD_AWS_SECRET_ACCESS_KEY }}
+
+  upload-mac-assets-to-s3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download MAC release assets
+        uses: duhow/download-github-release-assets@v1
+        with:
+          repository: everdome-io/launcher-desktop-app
+          release-id: latest
+          files: OKX-Collective-Metaverse-*.dmg
+          target: OKX-Collective-Metaverse.dmg
+
+      - name: Upload file to bucket
+        uses: zdurham/s3-upload-github-action@master
+        with:
+          args: --acl public-read
+        env:
+          FILE: OKX-Collective-Metaverse.dmg
+          AWS_REGION: 'us-east-1'
+          S3_BUCKET: ${{ secrets.UPLOAD_AWS_S3_BUCKET }}
+          S3_KEY: OKX-Collective-Metaverse-GH.dmg
+          AWS_ACCESS_KEY_ID: ${{ secrets.UPLOAD_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.UPLOAD_AWS_SECRET_ACCESS_KEY }}
