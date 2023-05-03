@@ -1,0 +1,67 @@
+.container {
+  composes: flexCenterColumn from '../theme/layout.module.css';
+  padding: 64px 42px 42px;
+}
+
+.container::before {
+  content: '';
+  flex: 1;
+  position: absolute;
+  left: 21.56%;
+  right: 21.56%;
+  top: -56%;
+  bottom: 65%;
+  background: #F6F6F6;
+  opacity: 0.26;
+  filter: blur(277px);
+}
+
+.mainSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.title {
+  composes: pageTitle from '../theme/typography.module.css';
+}
+
+.question {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.answer {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.answer li {
+  list-style-type: circle;
+}
+
+.footer {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.faqCard {
+  background: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem 1rem 0.5rem;
+  margin-top: 3.2rem;
+  max-width: 350px;
+}

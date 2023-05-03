@@ -1,8 +1,14 @@
-import { AppState, AppUpdate, Channels, CrossWindowState } from '@interfaces';
+import {
+  AppState,
+  AppUpdate,
+  Channels,
+  CrossWindowState,
+  ToggleWindowMode,
+} from '@interfaces';
 import { FC, useEffect } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import styles from './Main.module.css';
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import logoImage from 'assets/images/okx-logo.png';
 import { LinkCardList } from '@renderer/components/LinkCardList';
 import { FileDownloader } from '@renderer/components';
@@ -13,6 +19,7 @@ export const Main: FC<{
   updateState: AppUpdate;
   crossWindowState: CrossWindowState;
 }> = ({ state, crossWindowState }) => {
+  const navigate = useNavigate();
   const connectedOrSkipped = window.electron.store.get('connectedOrSkipped');
   const termsAccepted = window.electron.store.get('termsAccepted');
   const latestWindowsVersion: string | undefined = window.electron.store.get(
@@ -21,16 +28,20 @@ export const Main: FC<{
   const currentVersion: string | undefined =
     window.electron.store.get('appCurrentVersion');
 
-    useEffect(() => {
-      if (shouldDisplayUpdateInfo(latestWindowsVersion,currentVersion)) {
-    window.electron.ipcRenderer.sendMessage(Channels.handleUpdateForWindows);
-       
-      }
-    }, [latestWindowsVersion,currentVersion])
+  useEffect(() => {
+    if (shouldDisplayUpdateInfo(latestWindowsVersion, currentVersion)) {
+      window.electron.ipcRenderer.sendMessage(Channels.handleUpdateForWindows);
+    }
+  }, [latestWindowsVersion, currentVersion]);
 
   if (crossWindowState.errorMessage) {
     console.log(`Error message?: ${crossWindowState.errorMessage}`);
   }
+
+  const onClickHelp = () => {
+    window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
+    navigate('/help');
+  };
 
   const renderView = () => {
     if (!termsAccepted && !crossWindowState.isAuthenticated) {
@@ -47,6 +58,9 @@ export const Main: FC<{
         </div>
         <div className={styles.container}>
           <img src={logoImage} alt="Everdome" width="120" height="76" />
+          <button className={styles.helpBtn} onClick={onClickHelp}>
+            FAQ
+          </button>
           <section className={styles.mainSection}>
             <div className={styles.welcomeMessage}>
               <p>
@@ -54,7 +68,7 @@ export const Main: FC<{
                 exclusive NFT drop and exclusive content from İlkay Gündoğan and
                 Rúben Dias
               </p>
-                <FileDownloader state={state} />
+              <FileDownloader state={state} />
             </div>
           </section>
           <section className={styles.poweredBy}>
