@@ -19,7 +19,8 @@ import {
   session,
   BrowserView,
 } from 'electron';
-import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
+import { UpdateDownloadedEvent } from 'electron-updater';
+import { autoUpdater } from 'electron-github-autoupdater';
 import Store from 'electron-store';
 import request from 'request';
 import { generateFakeEthAddress } from '../interfaces/publicKeyGenerator';
@@ -48,6 +49,13 @@ import { getUserFromAPI } from '../api';
 import { playEverdome } from './utils/enter-game';
 
 const store = new Store();
+
+const updater = autoUpdater({
+  owner: 'everdome-io',
+  repo: 'launcher-desktop-app',
+  accessToken: process.env.GH_TOKEN || '',
+  allowPrerelease: true,
+});
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
@@ -230,7 +238,7 @@ const createWindow = async () => {
     shell.openExternal(edata.url);
     return { action: 'deny' };
   });
-  await autoUpdater.checkForUpdates();
+  await updater.checkForUpdates();
 };
 
 const createProfileWindow = async () => {
@@ -559,8 +567,8 @@ ipcMain.on(Channels.extractProcess, async (event) => {
     });
 });
 
-autoUpdater.on('checking-for-update', () => {
-  const message = autoUpdater.getFeedURL();
+updater.on('checking-for-update', () => {
+  const message = updater.platformConfig.feedUrl;
 
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
@@ -570,7 +578,7 @@ autoUpdater.on('checking-for-update', () => {
   }
 });
 
-autoUpdater.on('update-available', (info) => {
+updater.on('update-available', (info) => {
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.available,
@@ -579,7 +587,7 @@ autoUpdater.on('update-available', (info) => {
   }
 });
 
-autoUpdater.on('update-not-available', (info) => {
+updater.on('update-not-available', (info) => {
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.notAvailable,
@@ -588,8 +596,8 @@ autoUpdater.on('update-not-available', (info) => {
   }
 });
 
-autoUpdater.on('error', (err) => {
-  const feedURL = autoUpdater.getFeedURL();
+updater.on('error', (err) => {
+  const feedURL = updater.platformConfig.feedUrl;
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.error,
@@ -598,7 +606,7 @@ autoUpdater.on('error', (err) => {
   }
 });
 
-autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
+updater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
   const dialogOpts = {
     type: 'info',
     buttons: ['Restart', 'Later'],
@@ -613,7 +621,7 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
   dialog
     .showMessageBox(dialogOpts)
     .then((returnValue) => {
-      if (returnValue.response === 0) autoUpdater.quitAndInstall();
+      if (returnValue.response === 0) updater.quitAndInstall();
     })
     .catch((err) => console.log(err));
 });
