@@ -26,11 +26,11 @@ jobs:
 
       - name: Install and build
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          UPDATE_TOKEN: ${{ secrets.UPDATE_TOKEN }}
         run: |
           npm install
           npm run postinstall
-          npm run build
+          UPDATE_TOKEN=UPDATE_TOKEN npm run build
 
       - name: Publish releases
         env:
