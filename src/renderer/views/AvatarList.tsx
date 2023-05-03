@@ -1,4 +1,7 @@
-import { generateNickname } from '@interfaces/usernameGenerator';
+import {
+  NICKNAME_MAX_LENGTH,
+  generateNickname,
+} from '@interfaces/usernameGenerator';
 import { FC, useRef, useState } from 'react';
 import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
@@ -109,7 +112,19 @@ export const AvatarList: FC<{
           value={nickNameValue}
           placeholder={placeholderValue}
           onChange={handleInputChange}
+          maxLength={NICKNAME_MAX_LENGTH}
         />
+        <span
+          className={
+            nickNameValue.length === NICKNAME_MAX_LENGTH
+              ? styles.suffixError
+              : styles.suffix
+          }
+        >
+          {nickNameValue.length}
+        </span>
+        <span className={styles.suffix}>/{NICKNAME_MAX_LENGTH}</span>
+
         <button onClick={onSaveUsername} className={styles.inputBtn}>
           Save
         </button>
