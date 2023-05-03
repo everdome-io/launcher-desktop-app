@@ -39,7 +39,7 @@ export const Main: FC<{
   }
 
   const onClickHelp = () => {
-    window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
+    window.electron.ipcRenderer.sendMessage(Channels.openFAQWindow);
     navigate('/help');
   };
 

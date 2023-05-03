@@ -102,23 +102,12 @@
 }
 
 .helpBtn {
-  composes: btn from "../theme/buttons.module.css";
+  composes: secondary from "../theme/buttons.module.css";
   position: absolute;
-  top: 0;
+  top: 1%;
   right: -32%;
-  background-color: #000;
-  border-radius: 0 0 8px 8px;
-  color: #fff;
-  padding: 0.5rem 1.5rem;
-  margin: 0;
-  font-size: 12px;
-  line-height: 14px;
 }
 
-.helpBtn:hover {
-  background-color: #fff;
-  color: #000;
-}
 
 .mainSection {
   display: flex;

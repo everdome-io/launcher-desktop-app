@@ -9,6 +9,8 @@ export enum Channels {
   acceptTerms = 'accept-terms',
   connectedOrSkipped = 'connected-or-skipped',
   backToMainView = 'back-to-main-view',
+  openFAQWindow = 'open-faq-window',
+  closeFAQWindow = 'close-faq-window',
 
   crossWindow = 'cross-window',
   changeState = 'change-state',
