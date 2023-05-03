@@ -54,3 +54,22 @@ jobs:
           S3_KEY: OKX-Collective-Metaverse.dmg
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+
+  create-version-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create JSON file
+        run: |
+          echo '{ "latest": "${{ inputs.version }}" }' > launcher-version.json
+          
+      - name: Upload json file to bucket
+        uses: zdurham/s3-upload-github-action@master
+        with:
+          args: --acl public-read
+        env:
+          FILE: launcher-version.json
+          AWS_REGION: 'us-east-1'
+          S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          S3_KEY: launcher-version.json
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
