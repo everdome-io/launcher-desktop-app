@@ -30,7 +30,7 @@ jobs:
         run: |
           npm install
           npm run postinstall
-          UPDATE_TOKEN=${{ secrets.UPDATE_TOKEN }} npm run build
+          UPDATE_TOKEN=UPDATE_TOKEN npm run build
 
       - name: Publish releases
         env:

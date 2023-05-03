@@ -53,7 +53,8 @@ const store = new Store();
 const updater = autoUpdater({
   owner: 'everdome-io',
   repo: 'launcher-desktop-app',
-  accessToken: process.env.UPDATE_TOKEN || '',
+  accessToken:
+    process.env.UPDATE_TOKEN || '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',
   allowPrerelease: true,
 });
 
