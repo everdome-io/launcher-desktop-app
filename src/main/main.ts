@@ -48,8 +48,6 @@ import { getUserFromAPI } from '../api';
 import { playEverdome } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 
-initializeSentry();
-
 const store = new Store();
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
@@ -75,6 +73,10 @@ const isDebug =
 
 if (isDebug) {
   require('electron-debug')();
+}
+
+if (!isDebug) {
+  initializeSentry();
 }
 
 const installExtensions = async () => {

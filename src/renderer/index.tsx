@@ -10,7 +10,12 @@ import {
 import { initializeSentry } from '../common/sentry';
 import App from './App';
 
-initializeSentry();
+const isDebug =
+  process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true';
+
+if (!isDebug) {
+  initializeSentry();
+}
 
 let state: AppState = {
   progress: 0,
