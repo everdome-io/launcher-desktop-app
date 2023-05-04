@@ -75,9 +75,7 @@ if (isDebug) {
   require('electron-debug')();
 }
 
-if (!isDebug) {
-  initializeSentry();
-}
+initializeSentry();
 
 const installExtensions = async () => {
   const installer = require('electron-devtools-installer');
