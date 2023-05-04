@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styles from './Help.module.css';
 import { BackButton } from '@renderer/components/BackButton';
 import { Channels } from '@interfaces';
 import { useNavigate } from 'react-router-dom';
+import styles from './Help.module.css';
 
 export const Help: React.FC<{ webViewLoading: boolean }> = ({
   webViewLoading,
@@ -19,10 +19,10 @@ export const Help: React.FC<{ webViewLoading: boolean }> = ({
       <div className={styles.webView}>
         {webViewLoading && (
           <div className={styles.spinner}>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div />
+            <div />
+            <div />
+            <div />
           </div>
         )}
       </div>

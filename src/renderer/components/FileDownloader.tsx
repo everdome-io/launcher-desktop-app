@@ -1,7 +1,7 @@
 import { AppState, Channels, Processes } from '@interfaces';
 import { FC, useState } from 'react';
-import styles from './FileDownloader.module.css';
 import { useNavigate } from 'react-router-dom';
+import styles from './FileDownloader.module.css';
 
 function toShortSize(_size: number) {
   let size = _size;
@@ -36,20 +36,21 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   const duringDownloadOrExtract =
     (process === Processes.download || process === Processes.extract) &&
-    progress !== null;
+    progress !== null &&
+    progress !== 100;
 
   console.log('duringDownloadOrExtract', duringDownloadOrExtract);
   console.log('couldUseWebLink', couldUseWebLink);
   console.log('processStageStore', processStageStore);
 
   if (processStageStore === Processes.download) {
-    if (!afterDownload) {
+    if (!afterDownload && !duringDownloadOrExtract) {
       window.electron.ipcRenderer.sendMessage(Channels.downloadProcess);
       setAfterDownload(true);
     }
   }
   if (processStageStore === Processes.extract) {
-    if (!afterExtract) {
+    if (!afterExtract && !duringDownloadOrExtract) {
       window.electron.ipcRenderer.sendMessage(Channels.extractProcess);
       setAfterExtract(true);
     }

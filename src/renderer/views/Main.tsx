@@ -7,12 +7,12 @@ import {
 } from '@interfaces';
 import { FC, useEffect } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
-import styles from './Main.module.css';
 import { Navigate, useNavigate } from 'react-router-dom';
 import logoImage from 'assets/images/okx-logo.png';
 import { LinkCardList } from '@renderer/components/LinkCardList';
 import { FileDownloader } from '@renderer/components';
 import { ClearStore } from '@renderer/components/ClearStore';
+import styles from './Main.module.css';
 
 export const Main: FC<{
   state: AppState;
@@ -53,8 +53,8 @@ export const Main: FC<{
     return (
       <div className={styles.main}>
         <div className={styles.slider}>
-          <div className={styles.slide}></div>
-          <div className={styles.slide}></div>
+          <div className={styles.slide} />
+          <div className={styles.slide} />
         </div>
         <div className={styles.container}>
           <img src={logoImage} alt="Everdome" width="120" height="76" />
@@ -78,6 +78,7 @@ export const Main: FC<{
                 href="https://everdome.io/"
                 target="_blank"
                 className={styles.poweredByLink}
+                rel="noreferrer"
               >
                 Everdome
               </a>
@@ -88,7 +89,7 @@ export const Main: FC<{
             <LinkCardList />
           </section>
         </div>
-        <ClearStore />
+        {/* <ClearStore /> */}
       </div>
     );
   };

@@ -53,7 +53,7 @@ function playOnMacOS({
 }: PlayProperties): void {
   chmodPlusX(filePath);
   execCommand(
-    `${filePath} -game -log -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
+    `${filePath} -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
   );
 }
 
@@ -64,7 +64,7 @@ function playOnWindows({
   avatarid,
 }: PlayProperties): void {
   exec(
-    `"${filePath}" -game -log -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`,
+    `"${filePath}" -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`,
     (error, stdout, stderr) => {
       if (error) {
         return errorHandler(error);
