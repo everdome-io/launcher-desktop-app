@@ -1,7 +1,7 @@
-import * as Sentry from '@sentry/electron';
 import { URL } from 'url';
 import path from 'path';
 import * as uuid1 from 'uuid';
+import { errorHandler } from './errorHandler';
 
 export function resolveHtmlPath(htmlFileName: string) {
   if (process.env.NODE_ENV === 'development') {
@@ -44,11 +44,7 @@ export async function getDownloadLink(): Promise<string | null> {
       s3Path = body[os];
       return response;
     })
-    .catch((error) => {
-      Sentry.captureException(err);
-
-      console.log('error', error);
-    });
+    .catch(errorHandler);
 
   return s3Path;
 }
@@ -66,9 +62,7 @@ export async function getLatestWindowsVersion(): Promise<string | null> {
       version = body.latest;
       return response;
     })
-    .catch((error) => {
-      console.log('error', error);
-    });
+    .catch(errorHandler);
 
   return version;
 }

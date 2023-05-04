@@ -2,6 +2,7 @@ import path from 'path';
 import request from 'request';
 import * as fs from 'fs';
 import { IpcMainEvent } from 'electron';
+import * as Sentry from '@sentry/electron';
 import { eventsClient } from '../events';
 import { Channels, Processes } from '../../interfaces';
 
@@ -53,6 +54,7 @@ export function downloadFileWithProgress(
 
   req.on('error', (err) => {
     console.log('download failed', err);
+    Sentry.captureException(err);
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
