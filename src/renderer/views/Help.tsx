@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styles from './Help.module.css';
 import { BackButton } from '@renderer/components/BackButton';
 import { Channels } from '@interfaces';
 import { useNavigate } from 'react-router-dom';
+import styles from './Help.module.css';
 
 export const Help: React.FC = () => {
   const navigate = useNavigate();
@@ -15,10 +15,10 @@ export const Help: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.webView}>
         <div className={styles.spinner}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div />
+          <div />
+          <div />
+          <div />
         </div>
       </div>
 
