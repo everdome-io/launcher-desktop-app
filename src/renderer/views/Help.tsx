@@ -5,7 +5,10 @@ import { BackButton } from '@renderer/components/BackButton';
 import { Channels } from '@interfaces';
 import { useNavigate } from 'react-router-dom';
 
-export const Help: React.FC = () => {
+export const Help: React.FC<{ webViewLoading: boolean }> = ({
+  webViewLoading,
+}) => {
+  console.log('webViewLoading', webViewLoading);
   const navigate = useNavigate();
   const onCancel = () => {
     navigate('/');
@@ -14,12 +17,14 @@ export const Help: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.webView}>
-        <div className={styles.spinner}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        {webViewLoading && (
+          <div className={styles.spinner}>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        )}
       </div>
 
       <div className={styles.footer}>

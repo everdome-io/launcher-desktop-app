@@ -742,8 +742,18 @@ ipcMain.on(Channels.openFAQWindow, () => {
   profileWindow?.hide();
   faqWebView = new BrowserView();
   mainWindow!.setBrowserView(faqWebView);
-  faqWebView.webContents.loadURL(`${OKX_WEB_APP_URL}/faq.html`);
-  faqWebView.setBounds({ x: 0, y: 0, width: 1280, height: 700 });
+  faqWebView.webContents.loadURL(`http://localhost:3000/faq.html`).then(() => {
+    mainWindow?.webContents.send(Channels.crossWindow, {
+      webViewLoading: false,
+    });
+  });
+  const mainWindowHeight = mainWindow!.getBounds().height;
+  faqWebView.setBounds({
+    x: 0,
+    y: 0,
+    width: 1280,
+    height: mainWindowHeight - 150,
+  });
 });
 
 ipcMain.on(Channels.closeFAQWindow, () => {

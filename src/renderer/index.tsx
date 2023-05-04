@@ -32,6 +32,7 @@ let updateState: AppUpdate = {
 let crossWindowState: CrossWindowState = {
   isAuthenticated: false,
   errorMessage: '',
+  webViewLoading: true,
 };
 
 const container = document.getElementById('root')!;
