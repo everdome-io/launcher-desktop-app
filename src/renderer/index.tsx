@@ -27,6 +27,7 @@ let updateState: AppUpdate = {
 let crossWindowState: CrossWindowState = {
   isAuthenticated: false,
   errorMessage: '',
+  webViewLoading: true,
 };
 
 const container = document.getElementById('root')!;
@@ -81,10 +82,7 @@ window.electron.ipcRenderer.on(
 );
 
 window.electron.ipcRenderer.once('downloadLatestWindows', () => {
-  const latestWindowsVersion = window.electron.store.get(
-    'latestWindowsVersion'
-  );
-  const url = `https://github.com/everdome-io/launcher-desktop-app/releases/download/v${latestWindowsVersion}/OKX-Collective-Metaverse-Setup-${latestWindowsVersion}.exe`;
+  const url = `https://okx-everdome-builds.s3.amazonaws.com/OKX-Collective-Metaverse-Setup.exe`;
   window.open(url, '_blank');
   window.electron.ipcRenderer.sendMessage('closeApp');
 });

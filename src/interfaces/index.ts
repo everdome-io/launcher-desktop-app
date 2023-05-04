@@ -65,6 +65,7 @@ export type AppState = {
 export type CrossWindowState = {
   isAuthenticated: boolean;
   errorMessage: string;
+  webViewLoading: boolean;
 };
 
 export type AppUpdate = {
