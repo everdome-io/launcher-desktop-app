@@ -84,3 +84,38 @@
   justify-content: space-between;
   width: 100%;
 }
+
+.centerSection {
+  composes: flexCenterColumn from '../theme/layout.module.css';
+  width: 100%;
+}
+
+.centerSection::after {
+  content: "";
+  flex: 1;
+  position: absolute;
+  width: 600px;
+  height: 354px;
+  top: 0;
+  background: #3BD6FF;
+  opacity: 0.2;
+  filter: blur(97px);
+}
+
+.centerSection img {
+  margin-bottom: 9rem;
+  margin-top: 6rem;
+  z-index: 1;
+}
+
+.disclaimer {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin: 0;
+  z-index: 1;
+  max-width: 466px;
+}

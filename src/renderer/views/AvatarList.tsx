@@ -1,3 +1,7 @@
+import {
+  NICKNAME_MAX_LENGTH,
+  generateNickname,
+} from '@interfaces/usernameGenerator';
 import { FC, useRef, useState } from 'react';
 import avatars from '@renderer/utils/avatars';
 import avatarStand from 'assets/images/avatar-stand.svg';
@@ -6,35 +10,51 @@ import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
 import { useNavigate } from 'react-router-dom';
-import { generateNickname } from '@renderer/utils/usernameGenerator';
 import styles from './AvatarList.module.css';
+import { setUserInAPI } from '@api';
+import { generateFakeEthAddress } from '@interfaces/publicKeyGenerator';
 
 export const AvatarList: FC<{
-  nickName: string | undefined;
-  avatarId: string | undefined;
-  saveAvatar: ({
+  beforePlay?: boolean;
+  onClickSave?: ({
     nickName,
     avatarId,
   }: {
     nickName: string;
     avatarId: string | null;
-  }) => Promise<void>;
-}> = ({ nickName, avatarId, saveAvatar }) => {
-  const [nickNameValue, setNickNameValue] = useState(nickName);
+  }) => void;
+}> = ({ beforePlay = false, onClickSave }) => {
+  const userId = window.electron.store.get('userId') as string;
+  const avatarId = window.electron.store.get('avatarId') || '0';
+  const [avatarIndex, setAvatarIndex] = useState(Number(avatarId));
+
   const [placeholderValue] = useState(generateNickname());
+  const nickName = window.electron.store.get('nickName') || placeholderValue;
+  const [nickNameValue, setNickNameValue] = useState(nickName);
+
   const nickNameRef = useRef(null);
   const navigate = useNavigate();
-  const [avatarIndex, setAvatarIndex] = useState(Number(avatarId) || 0);
+
+  let publicKey: string;
+  let isFakePublicKey: boolean;
+
+  if (window.electron.store.get('publicKey')) {
+    publicKey = window.electron.store.get('publicKey');
+    isFakePublicKey = false;
+  } else {
+    publicKey = generateFakeEthAddress();
+    isFakePublicKey = true;
+  }
 
   const handleInputChange = (event: any) => {
     setNickNameValue(event.target.value);
   };
 
   const onClickNext = () => {
-    setAvatarIndex(avatarIndex + 2);
+    setAvatarIndex(avatarIndex + 1);
   };
   const onClickPrev = () => {
-    setAvatarIndex(avatarIndex - 2);
+    setAvatarIndex(avatarIndex - 1);
   };
   const onCancel = () => {
     window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
@@ -42,23 +62,43 @@ export const AvatarList: FC<{
     });
     navigate('/');
   };
-  const onSave = () => {
-    saveAvatar({
-      nickName: nickNameValue || placeholderValue,
-      avatarId: avatarIndex.toString(),
-    });
+  const onSave = async () => {
+    window.electron.store.set('publicKey', publicKey);
+    window.electron.store.set('avatarId', avatarIndex.toString());
+    window.electron.store.set('nickName', nickNameValue || placeholderValue);
+    await setUserInAPI(
+      {
+        avatarId: avatarIndex.toString(),
+        nickName: nickNameValue || placeholderValue,
+        publicKey,
+        userId,
+        isFakePublicKey,
+      },
+      (err) => console.log('err', err)
+    );
+    if (onClickSave) {
+      onClickSave({
+        avatarId: avatarIndex.toString(),
+        nickName: nickNameValue || placeholderValue,
+      });
+    }
     window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
       mode: ToggleWindowMode.close,
     });
-    navigate('/');
+
+    if (beforePlay) {
+      navigate('/how-to');
+    } else {
+      navigate('/');
+    }
   };
   const onSaveUsername = () => {
     if (!nickNameValue) {
       setNickNameValue(placeholderValue);
     }
-    saveAvatar({ nickName: nickNameValue || placeholderValue, avatarId: null });
     (document.activeElement as HTMLElement).blur();
   };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -72,7 +112,19 @@ export const AvatarList: FC<{
           value={nickNameValue}
           placeholder={placeholderValue}
           onChange={handleInputChange}
+          maxLength={NICKNAME_MAX_LENGTH}
         />
+        <span
+          className={
+            nickNameValue.length === NICKNAME_MAX_LENGTH
+              ? styles.suffixError
+              : styles.suffix
+          }
+        >
+          {nickNameValue.length}
+        </span>
+        <span className={styles.suffix}>/{NICKNAME_MAX_LENGTH}</span>
+
         <button onClick={onSaveUsername} className={styles.inputBtn}>
           Save
         </button>
@@ -81,14 +133,15 @@ export const AvatarList: FC<{
         <button
           onClick={onClickPrev}
           className={styles.sliderBtn}
-          disabled={avatarIndex < 1}
+          disabled={avatarIndex === 0}
         >
           <ArrowLeft />
         </button>
         <div className={styles.avatar}>
           <img
             src={avatars[avatarIndex]}
-            srcSet={`${avatars[avatarIndex + 1]} 2x`}
+            width="415"
+            height="468"
             alt="Choose avatar"
           />
           <img className={styles.stand} src={avatarStand} />
@@ -96,16 +149,23 @@ export const AvatarList: FC<{
         <button
           onClick={onClickNext}
           className={styles.sliderBtn}
-          disabled={avatarIndex === avatars.length - 2}
+          disabled={avatarIndex === avatars.length - 1}
         >
           <ArrowRight />
         </button>
       </div>
       <div className={styles.actionBtns}>
         <BackButton onClick={onCancel} />
-        <button onClick={onSave} className={styles.saveAvatar}>
-          Save
-        </button>
+        {beforePlay ? (
+          <button onClick={onSave} className={styles.playBtn}>
+            Next
+            <ArrowRight />
+          </button>
+        ) : (
+          <button onClick={onSave} className={styles.saveAvatar}>
+            Save
+          </button>
+        )}
       </div>
     </div>
   );

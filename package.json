@@ -164,7 +164,7 @@
     "webpack-merge": "^5.8.0"
   },
   "build": {
-    "productName": "EverdomeLauncher",
+    "productName": "OKX Collective Metaverse",
     "appId": "com.pragmaticcoders.everdomeLauncher",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",

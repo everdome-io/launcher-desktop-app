@@ -10,12 +10,22 @@
  * `./src/main.js` using webpack. This gives us some performance wins.
  */
 import path from 'path';
-import { app, BrowserWindow, shell, ipcMain, dialog, session } from 'electron';
+import {
+  app,
+  BrowserWindow,
+  shell,
+  ipcMain,
+  dialog,
+  session,
+  BrowserView,
+} from 'electron';
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
 import * as Sentry from '@sentry/electron';
 import { initializeSentry } from '../common/sentry';
+import { generateFakeEthAddress } from '../interfaces/publicKeyGenerator';
+import { generateNickname } from '../interfaces/usernameGenerator';
 import {
   AppUpdateStatus,
   Channels,
@@ -25,9 +35,12 @@ import {
 import MenuBuilder from './menu';
 import { eventsClient } from './events';
 import {
+  OperatingSystem,
   calculateExtensionWindowPosition,
   calculateProfileWindowPosition,
   getDownloadLink,
+  getLatestWindowsVersion,
+  getOS,
   resolveHtmlPath,
   uuid,
 } from './utils';
@@ -42,11 +55,14 @@ const store = new Store();
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
+const PROFILE_WINDOW_SIZE = { width: 342, height: 728 };
 
 const windows = new Set();
 
 let mainWindow: BrowserWindow | null = null;
+let faqWebView: BrowserView | null = null;
 let profileWindow: BrowserWindow | null = null;
+let okxWebView: BrowserView | null = null;
 let okxWindow: BrowserWindow | null = null;
 let downloadWebLink: string | null = null;
 
@@ -151,6 +167,9 @@ const createWindow = async () => {
   });
   windows.add(mainWindow);
 
+  okxWebView = new BrowserView();
+  mainWindow!.setBrowserView(okxWebView);
+
   mainWindow.loadURL(resolveHtmlPath('index.html'));
   mainWindow.center();
   mainWindow.on('ready-to-show', async () => {
@@ -169,7 +188,45 @@ const createWindow = async () => {
   mainWindow.on('move', function () {
     if (mainWindow && profileWindow) {
       const [x, y] = calculateProfileWindowPosition(mainWindow.getPosition());
-      profileWindow.setBounds({ x, y, width: 342, height: 688 });
+      profileWindow.setBounds({
+        x,
+        y,
+        width: PROFILE_WINDOW_SIZE.width,
+        height: PROFILE_WINDOW_SIZE.height,
+      });
+    }
+  });
+
+  okxWebView.webContents.on('did-navigate', async (event, url) => {
+    if (url.includes('/success')) {
+      await profileWindow
+        ?.loadURL(resolveHtmlPath('profile.html'))
+        .catch((err) => console.log(err));
+      okxWindow?.hide();
+      store.set('connectedOrSkipped', true);
+      const userId = store.get('userId') as string | undefined;
+      if (userId) {
+        await getUserFromAPI({
+          userId,
+          handleError: (err: any) =>
+            mainWindow?.webContents.send(Channels.crossWindow, {
+              isAuthenticated: true,
+              errorMessage: err.toString(),
+            }),
+        });
+        profileWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+        });
+        mainWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+        });
+      } else {
+        mainWindow?.webContents.send(Channels.crossWindow, {
+          isAuthenticated: true,
+          errorMessage: 'No userId',
+        });
+      }
+      profileWindow?.show();
     }
   });
 
@@ -196,8 +253,8 @@ const createProfileWindow = async () => {
 
   profileWindow = new BrowserWindow({
     show: false,
-    width: 342,
-    height: 688,
+    width: PROFILE_WINDOW_SIZE.width,
+    height: PROFILE_WINDOW_SIZE.height,
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
     parent: mainWindow || undefined,
@@ -232,44 +289,6 @@ const createProfileWindow = async () => {
     }
   });
 
-  profileWindow.webContents.on('did-navigate', async (event, url) => {
-    if (url.includes('/success')) {
-      await profileWindow
-        ?.loadURL(resolveHtmlPath('profile.html'))
-        .catch((err) => {
-          Sentry.captureException(err);
-          console.log(err);
-        });
-      okxWindow?.hide();
-      store.set('connectedOrSkipped', true);
-      const userId = store.get('userId') as string | undefined;
-      if (userId) {
-        await getUserFromAPI({
-          userId,
-          handleError: (err: any) => {
-            Sentry.captureException(err);
-            mainWindow?.webContents.send(Channels.crossWindow, {
-              isAuthenticated: true,
-              errorMessage: err.toString(),
-            });
-          },
-        });
-        profileWindow?.webContents.send(Channels.crossWindow, {
-          isAuthenticated: true,
-        });
-        mainWindow?.webContents.send(Channels.crossWindow, {
-          isAuthenticated: true,
-        });
-      } else {
-        mainWindow?.webContents.send(Channels.crossWindow, {
-          isAuthenticated: true,
-          errorMessage: 'No userId',
-        });
-      }
-      profileWindow?.show();
-    }
-  });
-
   profileWindow.on('closed', () => {
     windows.delete(profileWindow);
     profileWindow = null;
@@ -292,10 +311,9 @@ const createOKXWindow = async () => {
     height: 600,
     icon: getAssetPath('icon.png'),
     backgroundColor: '#000000',
-    frame: false,
-    parent: profileWindow || undefined,
-    modal: true,
+    parent: mainWindow || undefined,
     autoHideMenuBar: true,
+    skipTaskbar: true,
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
@@ -351,6 +369,12 @@ const createAllWindows = () => {
 const setupApp = async () => {
   handleUserId();
   loadExtensions();
+  const os = getOS();
+  if (os === OperatingSystem.Windows) {
+    const latestWindowsVersion = await getLatestWindowsVersion();
+    store.set('latestWindowsVersion', latestWindowsVersion);
+    store.set('appCurrentVersion', app.getVersion());
+  }
   const s3Path = await getDownloadLink();
   // const s3Path = 'Thirdym.v0.1.0-alpha';
   if (s3Path) {
@@ -443,6 +467,9 @@ ipcMain.on(Channels.downloadProcess, (event) => {
 ipcMain.on(Channels.playProcess, async function (event) {
   console.log('Starting game...');
   const localFilePath = store.get('userPath') as string;
+  const publicKey = store.get('publicKey') as string;
+  const avatarId = store.get('avatarId') as string;
+  const nickName = store.get('nickName') as string;
 
   const eventsInstance = eventsClient(event);
   eventsInstance.reply({
@@ -455,9 +482,13 @@ ipcMain.on(Channels.playProcess, async function (event) {
       processingSize: 0,
     },
   });
+
   playEverdome(localFilePath, () => {
-    const windowsFolderName = store.get('folderName') as string;
-    return windowsFolderName;
+    return {
+      avatarid: avatarId,
+      uid: publicKey,
+      displayname: nickName,
+    };
   });
 });
 
@@ -466,7 +497,8 @@ ipcMain.on(Channels.openDialog, async function (event) {
 
   const localUserPath = await dialog.showOpenDialog({
     properties: ['openDirectory'],
-    message: 'Pick directory to store everdome file',
+    message: 'Select the destination folder',
+    buttonLabel: 'Save',
   });
 
   store.set('userPath', localUserPath.filePaths[0]);
@@ -616,10 +648,12 @@ ipcMain.on(
   Channels.openOKXExtension,
   (_event, state: { fromProfileWindow: boolean }) => {
     const userId = store.get('userId');
-    profileWindow!
+    okxWebView!.setBounds({ x: 0, y: 0, width: 1, height: 1 });
+    okxWebView!.webContents
       .loadURL(`${OKX_WEB_APP_URL}?userId=${userId}`)
       .then(() => {
         okxWindow!.focus();
+        okxWindow!.setAlwaysOnTop(true, 'floating');
       })
       .catch((err) => {
         Sentry.captureException(err);
@@ -655,6 +689,9 @@ ipcMain.on(Channels.acceptTerms, (_event) => {
 });
 
 ipcMain.on(Channels.connectedOrSkipped, (_event) => {
+  if (okxWindow && okxWindow.isVisible()) {
+    okxWindow.hide();
+  }
   store.set('connectedOrSkipped', true);
 
   if (store.get('termsAccepted')) {
@@ -669,13 +706,63 @@ ipcMain.on(
       profileWindow?.setSize(1280, 800);
       profileWindow?.center();
     } else {
-      profileWindow?.setSize(342, 688);
+      profileWindow?.setSize(
+        PROFILE_WINDOW_SIZE.width,
+        PROFILE_WINDOW_SIZE.height
+      );
       const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
       profileWindow?.setPosition(x, y);
     }
     profileWindow?.close;
   }
 );
+
+ipcMain.on(Channels.hideProfileWindow, async function (_event) {
+  profileWindow?.hide();
+});
+
+ipcMain.on(Channels.backToMainView, (_event) => {
+  mainWindow?.show();
+  mainWindow?.center();
+  const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
+  profileWindow?.setPosition(x, y);
+  profileWindow?.show();
+  mainWindow?.focus();
+});
+
+ipcMain.on(Channels.handleUpdateForWindows, () => {
+  const dialogOpts = {
+    type: 'info',
+    buttons: ['Download', 'Later'],
+    title: 'Application Update',
+    message: 'Please download and install new version of the Launcher',
+  };
+  dialog
+    .showMessageBox(dialogOpts)
+    .then((returnValue) => {
+      if (returnValue.response === 0) {
+        mainWindow?.webContents.send('downloadLatestWindows');
+      }
+    })
+    .catch((err) => console.log(err));
+});
+
+ipcMain.on('closeApp', () => {
+  app.quit();
+});
+
+ipcMain.on(Channels.openFAQWindow, () => {
+  profileWindow?.hide();
+  faqWebView = new BrowserView();
+  mainWindow!.setBrowserView(faqWebView);
+  faqWebView.webContents.loadURL(`${OKX_WEB_APP_URL}/faq.html`);
+  faqWebView.setBounds({ x: 0, y: 0, width: 1280, height: 700 });
+});
+
+ipcMain.on(Channels.closeFAQWindow, () => {
+  mainWindow!.setBrowserView(null);
+  profileWindow?.show();
+});
 
 ipcMain.on('electron-store-get', async (event, val) => {
   event.returnValue = store.get(val);

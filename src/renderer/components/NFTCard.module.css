@@ -3,14 +3,14 @@
   background: #191919;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  padding: 2rem 1.5rem 1.5rem;
-  margin-top: 2.2rem;
-  width: 310px;
-  height: 144px;
+  padding: 1.5rem 1rem 0.5rem;
+  margin-top: 3.2rem;
+  max-width: 350px;
+
 }
 
 .infoText {
-  margin: 0;
+  margin: 1rem 0 0.75rem;
   font-family: 'HarmonyOS Sans';
   font-style: normal;
   font-weight: 700;
@@ -20,6 +20,12 @@
   color: #FFFFFF;
 }
 
-.infoText:first-of-type {
-  margin-top: 28px;
+.disclaimer {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 9px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin: 0;
 }

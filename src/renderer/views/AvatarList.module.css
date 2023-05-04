@@ -109,6 +109,7 @@
   background: #FFFFFF;
   border-radius: 20px;
   margin: 10px 0;
+  margin-left: 8px;
 }
 
 .userNameInputBox:hover {
@@ -117,12 +118,33 @@
 
 .userNameInputBox:focus-within {
   border-color: #fff;
-  width: 337px;
+  width: 351px;
   height: 44px;
 }
 
 .userNameInputBox:focus-within .inputBtn {
   display: block;
+}
+
+.suffix {
+  display: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.5;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16);
+}
+
+.userNameInputBox:focus-within .suffix {
+  display: block;
+}
+
+.suffixError {
+  composes: suffix;
+  color: #FF6E88;
+  opacity: 1;
 }
 
 .actionBtns {
@@ -135,4 +157,12 @@
 
 .saveAvatar {
   composes: primary from '../theme/buttons.module.css';
+}
+
+.playBtn {
+  composes: primary from '../theme/buttons.module.css';
+  composes: flexCenter from '../theme/layout.module.css';
+  width: 135px;
+  padding-right: 1.5rem;
+  justify-content: space-between;
 }

@@ -95,6 +95,20 @@
   z-index: 1;
 }
 
+.menu {
+  height: auto;
+  composes: flexCenter from "../theme/layout.module.css";
+  justify-content: space-between;
+}
+
+.helpBtn {
+  composes: secondary from "../theme/buttons.module.css";
+  position: absolute;
+  top: 1%;
+  right: -32%;
+}
+
+
 .mainSection {
   display: flex;
   margin-top: 3rem;

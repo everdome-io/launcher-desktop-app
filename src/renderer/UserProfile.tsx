@@ -1,4 +1,5 @@
 import * as Sentry from '@sentry/electron';
+import { generateFakeEthAddress } from '@interfaces/publicKeyGenerator';
 import { CrossWindowState, UserAttributes } from '@interfaces';
 import { FC, useEffect, useState } from 'react';
 import { Routes, Route, HashRouter } from 'react-router-dom';
@@ -6,7 +7,6 @@ import { ProfileDetails } from './views/ProfileDetails';
 import './UserProfile.css';
 import { AvatarList } from './views/AvatarList';
 import { getUserFromAPI, setUserInAPI } from '../api';
-import { generateFakeEthAddress } from './utils/publicKeyGenerator';
 
 const UserProfile: FC<{
   crossWindowState: CrossWindowState;
@@ -30,6 +30,9 @@ const UserProfile: FC<{
       .then((response) => {
         if (response) {
           setUserAttributes(response);
+          window.electron.store.set('publicKey', response.publicKey);
+          window.electron.store.set('avatarId', response.avatarId);
+          window.electron.store.set('nickName', response.nickName);
         }
         return response;
       })
@@ -70,13 +73,7 @@ const UserProfile: FC<{
         />
         <Route
           path="/choose-avatar"
-          element={
-            <AvatarList
-              saveAvatar={saveUser}
-              nickName={userAttributes.nickName || undefined}
-              avatarId={userAttributes.avatarId || undefined}
-            />
-          }
+          element={<AvatarList onClickSave={saveUser} />}
         />
       </Routes>
     </HashRouter>

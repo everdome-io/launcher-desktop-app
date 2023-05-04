@@ -1,5 +1,7 @@
 type Category = 'Football' | 'Cryptocurrency' | 'Metaverse';
 
+export const NICKNAME_MAX_LENGTH = 20;
+
 const footballNicknames = [
   'GoalGrabber',
   'TopScorer',
@@ -69,33 +71,25 @@ const metaverseNicknames = [
   'WorldWeaver',
 ];
 
+function getRandomElement<T>(array: T[]): T {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
 export function generateNickname(): string {
   const categories: Category[] = ['Football', 'Cryptocurrency', 'Metaverse'];
-  const selectedCategory =
-    categories[Math.floor(Math.random() * categories.length)];
+  const selectedCategory = getRandomElement(categories);
   const randomDigits = Math.floor(Math.random() * 1000)
     .toString()
     .padStart(3, '0');
-  let baseNickname: string;
-
-  switch (selectedCategory) {
-    case 'Football':
-      baseNickname =
-        footballNicknames[Math.floor(Math.random() * footballNicknames.length)];
-      break;
-    case 'Cryptocurrency':
-      baseNickname =
-        cryptoNicknames[Math.floor(Math.random() * cryptoNicknames.length)];
-      break;
-    case 'Metaverse':
-      baseNickname =
-        metaverseNicknames[
-          Math.floor(Math.random() * metaverseNicknames.length)
-        ];
-      break;
-    default:
-      baseNickname = '';
-  }
-
-  return `${baseNickname}_${randomDigits}`;
+  const baseNickname = getRandomElement(
+    selectedCategory === 'Football'
+      ? footballNicknames
+      : selectedCategory === 'Cryptocurrency'
+      ? cryptoNicknames
+      : metaverseNicknames
+  );
+  const nickname = `${baseNickname}_${randomDigits}`;
+  return nickname.length > NICKNAME_MAX_LENGTH
+    ? nickname.slice(0, NICKNAME_MAX_LENGTH)
+    : nickname;
 }

@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { useState, useEffect } from 'react';
 
 export const ClearStore: FC = ({}) => {
-  const defaulText = 'Clear';
+  const defaulText = 'Clear store';
   const [buttonText, setButtonText] = useState(defaulText);
   const devClearStore = () => {
     window.electron.ipcRenderer.sendMessage('dev:clear-store');
@@ -23,13 +23,13 @@ export const ClearStore: FC = ({}) => {
       style={{
         position: 'absolute',
         color: '#fff',
-        fontSize: '12px',
-        lineHeight: '16px',
+        fontSize: '14px',
+        lineHeight: '18px',
         margin: 0,
         bottom: '5px',
         right: '5px',
         textDecoration: 'none',
-        opacity: 0.15,
+        opacity: 0.25,
       }}
     >
       {buttonText}

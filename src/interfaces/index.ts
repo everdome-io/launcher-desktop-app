@@ -5,8 +5,12 @@ export enum Channels {
   extractProcess = 'extract-process',
   playProcess = 'play-process',
   showProfileWindow = 'show-profile-window',
+  hideProfileWindow = 'hide-profile-window',
   acceptTerms = 'accept-terms',
   connectedOrSkipped = 'connected-or-skipped',
+  backToMainView = 'back-to-main-view',
+  openFAQWindow = 'open-faq-window',
+  closeFAQWindow = 'close-faq-window',
 
   crossWindow = 'cross-window',
   changeState = 'change-state',
@@ -17,6 +21,8 @@ export enum Channels {
   closeOKXExtension = 'close-okx',
 
   toggleProfileWindow = 'toggle-profile-window',
+
+  handleUpdateForWindows = 'handle-update-for-windows',
 }
 /* eslint-disable no-shadow */
 export enum AppUpdateStatus {

@@ -27,7 +27,13 @@ export async function getUserFromAPI({
 }
 
 export async function setUserInAPI(
-  { userId, publicKey, avatarId, nickName, isFakePublicKey }: UserAttributes,
+  {
+    userId,
+    publicKey,
+    avatarId,
+    nickName,
+    isFakePublicKey,
+  }: Partial<UserAttributes>,
   handleError: (err: any) => void
 ) {
   await fetch(`${BACKEND_URL}/user`, {

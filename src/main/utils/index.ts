@@ -53,6 +53,26 @@ export async function getDownloadLink(): Promise<string | null> {
   return s3Path;
 }
 
+export async function getLatestWindowsVersion(): Promise<string | null> {
+  let version: string | null = null;
+  await fetch(
+    `https://metahero-prod-game-builds.s3.amazonaws.com/launcher-version.json`
+  )
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error('Error fetching user data');
+      }
+      const body = await response.json();
+      version = body.latest;
+      return response;
+    })
+    .catch((error) => {
+      console.log('error', error);
+    });
+
+  return version;
+}
+
 export const uuid = uuid1.v4;
 
 export const calculateProfileWindowPosition = (
@@ -60,14 +80,14 @@ export const calculateProfileWindowPosition = (
 ) => {
   const [x, y] = mainWindowPosition || [];
   if (x && y) {
-    return [x + 962, y + 56];
+    return [x + 962, y + 68];
   }
-  return [1218, 216];
+  return [1218, 202];
 };
 
 export const calculateExtensionWindowPosition = (
   profileWindowPosition: number[]
 ) => {
   const [x, y] = profileWindowPosition;
-  return [x - 5, y - 10];
+  return [x - 5, y + 70];
 };

@@ -2,6 +2,13 @@ import path from 'path';
 import { exec } from 'child_process';
 import { getOS, OperatingSystem } from '.';
 
+type PlayProperties = {
+  filePath: string;
+  uid: string;
+  displayname: string;
+  avatarid: string;
+};
+
 function chmodPlusX(filePath: string): void {
   exec(`chmod +x ${filePath}`, (error, stdout, stderr) => {
     if (error) {
@@ -39,41 +46,66 @@ export async function execCommand(command: string): Promise<void> {
   });
 }
 
-function playOnMacOS(filePath: string): void {
+function playOnMacOS({
+  filePath,
+  uid,
+  displayname,
+  avatarid,
+}: PlayProperties): void {
   chmodPlusX(filePath);
-  execCommand(filePath);
+  execCommand(
+    `${filePath} -game -log -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
+  );
 }
 
-function playOnWindows(filePath: string): void {
-  exec(`"${filePath}"`, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`Error executing file: ${error.message}`);
-      return;
+function playOnWindows({
+  filePath,
+  uid,
+  displayname,
+  avatarid,
+}: PlayProperties): void {
+  exec(
+    `"${filePath}" -game -log -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`,
+    (error, stdout, stderr) => {
+      if (error) {
+        console.error(`Error executing file: ${error.message}`);
+        return;
+      }
+      if (stderr) {
+        console.error(`stderr: ${stderr}`);
+        return;
+      }
+      console.log(`stdout: ${stdout}`);
     }
-    if (stderr) {
-      console.error(`stderr: ${stderr}`);
-      return;
-    }
-    console.log(`stdout: ${stdout}`);
-  });
+  );
 }
 
 export function playEverdome(
   filePath: string,
-  getFolderName: () => string
+  getOpenParams: () => Pick<PlayProperties, 'displayname' | 'uid' | 'avatarid'>
 ): void {
   const os = getOS();
+  const { uid, displayname, avatarid } = getOpenParams();
+  const avatarNumber = parseInt(avatarid, 10) + 1;
   switch (os) {
     case OperatingSystem.MacOS:
-      playOnMacOS(
-        path.join(
+      playOnMacOS({
+        filePath: path.join(
           filePath,
           'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
-        )
-      );
+        ),
+        avatarid: avatarNumber.toString(),
+        displayname,
+        uid,
+      });
       break;
     case OperatingSystem.Windows:
-      playOnWindows(path.join(filePath, `${getFolderName()}/Everdome.exe`));
+      playOnWindows({
+        filePath: path.join(filePath, `WindowsClientShipping/Mars.exe`),
+        avatarid: avatarNumber.toString(),
+        displayname,
+        uid,
+      });
       break;
     default:
   }
