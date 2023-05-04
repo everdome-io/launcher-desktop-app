@@ -44,7 +44,6 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   if (processStageStore === Processes.download) {
     if (!afterDownload && !duringDownloadOrExtract) {
-      console.log('dupa 1');
       window.electron.ipcRenderer.sendMessage(Channels.downloadProcess);
       setAfterDownload(true);
     }
