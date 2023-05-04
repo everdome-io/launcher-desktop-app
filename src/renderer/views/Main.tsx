@@ -88,7 +88,7 @@ export const Main: FC<{
             <LinkCardList />
           </section>
         </div>
-        <ClearStore />
+        {/* <ClearStore /> */}
       </div>
     );
   };
