@@ -36,7 +36,8 @@ export const FileDownloader: FC<{ state: AppState }> = ({
 
   const duringDownloadOrExtract =
     (process === Processes.download || process === Processes.extract) &&
-    progress !== null;
+    progress !== null &&
+    progress !== 100;
 
   console.log('duringDownloadOrExtract', duringDownloadOrExtract);
   console.log('couldUseWebLink', couldUseWebLink);

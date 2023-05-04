@@ -48,8 +48,6 @@ import { getUserFromAPI } from '../api';
 import { playEverdome } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 
-initializeSentry();
-
 const store = new Store();
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
@@ -76,6 +74,8 @@ const isDebug =
 if (isDebug) {
   require('electron-debug')();
 }
+
+initializeSentry();
 
 const installExtensions = async () => {
   const installer = require('electron-devtools-installer');
@@ -740,8 +740,18 @@ ipcMain.on(Channels.openFAQWindow, () => {
   profileWindow?.hide();
   faqWebView = new BrowserView();
   mainWindow!.setBrowserView(faqWebView);
-  faqWebView.webContents.loadURL(`${OKX_WEB_APP_URL}/faq.html`);
-  faqWebView.setBounds({ x: 0, y: 0, width: 1280, height: 700 });
+  faqWebView.webContents.loadURL(`${OKX_WEB_APP_URL}/faq.html`).then(() => {
+    mainWindow?.webContents.send(Channels.crossWindow, {
+      webViewLoading: false,
+    });
+  });
+  const mainWindowHeight = mainWindow!.getBounds().height;
+  faqWebView.setBounds({
+    x: 0,
+    y: 0,
+    width: 1280,
+    height: mainWindowHeight - 150,
+  });
 });
 
 ipcMain.on(Channels.closeFAQWindow, () => {
