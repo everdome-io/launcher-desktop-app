@@ -10,9 +10,10 @@ import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { ArrowLeft } from '@renderer/icons/ArrowLeft';
 import { BackButton } from '@renderer/components/BackButton';
 import { useNavigate } from 'react-router-dom';
-import styles from './AvatarList.module.css';
 import { setUserInAPI } from '@api';
 import { generateFakeEthAddress } from '@interfaces/publicKeyGenerator';
+import * as Sentry from '@sentry/electron';
+import styles from './AvatarList.module.css';
 
 export const AvatarList: FC<{
   beforePlay?: boolean;
@@ -74,7 +75,10 @@ export const AvatarList: FC<{
         userId,
         isFakePublicKey,
       },
-      (err) => console.log('err', err)
+      (err) => {
+        Sentry.captureException(err);
+        console.log('err', err);
+      }
     );
     if (onClickSave) {
       onClickSave({

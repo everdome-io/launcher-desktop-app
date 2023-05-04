@@ -1,6 +1,7 @@
 import path from 'path';
 import { exec } from 'child_process';
 import { getOS, OperatingSystem } from '.';
+import { errorHandler } from './errorHandler';
 
 type PlayProperties = {
   filePath: string;
@@ -12,13 +13,11 @@ type PlayProperties = {
 function chmodPlusX(filePath: string): void {
   exec(`chmod +x ${filePath}`, (error, stdout, stderr) => {
     if (error) {
-      console.error(`Error executing chmod: ${error.message}`);
-      return;
+      return errorHandler(error);
     }
 
     if (stderr) {
-      console.error(`Standard error output: ${stderr}`);
-      return;
+      return errorHandler(stderr);
     }
 
     console.log(`Successfully executed chmod +x on ${filePath}`);
@@ -29,13 +28,13 @@ export async function execCommand(command: string): Promise<void> {
   return new Promise((resolve, reject) => {
     exec(command, (error, stdout, stderr) => {
       if (error) {
-        console.error(`Error executing command: ${error.message}`);
+        errorHandler(error);
         reject(error);
         return;
       }
 
       if (stderr) {
-        console.error(`Standard error output: ${stderr}`);
+        errorHandler(stderr);
         reject(new Error(stderr));
         return;
       }
@@ -68,12 +67,10 @@ function playOnWindows({
     `"${filePath}" -game -log -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`,
     (error, stdout, stderr) => {
       if (error) {
-        console.error(`Error executing file: ${error.message}`);
-        return;
+        return errorHandler(error);
       }
       if (stderr) {
-        console.error(`stderr: ${stderr}`);
-        return;
+        return errorHandler(stderr);
       }
       console.log(`stdout: ${stdout}`);
     }

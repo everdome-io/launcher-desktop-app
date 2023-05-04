@@ -7,7 +7,10 @@ import {
   CrossWindowState,
   Processes,
 } from '@interfaces';
+import { initializeSentry } from '../common/sentry';
 import App from './App';
+
+initializeSentry();
 
 let state: AppState = {
   progress: 0,

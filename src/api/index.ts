@@ -19,9 +19,7 @@ export async function getUserFromAPI({
     .then((json) => {
       return json;
     })
-    .catch((error) => {
-      handleError(error);
-    });
+    .catch(handleError);
 
   return result;
 }
@@ -56,7 +54,5 @@ export async function setUserInAPI(
       }
       return response.json();
     })
-    .catch((error) => {
-      handleError(error);
-    });
+    .catch(handleError);
 }

@@ -1,6 +1,9 @@
 import { createRoot } from 'react-dom/client';
+import { initializeSentry } from '../common/sentry';
 import { Channels, CrossWindowState } from '../interfaces';
 import UserProfile from './UserProfile';
+
+initializeSentry();
 
 let crossWindowState: CrossWindowState = {
   isAuthenticated: false,

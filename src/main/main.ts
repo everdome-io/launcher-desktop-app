@@ -22,8 +22,8 @@ import {
 import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
-import { generateFakeEthAddress } from '../interfaces/publicKeyGenerator';
-import { generateNickname } from '../interfaces/usernameGenerator';
+import * as Sentry from '@sentry/electron';
+import { initializeSentry } from '../common/sentry';
 import {
   AppUpdateStatus,
   Channels,
@@ -46,6 +46,9 @@ import { downloadFileWithProgress } from './utils/download';
 import { extractWithProgress } from './utils/extract';
 import { getUserFromAPI } from '../api';
 import { playEverdome } from './utils/enter-game';
+import { errorHandler } from './utils/errorHandler';
+
+initializeSentry();
 
 const store = new Store();
 
@@ -84,7 +87,7 @@ const installExtensions = async () => {
       extensions.map((name) => installer[name]),
       forceDownload
     )
-    .catch(console.log);
+    .catch(errorHandler);
 };
 const getAssetPath = (...paths: string[]): string => {
   const RESOURCES_PATH = app.isPackaged
@@ -94,9 +97,9 @@ const getAssetPath = (...paths: string[]): string => {
 };
 
 const loadExtensions = async () => {
-  return await session.defaultSession.loadExtension(
-    getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`)
-  );
+  return session.defaultSession
+    .loadExtension(getAssetPath(`okx/${EXTENSION_ID}/2.40.0_0`))
+    .catch(errorHandler);
 };
 
 const handleUserId = () => {
@@ -125,6 +128,7 @@ const setStore = (statusCode: number, s3Path: string): Promise<void> => {
       }
       resolve();
     } else {
+      Sentry.captureException(`${downloadWebLink} could not be found`);
       store.set('couldUseWebLink', false);
     }
   });
@@ -164,7 +168,9 @@ const createWindow = async () => {
   mainWindow.center();
   mainWindow.on('ready-to-show', async () => {
     if (!mainWindow) {
-      throw new Error('"mainWindow" is not defined');
+      const message = '"mainWindow" is not defined';
+      Sentry.captureException(message);
+      throw new Error(message);
     }
     if (process.env.START_MINIMIZED) {
       mainWindow.minimize();
@@ -189,18 +195,20 @@ const createWindow = async () => {
     if (url.includes('/success')) {
       await profileWindow
         ?.loadURL(resolveHtmlPath('profile.html'))
-        .catch((err) => console.log(err));
+        .catch(errorHandler);
       okxWindow?.hide();
       store.set('connectedOrSkipped', true);
       const userId = store.get('userId') as string | undefined;
       if (userId) {
         await getUserFromAPI({
           userId,
-          handleError: (err: any) =>
+          handleError: (err: any) => {
+            Sentry.captureException(err);
             mainWindow?.webContents.send(Channels.crossWindow, {
               isAuthenticated: true,
               errorMessage: err.toString(),
-            }),
+            });
+          },
         });
         profileWindow?.webContents.send(Channels.crossWindow, {
           isAuthenticated: true,
@@ -265,7 +273,9 @@ const createProfileWindow = async () => {
   profileWindow.on('ready-to-show', () => {
     if (store.get('termsAccepted') && store.get('connectedOrSkipped')) {
       if (!profileWindow) {
-        throw new Error('"profileWindow" is not defined');
+        const message = '"profileWindow" is not defined';
+        Sentry.captureException(message);
+        throw new Error(message);
       }
       if (process.env.START_MINIMIZED) {
         profileWindow.minimize();
@@ -310,7 +320,9 @@ const createOKXWindow = async () => {
 
   okxWindow.on('ready-to-show', () => {
     if (!okxWindow) {
-      throw new Error('"okxWindow" is not defined');
+      const message = '"okxWindow" is not defined';
+      Sentry.captureException(message);
+      throw new Error(message);
     }
     if (process.env.START_MINIMIZED) {
       okxWindow.minimize();
@@ -362,7 +374,6 @@ const setupApp = async () => {
     store.set('appCurrentVersion', app.getVersion());
   }
   const s3Path = await getDownloadLink();
-  // const s3Path = 'Thirdym.v0.1.0-alpha';
   if (s3Path) {
     const pathSplit = s3Path.split('/');
     store.set(
@@ -372,24 +383,22 @@ const setupApp = async () => {
     request
       .head(`https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`)
       .on('error', (error) => {
+        Sentry.captureException(error);
+
         console.log('error', error);
         // eslint-disable-next-line promise/no-promise-in-callback
         setStoreOnError()
           .then(() => {
             createAllWindows();
           })
-          .catch((err) => {
-            console.log('err', err);
-          });
+          .catch(errorHandler);
       })
       .on('response', (res) => {
         setStore(res.statusCode, s3Path)
           .then(() => {
             createAllWindows();
           })
-          .catch((err) => {
-            console.log('err', err);
-          });
+          .catch(errorHandler);
       });
   }
 };
@@ -501,8 +510,6 @@ ipcMain.on(Channels.extractProcess, async (event) => {
   const localFilePath = store.get('userPath') as string;
   const eventsInstance = eventsClient(event);
 
-  // TODO: Add Sentry log on started extraction
-
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
@@ -547,6 +554,7 @@ ipcMain.on(Channels.extractProcess, async (event) => {
     })
     .catch((error) => {
       console.error('Error during extraction:', error);
+      Sentry.captureException(error);
       eventsInstance.reply({
         channel: Channels.changeState,
         message: {
@@ -589,12 +597,13 @@ autoUpdater.on('update-not-available', (info) => {
   }
 });
 
-autoUpdater.on('error', (err) => {
+autoUpdater.on('error', (error) => {
+  Sentry.captureException(error);
   const feedURL = autoUpdater.getFeedURL();
   if (mainWindow) {
     mainWindow.webContents.send(Channels.appUpdate, {
       status: AppUpdateStatus.error,
-      message: JSON.stringify({ ...err, feedURL }),
+      message: JSON.stringify({ ...error, feedURL }),
     });
   }
 });
@@ -616,7 +625,7 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
     .then((returnValue) => {
       if (returnValue.response === 0) autoUpdater.quitAndInstall();
     })
-    .catch((err) => console.log(err));
+    .catch(errorHandler);
 });
 
 ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
@@ -634,9 +643,7 @@ ipcMain.on(
         okxWindow!.focus();
         okxWindow!.setAlwaysOnTop(true, 'floating');
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch(errorHandler);
 
     if (okxWindow === null) {
       createOKXWindow();
@@ -722,7 +729,7 @@ ipcMain.on(Channels.handleUpdateForWindows, () => {
         mainWindow?.webContents.send('downloadLatestWindows');
       }
     })
-    .catch((err) => console.log(err));
+    .catch(errorHandler);
 });
 
 ipcMain.on('closeApp', () => {
