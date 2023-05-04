@@ -742,7 +742,7 @@ ipcMain.on(Channels.openFAQWindow, () => {
   profileWindow?.hide();
   faqWebView = new BrowserView();
   mainWindow!.setBrowserView(faqWebView);
-  faqWebView.webContents.loadURL(`http://localhost:3000/faq.html`).then(() => {
+  faqWebView.webContents.loadURL(`${OKX_WEB_APP_URL}/faq.html`).then(() => {
     mainWindow?.webContents.send(Channels.crossWindow, {
       webViewLoading: false,
     });
