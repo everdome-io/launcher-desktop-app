@@ -24,8 +24,6 @@ import Store from 'electron-store';
 import request from 'request';
 import * as Sentry from '@sentry/electron';
 import { initializeSentry } from '../common/sentry';
-import { generateFakeEthAddress } from '../interfaces/publicKeyGenerator';
-import { generateNickname } from '../interfaces/usernameGenerator';
 import {
   AppUpdateStatus,
   Channels,
@@ -367,6 +365,7 @@ const createAllWindows = () => {
 };
 
 const setupApp = async () => {
+  Sentry.captureException('test log');
   handleUserId();
   loadExtensions();
   const os = getOS();
