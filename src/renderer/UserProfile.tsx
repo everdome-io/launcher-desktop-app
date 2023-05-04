@@ -6,7 +6,7 @@ import { Routes, Route, HashRouter } from 'react-router-dom';
 import { ProfileDetails } from './views/ProfileDetails';
 import './UserProfile.css';
 import { AvatarList } from './views/AvatarList';
-import { getUserFromAPI, setUserInAPI } from '../api';
+import { getUserFromAPI } from '../api';
 
 const UserProfile: FC<{
   crossWindowState: CrossWindowState;
@@ -50,10 +50,6 @@ const UserProfile: FC<{
     avatarId: string | null;
   }) => {
     setUserAttributes({ ...userAttributes, avatarId, nickName });
-    await setUserInAPI({ ...userAttributes, avatarId, nickName }, (err) => {
-      Sentry.captureException(err);
-      console.log('err', err);
-    });
   };
 
   return (
