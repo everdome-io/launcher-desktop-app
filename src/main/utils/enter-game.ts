@@ -1,41 +1,44 @@
+/* eslint-disable no-console */
 import path from 'path';
-import { exec } from 'child_process';
+import { exec, ExecException } from 'child_process';
+import { dialog } from 'electron';
 import { getOS, OperatingSystem } from '.';
 import { errorHandler } from './errorHandler';
 
-type PlayProperties = {
+type EnterGameProperties = {
   filePath: string;
   uid: string;
   displayname: string;
-  avatarid: string;
+  avatarid: number;
 };
 
-function chmodPlusX(filePath: string): void {
-  exec(`chmod +x ${filePath}`, (error, stdout, stderr) => {
-    if (error) {
-      return errorHandler(error);
-    }
-
-    if (stderr) {
-      return errorHandler(stderr);
-    }
-
-    console.log(`Successfully executed chmod +x on ${filePath}`);
-  });
-}
-
-export async function execCommand(command: string): Promise<void> {
+function execChmodPlusX(filePath: string): Promise<void> {
   return new Promise((resolve, reject) => {
-    exec(command, (error, stdout, stderr) => {
+    exec(`chmod +x ${filePath}`, (error, stdout, stderr) => {
+      if (stderr) {
+        errorHandler(stderr);
+      }
       if (error) {
         errorHandler(error);
         reject(error);
         return;
       }
 
+      console.log(`Successfully executed command: chmod +x`);
+      resolve();
+    });
+  });
+}
+
+export async function execCommand(command: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    exec(command, (error, stdout, stderr) => {
       if (stderr) {
         errorHandler(stderr);
-        reject(new Error(stderr));
+      }
+      if (error) {
+        errorHandler(error);
+        reject(error);
         return;
       }
 
@@ -45,65 +48,62 @@ export async function execCommand(command: string): Promise<void> {
   });
 }
 
-function playOnMacOS({
+async function enterGame({
   filePath,
   uid,
   displayname,
   avatarid,
-}: PlayProperties): void {
-  chmodPlusX(filePath);
-  execCommand(
+}: EnterGameProperties): Promise<void> {
+  const os = getOS();
+  if (os === OperatingSystem.MacOS) await execChmodPlusX(filePath);
+  await execCommand(
     `${filePath} -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
   );
 }
 
-function playOnWindows({
-  filePath,
-  uid,
-  displayname,
-  avatarid,
-}: PlayProperties): void {
-  exec(
-    `"${filePath}" -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`,
-    (error, stdout, stderr) => {
-      if (error) {
-        return errorHandler(error);
-      }
-      if (stderr) {
-        return errorHandler(stderr);
-      }
-      console.log(`stdout: ${stdout}`);
-    }
+function getFilePath(dirPath: string) {
+  const os = getOS();
+  return path.join(
+    dirPath,
+    os === OperatingSystem.MacOS
+      ? 'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
+      : 'WindowsClientShipping/Mars.exe'
   );
 }
 
-export function playEverdome(
-  filePath: string,
-  getOpenParams: () => Pick<PlayProperties, 'displayname' | 'uid' | 'avatarid'>
-): void {
+function getDialogMessage(text: string) {
   const os = getOS();
-  const { uid, displayname, avatarid } = getOpenParams();
-  const avatarNumber = parseInt(avatarid, 10) + 1;
-  switch (os) {
-    case OperatingSystem.MacOS:
-      playOnMacOS({
-        filePath: path.join(
-          filePath,
-          'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
+  return `${
+    os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
+  } ${text}`;
+}
+
+async function handlePlayMetaverseError(error: ExecException) {
+  const dialogOpts = {
+    type: 'warning',
+    buttons: ['Ok'],
+    title: 'Could not enter metaverse',
+    message: error.toString().includes('Bad CPU type in executable')
+      ? getDialogMessage('Your system does not meets game’s requirements.')
+      : getDialogMessage(
+          'Please contact everdome support to get more details.'
         ),
-        avatarid: avatarNumber.toString(),
-        displayname,
-        uid,
-      });
-      break;
-    case OperatingSystem.Windows:
-      playOnWindows({
-        filePath: path.join(filePath, `WindowsClientShipping/Mars.exe`),
-        avatarid: avatarNumber.toString(),
-        displayname,
-        uid,
-      });
-      break;
-    default:
-  }
+  };
+  return dialog.showMessageBox(dialogOpts);
+}
+
+export async function playMetaverse(
+  dirPath: string,
+  getOpenParams: () => Pick<
+    EnterGameProperties,
+    'displayname' | 'uid' | 'avatarid'
+  >
+): Promise<void> {
+  const { uid, displayname, avatarid } = getOpenParams();
+  await enterGame({
+    filePath: getFilePath(dirPath),
+    avatarid: avatarid + 1,
+    displayname,
+    uid,
+  }).catch(handlePlayMetaverseError);
 }
