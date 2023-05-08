@@ -4,10 +4,12 @@ import chooseAvatarImg from 'assets/images/choose-avatar.png';
 import chooseAvatarImg_2x from 'assets/images/choose-avatar@2x.png';
 import styles from './ChooseAvatar.module.css';
 import { useNavigate } from 'react-router-dom';
+import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
 export const ChooseAvatar: FC = () => {
   const navigate = useNavigate();
   const handleClick = () => {
+    sentryEventHandler('Choose avatar from profile');
     window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
       mode: ToggleWindowMode.open,
     });

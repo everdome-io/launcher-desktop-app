@@ -2,6 +2,7 @@ import { AppState, Channels, Processes } from '@interfaces';
 import { FC, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './FileDownloader.module.css';
+import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
 function toShortSize(_size: number) {
   let size = _size;
@@ -80,11 +81,14 @@ export const FileDownloader: FC<{ state: AppState }> = ({
       window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
       const avatarId = window.electron.store.get('avatarId') as string;
       if (avatarId === undefined) {
+        sentryEventHandler('EnterMetaverse - No Avatar');
         navigate('/choose-avatar');
       } else {
+        sentryEventHandler('EnterMetaverse - Has Avatar');
         navigate('/how-to');
       }
     } else if (processStageStore === Processes.openDialog) {
+      sentryEventHandler('Download');
       window.electron.ipcRenderer.sendMessage(Channels.openDialog);
     }
   };

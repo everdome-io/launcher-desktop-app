@@ -9,6 +9,7 @@ import { UserName } from '@renderer/components/UserName';
 import styles from './ProfileDetails.module.css';
 import { NFTCard } from '@renderer/components/NFTCard';
 import { useNavigate } from 'react-router-dom';
+import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
 export const ProfileDetails: FC<{
   state: { avatarId: string | null; nickName: string | null };
@@ -17,6 +18,7 @@ export const ProfileDetails: FC<{
   const navigate = useNavigate();
 
   const openSettings = () => {
+    sentryEventHandler('OpenSettings');
     window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
       mode: ToggleWindowMode.open,
     });
