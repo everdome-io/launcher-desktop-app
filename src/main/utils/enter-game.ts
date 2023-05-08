@@ -81,7 +81,7 @@ function getDialogMessage(text: string) {
 async function handlePlayMetaverseError(error: ExecException) {
   const dialogOpts = {
     type: 'warning',
-    buttons: ['Confirm'],
+    buttons: ['Ok'],
     title: 'Could not enter metaverse',
     message: error.toString().includes('Bad CPU type in executable')
       ? getDialogMessage('Your system does not meets game’s requirements.')
