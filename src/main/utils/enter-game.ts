@@ -84,9 +84,9 @@ async function handlePlayMetaverseError(error: ExecException) {
     buttons: ['Ok'],
     title: 'Could not enter metaverse',
     message: error.toString().includes('Bad CPU type in executable')
-      ? getDialogMessage('Your system does not meets game’s requirements.')
+      ? getDialogMessage('Your system does not meet game’s requirements.')
       : getDialogMessage(
-          'Please contact everdome support to get more details.'
+          'Please contact Everdome support to get more details.'
         ),
   };
   return dialog.showMessageBox(dialogOpts);
