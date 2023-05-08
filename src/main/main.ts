@@ -699,8 +699,6 @@ ipcMain.on(
       const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
       profileWindow?.setPosition(x, y);
     }
-    // TODO: do we need it?
-    profileWindow?.close;
   }
 );
 

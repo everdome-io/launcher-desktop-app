@@ -66,9 +66,30 @@ function getFilePath(dirPath: string) {
   return path.join(
     dirPath,
     os === OperatingSystem.MacOS
-      ? 'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
+      ? 'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shippingg'
       : 'WindowsClientShipping/Mars.exe'
   );
+}
+
+function getDialogMessage(text: string) {
+  const os = getOS();
+  return `${
+    os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
+  } ${text}`;
+}
+
+async function handlePlayMetaverseError(error: ExecException) {
+  const dialogOpts = {
+    type: 'warning',
+    buttons: ['Confirm'],
+    title: 'Could not enter metaverse',
+    message: error.toString().includes('Bad CPU type in executable')
+      ? getDialogMessage('Your system does not meets game’s requirements.')
+      : getDialogMessage(
+          'Please contact everdome support to get more details.'
+        ),
+  };
+  return dialog.showMessageBox(dialogOpts);
 }
 
 export async function playMetaverse(
@@ -79,26 +100,10 @@ export async function playMetaverse(
   >
 ): Promise<void> {
   const { uid, displayname, avatarid } = getOpenParams();
-  const os = getOS();
   await enterGame({
     filePath: getFilePath(dirPath),
     avatarid: avatarid + 1,
     displayname,
     uid,
-  }).catch((error: ExecException) => {
-    const dialogOpts = {
-      type: 'warning',
-      buttons: ['Confirm'],
-      title: 'Could not enter metaverse',
-      message: error.toString().includes('Bad CPU type in executable')
-        ? `${
-            os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
-          } Your system does not meets game’s requirements.`
-        : `${
-            os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
-          } Please contact everdome support to get more details.`,
-    };
-    // eslint-disable-next-line promise/no-nesting
-    dialog.showMessageBox(dialogOpts).catch(errorHandler);
-  });
+  }).catch(handlePlayMetaverseError);
 }
