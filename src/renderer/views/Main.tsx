@@ -13,6 +13,7 @@ import { LinkCardList } from '@renderer/components/LinkCardList';
 import { FileDownloader } from '@renderer/components';
 import { ClearStore } from '@renderer/components/ClearStore';
 import styles from './Main.module.css';
+import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
 export const Main: FC<{
   state: AppState;
@@ -39,6 +40,7 @@ export const Main: FC<{
   }
 
   const onClickHelp = () => {
+    sentryEventHandler('Open FAQ');
     window.electron.ipcRenderer.sendMessage(Channels.openFAQWindow);
     navigate('/help');
   };

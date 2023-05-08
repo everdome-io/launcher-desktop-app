@@ -45,6 +45,7 @@ import { extractWithProgress } from './utils/extract';
 import { getUserFromAPI } from '../api';
 import { playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
+import { sentryEventHandler } from './utils/sentryEventHandler';
 
 const store = new Store();
 
@@ -109,6 +110,7 @@ const handleUserId = () => {
     userId = uuid();
     store.set('userId', userId);
   }
+  Sentry.setTag('userId', userId);
   return userId;
 };
 
@@ -352,6 +354,7 @@ const createAllWindows = () => {
   createProfileWindow();
   createOKXWindow();
   app.on('activate', () => {
+    sentryEventHandler('Open Launcher');
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (windows.size === 0) {
@@ -492,6 +495,7 @@ ipcMain.on(Channels.openDialog, async function (event) {
 
   store.set('userPath', localUserPath.filePaths[0]);
   store.set('processStage', Processes.download);
+  sentryEventHandler('Start downloading game');
   eventsInstance.reply({
     channel: Channels.changeState,
     message: {
@@ -507,6 +511,7 @@ ipcMain.on(Channels.openDialog, async function (event) {
 ipcMain.on(Channels.extractProcess, async (event) => {
   const localFilePath = store.get('userPath') as string;
   const eventsInstance = eventsClient(event);
+  sentryEventHandler('Start extracting game');
 
   eventsInstance.reply({
     channel: Channels.changeState,

@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/electron';
 import { FC, useEffect } from 'react';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { Channels } from '@interfaces';
@@ -5,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import styles from './ConnectOrSkip.module.css';
 import { BackButton } from '@renderer/components/BackButton';
+import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
 export const ConnectOrSkip: FC = () => {
   const navigate = useNavigate();
@@ -12,6 +14,7 @@ export const ConnectOrSkip: FC = () => {
 
   const skipConnect = () => {
     window.electron.ipcRenderer.sendMessage(Channels.connectedOrSkipped);
+    sentryEventHandler('ConnectWallet skipped');
     navigate('/');
   };
 

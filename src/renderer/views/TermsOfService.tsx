@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/electron';
 import { FC, useState } from 'react';
 import OKX_Framed_Training from 'assets/images/OKX_Framed_Training.png';
 import logo from 'assets/images/logo.png';
@@ -5,6 +6,7 @@ import { Channels } from '@interfaces';
 import styles from './TermsOfService.module.css';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
+import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
 export const TermsOfService: FC = () => {
   const navigate = useNavigate();
@@ -16,6 +18,7 @@ export const TermsOfService: FC = () => {
   const acceptTerms = () => {
     if (isTermsChecked && isAgeChecked) {
       window.electron.ipcRenderer.sendMessage(Channels.acceptTerms);
+      sentryEventHandler('Terms accepted');
       navigate('/connect-or-skip');
     } else {
       setIsTermsValid(isTermsChecked);

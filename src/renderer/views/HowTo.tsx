@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { BackButton } from '@renderer/components/BackButton';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { Channels } from '@interfaces';
+import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
 export const HowTo: React.FC = () => {
   const navigate = useNavigate();
@@ -14,6 +15,7 @@ export const HowTo: React.FC = () => {
     navigate('/');
   };
   const play = () => {
+    sentryEventHandler('Start game');
     window.electron.ipcRenderer.sendMessage(Channels.playProcess);
   };
   return (
