@@ -66,7 +66,7 @@ function getFilePath(dirPath: string) {
   return path.join(
     dirPath,
     os === OperatingSystem.MacOS
-      ? 'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shippingg'
+      ? 'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
       : 'WindowsClientShipping/Mars.exe'
   );
 }
