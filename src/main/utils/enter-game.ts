@@ -57,7 +57,7 @@ async function enterGame({
   const os = getOS();
   if (os === OperatingSystem.MacOS) await execChmodPlusX(filePath);
   await execCommand(
-    `${filePath} -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
+    `"${filePath}" -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
   );
 }
 
