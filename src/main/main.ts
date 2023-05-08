@@ -618,10 +618,6 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
         : event.releaseName!,
     detail:
       'A new version has been downloaded. Restart the application to apply the updates.',
-    icon: path.join(
-      __dirname.toString().replace('src/main', ''),
-      'assets/icons/96x96.png'
-    ),
   };
   dialog
     .showMessageBox(dialogOpts)
@@ -727,10 +723,6 @@ ipcMain.on(Channels.handleUpdateForWindows, () => {
     buttons: ['Download', 'Later'],
     title: 'Application Update',
     message: 'Please download and install new version of the Launcher',
-    icon: path.join(
-      __dirname.toString().replace('src/main', ''),
-      'assets/icons/96x96.png'
-    ),
   };
   dialog
     .showMessageBox(dialogOpts)

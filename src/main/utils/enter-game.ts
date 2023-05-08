@@ -97,10 +97,6 @@ export async function playMetaverse(
         : `${
             os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
           } Please contact everdome support to get more details.`,
-      icon: path.join(
-        __dirname.toString().replace('src/main/utils', ''),
-        'assets/icons/96x96.png'
-      ),
     };
     // eslint-disable-next-line promise/no-nesting
     dialog.showMessageBox(dialogOpts).catch(errorHandler);
