@@ -1,6 +1,4 @@
-/* eslint-disable func-names */
-/* eslint global-require: off, no-console: off, promise/always-return: off */
-
+/* eslint-disable no-console, global-require, func-names */
 /**
  * This module executes inside of electron's main process. You can start
  * electron renderer process from here and communicate with the other processes
@@ -45,7 +43,7 @@ import {
 import { downloadFileWithProgress } from './utils/download';
 import { extractWithProgress } from './utils/extract';
 import { getUserFromAPI } from '../api';
-import { playEverdome } from './utils/enter-game';
+import { playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 
 const store = new Store();
@@ -389,14 +387,14 @@ const setupApp = async () => {
         // eslint-disable-next-line promise/no-promise-in-callback
         setStoreOnError()
           .then(() => {
-            createAllWindows();
+            return createAllWindows();
           })
           .catch(errorHandler);
       })
       .on('response', (res) => {
         setStore(res.statusCode, s3Path)
           .then(() => {
-            createAllWindows();
+            return createAllWindows();
           })
           .catch(errorHandler);
       });
@@ -406,7 +404,7 @@ const setupApp = async () => {
 app
   .whenReady()
   .then(() => {
-    setupApp();
+    return setupApp();
   })
   .catch(console.log);
 
@@ -474,9 +472,9 @@ ipcMain.on(Channels.playProcess, async function (event) {
     },
   });
 
-  playEverdome(localFilePath, () => {
+  playMetaverse(localFilePath, () => {
     return {
-      avatarid: avatarId,
+      avatarid: parseInt(avatarId, 10),
       uid: publicKey,
       displayname: nickName,
     };
@@ -538,7 +536,7 @@ ipcMain.on(Channels.extractProcess, async (event) => {
       });
     }
   )
-    .then(() => {
+    .then((result) => {
       console.log('Extraction completed');
       eventsInstance.reply({
         channel: Channels.changeState,
@@ -551,6 +549,7 @@ ipcMain.on(Channels.extractProcess, async (event) => {
         },
       });
       store.set('processStage', Processes.play);
+      return result;
     })
     .catch((error) => {
       console.error('Error during extraction:', error);
@@ -619,11 +618,16 @@ autoUpdater.on('update-downloaded', (event: UpdateDownloadedEvent) => {
         : event.releaseName!,
     detail:
       'A new version has been downloaded. Restart the application to apply the updates.',
+    icon: path.join(
+      __dirname.toString().replace('src/main', ''),
+      'assets/icons/96x96.png'
+    ),
   };
   dialog
     .showMessageBox(dialogOpts)
     .then((returnValue) => {
       if (returnValue.response === 0) autoUpdater.quitAndInstall();
+      return returnValue;
     })
     .catch(errorHandler);
 });
@@ -639,9 +643,10 @@ ipcMain.on(
     okxWebView!.setBounds({ x: 0, y: 0, width: 1, height: 1 });
     okxWebView!.webContents
       .loadURL(`${OKX_WEB_APP_URL}?userId=${userId}`)
-      .then(() => {
+      .then((result) => {
         okxWindow!.focus();
         okxWindow!.setAlwaysOnTop(true, 'floating');
+        return result;
       })
       .catch(errorHandler);
 
@@ -698,6 +703,7 @@ ipcMain.on(
       const [x, y] = calculateProfileWindowPosition(mainWindow?.getPosition());
       profileWindow?.setPosition(x, y);
     }
+    // TODO: do we need it?
     profileWindow?.close;
   }
 );
@@ -721,6 +727,10 @@ ipcMain.on(Channels.handleUpdateForWindows, () => {
     buttons: ['Download', 'Later'],
     title: 'Application Update',
     message: 'Please download and install new version of the Launcher',
+    icon: path.join(
+      __dirname.toString().replace('src/main', ''),
+      'assets/icons/96x96.png'
+    ),
   };
   dialog
     .showMessageBox(dialogOpts)
@@ -728,6 +738,7 @@ ipcMain.on(Channels.handleUpdateForWindows, () => {
       if (returnValue.response === 0) {
         mainWindow?.webContents.send('downloadLatestWindows');
       }
+      return returnValue;
     })
     .catch(errorHandler);
 });
@@ -740,11 +751,15 @@ ipcMain.on(Channels.openFAQWindow, () => {
   profileWindow?.hide();
   faqWebView = new BrowserView();
   mainWindow!.setBrowserView(faqWebView);
-  faqWebView.webContents.loadURL(`${OKX_WEB_APP_URL}/faq.html`).then(() => {
-    mainWindow?.webContents.send(Channels.crossWindow, {
-      webViewLoading: false,
-    });
-  });
+  faqWebView.webContents
+    .loadURL(`${OKX_WEB_APP_URL}/faq.html`)
+    .then((result) => {
+      mainWindow?.webContents.send(Channels.crossWindow, {
+        webViewLoading: false,
+      });
+      return result;
+    })
+    .catch(errorHandler);
   const mainWindowHeight = mainWindow!.getBounds().height;
   faqWebView.setBounds({
     x: 0,
