@@ -54,7 +54,8 @@ async function enterGame({
   displayname,
   avatarid,
 }: EnterGameProperties): Promise<void> {
-  await execChmodPlusX(filePath);
+  const os = getOS();
+  if (os === OperatingSystem.MacOS) await execChmodPlusX(filePath);
   await execCommand(
     `${filePath} -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
   );
@@ -66,7 +67,7 @@ function getFilePath(dirPath: string) {
     dirPath,
     os === OperatingSystem.MacOS
       ? 'Mac/Mars-Mac-Shipping.app/Contents/MacOS/Mars-Mac-Shipping'
-      : 'WindowsClientShipping/Mars.exe'
+      : 'WindowsClientShipping/Mars.exee'
   );
 }
 
@@ -78,6 +79,7 @@ export async function playMetaverse(
   >
 ): Promise<void> {
   const { uid, displayname, avatarid } = getOpenParams();
+  const os = getOS();
   await enterGame({
     filePath: getFilePath(dirPath),
     avatarid: avatarid + 1,
@@ -85,14 +87,16 @@ export async function playMetaverse(
     uid,
   }).catch((error: ExecException) => {
     const dialogOpts = {
-      type: 'info',
+      type: 'warning',
       buttons: ['Confirm'],
       title: 'Could not enter metaverse',
       message: error.toString().includes('Bad CPU type in executable')
-        ? `Could not enter metaverse.
-        Your system does not meets game’s requirements.`
-        : `Could not enter metaverse.
-        Please contact everdome support to get more details.`,
+        ? `${
+            os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
+          } Your system does not meets game’s requirements.`
+        : `${
+            os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
+          } Please contact everdome support to get more details.`,
       icon: path.join(
         __dirname.toString().replace('src/main/utils', ''),
         'assets/icons/96x96.png'
