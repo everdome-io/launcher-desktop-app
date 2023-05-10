@@ -1,0 +1,15 @@
+export enum StoreKeys {
+  USER_ID = 'userId',
+  COULD_USE_WEB_LINK = 'couldUseWebLink',
+  PROCESS_STAGE = 'processStage',
+  CONNECTED_OR_SKIPPED = 'connectedOrSkipped',
+  LATEST_WINDOWS_VERSION = 'latestWindowsVersion',
+  APP_CURRENT_VERSION = 'appCurrentVersion',
+  WEB_LINK = 'webLink',
+  USER_PATH = 'userPath',
+  TERMS_ACCEPTED = 'termsAccepted',
+  PUBLIC_KEY = 'publicKey',
+  AVATAR_ID = 'avatarId',
+  NICK_NAME = 'nickName',
+  FOLDER_NAME = 'folderName',
+}

@@ -7,11 +7,12 @@ import { ProfileDetails } from './views/ProfileDetails';
 import './UserProfile.css';
 import { AvatarList } from './views/AvatarList';
 import { getUserFromAPI } from '../api';
+import { StoreKeys } from '@interfaces/store';
 
 const UserProfile: FC<{
   crossWindowState: CrossWindowState;
 }> = ({ crossWindowState }) => {
-  const userId = window.electron.store.get('userId');
+  const userId = window.electron.store.get(StoreKeys.USER_ID);
   const [userAttributes, setUserAttributes] = useState<UserAttributes>({
     userId,
     publicKey: generateFakeEthAddress(),
@@ -30,9 +31,9 @@ const UserProfile: FC<{
       .then((response) => {
         if (response) {
           setUserAttributes(response);
-          window.electron.store.set('publicKey', response.publicKey);
-          window.electron.store.set('avatarId', response.avatarId);
-          window.electron.store.set('nickName', response.nickName);
+          window.electron.store.set(StoreKeys.PUBLIC_KEY, response.publicKey);
+          window.electron.store.set(StoreKeys.AVATAR_ID, response.avatarId);
+          window.electron.store.set(StoreKeys.NICK_NAME, response.nickName);
         }
         return response;
       })

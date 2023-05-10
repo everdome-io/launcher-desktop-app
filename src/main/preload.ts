@@ -5,6 +5,7 @@ import {
   ElectronHandlerArgs,
   ElectronEventArgs,
 } from '../interfaces';
+import { StoreKeys } from '@interfaces/store';
 
 const electronHandler = {
   ipcRenderer: {
@@ -33,10 +34,10 @@ const electronHandler = {
     },
   },
   store: {
-    get(key: string) {
+    get(key: StoreKeys) {
       return ipcRenderer.sendSync('electron-store-get', key);
     },
-    set(property: string, val: any) {
+    set(property: StoreKeys, val: any) {
       ipcRenderer.send('electron-store-set', property, val);
     },
   },

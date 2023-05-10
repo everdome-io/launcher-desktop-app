@@ -15,6 +15,7 @@ import { generateFakeEthAddress } from '@interfaces/publicKeyGenerator';
 import * as Sentry from '@sentry/electron';
 import styles from './AvatarList.module.css';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import { StoreKeys } from '@interfaces/store';
 
 export const AvatarList: FC<{
   beforePlay?: boolean;
@@ -26,12 +27,13 @@ export const AvatarList: FC<{
     avatarId: string | null;
   }) => void;
 }> = ({ beforePlay = false, onClickSave }) => {
-  const userId = window.electron.store.get('userId') as string;
-  const avatarId = window.electron.store.get('avatarId') || '0';
+  const userId = window.electron.store.get(StoreKeys.USER_ID) as string;
+  const avatarId = window.electron.store.get(StoreKeys.AVATAR_ID) || '0';
   const [avatarIndex, setAvatarIndex] = useState(Number(avatarId));
 
   const [placeholderValue] = useState(generateNickname());
-  const nickName = window.electron.store.get('nickName') || placeholderValue;
+  const nickName =
+    window.electron.store.get(StoreKeys.NICK_NAME) || placeholderValue;
   const [nickNameValue, setNickNameValue] = useState(nickName);
 
   const nickNameRef = useRef(null);
@@ -40,8 +42,8 @@ export const AvatarList: FC<{
   let publicKey: string;
   let isFakePublicKey: boolean;
 
-  if (window.electron.store.get('publicKey')) {
-    publicKey = window.electron.store.get('publicKey');
+  if (window.electron.store.get(StoreKeys.PUBLIC_KEY)) {
+    publicKey = window.electron.store.get(StoreKeys.PUBLIC_KEY);
     isFakePublicKey = false;
   } else {
     publicKey = generateFakeEthAddress();
@@ -65,9 +67,12 @@ export const AvatarList: FC<{
     navigate('/');
   };
   const onSave = async () => {
-    window.electron.store.set('publicKey', publicKey);
-    window.electron.store.set('avatarId', avatarIndex.toString());
-    window.electron.store.set('nickName', nickNameValue || placeholderValue);
+    window.electron.store.set(StoreKeys.PUBLIC_KEY, publicKey);
+    window.electron.store.set(StoreKeys.AVATAR_ID, avatarIndex.toString());
+    window.electron.store.set(
+      StoreKeys.NICK_NAME,
+      nickNameValue || placeholderValue
+    );
     await setUserInAPI(
       {
         avatarId: avatarIndex.toString(),

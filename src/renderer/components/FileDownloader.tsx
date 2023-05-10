@@ -3,6 +3,7 @@ import { FC, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './FileDownloader.module.css';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import { StoreKeys } from '@interfaces/store';
 
 function toShortSize(_size: number) {
   let size = _size;
@@ -28,9 +29,11 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   let buttonText = 'DOWNLOAD';
   let additionalInfo = null;
 
-  const couldUseWebLink = Boolean(window.electron.store.get('couldUseWebLink'));
+  const couldUseWebLink = Boolean(
+    window.electron.store.get(StoreKeys.COULD_USE_WEB_LINK)
+  );
   const processStageStore = window.electron.store.get(
-    'processStage'
+    StoreKeys.PROCESS_STAGE
   ) as Processes;
   const buttonDisabled =
     !couldUseWebLink && processStageStore !== Processes.play;
@@ -79,7 +82,7 @@ export const FileDownloader: FC<{ state: AppState }> = ({
   const handleOnClick = () => {
     if (processStageStore === Processes.play) {
       window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
-      const avatarId = window.electron.store.get('avatarId') as string;
+      const avatarId = window.electron.store.get(StoreKeys.AVATAR_ID) as string;
       if (avatarId === undefined) {
         sentryEventHandler('EnterMetaverse - No Avatar');
         navigate('/choose-avatar');

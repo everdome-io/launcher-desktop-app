@@ -7,10 +7,13 @@ import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import styles from './ConnectOrSkip.module.css';
 import { BackButton } from '@renderer/components/BackButton';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import { StoreKeys } from '@interfaces/store';
 
 export const ConnectOrSkip: FC = () => {
   const navigate = useNavigate();
-  const connectedOrSkipped = window.electron.store.get('connectedOrSkipped');
+  const connectedOrSkipped = window.electron.store.get(
+    StoreKeys.CONNECTED_OR_SKIPPED
+  );
 
   const skipConnect = () => {
     window.electron.ipcRenderer.sendMessage(Channels.connectedOrSkipped);

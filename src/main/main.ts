@@ -46,6 +46,7 @@ import { getUserFromAPI } from '../api';
 import { playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
+import { StoreKeys } from '../interfaces/store';
 
 const store = new Store();
 
@@ -103,12 +104,12 @@ const loadExtensions = async () => {
 
 const handleUserId = () => {
   let userId: string;
-  const storeUserId = store.get('userId') as undefined | string;
+  const storeUserId = store.get(StoreKeys.USER_ID) as undefined | string;
   if (storeUserId) {
     userId = storeUserId;
   } else {
     userId = uuid();
-    store.set('userId', userId);
+    store.set(StoreKeys.USER_ID, userId);
   }
   Sentry.setTag('userId', userId);
   return userId;
@@ -120,23 +121,23 @@ const setStore = (statusCode: number, s3Path: string): Promise<void> => {
     if (gameFileExist) {
       downloadWebLink = `https://metahero-prod-game-builds.s3.amazonaws.com/${s3Path}`;
       // downloadWebLink = `https://github.com/Gann4/Thirdym/releases/download/0.1.0-alpha/Thirdym.v0.1.0-alpha.zip`;
-      const storeWebLink = store.get('webLink') as string | undefined;
+      const storeWebLink = store.get(StoreKeys.WEB_LINK) as string | undefined;
       const couldUseWebLink = storeWebLink !== downloadWebLink;
-      store.set('couldUseWebLink', couldUseWebLink);
+      store.set(StoreKeys.COULD_USE_WEB_LINK, couldUseWebLink);
       if (couldUseWebLink) {
-        store.set('processStage', Processes.openDialog);
+        store.set(StoreKeys.PROCESS_STAGE, Processes.openDialog);
       }
       resolve();
     } else {
       Sentry.captureException(`${downloadWebLink} could not be found`);
-      store.set('couldUseWebLink', false);
+      store.set(StoreKeys.COULD_USE_WEB_LINK, false);
     }
   });
 };
 
 const setStoreOnError = (): Promise<void> => {
   return new Promise((resolve, reject) => {
-    store.set('couldUseWebLink', false);
+    store.set(StoreKeys.COULD_USE_WEB_LINK, false);
     resolve();
   });
 };
@@ -197,8 +198,8 @@ const createWindow = async () => {
         ?.loadURL(resolveHtmlPath('profile.html'))
         .catch(errorHandler);
       okxWindow?.hide();
-      store.set('connectedOrSkipped', true);
-      const userId = store.get('userId') as string | undefined;
+      store.set(StoreKeys.CONNECTED_OR_SKIPPED, true);
+      const userId = store.get(StoreKeys.USER_ID) as string | undefined;
       if (userId) {
         await getUserFromAPI({
           userId,
@@ -271,7 +272,10 @@ const createProfileWindow = async () => {
   profileWindow.setPosition(x, y);
 
   profileWindow.on('ready-to-show', () => {
-    if (store.get('termsAccepted') && store.get('connectedOrSkipped')) {
+    if (
+      store.get(StoreKeys.TERMS_ACCEPTED) &&
+      store.get(StoreKeys.CONNECTED_OR_SKIPPED)
+    ) {
       if (!profileWindow) {
         const message = '"profileWindow" is not defined';
         Sentry.captureException(message);
@@ -371,8 +375,8 @@ const setupApp = async () => {
   const os = getOS();
   if (os === OperatingSystem.Windows) {
     const latestWindowsVersion = await getLatestWindowsVersion();
-    store.set('latestWindowsVersion', latestWindowsVersion);
-    store.set('appCurrentVersion', app.getVersion());
+    store.set(StoreKeys.LATEST_WINDOWS_VERSION, latestWindowsVersion);
+    store.set(StoreKeys.APP_CURRENT_VERSION, app.getVersion());
   }
   const s3Path = await getDownloadLink();
   if (s3Path) {
@@ -414,7 +418,7 @@ app
 ipcMain.on(Channels.downloadProcess, (event) => {
   console.log('Downloading game...');
 
-  const localFilePath = store.get('userPath') as string;
+  const localFilePath = store.get(StoreKeys.USER_PATH) as string;
   const eventsInstance = eventsClient(event);
   eventsInstance.reply({
     channel: Channels.changeState,
@@ -438,8 +442,8 @@ ipcMain.on(Channels.downloadProcess, (event) => {
           prevProgress = progress;
         }
         if (progress === 100) {
-          store.set('webLink', downloadWebLink);
-          store.set('processStage', Processes.extract);
+          store.set(StoreKeys.WEB_LINK, downloadWebLink);
+          store.set(StoreKeys.PROCESS_STAGE, Processes.extract);
         }
         eventsInstance.reply({
           channel: Channels.changeState,
@@ -458,10 +462,10 @@ ipcMain.on(Channels.downloadProcess, (event) => {
 
 ipcMain.on(Channels.playProcess, async function (event) {
   console.log('Starting game...');
-  const localFilePath = store.get('userPath') as string;
-  const publicKey = store.get('publicKey') as string;
-  const avatarId = store.get('avatarId') as string;
-  const nickName = store.get('nickName') as string;
+  const localFilePath = store.get(StoreKeys.USER_PATH) as string;
+  const publicKey = store.get(StoreKeys.PUBLIC_KEY) as string;
+  const avatarId = store.get(StoreKeys.AVATAR_ID) as string;
+  const nickName = store.get(StoreKeys.NICK_NAME) as string;
 
   const eventsInstance = eventsClient(event);
   eventsInstance.reply({
@@ -493,8 +497,8 @@ ipcMain.on(Channels.openDialog, async function (event) {
     buttonLabel: 'Save',
   });
 
-  store.set('userPath', localUserPath.filePaths[0]);
-  store.set('processStage', Processes.download);
+  store.set(StoreKeys.USER_PATH, localUserPath.filePaths[0]);
+  store.set(StoreKeys.PROCESS_STAGE, Processes.download);
   sentryEventHandler('Start downloading game');
   eventsInstance.reply({
     channel: Channels.changeState,
@@ -509,7 +513,7 @@ ipcMain.on(Channels.openDialog, async function (event) {
 });
 
 ipcMain.on(Channels.extractProcess, async (event) => {
-  const localFilePath = store.get('userPath') as string;
+  const localFilePath = store.get(StoreKeys.USER_PATH) as string;
   const eventsInstance = eventsClient(event);
   sentryEventHandler('Start extracting game');
 
@@ -553,7 +557,7 @@ ipcMain.on(Channels.extractProcess, async (event) => {
           processingSize: 0,
         },
       });
-      store.set('processStage', Processes.play);
+      store.set(StoreKeys.PROCESS_STAGE, Processes.play);
       return result;
     })
     .catch((error) => {
@@ -640,7 +644,7 @@ ipcMain.on(Channels.showProfileWindow, async function (_event, state) {
 ipcMain.on(
   Channels.openOKXExtension,
   (_event, state: { fromProfileWindow: boolean }) => {
-    const userId = store.get('userId');
+    const userId = store.get(StoreKeys.USER_ID);
     okxWebView!.setBounds({ x: 0, y: 0, width: 1, height: 1 });
     okxWebView!.webContents
       .loadURL(`${OKX_WEB_APP_URL}?userId=${userId}`)
@@ -670,11 +674,11 @@ ipcMain.on(
 );
 
 ipcMain.on(Channels.acceptTerms, (_event) => {
-  store.set('termsAccepted', true);
+  store.set(StoreKeys.TERMS_ACCEPTED, true);
   mainWindow?.webContents.send(Channels.acceptTerms, {
     termsAccepted: true,
   });
-  if (store.get('connectedOrSkipped')) {
+  if (store.get(StoreKeys.CONNECTED_OR_SKIPPED)) {
     profileWindow?.show();
   }
 });
@@ -683,9 +687,9 @@ ipcMain.on(Channels.connectedOrSkipped, (_event) => {
   if (okxWindow && okxWindow.isVisible()) {
     okxWindow.hide();
   }
-  store.set('connectedOrSkipped', true);
+  store.set(StoreKeys.CONNECTED_OR_SKIPPED, true);
 
-  if (store.get('termsAccepted')) {
+  if (store.get(StoreKeys.TERMS_ACCEPTED)) {
     profileWindow?.show();
   }
 });

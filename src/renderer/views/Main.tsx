@@ -14,6 +14,7 @@ import { FileDownloader } from '@renderer/components';
 import { ClearStore } from '@renderer/components/ClearStore';
 import styles from './Main.module.css';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import { StoreKeys } from '@interfaces/store';
 
 export const Main: FC<{
   state: AppState;
@@ -21,13 +22,16 @@ export const Main: FC<{
   crossWindowState: CrossWindowState;
 }> = ({ state, crossWindowState }) => {
   const navigate = useNavigate();
-  const connectedOrSkipped = window.electron.store.get('connectedOrSkipped');
-  const termsAccepted = window.electron.store.get('termsAccepted');
-  const latestWindowsVersion: string | undefined = window.electron.store.get(
-    'latestWindowsVersion'
+  const connectedOrSkipped = window.electron.store.get(
+    StoreKeys.CONNECTED_OR_SKIPPED
   );
-  const currentVersion: string | undefined =
-    window.electron.store.get('appCurrentVersion');
+  const termsAccepted = window.electron.store.get(StoreKeys.TERMS_ACCEPTED);
+  const latestWindowsVersion: string | undefined = window.electron.store.get(
+    StoreKeys.LATEST_WINDOWS_VERSION
+  );
+  const currentVersion: string | undefined = window.electron.store.get(
+    StoreKeys.APP_CURRENT_VERSION
+  );
 
   useEffect(() => {
     if (shouldDisplayUpdateInfo(latestWindowsVersion, currentVersion)) {
