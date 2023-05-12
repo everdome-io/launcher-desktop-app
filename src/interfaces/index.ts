@@ -66,8 +66,6 @@ export type CrossWindowState = {
   isAuthenticated: boolean;
   errorMessage: string;
   webViewLoading: boolean;
-  shouldDisplayNFT: boolean;
-  disclaimer: string | null;
 };
 
 export type AppUpdate = {
