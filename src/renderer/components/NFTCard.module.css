@@ -1,31 +1,74 @@
 .container {
-  composes: flexCenterColumn from '../theme/layout.module.css';
+  composes: flexCenter from '../theme/layout.module.css';
   background: #191919;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  padding: 1.5rem 1rem 0.5rem;
+  padding: 1.5rem 1rem;
   margin-top: 3.2rem;
-  max-width: 350px;
+  width: 100%;
 
 }
 
-.infoText {
-  margin: 1rem 0 0.75rem;
-  font-family: 'HarmonyOS Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #FFFFFF;
+.nftContainer {
+  position: relative;
+  composes: flexCenter from '../theme/layout.module.css';
+
 }
 
-.disclaimer {
-  font-weight: 500;
-  font-size: 8px;
-  line-height: 9px;
-  text-align: center;
+.nftImg {
+  background-color: #e6e6e6;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+
+.nftImg1 {
+  composes: nftImg;
+  background-image: url('assets/images/nfts/1.gif');
+}
+
+.nftImg2 {
+  composes: nftImg;
+  background-image: url('assets/images/nfts/2.gif');
+}
+
+.nftImg3 {
+  composes: nftImg;
+  background-image: url('assets/images/nfts/3.gif');
+}
+
+.tokenInfo {
+  flex: 1;
+  margin-left: 0.8rem;
+}
+
+.item+.item {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 7px
+}
+
+.itemName {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
   color: #FFFFFF;
   opacity: 0.5;
-  margin: 0;
+  margin-bottom: 4px;
+}
+
+.item+.item .itemName {
+  margin-top: 7px;
+}
+
+.itemValue {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }

@@ -66,6 +66,8 @@ export type CrossWindowState = {
   isAuthenticated: boolean;
   errorMessage: string;
   webViewLoading: boolean;
+  shouldDisplayNFT: boolean;
+  disclaimer: string | null;
 };
 
 export type AppUpdate = {
@@ -92,4 +94,8 @@ export interface UserAttributes {
 export enum ToggleWindowMode {
   open = 'open',
   close = 'close',
+}
+
+export enum SettingType {
+  NFT_Publish = 'NFT_Publish',
 }

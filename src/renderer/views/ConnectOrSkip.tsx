@@ -1,14 +1,16 @@
 import * as Sentry from '@sentry/electron';
 import { FC, useEffect } from 'react';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
-import { Channels } from '@interfaces';
+import { Channels, CrossWindowState } from '@interfaces';
 import { useNavigate } from 'react-router-dom';
 import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import styles from './ConnectOrSkip.module.css';
 import { BackButton } from '@renderer/components/BackButton';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
-export const ConnectOrSkip: FC = () => {
+export const ConnectOrSkip: FC<{ crossWindowState: CrossWindowState }> = ({
+  crossWindowState,
+}) => {
   const navigate = useNavigate();
   const connectedOrSkipped = window.electron.store.get('connectedOrSkipped');
 
@@ -35,13 +37,11 @@ export const ConnectOrSkip: FC = () => {
         <h1 className={styles.title}>
           Login to the OKX Wallet and collect your NFT
         </h1>
-        <p className={styles.infoText}>
-          Visit the Alex Greenwood exhibition on the 15th May to claim your NFT
-        </p>
+        <p className={styles.disclaimer}>{crossWindowState.disclaimer}</p>
       </div>
       <div className={styles.centerSection}>
         <img src={ag5OKXLogo} alt="Logo" width="932" />
-        <p className={styles.disclaimer}>
+        <p className={styles.infoText}>
           The AG5 x OKX Non Fungible Tokens ("NFTs") are digital assets that
           have been created as collectibles; They are free, not tradeable and
           are not intended to be used as investment. Each NFT has no value nor

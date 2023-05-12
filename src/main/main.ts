@@ -26,6 +26,7 @@ import {
   AppUpdateStatus,
   Channels,
   Processes,
+  SettingType,
   ToggleWindowMode,
 } from '../interfaces';
 import MenuBuilder from './menu';
@@ -42,7 +43,7 @@ import {
 } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { extractWithProgress } from './utils/extract';
-import { getUserFromAPI } from '../api';
+import { getSettingFromAPI, getUserFromAPI } from '../api';
 import { playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
@@ -175,6 +176,40 @@ const createWindow = async () => {
     if (process.env.START_MINIMIZED) {
       mainWindow.minimize();
     } else {
+      await getSettingFromAPI({
+        settingType: SettingType.NFT_Publish,
+        handleError: (err: any) => {
+          Sentry.captureException(err);
+          console.log(err);
+        },
+      })
+        .then((response) => {
+          if (response) {
+            if (response.message === null) {
+              mainWindow?.webContents.send(Channels.crossWindow, {
+                shouldDisplayNFT: true,
+                disclaimer: response.message,
+              });
+              profileWindow?.webContents.send(Channels.crossWindow, {
+                shouldDisplayNFT: true,
+                disclaimer: response.message,
+              });
+            } else {
+              mainWindow?.webContents.send(Channels.crossWindow, {
+                shouldDisplayNFT: false,
+                disclaimer: response.message,
+              });
+              profileWindow?.webContents.send(Channels.crossWindow, {
+                shouldDisplayNFT: false,
+                disclaimer: response.message,
+              });
+            }
+          }
+        })
+        .catch((err) => {
+          Sentry.captureException(err);
+          console.log(err);
+        });
       mainWindow.show();
     }
   });
