@@ -28,17 +28,17 @@
 
 .nftImg1 {
   composes: nftImg;
-  background-image: url('assets/images/nfts/1.gif');
+  background-image: url('https: //metahero-prod-game-builds.s3.amazonaws.com/nft-images/1.gif');
 }
 
 .nftImg2 {
   composes: nftImg;
-  background-image: url('assets/images/nfts/2.gif');
+  background-image: url('https: //metahero-prod-game-builds.s3.amazonaws.com/nft-images/2.gif');
 }
 
 .nftImg3 {
   composes: nftImg;
-  background-image: url('assets/images/nfts/3.gif');
+  background-image: url('https: //metahero-prod-game-builds.s3.amazonaws.com/nft-images/3.gif');
 }
 
 .tokenInfo {
