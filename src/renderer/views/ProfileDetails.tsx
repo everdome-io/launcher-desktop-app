@@ -16,16 +16,16 @@ import { NFTCard } from '@renderer/components/NFTCard';
 import { useNavigate } from 'react-router-dom';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 import { NFTCardDisclaimer } from '@renderer/components/NFTCardDisclaimer';
-import { getSettingFromAPI } from '@api';
-import * as Sentry from '@sentry/electron';
 
 export const ProfileDetails: FC<{
   state: { avatarId: string | null; nickName: string | null };
   crossWindowState: CrossWindowState;
 }> = ({ crossWindowState, state: { avatarId, nickName } }) => {
   const navigate = useNavigate();
-  const [showNFT, setShowNFT] = useState(false);
-  const [disclaimerInfo, setDisclaimerInfo] = useState<string | null>(null);
+  const shouldDisplayNFT = window.electron.store.get('shouldDisplayNFT');
+  const disclaimer = window.electron.store.get('disclaimer');
+
+  console.log(`shouldDisplayNFT`, shouldDisplayNFT);
 
   const openSettings = () => {
     sentryEventHandler('OpenSettings');
@@ -48,20 +48,20 @@ export const ProfileDetails: FC<{
             />
           </header>
           <UserAvatar avatarId={avatarId} />
-          {crossWindowState.shouldDisplayNFT ? (
+          {shouldDisplayNFT ? (
             <NFTCard
               colection="Alex Greenwood x OKX Trainer Collection"
               tokenId={Math.floor(Math.random() * 100) + 1}
               variant={Math.floor(Math.random() * 100) + 1}
             />
           ) : (
-            <NFTCardDisclaimer crossWindowState={crossWindowState} />
+            <NFTCardDisclaimer />
           )}
         </>
       ) : (
         <div className={styles.notConnected}>
           <img src={ag5OKXLogo} alt="Logo" width="225" />
-          <p className={styles.disclaimer}>{crossWindowState.disclaimer}</p>
+          <p className={styles.disclaimer}>{disclaimer}</p>
           <p className={styles.infoText}>
             The AG5 x OKX Non Fungible Tokens ("NFTs") are digital assets that
             have been created as collectibles; They are free, not tradeable and

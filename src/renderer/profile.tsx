@@ -9,9 +9,6 @@ let crossWindowState: CrossWindowState = {
   isAuthenticated: false,
   errorMessage: '',
   webViewLoading: true,
-  shouldDisplayNFT: false,
-  disclaimer:
-    'Visit the Alex Greenwood exhibition on the 15th May to claim your NFT',
 };
 
 const container = document.getElementById('root')!;

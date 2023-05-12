@@ -1,18 +1,16 @@
-import * as Sentry from '@sentry/electron';
 import { FC, useEffect } from 'react';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
-import { Channels, CrossWindowState } from '@interfaces';
+import { Channels } from '@interfaces';
 import { useNavigate } from 'react-router-dom';
 import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import styles from './ConnectOrSkip.module.css';
 import { BackButton } from '@renderer/components/BackButton';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 
-export const ConnectOrSkip: FC<{ crossWindowState: CrossWindowState }> = ({
-  crossWindowState,
-}) => {
+export const ConnectOrSkip: FC = () => {
   const navigate = useNavigate();
   const connectedOrSkipped = window.electron.store.get('connectedOrSkipped');
+  const disclaimer = window.electron.store.get('disclaimer');
 
   const skipConnect = () => {
     window.electron.ipcRenderer.sendMessage(Channels.connectedOrSkipped);
@@ -37,7 +35,7 @@ export const ConnectOrSkip: FC<{ crossWindowState: CrossWindowState }> = ({
         <h1 className={styles.title}>
           Login to the OKX Wallet and collect your NFT
         </h1>
-        <p className={styles.disclaimer}>{crossWindowState.disclaimer}</p>
+        <p className={styles.disclaimer}>{disclaimer}</p>
       </div>
       <div className={styles.centerSection}>
         <img src={ag5OKXLogo} alt="Logo" width="932" />

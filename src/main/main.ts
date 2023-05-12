@@ -176,40 +176,6 @@ const createWindow = async () => {
     if (process.env.START_MINIMIZED) {
       mainWindow.minimize();
     } else {
-      await getSettingFromAPI({
-        settingType: SettingType.NFT_Publish,
-        handleError: (err: any) => {
-          Sentry.captureException(err);
-          console.log(err);
-        },
-      })
-        .then((response) => {
-          if (response) {
-            if (response.message === null) {
-              mainWindow?.webContents.send(Channels.crossWindow, {
-                shouldDisplayNFT: true,
-                disclaimer: response.message,
-              });
-              profileWindow?.webContents.send(Channels.crossWindow, {
-                shouldDisplayNFT: true,
-                disclaimer: response.message,
-              });
-            } else {
-              mainWindow?.webContents.send(Channels.crossWindow, {
-                shouldDisplayNFT: false,
-                disclaimer: response.message,
-              });
-              profileWindow?.webContents.send(Channels.crossWindow, {
-                shouldDisplayNFT: false,
-                disclaimer: response.message,
-              });
-            }
-          }
-        })
-        .catch((err) => {
-          Sentry.captureException(err);
-          console.log(err);
-        });
       mainWindow.show();
     }
   });
@@ -409,6 +375,28 @@ const setupApp = async () => {
     store.set('latestWindowsVersion', latestWindowsVersion);
     store.set('appCurrentVersion', app.getVersion());
   }
+  await getSettingFromAPI({
+    settingType: SettingType.NFT_Publish,
+    handleError: (err: any) => {
+      Sentry.captureException(err);
+      console.log(err);
+    },
+  })
+    .then((response) => {
+      if (response) {
+        store.set('disclaimer', response.message);
+
+        if (response.message === null) {
+          store.set('shouldDisplayNFT', true);
+        } else {
+          store.set('shouldDisplayNFT', false);
+        }
+      }
+    })
+    .catch((err) => {
+      Sentry.captureException(err);
+      console.log(err);
+    });
   const s3Path = await getDownloadLink();
   if (s3Path) {
     const pathSplit = s3Path.split('/');
