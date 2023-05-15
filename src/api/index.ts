@@ -78,3 +78,25 @@ export async function getSettingFromAPI({
 
   return result;
 }
+
+export async function getUserTokenFromAPI({
+  userId,
+  handleError,
+}: {
+  userId: string;
+  handleError: (err: any) => void;
+}) {
+  const result = await fetch(`${BACKEND_URL}/user/${userId}/token`)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error('Error fetching user data');
+      }
+      return response.json();
+    })
+    .then((json) => {
+      return json;
+    })
+    .catch(handleError);
+
+  return result;
+}

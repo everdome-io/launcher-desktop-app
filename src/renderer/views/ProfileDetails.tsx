@@ -25,8 +25,6 @@ export const ProfileDetails: FC<{
   const shouldDisplayNFT = window.electron.store.get('shouldDisplayNFT');
   const disclaimer = window.electron.store.get('disclaimer');
 
-  console.log(`shouldDisplayNFT`, shouldDisplayNFT);
-
   const openSettings = () => {
     sentryEventHandler('OpenSettings');
     window.electron.ipcRenderer.sendMessage(Channels.toggleProfileWindow, {
@@ -48,15 +46,7 @@ export const ProfileDetails: FC<{
             />
           </header>
           <UserAvatar avatarId={avatarId} />
-          {shouldDisplayNFT ? (
-            <NFTCard
-              colection="Alex Greenwood x OKX Trainer Collection"
-              tokenId={Math.floor(Math.random() * 100) + 1}
-              variant={Math.floor(Math.random() * 100) + 1}
-            />
-          ) : (
-            <NFTCardDisclaimer />
-          )}
+          {shouldDisplayNFT ? <NFTCard /> : <NFTCardDisclaimer />}
         </>
       ) : (
         <div className={styles.notConnected}>
