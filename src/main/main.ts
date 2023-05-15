@@ -483,11 +483,12 @@ ipcMain.on(Channels.playProcess, async function (event) {
     };
   },
   async () => {
-    store.set('processStage', Processes.download);
+    store.delete('userPath');
+    store.set('processStage', Processes.openDialog);
     eventsInstance.reply({
       channel: Channels.changeState,
       message: {
-        process: Processes.download,
+        process: Processes.openDialog,
         progress: null,
         localUserPath: '',
         isFinished: true,
