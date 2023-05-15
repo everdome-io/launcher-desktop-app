@@ -4,6 +4,7 @@ import { exec, ExecException } from 'child_process';
 import { dialog } from 'electron';
 import { getOS, OperatingSystem } from '.';
 import { errorHandler } from './errorHandler';
+import fs from 'fs';
 
 type EnterGameProperties = {
   filePath: string;
@@ -53,12 +54,19 @@ async function enterGame({
   uid,
   displayname,
   avatarid,
-}: EnterGameProperties): Promise<void> {
-  const os = getOS();
-  if (os === OperatingSystem.MacOS) await execChmodPlusX(filePath);
-  await execCommand(
-    `"${filePath}" -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
-  );
+}: EnterGameProperties,
+resetDownload : () => Promise<void>): Promise<void> {
+  console.log("in enter game", filePath);
+  if (!fs.existsSync(filePath)) {
+    console.log("in enter game, file does not exist");
+    await resetDownload();
+  }else{
+    const os = getOS();
+    if (os === OperatingSystem.MacOS) await execChmodPlusX(filePath);
+    await execCommand(
+      `"${filePath}" -game -uid=${uid} -displayname=${displayname} -avatarid=${avatarid}`
+    );
+  }
 }
 
 function getFilePath(dirPath: string) {
@@ -97,7 +105,8 @@ export async function playMetaverse(
   getOpenParams: () => Pick<
     EnterGameProperties,
     'displayname' | 'uid' | 'avatarid'
-  >
+  >,
+  resetDownload: () => Promise<void>
 ): Promise<void> {
   const { uid, displayname, avatarid } = getOpenParams();
   await enterGame({
@@ -105,5 +114,6 @@ export async function playMetaverse(
     avatarid: avatarid + 1,
     displayname,
     uid,
-  }).catch(handlePlayMetaverseError);
+  },
+  resetDownload).catch(handlePlayMetaverseError);
 }

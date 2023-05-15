@@ -481,6 +481,19 @@ ipcMain.on(Channels.playProcess, async function (event) {
       uid: publicKey,
       displayname: nickName,
     };
+  },
+  async () => {
+    store.set('processStage', Processes.download);
+    eventsInstance.reply({
+      channel: Channels.changeState,
+      message: {
+        process: Processes.download,
+        progress: null,
+        localUserPath: '',
+        isFinished: true,
+        processingSize: 0,
+      },
+    });
   });
 });
 
