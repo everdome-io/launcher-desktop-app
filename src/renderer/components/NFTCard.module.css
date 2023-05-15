@@ -31,18 +31,17 @@
   border-radius: 4px;
 }
 
-
-.nftImg1 {
+.nftImgWhite {
   composes: nftImg;
   background-image: url('https://metahero-prod-game-builds.s3.amazonaws.com/nft-images/1.gif');
 }
 
-.nftImg2 {
+.nftImgBlack {
   composes: nftImg;
   background-image: url('https://metahero-prod-game-builds.s3.amazonaws.com/nft-images/2.gif');
 }
 
-.nftImg3 {
+.nftImgBlue {
   composes: nftImg;
   background-image: url('https://metahero-prod-game-builds.s3.amazonaws.com/nft-images/3.gif');
 }
