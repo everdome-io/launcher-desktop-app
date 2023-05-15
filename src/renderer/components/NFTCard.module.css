@@ -6,7 +6,13 @@
   padding: 1.5rem 1rem;
   margin-top: 3.2rem;
   width: 100%;
+}
 
+.containerStatic {
+  composes: container;
+  flex-direction: column;
+  width: 310px;
+  height: 150px;
 }
 
 .nftContainer {
