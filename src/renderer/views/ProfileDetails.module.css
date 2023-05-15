@@ -38,7 +38,7 @@
   border-radius: 74px 74px 0 0;
 }
 
-.infoText {
+.disclaimer {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -48,7 +48,7 @@
   margin-top: 148px;
 }
 
-.disclaimer {
+.infoText {
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;

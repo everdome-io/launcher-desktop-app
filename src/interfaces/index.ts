@@ -93,3 +93,7 @@ export enum ToggleWindowMode {
   open = 'open',
   close = 'close',
 }
+
+export enum SettingType {
+  NFT_Publish = 'NFT_Publish',
+}

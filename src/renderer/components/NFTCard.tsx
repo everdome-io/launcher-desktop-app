@@ -1,21 +1,45 @@
 import React from 'react';
-import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import styles from './NFTCard.module.css';
+import { Spinner } from './Spinner';
 
-export const NFTCard: React.FC = () => {
+interface NFTCardProps {
+  colection: string;
+  tokenId: number;
+  variant: number;
+}
+
+export const NFTCard: React.FC<NFTCardProps> = ({
+  colection,
+  tokenId,
+  variant,
+}) => {
+  const nftList = [styles.nftImg1, styles.nftImg2, styles.nftImg3];
+  const [isLoading, setIsLoading] = React.useState(false);
+
   return (
-    <div className={styles.container}>
-      <img src={ag5OKXLogo} alt="Logo" width="225" height="22" />
-      <p className={styles.infoText}>
-        Visit the Alex Greenwood exhibition on the 15th May to claim your NFT
-      </p>
-      <p className={styles.disclaimer}>
-        The AG5 x OKX Non Fungible Tokens ("NFTs") are digital assets that have
-        been created as collectibles; They are free, not tradeable and are not
-        intended to be used as investment. Each NFT has no value nor is there
-        any guarantee that they can or will ever have monetary value. NFTs are
-        not regulated instruments in the UK.
-      </p>
+    <div className={isLoading ? styles.containerStatic : styles.container}>
+      {isLoading ? (
+        <>
+          <p>Your NFT is downloading...</p>
+          <Spinner width={40} />
+        </>
+      ) : (
+        <>
+          <div className={styles.nftContainer}>
+            <div className={nftList[(variant - 1) % 3]}></div>
+          </div>
+          <div className={styles.tokenInfo}>
+            <div className={styles.item}>
+              <div className={styles.itemName}>Collection</div>
+              <div className={styles.itemValue}>{colection}</div>
+            </div>
+            <div className={styles.item}>
+              <div className={styles.itemName}>Token ID</div>
+              <div className={styles.itemValue}>{tokenId}</div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

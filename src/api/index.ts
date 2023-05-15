@@ -1,4 +1,4 @@
-import { UserAttributes } from '@interfaces';
+import { SettingType, UserAttributes } from '@interfaces';
 
 const BACKEND_URL = 'https://backend.prod.aws.everdome.io';
 
@@ -55,4 +55,26 @@ export async function setUserInAPI(
       return response.json();
     })
     .catch(handleError);
+}
+
+export async function getSettingFromAPI({
+  settingType,
+  handleError,
+}: {
+  settingType: SettingType;
+  handleError: (err: any) => void;
+}) {
+  const result = await fetch(`${BACKEND_URL}/setting/${settingType}`)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error('Error fetching user data');
+      }
+      return response.json();
+    })
+    .then((json) => {
+      return json;
+    })
+    .catch(handleError);
+
+  return result;
 }

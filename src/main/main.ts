@@ -26,6 +26,7 @@ import {
   AppUpdateStatus,
   Channels,
   Processes,
+  SettingType,
   ToggleWindowMode,
 } from '../interfaces';
 import MenuBuilder from './menu';
@@ -42,7 +43,7 @@ import {
 } from './utils';
 import { downloadFileWithProgress } from './utils/download';
 import { extractWithProgress } from './utils/extract';
-import { getUserFromAPI } from '../api';
+import { getSettingFromAPI, getUserFromAPI } from '../api';
 import { playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
@@ -374,6 +375,28 @@ const setupApp = async () => {
     store.set('latestWindowsVersion', latestWindowsVersion);
     store.set('appCurrentVersion', app.getVersion());
   }
+  await getSettingFromAPI({
+    settingType: SettingType.NFT_Publish,
+    handleError: (err: any) => {
+      Sentry.captureException(err);
+      console.log(err);
+    },
+  })
+    .then((response) => {
+      if (response) {
+        store.set('disclaimer', response.message);
+
+        if (response.message === null) {
+          store.set('shouldDisplayNFT', true);
+        } else {
+          store.set('shouldDisplayNFT', false);
+        }
+      }
+    })
+    .catch((err) => {
+      Sentry.captureException(err);
+      console.log(err);
+    });
   const s3Path = await getDownloadLink();
   if (s3Path) {
     const pathSplit = s3Path.split('/');

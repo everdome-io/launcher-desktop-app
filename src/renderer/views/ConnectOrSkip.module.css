@@ -44,7 +44,7 @@
   composes: pageTitle from '../theme/typography.module.css';
 }
 
-.infoText {
+.disclaimer {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -108,7 +108,7 @@
   z-index: 1;
 }
 
-.disclaimer {
+.infoText {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;

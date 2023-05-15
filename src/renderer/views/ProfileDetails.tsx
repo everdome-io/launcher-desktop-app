@@ -1,5 +1,10 @@
-import { Channels, CrossWindowState, ToggleWindowMode } from '@interfaces';
-import { FC } from 'react';
+import {
+  Channels,
+  CrossWindowState,
+  SettingType,
+  ToggleWindowMode,
+} from '@interfaces';
+import { FC, useEffect, useState } from 'react';
 import settingsIcon from 'assets/images/settings-icon.svg';
 import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
@@ -10,12 +15,17 @@ import styles from './ProfileDetails.module.css';
 import { NFTCard } from '@renderer/components/NFTCard';
 import { useNavigate } from 'react-router-dom';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import { NFTCardDisclaimer } from '@renderer/components/NFTCardDisclaimer';
 
 export const ProfileDetails: FC<{
   state: { avatarId: string | null; nickName: string | null };
   crossWindowState: CrossWindowState;
 }> = ({ crossWindowState, state: { avatarId, nickName } }) => {
   const navigate = useNavigate();
+  const shouldDisplayNFT = window.electron.store.get('shouldDisplayNFT');
+  const disclaimer = window.electron.store.get('disclaimer');
+
+  console.log(`shouldDisplayNFT`, shouldDisplayNFT);
 
   const openSettings = () => {
     sentryEventHandler('OpenSettings');
@@ -24,6 +34,7 @@ export const ProfileDetails: FC<{
     });
     navigate('/choose-avatar');
   };
+
   return (
     <div className={styles.container}>
       {crossWindowState.isAuthenticated ? (
@@ -37,16 +48,21 @@ export const ProfileDetails: FC<{
             />
           </header>
           <UserAvatar avatarId={avatarId} />
-          <NFTCard />
+          {shouldDisplayNFT ? (
+            <NFTCard
+              colection="Alex Greenwood x OKX Trainer Collection"
+              tokenId={Math.floor(Math.random() * 100) + 1}
+              variant={Math.floor(Math.random() * 100) + 1}
+            />
+          ) : (
+            <NFTCardDisclaimer />
+          )}
         </>
       ) : (
         <div className={styles.notConnected}>
           <img src={ag5OKXLogo} alt="Logo" width="225" />
+          <p className={styles.disclaimer}>{disclaimer}</p>
           <p className={styles.infoText}>
-            Visit the Alex Greenwood exhibition on the 15th May to claim your
-            NFT
-          </p>
-          <p className={styles.disclaimer}>
             The AG5 x OKX Non Fungible Tokens ("NFTs") are digital assets that
             have been created as collectibles; They are free, not tradeable and
             are not intended to be used as investment. Each NFT has no value nor
