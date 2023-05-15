@@ -47,6 +47,7 @@ import { getSettingFromAPI, getUserFromAPI } from '../api';
 import { playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
+import { access } from 'fs';
 
 const store = new Store();
 
@@ -375,6 +376,15 @@ const setupApp = async () => {
     store.set('latestWindowsVersion', latestWindowsVersion);
     store.set('appCurrentVersion', app.getVersion());
   }
+
+  const localFilePath = store.get('userPath') as string;
+  access(localFilePath, (err) => {
+    if (err) {
+      store.delete('userPath');
+      store.delete('processStage');
+    }
+  });
+
   await getSettingFromAPI({
     settingType: SettingType.NFT_Publish,
     handleError: (err: any) => {
