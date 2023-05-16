@@ -2,7 +2,7 @@
 import path from 'path';
 import { exec, ExecException } from 'child_process';
 import { dialog } from 'electron';
-import { getOS, OperatingSystem } from '.';
+import { getDialogMessageByOS, getOS, OperatingSystem } from '.';
 import { errorHandler } from './errorHandler';
 
 type EnterGameProperties = {
@@ -71,21 +71,18 @@ function getFilePath(dirPath: string) {
   );
 }
 
-function getDialogMessage(text: string) {
-  const os = getOS();
-  return `${
-    os === OperatingSystem.MacOS ? 'Could not enter metaverse.' : ''
-  } ${text}`;
-}
-
 async function handlePlayMetaverseError(error: ExecException) {
   const dialogOpts = {
     type: 'warning',
     buttons: ['Ok'],
     title: 'Could not enter metaverse',
     message: error.toString().includes('Bad CPU type in executable')
-      ? getDialogMessage('Your system does not meet the game’s requirements.')
-      : getDialogMessage(
+      ? getDialogMessageByOS(
+          'Could not enter metaverse.',
+          'Your system does not meet the game’s requirements.'
+        )
+      : getDialogMessageByOS(
+          'Could not enter metaverse.',
           'Please contact Everdome support to get more details.'
         ),
   };
