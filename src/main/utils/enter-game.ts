@@ -61,7 +61,7 @@ async function enterGame({
   );
 }
 
-function getFilePath(dirPath: string) {
+export function getFilePath(dirPath: string) {
   const os = getOS();
   return path.join(
     dirPath,

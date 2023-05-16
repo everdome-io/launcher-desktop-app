@@ -45,7 +45,7 @@ import {
 import { downloadFileWithProgress } from './utils/download';
 import { extractWithProgress } from './utils/extract';
 import { getSettingFromAPI, getUserFromAPI } from '../api';
-import { playMetaverse } from './utils/enter-game';
+import { getFilePath, playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
 import { access } from 'fs';
@@ -485,7 +485,7 @@ ipcMain.on(Channels.playProcess, async function (event) {
   console.log('Starting game...');
   const localFilePath = store.get('userPath') as string;
 
-  access(localFilePath, (err) => {
+  access(getFilePath(localFilePath), (err) => {
     if (err) {
       handlePathNotFoundError();
     } else {
