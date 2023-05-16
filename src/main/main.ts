@@ -35,6 +35,7 @@ import {
   OperatingSystem,
   calculateExtensionWindowPosition,
   calculateProfileWindowPosition,
+  getDialogMessageByOS,
   getDownloadLink,
   getLatestWindowsVersion,
   getOS,
@@ -44,9 +45,10 @@ import {
 import { downloadFileWithProgress } from './utils/download';
 import { extractWithProgress } from './utils/extract';
 import { getSettingFromAPI, getUserFromAPI } from '../api';
-import { playMetaverse } from './utils/enter-game';
+import { getFilePath, playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
+import { access } from 'fs';
 
 const store = new Store();
 
@@ -482,28 +484,35 @@ ipcMain.on(Channels.downloadProcess, (event) => {
 ipcMain.on(Channels.playProcess, async function (event) {
   console.log('Starting game...');
   const localFilePath = store.get('userPath') as string;
-  const publicKey = store.get('publicKey') as string;
-  const avatarId = store.get('avatarId') as string;
-  const nickName = store.get('nickName') as string;
 
-  const eventsInstance = eventsClient(event);
-  eventsInstance.reply({
-    channel: Channels.changeState,
-    message: {
-      process: Processes.play,
-      progress: null,
-      localUserPath: '',
-      isFinished: false,
-      processingSize: 0,
-    },
-  });
+  access(getFilePath(localFilePath), (err) => {
+    if (err) {
+      handlePathNotFoundError();
+    } else {
+      const publicKey = store.get('publicKey') as string;
+      const avatarId = store.get('avatarId') as string;
+      const nickName = store.get('nickName') as string;
 
-  playMetaverse(localFilePath, () => {
-    return {
-      avatarid: parseInt(avatarId, 10),
-      uid: publicKey,
-      displayname: nickName,
-    };
+      const eventsInstance = eventsClient(event);
+      eventsInstance.reply({
+        channel: Channels.changeState,
+        message: {
+          process: Processes.play,
+          progress: null,
+          localUserPath: '',
+          isFinished: false,
+          processingSize: 0,
+        },
+      });
+
+      playMetaverse(localFilePath, () => {
+        return {
+          avatarid: parseInt(avatarId, 10),
+          uid: publicKey,
+          displayname: nickName,
+        };
+      });
+    }
   });
 });
 
@@ -802,3 +811,33 @@ ipcMain.on('electron-store-set', async (event, key, val) => {
 ipcMain.on('dev:clear-store', async (event) => {
   store.clear();
 });
+
+function handlePathNotFoundError() {
+  const dialogOpts = {
+    type: 'info',
+    buttons: ['Download again', 'Select different path'],
+    title: 'Game files not found.',
+    message: getDialogMessageByOS(
+      'Game files not found.',
+      'Choose one from available options:'
+    ),
+  };
+  dialog
+    .showMessageBox(dialogOpts)
+    .then(async (returnValue) => {
+      if (returnValue.response === 0) {
+        ipcMain.emit(Channels.openDialog);
+      } else {
+        const localUserPath = await dialog.showOpenDialog({
+          properties: ['openDirectory'],
+          message: 'Select the destination folder',
+          buttonLabel: 'Select',
+        });
+
+        store.set('userPath', localUserPath.filePaths[0]);
+      }
+
+      return returnValue;
+    })
+    .catch(errorHandler);
+}

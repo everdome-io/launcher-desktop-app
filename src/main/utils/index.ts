@@ -85,3 +85,8 @@ export const calculateExtensionWindowPosition = (
   const [x, y] = profileWindowPosition;
   return [x - 5, y + 70];
 };
+
+export function getDialogMessageByOS(title: string, text: string) {
+  const os = getOS();
+  return `${os === OperatingSystem.MacOS ? title : ''} ${text}`;
+}
