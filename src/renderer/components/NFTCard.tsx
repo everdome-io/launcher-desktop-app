@@ -77,7 +77,7 @@ export const NFTCard: React.FC = () => {
     if (!tokenId || !variant) {
       interval = setInterval(() => {
         claimNFT();
-      }, 20000);
+      }, 10000);
     }
     return () => clearInterval(interval);
   }, [storedTokenId, storedVariant]);
