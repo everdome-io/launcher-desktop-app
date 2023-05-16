@@ -80,7 +80,8 @@ export const FileDownloader: FC<{ state: AppState }> = ({
     if (processStageStore === Processes.play) {
       window.electron.ipcRenderer.sendMessage(Channels.hideProfileWindow);
       const avatarId = window.electron.store.get('avatarId') as string;
-      if (avatarId === undefined) {
+      const nickName = window.electron.store.get('nickName') as string;
+      if (!avatarId || nickName) {
         sentryEventHandler('EnterMetaverse - No Avatar');
         navigate('/choose-avatar');
       } else {
