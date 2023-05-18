@@ -21,6 +21,7 @@ import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
 import * as Sentry from '@sentry/electron';
+import { access } from 'fs';
 import { initializeSentry } from '../common/sentry';
 import {
   AppUpdateStatus,
@@ -48,13 +49,12 @@ import { getSettingFromAPI, getUserFromAPI } from '../api';
 import { getFilePath, playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
-import { access } from 'fs';
 
 const store = new Store();
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
-const PROFILE_WINDOW_SIZE = { width: 342, height: 728 };
+const PROFILE_WINDOW_SIZE = { width: 342, height: 738 };
 
 const windows = new Set();
 

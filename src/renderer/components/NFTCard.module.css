@@ -4,7 +4,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 1.5rem 1rem;
-  margin-top: 3.2rem;
+  margin-top: 2.7rem;
   width: 100%;
 }
 
@@ -46,6 +46,10 @@
   background-image: url('https://metahero-prod-game-builds.s3.amazonaws.com/nft-images/3.gif');
 }
 
+.nftImgWhite:hover, .nftImgBlack:hover, nftImgBlue:hover {
+  cursor: pointer;
+}
+
 .tokenInfo {
   flex: 1;
   margin-left: 0.8rem;
@@ -76,4 +80,11 @@
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+}
+
+.copyIcon {
+  filter: contrast(0%);
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
 }
