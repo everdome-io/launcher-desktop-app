@@ -11,6 +11,7 @@ export enum Channels {
   backToMainView = 'back-to-main-view',
   openFAQWindow = 'open-faq-window',
   closeFAQWindow = 'close-faq-window',
+  showOKXWindow = 'show-okx-window',
 
   crossWindow = 'cross-window',
   changeState = 'change-state',

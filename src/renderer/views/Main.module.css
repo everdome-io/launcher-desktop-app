@@ -108,6 +108,13 @@
   right: -32%;
 }
 
+.showOkxButton {
+  composes: secondary from "../theme/buttons.module.css";
+  position: absolute;
+  top: 1%;
+  right: -25%;
+}
+
 
 .mainSection {
   display: flex;

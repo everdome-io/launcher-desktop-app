@@ -21,6 +21,7 @@ import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
 import * as Sentry from '@sentry/electron';
+import { access } from 'fs';
 import { initializeSentry } from '../common/sentry';
 import {
   AppUpdateStatus,
@@ -48,7 +49,6 @@ import { getSettingFromAPI, getUserFromAPI } from '../api';
 import { getFilePath, playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
-import { access } from 'fs';
 
 const store = new Store();
 
@@ -64,6 +64,7 @@ let profileWindow: BrowserWindow | null = null;
 let okxWebView: BrowserView | null = null;
 let okxWindow: BrowserWindow | null = null;
 let downloadWebLink: string | null = null;
+let extensionLoaded: boolean = false;
 
 if (process.env.NODE_ENV === 'production') {
   const sourceMapSupport = require('source-map-support');
@@ -228,6 +229,11 @@ const createWindow = async () => {
       profileWindow?.show();
     }
   });
+  mainWindow.on('close', () => {
+    okxWindow?.close();
+    windows.delete(okxWindow);
+    okxWindow = null;
+  });
 
   mainWindow.on('closed', () => {
     windows.delete(mainWindow);
@@ -334,9 +340,9 @@ const createOKXWindow = async () => {
     }
   });
 
-  okxWindow.on('closed', () => {
-    windows.delete(okxWindow);
-    okxWindow = null;
+  okxWindow.on('close', (e) => {
+    e.preventDefault();
+    okxWindow?.hide();
   });
 };
 
@@ -604,6 +610,19 @@ ipcMain.on(Channels.extractProcess, async (event) => {
     });
 });
 
+ipcMain.on(Channels.showOKXWindow, async (event, content) => {
+  if (content === true) {
+    if (extensionLoaded === false && okxWindow) {
+      okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
+      extensionLoaded = true;
+      okxWindow.center();
+    }
+    okxWindow!.show();
+  } else {
+    okxWindow?.hide();
+  }
+});
+
 autoUpdater.on('checking-for-update', () => {
   const message = autoUpdater.getFeedURL();
 
@@ -688,6 +707,7 @@ ipcMain.on(
     }
     if (okxWindow) {
       okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
+      extensionLoaded = true;
       if (state.fromProfileWindow && profileWindow) {
         const [x, y] = calculateExtensionWindowPosition(
           profileWindow.getPosition()

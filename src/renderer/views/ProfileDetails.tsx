@@ -11,11 +11,11 @@ import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { ClearStore } from '@renderer/components/ClearStore';
 import { UserAvatar } from '@renderer/components/UserAvatar';
 import { UserName } from '@renderer/components/UserName';
-import styles from './ProfileDetails.module.css';
 import { NFTCard } from '@renderer/components/NFTCard';
 import { useNavigate } from 'react-router-dom';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 import { NFTCardDisclaimer } from '@renderer/components/NFTCardDisclaimer';
+import styles from './ProfileDetails.module.css';
 
 export const ProfileDetails: FC<{
   state: { avatarId: string | null; nickName: string | null };
