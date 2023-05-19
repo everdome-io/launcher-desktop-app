@@ -15,3 +15,13 @@
   composes: username;
   opacity: 0.5;
 }
+
+.copyIcon {
+  filter: contrast(50%);
+  width: 20px;
+  height: 20px;
+}
+
+.copyIcon:hover {
+  filter: contrast(0%);
+}

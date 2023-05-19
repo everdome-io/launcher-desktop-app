@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react';
 import { getUserTokenFromAPI } from '@api';
 import * as Sentry from '@sentry/electron';
-import copyIcon from 'assets/icons/copy-icon.svg';
 import styles from './NFTCard.module.css';
 import { Spinner } from './Spinner';
 
+// eslint-disable-next-line no-shadow
+enum NFTColor {
+  White = 'White',
+  Black = 'Black',
+  Blue = 'Blue',
+}
 interface ApiResponse {
   tokenId: string;
   publicKey: string;
@@ -13,12 +18,6 @@ interface ApiResponse {
     trait_type: string;
     value: NFTColor;
   }[];
-}
-
-enum NFTColor {
-  White = 'White',
-  Black = 'Black',
-  Blue = 'Blue',
 }
 
 const getNFTVariantStyles = (variant: NFTColor | null) => {
@@ -34,19 +33,17 @@ const getNFTVariantStyles = (variant: NFTColor | null) => {
   }
 };
 
-export const NFTCard: React.FC = () => {
+export const NFTCard: React.FC<{
+  setPublicKey: React.Dispatch<React.SetStateAction<string | null>>;
+}> = ({ setPublicKey }) => {
   const collection = 'Alex Greenwood x OKX Trainer Collection';
   const [isLoading, setIsLoading] = React.useState(false);
   const userId = window.electron.store.get('userId');
-  const storedPublicKey = window.electron.store.get('publicKey');
   const storedContractAddress = window.electron.store.get('contractAddress');
   const storedTokenId = window.electron.store.get('tokenId');
   const storedVariant = window.electron.store.get('variant');
   const [tokenId, setTokenId] = React.useState<string | null>(storedTokenId);
   const [variant, setVariant] = React.useState<NFTColor | null>(storedVariant);
-  const [publicKey, setPublicKey] = React.useState<string | null>(
-    storedPublicKey
-  );
   const [contractAddress, setContractAddress] = React.useState<string | null>(
     storedContractAddress
   );
@@ -55,13 +52,12 @@ export const NFTCard: React.FC = () => {
       `https://www.oklink.com/oktc/assets/${contractAddress}/${tokenId}`
     );
   };
-  const handleCopyText = async () => {
-    if (publicKey) await navigator.clipboard.writeText(publicKey);
-  };
+
   useEffect(() => {
+    // eslint-disable-next-line no-undef
     let interval: NodeJS.Timeout | undefined;
     const claimNFT = () => {
-      if (!tokenId || !variant || !publicKey || !contractAddress) {
+      if (!tokenId || !variant || !contractAddress) {
         setIsLoading(true);
         getUserTokenFromAPI({
           userId,
@@ -111,10 +107,22 @@ export const NFTCard: React.FC = () => {
       }, 10000);
     }
     return () => clearInterval(interval);
-  }, [storedTokenId, storedVariant, storedContractAddress, storedPublicKey]);
+  }, [
+    storedTokenId,
+    storedVariant,
+    storedContractAddress,
+    tokenId,
+    variant,
+    contractAddress,
+    userId,
+    setPublicKey,
+  ]);
 
   return (
-    <div className={isLoading ? styles.containerStatic : styles.container}>
+    <div
+      className={isLoading ? styles.containerStatic : styles.container}
+      onClick={handleOnClick}
+    >
       {isLoading ? (
         <>
           <p>Your NFT is downloading...</p>
@@ -123,10 +131,7 @@ export const NFTCard: React.FC = () => {
       ) : (
         <>
           <div className={styles.nftContainer}>
-            <div
-              className={getNFTVariantStyles(variant)}
-              onClick={handleOnClick}
-            />
+            <div className={getNFTVariantStyles(variant)} />
           </div>
           <div className={styles.tokenInfo}>
             <div className={styles.item}>
@@ -136,20 +141,6 @@ export const NFTCard: React.FC = () => {
             <div className={styles.item}>
               <div className={styles.itemName}>Token ID</div>
               <div className={styles.itemValue}>{tokenId}</div>
-            </div>
-            <div className={styles.item}>
-              <div className={styles.itemName}>Wallet Address</div>
-              <div className={styles.itemValue}>
-                {`${publicKey?.substring(0, 16)}...`}
-                <a href="#">
-                  <img
-                    className={styles.copyIcon}
-                    src={copyIcon}
-                    alt="copy"
-                    onClick={handleCopyText}
-                  />
-                </a>
-              </div>
             </div>
           </div>
         </>
