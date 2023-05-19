@@ -10,6 +10,7 @@ import newsImage1 from 'assets/images/news/1.png';
 import newsImage2 from 'assets/images/news/2.png';
 import newsImage3 from 'assets/images/news/3.png';
 import styles from './News.module.css';
+
 const newsData = [
   {
     id: 1,
@@ -35,7 +36,7 @@ export const News: FC = () => {
     <section className={styles.News}>
       <div className={styles.NewsHeader}>
         <h2>News</h2>
-        <span className={styles.separator}></span>
+        <span className={styles.separator} />
         <div className={styles.Social}>
           <a href="#">
             <img

@@ -1,10 +1,5 @@
-import {
-  Channels,
-  CrossWindowState,
-  SettingType,
-  ToggleWindowMode,
-} from '@interfaces';
-import { FC, useEffect, useState } from 'react';
+import { Channels, CrossWindowState, ToggleWindowMode } from '@interfaces';
+import { FC, useState } from 'react';
 import settingsIcon from 'assets/images/settings-icon.svg';
 import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';

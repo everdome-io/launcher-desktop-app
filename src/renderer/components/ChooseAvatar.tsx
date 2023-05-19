@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { Channels, ToggleWindowMode } from '@interfaces';
 import chooseAvatarImg from 'assets/images/choose-avatar.png';
 import chooseAvatarImg_2x from 'assets/images/choose-avatar@2x.png';
-import styles from './ChooseAvatar.module.css';
 import { useNavigate } from 'react-router-dom';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import styles from './ChooseAvatar.module.css';
 
 export const ChooseAvatar: FC = () => {
   const navigate = useNavigate();

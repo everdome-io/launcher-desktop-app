@@ -48,9 +48,11 @@ export const NFTCard: React.FC<{
     storedContractAddress
   );
   const handleOnClick = () => {
-    window.open(
-      `https://www.oklink.com/oktc/assets/${contractAddress}/${tokenId}`
-    );
+    if (contractAddress && tokenId) {
+      window.open(
+        `https://www.oklink.com/oktc/assets/${contractAddress}/${tokenId}`
+      );
+    }
   };
 
   useEffect(() => {

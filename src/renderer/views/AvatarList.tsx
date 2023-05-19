@@ -13,8 +13,8 @@ import { useNavigate } from 'react-router-dom';
 import { setUserInAPI } from '@api';
 import { generateFakeEthAddress } from '@interfaces/publicKeyGenerator';
 import * as Sentry from '@sentry/electron';
-import styles from './AvatarList.module.css';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import styles from './AvatarList.module.css';
 
 export const AvatarList: FC<{
   beforePlay?: boolean;

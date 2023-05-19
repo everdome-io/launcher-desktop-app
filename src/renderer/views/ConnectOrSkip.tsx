@@ -3,9 +3,9 @@ import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { Channels } from '@interfaces';
 import { useNavigate } from 'react-router-dom';
 import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
-import styles from './ConnectOrSkip.module.css';
 import { BackButton } from '@renderer/components/BackButton';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import styles from './ConnectOrSkip.module.css';
 
 export const ConnectOrSkip: FC = () => {
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ export const ConnectOrSkip: FC = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.glow}></div>
+      <div className={styles.glow} />
       <div className={styles.header}>
         <h1 className={styles.title}>
           Login to the OKX Wallet and collect your NFT
