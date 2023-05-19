@@ -1,12 +1,11 @@
-import * as Sentry from '@sentry/electron';
 import { FC, useState } from 'react';
 import OKX_Framed_Training from 'assets/images/OKX_Framed_Training.png';
 import logo from 'assets/images/logo.png';
 import { Channels } from '@interfaces';
-import styles from './TermsOfService.module.css';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import styles from './TermsOfService.module.css';
 
 export const TermsOfService: FC = () => {
   const navigate = useNavigate();
@@ -68,13 +67,14 @@ export const TermsOfService: FC = () => {
             onChange={onTermsChange}
             checked={isTermsChecked}
           />
-          <span className={styles.indicator}></span>
+          <span className={styles.indicator} />
           <span className={styles.inputLabel}>
             I agree to the{' '}
             <a
               className={styles.tosPDF}
               target="_blank"
               href="https://metahero-prod-game-builds.s3.amazonaws.com/terms-of-service.pdf"
+              rel="noreferrer"
             >
               terms & conditions
             </a>{' '}
@@ -87,7 +87,7 @@ export const TermsOfService: FC = () => {
             onChange={onAgeChange}
             checked={isAgeChecked}
           />
-          <span className={styles.indicator}></span>
+          <span className={styles.indicator} />
           <span className={styles.inputLabel}>I am over 18 years old *</span>
         </label>
         <button className={styles.tosCTA} onClick={acceptTerms}>

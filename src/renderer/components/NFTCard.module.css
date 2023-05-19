@@ -8,6 +8,12 @@
   width: 100%;
 }
 
+.container:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  background: #343434ca;
+}
+
 .containerStatic {
   composes: container;
   flex-direction: column;

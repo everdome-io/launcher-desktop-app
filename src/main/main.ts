@@ -21,6 +21,7 @@ import { autoUpdater, UpdateDownloadedEvent } from 'electron-updater';
 import Store from 'electron-store';
 import request from 'request';
 import * as Sentry from '@sentry/electron';
+import { access } from 'fs';
 import { initializeSentry } from '../common/sentry';
 import {
   AppUpdateStatus,
@@ -48,7 +49,6 @@ import { getSettingFromAPI, getUserFromAPI } from '../api';
 import { getFilePath, playMetaverse } from './utils/enter-game';
 import { errorHandler } from './utils/errorHandler';
 import { sentryEventHandler } from './utils/sentryEventHandler';
-import { access } from 'fs';
 
 const store = new Store();
 

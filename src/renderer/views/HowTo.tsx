@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import keyboard from 'assets/images/howto-keyboard.png';
-import styles from './HowTo.module.css';
 import { useNavigate } from 'react-router-dom';
 import { BackButton } from '@renderer/components/BackButton';
 import { ArrowRight } from '@renderer/icons/ArrowRight';
 import { Channels } from '@interfaces';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import styles from './HowTo.module.css';
 
 export const HowTo: React.FC = () => {
   const navigate = useNavigate();

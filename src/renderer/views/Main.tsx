@@ -1,10 +1,4 @@
-import {
-  AppState,
-  AppUpdate,
-  Channels,
-  CrossWindowState,
-  ToggleWindowMode,
-} from '@interfaces';
+import { AppState, AppUpdate, Channels, CrossWindowState } from '@interfaces';
 import { FC, useEffect } from 'react';
 import chevronRight from 'assets/images/chevron-right.png';
 import { Navigate, useNavigate } from 'react-router-dom';
@@ -12,8 +6,8 @@ import logoImage from 'assets/images/okx-logo.png';
 import { LinkCardList } from '@renderer/components/LinkCardList';
 import { FileDownloader } from '@renderer/components';
 import { ClearStore } from '@renderer/components/ClearStore';
-import styles from './Main.module.css';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import styles from './Main.module.css';
 
 export const Main: FC<{
   state: AppState;

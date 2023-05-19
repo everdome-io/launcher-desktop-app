@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Channels } from '@interfaces';
-import styles from './ConnectOKXWallet.module.css';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
+import styles from './ConnectOKXWallet.module.css';
 
 export const ConnectOKXWallet: FC<{ fromProfileWindow: boolean }> = ({
   fromProfileWindow,

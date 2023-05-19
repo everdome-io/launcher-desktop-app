@@ -1,21 +1,16 @@
-import {
-  Channels,
-  CrossWindowState,
-  SettingType,
-  ToggleWindowMode,
-} from '@interfaces';
-import { FC, useEffect, useState } from 'react';
+import { Channels, CrossWindowState, ToggleWindowMode } from '@interfaces';
+import { FC, useState } from 'react';
 import settingsIcon from 'assets/images/settings-icon.svg';
 import ag5OKXLogo from 'assets/images/ag5xokx-logo.png';
 import { ConnectOKXWallet } from '@renderer/components/ConnectOKXWallet';
 import { ClearStore } from '@renderer/components/ClearStore';
 import { UserAvatar } from '@renderer/components/UserAvatar';
 import { UserName } from '@renderer/components/UserName';
-import styles from './ProfileDetails.module.css';
 import { NFTCard } from '@renderer/components/NFTCard';
 import { useNavigate } from 'react-router-dom';
 import { sentryEventHandler } from '@main/utils/sentryEventHandler';
 import { NFTCardDisclaimer } from '@renderer/components/NFTCardDisclaimer';
+import styles from './ProfileDetails.module.css';
 
 export const ProfileDetails: FC<{
   state: { avatarId: string | null; nickName: string | null };
@@ -33,12 +28,15 @@ export const ProfileDetails: FC<{
     navigate('/choose-avatar');
   };
 
+  const storedPublicKey = window.electron.store.get('publicKey');
+  const [publicKey, setPublicKey] = useState<string | null>(storedPublicKey);
+
   return (
     <div className={styles.container}>
       {crossWindowState.isAuthenticated ? (
         <>
           <header className={styles.userProfileHeader}>
-            <UserName userName={nickName} />
+            <UserName userName={nickName} publicKey={publicKey} />
             <img
               src={settingsIcon}
               className={styles.settingIcon}
@@ -46,7 +44,11 @@ export const ProfileDetails: FC<{
             />
           </header>
           <UserAvatar avatarId={avatarId} />
-          {shouldDisplayNFT ? <NFTCard /> : <NFTCardDisclaimer />}
+          {shouldDisplayNFT ? (
+            <NFTCard setPublicKey={setPublicKey} />
+          ) : (
+            <NFTCardDisclaimer />
+          )}
         </>
       ) : (
         <div className={styles.notConnected}>
