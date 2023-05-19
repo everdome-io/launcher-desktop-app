@@ -54,7 +54,7 @@ const store = new Store();
 
 const OKX_WEB_APP_URL = 'https://okx.prod.aws.everdome.io';
 const EXTENSION_ID = 'mcohilncbfahbmgdjkbpemcciiolgcge';
-const PROFILE_WINDOW_SIZE = { width: 342, height: 738 };
+const PROFILE_WINDOW_SIZE = { width: 342, height: 728 };
 
 const windows = new Set();
 
