@@ -701,6 +701,22 @@ ipcMain.on(
   }
 );
 
+ipcMain.on(Channels.showOkxWindow, async (_event) => {
+  if (okxWindow === null) {
+    createOKXWindow();
+  }
+  if (okxWindow) {
+    okxWindow.loadURL(`chrome-extension://${EXTENSION_ID}/home.html`);
+    if (profileWindow) {
+      const [x, y] = calculateExtensionWindowPosition(
+        profileWindow.getPosition()
+      );
+      okxWindow.setPosition(x - 350, y - 10);
+    }
+    okxWindow.show();
+  }
+});
+
 ipcMain.on(Channels.acceptTerms, (_event) => {
   store.set('termsAccepted', true);
   mainWindow?.webContents.send(Channels.acceptTerms, {

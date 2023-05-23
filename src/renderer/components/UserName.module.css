@@ -16,12 +16,90 @@
   opacity: 0.5;
 }
 
+.walletAddressContainer {
+  composes: flexCenter from '../theme/layout.module.css';
+  justify-content: flex-start;
+}
+
+.walletAddress {
+  font-size: 12px;
+  margin: 0 6px 0 12px;
+  line-height: 15px;
+}
+
+.walletBtn {
+  composes: flexCenter from '../theme/layout.module.css';
+  justify-content: flex-start;
+  background: none;
+  border: none;
+  appearance: none;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.walletBtn:hover {
+  opacity: 0.7;
+}
+
+.walletBtnClose {
+  composes: walletBtn;
+}
+
+.walletBtnOpen {
+  composes: walletBtn;
+}
+
+.walletBtnOpen svg {
+  transform: rotate(180deg);
+  transition: .4s ease-in-out;
+}
+
 .copyIcon {
-  filter: contrast(50%);
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
 }
 
 .copyIcon:hover {
   filter: contrast(0%);
+}
+
+.dropDownMenu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  left: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  background: #191919;
+  border-radius: 6px;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropDownMenu li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 28px;
+}
+
+.dropDownMenu li:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.dropDownMenuOpen {
+  composes: dropDownMenu;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.dropDownMenuClose {
+  composes: dropDownMenu;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }

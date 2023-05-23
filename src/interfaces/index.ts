@@ -19,6 +19,7 @@ export enum Channels {
 
   openOKXExtension = 'open-okx',
   closeOKXExtension = 'close-okx',
+  showOkxWindow = 'show-okx-window',
 
   toggleProfileWindow = 'toggle-profile-window',
 
